@@ -1,0 +1,56 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="ko-KR">
+<voice name="ko-KR-SunHiNeural">
+
+<prosody rate="-5%">
+
+기원전 3세기. <break time="500ms"/> 알렉산드리아에서 시작된 이야기.
+
+<break time="1500ms"/>
+
+지중해. <break time="300ms"/> 그리고 사막. <break time="400ms"/>
+그 둘이 만나는 도시. <break time="500ms"/>
+거대한 등대가 항구를 비추고, <break time="300ms"/>
+세상의 모든 책을 모으던 도서관이 있던 곳. <break time="700ms"/>
+오늘 우리가 만날 사람은요, <break time="400ms"/> 바로 그 도서관의 책임자예요.
+
+<break time="1500ms"/>
+
+친구들은 그를 베타라고 불렀어요. <break time="600ms"/>
+모든 분야에서 2등이라는, <break time="300ms"/> 살짝 짓궂은 별명이었지요. <break time="700ms"/>
+하지만 말이에요, <break time="400ms"/>
+별과 숫자, <break time="200ms"/> 지도와 시 <break time="200ms"/> 사이를 <break time="200ms"/>
+자유롭게 오갈 수 있는 사람은 <break time="300ms"/> 많지 않거든요.
+
+<break time="1500ms"/>
+
+어느 여름의 정오. <break time="800ms"/>
+남쪽 도시 시에네에서는, <break time="400ms"/>
+우물 깊은 곳까지 햇빛이 똑바로 닿았대요. <break time="700ms"/>
+바로 그 시각, <break time="400ms"/> 알렉산드리아에서, <break time="400ms"/>
+그가 세워둔 막대기는 <break time="300ms"/> 작은 그림자를 만들었습니다. <break time="800ms"/>
+그림자의 각도는 <break time="400ms"/> 7.2도. <break time="1000ms"/>
+두 도시 사이의 거리만 곱해보면? <break time="800ms"/>
+지구 둘레가 됩니다. <break time="700ms"/>
+막대기 하나로 <break time="400ms"/> 지구를 재버린 거예요. <break time="600ms"/>
+<prosody pitch="+5%">오차는, 단 일 퍼센트.</prosody>
+
+<break time="1500ms"/>
+
+그는 숫자에도 같은 방법을 썼어요. <break time="600ms"/>
+작은 수부터 차례로 거르고, <break time="400ms"/> 또 거르고. <break time="500ms"/>
+끝까지 살아남는 수가 <break time="400ms"/> 바로 소수예요. <break time="800ms"/>
+모든 자연수는 <break time="300ms"/> 이 소수들의 곱으로 풀어진답니다. <break time="600ms"/>
+이걸 <break time="200ms"/><prosody pitch="+3%">소인수분해</prosody>라고 해요. <break time="900ms"/>
+신기한 건요, <break time="400ms"/>
+2000년이 지난 지금도, <break time="400ms"/>
+우리의 컴퓨터가 <break time="300ms"/> 이 방법을 그대로 쓰고 있다는 거예요.
+
+<break time="1500ms"/>
+
+이 단원에서, <break time="500ms"/>
+그가 걸었던 길을 <break time="400ms"/> 함께 걸어봅시다.
+
+</prosody>
+
+</voice>
+</speak>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문제 풀기 — 단원 1</title>
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    /* 진행 바 */
+    .progress-wrap {
+      margin-bottom: 20px;
+    }
+    .progress-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .progress-bar {
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #16a34a;
+      border-radius: 4px;
+      transition: width 0.4s ease;
+      width: 0%;
+    }
+
+    /* 개별 문제 카드 */
+    .problem-card {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      margin-bottom: 12px;
+      transition: border-color 0.2s;
+    }
+    .problem-card.solved-ok  { border-color: #86efac; background: #f0fdf5; }
+    .problem-card.solved-err { border-color: #fca5a5; background: #fff5f5; }
+
+    .prob-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .prob-num {
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--accent);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+    .prob-num.challenge { background: #7c3aed; }
+    .prob-text { font-size: 15px; line-height: 1.65; }
+
+    /* 힌트 영역 (기본 숨김) */
+    .hint-box {
+      display: none;
+      background: var(--current-bg);
+      border-left: 3px solid var(--current);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: #78350f;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    .hint-box.visible { display: block; }
+
+    /* 답 입력 행 */
+    .answer-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .answer-row input {
+      padding: 7px 12px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 15px;
+      font-family: var(--font);
+      width: 140px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .answer-row input:focus    { border-color: var(--accent); }
+    .answer-row input.correct  { border-color: #16a34a; background: #f0fdf5; }
+    .answer-row input.wrong    { border-color: var(--prime); background: #fff5f5; }
+
+    .btn-hint  { padding: 7px 14px; font-size: 13px; }
+    .btn-check { padding: 7px 14px; font-size: 13px; background: var(--accent); color: #fff; border: none; border-radius: var(--radius-sm); font-family: var(--font); font-weight: 700; cursor: pointer; }
+
+    .feedback {
+      font-size: 13px;
+      font-weight: 600;
+      min-height: 18px;
+    }
+    .feedback.ok  { color: #16a34a; }
+    .feedback.err { color: var(--prime); }
+
+    /* 섹션 제목 구분선 */
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin: 24px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid var(--border);
+    }
+
+    /* 소수의 체 미니 그리드 (11번 문제) */
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 5px;
+      margin-top: 10px;
+    }
+    .mini-cell {
+      aspect-ratio: 1;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 1.5px solid var(--border);
+      background: var(--bg-card);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      user-select: none;
+    }
+    .mini-cell.x { background:#f3f4f6; color:#d1d5db; text-decoration:line-through; }
+    .mini-cell.p { background:var(--prime); color:#fff; border-color:#dc2626; }
+  </style>
+</head>
+<body>
+
+  <nav class="unit-nav">
+    <a href="index.html">📖 이야기</a>
+    <a href="sieve.html">🔢 소수의 체</a>
+    <a href="concepts.html">📝 개념</a>
+    <a href="problems.html" class="active">🔑 문제</a>
+  </nav>
+
+  <div class="badge">단원 1 · 소인수분해</div>
+  <h1>문제 풀기</h1>
+  <p class="subtitle">12문제. 힌트 버튼 있음. 틀려도 괜찮아 — 다시 쓰면 돼.</p>
+
+  <!-- 진행 바 -->
+  <div class="progress-wrap">
+    <div class="progress-label">풀었어요: <span id="solvedCount">0</span> / 12</div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  </div>
+
+  <!-- ── 웜업 ───────────────────────────────────────── -->
+  <div class="section-title">웜업 — 개념 확인</div>
+
+  <!-- Q1 -->
+  <div class="problem-card" data-q="1">
+    <div class="prob-header">
+      <span class="prob-num">1</span>
+      <div class="prob-text">다음 중 소수를 모두 골라봐: 1, 2, 3, 4, 7, 9, 11, 15, 17, 21, 29</div>
+    </div>
+    <div class="hint-box">소수는 1과 자기 자신으로만 나누어지는 수야. 1은 소수가 아니야.</div>
+    <div class="answer-row">
+      <input type="text" placeholder="쉼표 없이 숫자만 (예: 2 3 5)">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="problem-card" data-q="2">
+    <div class="prob-header">
+      <span class="prob-num">2</span>
+      <div class="prob-text">2³ × 3 을 계산해봐.</div>
+    </div>
+    <div class="hint-box">2³ = 2 × 2 × 2 = 8. 그다음 8 × 3.</div>
+    <div class="answer-row">
+      <input type="text" placeholder="답">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="problem-card" data-q="3">
+    <div class="prob-header">
+      <span class="prob-num">3</span>
+      <div class="prob-text">18을 소인수분해해봐. (2ⁿ × 3ⁿ 형태로 지수 숫자만 써)</div>
+    </div>
+    <div class="hint-box">18 ÷ 2 = 9 → 9 ÷ 3 = 3 → 3 ÷ 3 = 1. 18 = 2¹ × 3²</div>
+    <div class="answer-row">
+      <input type="text" placeholder="지수 2개 (예: 1 2)">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Q4 -->
+  <div class="problem-card" data-q="4">
+    <div class="prob-header">
+      <span class="prob-num">4</span>
+      <div class="prob-text">12와 18의 최대공약수(GCD)를 구해봐.</div>
+    </div>
+    <div class="hint-box">12=2²×3, 18=2×3². 공통 소인수를 작은 지수로: 2¹×3¹=?</div>
+    <div class="answer-row">
+      <input type="text" placeholder="답">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="problem-card" data-q="5">
+    <div class="prob-header">
+      <span class="prob-num">5</span>
+      <div class="prob-text">4와 6의 최소공배수(LCM)를 구해봐.</div>
+    </div>
+    <div class="hint-box">4=2², 6=2×3. 모든 소인수를 큰 지수로: 2²×3¹=?</div>
+    <div class="answer-row">
+      <input type="text" placeholder="답">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- ── 기본 ───────────────────────────────────────── -->
+  <div class="section-title">기본 — 적용하기</div>
+
+  <!-- Q6 -->
+  <div class="problem-card" data-q="6">
+    <div class="prob-header">
+      <span class="prob-num">6</span>
+      <div class="prob-text">360을 소인수분해해봐. (2ⁿ × 3ⁿ × 5ⁿ 형태로 지수 3개만 써)</div>
+    </div>
+    <div class="hint-box">360 ÷ 2 = 180 ÷ 2 = 90 ÷ 2 = 45 ÷ 3 = 15 ÷ 3 = 5 ÷ 5 = 1. 360 = 2³ × 3² × 5¹</div>
+    <div class="answer-row">
+      <input type="text" placeholder="지수 3개 (예: 3 2 1)">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="problem-card" data-q="7">
+    <div class="prob-header">
+      <span class="prob-num">7</span>
+      <div class="prob-text">84와 126의 최대공약수를 구해봐.</div>
+    </div>
+    <div class="hint-box">84=2²×3×7, 126=2×3²×7. 공통 소인수를 작은 지수로.</div>
+    <div class="answer-row">
+      <input type="text" placeholder="답">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="problem-card" data-q="8">
+    <div class="prob-header">
+      <span class="prob-num">8</span>
+      <div class="prob-text">사탕 24개, 초콜릿 36개를 남김없이 같은 개수씩 봉지에 나눠 담으려면 최대 몇 봉지?</div>
+    </div>
+    <div class="hint-box">봉지 수 = GCD(24, 36). 이 수로 나눠야 남김없이 분배 가능.</div>
+    <div class="answer-row">
+      <input type="text" placeholder="봉지 수">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="problem-card" data-q="9">
+    <div class="prob-header">
+      <span class="prob-num">9</span>
+      <div class="prob-text">4의 배수이면서 동시에 6의 배수인 가장 작은 자연수는?</div>
+    </div>
+    <div class="hint-box">"동시에 배수" = 최소공배수(LCM).</div>
+    <div class="answer-row">
+      <input type="text" placeholder="답">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="problem-card" data-q="10">
+    <div class="prob-header">
+      <span class="prob-num">10</span>
+      <div class="prob-text">48 = 2ᵃ × 3 일 때, a의 값은?</div>
+    </div>
+    <div class="hint-box">48을 소인수분해해봐. 48 ÷ 2 ÷ 2 ÷ 2 ÷ 2 = 3.</div>
+    <div class="answer-row">
+      <input type="text" placeholder="a =">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- ── 도전 ───────────────────────────────────────── -->
+  <div class="section-title">도전 — 손으로 직접</div>
+
+  <!-- Q11: 미니 체 -->
+  <div class="problem-card" data-q="11">
+    <div class="prob-header">
+      <span class="prob-num challenge">11 ★</span>
+      <div class="prob-text">아래 표에서 직접 소수의 체를 해봐. 소수 = 클릭해서 빨갛게, 합성수 = 클릭해서 회색으로. 30 이하의 소수를 모두 찾아.</div>
+    </div>
+    <div class="mini-grid" id="miniGrid"></div>
+    <div class="answer-row" style="margin-top:12px">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">정답 확인</button>
+    </div>
+    <div class="hint-box">에라토스테네스의 체: 2의 배수 제거 → 3의 배수 제거 → 5의 배수 제거. 남은 것이 소수.</div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Q12 -->
+  <div class="problem-card" data-q="12">
+    <div class="prob-header">
+      <span class="prob-num challenge">12 ★</span>
+      <div class="prob-text">자전거 앞바퀴는 20cm마다, 뒷바퀴는 30cm마다 표시가 있다. 출발점에서 동시에 표시가 땅에 닿은 후, 몇 cm를 가면 다시 동시에 닿을까?</div>
+    </div>
+    <div class="hint-box">두 바퀴가 동시에 닿는 지점 = LCM(20, 30). 20=2²×5, 30=2×3×5.</div>
+    <div class="answer-row">
+      <input type="text" placeholder="cm">
+      <button class="btn btn-secondary btn-hint">💡 힌트</button>
+      <button class="btn-check">확인</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <script>
+    /* ───────────────────────────────────────────────────
+       정답 상수 (JS 내부에서만 관리)
+       Q1 버그 수정: 5는 문제 목록에 없음 → "2 3 7 11 17 29"
+       Q3 버그 수정: 18=2¹×3², 지수는 1,2 → "1 2"
+       Q6 버그 수정: 360=2³×3²×5¹, 지수는 3,2,1 → "3 2 1"
+       ─────────────────────────────────────────────────── */
+    const ANSWERS = {
+      '1':  '2 3 7 11 17 29',
+      '2':  '24',
+      '3':  '1 2',
+      '4':  '12',
+      '5':  '12',
+      '6':  '3 2 1',
+      '7':  '42',
+      '8':  '12',
+      '9':  '12',
+      '10': '4',
+      '11': '2 3 5 7 11 13 17 19 23 29',
+      '12': '60',
+    };
+
+    /* ───────────────────────────────────────────────────
+       진행 상황 추적
+       ─────────────────────────────────────────────────── */
+    let solved = 0;
+
+    function updateProgress() {
+      document.getElementById('solvedCount').textContent = solved;
+      document.getElementById('progressFill').style.width = (solved / 12 * 100) + '%';
+    }
+
+    /* ───────────────────────────────────────────────────
+       공통 답 확인 함수
+       ─────────────────────────────────────────────────── */
+    function normalizeAnswer(s) {
+      return s.trim().toLowerCase().replace(/\s+/g, ' ');
+    }
+
+    function markCard(card, ok) {
+      card.classList.remove('solved-ok', 'solved-err');
+      card.classList.add(ok ? 'solved-ok' : 'solved-err');
+    }
+
+    /* ───────────────────────────────────────────────────
+       힌트 버튼 + 확인 버튼 이벤트
+       ─────────────────────────────────────────────────── */
+    document.addEventListener('click', e => {
+      if (e.target.classList.contains('btn-hint')) {
+        const card    = e.target.closest('.problem-card');
+        const hintBox = card.querySelector('.hint-box');
+        hintBox.classList.toggle('visible');
+        e.target.textContent = hintBox.classList.contains('visible') ? '힌트 숨기기' : '💡 힌트';
+      }
+
+      if (e.target.classList.contains('btn-check')) {
+        const card    = e.target.closest('.problem-card');
+        const qNum    = card.dataset.q;
+        const correct = normalizeAnswer(ANSWERS[qNum]);
+        const fb      = card.querySelector('.feedback');
+
+        if (qNum === '11') {
+          const marked = [...card.querySelectorAll('.mini-cell.p')]
+            .map(c => c.dataset.num)
+            .sort((a, b) => a - b)
+            .join(' ');
+          const ok = marked === correct;
+          fb.textContent = ok ? '🎉 맞았어!' : '다시 확인해봐. (힌트를 눌러봐)';
+          fb.className   = 'feedback ' + (ok ? 'ok' : 'err');
+          markCard(card, ok);
+          if (ok && !card.dataset.counted) { card.dataset.counted = '1'; solved++; updateProgress(); }
+        } else {
+          const input = card.querySelector('input');
+          const val   = normalizeAnswer(input.value);
+          const ok    = val === correct;
+          input.classList.toggle('correct', ok);
+          input.classList.toggle('wrong', !ok && val !== '');
+          fb.textContent = ok ? '🎉 정답!' : (val === '' ? '답을 입력해봐.' : '다시 생각해봐.');
+          fb.className   = 'feedback ' + (ok ? 'ok' : 'err');
+          markCard(card, ok);
+          if (ok && !card.dataset.counted) { card.dataset.counted = '1'; solved++; updateProgress(); }
+        }
+      }
+    });
+
+    /* ───────────────────────────────────────────────────
+       Q11 미니 그리드 생성 (2~30)
+       세 상태 순환: normal → prime → crossed → normal
+       ─────────────────────────────────────────────────── */
+    const miniGrid = document.getElementById('miniGrid');
+    for (let i = 2; i <= 30; i++) {
+      const cell = document.createElement('div');
+      cell.className = 'mini-cell';
+      cell.textContent = i;
+      cell.dataset.num = i;
+      cell.addEventListener('click', () => {
+        if (cell.classList.contains('p')) {
+          cell.classList.remove('p');
+          cell.classList.add('x');
+        } else if (cell.classList.contains('x')) {
+          cell.classList.remove('x');
+        } else {
+          cell.classList.add('p');
+        }
+      });
+      miniGrid.appendChild(cell);
+    }
+
+    updateProgress();
+  </script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소수의 체 — 에라토스테네스</title>
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    /* ── sieve 전용 스타일 ──────────────────────────────── */
+
+    /* 숫자 그리드: auto-fill이 화면 너비에 맞게 열 수를 자동 결정 */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(46px, 1fr));
+      gap: 7px;
+    }
+
+    /* 기본 셀 */
+    .cell {
+      aspect-ratio: 1;              /* 정사각형 유지 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 1.5px solid var(--border);
+      background: var(--bg-card);
+      cursor: pointer;
+      user-select: none;
+      /* transition: 클래스가 바뀔 때 0.25초에 걸쳐 부드럽게 변화 */
+      transition: background 0.25s, color 0.25s,
+                  border-color 0.25s, opacity 0.25s, transform 0.15s;
+    }
+
+    /* 현재 처리 중인 소수 — 노란 강조 + 살짝 커짐 */
+    .cell.current {
+      background: var(--current-bg);
+      border-color: var(--current);
+      color: #92400e;
+      transform: scale(1.12);
+      font-weight: 800;
+      z-index: 1;
+    }
+
+    /* 배수 지워지는 순간 — 빨간 flash */
+    .cell.flash {
+      background: #fca5a5;
+      border-color: #f87171;
+      transform: scale(0.88);
+    }
+
+    /* 합성수로 확정 — 흐리게 */
+    .cell.crossed {
+      background: #f9fafb;
+      color: var(--crossed-text);
+      border-color: #e5e7eb;
+      text-decoration: line-through;
+      font-weight: 400;
+    }
+
+    /* 소수로 확정 — 빨간 강조 */
+    .cell.prime {
+      background: var(--prime);
+      color: #fff;
+      border-color: #dc2626;
+      font-weight: 800;
+    }
+
+    /* 직접 해보기 모드: hover 시 하이라이트 */
+    .manual .cell:not(.prime):not(.crossed):hover {
+      background: var(--current-bg);
+      border-color: var(--current);
+    }
+
+    /* 발견된 소수 목록 */
+    .prime-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 4px;
+    }
+
+    .prime-chip {
+      background: var(--prime);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 4px 11px;
+      border-radius: 20px;
+      /* 칩이 나타날 때 위에서 내려오는 애니메이션 */
+      animation: popIn 0.25s ease;
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to   { transform: scale(1);   opacity: 1; }
+    }
+
+    /* 범위 선택 + 모드 컨트롤 */
+    .controls {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    select, .toggle-label {
+      font-family: var(--font);
+      font-size: 14px;
+      padding: 6px 10px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg-card);
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .toggle-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    /* 알고리즘 설명 ol */
+    .how-list {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .how-list li strong { color: var(--text); }
+  </style>
+</head>
+<body>
+
+  <nav class="unit-nav">
+    <a href="index.html">📖 이야기</a>
+    <a href="sieve.html" class="active">🔢 소수의 체</a>
+    <a href="concepts.html">📝 개념</a>
+    <a href="problems.html">🔑 문제</a>
+  </nav>
+
+  <div class="badge">단원 1 · 소인수분해</div>
+  <h1>소수의 체</h1>
+  <p class="subtitle">
+    에라토스테네스가 기원전 240년에 발명한 소수 찾기 알고리즘.
+    직접 보고, 직접 해봐.
+  </p>
+
+  <!-- 컨트롤 영역 -->
+  <div class="section">
+    <div class="controls">
+      <button class="btn btn-primary" id="btnStart">▶ 자동 실행</button>
+      <button class="btn btn-secondary" id="btnReset">↺ 초기화</button>
+
+      <!-- select: 드롭다운 선택 -->
+      <select id="rangeSelect">
+        <option value="30">1 ~ 30</option>
+        <option value="50" selected>1 ~ 50</option>
+        <option value="100">1 ~ 100</option>
+      </select>
+
+      <!-- label 안에 input을 넣으면 라벨 클릭만으로 체크박스 토글 가능 -->
+      <label class="toggle-label">
+        <input type="checkbox" id="manualMode">
+        ✏️ 직접 해보기
+      </label>
+    </div>
+
+    <!-- 현재 상태 메시지 -->
+    <div class="msg-box" id="msgBox">
+      ▶ 자동 실행으로 체가 작동하는 걸 보거나, "직접 해보기"를 켜서 손으로 해봐. 범위도 바꿔보면서 패턴을 찾아봐.
+    </div>
+  </div>
+
+  <!-- 숫자 그리드 -->
+  <div class="section">
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <!-- 발견된 소수 목록 (처음엔 숨겨둠) -->
+  <div class="section" id="primeListSection" style="display:none">
+    <h2>발견된 소수 (<span id="primeCount">0</span>개)</h2>
+    <div class="prime-chips" id="primeChips"></div>
+  </div>
+
+  <!-- 알고리즘 설명 -->
+  <div class="section">
+    <h2>어떻게 작동하나? — 알고리즘 설명</h2>
+    <ol class="how-list">
+      <li><strong>2부터 시작</strong>한다. 2는 소수다.</li>
+      <li><strong>2의 배수(4, 6, 8…)를 모두 지운다.</strong> 2보다 큰 2의 배수는 소수가 아니다.</li>
+      <li>지워지지 않은 다음 수(3)를 찾는다. 3은 소수다. <strong>3의 배수를 지운다.</strong></li>
+      <li>이것을 반복한다. 다음 살아남은 수가 항상 소수다.</li>
+      <li>√n 까지만 반복하면 된다. 그 이후 남은 수는 모두 자동으로 소수.</li>
+    </ol>
+    <p style="margin-top:12px; font-size:13px; color:var(--text-muted)">
+      시간복잡도: <em>O(n log log n)</em> — 지금까지 알려진 소수 체 중 가장 효율적인 기본 알고리즘.
+    </p>
+  </div>
+
+  <!-- 직접 써봐 -->
+  <div class="section">
+    <h2>직접 써봐 ✏️</h2>
+    <p style="font-size:14px; color:var(--text-muted); margin-bottom:10px">
+      체를 해보고 느낀 것, 소수에서 발견한 패턴, 아직 궁금한 것 — 자유롭게 써봐.
+    </p>
+    <textarea style="width:100%; min-height:80px; font-family:var(--font); font-size:14px; border:1.5px solid var(--border); border-radius:var(--radius-sm); padding:10px; resize:vertical; outline:none; box-sizing:border-box;" placeholder="여기에 자유롭게 써봐..."></textarea>
+  </div>
+
+  <script>
+    /* ───────────────────────────────────────────────────────
+       상태 변수
+       ─────────────────────────────────────────────────────── */
+    let limit   = 50;    // 범위 (30 / 50 / 100)
+    let running = false; // 자동 실행 중 여부
+
+    /* ───────────────────────────────────────────────────────
+       헬퍼 함수들
+       ─────────────────────────────────────────────────────── */
+
+    // n밀리초 기다리는 Promise — async/await와 함께 쓰면 딜레이 구현 가능
+    // Promise는 "나중에 완료될 작업"을 나타내는 객체
+    const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+    // 메시지 박스 텍스트 업데이트
+    function setMsg(text) {
+      document.getElementById('msgBox').textContent = text;
+    }
+
+    // data-num 속성으로 특정 숫자의 셀 DOM 요소를 찾아 반환
+    // querySelector('[attr="val"]') : CSS 속성 선택자
+    function getCell(n) {
+      return document.querySelector(`[data-num="${n}"]`);
+    }
+
+    /* ───────────────────────────────────────────────────────
+       그리드 생성
+       data-num: JS에서 어떤 숫자인지 추적하기 위한 커스텀 속성
+       ─────────────────────────────────────────────────────── */
+    function buildGrid() {
+      const grid = document.getElementById('grid');
+      grid.innerHTML = '';  // 기존 셀 제거
+      grid.classList.remove('manual');
+
+      // documentFragment: 실제 DOM에 붙이기 전에 메모리에서 조립 → 성능 향상
+      const frag = document.createDocumentFragment();
+
+      for (let i = 2; i <= limit; i++) {
+        const cell = document.createElement('div');
+        cell.className = 'cell';
+        cell.textContent = i;
+        cell.dataset.num = i;  // data-num 속성 설정
+
+        // 직접 해보기 모드: 클릭으로 prime ↔ crossed 토글
+        cell.addEventListener('click', () => onCellClick(Number(cell.dataset.num)));
+        frag.appendChild(cell);
+      }
+
+      grid.appendChild(frag);
+
+      // 발견된 소수 목록 초기화
+      document.getElementById('primeListSection').style.display = 'none';
+      document.getElementById('primeChips').innerHTML = '';
+      document.getElementById('primeCount').textContent = '0';
+    }
+
+    /* ───────────────────────────────────────────────────────
+       직접 해보기 모드: 셀 클릭 이벤트
+       ─────────────────────────────────────────────────────── */
+    function onCellClick(n) {
+      if (!document.getElementById('manualMode').checked) return;
+      if (running) return;
+
+      const cell = getCell(n);
+      if (cell.classList.contains('prime')) {
+        // 소수 → 원래 상태로
+        cell.classList.remove('prime');
+      } else if (cell.classList.contains('crossed')) {
+        // 합성수 → 원래 상태로
+        cell.classList.remove('crossed');
+      } else {
+        // 미분류 → 소수로 표시 + 배수 자동 흐리게
+        cell.classList.add('prime');
+        addPrimeChip(n);
+        // 이 수의 배수를 자동으로 흐리게 (힌트)
+        for (let m = n * 2; m <= limit; m += n) {
+          const mc = getCell(m);
+          if (!mc.classList.contains('prime') && !mc.classList.contains('crossed')) {
+            mc.classList.add('crossed');
+          }
+        }
+      }
+    }
+
+    /* ───────────────────────────────────────────────────────
+       소수 칩 추가 (발견된 소수 목록)
+       ─────────────────────────────────────────────────────── */
+    function addPrimeChip(n) {
+      const section = document.getElementById('primeListSection');
+      const chips   = document.getElementById('primeChips');
+      const counter = document.getElementById('primeCount');
+
+      section.style.display = 'block';
+
+      // 중복 방지
+      if (chips.querySelector(`[data-prime="${n}"]`)) return;
+
+      const chip = document.createElement('span');
+      chip.className = 'prime-chip';
+      chip.textContent = n;
+      chip.dataset.prime = n;
+
+      // 숫자 순서대로 삽입
+      const existing = [...chips.querySelectorAll('.prime-chip')]
+        .find(c => Number(c.dataset.prime) > n);
+      chips.insertBefore(chip, existing || null);
+
+      counter.textContent = chips.querySelectorAll('.prime-chip').length;
+    }
+
+    /* ───────────────────────────────────────────────────────
+       자동 실행: 에라토스테네스의 체 애니메이션
+       async function이어야 내부에서 await 사용 가능
+       ─────────────────────────────────────────────────────── */
+    async function runSieve() {
+      if (running) return;
+      running = true;
+
+      const btnStart = document.getElementById('btnStart');
+      btnStart.textContent = '⏸ 실행 중...';
+      btnStart.disabled = true;
+
+      // isPrime[i] = true이면 i는 아직 소수 후보
+      const isPrime = new Array(limit + 1).fill(true);
+      isPrime[0] = isPrime[1] = false;
+
+      // 애니메이션 속도 (범위가 클수록 빠르게)
+      const stepDelay   = limit <= 30 ? 800 : limit <= 50 ? 600 : 300;
+      const flashDelay  = limit <= 30 ? 100 : limit <= 50 ? 60  : 25;
+
+      for (let p = 2; p <= limit; p++) {
+        if (!isPrime[p]) continue;
+        if (!running) break; // 초기화 버튼 눌리면 중단
+
+        // 현재 소수 강조 (노란색)
+        getCell(p).classList.add('current');
+        setMsg(`${p}는 소수예요! → ${p}의 배수를 지웁니다...`);
+        await delay(stepDelay);
+
+        // 배수들을 하나씩 flash → crossed
+        let crossedCount = 0;
+        for (let m = p * 2; m <= limit; m += p) {
+          if (!isPrime[m]) continue; // 이미 지워진 수는 건너뜀
+          isPrime[m] = false;
+
+          const mc = getCell(m);
+          mc.classList.add('flash');
+          await delay(flashDelay);
+          mc.classList.remove('flash');
+          mc.classList.add('crossed');
+          crossedCount++;
+        }
+
+        // 소수로 확정 (빨간색)
+        getCell(p).classList.remove('current');
+        getCell(p).classList.add('prime');
+        addPrimeChip(p);
+
+        const msg = crossedCount > 0
+          ? `${p} 확정! ${p}의 배수 ${crossedCount}개를 지웠어요.`
+          : `${p} 확정! (지울 배수가 없었어요)`;
+        setMsg(msg);
+
+        await delay(stepDelay * 0.5);
+      }
+
+      // 남은 수(p*p > limit인 소수들) 소수로 표시
+      for (let i = 2; i <= limit; i++) {
+        if (isPrime[i] && !getCell(i).classList.contains('prime')) {
+          getCell(i).classList.add('prime');
+          addPrimeChip(i);
+        }
+      }
+
+      const primes = [];
+      for (let i = 2; i <= limit; i++) if (isPrime[i]) primes.push(i);
+
+      setMsg(`🎉 완료! ${limit} 이하의 소수는 ${primes.length}개: ${primes.join(', ')} — 이번엔 범위를 바꿔봐. 100 이하에는 몇 개일까?`);
+
+      running = false;
+      btnStart.textContent = '▶ 다시 실행';
+      btnStart.disabled = false;
+    }
+
+    /* ───────────────────────────────────────────────────────
+       이벤트 리스너 연결
+       ─────────────────────────────────────────────────────── */
+    document.getElementById('btnStart').addEventListener('click', runSieve);
+
+    document.getElementById('btnReset').addEventListener('click', () => {
+      running = false;
+      buildGrid();
+      document.getElementById('btnStart').textContent = '▶ 자동 실행';
+      document.getElementById('btnStart').disabled = false;
+      setMsg('↺ 초기화됐어. 다시 해봐.');
+    });
+
+    document.getElementById('rangeSelect').addEventListener('change', e => {
+      limit = Number(e.target.value);
+      running = false;
+      buildGrid();
+      document.getElementById('btnStart').textContent = '▶ 자동 실행';
+      document.getElementById('btnStart').disabled = false;
+      setMsg(`범위를 1~${limit}으로 바꿨어. 다시 실행해봐.`);
+    });
+
+    document.getElementById('manualMode').addEventListener('change', e => {
+      const grid = document.getElementById('grid');
+      if (e.target.checked) {
+        // 자동 실행 중이면 중단
+        running = false;
+        buildGrid();
+        grid.classList.add('manual');
+        document.getElementById('btnStart').disabled = true;
+        setMsg('✏️ 직접 해보기 모드. 소수라고 생각하는 수를 클릭해봐! 배수는 자동으로 흐려져.');
+      } else {
+        grid.classList.remove('manual');
+        document.getElementById('btnStart').disabled = false;
+        setMsg('자동 모드로 돌아왔어. ▶ 자동 실행을 눌러봐.');
+      }
+    });
+
+    /* ───────────────────────────────────────────────────────
+       초기화: 페이지 로드 시 그리드 생성
+       ─────────────────────────────────────────────────────── */
+    buildGrid();
+  </script>
+</body>
+</html>

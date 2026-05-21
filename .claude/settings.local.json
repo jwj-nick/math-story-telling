@@ -3,7 +3,30 @@
     "allow": [
       "Bash(bash --version)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(cp -r __TRACKED_VAR__/tokens 20_packages/design-system/tokens)",
+      "Bash(cp -r __TRACKED_VAR__/subjects 20_packages/design-system/subjects)",
+      "Bash(cp -r __TRACKED_VAR__/dist 20_packages/design-system/dist)",
+      "Bash(cp __TRACKED_VAR__/README.md 20_packages/design-system/README.md)",
+      "Bash(cp __TRACKED_VAR__/CLAUDE.md 20_packages/design-system/CLAUDE.md)",
+      "Bash(cp -r __TRACKED_VAR__/system/principles/. 10_system/10_principles/)",
+      "Bash(cp -r __TRACKED_VAR__/system/context/. 10_system/20_context/)",
+      "Bash(cp -r __TRACKED_VAR__/system/skills/. 10_system/30_skills/)",
+      "Bash(cp -r __TRACKED_VAR__/system/proposals/. 10_system/40_proposals/)",
+      "Bash(cp -r __TRACKED_VAR__/system/insights/. 10_system/50_insights/)",
+      "Bash(cp __TRACKED_VAR__/10_VISION.md 10_system/70_meta/VISION.md)",
+      "Bash(cp __TRACKED_VAR__/30_COMPONENTS.md 10_system/70_meta/COMPONENTS.md)",
+      "Bash(cp __TRACKED_VAR__/50_BLUEPRINTS.md 10_system/70_meta/BLUEPRINTS.md)",
+      "Bash(cp __TRACKED_VAR__/51_MASTER_PLAN.md 10_system/70_meta/MASTER_PLAN.md)",
+      "Bash(cp __TRACKED_VAR__/60_LEARNERS.md 10_system/70_meta/LEARNERS.md)",
+      "Bash(git -C C:/Kids/30_MiddleSchool/260426_MathTelling_Idea log --oneline -5)",
+      "Bash(git -C C:/Kids/30_MiddleSchool/260426_MathTelling_Idea rev-list --count HEAD)",
+      "Bash(git -C C:/Kids/90_Workspace/mathtelling log --oneline -5)",
+      "Bash(git -C C:/Kids/90_Workspace/mathtelling rev-list --count HEAD)",
+      "Bash(git -C C:/Kids/90_Workspace/mathtelling-design-system log --oneline -5)",
+      "Bash(chmod +x 70_tools/sync-skills.sh)",
+      "Bash(bash 70_tools/sync-skills.sh --dry)",
+      "Bash(bash 70_tools/sync-skills.sh)"
     ]
   }
 }

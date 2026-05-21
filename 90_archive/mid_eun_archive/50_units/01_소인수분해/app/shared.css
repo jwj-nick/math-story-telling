@@ -1,0 +1,176 @@
+/* shared.css — unit01 공통 스타일
+   모든 HTML 파일이 이 파일을 <link>로 불러옵니다.
+   CSS 변수(:root)를 수정하면 전체 파일에 일괄 반영됩니다. */
+
+/* ── 1. CSS 변수 정의 ──────────────────────────────────────
+   :root는 HTML 문서 최상위 요소. 여기 정의한 변수는 전역 사용 가능.
+   사용법: color: var(--prime);                              */
+:root {
+  /* 배경 */
+  --bg:           #f5f3ee;
+  --bg-card:      #ffffff;
+  --bg-story:     #fffbf0;
+
+  /* 수학 색상 */
+  --prime:        #ef4444;   /* 소수 강조 */
+  --prime-bg:     #fee2e2;
+  --composite:    #9ca3af;   /* 합성수 */
+  --current:      #f59e0b;   /* 현재 처리 중 */
+  --current-bg:   #fef3c7;
+  --crossed-text: #d1d5db;
+
+  /* UI 색상 */
+  --text:         #1c1c1c;
+  --text-muted:   #6b7280;
+  --border:       #e0ddd7;
+  --accent:       #3b5998;
+  --accent-light: #eef2ff;
+
+  /* 레이아웃 */
+  --max-width:    680px;
+  --radius:       12px;
+  --radius-sm:    8px;
+
+  /* 폰트: 시스템 기본 폰트 스택 — 설치 없이 한국어를 예쁘게 */
+  --font: system-ui, -apple-system, 'Apple SD Gothic Neo',
+          'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+/* ── 2. 리셋 & 베이스 ─────────────────────────────────────
+   브라우저마다 기본 margin/padding이 달라서 먼저 0으로 초기화.
+   box-sizing: border-box → padding이 width 안에 포함되게 함   */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  max-width: var(--max-width);
+  margin: 0 auto;           /* 가운데 정렬 */
+  padding: 28px 20px 80px;
+  line-height: 1.65;
+}
+
+/* ── 3. 네비게이션 ────────────────────────────────────────
+   flex + wrap: 화면이 좁아지면 자동으로 두 줄로 내려감       */
+.unit-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1.5px solid var(--border);
+}
+
+.unit-nav a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1.5px solid var(--border);
+  background: var(--bg-card);
+  transition: all 0.15s;    /* hover 시 부드럽게 색상 변화 */
+}
+
+.unit-nav a:hover,
+.unit-nav a.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* ── 4. 페이지 헤더 ──────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+/* ── 5. 섹션 카드 ─────────────────────────────────────────
+   여러 파일에서 공통으로 쓰는 카드 컨테이너                  */
+.section {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+/* ── 6. 버튼 ─────────────────────────────────────────────
+   .btn은 기본 모양, .btn-primary / .btn-secondary는 색상 변형 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 20px;
+  border-radius: var(--radius-sm);
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+}
+.btn:active  { transform: scale(0.97); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.btn-primary   { background: var(--accent); color: #fff; }
+.btn-secondary {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1.5px solid var(--border);
+}
+
+/* ── 7. 메시지 박스 ───────────────────────────────────────
+   현재 상태 / 힌트 표시용                                    */
+.msg-box {
+  background: var(--current-bg);
+  border: 1.5px solid #fcd34d;
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #78350f;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+
+/* ── 8. 유틸리티 ─────────────────────────────────────────
+   작은 간격 조정용 클래스들                                  */
+.mt-12 { margin-top: 12px; }
+.mt-20 { margin-top: 20px; }
+.flex-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}

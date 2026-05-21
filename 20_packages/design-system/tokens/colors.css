@@ -1,0 +1,115 @@
+/*
+ * mathtelling-design-system / tokens / colors.css
+ * v0.1 — 2026-05-19
+ *
+ * Global palette: "양피지" (Parchment) — warm dark base
+ * Subject themes: math, science, korean, social, english
+ * Era palettes: ancient, medieval, renaissance, modern (for Story video)
+ */
+
+/* ─────────────────────────────────────────────
+   Global: Parchment Theme (채널 기본)
+   ───────────────────────────────────────────── */
+:root {
+  --mt-bg:          #1F1814;
+  --mt-bg-alt:      #2E2620;
+  --mt-bg-card:     #3A302A;
+  --mt-text:        #F0E6D2;
+  --mt-text-muted:  #A89880;
+  --mt-accent-gold: #C9A66B;
+  --mt-accent-moss: #8FAE7B;
+  --mt-accent-red:  #B85450;
+  --mt-border:      rgba(201, 166, 107, 0.25);
+  --mt-shadow:      0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* ─────────────────────────────────────────────
+   Light mode override (학습 앱 기본)
+   ───────────────────────────────────────────── */
+[data-theme="light"] {
+  --mt-bg:          #FAF6F0;
+  --mt-bg-alt:      #F0E9DE;
+  --mt-bg-card:     #FFFFFF;
+  --mt-text:        #2E1F0E;
+  --mt-text-muted:  #7A6855;
+  --mt-accent-gold: #9E7B3F;
+  --mt-accent-moss: #4E7040;
+  --mt-accent-red:  #8C3830;
+  --mt-border:      rgba(158, 123, 63, 0.2);
+  --mt-shadow:      0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* ─────────────────────────────────────────────
+   Subject Themes
+   ───────────────────────────────────────────── */
+[data-subject="math"] {
+  --subject-primary:   #5B8FB9;   /* 수학: 청색 */
+  --subject-secondary: #B9D4E8;
+  --subject-accent:    #C9A66B;
+  --subject-icon:      "∑";
+}
+
+[data-subject="science"] {
+  --subject-primary:   #4E9E6B;   /* 과학: 초록 */
+  --subject-secondary: #B5DFC9;
+  --subject-accent:    #8FAE7B;
+  --subject-icon:      "⚗";
+}
+
+[data-subject="korean"] {
+  --subject-primary:   #C46B50;   /* 국어: 붉은 토 */
+  --subject-secondary: #E8C4B8;
+  --subject-accent:    #B85450;
+  --subject-icon:      "가";
+}
+
+[data-subject="social"] {
+  --subject-primary:   #8B6BA8;   /* 사회: 자주 */
+  --subject-secondary: #D4C4E8;
+  --subject-accent:    #C9A66B;
+  --subject-icon:      "🌏";
+}
+
+[data-subject="english"] {
+  --subject-primary:   #4A8B8B;   /* 영어: 청록 */
+  --subject-secondary: #B4D4D4;
+  --subject-accent:    #8FAE7B;
+  --subject-icon:      "A";
+}
+
+/* ─────────────────────────────────────────────
+   Era Palettes (Story 영상 / 인물 테마)
+   채널 영상에서 단원별 시대 분위기
+   ───────────────────────────────────────────── */
+.era-ancient {   /* 고대 그리스·이집트 */
+  --era-bg:      #1A1408;
+  --era-accent:  #D4A843;
+  --era-text:    #F2E4C0;
+}
+.era-india {     /* 중세 인도·이슬람 수학 */
+  --era-bg:      #1A0F0F;
+  --era-accent:  #C0604A;
+  --era-text:    #F0DDD0;
+}
+.era-renaissance { /* 르네상스·유럽 근세 */
+  --era-bg:      #0F141A;
+  --era-accent:  #6B9BD8;
+  --era-text:    #DDE6F2;
+}
+.era-modern {    /* 근현대 */
+  --era-bg:      #0E0E12;
+  --era-accent:  #88C0D0;
+  --era-text:    #E5E9F0;
+}
+
+/* ─────────────────────────────────────────────
+   Semantic colors (공통)
+   ───────────────────────────────────────────── */
+:root {
+  --mt-info:    #5B8FB9;
+  --mt-success: #4E9E6B;
+  --mt-warning: #C9A66B;
+  --mt-danger:  #B85450;
+  --mt-correct: #4E9E6B;
+  --mt-wrong:   #B85450;
+}

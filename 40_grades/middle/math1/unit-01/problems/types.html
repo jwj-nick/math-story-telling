@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko" data-subject="math" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>유형별 연습 — 소인수분해 | MathTelling</title>
+<link rel="stylesheet" href="../../../../mathtelling-design-system/dist/all.css">
+<link rel="stylesheet" href="../../../../mathtelling-design-system/subjects/math.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--mt-bg);
+  color: var(--mt-text);
+  min-height: 100vh;
+  font-family: var(--font-ko);
+}
+
+/* ── Top bar ─────────────────────────────── */
+.topbar {
+  background: var(--mt-bg);
+  border-bottom: 1px solid var(--mt-border);
+  padding: var(--sp-3) var(--sp-4);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.back-link {
+  color: var(--mt-text-muted);
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--r-sm);
+}
+.back-link:hover { color: var(--mt-accent-gold); }
+
+.topbar-title {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+}
+.topbar-title .unit-num {
+  color: var(--mt-accent-gold);
+  font-family: var(--font-en);
+}
+
+/* ── Hero ────────────────────────────────── */
+.hero {
+  padding: var(--sp-12) var(--sp-4) var(--sp-8);
+  text-align: center;
+  max-width: var(--max-w-app);
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-extrabold);
+  margin-bottom: var(--sp-3);
+}
+.hero-sub {
+  color: var(--mt-text-muted);
+  font-size: var(--fs-md);
+  line-height: var(--lh-relaxed);
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+/* ── Type cards ──────────────────────────── */
+.types {
+  max-width: var(--max-w-app);
+  margin: 0 auto;
+  padding: var(--sp-4) var(--sp-4) var(--sp-16);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-4);
+}
+
+@media (max-width: 600px) { .types { grid-template-columns: 1fr; } }
+
+.type-card {
+  background: var(--mt-bg-card);
+  border: 1px solid var(--mt-border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-5) var(--sp-5) var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: border-color var(--tr-fast), transform var(--tr-fast);
+}
+
+.type-card.disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.type-card:not(.disabled):hover {
+  border-color: var(--subject-primary);
+  transform: translateY(-2px);
+}
+
+.type-tag {
+  font-family: var(--font-en);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.08em;
+  color: var(--mt-accent-gold);
+}
+
+.type-name {
+  font-size: 1.1rem;
+  font-weight: var(--fw-bold);
+  color: var(--mt-text);
+}
+
+.type-desc {
+  font-size: var(--fs-sm);
+  color: var(--mt-text-muted);
+  line-height: var(--lh-normal);
+  flex-grow: 1;
+}
+
+.type-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--sp-3);
+  padding-top: var(--sp-3);
+  border-top: 1px dashed var(--mt-border);
+  font-size: var(--fs-xs);
+}
+
+.type-count {
+  color: var(--mt-text-muted);
+  font-family: var(--font-en);
+}
+
+.type-difficulty {
+  display: flex;
+  gap: 2px;
+}
+
+.diff-pip {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--mt-bg-alt);
+  border: 1px solid var(--mt-border);
+}
+.diff-pip.on { background: var(--subject-primary); border-color: var(--subject-primary); }
+
+.coming-soon {
+  position: absolute;
+  top: var(--sp-3);
+  right: var(--sp-3);
+  font-size: 10px;
+  padding: 2px var(--sp-2);
+  background: var(--mt-bg-alt);
+  border-radius: var(--r-full);
+  color: var(--mt-text-muted);
+  font-family: var(--font-en);
+  letter-spacing: 0.08em;
+}
+
+/* ── Legend ──────────────────────────────── */
+.legend {
+  max-width: var(--max-w-app);
+  margin: 0 auto var(--sp-8);
+  padding: var(--sp-4) var(--sp-5);
+  background: var(--mt-bg-alt);
+  border: 1px solid var(--mt-border);
+  border-radius: var(--r-md);
+  font-size: var(--fs-sm);
+  color: var(--mt-text-muted);
+  line-height: var(--lh-relaxed);
+}
+.legend strong { color: var(--mt-text); }
+.legend .pip-demo {
+  display: inline-flex;
+  gap: 2px;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <a class="back-link" href="../index.html">← 단원 허브</a>
+  <span class="topbar-title"><span class="unit-num">Unit 01</span> · 유형별 연습</span>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>유형별 연습</h1>
+  <p class="hero-sub">
+    소인수분해 단원의 시험 출제 유형을 <b>7가지</b>로 나눴어요.<br>
+    유형마다 쉬운 3 · 중간 3 · 어려운 3, 총 <b>9문제</b>씩.
+  </p>
+</section>
+
+<!-- Legend -->
+<div class="legend">
+  난이도 표시:
+  <span class="pip-demo">
+    <span class="diff-pip on"></span><span class="diff-pip"></span><span class="diff-pip"></span>
+  </span>
+  <strong>L</strong> 쉬운 ·
+  <span class="pip-demo">
+    <span class="diff-pip on"></span><span class="diff-pip on"></span><span class="diff-pip"></span>
+  </span>
+  <strong>M</strong> 중간 ·
+  <span class="pip-demo">
+    <span class="diff-pip on"></span><span class="diff-pip on"></span><span class="diff-pip on"></span>
+  </span>
+  <strong>H</strong> 어려운
+</div>
+
+<!-- Type cards -->
+<main class="types">
+
+  <a class="type-card disabled" href="#">
+    <span class="coming-soon">Coming Soon</span>
+    <span class="type-tag">T01</span>
+    <span class="type-name">소수와 합성수 판별</span>
+    <span class="type-desc">주어진 수가 소수인지 합성수인지 판단하고, 그 이유를 설명해요.</span>
+    <div class="type-meta">
+      <span class="type-count">9문제 · L3 M3 H3</span>
+      <span class="type-difficulty">
+        <span class="diff-pip on"></span><span class="diff-pip on"></span><span class="diff-pip"></span>
+      </span>
+    </div>
+  </a>
+
+  <a class="type-card disabled" href="#">
+    <span class="coming-soon">Coming Soon</span>
+    <span class="type-tag">T02</span>
+    <span class="type-name">소인수분해 — 거듭제곱 표현</span>
+    <span class="type-desc">자연수를 소수의 곱으로 분해하고 거듭제곱 표기로 정리하는 연습.</span>
+    <div class="type-meta">
+      <span class="type-count">9문제 · L3 M3 H3</span>
+      <span class="type-difficulty">
+        <span class="diff-pip on"></span><span class="diff-pip on"></span><span class="diff-pip"></span>
+      </span>
+    </div>
+  </a>
+
+  <a class="type-card disabled" href="#">
+    <span class="coming-soon">Coming Soon</span>
+    <span class="type-tag">T03</span>
+    <span class="type-name">약수의 개수</span>
+    <span class="type-desc">$(m+1)(n+1) \cdots$ 공식의 원리를 이해하고 활용해요.</span>
+    <div class="type-meta">
+      <span class="type-count">9문제 · L3 M3 H3</span>
+      <span class="type-difficulty">
+        <span class="diff-pip on"></span><span class="diff-pip on"></span><span class="diff-pip"></span>
+      </span>
+    </div>
+  </a>
+
+  <a class="type-card disabled" href="#">
+    <span class="coming-soon">Coming Soon</span>
+    <span class="type-tag">T04</span>
+    <span class="type-name">약수의 합</span>
+    <span class="type-desc">각 소인수 거듭제곱의 합을 곱하는 방식으로 약수의 합을 구해요.</span>
+    <div class="type-meta">
+      <span class="type-count">9문제 · L3 M3 H3</span>
+      <span class="type-difficulty">
+        <span class="diff-pip on"></span><span class="diff-pip on"></span><span class="diff-pip on"></span>
+      </span>
+    </div>
+  </a>
+
+  <a class="type-card disabled" href="#">
+    <span class="coming-soon">Coming Soon</span>
+    <span class="type-tag">T05</span>
+    <span class="type-name">최대공약수 (GCD)</span>
+    <span class="type-desc">두 수 이상의 공통 소인수를 작은 지수로 모아 GCD를 구해요.</span>
+    <div class="type-meta">
+      <span class="type-count">9문제 · L3 M3 H3</span>
+      <span class="type-difficulty">
+        <span class="diff-pip on"></span><span class="diff-pip on"></span><span class="diff-pip"></span>
+      </span>
+    </div>
+  </a>
+
+  <a class="type-card disabled" href="#">
+    <span class="coming-soon">Coming Soon</span>
+    <span class="type-tag">T06</span>
+    <span class="type-name">최소공배수 (LCM)</span>
+    <span class="type-desc">모든 소인수를 큰 지수로 모아 LCM을 구해요. GCD와 짝꿍 개념.</span>
+    <div class="type-meta">
+      <span class="type-count">9문제 · L3 M3 H3</span>
+      <span class="type-difficulty">
+        <span class="diff-pip on"></span><span class="diff-pip on"></span><span class="diff-pip"></span>
+      </span>
+    </div>
+  </a>
+
+  <a class="type-card disabled" href="#">
+    <span class="coming-soon">Coming Soon</span>
+    <span class="type-tag">T07</span>
+    <span class="type-name">GCD · LCM 활용 문제</span>
+    <span class="type-desc">"똑같이 나누기", "동시에 다시 만나기" 같은 생활 속 문장제.</span>
+    <div class="type-meta">
+      <span class="type-count">9문제 · L3 M3 H3</span>
+      <span class="type-difficulty">
+        <span class="diff-pip on"></span><span class="diff-pip on"></span><span class="diff-pip on"></span>
+      </span>
+    </div>
+  </a>
+
+</main>
+
+</body>
+</html>

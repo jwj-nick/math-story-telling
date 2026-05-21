@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko" data-subject="math" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>단원 1 — 소인수분해 | MathTelling</title>
+<link rel="stylesheet" href="../../../mathtelling-design-system/dist/all.css">
+<link rel="stylesheet" href="../../../mathtelling-design-system/subjects/math.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script>
+<style>
+/* ── Layout ──────────────────────────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--mt-bg);
+  color: var(--mt-text);
+  min-height: 100vh;
+}
+
+/* ── Hero ────────────────────────────────── */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: var(--sp-16) var(--sp-6) var(--sp-12);
+  text-align: center;
+  background:
+    radial-gradient(ellipse 60% 80% at 50% 110%, rgba(212,168,67,0.18) 0%, transparent 70%),
+    var(--mt-bg);
+  border-bottom: 1px solid var(--mt-border);
+}
+
+.hero-era {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mt-accent-gold);
+  margin-bottom: var(--sp-2);
+}
+
+.hero-signature {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: var(--sp-4);
+  opacity: 0.85;
+  filter: drop-shadow(0 0 24px rgba(212,168,67,0.4));
+}
+
+.hero h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-extrabold);
+  color: var(--mt-text);
+  margin-bottom: var(--sp-2);
+}
+
+.hero-sub {
+  font-size: var(--fs-sm);
+  color: var(--mt-text-muted);
+  margin-bottom: var(--sp-6);
+}
+
+.hero-person {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  background: rgba(212,168,67,0.12);
+  border: 1px solid rgba(212,168,67,0.3);
+  border-radius: var(--r-full);
+  padding: var(--sp-2) var(--sp-4);
+  font-size: var(--fs-sm);
+  color: var(--mt-accent-gold);
+}
+
+/* ── Nav tabs ────────────────────────────── */
+.nav-tabs {
+  display: flex;
+  gap: var(--sp-2);
+  justify-content: center;
+  padding: var(--sp-6) var(--sp-4) 0;
+  flex-wrap: wrap;
+}
+
+.nav-tab {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-6);
+  border-radius: var(--r-full);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  border: 1px solid var(--mt-border);
+  color: var(--mt-text-muted);
+  background: var(--mt-bg-card);
+  transition: all var(--tr-fast);
+}
+
+.nav-tab:hover {
+  border-color: var(--mt-accent-gold);
+  color: var(--mt-accent-gold);
+  background: rgba(212,168,67,0.08);
+}
+
+.nav-tab.active {
+  background: var(--mt-accent-gold);
+  color: var(--mt-bg);
+  border-color: var(--mt-accent-gold);
+}
+
+/* ── Main grid ───────────────────────────── */
+.main {
+  max-width: var(--max-w-app);
+  margin: 0 auto;
+  padding: var(--sp-8) var(--sp-4) var(--sp-16);
+}
+
+.section-title {
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--mt-text-muted);
+  margin-bottom: var(--sp-4);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--mt-border);
+}
+
+/* ── Cards ───────────────────────────────── */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-8);
+}
+
+@media (max-width: 520px) { .cards { grid-template-columns: 1fr; } }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-6);
+  background: var(--mt-bg-card);
+  border: 1px solid var(--mt-border);
+  border-radius: var(--r-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--tr-fast), transform var(--tr-fast);
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: var(--subject-primary, var(--mt-accent-gold));
+  transform: translateY(-2px);
+}
+
+.card-icon { font-size: 28px; }
+
+.card-title {
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  color: var(--mt-text);
+}
+
+.card-desc {
+  font-size: var(--fs-sm);
+  color: var(--mt-text-muted);
+  line-height: var(--lh-normal);
+}
+
+.card-badge {
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: var(--fs-xs);
+  padding: 2px var(--sp-3);
+  border-radius: var(--r-full);
+  background: rgba(91,143,185,0.15);
+  color: var(--subject-primary, var(--mt-accent-gold));
+  font-weight: var(--fw-semibold);
+}
+
+/* ── Concept chips ───────────────────────── */
+.concepts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-8);
+}
+
+.chip {
+  font-size: var(--fs-xs);
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--r-full);
+  background: var(--mt-bg-alt);
+  border: 1px solid var(--mt-border);
+  color: var(--mt-text-muted);
+}
+
+/* ── Back nav ────────────────────────────── */
+.back-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-sm);
+  color: var(--mt-text-muted);
+  text-decoration: none;
+  padding: var(--sp-2) var(--sp-4);
+  position: absolute;
+  top: var(--sp-4);
+  left: var(--sp-4);
+  border-radius: var(--r-sm);
+  transition: color var(--tr-fast);
+}
+
+.back-nav:hover { color: var(--mt-accent-gold); }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <a class="back-nav" href="../index.html">← 중1 수학 홈</a>
+  <p class="hero-era">⏳ 고대 그리스 · BCE 276~194</p>
+  <div class="hero-signature">🪄</div>
+  <h1>소인수분해</h1>
+  <p class="hero-sub">Unit 01 — 모든 수를 소수의 곱으로 분해하다</p>
+  <span class="hero-person">
+    <span>🏛</span>
+    에라토스테네스와 함께
+  </span>
+</section>
+
+<!-- Tab nav -->
+<nav class="nav-tabs">
+  <a class="nav-tab active" href="index.html">🏠 단원 허브</a>
+  <a class="nav-tab" href="story.html">📜 이야기</a>
+  <a class="nav-tab" href="concepts.html">🔍 개념 탐구</a>
+  <a class="nav-tab" href="problems/basic.html">✏️ 기본 문제</a>
+  <a class="nav-tab" href="problems/types.html">📋 유형 연습</a>
+</nav>
+
+<main class="main">
+
+  <!-- 학습 경로 카드 -->
+  <p class="section-title">학습 경로</p>
+  <div class="cards">
+
+    <a class="card" href="story.html">
+      <span class="card-icon">📜</span>
+      <span class="card-title">에라토스테네스 이야기</span>
+      <span class="card-desc">막대기 하나로 지구를 재고, 소수의 체를 발명한 도서관 관장</span>
+      <span class="card-badge">서사 · 5분</span>
+    </a>
+
+    <a class="card" href="concepts.html">
+      <span class="card-icon">🔍</span>
+      <span class="card-title">개념 탐구</span>
+      <span class="card-desc">소수, 합성수, 소인수분해를 인터랙티브하게 직접 탐구</span>
+      <span class="card-badge">탐구 · 10분</span>
+    </a>
+
+    <a class="card" href="problems/basic.html">
+      <span class="card-icon">✏️</span>
+      <span class="card-title">기본 문제</span>
+      <span class="card-desc">이 단원 전체를 커버하는 기본 문제 10개</span>
+      <span class="card-badge">연습 · 15분</span>
+    </a>
+
+    <a class="card" href="problems/types.html">
+      <span class="card-icon">📋</span>
+      <span class="card-title">유형별 연습</span>
+      <span class="card-desc">T01~T07 유형마다 L·M·H 9문제씩</span>
+      <span class="card-badge">심화 · 30분+</span>
+    </a>
+
+  </div>
+
+  <!-- 핵심 개념 -->
+  <p class="section-title">이 단원의 핵심 개념</p>
+  <div class="concepts">
+    <span class="chip">소수 (prime)</span>
+    <span class="chip">합성수</span>
+    <span class="chip">소인수분해</span>
+    <span class="chip">지수 표현</span>
+    <span class="chip">약수의 개수</span>
+    <span class="chip">최대공약수 GCD</span>
+    <span class="chip">최소공배수 LCM</span>
+  </div>
+
+</main>
+
+</body>
+</html>

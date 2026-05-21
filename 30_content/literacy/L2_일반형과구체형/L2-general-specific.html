@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수학 언어 사용 설명서 L2 — 같은 말, 두 가지 쓰는 법</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo',
+                   'Noto Sans KR', sans-serif;
+      background: #f5f3ee;
+      color: #1c1c1c;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    .badge {
+      display: inline-block;
+      background: #3b5998;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #111;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 36px;
+    }
+
+    /* ── Section wrapper ── */
+    .section {
+      background: #fff;
+      border: 1.5px solid #e0ddd7;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+    .section h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 16px;
+    }
+
+    /* ── Story box ── */
+    .story {
+      background: #fffbf0;
+      border-left: 4px solid #f0a500;
+      border-radius: 0 10px 10px 0;
+      padding: 18px 22px;
+      margin-bottom: 24px;
+    }
+    .story-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #a07000;
+      margin-bottom: 8px;
+    }
+    .story p {
+      font-size: 15px;
+      color: #3a2800;
+      line-height: 1.75;
+    }
+    .story code {
+      background: #fde68a;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-family: 'Menlo', 'Consolas', monospace;
+      font-size: 14px;
+      color: #7c4700;
+    }
+    .story strong { color: #b45309; }
+
+    /* ── Concept cards ── */
+    .card-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 0;
+    }
+    .card {
+      border: 2px solid;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .card.gen  { border-color: #93c5fd; background: #f0f7ff; }
+    .card.spec { border-color: #86efac; background: #f0fdf5; }
+    .card-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+    .gen  .card-label { color: #1d4ed8; }
+    .spec .card-label { color: #15803d; }
+    .card-eq {
+      font-size: 28px;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 8px;
+      min-height: 38px;
+    }
+    .card-note {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.55;
+    }
+
+    /* ── Fraction display ── */
+    .fr {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      vertical-align: -0.25em;
+      line-height: 1.15;
+      margin: 0 1px;
+    }
+    .fr .n {
+      border-bottom: 2px solid currentColor;
+      padding: 0 3px 1px;
+      font-size: 0.82em;
+    }
+    .fr .d {
+      padding: 1px 3px 0;
+      font-size: 0.82em;
+    }
+
+    /* ── Slider section ── */
+    .slider-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .slider-pre { font-size: 17px; font-weight: 600; white-space: nowrap; }
+    input[type="range"] {
+      flex: 1;
+      height: 6px;
+      accent-color: #3b5998;
+      cursor: pointer;
+    }
+    .a-val {
+      font-size: 26px;
+      font-weight: 900;
+      color: #3b5998;
+      min-width: 42px;
+      text-align: center;
+    }
+
+    /* ── Equation comparison ── */
+    .eq-compare {
+      display: grid;
+      grid-template-columns: 1fr 40px 1fr;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .eq-box {
+      border: 2px solid #dbeafe;
+      background: #f8fbff;
+      border-radius: 10px;
+      padding: 14px 12px;
+      text-align: center;
+    }
+    .eq-box.live {
+      border-color: #86efac;
+      background: #f0fdf5;
+    }
+    .eq-box-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #6b7280;
+      margin-bottom: 6px;
+    }
+    .eq-box .eq {
+      font-size: 24px;
+      font-weight: 800;
+      color: #111;
+      min-height: 30px;
+    }
+    .arrow-cell {
+      text-align: center;
+      font-size: 22px;
+      color: #9ca3af;
+    }
+
+    /* ── Substitution hint ── */
+    .sub-hint {
+      background: #fef9ec;
+      border: 1.5px solid #fcd34d;
+      border-radius: 10px;
+      padding: 13px 18px;
+      font-size: 14px;
+      color: #78350f;
+      text-align: center;
+      line-height: 1.65;
+    }
+    .sub-hint strong { color: #92400e; }
+
+    /* ── Graph section ── */
+    .graph-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    canvas {
+      border: 1.5px solid #e0ddd7;
+      border-radius: 10px;
+      max-width: 100%;
+    }
+    .quadrant-tag {
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      border: 2px solid;
+    }
+    .qt-pos  { background: #f0fdf5; border-color: #86efac; color: #15803d; }
+    .qt-neg  { background: #f0f7ff; border-color: #93c5fd; color: #1d4ed8; }
+    .qt-zero { background: #f9fafb; border-color: #d1d5db; color: #374151; }
+
+    /* ── Writing section ── */
+    .prompt-box {
+      background: #f5f3ee;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 15px;
+      color: #2c2c2c;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+    .prompt-box + .prompt-box { margin-top: 18px; }
+    textarea {
+      width: 100%;
+      border: 1.5px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 15px;
+      font-family: inherit;
+      resize: vertical;
+      color: #1c1c1c;
+      background: #fff;
+      transition: border-color 0.2s;
+      min-height: 72px;
+    }
+    textarea:focus { outline: none; border-color: #3b5998; }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 48px;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 22px; }
+      .card-row { grid-template-columns: 1fr; }
+      .card-eq { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="badge">수학 언어 사용 설명서 · L2</div>
+  <h1>같은 말, 두 가지 쓰는 법</h1>
+  <p class="subtitle">일반형과 구체형 — "a 자리에 값을 넣는다"는 게 무슨 뜻인지 직접 눈으로 확인해봐.</p>
+
+  <!-- Story -->
+  <div class="story">
+    <div class="story-label">이 도구를 만든 이유</div>
+    <p>
+      <code>y = a/x</code> 이고 <code>a = −2</code> 일 때,
+      <em>"그러면 식이 어떻게 돼?"</em>라고 물었더니 선뜻 답하기 어려웠지.<br>
+      그건 계산 실수가 아니야.<br>
+      <strong>"a 자리에 −2를 끼워넣으면 된다"</strong>는
+      수학 언어의 약속을 아직 만난 적이 없었던 것뿐이야.<br>
+      슬라이더를 움직여서 그 약속을 눈으로 직접 확인해봐.
+    </p>
+  </div>
+
+  <!-- Concept cards -->
+  <div class="section">
+    <h2>수학에는 두 가지 쓰는 법이 있어</h2>
+    <div class="card-row">
+      <div class="card gen">
+        <div class="card-label">일반형 (General Form)</div>
+        <div class="card-eq">
+          y =&nbsp;<span class="fr"><span class="n">a</span><span class="d">x</span></span>
+        </div>
+        <div class="card-note">
+          a에 어떤 수가 들어가도 성립하는<br>
+          <em>반비례 관계 전체를 한 번에</em> 표현
+        </div>
+      </div>
+      <div class="card spec">
+        <div class="card-label">구체형 (Specific Form)</div>
+        <div class="card-eq" id="conceptSpecific">
+          y =&nbsp;<span class="fr"><span class="n">−2</span><span class="d">x</span></span>
+        </div>
+        <div class="card-note" id="conceptNote">
+          a = −2 일 때 그 식 하나.<br>
+          <em>슬라이더로 바꿔보면 실시간으로 바뀌어</em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider + equation compare -->
+  <div class="section">
+    <h2>직접 바꿔봐 — a 값을 움직이면 식이 달라져</h2>
+
+    <div class="slider-row">
+      <span class="slider-pre">a =</span>
+      <input type="range" id="slider" min="-3" max="3" step="1" value="-2">
+      <span class="a-val" id="aVal">−2</span>
+    </div>
+
+    <div class="eq-compare">
+      <div class="eq-box">
+        <div class="eq-box-label">일반형 (항상 이 형태)</div>
+        <div class="eq">
+          y =&nbsp;<span class="fr"><span class="n">a</span><span class="d">x</span></span>
+        </div>
+      </div>
+      <div class="arrow-cell">→</div>
+      <div class="eq-box live">
+        <div class="eq-box-label" id="liveLabel">a 자리에 −2 대입</div>
+        <div class="eq" id="liveEq">y = −2/x</div>
+      </div>
+    </div>
+
+    <div class="sub-hint" id="subHint">
+      a = −2 이므로, <strong>a 자리에 −2를 넣으면</strong> → y = −2/x
+    </div>
+  </div>
+
+  <!-- Graph -->
+  <div class="section">
+    <h2>그래프로 보면</h2>
+    <div class="graph-wrap">
+      <canvas id="graph" width="420" height="420"></canvas>
+      <div class="quadrant-tag qt-neg" id="quadrantTag">
+        이 그래프는 <strong>2사분면과 4사분면</strong>을 지나. (a &lt; 0 이기 때문)
+      </div>
+    </div>
+  </div>
+
+  <!-- Writing -->
+  <div class="section">
+    <h2>직접 써봐</h2>
+
+    <div class="prompt-box" id="writePrompt1">
+      슬라이더를 <strong>a = 2</strong>로 맞추고, 구체형 식을 직접 써봐.
+      (식 쓰는 게 목표야 — 정답보다 시도가 중요해)
+    </div>
+    <textarea placeholder="y = ___"></textarea>
+
+    <div class="prompt-box" style="margin-top: 20px;">
+      a가 <strong>양수</strong>일 때와 <strong>음수</strong>일 때 그래프가 있는 사분면이 달라져.
+      왜 그럴 것 같아? 눈에 보이는 대로 자유롭게 써봐.
+    </div>
+    <textarea placeholder="내 생각..." style="min-height: 96px;"></textarea>
+  </div>
+
+  <div class="footer">
+    수학 언어 사용 설명서 L2 · 아빠가 만든 인터랙티브 학습 도구 · 2026
+  </div>
+
+<script>
+(function () {
+  const slider      = document.getElementById('slider');
+  const aVal        = document.getElementById('aVal');
+  const liveLabel   = document.getElementById('liveLabel');
+  const liveEq      = document.getElementById('liveEq');
+  const subHint     = document.getElementById('subHint');
+  const quadrantTag = document.getElementById('quadrantTag');
+  const conceptSpec = document.getElementById('conceptSpecific');
+
+  /* ── helpers ── */
+  function fmt(n) {
+    if (n === 0)  return '0';
+    if (n === 1)  return '1';
+    if (n === -1) return '−1';
+    return (n < 0 ? '−' : '') + Math.abs(n);
+  }
+
+  function frac(num, den) {
+    return 'y =&nbsp;<span class="fr"><span class="n">' + num +
+           '</span><span class="d">' + den + '</span></span>';
+  }
+
+  /* ── update UI ── */
+  function update() {
+    const a = parseInt(slider.value, 10);
+    const aStr = (a > 0 ? '+' : '') + (a < 0 ? '−' : '') + (a === 0 ? '0' : Math.abs(a));
+    const aNeg = a < 0;
+
+    // a value badge
+    aVal.textContent = aNeg ? ('−' + Math.abs(a)) : (a === 0 ? '0' : '+' + a);
+
+    // live label
+    liveLabel.textContent = 'a 자리에 ' + (aNeg ? '−' + Math.abs(a) : fmt(a)) + ' 대입';
+
+    // live equation & concept card
+    let eqHtml, eqText;
+    if (a === 0) {
+      eqHtml = 'y = 0';
+      eqText = 'y = 0';
+    } else {
+      const numStr = aNeg ? '−' + Math.abs(a) : String(a);
+      eqHtml = frac(numStr, 'x');
+      eqText = 'y = ' + (aNeg ? '−' + Math.abs(a) : a) + '/x';
+    }
+    liveEq.innerHTML    = eqHtml;
+    conceptSpec.innerHTML = a === 0
+      ? 'y = 0'
+      : frac(aNeg ? '−' + Math.abs(a) : String(a), 'x');
+
+    // substitution hint
+    if (a === 0) {
+      subHint.innerHTML =
+        'a = 0 이면 y = 0/x = 0 — <strong>x가 무엇이든 y는 항상 0</strong>이야. (특수한 경우)';
+    } else {
+      const av = aNeg ? '−' + Math.abs(a) : String(a);
+      subHint.innerHTML =
+        'a = ' + av + ' 이므로, <strong>a 자리에 ' + av + '를 넣으면</strong> → ' + eqText;
+    }
+
+    // quadrant tag
+    const qt = quadrantTag;
+    if (a > 0) {
+      qt.className = 'quadrant-tag qt-pos';
+      qt.innerHTML = '이 그래프는 <strong>1사분면과 3사분면</strong>을 지나. (a &gt; 0 이기 때문)';
+    } else if (a < 0) {
+      qt.className = 'quadrant-tag qt-neg';
+      qt.innerHTML = '이 그래프는 <strong>2사분면과 4사분면</strong>을 지나. (a &lt; 0 이기 때문)';
+    } else {
+      qt.className = 'quadrant-tag qt-zero';
+      qt.innerHTML = 'a = 0 이면 그래프는 <strong>x축 위</strong>. (사분면에 속하지 않아)';
+    }
+
+    drawGraph(a);
+  }
+
+  /* ── canvas ── */
+  function drawGraph(a) {
+    const canvas = document.getElementById('graph');
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width, H = canvas.height;
+    const cx = W / 2, cy = H / 2;
+    const UNITS = 7;           // visible range: -UNITS to +UNITS
+    const sc = W / (2 * UNITS);
+
+    ctx.clearRect(0, 0, W, H);
+
+    // background
+    ctx.fillStyle = '#fafaf8';
+    ctx.fillRect(0, 0, W, H);
+
+    // quadrant shading
+    if (a > 0) {
+      ctx.fillStyle = 'rgba(134,239,172,0.22)';
+      ctx.fillRect(cx, 0, cx, cy);     // Q1
+      ctx.fillRect(0, cy, cx, cy);     // Q3
+    } else if (a < 0) {
+      ctx.fillStyle = 'rgba(147,197,253,0.22)';
+      ctx.fillRect(0, 0, cx, cy);      // Q2
+      ctx.fillRect(cx, cy, cx, cy);    // Q4
+    }
+
+    // grid
+    ctx.strokeStyle = '#e5e2db';
+    ctx.lineWidth = 1;
+    for (let i = -UNITS; i <= UNITS; i++) {
+      if (i === 0) continue;
+      const x = cx + i * sc;
+      const y = cy + i * sc;
+      ctx.beginPath(); ctx.moveTo(x, 0);  ctx.lineTo(x, H);  ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(0, y);  ctx.lineTo(W, y);  ctx.stroke();
+    }
+
+    // axes
+    ctx.strokeStyle = '#374151';
+    ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(4, cy); ctx.lineTo(W - 4, cy); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cx, 4); ctx.lineTo(cx, H - 4); ctx.stroke();
+
+    // axis arrows
+    ctx.fillStyle = '#374151';
+    tri(ctx, W - 4, cy, 'right');
+    tri(ctx, cx,    4,  'up');
+
+    // axis labels
+    ctx.font = 'bold 13px Arial, sans-serif';
+    ctx.fillStyle = '#374151';
+    ctx.textAlign = 'left';
+    ctx.fillText('x', W - 16, cy - 6);
+    ctx.textAlign = 'center';
+    ctx.fillText('y', cx + 10, 16);
+    ctx.fillText('O', cx + 10, cy + 15);
+
+    // tick numbers
+    ctx.font = '11px Arial, sans-serif';
+    ctx.fillStyle = '#9ca3af';
+    for (let i = -UNITS; i <= UNITS; i++) {
+      if (i === 0 || Math.abs(i) % 2 !== 0) continue;
+      const xp = cx + i * sc;
+      const yp = cy - i * sc;
+      ctx.textAlign = 'center';
+      ctx.fillText(String(i), xp, cy + 14);
+      ctx.textAlign = 'right';
+      ctx.fillText(String(i), cx - 6, yp + 4);
+    }
+
+    // curve
+    if (a !== 0) {
+      ctx.strokeStyle = '#ef4444';
+      ctx.lineWidth = 2.5;
+      ctx.lineJoin = 'round';
+      ctx.lineCap  = 'round';
+      drawBranch(ctx, W, H, cx, cy, sc, a, true);   // x > 0
+      drawBranch(ctx, W, H, cx, cy, sc, a, false);  // x < 0
+    } else {
+      // y = 0: just the x-axis highlighted
+      ctx.strokeStyle = '#ef4444';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(8, cy);
+      ctx.lineTo(W - 8, cy);
+      ctx.stroke();
+    }
+
+    // quadrant roman numerals
+    const labels = [
+      { text: 'Ⅰ', x: W - 22, y: 26, q: 'Q1' },
+      { text: 'Ⅱ', x:      22, y: 26, q: 'Q2' },
+      { text: 'Ⅲ', x:      22, y: H - 10, q: 'Q3' },
+      { text: 'Ⅳ', x: W - 22, y: H - 10, q: 'Q4' },
+    ];
+    const active = a > 0 ? ['Q1','Q3'] : a < 0 ? ['Q2','Q4'] : [];
+    ctx.font = 'bold 15px Arial, sans-serif';
+    ctx.textAlign = 'center';
+    labels.forEach(({ text, x, y, q }) => {
+      ctx.fillStyle = active.includes(q)
+        ? (a > 0 ? 'rgba(21,128,61,0.7)' : 'rgba(29,78,216,0.7)')
+        : 'rgba(156,163,175,0.45)';
+      ctx.fillText(text, x, y);
+    });
+  }
+
+  function drawBranch(ctx, W, H, cx, cy, sc, a, positive) {
+    ctx.beginPath();
+    let penDown = false;
+    const start = positive ? cx + 2 : 4;
+    const end   = positive ? W - 4  : cx - 2;
+
+    for (let px = start; px <= end; px++) {
+      const xv = (px - cx) / sc;
+      const yv = a / xv;
+      const py = cy - yv * sc;
+      if (py < 2 || py > H - 2) { penDown = false; continue; }
+      if (!penDown) { ctx.moveTo(px, py); penDown = true; }
+      else          { ctx.lineTo(px, py); }
+    }
+    ctx.stroke();
+  }
+
+  function tri(ctx, x, y, dir) {
+    const s = 6;
+    ctx.beginPath();
+    if (dir === 'right') {
+      ctx.moveTo(x, y - s / 2);
+      ctx.lineTo(x + s, y);
+      ctx.lineTo(x, y + s / 2);
+    } else {
+      ctx.moveTo(x - s / 2, y);
+      ctx.lineTo(x, y - s);
+      ctx.lineTo(x + s / 2, y);
+    }
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
+</body>
+</html>

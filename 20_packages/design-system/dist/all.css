@@ -1,0 +1,15 @@
+/*
+ * mathtelling-design-system / dist / all.css
+ * v0.1 — 2026-05-19
+ *
+ * Single-file import for quick use:
+ *   <link rel="stylesheet" href="...all.css">
+ *
+ * Generated from: tokens/ + subjects/ + components/
+ * (Build step 없음 — 직접 유지. Phase 1에서 자동화 검토)
+ */
+
+@import '../tokens/colors.css';
+@import '../tokens/typography.css';
+@import '../tokens/motion.css';
+@import '../tokens/spacing.css';

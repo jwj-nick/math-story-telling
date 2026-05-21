@@ -1,0 +1,44 @@
+/*
+ * mathtelling-design-system / tokens / motion.css
+ * v0.1 — 2026-05-19
+ *
+ * 3 duration tiers only.
+ * No rotation / flash effects. Max 3 simultaneous objects.
+ */
+
+:root {
+  /* Duration tiers */
+  --dur-fast:   0.3s;
+  --dur-mid:    0.6s;
+  --dur-slow:   1.0s;
+
+  /* Easing */
+  --ease:        cubic-bezier(0.4, 0, 0.2, 1);   /* Material standard */
+  --ease-in:     cubic-bezier(0.4, 0, 1,   1);
+  --ease-out:    cubic-bezier(0, 0, 0.2,   1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Transitions */
+  --tr-fast: var(--dur-fast) var(--ease);
+  --tr-mid:  var(--dur-mid)  var(--ease);
+  --tr-slow: var(--dur-slow) var(--ease);
+
+  /* Zoom limit (영상 의사 카메라) */
+  --zoom-max: 1.15;   /* 15% 이상 줌 금지 */
+}
+
+/* Fade in/out utilities */
+.fade-in  { animation: mtFadeIn  var(--dur-fast) var(--ease) both; }
+.fade-out { animation: mtFadeOut var(--dur-fast) var(--ease) both; }
+
+@keyframes mtFadeIn  { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes mtFadeOut { from { opacity: 1; } to { opacity: 0; } }
+
+/* Slide in from bottom */
+.slide-up { animation: mtSlideUp var(--dur-mid) var(--ease) both; }
+@keyframes mtSlideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+
+/* Reduced motion override */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

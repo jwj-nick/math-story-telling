@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개념 정리 — 단원 1</title>
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    /* ── 플래시카드 ──────────────────────────────────────────
+       CSS 3D 뒤집기: perspective → transform-style → rotateY
+       perspective: 원근감 거리. 작을수록 강한 원근감.
+       backface-visibility: hidden → 뒷면이 앞을 향할 때 안 보이게  */
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 440px) { .card-grid { grid-template-columns: 1fr; } }
+
+    .flashcard {
+      height: 130px;
+      perspective: 800px; /* 3D 원근감 */
+      cursor: pointer;
+    }
+
+    .card-inner {
+      width: 100%; height: 100%;
+      position: relative;
+      transform-style: preserve-3d; /* 자식 요소가 3D 공간에 있음 */
+      transition: transform 0.45s ease;
+    }
+
+    .flashcard.flipped .card-inner {
+      transform: rotateY(180deg); /* 클릭하면 Y축 기준 뒤집기 */
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      inset: 0; /* top/right/bottom/left: 0 축약 */
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      backface-visibility: hidden; /* 반대쪽 바라볼 때 숨김 */
+      border: 1.5px solid var(--border);
+      text-align: center;
+    }
+
+    .card-front {
+      background: var(--bg-card);
+    }
+    .card-front .term { font-size: 20px; font-weight: 800; color: var(--accent); }
+    .card-front .hint { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+
+    .card-back {
+      background: var(--accent-light);
+      transform: rotateY(180deg); /* 처음부터 뒤집혀 있음 = 보이지 않음 */
+    }
+    .card-back .definition { font-size: 13.5px; line-height: 1.65; color: var(--text); }
+    .card-back .example    { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+
+    /* ── 소인수분해 팩터트리 ─────────────────────────────────
+       CSS로 트리 구조: flex + 가상 선(::before/::after)       */
+    .tree-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0;
+      font-size: 15px;
+    }
+    .tree-row { display: flex; gap: 14px; align-items: center; }
+    .tree-node {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      border: 2px solid;
+    }
+    .tree-node.composite { background: #fff; border-color: var(--accent); color: var(--accent); }
+    .tree-node.prime-n   { background: var(--prime); border-color: #dc2626; color: #fff; }
+    .tree-arrow { font-size: 18px; color: var(--text-muted); }
+
+    /* ── 빈칸 채우기 ─────────────────────────────────────── */
+    .fill-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-size: 16px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .fill-row input {
+      width: 80px;
+      border: none;
+      border-bottom: 2px solid var(--accent);
+      background: transparent;
+      font-size: 16px;
+      font-family: var(--font);
+      color: var(--text);
+      text-align: center;
+      outline: none;
+      padding: 2px 4px;
+    }
+    .fill-row input.correct { border-color: #16a34a; color: #16a34a; }
+    .fill-row input.wrong   { border-color: var(--prime); color: var(--prime); }
+
+    .check-btn {
+      padding: 8px 16px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: var(--font);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    .result-msg {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 8px;
+      min-height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="unit-nav">
+    <a href="index.html">📖 이야기</a>
+    <a href="sieve.html">🔢 소수의 체</a>
+    <a href="concepts.html" class="active">📝 개념</a>
+    <a href="problems.html">🔑 문제</a>
+  </nav>
+
+  <div class="badge">단원 1 · 소인수분해</div>
+  <h1>개념 정리</h1>
+  <p class="subtitle">카드를 클릭하면 뒤집혀. 뒷면에 설명이 있어.</p>
+
+  <!-- 플래시카드 섹션 -->
+  <div class="section">
+    <h2>핵심 개념 카드 — 클릭해서 뒤집기</h2>
+    <div class="card-grid" id="cardGrid">
+
+      <!-- 카드 구조: .flashcard > .card-inner > .card-front + .card-back -->
+      <div class="flashcard">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="term">소수</div>
+            <div class="hint">Prime Number</div>
+          </div>
+          <div class="card-back">
+            <div class="definition">1과 자기 자신으로만 나누어지는 1보다 큰 자연수</div>
+            <div class="example">예: 2, 3, 5, 7, 11, 13 …<br>※ 1은 소수가 아님!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flashcard">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="term">합성수</div>
+            <div class="hint">Composite Number</div>
+          </div>
+          <div class="card-back">
+            <div class="definition">소수가 아닌 1보다 큰 자연수.<br>약수가 3개 이상인 수. (예: 4=2², 6=2×3)</div>
+            <div class="example">예: 4=2², 6=2×3, 12=2²×3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flashcard">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="term">거듭제곱</div>
+            <div class="hint">2³ = 2×2×2 = 8</div>
+          </div>
+          <div class="card-back">
+            <div class="definition">같은 수를 여러 번 곱한 것.<br>aⁿ : a를 n번 곱함.</div>
+            <div class="example">2⁴ = 16 &nbsp;·&nbsp; 3³ = 27<br>지수(n)가 1이면 생략: 3¹ = 3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flashcard">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="term">소인수분해</div>
+            <div class="hint">Prime Factorization</div>
+          </div>
+          <div class="card-back">
+            <div class="definition">자연수를 소수들의 곱으로만 나타내는 것.</div>
+            <div class="example">60 = 2² × 3 × 5<br>모든 자연수는 단 하나의 소인수분해 결과를 가짐</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flashcard">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="term">최대공약수</div>
+            <div class="hint">GCD — Greatest Common Divisor</div>
+          </div>
+          <div class="card-back">
+            <div class="definition">두 수의 공통 약수 중 가장 큰 것.</div>
+            <div class="example">12 = 2²×3 &nbsp; 18 = 2×3²<br>GCD = 2¹×3¹ = <strong>6</strong><br>공통 소인수를 작은 지수로</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flashcard">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="term">최소공배수</div>
+            <div class="hint">LCM — Least Common Multiple</div>
+          </div>
+          <div class="card-back">
+            <div class="definition">두 수의 공통 배수 중 가장 작은 것.</div>
+            <div class="example">12 = 2²×3 &nbsp; 18 = 2×3²<br>LCM = 2²×3² = <strong>36</strong><br>모든 소인수를 큰 지수로</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 소인수분해 팩터트리 시각화 -->
+  <div class="section">
+    <h2>소인수분해 시각화 — 60을 쪼개봐</h2>
+    <div class="tree-wrap">
+      <div class="tree-row">
+        <div class="tree-node composite">60</div>
+      </div>
+      <div class="tree-arrow">↙ &nbsp;&nbsp;&nbsp;&nbsp; ↘</div>
+      <div class="tree-row">
+        <div class="tree-node prime-n">2</div>
+        <div style="font-size:18px; color:var(--text-muted)">×</div>
+        <div class="tree-node composite">30</div>
+      </div>
+      <div class="tree-arrow" style="padding-left:70px">↙ &nbsp; ↘</div>
+      <div class="tree-row" style="padding-left:70px">
+        <div class="tree-node prime-n">2</div>
+        <span style="font-size:18px; color:var(--text-muted)">×</span>
+        <div class="tree-node composite">15</div>
+      </div>
+      <div class="tree-arrow" style="padding-left:140px">↙ ↘</div>
+      <div class="tree-row" style="padding-left:140px">
+        <div class="tree-node prime-n">3</div>
+        <span style="font-size:18px; color:var(--text-muted)">×</span>
+        <div class="tree-node prime-n">5</div>
+      </div>
+    </div>
+    <p style="text-align:center; font-size:16px; font-weight:700; color:var(--accent)">
+      60 = 2 × 2 × 3 × 5 = 2² × 3 × 5
+    </p>
+    <p style="text-align:center; font-size:13px; color:var(--text-muted); margin-top:6px">
+      빨간 원 = 소수 (더 이상 쪼갤 수 없음) &nbsp;·&nbsp; 파란 원 = 아직 합성수 (계속 쪼개야 함)
+    </p>
+  </div>
+
+  <!-- 빈칸 채우기 -->
+  <div class="section">
+    <h2>빈칸 채우기 — 직접 써봐</h2>
+
+    <div class="fill-row">
+      36 = 2<sup><input id="q1" type="text" placeholder="?" maxlength="2"></sup> × <input id="q2" type="text" placeholder="?" maxlength="2">
+    </div>
+
+    <div class="fill-row">
+      GCD(24, 36) = <input id="q3" type="text" placeholder="?" maxlength="3">
+    </div>
+
+    <div class="fill-row">
+      LCM(4, 6) = <input id="q4" type="text" placeholder="?" maxlength="3">
+    </div>
+
+    <div class="fill-row">
+      1은 소수인가? <input id="q5" type="text" placeholder="O/X" maxlength="1">
+    </div>
+
+    <button class="check-btn" onclick="checkAnswers()">확인</button>
+    <div class="result-msg" id="resultMsg"></div>
+  </div>
+
+  <script>
+    /* ── 플래시카드 클릭 이벤트 ───────────────────────────
+       event delegation: 부모에서 자식 이벤트를 한 번에 처리
+       closest('.flashcard'): 클릭된 요소의 가장 가까운 .flashcard 조상 탐색 */
+    document.getElementById('cardGrid').addEventListener('click', e => {
+      const card = e.target.closest('.flashcard');
+      if (card) card.classList.toggle('flipped'); // toggle: 있으면 제거, 없으면 추가
+    });
+
+    /* ── 빈칸 답 확인 ─────────────────────────────────── */
+    const ANSWERS = { q1: '2', q2: '3', q3: '12', q4: '12', q5: 'X' };
+
+    function checkAnswers() {
+      let correct = 0;
+      for (const [id, ans] of Object.entries(ANSWERS)) {
+        const input = document.getElementById(id);
+        const val   = input.value.trim().toUpperCase();
+        if (val === ans.toUpperCase()) {
+          input.classList.add('correct');
+          input.classList.remove('wrong');
+          correct++;
+        } else if (val !== '') {
+          input.classList.add('wrong');
+          input.classList.remove('correct');
+        }
+      }
+
+      const total = Object.keys(ANSWERS).length;
+      const msg   = document.getElementById('resultMsg');
+      if (correct === total) {
+        msg.textContent = `🎉 ${total}개 모두 정답!`;
+        msg.style.color = '#16a34a';
+      } else {
+        msg.textContent = `${correct} / ${total} 정답. 빨간 칸을 다시 확인해봐.`;
+        msg.style.color = '#b45309';
+      }
+    }
+
+    /* Enter 키로도 확인 */
+    document.querySelectorAll('.fill-row input').forEach(input => {
+      input.addEventListener('keydown', e => { if (e.key === 'Enter') checkAnswers(); });
+    });
+  </script>
+</body>
+</html>
