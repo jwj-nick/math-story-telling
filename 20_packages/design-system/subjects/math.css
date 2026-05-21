@@ -1,0 +1,33 @@
+/*
+ * mathtelling-design-system / subjects / math.css
+ * v0.1 — 2026-05-19
+ *
+ * 수학 과목 테마. [data-subject="math"] 또는 .mt-math 사용.
+ */
+
+[data-subject="math"], .mt-math {
+  --subject-primary:   #5B8FB9;
+  --subject-secondary: #B9D4E8;
+  --subject-accent:    #C9A66B;
+
+  /* KaTeX 수식 강조 */
+  --math-highlight: rgba(91, 143, 185, 0.18);
+  --math-border:    2px solid var(--subject-primary);
+}
+
+/* 수식 블록 */
+.math-block {
+  background: var(--math-highlight);
+  border-left: var(--math-border);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  margin: var(--sp-4) 0;
+  overflow-x: auto;
+}
+
+/* 인라인 수식 */
+.math-inline {
+  background: rgba(91, 143, 185, 0.12);
+  padding: 1px 4px;
+  border-radius: 3px;
+}

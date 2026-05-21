@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko" data-subject="math" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>중1 수학 — MathTelling</title>
+<link rel="stylesheet" href="../../mathtelling-design-system/dist/all.css">
+<link rel="stylesheet" href="../../mathtelling-design-system/subjects/math.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--mt-bg);
+  color: var(--mt-text);
+  min-height: 100vh;
+  font-family: var(--font-ko);
+}
+
+/* ── Top bar ─────────────────────────────── */
+.topbar {
+  background: var(--mt-bg);
+  border-bottom: 1px solid var(--mt-border);
+  padding: var(--sp-3) var(--sp-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar-brand {
+  font-family: var(--font-en);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.08em;
+  color: var(--mt-accent-gold);
+  text-decoration: none;
+}
+.topbar-meta {
+  font-size: var(--fs-xs);
+  color: var(--mt-text-muted);
+  letter-spacing: 0.08em;
+}
+
+/* ── Hero ────────────────────────────────── */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: var(--sp-16) var(--sp-6) var(--sp-12);
+  text-align: center;
+  background:
+    radial-gradient(ellipse 60% 80% at 50% 110%, rgba(91,143,185,0.15) 0%, transparent 70%),
+    var(--mt-bg);
+  border-bottom: 1px solid var(--mt-border);
+}
+.hero-tag {
+  font-family: var(--font-en);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--subject-primary);
+  margin-bottom: var(--sp-3);
+}
+.hero h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-extrabold);
+  margin-bottom: var(--sp-3);
+}
+.hero-sub {
+  color: var(--mt-text-muted);
+  font-size: var(--fs-md);
+  line-height: var(--lh-relaxed);
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+/* ── Section title ───────────────────────── */
+.main {
+  max-width: var(--max-w-app);
+  margin: 0 auto;
+  padding: var(--sp-10) var(--sp-4) var(--sp-16);
+}
+
+.section-title {
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--mt-text-muted);
+  margin-bottom: var(--sp-4);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--mt-border);
+}
+
+/* ── Unit grid ───────────────────────────── */
+.units {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-4);
+}
+
+@media (max-width: 640px) { .units { grid-template-columns: 1fr; } }
+
+.unit-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-5);
+  background: var(--mt-bg-card);
+  border: 1px solid var(--mt-border);
+  border-radius: var(--r-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--tr-fast), transform var(--tr-fast);
+  overflow: hidden;
+}
+
+.unit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--era-color, var(--mt-accent-gold));
+  opacity: 0.85;
+}
+
+.unit-card.coming { cursor: not-allowed; opacity: 0.6; }
+
+.unit-card:not(.coming):hover {
+  border-color: var(--era-color, var(--mt-accent-gold));
+  transform: translateY(-3px);
+}
+
+.unit-num {
+  font-family: var(--font-en);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.1em;
+  color: var(--era-color, var(--mt-accent-gold));
+  font-weight: var(--fw-bold);
+}
+
+.unit-title {
+  font-size: 1.1rem;
+  font-weight: var(--fw-bold);
+}
+
+.unit-person {
+  font-size: var(--fs-sm);
+  color: var(--mt-text-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.unit-era {
+  margin-top: auto;
+  padding-top: var(--sp-3);
+  font-family: var(--font-en);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--era-color, var(--mt-text-muted));
+  opacity: 0.85;
+}
+
+.badge-soon {
+  position: absolute;
+  top: var(--sp-3);
+  right: var(--sp-3);
+  font-family: var(--font-en);
+  font-size: 10px;
+  padding: 2px var(--sp-2);
+  background: var(--mt-bg-alt);
+  border: 1px solid var(--mt-border);
+  border-radius: var(--r-full);
+  color: var(--mt-text-muted);
+  letter-spacing: 0.08em;
+}
+
+.badge-ready {
+  position: absolute;
+  top: var(--sp-3);
+  right: var(--sp-3);
+  font-family: var(--font-en);
+  font-size: 10px;
+  padding: 2px var(--sp-2);
+  background: rgba(212,168,67,0.15);
+  border: 1px solid rgba(212,168,67,0.4);
+  border-radius: var(--r-full);
+  color: var(--mt-accent-gold);
+  letter-spacing: 0.08em;
+  font-weight: var(--fw-bold);
+}
+
+/* ── Footer ─────────────────────────────── */
+.foot {
+  max-width: var(--max-w-app);
+  margin: 0 auto;
+  padding: 0 var(--sp-4) var(--sp-10);
+  font-size: var(--fs-xs);
+  color: var(--mt-text-muted);
+  text-align: center;
+  line-height: var(--lh-relaxed);
+}
+.foot a { color: var(--subject-primary); }
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <a class="topbar-brand" href="../../">⌬ MathTelling</a>
+  <span class="topbar-meta">Math · Grade 7 · Season 1</span>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <p class="hero-tag">⏳ 수학을 만든 사람들과 함께</p>
+  <h1>중1 수학</h1>
+  <p class="hero-sub">
+    교과서의 13단원을 <b>수학자의 이야기</b>로 다시 만나요.<br>
+    각 단원마다 인물 서사 → 개념 탐구 → 기본 문제 → 유형 연습으로 흐름이 이어져요.
+  </p>
+</section>
+
+<main class="main">
+
+  <p class="section-title">단원 · 13</p>
+  <div class="units">
+
+    <a class="unit-card" href="unit-01/index.html" style="--era-color: #D4A843;">
+      <span class="badge-ready">Ready</span>
+      <span class="unit-num">UNIT 01</span>
+      <span class="unit-title">소인수분해</span>
+      <span class="unit-person">🏛 에라토스테네스</span>
+      <span class="unit-era">Ancient · BCE 276–194</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #C56B5C;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 02</span>
+      <span class="unit-title">정수와 유리수</span>
+      <span class="unit-person">🪷 브라마굽타</span>
+      <span class="unit-era">India · 598–668</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #D4A843;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 03</span>
+      <span class="unit-title">문자와 식</span>
+      <span class="unit-person">📜 알콰리즈미</span>
+      <span class="unit-era">Golden Age · c. 780–850</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #D4A843;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 04</span>
+      <span class="unit-title">일차방정식</span>
+      <span class="unit-person">📐 디오판토스</span>
+      <span class="unit-era">Late Antiquity · c. 200–284</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #6E8B7A;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 05</span>
+      <span class="unit-title">좌표와 그래프</span>
+      <span class="unit-person">🪶 데카르트</span>
+      <span class="unit-era">Renaissance · 1596–1650</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #6E8B7A;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 06</span>
+      <span class="unit-title">정비례와 반비례</span>
+      <span class="unit-person">🪶 데카르트</span>
+      <span class="unit-era">Renaissance · 1596–1650</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #D4A843;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 07</span>
+      <span class="unit-title">기본 도형</span>
+      <span class="unit-person">📏 유클리드</span>
+      <span class="unit-era">Ancient · c. BCE 300</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #D4A843;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 08</span>
+      <span class="unit-title">작도와 합동</span>
+      <span class="unit-person">📏 유클리드</span>
+      <span class="unit-era">Ancient · c. BCE 300</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #D4A843;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 09</span>
+      <span class="unit-title">다각형</span>
+      <span class="unit-person">📏 유클리드</span>
+      <span class="unit-era">Ancient · c. BCE 300</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #D4A843;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 10</span>
+      <span class="unit-title">원과 부채꼴</span>
+      <span class="unit-person">⚙ 아르키메데스</span>
+      <span class="unit-era">Ancient · BCE 287–212</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #6E8B7A;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 11</span>
+      <span class="unit-title">다면체와 회전체</span>
+      <span class="unit-person">🎲 케플러</span>
+      <span class="unit-era">Renaissance · 1571–1630</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #6E8B7A;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 12</span>
+      <span class="unit-title">입체도형의 겉넓이와 부피</span>
+      <span class="unit-person">⚙ 아르키메데스</span>
+      <span class="unit-era">Ancient · BCE 287–212</span>
+    </a>
+
+    <a class="unit-card coming" href="#" style="--era-color: #8B6BAE;">
+      <span class="badge-soon">Soon</span>
+      <span class="unit-num">UNIT 13</span>
+      <span class="unit-title">자료의 정리와 해석</span>
+      <span class="unit-person">🏥 나이팅게일</span>
+      <span class="unit-era">Modern · 1820–1910</span>
+    </a>
+
+  </div>
+
+</main>
+
+<footer class="foot">
+  <p>
+    MathTelling · 중1 수학 시즌 1<br>
+    <a href="../../">다른 학년/과목으로</a>
+  </p>
+</footer>
+
+</body>
+</html>

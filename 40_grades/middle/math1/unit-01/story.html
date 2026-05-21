@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko" data-subject="math">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>에라토스테네스 이야기 — 소인수분해 | MathTelling</title>
+<link rel="stylesheet" href="../../../mathtelling-design-system/dist/all.css">
+<link rel="stylesheet" href="../../../mathtelling-design-system/subjects/math.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--mt-bg);
+  color: var(--mt-text);
+  font-family: var(--font-ko);
+  min-height: 100vh;
+}
+
+/* ── Progress dots ─────────────────── */
+.dots-bar {
+  position: fixed;
+  top: 50%;
+  right: var(--sp-4);
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  z-index: 100;
+}
+.dot {
+  width: 10px; height: 10px;
+  border-radius: var(--r-full);
+  background: var(--mt-bg-alt);
+  border: 1px solid var(--mt-border);
+  cursor: pointer;
+  transition: all var(--tr-fast);
+}
+.dot.active, .dot:hover {
+  background: var(--mt-accent-gold);
+  border-color: var(--mt-accent-gold);
+  transform: scale(1.3);
+}
+
+/* ── Scene ─────────────────────────── */
+.scene {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--sp-16) var(--sp-6);
+  max-width: 680px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.scene.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scene-num {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mt-accent-gold);
+  margin-bottom: var(--sp-3);
+}
+.scene h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-extrabold);
+  margin-bottom: var(--sp-6);
+  line-height: var(--lh-tight);
+}
+.scene p {
+  font-size: 1.05rem;
+  line-height: var(--lh-loose);
+  color: var(--mt-text);
+  margin-bottom: var(--sp-4);
+}
+.scene p + p { margin-top: 0; }
+
+/* ── Quote ─────────────────────────── */
+blockquote {
+  border-left: 3px solid var(--mt-accent-gold);
+  padding: var(--sp-4) var(--sp-6);
+  margin: var(--sp-6) 0;
+  background: rgba(201,166,107,0.08);
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+  font-style: italic;
+  color: var(--mt-text-muted);
+}
+
+/* ── Highlight box ─────────────────── */
+.highlight-box {
+  background: var(--mt-bg-card);
+  border: 1px solid var(--mt-border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-6);
+  margin: var(--sp-6) 0;
+}
+.highlight-box .label {
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--mt-accent-gold);
+  margin-bottom: var(--sp-3);
+  font-weight: var(--fw-semibold);
+}
+
+/* ── Math equation ─────────────────── */
+.eq {
+  font-size: 1.1rem;
+  padding: var(--sp-4) 0;
+  text-align: center;
+}
+
+/* ── Sieve grid ────────────────────── */
+.sieve-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px;
+  margin: var(--sp-4) 0;
+}
+.sieve-cell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--r-sm);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  background: var(--mt-bg-alt);
+  color: var(--mt-text-muted);
+}
+.sieve-cell.prime { background: rgba(201,166,107,0.2); color: var(--mt-accent-gold); }
+.sieve-cell.crossed { text-decoration: line-through; opacity: 0.3; }
+.sieve-cell.one { opacity: 0.3; }
+
+/* ── Fun fact ──────────────────────── */
+.fun-fact {
+  background: rgba(143,174,123,0.1);
+  border: 1px solid rgba(143,174,123,0.3);
+  border-radius: var(--r-lg);
+  padding: var(--sp-4) var(--sp-6);
+  margin: var(--sp-4) 0;
+}
+.fun-fact .tag {
+  font-size: var(--fs-xs);
+  color: var(--mt-accent-moss);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--sp-2);
+}
+
+/* ── Writing mission ───────────────── */
+.mission-box {
+  background: rgba(91,143,185,0.08);
+  border: 1px solid rgba(91,143,185,0.25);
+  border-radius: var(--r-lg);
+  padding: var(--sp-6);
+  margin-top: var(--sp-8);
+}
+.mission-box h3 {
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  margin-bottom: var(--sp-4);
+  color: var(--subject-primary, #5B8FB9);
+}
+.mission-box ol { padding-left: var(--sp-6); }
+.mission-box li { margin-bottom: var(--sp-2); font-size: var(--fs-sm); line-height: var(--lh-normal); }
+
+/* ── Nav ───────────────────────────── */
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-4);
+  border-top: 1px solid var(--mt-border);
+  background: var(--mt-bg);
+  position: sticky;
+  bottom: 0;
+}
+.nav-btn {
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: var(--r-full);
+  border: 1px solid var(--mt-border);
+  background: var(--mt-bg-card);
+  color: var(--mt-text-muted);
+  font-size: var(--fs-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--tr-fast);
+}
+.nav-btn:hover { border-color: var(--mt-accent-gold); color: var(--mt-accent-gold); }
+.nav-btn.home { color: var(--mt-accent-gold); border-color: var(--mt-accent-gold); }
+</style>
+</head>
+<body>
+
+<!-- Progress dots -->
+<nav class="dots-bar" aria-label="장면 이동">
+  <div class="dot active" onclick="scrollToScene(0)" title="1장"></div>
+  <div class="dot" onclick="scrollToScene(1)" title="2장"></div>
+  <div class="dot" onclick="scrollToScene(2)" title="3장"></div>
+  <div class="dot" onclick="scrollToScene(3)" title="4장"></div>
+  <div class="dot" onclick="scrollToScene(4)" title="5장"></div>
+</nav>
+
+<!-- Scene 1 -->
+<section class="scene" id="scene-0">
+  <p class="scene-num">1장 · 에라토스테네스 이야기</p>
+  <h2>베타라는 별명</h2>
+  <p>기원전 3세기, 이집트 알렉산드리아.</p>
+  <p>에라토스테네스라는 사람이 있었다. 별명이 좀 이상했다. 친구들이 그를 <strong>베타(β)</strong>라고 불렀는데, 베타는 그리스 알파벳에서 두 번째 글자다. 알파(α)가 첫째라면, 베타는 두 번째.</p>
+  <p>수학에서 1등. 지리학에서도 1등. 시에서도 1등. 천문학에서도 1등. 그런데 왜 베타였을까?</p>
+  <blockquote>
+    "저 친구, 뭐든 잘하긴 하는데… 딱 한 분야의 1등은 아니야."
+    — 당시 학자들
+  </blockquote>
+  <p>에라토스테네스는 그냥 웃었다.</p>
+  <div class="highlight-box">
+    <p class="label">그의 대답</p>
+    <p>"베타면 어때. 모든 분야에서 두 번째면, 그 합은 누구도 못 따라와."</p>
+  </div>
+  <p>그래서 그는 또 다른 별명도 있었다. <strong>펜타틀로스(Pentathlos)</strong> — 5종 경기 선수. 한 종목이 아니라 모든 종목을 하는 사람.</p>
+</section>
+
+<!-- Scene 2 -->
+<section class="scene" id="scene-1">
+  <p class="scene-num">2장 · 에라토스테네스 이야기</p>
+  <h2>알렉산드리아 도서관의 관장</h2>
+  <p>에라토스테네스는 알렉산드리아 도서관의 3대 관장이었다. 당시 세계 최대 도서관 — 70만 권이 넘는 두루마리 책이 있었다고 전해진다.</p>
+  <p>어느 날, 그는 책 사이에서 이상한 기록을 발견했다.</p>
+  <blockquote>
+    "이집트의 작은 도시 시에네(현재 아스완)에서 하짓날 정오, 깊은 우물 바닥까지 햇빛이 비친다."
+  </blockquote>
+  <p>그 순간 그의 머릿속에서 무언가 딸깍 하는 소리가 났다.</p>
+  <div class="highlight-box">
+    <p class="label">에라토스테네스의 생각</p>
+    <p>만약 태양이 정확히 머리 위에 있다면… 여기 알렉산드리아에서 막대기의 그림자는 <em>왜</em> 생기는 걸까?</p>
+    <p>혹시 지구가 평평하지 않아서?</p>
+  </div>
+</section>
+
+<!-- Scene 3 -->
+<section class="scene" id="scene-2">
+  <p class="scene-num">3장 · 에라토스테네스 이야기</p>
+  <h2>막대기 하나로 지구를 재다</h2>
+  <p>에라토스테네스는 알렉산드리아 광장에 막대기를 수직으로 세웠다. 하짓날 정오.</p>
+  <div class="highlight-box">
+    <p class="label">두 도시의 차이</p>
+    <p>시에네 → 우물 바닥까지 햇빛이 비침. 그림자 없음. 태양이 정수리 바로 위.</p>
+    <p>알렉산드리아 → 막대기에 그림자. 각도 <strong>7.2°</strong>.</p>
+  </div>
+  <p>7.2°는 360°의 딱 50분의 1.</p>
+  <p><em>그렇다면 두 도시 거리가 지구 전체 둘레의 50분의 1!</em></p>
+  <div class="eq">$$\text{지구 둘레} = 5000 \times 50 = 250000 \text{ 스타디아} \approx 40000 \text{ km}$$</div>
+  <div class="highlight-box">
+    <p class="label">실제 지구 둘레</p>
+    <p>약 40,008 km. 오차 <strong>1% 미만</strong>.</p>
+    <p>위성도, 비행기도, 컴퓨터도 없던 시대에. 막대기 하나와 도서관 책 한 줄로.</p>
+  </div>
+</section>
+
+<!-- Scene 4 -->
+<section class="scene" id="scene-3">
+  <p class="scene-num">4장 · 에라토스테네스 이야기</p>
+  <h2>소수의 체</h2>
+  <p><strong>소수(prime number)</strong>란 1과 자기 자신만을 약수로 가지는 수. 2, 3, 5, 7, 11, 13…</p>
+  <p>소수는 수학의 원자 같은 존재다. 모든 자연수는 소수들의 곱으로 만들어진다. 어디에 있는지 어떻게 찾을까?</p>
+  <p>에라토스테네스는 <strong>체(sieve)</strong>를 생각했다. 체에 밀가루를 올리면 굵은 알갱이만 남는다. 숫자들을 체에 거르면?</p>
+  <div class="highlight-box">
+    <p class="label">에라토스테네스의 체 — 2~30</p>
+    <div class="sieve-grid">
+      <div class="sieve-cell one">1</div>
+      <div class="sieve-cell prime">2</div><div class="sieve-cell prime">3</div>
+      <div class="sieve-cell crossed">4</div><div class="sieve-cell prime">5</div>
+      <div class="sieve-cell crossed">6</div><div class="sieve-cell prime">7</div>
+      <div class="sieve-cell crossed">8</div><div class="sieve-cell crossed">9</div>
+      <div class="sieve-cell crossed">10</div><div class="sieve-cell prime">11</div>
+      <div class="sieve-cell crossed">12</div><div class="sieve-cell prime">13</div>
+      <div class="sieve-cell crossed">14</div><div class="sieve-cell crossed">15</div>
+      <div class="sieve-cell crossed">16</div><div class="sieve-cell prime">17</div>
+      <div class="sieve-cell crossed">18</div><div class="sieve-cell prime">19</div>
+      <div class="sieve-cell crossed">20</div><div class="sieve-cell crossed">21</div>
+      <div class="sieve-cell crossed">22</div><div class="sieve-cell prime">23</div>
+      <div class="sieve-cell crossed">24</div><div class="sieve-cell crossed">25</div>
+      <div class="sieve-cell crossed">26</div><div class="sieve-cell crossed">27</div>
+      <div class="sieve-cell crossed">28</div><div class="sieve-cell prime">29</div>
+      <div class="sieve-cell crossed">30</div>
+    </div>
+    <p style="font-size:var(--fs-xs);color:var(--mt-text-muted);margin-top:var(--sp-2)">
+      🟡 = 소수 · 취소선 = 합성수 (배수로 제거)
+    </p>
+  </div>
+  <p>이 방법은 2,000년이 넘은 지금도 컴퓨터 프로그래밍에서 그대로 쓴다.</p>
+</section>
+
+<!-- Scene 5 -->
+<section class="scene" id="scene-4">
+  <p class="scene-num">5장 · 에라토스테네스 이야기</p>
+  <h2>소수와 소인수분해</h2>
+  <p>모든 자연수는 소수들의 곱으로 <em>유일하게</em> 나타낼 수 있다.</p>
+  <div class="eq">$$60 = 2^2 \times 3 \times 5 \qquad 36 = 2^2 \times 3^2$$</div>
+  <p>이걸 <strong>소인수분해</strong>라고 한다. 수를 소수(인수)들의 곱으로 쪼개는 것.</p>
+  <p>왜 중요할까? 최대공약수·최소공배수를 구할 때 소인수분해가 핵심 열쇠가 된다.</p>
+  <div class="highlight-box">
+    <p class="label">예시: 36과 48의 최대공약수</p>
+    <div class="eq">$$36 = 2^2 \times 3^2 \qquad 48 = 2^4 \times 3$$</div>
+    <p>공통 소인수: $2^2$과 $3^1$ → 최대공약수 $= 2^2 \times 3 = 12$</p>
+  </div>
+
+  <div class="fun-fact">
+    <p class="tag">🌿 잡학 코너 — 소수 매미</p>
+    <p>북아메리카 매미 중 <strong>13년</strong> 또는 <strong>17년</strong> 주기로 나오는 종이 있다. 왜 소수 주기일까? 소수 주기의 매미는 포식자 주기와 겹칠 확률이 훨씬 낮다. 진화가 수학을 알았던 걸까.</p>
+  </div>
+  <div class="fun-fact">
+    <p class="tag">🔐 잡학 코너 — 소수와 암호</p>
+    <p>인터넷 보안(RSA 암호)의 핵심이 소수다. 두 큰 소수를 곱하면 쉽지만, 거꾸로 소인수분해하기는 매우 어렵다. 온라인 결제 보안이 소인수분해의 어려움에 기반한다.</p>
+  </div>
+
+  <div class="mission-box">
+    <h3>✍️ 글쓰기 미션</h3>
+    <p style="font-size:var(--fs-sm);color:var(--mt-text-muted);margin-bottom:var(--sp-3)">다음 중 하나를 골라 자유롭게 써봐요 (300~500자)</p>
+    <ol>
+      <li>"에라토스테네스가 도서관에서 소수의 체를 처음 떠올린 날 일기"</li>
+      <li>"내가 만약 에라토스테네스라면 다음으로 뭘 재고 싶을까?"</li>
+      <li>"베타 별명을 받았을 때 에라토스테네스의 마음은? 위로 편지 쓰기"</li>
+    </ol>
+  </div>
+</section>
+
+<!-- Bottom nav -->
+<div class="page-nav">
+  <a class="nav-btn home" href="index.html">← 단원 허브</a>
+  <span style="font-size:var(--fs-xs);color:var(--mt-text-muted)">에라토스테네스 이야기</span>
+  <a class="nav-btn" href="concepts.html">개념 탐구 →</a>
+</div>
+
+<script>
+const scenes = document.querySelectorAll('.scene');
+const dots   = document.querySelectorAll('.dot');
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      const i = [...scenes].indexOf(e.target);
+      dots.forEach((d, j) => d.classList.toggle('active', i === j));
+    }
+  });
+}, { threshold: 0.4 });
+
+scenes.forEach(s => io.observe(s));
+
+function scrollToScene(i) {
+  scenes[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+</script>
+</body>
+</html>

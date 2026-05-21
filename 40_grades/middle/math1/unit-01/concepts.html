@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko" data-subject="math">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개념 탐구 — 소인수분해 | MathTelling</title>
+<link rel="stylesheet" href="../../../mathtelling-design-system/dist/all.css">
+<link rel="stylesheet" href="../../../mathtelling-design-system/subjects/math.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--mt-bg);
+  color: var(--mt-text);
+  font-family: var(--font-ko);
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+/* ── Header ───────────────────────── */
+.page-header {
+  padding: var(--sp-8) var(--sp-6) var(--sp-6);
+  border-bottom: 1px solid var(--mt-border);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+}
+.page-header a {
+  font-size: var(--fs-sm);
+  color: var(--mt-text-muted);
+  text-decoration: none;
+}
+.page-header a:hover { color: var(--mt-accent-gold); }
+.page-header h1 { font-size: var(--fs-h3); font-weight: var(--fw-bold); }
+
+/* ── Main ─────────────────────────── */
+.main {
+  max-width: var(--max-w-app);
+  margin: 0 auto;
+  padding: var(--sp-8) var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-8);
+}
+
+/* ── Section card ─────────────────── */
+.section-card {
+  background: var(--mt-bg-card);
+  border: 1px solid var(--mt-border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.section-head {
+  padding: var(--sp-4) var(--sp-6);
+  border-bottom: 1px solid var(--mt-border);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+.section-head .icon { font-size: 20px; }
+.section-head h2 { font-size: 1rem; font-weight: var(--fw-bold); }
+.section-body { padding: var(--sp-6); }
+
+/* ── Sieve ────────────────────────── */
+#sieve-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  margin-bottom: var(--sp-4);
+}
+.sc {
+  aspect-ratio: 1;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: var(--r-sm);
+  font-size: 13px;
+  font-weight: var(--fw-semibold);
+  background: var(--mt-bg-alt);
+  color: var(--mt-text-muted);
+  cursor: default;
+  transition: all 0.4s var(--ease);
+}
+.sc.prime   { background: rgba(201,166,107,0.25); color: var(--mt-accent-gold); }
+.sc.crossed { text-decoration: line-through; opacity: 0.25; background: var(--mt-bg); }
+.sc.one     { opacity: 0.2; }
+.sc.current { background: rgba(184,84,80,0.25); color: var(--mt-accent-red); transform: scale(1.1); }
+
+.sieve-btns {
+  display: flex; gap: var(--sp-2); flex-wrap: wrap; margin-bottom: var(--sp-4);
+}
+.btn {
+  padding: var(--sp-2) var(--sp-5);
+  border-radius: var(--r-full);
+  border: 1px solid var(--mt-border);
+  background: var(--mt-bg-alt);
+  color: var(--mt-text);
+  font-family: var(--font-ko);
+  font-size: var(--fs-sm);
+  cursor: pointer;
+  transition: all var(--tr-fast);
+}
+.btn:hover, .btn.active {
+  background: var(--mt-accent-gold);
+  color: var(--mt-bg);
+  border-color: var(--mt-accent-gold);
+}
+#sieve-status {
+  font-size: var(--fs-sm);
+  color: var(--mt-text-muted);
+  min-height: 24px;
+}
+
+/* ── Factorize calc ───────────────── */
+.calc-row {
+  display: flex; gap: var(--sp-3); align-items: center; margin-bottom: var(--sp-4); flex-wrap: wrap;
+}
+.calc-input {
+  width: 120px;
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--mt-bg-alt);
+  border: 1px solid var(--mt-border);
+  border-radius: var(--r-sm);
+  color: var(--mt-text);
+  font-family: var(--font-ko);
+  font-size: 1rem;
+  outline: none;
+}
+.calc-input:focus { border-color: var(--mt-accent-gold); }
+#factorize-result {
+  font-size: 1.1rem;
+  min-height: 40px;
+  padding: var(--sp-3) 0;
+  color: var(--mt-accent-gold);
+  font-weight: var(--fw-semibold);
+}
+#factor-tree {
+  font-family: var(--font-en);
+  font-size: var(--fs-sm);
+  color: var(--mt-text-muted);
+  white-space: pre;
+  margin-top: var(--sp-2);
+  line-height: 1.8;
+}
+
+/* ── GCD/LCM ──────────────────────── */
+.gcd-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); margin-bottom: var(--sp-4);
+}
+@media (max-width: 480px) { .gcd-row { grid-template-columns: 1fr; } }
+.gcd-label { font-size: var(--fs-xs); color: var(--mt-text-muted); margin-bottom: var(--sp-2); }
+#gcd-result {
+  padding: var(--sp-4);
+  background: var(--mt-bg-alt);
+  border-radius: var(--r-md);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-loose);
+  min-height: 60px;
+}
+#gcd-result span { color: var(--mt-accent-gold); font-weight: var(--fw-bold); }
+
+/* ── Bottom nav ───────────────────── */
+.page-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: var(--sp-4) var(--sp-6);
+  border-top: 1px solid var(--mt-border);
+  background: var(--mt-bg);
+  position: fixed; bottom: 0; left: 0; right: 0;
+}
+.nav-btn {
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: var(--r-full);
+  border: 1px solid var(--mt-border);
+  background: var(--mt-bg-card);
+  color: var(--mt-text-muted);
+  font-size: var(--fs-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--tr-fast);
+}
+.nav-btn:hover { border-color: var(--mt-accent-gold); color: var(--mt-accent-gold); }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <a href="index.html">← 단원 허브</a>
+  <h1>🔍 개념 탐구 — 소인수분해</h1>
+</header>
+
+<main class="main">
+
+  <!-- 1. 에라토스테네스의 체 -->
+  <div class="section-card">
+    <div class="section-head">
+      <span class="icon">🧮</span>
+      <h2>에라토스테네스의 체 — 직접 해보기</h2>
+    </div>
+    <div class="section-body">
+      <p style="font-size:var(--fs-sm);color:var(--mt-text-muted);margin-bottom:var(--sp-4)">
+        소수 단계를 하나씩 눌러보세요. 배수가 하나씩 지워집니다.
+      </p>
+      <div class="sieve-btns">
+        <button class="btn" id="btn-reset" onclick="resetSieve()">↺ 초기화</button>
+        <button class="btn" id="btn-2" onclick="sieveStep(2)">× 2의 배수 지우기</button>
+        <button class="btn" id="btn-3" onclick="sieveStep(3)">× 3의 배수 지우기</button>
+        <button class="btn" id="btn-5" onclick="sieveStep(5)">× 5의 배수 지우기</button>
+        <button class="btn" id="btn-7" onclick="sieveStep(7)">× 7의 배수 지우기</button>
+        <button class="btn" onclick="showAllPrimes()">✓ 소수만 보기</button>
+      </div>
+      <div id="sieve-grid"></div>
+      <p id="sieve-status"></p>
+    </div>
+  </div>
+
+  <!-- 2. 소인수분해 계산기 -->
+  <div class="section-card">
+    <div class="section-head">
+      <span class="icon">🔢</span>
+      <h2>소인수분해 계산기</h2>
+    </div>
+    <div class="section-body">
+      <p style="font-size:var(--fs-sm);color:var(--mt-text-muted);margin-bottom:var(--sp-4)">
+        2~1000 사이의 수를 입력하면 소인수분해 결과를 보여줍니다.
+      </p>
+      <div class="calc-row">
+        <input class="calc-input" id="fact-input" type="number" min="2" max="1000" value="60"
+          placeholder="숫자 입력" oninput="factorize()">
+        <button class="btn active" onclick="factorize()">분해하기</button>
+      </div>
+      <div id="factorize-result"></div>
+      <div id="factor-tree"></div>
+    </div>
+  </div>
+
+  <!-- 3. GCD / LCM -->
+  <div class="section-card">
+    <div class="section-head">
+      <span class="icon">🔗</span>
+      <h2>최대공약수 · 최소공배수 계산기</h2>
+    </div>
+    <div class="section-body">
+      <div class="gcd-row">
+        <div>
+          <p class="gcd-label">첫 번째 수</p>
+          <input class="calc-input" id="gcd-a" type="number" min="2" max="1000" value="36" oninput="calcGCDLCM()">
+        </div>
+        <div>
+          <p class="gcd-label">두 번째 수</p>
+          <input class="calc-input" id="gcd-b" type="number" min="2" max="1000" value="48" oninput="calcGCDLCM()">
+        </div>
+      </div>
+      <div id="gcd-result"></div>
+    </div>
+  </div>
+
+</main>
+
+<div class="page-nav">
+  <a class="nav-btn" href="story.html">← 이야기</a>
+  <span style="font-size:var(--fs-xs);color:var(--mt-text-muted)">개념 탐구</span>
+  <a class="nav-btn" href="problems/basic.html">기본 문제 →</a>
+</div>
+
+<script>
+/* ── Sieve ──────────────────────────────────────────── */
+const N = 50;
+let crossed = new Set([1]);
+
+function buildGrid() {
+  const g = document.getElementById('sieve-grid');
+  g.innerHTML = '';
+  for (let i = 1; i <= N; i++) {
+    const d = document.createElement('div');
+    d.className = 'sc' + (i === 1 ? ' one' : '');
+    d.id = 'sc-' + i;
+    d.textContent = i;
+    g.appendChild(d);
+  }
+}
+
+function resetSieve() {
+  crossed = new Set([1]);
+  buildGrid();
+  document.getElementById('sieve-status').textContent = '';
+  document.querySelectorAll('.sieve-btns .btn').forEach(b => b.classList.remove('active'));
+}
+
+function sieveStep(p) {
+  if (crossed.has(p)) return;
+  let cnt = 0;
+  for (let k = p * 2; k <= N; k += p) {
+    if (!crossed.has(k)) {
+      crossed.add(k);
+      document.getElementById('sc-' + k).className = 'sc crossed';
+      cnt++;
+    }
+  }
+  document.getElementById('sc-' + p).className = 'sc prime';
+  document.getElementById('sieve-status').textContent =
+    `${p}의 배수 ${cnt}개 제거 완료. ${p}는 소수입니다.`;
+  document.getElementById('btn-' + p)?.classList.add('active');
+}
+
+function showAllPrimes() {
+  for (let i = 2; i <= N; i++) {
+    if (!crossed.has(i)) document.getElementById('sc-' + i).className = 'sc prime';
+  }
+  const primes = [];
+  for (let i = 2; i <= N; i++) if (!crossed.has(i)) primes.push(i);
+  document.getElementById('sieve-status').textContent =
+    `2~${N} 사이 소수 ${primes.length}개: ${primes.join(', ')}`;
+}
+
+buildGrid();
+
+/* ── Factorize ──────────────────────────────────────── */
+function primeFactors(n) {
+  const factors = [];
+  for (let d = 2; d * d <= n; d++) {
+    while (n % d === 0) { factors.push(d); n = Math.floor(n / d); }
+  }
+  if (n > 1) factors.push(n);
+  return factors;
+}
+
+function toExponentForm(factors) {
+  const map = {};
+  factors.forEach(f => map[f] = (map[f] || 0) + 1);
+  return Object.entries(map)
+    .map(([b, e]) => e > 1 ? `${b}<sup>${e}</sup>` : `${b}`)
+    .join(' × ');
+}
+
+function toTreeText(n, factors) {
+  if (factors.length === 0) return `${n} (소수)`;
+  let lines = [`${n}`];
+  let cur = n;
+  for (let i = 0; i < factors.length - 1; i++) {
+    const p = factors[i];
+    const q = cur / p;
+    const indent = '  '.repeat(i + 1);
+    lines.push(`${indent}├─ ${p} (소인수)`);
+    lines.push(`${indent}└─ ${q}`);
+    cur = q;
+  }
+  lines.push(`${'  '.repeat(factors.length)}└─ ${factors[factors.length - 1]} (소인수)`);
+  return lines.join('\n');
+}
+
+function factorize() {
+  const n = parseInt(document.getElementById('fact-input').value);
+  const res = document.getElementById('factorize-result');
+  const tree = document.getElementById('factor-tree');
+  if (!n || n < 2 || n > 1000) {
+    res.innerHTML = '<span style="color:var(--mt-accent-red)">2~1000 사이 정수를 입력하세요</span>';
+    tree.textContent = '';
+    return;
+  }
+  const factors = primeFactors(n);
+  if (factors.length === 1) {
+    res.innerHTML = `${n} = <strong>${n}</strong> &nbsp;&nbsp;<span style="font-size:var(--fs-sm);color:var(--mt-text-muted)">(소수)</span>`;
+    tree.textContent = '';
+    return;
+  }
+  res.innerHTML = `${n} = ${toExponentForm(factors)}`;
+  tree.textContent = toTreeText(n, factors);
+  if (window.renderMathInElement) renderMathInElement(res);
+}
+
+factorize();
+
+/* ── GCD / LCM ───────────────────────────────────────── */
+function gcd(a, b) { return b === 0 ? a : gcd(b, a % b); }
+
+function calcGCDLCM() {
+  const a = parseInt(document.getElementById('gcd-a').value);
+  const b = parseInt(document.getElementById('gcd-b').value);
+  const out = document.getElementById('gcd-result');
+  if (!a || !b || a < 2 || b < 2 || a > 1000 || b > 1000) {
+    out.innerHTML = '2~1000 사이 정수 두 개를 입력하세요.'; return;
+  }
+  const fa = primeFactors(a);
+  const fb = primeFactors(b);
+  const g  = gcd(a, b);
+  const l  = (a * b) / g;
+
+  out.innerHTML =
+    `${a} = ${toExponentForm(fa) || a}<br>` +
+    `${b} = ${toExponentForm(fb) || b}<br><br>` +
+    `최대공약수 (GCD) = <span>${g}</span><br>` +
+    `최소공배수 (LCM) = <span>${l}</span>`;
+}
+
+calcGCDLCM();
+</script>
+</body>
+</html>
