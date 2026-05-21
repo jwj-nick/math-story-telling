@@ -1,0 +1,33 @@
+# 민감 자료
+.private/
+!.private/.gitkeep
+
+# 빌드 산출물
+60_deploy/middle-school/*
+60_deploy/high-school/*
+60_deploy/channel/*
+!60_deploy/.gitkeep
+!60_deploy/middle-school/.gitkeep
+!60_deploy/high-school/.gitkeep
+!60_deploy/channel/.gitkeep
+
+# 영상·이미지 binary (생성 가능 자산)
+*.mp4
+*.mp3
+*.wav
+50_channel/**/_assets/*.png
+50_channel/**/_assets/*.jpg
+50_channel/**/_assets/*.jpeg
+50_channel/**/_assets/*.webp
+50_channel/**/poster*.jpg
+50_channel/**/poster*.png
+
+# OS·에디터
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/settings.json
+
+# 일시 파일
+*.tmp
+*.log
