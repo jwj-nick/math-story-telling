@@ -1,0 +1,53 @@
+{
+  "id": "09",
+  "slug-en": "polygons",
+  "title-ko": "다각형",
+  "title-en": "Polygons",
+  "grade": "mid1",
+  "chapter": 9,
+  "persons": [
+    {
+      "ref": "pythagoras",
+      "role": "primary",
+      "era-palette": "era-ancient",
+      "signature-color": "#7A8C5C",
+      "signature-object": "정오각형 별 (펜타그램)",
+      "story-hook": "정오각형 속 황금비 — 피타고라스 학파의 비밀",
+      "videos": ["pentagon-and-golden-ratio"]
+    },
+    {
+      "ref": "kepler",
+      "role": "secondary",
+      "era-palette": "era-modern",
+      "signature-color": "#8E5A3C",
+      "signature-object": "황동 천체 모형",
+      "story-hook": "정다각형으로 평면을 채우는 11가지 방법 (1619)",
+      "videos": ["tiling-the-plane"]
+    }
+  ],
+  "key-concepts": [
+    "다각형 — 변·꼭짓점·대각선",
+    "대각선의 수 = n(n−3)/2",
+    "삼각형의 내각합 = 180°",
+    "외각의 정리",
+    "다각형의 내각합 = 180°(n−2)",
+    "다각형의 외각합 = 360° (항상)",
+    "정다각형의 한 내각·한 외각"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "다각형 정의·이름·구성요소" },
+    { "id": "T02", "name": "대각선의 수" },
+    { "id": "T03", "name": "삼각형 내각·외각" },
+    { "id": "T04", "name": "다각형의 내각합" },
+    { "id": "T05", "name": "다각형의 외각합" },
+    { "id": "T06", "name": "정다각형의 한 내각·한 외각" },
+    { "id": "T07", "name": "다각형의 각 활용 (별 모양·복합)" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/09_다각형/index.html",
+    "story": "40_grades/middle/math1/09_다각형/story.html",
+    "concepts": "40_grades/middle/math1/09_다각형/concepts.html",
+    "problems-basic": "40_grades/middle/math1/09_다각형/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/09_다각형/problems/types.html"
+  }
+}

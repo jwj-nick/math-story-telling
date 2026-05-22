@@ -1,0 +1,53 @@
+{
+  "id": "04",
+  "slug-en": "linear-equations",
+  "title-ko": "일차방정식",
+  "title-en": "Linear Equations",
+  "grade": "mid1",
+  "chapter": 4,
+  "persons": [
+    {
+      "ref": "diophantus",
+      "role": "primary",
+      "era-palette": "era-ancient",
+      "signature-color": "#4A6B8C",
+      "signature-object": "양피지 두루마리",
+      "story-hook": "디오판토스 묘비 문제 — 그의 인생을 방정식으로",
+      "videos": ["arithmetica-and-epitaph"]
+    },
+    {
+      "ref": "al-khwarizmi",
+      "role": "secondary",
+      "era-palette": "era-medieval",
+      "signature-color": "#C0604A",
+      "signature-object": "균형 저울",
+      "story-hook": "일차·이차방정식 6유형의 체계적 해법",
+      "videos": ["six-types-of-equations"]
+    }
+  ],
+  "key-concepts": [
+    "등식 (equation) — 방정식 vs 항등식",
+    "등식의 성질",
+    "이항 (transposition)",
+    "동류항 정리",
+    "일차방정식의 해",
+    "비례식·괄호·소수·분수 계수 방정식",
+    "일차방정식의 활용 (문장제)"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "방정식 / 항등식 판별" },
+    { "id": "T02", "name": "등식의 성질 활용" },
+    { "id": "T03", "name": "기본 일차방정식 풀기" },
+    { "id": "T04", "name": "괄호·분수·소수 계수 방정식" },
+    { "id": "T05", "name": "해의 조건으로 미정계수 구하기" },
+    { "id": "T06", "name": "일차방정식의 활용 (수·나이·도형)" },
+    { "id": "T07", "name": "일차방정식의 활용 (거리·속력·시간·농도)" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/04_일차방정식/index.html",
+    "story": "40_grades/middle/math1/04_일차방정식/story.html",
+    "concepts": "40_grades/middle/math1/04_일차방정식/concepts.html",
+    "problems-basic": "40_grades/middle/math1/04_일차방정식/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/04_일차방정식/problems/types.html"
+  }
+}

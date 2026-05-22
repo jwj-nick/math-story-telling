@@ -1,0 +1,53 @@
+{
+  "id": "02",
+  "slug-en": "integers-and-rational-numbers",
+  "title-ko": "정수와 유리수",
+  "title-en": "Integers and Rational Numbers",
+  "grade": "mid1",
+  "chapter": 2,
+  "persons": [
+    {
+      "ref": "brahmagupta",
+      "role": "primary",
+      "era-palette": "era-ancient",
+      "signature-color": "#9C5C8A",
+      "signature-object": "점토판 (음수·양수 기록)",
+      "story-hook": "0과 음수를 정식 수로 다룬 첫 수학자 (628 인도)",
+      "videos": ["zero-and-negatives"]
+    },
+    {
+      "ref": "al-khwarizmi",
+      "role": "secondary",
+      "era-palette": "era-medieval",
+      "signature-color": "#C0604A",
+      "signature-object": "균형 저울",
+      "story-hook": "'al-jabr' — 음수 항을 양변으로 옮기는 균형의 기술",
+      "videos": ["restoration-and-balancing"]
+    }
+  ],
+  "key-concepts": [
+    "정수 (integer)",
+    "유리수 (rational number)",
+    "양수·음수 (positive·negative)",
+    "절댓값 (absolute value)",
+    "수직선 (number line)",
+    "대소 관계 (order)",
+    "사칙연산 (four operations)"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "수의 분류" },
+    { "id": "T02", "name": "수직선과 좌표" },
+    { "id": "T03", "name": "절댓값" },
+    { "id": "T04", "name": "대소 관계" },
+    { "id": "T05", "name": "정수·유리수 덧셈뺄셈" },
+    { "id": "T06", "name": "정수·유리수 곱셈나눗셈" },
+    { "id": "T07", "name": "사칙혼합계산" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/02_정수와유리수/index.html",
+    "story": "40_grades/middle/math1/02_정수와유리수/story.html",
+    "concepts": "40_grades/middle/math1/02_정수와유리수/concepts.html",
+    "problems-basic": "40_grades/middle/math1/02_정수와유리수/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/02_정수와유리수/problems/types.html"
+  }
+}

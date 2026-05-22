@@ -567,3 +567,39 @@ frontmatter의 `unit` 필드: 인물이 여러 단원 등장 시 primary 단원�
 ### 2.C.3 다음 라운드
 
 Round 2.D — 13단원 `30_content/units/NN/meta.json` 일괄 작성 (schema v2 + persons 풀 반영).
+
+---
+
+## Round 2.D — 13단원 meta.json 일괄 작성
+
+### 2.D.1 산출물
+
+12개 신규 meta.json 작성 (01은 Round 2.A에서 적용 완료, 동일 schema):
+
+```
+30_content/units/02/meta.json   integers-and-rational-numbers   (brahmagupta + al-khwarizmi)
+30_content/units/03/meta.json   algebraic-expressions           (al-khwarizmi + viete)
+30_content/units/04/meta.json   linear-equations                (diophantus + al-khwarizmi)
+30_content/units/05/meta.json   coordinate-plane                (descartes + fermat)
+30_content/units/06/meta.json   direct-and-inverse-variation    (kepler + boyle)
+30_content/units/07/meta.json   points-lines-and-angles         (euclid + thales)
+30_content/units/08/meta.json   constructions-and-congruence    (euclid + gauss)
+30_content/units/09/meta.json   polygons                        (pythagoras + kepler)
+30_content/units/10/meta.json   circles-and-sectors             (archimedes + liu-hui)
+30_content/units/11/meta.json   polyhedra-and-solids-of-revolution (plato + kepler)
+30_content/units/12/meta.json   surface-area-and-volume         (archimedes + cavalieri)
+30_content/units/13/meta.json   data-analysis-and-statistics    (nightingale + playfair)
+```
+
+### 2.D.2 채움 정확도
+
+- `id·slug-en·title-{ko,en}·grade·chapter·persons`: **확정** (Round 2.A·2.B 정신 그대로)
+- `key-concepts`: 한국 중1 교과과정 표준 + 각 단원 `problems/types.md` 헤더 참조하여 7~8 항목씩
+- `problem-types`: 각 단원 `problems/types.md` 의 7유형 그대로 (Q1-3 검토에서 walk_01 누락 외엔 일관성 확인됨)
+- `pages`: 새 repo 경로 `40_grades/middle/math1/NN_*/...` (mathtelling apps 옛 경로 모두 갱신)
+
+`key-concepts`·`problem-types`는 Phase 1·5-b에서 더 정밀화 가능. 지금 단계는 schema 채움 완성도 우선.
+
+### 2.D.3 다음 라운드
+
+Round 2.E — `10_system/10_principles/UNIT_PAGE_STANDARD.md` 신규 작성 (인물 카드 + 영상 link UI + 단원 페이지 4파일 표준).

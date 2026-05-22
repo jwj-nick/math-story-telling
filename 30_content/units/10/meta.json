@@ -1,0 +1,53 @@
+{
+  "id": "10",
+  "slug-en": "circles-and-sectors",
+  "title-ko": "원과 부채꼴",
+  "title-en": "Circles and Sectors",
+  "grade": "mid1",
+  "chapter": 10,
+  "persons": [
+    {
+      "ref": "archimedes",
+      "role": "primary",
+      "era-palette": "era-ancient",
+      "signature-color": "#8E6A3C",
+      "signature-object": "모래판 (그림을 그리던)",
+      "story-hook": "96각형으로 추정한 π — 측정의 거장 (BC 3세기)",
+      "videos": ["measurement-of-circle"]
+    },
+    {
+      "ref": "liu-hui",
+      "role": "secondary",
+      "era-palette": "era-ancient",
+      "signature-color": "#A04D4D",
+      "signature-object": "죽간 (대나무 책)",
+      "story-hook": "3072각형으로 π=3.14159 (263년 중국)",
+      "videos": ["chinese-pi-refinement"]
+    }
+  ],
+  "key-concepts": [
+    "원의 구성요소 — 중심·반지름·지름·호·현·할선·접선",
+    "원의 둘레 C = 2πr",
+    "원의 넓이 A = πr²",
+    "부채꼴 — 두 반지름 + 호",
+    "활꼴 — 한 현 + 호",
+    "중심각·호의 길이·부채꼴의 넓이의 비례",
+    "원과 직선의 위치 관계"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "원의 구성요소" },
+    { "id": "T02", "name": "원의 둘레와 넓이" },
+    { "id": "T03", "name": "부채꼴과 활꼴 구분" },
+    { "id": "T04", "name": "부채꼴의 호의 길이·넓이" },
+    { "id": "T05", "name": "중심각과 호의 길이·넓이 비례" },
+    { "id": "T06", "name": "복합 도형 — 둘레·넓이 합·차" },
+    { "id": "T07", "name": "원과 직선의 위치 관계" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/10_원과부채꼴/index.html",
+    "story": "40_grades/middle/math1/10_원과부채꼴/story.html",
+    "concepts": "40_grades/middle/math1/10_원과부채꼴/concepts.html",
+    "problems-basic": "40_grades/middle/math1/10_원과부채꼴/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/10_원과부채꼴/problems/types.html"
+  }
+}

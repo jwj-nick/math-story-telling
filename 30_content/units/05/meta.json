@@ -1,0 +1,53 @@
+{
+  "id": "05",
+  "slug-en": "coordinate-plane",
+  "title-ko": "좌표와 그래프",
+  "title-en": "The Coordinate Plane",
+  "grade": "mid1",
+  "chapter": 5,
+  "persons": [
+    {
+      "ref": "descartes",
+      "role": "primary",
+      "era-palette": "era-modern",
+      "signature-color": "#6B9BD8",
+      "signature-object": "파리 (천장을 기어다니는)",
+      "story-hook": "침대의 파리 → 좌표의 발견 (1619, La Géométrie)",
+      "videos": ["dream-of-the-fly"]
+    },
+    {
+      "ref": "fermat",
+      "role": "secondary",
+      "era-palette": "era-modern",
+      "signature-color": "#5E8C7D",
+      "signature-object": "책의 여백 (메모를 적던)",
+      "story-hook": "데카르트와 독립적으로 해석기하 발견한 변호사",
+      "videos": ["independent-coordinates"]
+    }
+  ],
+  "key-concepts": [
+    "순서쌍 (ordered pair)",
+    "좌표평면 (coordinate plane)",
+    "x좌표·y좌표",
+    "원점·x축·y축",
+    "사분면 (quadrant) — 1·2·3·4",
+    "그래프 — 점·선·곡선",
+    "그래프 해석 (시간-거리·시간-온도 등)"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "순서쌍과 좌표" },
+    { "id": "T02", "name": "사분면 판별 (수치 좌표)" },
+    { "id": "T03", "name": "사분면 판별 (문자 부호 조건)" },
+    { "id": "T04", "name": "좌표평면 위 도형의 넓이" },
+    { "id": "T05", "name": "그래프 읽기 — 변량의 변화" },
+    { "id": "T06", "name": "그래프 해석 — 상황 매칭" },
+    { "id": "T07", "name": "그래프 그리기 — 상황 → 그래프" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/05_좌표와그래프/index.html",
+    "story": "40_grades/middle/math1/05_좌표와그래프/story.html",
+    "concepts": "40_grades/middle/math1/05_좌표와그래프/concepts.html",
+    "problems-basic": "40_grades/middle/math1/05_좌표와그래프/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/05_좌표와그래프/problems/types.html"
+  }
+}

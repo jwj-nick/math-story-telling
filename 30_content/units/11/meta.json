@@ -1,0 +1,53 @@
+{
+  "id": "11",
+  "slug-en": "polyhedra-and-solids-of-revolution",
+  "title-ko": "다면체와 회전체",
+  "title-en": "Polyhedra and Solids of Revolution",
+  "grade": "mid1",
+  "chapter": 11,
+  "persons": [
+    {
+      "ref": "plato",
+      "role": "primary",
+      "era-palette": "era-ancient",
+      "signature-color": "#5C7DA8",
+      "signature-object": "정다면체 모형",
+      "story-hook": "우주의 다섯 원소 = 다섯 정다면체 (Timaeus)",
+      "videos": ["five-platonic-solids"]
+    },
+    {
+      "ref": "kepler",
+      "role": "secondary",
+      "era-palette": "era-modern",
+      "signature-color": "#8E5A3C",
+      "signature-object": "황동 천체 모형",
+      "story-hook": "정다면체 안에 행성 궤도를 끼워 넣다 (1596)",
+      "videos": ["mysterium-cosmographicum"]
+    }
+  ],
+  "key-concepts": [
+    "다면체 — 면·모서리·꼭짓점 (V·E·F)",
+    "각기둥·각뿔·각뿔대",
+    "정다면체 5종 (정사·정육·정팔·정십이·정이십)",
+    "오일러 공식 V − E + F = 2",
+    "회전체 — 회전축·회전면",
+    "원기둥·원뿔·원뿔대·구",
+    "회전체의 단면"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "다면체 분류와 구성요소" },
+    { "id": "T02", "name": "각기둥·각뿔·각뿔대 (V·E·F)" },
+    { "id": "T03", "name": "정다면체 5종 — 특성과 분별" },
+    { "id": "T04", "name": "오일러 공식 활용" },
+    { "id": "T05", "name": "회전체의 종류와 회전축" },
+    { "id": "T06", "name": "회전체의 단면 (수직·수평)" },
+    { "id": "T07", "name": "복합 입체 — 결합·분리" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/11_다면체와회전체/index.html",
+    "story": "40_grades/middle/math1/11_다면체와회전체/story.html",
+    "concepts": "40_grades/middle/math1/11_다면체와회전체/concepts.html",
+    "problems-basic": "40_grades/middle/math1/11_다면체와회전체/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/11_다면체와회전체/problems/types.html"
+  }
+}

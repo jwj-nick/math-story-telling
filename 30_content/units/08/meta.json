@@ -1,0 +1,52 @@
+{
+  "id": "08",
+  "slug-en": "constructions-and-congruence",
+  "title-ko": "작도와 합동",
+  "title-en": "Constructions and Congruence",
+  "grade": "mid1",
+  "chapter": 8,
+  "persons": [
+    {
+      "ref": "euclid",
+      "role": "primary",
+      "era-palette": "era-ancient",
+      "signature-color": "#8B7355",
+      "signature-object": "컴퍼스·자",
+      "story-hook": "두 도구만으로 작도하는 그리스 전통",
+      "videos": ["compass-and-straightedge"]
+    },
+    {
+      "ref": "gauss",
+      "role": "secondary",
+      "era-palette": "era-modern",
+      "signature-color": "#3E5A6E",
+      "signature-object": "컴퍼스·자",
+      "story-hook": "19살 가우스의 정17각형 작도 (1796)",
+      "videos": ["regular-17-gon"]
+    }
+  ],
+  "key-concepts": [
+    "작도 — 자와 컴퍼스만 사용",
+    "길이 옮기기·각 옮기기",
+    "수직이등분선·각의 이등분선 작도",
+    "삼각형의 합동 (SSS, SAS, ASA)",
+    "삼각형의 결정조건",
+    "합동인 도형의 성질"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "작도 도구·기본 작도의 의미" },
+    { "id": "T02", "name": "길이 옮기기·각 옮기기" },
+    { "id": "T03", "name": "수직이등분선 작도" },
+    { "id": "T04", "name": "각의 이등분선 작도" },
+    { "id": "T05", "name": "삼각형의 작도" },
+    { "id": "T06", "name": "삼각형의 합동 조건 (SSS·SAS·ASA)" },
+    { "id": "T07", "name": "합동 활용 — 도형에서 미지각·미지변" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/08_작도와합동/index.html",
+    "story": "40_grades/middle/math1/08_작도와합동/story.html",
+    "concepts": "40_grades/middle/math1/08_작도와합동/concepts.html",
+    "problems-basic": "40_grades/middle/math1/08_작도와합동/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/08_작도와합동/problems/types.html"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "07",
+  "slug-en": "points-lines-and-angles",
+  "title-ko": "기본도형",
+  "title-en": "Points, Lines, and Angles",
+  "grade": "mid1",
+  "chapter": 7,
+  "persons": [
+    {
+      "ref": "euclid",
+      "role": "primary",
+      "era-palette": "era-ancient",
+      "signature-color": "#8B7355",
+      "signature-object": "Elements 두루마리",
+      "story-hook": "5개 공준으로 시작하는 기하학의 토대 (BC 300)",
+      "videos": ["elements-five-postulates"]
+    },
+    {
+      "ref": "thales",
+      "role": "secondary",
+      "era-palette": "era-ancient",
+      "signature-color": "#A89368",
+      "signature-object": "막대기 (해시계)",
+      "story-hook": "그림자로 피라미드 높이를 잰 최초의 닮음 정리 (BC 6세기)",
+      "videos": ["shadow-of-pyramid"]
+    }
+  ],
+  "key-concepts": [
+    "점·선·면",
+    "직선·반직선·선분",
+    "선분의 길이·중점",
+    "각 — 예각·직각·둔각·평각",
+    "맞꼭지각 (vertical angles)",
+    "동위각·엇각 — 평행선 (parallel lines)",
+    "두 직선의 위치 관계"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "직선·반직선·선분 표기 구분" },
+    { "id": "T02", "name": "선분 길이의 합·중점" },
+    { "id": "T03", "name": "각의 종류와 크기 계산" },
+    { "id": "T04", "name": "맞꼭지각" },
+    { "id": "T05", "name": "수직·수선·거리" },
+    { "id": "T06", "name": "평행선과 동위각·엇각" },
+    { "id": "T07", "name": "두 직선의 위치 관계 (평면·공간)" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/07_기본도형/index.html",
+    "story": "40_grades/middle/math1/07_기본도형/story.html",
+    "concepts": "40_grades/middle/math1/07_기본도형/concepts.html",
+    "problems-basic": "40_grades/middle/math1/07_기본도형/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/07_기본도형/problems/types.html"
+  }
+}
