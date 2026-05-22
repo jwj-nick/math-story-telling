@@ -425,3 +425,96 @@ slug-en은 URL 어휘 (kebab-case), title-en은 사람 읽는 표제 (Title Case
 ### 2.A.5 다음 라운드
 
 Round 2.B — 13단원 인물 풀 제안 (NCC가 풍부하게 채움. Nick은 추가만, 솎아내지 않음).
+
+---
+
+## Round 2.B — 13단원 인물 풀 제안 (NCC 풍부 채움)
+
+### 2.B.1 제안 원칙
+
+- **단원당 primary 1명 + secondary 1명**: 두 인물이 단원의 핵 episode 둘로 묶임. Nick R1-D 답("한 단원에 여러 인물") 충족.
+- **인물 재출현 OK**: 같은 인물이 여러 단원에 등장. 단 episode-key는 다르게 (인물의 서로 다른 이야기).
+- **시대순 흐름 1순위 아님**: 개념 적합성 우선. 시대 다양성은 era-palette로 표현.
+- **cameo (3번째 인물)**: 인물 md 없어도 됨. UNIT_PAGE_STANDARD에서 "참고" 정도 노출 — Round 2.E에서 결정. 이번 풀에는 미포함.
+
+### 2.B.2 13단원 인물·episode 풀
+
+| # | 단원 (slug-en) | role | person (ref) | era-palette | episode-key | story-hook (1줄) |
+|---|---|---|---|---|---|---|
+| **01** | prime-factorization | primary | eratosthenes ✓ | era-ancient | `sieve-of-eratosthenes` | 알렉산드리아의 도서관장이 만든 소수를 걸러내는 체 |
+| 01 | prime-factorization | secondary | euclid ✓ | era-ancient | `fundamental-theorem-of-arithmetic` | 모든 정수는 소수의 곱으로 유일하게 분해된다 (Elements VII) |
+| **02** | integers-and-rational-numbers | primary | **brahmagupta** ✗ | era-ancient | `zero-and-negatives` | 0과 음수를 정식 수로 다룬 첫 수학자 (628 인도) |
+| 02 | integers-and-rational-numbers | secondary | al-khwarizmi ✓ | era-medieval | `restoration-and-balancing` | "al-jabr" — 음수 항을 양변으로 옮기는 균형의 기술 |
+| **03** | algebraic-expressions | primary | al-khwarizmi ✓ | era-medieval | `birth-of-algebra` | "Al-Kitāb al-mukhtaṣar" — 대수학의 탄생 (820) |
+| 03 | algebraic-expressions | secondary | **viete** ✗ | era-modern | `letters-for-numbers` | 미지수=모음·상수=자음으로 표기한 첫 수학자 (1591) |
+| **04** | linear-equations | primary | **diophantus** ✗ | era-ancient | `arithmetica-and-epitaph` | 디오판토스 묘비 문제 — 그의 인생을 방정식으로 |
+| 04 | linear-equations | secondary | al-khwarizmi ✓ | era-medieval | `six-types-of-equations` | 일차·이차방정식 6유형의 체계적 해법 |
+| **05** | coordinate-plane | primary | descartes ✓ | era-modern | `dream-of-the-fly` | 침대의 파리 → 좌표의 발견 (1619, La Géométrie) |
+| 05 | coordinate-plane | secondary | **fermat** ✗ | era-modern | `independent-coordinates` | 데카르트와 독립적으로 해석기하 발견한 변호사 |
+| **06** | direct-and-inverse-variation | primary | **kepler** ✗ | era-modern | `equal-areas-in-equal-times` | 행성이 같은 시간에 휩쓰는 면적은 일정 — 반비례 (1609) |
+| 06 | direct-and-inverse-variation | secondary | **boyle** ✗ | era-modern | `pressure-volume-inverse` | 압력×부피 = 일정 (Boyle's law, 1662) |
+| **07** | points-lines-and-angles | primary | euclid ✓ | era-ancient | `elements-five-postulates` | 5개 공준으로 시작하는 기하학의 토대 |
+| 07 | points-lines-and-angles | secondary | **thales** ✗ | era-ancient | `shadow-of-pyramid` | 그림자로 피라미드 높이를 잰 최초의 닮음 정리 (BC 6세기) |
+| **08** | constructions-and-congruence | primary | euclid ✓ | era-ancient | `compass-and-straightedge` | 두 도구만으로 작도하는 그리스 전통 |
+| 08 | constructions-and-congruence | secondary | **gauss** ✗ | era-modern | `regular-17-gon` | 19살 가우스의 정17각형 작도 (1796) |
+| **09** | polygons | primary | **pythagoras** ✗ | era-ancient | `pentagon-and-golden-ratio` | 정오각형 속 황금비 — 피타고라스 학파의 비밀 |
+| 09 | polygons | secondary | kepler (재출현) | era-modern | `tiling-the-plane` | 정다각형으로 평면을 채우는 11가지 방법 |
+| **10** | circles-and-sectors | primary | **archimedes** ✗ | era-ancient | `measurement-of-circle` | 96각형으로 추정한 π — 측정의 거장 (BC 3세기) |
+| 10 | circles-and-sectors | secondary | **liu-hui** ✗ | era-ancient | `chinese-pi-refinement` | 3072각형으로 π=3.14159 (263년 중국) |
+| **11** | polyhedra-and-solids-of-revolution | primary | **plato** ✗ | era-ancient | `five-platonic-solids` | 우주의 다섯 원소 = 다섯 정다면체 (Timaeus) |
+| 11 | polyhedra-and-solids-of-revolution | secondary | kepler (재출현) | era-modern | `mysterium-cosmographicum` | 정다면체 안에 행성 궤도를 끼워 넣다 (1596) |
+| **12** | surface-area-and-volume | primary | archimedes (재출현) | era-ancient | `sphere-and-cylinder` | 구·원기둥 부피비 2:3 — 묘비에 새겨진 발견 |
+| 12 | surface-area-and-volume | secondary | **cavalieri** ✗ | era-modern | `indivisibles-principle` | 같은 단면적 → 같은 부피 (적분의 시초, 1635) |
+| **13** | data-analysis-and-statistics | primary | nightingale ✓ | era-contemporary | `coxcomb-and-crimea` | 크림 전쟁 사망 원인 빛낸 색채 통계 차트 (1858) |
+| 13 | data-analysis-and-statistics | secondary | **playfair** ✗ | era-modern | `invention-of-bar-chart` | 막대·선·원 그래프를 발명한 스코틀랜드 엔지니어 (1786) |
+
+`✓` = `30_content/people/`에 이미 사실 md 존재.
+`✗` = **추가 작성 필요** (Round 2.C 대상).
+
+### 2.B.3 인물 통계
+
+**기존 5인 사용 위치**:
+- eratosthenes: 01 (primary)
+- euclid: 01·07·08 (이미 작성됨, episode 분리)
+- al-khwarizmi: 02·03·04 (이미 작성됨, episode 분리)
+- descartes: 05 (primary)
+- nightingale: 13 (primary)
+
+**Round 2.C 추가 작성 필요 인물 14인**:
+1. brahmagupta (02 primary) — 7세기 인도, 0·음수
+2. viete (03 secondary) — 16세기 프랑스, 변수 표기
+3. diophantus (04 primary) — 3세기 알렉산드리아, Arithmetica
+4. fermat (05 secondary) — 17세기 프랑스, 해석기하·정수론
+5. kepler (06 primary, 09·11 secondary) — 17세기 독일, 천문·정다면체
+6. boyle (06 secondary) — 17세기 아일랜드, 기체 법칙
+7. thales (07 secondary) — BC 6세기 그리스, 그림자 측정
+8. gauss (08 secondary) — 19세기 독일, 정17각형
+9. pythagoras (09 primary) — BC 6세기 그리스, 정오각형·황금비
+10. archimedes (10 primary, 12 primary) — BC 3세기, 원·구
+11. liu-hui (10 secondary) — 3세기 중국, π 정밀화
+12. plato (11 primary) — BC 4세기 그리스, 정다면체 우주관
+13. cavalieri (12 secondary) — 17세기 이탈리아, 적분 원리
+14. playfair (13 secondary) — 18세기 스코틀랜드, 그래프 발명
+
+### 2.B.4 era-palette 분포
+
+| era-palette | 단원·인물 (occurrences) |
+|---|---|
+| era-ancient | 13인 13회 (eratosthenes, euclid×3, brahmagupta, diophantus, thales, pythagoras, archimedes×2, liu-hui, plato) |
+| era-medieval | 3회 (al-khwarizmi×3) |
+| era-modern | 8회 (viete, descartes, fermat, kepler×3, boyle, gauss, cavalieri, playfair) |
+| era-contemporary | 1회 (nightingale) |
+
+→ Ancient 색채가 두드러짐. Season 1 (Ancient) 컨셉과 일치. modern은 Season 2 후보로도 활용 가능.
+
+### 2.B.5 산출물 (이 라운드 결정)
+
+위 풀을 **Round 2.C / 2.D의 입력**으로 사용:
+- **Round 2.C**: 14인 사실 md 작성 (`30_content/people/<person>.md`) + 각 인물의 episode md (`30_content/people/<person>/episodes/<episode-key>.md`)
+- **Round 2.D**: 13단원 `meta.json` 일괄 작성 (이 풀 그대로 반영)
+
+### 2.B.6 다음 라운드
+
+Round 2.C — 14인 인물 사실 md + 26개 episode md 작성 시작.
+
+> 분량이 큼. NCC가 자율 진행 (Nick R1-D "풍부하게 다 사용" 정신). 한 라운드에 다 끝내거나 인물 그룹별로 나눠 진행. 작성 후 push.
