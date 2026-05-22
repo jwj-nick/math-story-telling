@@ -1,0 +1,53 @@
+{
+  "id": "13",
+  "slug-en": "data-analysis-and-statistics",
+  "title-ko": "자료의 정리와 해석",
+  "title-en": "Data Analysis and Statistics",
+  "grade": "mid1",
+  "chapter": 13,
+  "persons": [
+    {
+      "ref": "nightingale",
+      "role": "primary",
+      "era-palette": "era-contemporary",
+      "signature-color": "#C97B7B",
+      "signature-object": "Coxcomb chart (색채 통계 차트)",
+      "story-hook": "크림 전쟁 사망 원인 빛낸 색채 통계 차트 (1858)",
+      "videos": ["coxcomb-and-crimea"]
+    },
+    {
+      "ref": "playfair",
+      "role": "secondary",
+      "era-palette": "era-modern",
+      "signature-color": "#8E7E3C",
+      "signature-object": "컬러 막대 그래프",
+      "story-hook": "막대·선·원 그래프를 발명한 스코틀랜드 엔지니어 (1786)",
+      "videos": ["invention-of-bar-chart"]
+    }
+  ],
+  "key-concepts": [
+    "변량·도수·계급·계급값",
+    "줄기와 잎 그림",
+    "도수분포표",
+    "히스토그램",
+    "도수분포다각형",
+    "상대도수 — (도수)/(전체)",
+    "자료의 분포 특성 해석"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "줄기와 잎 그림 읽기·만들기" },
+    { "id": "T02", "name": "도수분포표의 기본" },
+    { "id": "T03", "name": "도수분포표 만들기" },
+    { "id": "T04", "name": "히스토그램 그리기·읽기" },
+    { "id": "T05", "name": "도수분포다각형" },
+    { "id": "T06", "name": "상대도수" },
+    { "id": "T07", "name": "자료 종합·해석" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/13_자료의정리와해석/index.html",
+    "story": "40_grades/middle/math1/13_자료의정리와해석/story.html",
+    "concepts": "40_grades/middle/math1/13_자료의정리와해석/concepts.html",
+    "problems-basic": "40_grades/middle/math1/13_자료의정리와해석/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/13_자료의정리와해석/problems/types.html"
+  }
+}

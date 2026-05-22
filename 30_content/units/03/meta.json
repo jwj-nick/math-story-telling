@@ -1,0 +1,53 @@
+{
+  "id": "03",
+  "slug-en": "algebraic-expressions",
+  "title-ko": "문자와 식",
+  "title-en": "Algebraic Expressions",
+  "grade": "mid1",
+  "chapter": 3,
+  "persons": [
+    {
+      "ref": "al-khwarizmi",
+      "role": "primary",
+      "era-palette": "era-medieval",
+      "signature-color": "#C0604A",
+      "signature-object": "균형 저울",
+      "story-hook": "'Al-Kitāb al-mukhtaṣar' — 대수학의 탄생 (820)",
+      "videos": ["birth-of-algebra"]
+    },
+    {
+      "ref": "viete",
+      "role": "secondary",
+      "era-palette": "era-modern",
+      "signature-color": "#7B6F49",
+      "signature-object": "깃펜과 알파벳 표",
+      "story-hook": "미지수=모음·상수=자음으로 표기한 첫 수학자 (1591)",
+      "videos": ["letters-for-numbers"]
+    }
+  ],
+  "key-concepts": [
+    "문자 사용 식 (algebraic expression)",
+    "곱셈·나눗셈 기호 생략 규칙",
+    "식의 값 대입 (substitution)",
+    "단항식·다항식 (monomial·polynomial)",
+    "차수·계수 (degree·coefficient)",
+    "동류항 (like terms)",
+    "일차식의 사칙연산"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "식 세우기 (문자를 사용한 식)" },
+    { "id": "T02", "name": "곱셈·나눗셈 기호 생략" },
+    { "id": "T03", "name": "식의 값 계산 (대입)" },
+    { "id": "T04", "name": "단항식·다항식 분류 & 차수·계수" },
+    { "id": "T05", "name": "동류항 정리" },
+    { "id": "T06", "name": "일차식의 덧셈·뺄셈" },
+    { "id": "T07", "name": "일차식 × 수, 일차식 ÷ 수" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/03_문자와식/index.html",
+    "story": "40_grades/middle/math1/03_문자와식/story.html",
+    "concepts": "40_grades/middle/math1/03_문자와식/concepts.html",
+    "problems-basic": "40_grades/middle/math1/03_문자와식/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/03_문자와식/problems/types.html"
+  }
+}

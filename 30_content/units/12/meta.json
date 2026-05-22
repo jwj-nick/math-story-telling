@@ -1,0 +1,53 @@
+{
+  "id": "12",
+  "slug-en": "surface-area-and-volume",
+  "title-ko": "입체도형의 겉넓이와 부피",
+  "title-en": "Surface Area and Volume",
+  "grade": "mid1",
+  "chapter": 12,
+  "persons": [
+    {
+      "ref": "archimedes",
+      "role": "primary",
+      "era-palette": "era-ancient",
+      "signature-color": "#8E6A3C",
+      "signature-object": "모래판 (그림을 그리던)",
+      "story-hook": "구·원기둥 부피비 2:3 — 묘비에 새겨진 발견",
+      "videos": ["sphere-and-cylinder"]
+    },
+    {
+      "ref": "cavalieri",
+      "role": "secondary",
+      "era-palette": "era-modern",
+      "signature-color": "#6C5B7B",
+      "signature-object": "종이 빵 (단면을 쌓던)",
+      "story-hook": "같은 단면적 → 같은 부피 (적분의 시초, 1635)",
+      "videos": ["indivisibles-principle"]
+    }
+  ],
+  "key-concepts": [
+    "각기둥의 겉넓이·부피 — V = Sh",
+    "각뿔의 겉넓이·부피 — V = (1/3)Sh",
+    "원기둥의 겉넓이·부피",
+    "원뿔의 겉넓이·부피",
+    "구의 겉넓이·부피 — S = 4πr², V = (4/3)πr³",
+    "회전체의 겉넓이·부피",
+    "복합 입체의 겉넓이·부피"
+  ],
+  "problem-types": [
+    { "id": "T01", "name": "각기둥의 겉넓이·부피" },
+    { "id": "T02", "name": "각뿔의 겉넓이·부피 (★ 1/3)" },
+    { "id": "T03", "name": "원기둥의 겉넓이·부피" },
+    { "id": "T04", "name": "원뿔의 겉넓이·부피" },
+    { "id": "T05", "name": "구의 겉넓이·부피" },
+    { "id": "T06", "name": "회전체의 겉넓이·부피" },
+    { "id": "T07", "name": "복합 입체 — 결합·분리 부피" }
+  ],
+  "pages": {
+    "index": "40_grades/middle/math1/12_입체도형의겉넓이와부피/index.html",
+    "story": "40_grades/middle/math1/12_입체도형의겉넓이와부피/story.html",
+    "concepts": "40_grades/middle/math1/12_입체도형의겉넓이와부피/concepts.html",
+    "problems-basic": "40_grades/middle/math1/12_입체도형의겉넓이와부피/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/12_입체도형의겉넓이와부피/problems/types.html"
+  }
+}
