@@ -518,3 +518,52 @@ Round 2.B — 13단원 인물 풀 제안 (NCC가 풍부하게 채움. Nick은 �
 Round 2.C — 14인 인물 사실 md + 26개 episode md 작성 시작.
 
 > 분량이 큼. NCC가 자율 진행 (Nick R1-D "풍부하게 다 사용" 정신). 한 라운드에 다 끝내거나 인물 그룹별로 나눠 진행. 작성 후 push.
+
+---
+
+## Round 2.C — 14인 인물 사실 md 작성
+
+### 2.C.1 정책 결정 — episode md 분리 시점 미룸
+
+schema v2 의도는 `30_content/people/<person>/episodes/<episode-key>.md` 분리지만, 다음 사정 고려:
+
+1. **기존 5인 md (eratosthenes·euclid·al-khwarizmi·descartes·nightingale)** 도 episode를 본문 "핵심 일화 N"으로 통합 보유 — 형식 일관성을 위해 신규 14인도 동일 형식 채택.
+2. **episode md 본격 분리는 영상 작업(C) 시점에 함**. 영상 단위로 storyboard·image_prompts와 같이 묶이는 게 자연스러움. `50_channel/people/<person>/<episode>/storyboard_v1_5.md` 가 사실상의 episode md 역할.
+3. meta.json의 `videos: ["<episode-key>"]` 는 ref-only — 파일 부재여도 OK. 영상 생성 시점에 50_channel 안에서 등장.
+
+→ **이번 라운드: 인물 사실 md 14개 (단일 파일에 episode 일화 통합) 작성.** episode md 분리는 C에서 영상 작업과 같이.
+
+### 2.C.2 14인 md 작성 (이 라운드 산출물)
+
+각 md 구조 (기존 5인 패턴 답습):
+- frontmatter (id·name-ko·name-en·era·period·origin·activity·unit·topic·signature-color·signature-object·era-palette·source)
+- 한 줄 메시지 (인용형)
+- 기본 정보 표
+- 핵심 일화 1~2 (Round 2.B에서 매핑한 episode-key 명시)
+- 딸에게 줄 메시지
+- 출처
+
+frontmatter의 `unit` 필드: 인물이 여러 단원 등장 시 primary 단원만 적고 본문에 "다른 단원에서도 등장" 언급.
+
+산출물: 다음 14개 파일을 한꺼번에 작성 → commit.
+
+```
+30_content/people/brahmagupta.md   (02)
+30_content/people/viete.md          (03)
+30_content/people/diophantus.md     (04)
+30_content/people/fermat.md         (05)
+30_content/people/kepler.md         (06, 09, 11)
+30_content/people/boyle.md          (06)
+30_content/people/thales.md         (07)
+30_content/people/gauss.md          (08)
+30_content/people/pythagoras.md     (09)
+30_content/people/archimedes.md     (10, 12)
+30_content/people/liu-hui.md        (10)
+30_content/people/plato.md          (11)
+30_content/people/cavalieri.md      (12)
+30_content/people/playfair.md       (13)
+```
+
+### 2.C.3 다음 라운드
+
+Round 2.D — 13단원 `30_content/units/NN/meta.json` 일괄 작성 (schema v2 + persons 풀 반영).
