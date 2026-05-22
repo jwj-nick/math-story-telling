@@ -603,3 +603,113 @@ Round 2.D — 13단원 `30_content/units/NN/meta.json` 일괄 작성 (schema v2 
 ### 2.D.3 다음 라운드
 
 Round 2.E — `10_system/10_principles/UNIT_PAGE_STANDARD.md` 신규 작성 (인물 카드 + 영상 link UI + 단원 페이지 4파일 표준).
+
+---
+
+## Round 2.E — UNIT_PAGE_STANDARD.md 작성
+
+### 2.E.1 산출물
+
+`10_system/10_principles/UNIT_PAGE_STANDARD.md` v0.1 (약 200줄, 11 섹션).
+
+### 2.E.2 핵심 내용
+
+1. 단원 폴더 표준 (4 root + 2 dir)
+2. `index.html` (단원 hub) — 4축 진입 + 인물 카드
+3. `story.html` — 인물 카드 + 영상 link + 글쓰기 미션
+4. `concepts.html` — 개념 맵 + 인터랙티브 위젯
+5. `problems/` — 4-mode (basic + types/type_NN + deep + walk) — mid_eun 검증 구조
+6. **영상 주소트리 이중 트리**: 원본 `50_channel/people/<ref>/<ep>/` + view `50_channel/seasons/season-N/unit-NN/` (Round 2.B 합의)
+7. design-system 융합: CSS var `--mt-person-color` 로 시그니처 컬러 주입, era-palette 보조색 매핑
+8. **빈칸·미완성 슬롯** (CLAUDE.md 절대 원칙 5번 반영)
+9. URL 변환 — 폴더명 `NN_<한글>` → URL `NN_<slug-en>` 빌드 시 (E 배포 매핑 단계)
+10. audit 도구 — 현 `/se_ncc_audit_app` + 향후 `se_ncc_audit_unit_page` 신설 검토
+
+### 2.E.3 다음 라운드
+
+Round 2.F — `01_소인수분해/problems/walk_01` 누락 확인 (단발).
+Round 2.G — `40_grades/middle/math1/index.html` (math1 hub) 재정비 + B 마무리.
+
+---
+
+## Round 2.F — walk_01 누락 확인 (단발)
+
+### 2.F.1 사실
+
+01단원 `problems/`에 `walk_01_H{1,2,3}.html` 부재.
+다른 단원 (02·03·…) 은 모두 `walk_01_H{1,2,3}.html` 존재.
+
+01단원 `types.md` 의 유형 1 (소수·합성수 판별):
+> 난이도 분포: L(소수/합성수 판별), M(범위 내 소수 개수), **H(조건을 만족하는 소수 찾기)**
+
+→ H가 있다고 적혀 있고, type_01_app.html 도 H 문제 포함하나, walk 풀이 3개가 누락.
+
+### 2.F.2 판정
+
+**의도 아닌 누락.** mid_eun 작업 시 unit-01만 walk_01 단계 빠뜨림 (가장 먼저 작업한 단원이라 walk 표준 정립 전).
+
+### 2.F.3 조치
+
+지금은 보강 미실시. **후속 단발 commission** 으로 분리. 시점: B 마무리 후 또는 단원별 영상 작업(D) 단원 진입 시.
+
+작업 명세 (참조용):
+- `problems/type_01_app.html` 의 H 난이도 3문제 추출
+- 각 문제별 `walk_01_H1.html`, `walk_01_H2.html`, `walk_01_H3.html` step-by-step 풀이 작성
+- `/se_math_practice` 또는 `/se_math_error_note` skill 활용 가능
+
+---
+
+## Round 2.G — math1 hub (`index.html`) 재정비
+
+### 2.G.1 진단
+
+mathtelling 시드 디자인은 좋음. 단 3가지 옛 정보:
+1. **design-system 경로** `../../mathtelling-design-system/dist/all.css` ← 새 repo에 없음
+2. **카드 link URL** `unit-NN/index.html` ← 새 폴더명 `NN_<한글>/index.html`
+3. **인물·era·시그니처 컬러** 매핑 일부 오류 (06 데카르트→케플러, 09 유클리드→피타고라스, 11 케플러→플라톤 등 Round 2.B 풀과 불일치)
+
+### 2.G.2 재작성 (완료)
+
+- design-system 경로 갱신: `../../../20_packages/design-system/dist/all.css` (3 레벨 up: math1 → middle → grades → root)
+- 13개 카드 모두 link URL 새 폴더명으로
+- 인물 매핑 Round 2.B 풀과 정확히 일치 (primary + secondary 함께 표기, secondary는 작은 글씨)
+- 각 카드에 `slug-en` 표기 추가 (kebab-case English, 작은 회색 글씨)
+- 시그니처 컬러 = primary 인물의 signature-color (meta.persons[0].signature-color)
+- era 라벨 갱신 (Classical India, Islamic Golden Age, Late Antiquity, Early Modern 등 정확화)
+- `Ready`/`Soon` 배지 모두 제거 — 13단원 모두 진입 가능한 상태이므로 통일 (단원 페이지 내부의 완성도는 별 표시 안 함)
+- topbar/footer link `../../../` (repo root)
+
+### 2.G.3 design-system 검증
+
+`20_packages/design-system/dist/all.css` 존재 확인. `subjects/math.css` 존재 확인. 경로 정상.
+
+페이지 dev 확인은 별도 (Nick이 브라우저에서 열어 검토).
+
+---
+
+## Round 2 — 종합 마무리
+
+### 2.X.1 B 작업 완료 산출물 요약
+
+| sub-round | 산출물 | 위치 |
+|---|---|---|
+| 2.A | schema v2 + slug-en 표 + unit 01 meta 시범 | chatlog + `30_content/units/01/meta.json` |
+| 2.B | 13단원 인물 풀 (26 entry) | chatlog 표 |
+| 2.C | 14인 사실 md (총 19인) | `30_content/people/` |
+| 2.D | 12 신규 meta.json (총 13) | `30_content/units/NN/meta.json` |
+| 2.E | UNIT_PAGE_STANDARD.md v0.1 | `10_system/10_principles/` |
+| 2.F | walk_01 누락 후속 작업 명세 | chatlog (보강은 후속 commission) |
+| 2.G | math1 hub `index.html` 재정비 | `40_grades/middle/math1/index.html` |
+
+### 2.X.2 후속 작업 항목 (B 외부)
+
+- **walk_01 보강** (01단원 problems/walk_01_H{1,2,3}.html × 3) — 단발 commission
+- **`30_content/concepts/`** 13단원 폴더의 개념 검수·보완 (Phase 1 작업, `/se_concept_review` skill) — 이번 B 범위 외
+- **C. 영상 v1.5 표준화** — 다음 큰 작업
+- **E. 배포 매핑** — slug-en 변환 빌드 스크립트 (`60_deploy/` 출력 정의)
+- **D. 13단원 영상 일괄 확장** — C/B/E 표준 확정 후
+
+### 2.X.3 다음 큰 작업
+
+**C. 영상 v1.5 표준화** — 별도 chatlog (`260523_video_v1_5_standardize.md` 같은) 시작.
+Nick 의도 "그림 프롬프트 → 그림 → 영상" 파이프라인 정교화가 여기서.
