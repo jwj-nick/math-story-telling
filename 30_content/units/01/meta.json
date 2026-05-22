@@ -1,13 +1,21 @@
 {
   "id": "01",
+  "slug-en": "prime-factorization",
   "title-ko": "소인수분해",
   "title-en": "Prime Factorization",
   "grade": "mid1",
   "chapter": 1,
-  "person": "eratosthenes",
-  "era-palette": "era-ancient",
-  "signature-color": "#D4A843",
-  "signature-object": "막대기",
+  "persons": [
+    {
+      "ref": "eratosthenes",
+      "role": "primary",
+      "era-palette": "era-ancient",
+      "signature-color": "#D4A843",
+      "signature-object": "막대기",
+      "story-hook": "에라토스테네스의 체로 소수를 걸러내는 과정이 소인수분해의 시작",
+      "videos": ["sieve-of-eratosthenes"]
+    }
+  ],
   "key-concepts": [
     "소수 (prime number)",
     "합성수 (composite number)",
@@ -17,7 +25,6 @@
     "최대공약수 GCD",
     "최소공배수 LCM"
   ],
-  "learner-hook": "에라토스테네스의 체로 소수를 걸러내는 과정이 소인수분해의 시작",
   "problem-types": [
     { "id": "T01", "name": "소수와 합성수 판별" },
     { "id": "T02", "name": "소인수분해 — 거듭제곱 표현" },
@@ -28,10 +35,10 @@
     { "id": "T07", "name": "GCD·LCM 활용 문제" }
   ],
   "pages": {
-    "index": "apps/math1/unit-01/index.html",
-    "story": "apps/math1/unit-01/story.html",
-    "concepts": "apps/math1/unit-01/concepts.html",
-    "problems-basic": "apps/math1/unit-01/problems/basic.html",
-    "problems-types": "apps/math1/unit-01/problems/types.html"
+    "index": "40_grades/middle/math1/01_소인수분해/index.html",
+    "story": "40_grades/middle/math1/01_소인수분해/story.html",
+    "concepts": "40_grades/middle/math1/01_소인수분해/concepts.html",
+    "problems-basic": "40_grades/middle/math1/01_소인수분해/problems/basic_app.html",
+    "problems-types": "40_grades/middle/math1/01_소인수분해/problems/types.html"
   }
 }
