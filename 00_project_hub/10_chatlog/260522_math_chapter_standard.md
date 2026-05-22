@@ -214,7 +214,7 @@ B에서 정해두면 C가 따라옴.
 - 인물 episode를 `30_content/people/<person>/episodes/<episode>.md` 로 분리
 - meta.json에서 `persons[].videos[]` 로 episode를 ref
 
-→ Nick 동의? 수정 의견?
+→ Nick 동의? 수정 의견? (Nick) 동의
 
 #### R1-B. 영상 주소트리 — 두 가지 큐레이션
 권장 = **이중 트리** (원본 1곳, view 1곳):
@@ -225,7 +225,7 @@ B에서 정해두면 C가 따라옴.
 
 또는 단순화: 원본만 (`people/<person>/<episode>/`), `seasons/`는 meta로만 표현 (디렉토리 없음).
 
-→ Nick 선호?
+→ Nick 선호? (Nick) 이중트리 권장에 동의
 
 #### R1-C. slug-en 표준 어휘 (13단원)
 권장:
@@ -245,12 +245,13 @@ B에서 정해두면 C가 따라옴.
 | 12 | 입체도형의겉넓이와부피 | `surface-area-and-volume` |
 | 13 | 자료의정리와해석 | `data-and-statistics` |
 
-→ Nick OK? 수정 의견?
+→ Nick OK? 수정 의견?(Nick) 다시 영미권에서 사용하는 공식 수학 교과서 용어를 찾아서 수정 바람. 내가 잘 모르긴하지만 좀 어색한 것들 섞여있음. 신뢰할만하게 확인/업데이트 완료하면 나에게 다시 물어볼 필요는 없음
 
 #### R1-D. 인물 풀 — Round 2에서 NCC가 13단원 풍부 제안 + Nick 선택?
 Nick 의도: 풍부하게. NCC가 단원당 1~3명 후보 + 각 인물 episode 핵을 적극 제안하고, Nick은 솎아내는 방식 — 동의?
 
 → Yes 면 Round 2에서 13단원 인물 풀 제안 (큰 작업).
+(Nick) Yes. 최대한 풍부한 것 좋음. Nick 이 솎아내지 않고 여러개 사용가능함.  한단원에 여러인물 소개 가능한 구조여야 함.
 
 #### R1-E. Round 2 작업 순서
 권장:
@@ -263,7 +264,164 @@ Nick 의도: 풍부하게. NCC가 단원당 1~3명 후보 + 각 인물 episode �
 7. **math1/index.html hub 재정비** (B 마무리)
 
 이 순서로 Round 2 시작 OK?
-
+( Nick) OK 그런데 Round 2 뒤의 다음 라운드 들은 어디에 정의됨.? 실제 좋은 그림 프롬프트 -> 그림 -> 영상 등?? 다른일 하다 오니 이전 계획 기억안남. 
 ### 1.5 다음
 
 Nick R1-A~E 답변 → Round 2 (NCC가 schema 확정 + 인물 풀 작성 시작) ……
+
+---
+
+## Round 1.6 — 큰 그림 Recap (Nick "이전 계획 기억 안 남" 답)
+
+### 1.6.1 작업 전체 로드맵
+
+마이그 직후 NCC가 제안하고 Nick이 "A, B 순서대로"로 확정한 큰 작업 목록 (TaskList #16-20):
+
+```
+A. math1 마이그 잔재 정리  ✅ 완료 (commit 13b0159)
+   └─ unit-01/, _index_v_mathtelling.html 삭제
+
+B. 수학 챕터 표준 정의  🟢 진행 중 ← 이 chatlog
+   └─ Round 0~2: schema + 인물 풀 + UNIT_PAGE_STANDARD + meta.json × 13 + hub 재정비
+   └─ plan 파일: 00_project_hub/20_plan/260522_plan_math_chapter.md
+
+C. 영상 v1.5 표준화  ⏳ 다음
+   └─ 별도 chatlog 예정 (260523_video_v1_5_standardize.md 같은)
+   └─ "그림 프롬프트 → 그림 → 영상" 파이프라인 정교화는 여기
+   └─ plan 파일: 00_project_hub/20_plan/260522_plan_video_flow.md
+   └─ 핵심: storyboard → image_prompts → AI 이미지 생성 → HyperFrames/GSAP → TTS → FFmpeg
+   └─ 산출물: 인물·episode 단위 final_v1_5.mp4 (B에서 합의된 50_channel/people/<person>/<episode>/)
+
+E. 배포 매핑·hookup  ⏳ 나중
+   └─ 60_deploy/ 빌드 출력, mid1 GH Pages 대응
+   └─ slug-en 한글 폴더 → 영문 URL 변환 빌드 스크립트
+
+D. 13단원 영상 일괄 확장  ⏳ 가장 나중
+   └─ B/C 표준 확정 후 단원당 별도 chatlog (260529_unit02_video.md 패턴)
+```
+
+### 1.6.2 B 내부 sub-round 계획 (R1-E에서 합의된 순서)
+
+```
+Round 2.A — schema v2 확정 + slug-en 영미권 갱신          ← 이 다음
+Round 2.B — 13단원 인물 풀 제안 (NCC 풍부하게 다 채움)
+Round 2.C — 누락 인물 사실 md 작성 (브라마굽타, 디오판토스, ... 8-10인)
+Round 2.D — 13단원 meta.json 작성 (slug-en + persons 배열 + episode ref)
+Round 2.E — UNIT_PAGE_STANDARD.md 작성 (인물 카드, 영상 link UI)
+Round 2.F — walk_01 누락 확인 (단발)
+Round 2.G — math1/index.html hub 재정비 (B 마무리)
+```
+
+### 1.6.3 즉, "그림 프롬프트 → 그림 → 영상"은 C에서
+
+Nick이 물은 "실제 좋은 그림 프롬프트 → 그림 → 영상" 파이프라인은 **C(영상 v1.5 표준화)** 의 핵심.
+지금 B는 그 영상이 **어디 저장되고 어떻게 link 되는지의 트리·meta**까지만 정함. 영상 만드는 방법론은 C에서 별도 chatlog로.
+
+---
+
+## Round 2.A — schema v2 확정 + slug-en 영미권 갱신
+
+### 2.A.1 schema v2 확정 (R1-A 동의)
+
+`30_content/units/NN/meta.json` 표준 schema. Round 2.D에서 13단원 적용.
+
+```json
+{
+  "id": "NN",
+  "slug-en": "<영미권 표준>",
+  "title-ko": "<한글 단원명>",
+  "title-en": "<영문 단원명>",
+  "grade": "mid1",
+  "chapter": <int>,
+  "persons": [
+    {
+      "ref": "<person-key>",
+      "role": "primary|secondary|cameo",
+      "era-palette": "era-ancient|era-medieval|era-modern|era-contemporary",
+      "signature-color": "#RRGGBB",
+      "signature-object": "<short-noun>",
+      "story-hook": "<one-line>",
+      "videos": ["<episode-key>", ...]
+    }
+  ],
+  "key-concepts": [...],
+  "problem-types": [
+    { "id": "TNN", "name": "..." }
+  ]
+}
+```
+
+인물 episode 분리 구조 (R1-A 동의):
+
+```
+30_content/people/<person>.md                          ← 인물 사실/배경
+30_content/people/<person>/episodes/<episode-key>.md   ← episode-level 이야기
+                                                       (단원 비종속, 재사용 가능)
+
+50_channel/people/<person>/<episode-key>/              ← 영상 원본 (재사용 source)
+  ├── storyboard_v1_5.md
+  ├── image_prompts.md
+  ├── narration_v1_5.{txt,xml,mp3}
+  ├── poster_v1_5.jpg
+  ├── final_v1_5.mp4
+  └── ...
+
+50_channel/seasons/season-1-ancient/unit-NN/           ← 큐레이션 view
+  └── (people/<person>/<episode>/ 의 ref or symlink)
+```
+
+### 2.A.2 slug-en 영미권 표준 갱신 (R1-C 자체 결정)
+
+Common Core Grade 7 표준 + 영미권 중학 교과서 (Khan Academy, AoPS, Pearson, McGraw-Hill) 관례 종합. 7개 단원이 R1 권장안에서 영미권 표준과 어긋나 수정.
+
+| # | 한글 | R1 권장 | **R2.A 확정 (영미권 표준)** | 근거 |
+|---|---|---|---|---|
+| 01 | 소인수분해 | prime-factorization | **`prime-factorization`** | 표준 (변경 없음) |
+| 02 | 정수와 유리수 | integers-rationals | **`integers-and-rational-numbers`** | 영미권: "Integers"·"Rational Numbers"가 각각 표준 명칭. R1 단축형은 어색 |
+| 03 | 문자와 식 | letters-and-expressions | **`algebraic-expressions`** | 영미권 표준은 "Algebraic Expressions". "letters and expressions"는 한국식 직역 |
+| 04 | 일차방정식 | linear-equations | **`linear-equations`** | 표준 |
+| 05 | 좌표와 그래프 | coordinates-and-graphs | **`coordinate-plane`** | Common Core: "The Coordinate Plane". 좌표평면 도입 단원이므로 정확 |
+| 06 | 정비례와 반비례 | proportion-inverse-proportion | **`direct-and-inverse-variation`** | 영미권 정통 표현 (y=kx direct variation, y=k/x inverse variation). "proportion"보다 정확 |
+| 07 | 기본도형 | basic-figures | **`points-lines-and-angles`** | 영미권 단원명 "Points, Lines, and Angles". "basic figures"는 모호 |
+| 08 | 작도와 합동 | construction-and-congruence | **`constructions-and-congruence`** | 영미권 표준은 복수 "constructions" |
+| 09 | 다각형 | polygons | **`polygons`** | 표준 |
+| 10 | 원과 부채꼴 | circles-and-sectors | **`circles-and-sectors`** | 표준 |
+| 11 | 다면체와 회전체 | polyhedra-and-solids-of-revolution | **`polyhedra-and-solids-of-revolution`** | 직역 유지 (한국 단원 고유 구성) |
+| 12 | 입체도형 겉넓이·부피 | surface-area-and-volume | **`surface-area-and-volume`** | 표준 |
+| 13 | 자료의 정리와 해석 | data-and-statistics | **`data-analysis-and-statistics`** | 영미권 표준: "Data Analysis and Statistics" |
+
+**참고 출처:**
+- [Grade 7 Common Core State Standards Initiative](https://www.thecorestandards.org/Math/Content/7/)
+- [Common Core State Standards Mathematics Grade 7 (Oregon DOE)](https://www.oregon.gov/ode/educator-resources/standards/mathematics/Documents/ccssm7.pdf)
+
+### 2.A.3 title-en (영문 단원명) 동시 확정
+
+slug-en은 URL 어휘 (kebab-case), title-en은 사람 읽는 표제 (Title Case). 같은 영미권 어휘.
+
+| # | title-en |
+|---|---|
+| 01 | Prime Factorization |
+| 02 | Integers and Rational Numbers |
+| 03 | Algebraic Expressions |
+| 04 | Linear Equations |
+| 05 | The Coordinate Plane |
+| 06 | Direct and Inverse Variation |
+| 07 | Points, Lines, and Angles |
+| 08 | Constructions and Congruence |
+| 09 | Polygons |
+| 10 | Circles and Sectors |
+| 11 | Polyhedra and Solids of Revolution |
+| 12 | Surface Area and Volume |
+| 13 | Data Analysis and Statistics |
+
+### 2.A.4 산출물 (이 라운드에서 실행)
+
+- 이 chatlog Round 2.A 기록 (지금)
+- `30_content/units/01/meta.json` 시범 갱신 (schema v2 적용 — 다른 단원 작성 reference)
+- `00_project_hub/20_plan/260522_plan_math_chapter.md` slug-en 확정 표 반영
+
+13단원 meta.json 일괄 작성은 Round 2.D (인물 풀 결정 후).
+
+### 2.A.5 다음 라운드
+
+Round 2.B — 13단원 인물 풀 제안 (NCC가 풍부하게 채움. Nick은 추가만, 솎아내지 않음).
