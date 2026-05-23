@@ -130,12 +130,19 @@
 
 | 파일 | 무엇 |
 |---|---|
-| `narration.txt` | 549자 / 약 5자/초 / 단문·빈줄 호흡 패턴 |
-| `narration.xml` (SSML) | 음성 합성 풀스펙. break(쉼) 약 40회 + prosody(속도·높이) 강조 2회. **edge-tts에서는 미동작, ElevenLabs/Azure 전환 시 직접 입력 가능** |
-| `storyboard.md` | 6장면 각각의 시간·시각 구성·이미지·모션·텍스트·나레이션 글자수 |
+| `narration_v1_5.txt` | 549자 / 약 5자/초 / 단문·빈줄 호흡 패턴 |
+| `narration_v1_5.xml` (SSML) | 음성 합성 풀스펙. break(쉼) 약 40회 + prosody(속도·높이) 강조 2회. **edge-tts에서는 미동작, ElevenLabs/Azure 전환 시 직접 입력 가능** |
+| `narration_v1_5.mp3` | 합성된 음성 출력 (edge-tts 결과) |
+| `storyboard_v1_5.md` | 6장면 각각의 시간·시각 구성·이미지·모션·텍스트·나레이션 글자수 |
 | `image_prompts.md` | AI 이미지 5장의 영문 프롬프트 + 부정 프롬프트 + 스타일 노트 3블록. **공통 캐릭터 시트** 패턴 존재 |
-| `config.json` | 렌더 데이터 (각 장면 시간·모션 시작/끝 스케일·팬 좌표) |
-| `final.mp4` | 21MB / 107.4초 |
+| `config_v1_5.json` | 렌더 데이터 (각 장면 시간·모션 시작/끝 스케일·팬 좌표) |
+| `raw_v1_5.mp4` | final 생성 전 raw 영상 |
+| `final_v1_5.mp4` | 21MB / 107.4초 — 본 영상 결과물 |
+| `poster_v1_5.jpg` | 영상 표지 (썸네일) |
+| `index_v1_5.html` | 영상 시청 진입 페이지 |
+| `_assets/` | 이미지 5장 등 보조 자산 |
+
+> **파일명 suffix `_v1_5` 정리**: 결정 ⑥ (디렉토리 재배치) 와 함께 suffix 제거 정리 가능. 그 결정 전까지는 현재 파일명 그대로 사용. 짧은 버전 (`narration.txt`, `storyboard.md`, `config.json`) 은 옛 시드로 추정 — 결정 ⑥ 작업에서 archive 처리.
 
 ## 3.2 1편의 한계 (정직)
 

@@ -3,24 +3,23 @@
 # Current Plan — math-story-telling
 
 > 가장 최신 상태와 다음 할 일. 새 세션 시작자는 이 파일과 `CLAUDE.md` 를 먼저 읽는다.
-> 마지막 업데이트: 2026-05-23 (C R0+R1 진단 완료 시점).
+> 마지막 업데이트: 2026-05-24 (영상 제작 프로젝트 단일 진입점화 완료).
 
 ---
 
 ## 0. 한 줄
 
-**C 영상 v1.5 표준화 진행 중 — R0 진단(13편 가정) → R1 zoom out 재진단(시즌1=5편 권장).**
-Nick D6(scope) 결정 대기 + NCC 자율 진행 가능 4건 (§3.C.4).
+**영상 제작 프로젝트 (`11_video_gen_process/`) 본격 시작. 시즌1 5편 평균선 vs 차등 결정 + 자율 작업 5건 대기.**
 
-### 🚪 compact 후 새 세션 entry point
+상세는 [`11_video_gen_process/00_charter/INTEGRATED_PLAN.md`](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md) 단일 문서로 통합되어 있음. 본 큰 그림 문서는 다른 트랙(A·B·F·D·E + 잔여 인프라) 의 위치 관리만 책임.
 
-1. `CLAUDE.md` 읽기
-2. **이 파일 (current-plan.md) 읽기** ← 여기
-3. **`11_video_gen_process/README.md`** 읽기 (영상 R&D sub-project 진입점 — 2026-05-23 신설)
-4. `11_video_gen_process/00_charter/{VISION,GOALS,DECISIONS}.md` (placeholder, compact 후 본격 작성)
-5. `11_video_gen_process/10_reference/_origin.md` + `01_R0_R1_summary.md` (외부 자료 발췌)
-6. (필요 시) `00_project_hub/10_chatlog/260523_video_v1_5_standardize.md` (원본 chatlog)
-7. 다음 액션은 §3.C 의 "다음 액션" 분기 참조
+### 🚪 새 세션 entry point
+
+1. `CLAUDE.md` 읽기 (큰 그림)
+2. **이 파일 (current-plan.md) 읽기** ← 여기 (큰 그림 현재 상태)
+3. **[`11_video_gen_process/00_charter/INTEGRATED_PLAN.md`](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md)** ← **영상 제작 프로젝트 단일 진입점** (이 한 편으로 전체 이해)
+4. (필요 시) `11_video_gen_process/README.md` (디렉토리 안내)
+5. (필요 시) `11_video_gen_process/10_reference/_origin.md` (외부 자료 path 인덱스)
 
 ---
 
@@ -71,56 +70,19 @@ Nick D6(scope) 결정 대기 + NCC 자율 진행 가능 4건 (§3.C.4).
 
 ## 2. 진행 중 작업
 
-### 🟢 C. 영상 v1.5 표준화 (R0 + R1 완료, sub-project 셋업 완료, R2 대기)
+### 🟢 C. 영상 제작 프로젝트
 
-> **작업 위치 이전**: 2026-05-23 — `11_video_gen_process/` sub-project 셋업 완료.
-> 본격 R&D 는 sub-project 안에서 진행. 큰 결정 (D6 scope 등) 만 외부 chatlog.
+> **이 트랙의 상세 모두 → [`11_video_gen_process/00_charter/INTEGRATED_PLAN.md`](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md)**
 >
-> chatlog (origin): `00_project_hub/10_chatlog/260523_video_v1_5_standardize.md` (R0 ~ R1)
-> sub-project 진입: `11_video_gen_process/README.md`
-> sub-project 헌장: `11_video_gen_process/00_charter/{VISION,GOALS,DECISIONS}.md`
-> plan (origin): `00_project_hub/20_plan/260522_plan_video_flow.md`
+> 본 current-plan 에서는 큰 그림 위치만. 결정·일정·결정 항목·자율 작업 모두 INTEGRATED_PLAN 한 곳에서 관리.
+>
 > TaskList #17 (in_progress)
 
-#### 2.C.1 R0 (NCC 1차 진단) 핵심 발견
-- unit-01 v1.5 baseline 정밀 분석 — narration_v1_5.xml은 **ElevenLabs/Azure SSML 풀스펙 input** 으로 이미 작성됨 (break ~40회 + prosody pitch/rate 강조)
-- image_prompts.md 의 "공통 캐릭터 시트" 패턴 — 19인 모두 시트 필요
-- meta.json schema v2 → 12단원 시드 자동 생성 가능
+**현재 상태 (한 줄)**:
+1편 (에라토스테네스, 소인수분해) 완성본 있음. 시즌1 5편을 "평균선" 으로 갈지 "차등 (집중 3편 + 기본 2편)" 으로 갈지 결정 대기. NCC 자율 작업 5건은 Nick 답 없이도 진행 가능 (영상 표준 문서 갱신·스킬 점검·회고 인덱스 정리·옛 비전 문서 audit·운영 원칙 시드).
 
-#### 2.C.2 R1 (NCC zoom out 재진단) 핵심 발견
-- **R0의 "13편 일괄" 가정이 옛 채널 비전(`260516_channel_vision_review.md`)의 "시즌1 = Ancient 5단원" 결정과 어긋남**
-- 어제 R0의 갭 7개 (chatlog §1.3): scope / 4편 분할 / 5인 voice 매핑 / 캐릭터 시트 미반영 / length dry run 미반영 / "앱=백본 영상=보조" 우선순위 / 창의 제안 8개 미검토
-- 현 위치 = **Phase 0-A 진행 중, 영상 1/5 완성** (시즌1 = 5편 중 unit-01만)
-- 옛 `10_system/70_meta/` (VISION/MASTER_PLAN/ROADMAP) = 00_LearningSystem 시절 문서, 마이그 후 outdated → 별도 처리(D9) 필요
-
-#### 2.C.3 Nick 결정 대기 (R1 §1.8)
-- 🔴 **D6 scope**: α 13편 일괄 / **β 시즌1 5편 우선 (NCC 권장)** / γ 시즌1+시즌2 일부
-- 🟡 보조 (NCC 권장 채택 시 자율 진행): D7 단원→영상 분할 / D8 창의 제안 / D9 옛 70_meta 처리 / D10 진화 메커니즘 본격화 시점
-- 🟢 R0의 D1~D5 (TTS·이미지·이중 트리·시드·audit) 결정 유지
-
-#### 2.C.4 NCC 자율 진행 가능 4건 (Nick 응답 대기 중에도 OK — R1 §1.9)
-1. `10_system/50_insights/_index.md` 의 미반영 2건을 STORY_VIDEO_v1_5.md 에 반영 + `[x]` 표시 (진화 메커니즘 본격화 첫걸음)
-2. `se_story_video_v1_5` skill 점검 (`.claude/skills/`)
-3. STORY_VIDEO_v1_5.md 4개 항목 갱신 (§2.2 캐릭터 시트 / §4 length dry run / §3.1 voice 매핑 / §7 디렉토리)
-4. 옛 `10_system/70_meta/` 정합성 audit 보고서 (이동은 D9 후)
-
-#### 2.C.5 다음 액션 분기 (compact 후 새 세션 진입 시)
-
-> ⚠️ 모든 분기의 진행 장소 = `11_video_gen_process/` sub-project 안 `50_sessions/` 라운드.
-
-- **분기 A**: Nick이 D6 답 → R2 시작 (scope 확정 + 5축 결정 → `20_principles/` 시드 작성 → `STORY_VIDEO_v1_5` promote)
-- **분기 B**: Nick D6 미응답 → 1.9의 자율 4건 진행 (sub-project 내 R0 sprint) → 끝나면 다시 D6 응답 요청
-- **분기 C**: Nick "다 권장대로" → β scope 채택 + 1.9 진행 + R3 (시즌1 5인 캐릭터 시트) 진입
-
-#### 2.C.6 본 sub-project 셋업 완료 (2026-05-23)
-
-- 디렉토리: 9 sub-dir + 30_pipeline 내 6 stages = 15 폴더 + 25 파일
-- 헌장 placeholder: `00_charter/{VISION,GOALS,DECISIONS}.md`
-  - D-001 (sub-project 분리) / D-002 (풀세팅 9) / D-003 (reference 발췌) 확정
-  - D-004 ~ D-013 placeholder (= 상위 D6~D10 + sub-project 신규 결정)
-- reference 발췌 3개: `10_reference/{01_R0_R1_summary, 02_baseline_unit01, 03_current_plan_C}.md`
-- 외부 SSOT 와의 관계 명시: `10_reference/_origin.md`
-- 빈 영역들 모두 README + 후보 목록 (compact 후 진입 가이드)
+**바로 다음 행동**:
+INTEGRATED_PLAN §7 (결정 ①~⑮) 중 결정 ① (영상 표준 갱신 본격화) 가 활성화되면 §8 자율 작업 5건 시작.
 
 ---
 
@@ -177,16 +139,13 @@ Nick D6(scope) 결정 대기 + NCC 자율 진행 가능 4건 (§3.C.4).
 - `20_packages/design-system/subjects/people.css` (또는 era.css) 신설해 토큰 정의 검토
 - 시점: UNIT_PAGE_STANDARD 활용 본격화 시
 
-### 4.5 ⭐ 옛 `10_system/70_meta/` 마스터 플랜 정합성 처리 (NEW, R1.6 발견)
+### 4.5 옛 `10_system/70_meta/` 마스터 플랜 정합성 처리
 - 현 `VISION.md` / `MASTER_PLAN.md` / `ROADMAP.md` = 옛 00_LearningSystem 시절 (여러 자식 프로젝트 통합 메타). math-story-telling 단일 repo 마이그 후 outdated.
-- 처리 옵션: A 그대로 유지 / **B `90_archive/` 이동 + 신규 VISION 작성 (NCC 권장)** / C "outdated" 헤더 한 줄
-- D9 결정 대기. 별도 chatlog `260mmdd_meta_realignment.md` 권장.
+- 영상 제작 프로젝트의 [INTEGRATED_PLAN 결정 ⑮](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md) 에서 함께 다뤄짐.
 
-### 4.6 ⭐ 진화 메커니즘 (Build/Retrospect/Distill/Apply) 본격 작동 (NEW, R1.5)
-- `260520_system_architecture.md` R3 에서 합의된 4단계 사이클. unit-01 v1.5 retrospective 1건 작성 후 멈춰있음.
-- `10_system/50_insights/_index.md` 미반영 2건 (length dry run + 캐릭터 시트 분리) 처리 → STORY_VIDEO_v1_5.md 반영 → `[x]` 표시
-- `se_story_video_v1_5` skill 에 Phase E (자동 retrospective) 추가
-- 시점: C R2 (즉시) — NCC 자율 진행 가능 (R1.9 §1)
+### 4.6 진화 메커니즘 (Build/Retrospect/Distill/Apply) 본격 작동
+- `260520_system_architecture.md` 에서 합의된 4단계 사이클. unit-01 retrospective 1건 작성 후 멈춰있음.
+- 영상 제작 프로젝트의 [INTEGRATED_PLAN 결정 ① + 자율 작업 1~5](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md) 에서 본격화.
 
 ---
 
@@ -209,24 +168,23 @@ Nick D6(scope) 결정 대기 + NCC 자율 진행 가능 4건 (§3.C.4).
 | 외부 repo | `00_project_hub/40_context/external_repos.md` |
 | B chatlog | `00_project_hub/10_chatlog/260522_math_chapter_standard.md` |
 | B plan | `00_project_hub/20_plan/260522_plan_math_chapter.md` |
-| C plan | `00_project_hub/20_plan/260522_plan_video_flow.md` |
-| **C chatlog (R0+R1, origin)** | `00_project_hub/10_chatlog/260523_video_v1_5_standardize.md` |
-| ⭐ **본 sub-project entry** | **`11_video_gen_process/README.md`** |
-| 본 sub-project 헌장 | `11_video_gen_process/00_charter/{VISION,GOALS,DECISIONS}.md` |
-| 본 sub-project reference index | `11_video_gen_process/10_reference/_origin.md` |
+| ⭐ **영상 제작 프로젝트 단일 진입점** | **[`11_video_gen_process/00_charter/INTEGRATED_PLAN.md`](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md)** |
+| 영상 프로젝트 디렉토리 안내 | `11_video_gen_process/README.md` |
+| 영상 프로젝트 외부 자료 인덱스 | `11_video_gen_process/10_reference/_origin.md` |
+| 영상 프로젝트 출발점 대화 | `00_project_hub/10_chatlog/260523_video_v1_5_standardize.md` |
 | 단원 페이지 표준 | `10_system/10_principles/UNIT_PAGE_STANDARD.md` |
-| 영상 표준 (구) | `10_system/10_principles/STORY_VIDEO_v1_5.md` ← C R2에서 4개 항목 갱신 예정 |
+| 영상 표준 (갱신 대상) | `10_system/10_principles/STORY_VIDEO_v1_5.md` |
 | 앱 표준 | `10_system/10_principles/APP_PRINCIPLES.md` |
 | 학습자 프로필 | `10_system/20_context/LEARNER_PROFILE.md` |
 | 인물 사실 19인 | `30_content/people/*.md` |
 | 단원 메타 13개 | `30_content/units/NN/meta.json` |
 | Nick TODO | `00_project_hub/30_history/Nick_TODO.md` |
-| **영상 v1.5 unit-01 회고** | `10_system/50_insights/260520_unit01_story_video_v1_5.md` (미반영 2건) |
-| **insights index** | `10_system/50_insights/_index.md` |
-| **채널 비전 리뷰** | `00_project_hub/10_chatlog/260516_channel_vision_review.md` (시즌1=5인, 창의 제안 8) |
-| **시스템 아키텍처 합의** | `00_project_hub/10_chatlog/260520_system_architecture.md` (진화 메커니즘 4단계) |
-| **메타 플래닝** | `00_project_hub/10_chatlog/260516_meta_planning.md` (앱=백본 / 영상=보조) |
-| ⚠️ 옛 마스터 플랜 (outdated) | `10_system/70_meta/{VISION,MASTER_PLAN,ROADMAP}.md` (D9 처리 대기) |
+| 1편 회고 (미반영 2건) | `10_system/50_insights/260520_unit01_story_video_v1_5.md` |
+| 회고 인덱스 | `10_system/50_insights/_index.md` |
+| 채널 비전 리뷰 | `00_project_hub/10_chatlog/260516_channel_vision_review.md` |
+| 진화 메커니즘 4단계 합의 | `00_project_hub/10_chatlog/260520_system_architecture.md` |
+| 메타 플래닝 (앱=백본) | `00_project_hub/10_chatlog/260516_meta_planning.md` |
+| ⚠️ 옛 마스터 플랜 (outdated) | `10_system/70_meta/{VISION,MASTER_PLAN,ROADMAP}.md` |
 
 ---
 
@@ -237,9 +195,9 @@ Nick D6(scope) 결정 대기 + NCC 자율 진행 가능 4건 (§3.C.4).
 | 16 | ✅ completed | A. 마이그 잔재 정리 |
 | 18 | ✅ completed | B. 수학 챕터 표준 정의 |
 | 21 | ✅ completed | F. walk_01 보강 (01단원 H1·H2·H3) |
-| 17 | 🔄 in_progress | **C. 영상 v1.5 표준화** (R0+R1 완료, R2 대기) |
+| 17 | 🔄 in_progress | **C. 영상 제작 프로젝트** (`11_video_gen_process/`, [INTEGRATED_PLAN](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md) 단일 진입점) |
 | 19 | ⏳ pending | E. 배포 매핑·hookup |
-| 20 | ⏳ pending | D. 영상 단원별 확장 (β scope = 시즌1 4편) |
+| 20 | ⏳ pending | D. 영상 단원별 확장 (영상 프로젝트 결정 후) |
 
 ---
 
@@ -252,7 +210,8 @@ Nick D6(scope) 결정 대기 + NCC 자율 진행 가능 4건 (§3.C.4).
 | 2026-05-04~05 | mid_eun: 전면 Setup — CLAUDE.md 재작성, 4축 구조, 스킬/에이전트, 40_BaseDocs |
 | 2026-05-09 | mid_eun: 디렉토리 재구조화, 50_units 통합 |
 | 2026-05-10~11 | mid_eun: 13단원 문제 일괄 (260510_unit02~13.md) |
-| 2026-05-14 | mid_eun: 영상 v1.5 unit-01 완성 |
+| 2026-05-14 | mid_eun: 영상 1편 (에라토스테네스) 완성 |
 | 2026-05-21 | repo 통합 결정 (Round 1·2), migration plan 확정 |
 | **2026-05-22** | **A. 마이그 실행 + B 챕터 표준 정의 (Round 0~2.D)** |
-| **2026-05-23** | **B Round 2.E~G 마무리 + current-plan 갱신 + F walk_01 보강 + C R0(13편 진단) + C R1(zoom out 5편 권장 + 7갭 발견) + `11_video_gen_process/` sub-project 셋업 (풀세팅 9 sub-dir)** |
+| **2026-05-23** | **B Round 2.E~G 마무리 + current-plan 갱신 + F walk_01 보강 + 영상 제작 프로젝트 (`11_video_gen_process/`) 셋업 + 출발점 분석 (1편 baseline + 5편 vs 13편 + 7갭 발견)** |
+| **2026-05-24** | **영상 제작 프로젝트 단일 진입점화 — `INTEGRATED_PLAN.md` 자체완결 재작성. 옛 표기 폐기, 자연어·새 인덱스. current-plan / CLAUDE.md 진입 안내 정리.** |

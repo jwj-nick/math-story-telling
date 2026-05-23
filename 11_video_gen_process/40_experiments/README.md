@@ -4,13 +4,15 @@
 
 각 실험 = `exp-NNN-주제/` 폴더. 가설·setup·결과·회고 4섹션.
 
+단일 진입점: [`../00_charter/INTEGRATED_PLAN.md`](../00_charter/INTEGRATED_PLAN.md) — 검증 가설 (§9) 과 직접 연동.
+
 ## 명명 규약
 
 ```
 exp-001-elevenlabs-voice-compare/
 exp-002-mj-cref-character-consistency/
 exp-003-length-dry-run-automation/
-exp-004-storyboard-seed-from-meta-json/
+exp-004-storyboard-seed-from-meta/
 exp-005-unit02-brahmagupta-pilot/
 ```
 
@@ -21,11 +23,11 @@ exp-005-unit02-brahmagupta-pilot/
 exp-NNN-주제/
 ├── README.md           가설 + setup + 결과 + 회고
 ├── inputs/             실험 입력 자료
-├── outputs/            실험 산출물 (mp3, png, log 등)
-└── _evaluation.md      평가 → 60_evaluation/ 로 promote 시드
+├── outputs/            실험 산출물 (음성, 이미지, 로그 등)
+└── _evaluation.md      평가 → 60_evaluation/ 로 승격 시드
 ```
 
-## 실험 → 표준 promote 흐름
+## 실험 → 표준 승격 흐름
 
 ```
 exp-NNN/_evaluation.md
@@ -34,7 +36,7 @@ exp-NNN/_evaluation.md
 60_evaluation/<주제>.md (정제·일반화)
    │
    ▼ (검증된 표준)
-20_principles/<주제>.md (sub-project 시드)
+20_principles/<주제>.md (이 프로젝트 시드)
    │
    ▼ (math-story-telling SSOT 로)
 ../../10_system/10_principles/STORY_VIDEO_v1_5.md 갱신
@@ -44,10 +46,12 @@ exp-NNN/_evaluation.md
 
 `_index.md` 에 모든 실험 한 줄씩 (상태: planned / running / done / archived).
 
-## 후보 (compact 후 시작)
+## 실험 후보 (INTEGRATED_PLAN §9 검증 가설 연동)
 
-- exp-001: ElevenLabs voice 5인 비교 (Korean voices)
-- exp-002: MJ `--cref` 캐릭터 일관성 검증 (5장 같은 인물)
-- exp-003: length dry run 스크립트 (narration → mp3 → ffprobe → ±range 검증)
-- exp-004: meta.json → storyboard seed 자동 변환 시도
-- exp-005: unit-02 (브라마굽타) 파일럿 풀빌드
+- 검증 가설 1 (표준 일반화) → `exp-005-unit02-brahmagupta-pilot/` (2편 기본 단원 빌드)
+- 검증 가설 2 (집중 단원 효과) → 1편 S4 30초만 동적 시각화 재제작 실험
+- 검증 가설 3 (음향 효과) → 1편 영상에 음향만 추가 실험
+- ElevenLabs 음성 비교 → `exp-001-elevenlabs-voice-compare/`
+- Midjourney 캐릭터 일관성 검증 → `exp-002-mj-cref-character-consistency/`
+- 길이 사전 검증 자동화 → `exp-003-length-dry-run-automation/`
+- 단원 메타 → 스토리보드 시드 자동 변환 → `exp-004-storyboard-seed-from-meta/`
