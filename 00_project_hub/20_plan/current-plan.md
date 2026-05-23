@@ -9,9 +9,11 @@
 
 ## 0. 한 줄
 
-**영상 제작 프로젝트 (`11_video_gen_process/`) 본격 시작. 시즌1 5편 평균선 vs 차등 결정 + 자율 작업 5건 대기.**
+**영상 제작 시스템 구축 (`11_video_gen_process/`) 본격 시작.** 1단계 (수동 깊이) 출발점. 자율 작업 5건 대기.
 
-상세는 [`11_video_gen_process/00_charter/INTEGRATED_PLAN.md`](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md) 단일 문서로 통합되어 있음. 본 큰 그림 문서는 다른 트랙(A·B·F·D·E + 잔여 인프라) 의 위치 관리만 책임.
+이 트랙은 영상을 양산하는 곳이 아니다 — **영상 제작 시스템 (프로세스 + 자동화) 을 구축**. 절대 목적: [`11_video_gen_process/00_charter/PURPOSE.md`](../../11_video_gen_process/00_charter/PURPOSE.md). 현재 계획: [`INTEGRATED_PLAN.md`](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md).
+
+본 큰 그림 문서는 다른 트랙(A·B·F·E + 잔여 인프라) 의 위치 관리만 책임.
 
 ### 🚪 새 세션 entry point
 
@@ -78,11 +80,14 @@
 >
 > TaskList #17 (in_progress)
 
-**현재 상태 (한 줄)**:
-1편 (에라토스테네스, 소인수분해) 완성본 있음. 시즌1 5편을 "평균선" 으로 갈지 "차등 (집중 3편 + 기본 2편)" 으로 갈지 결정 대기. NCC 자율 작업 5건은 Nick 답 없이도 진행 가능 (영상 표준 문서 갱신·스킬 점검·회고 인덱스 정리·옛 비전 문서 audit·운영 원칙 시드).
+**본질**:
+영상을 양산하는 트랙이 아니다. **영상 제작 시스템 (프로세스 + 자동화) 을 구축하는 트랙**. 절대 변하지 않는 목적은 → [`11_video_gen_process/00_charter/PURPOSE.md`](../../11_video_gen_process/00_charter/PURPOSE.md)
+
+**현재 상태**:
+3단계 진화 모델 (수동 깊이 → 반복 적용 → 자동화) 중 1단계 (수동 깊이) 의 출발점에 있다. 1편 (에라토스테네스, 소인수분해) 빌드 경험은 있고, 그 경험에서 추출한 표준 4가지가 영상 표준 문서에 반영 대기.
 
 **바로 다음 행동**:
-INTEGRATED_PLAN §7 (결정 ①~⑮) 중 결정 ① (영상 표준 갱신 본격화) 가 활성화되면 §8 자율 작업 5건 시작.
+INTEGRATED_PLAN §7 결정 ① (영상 표준 갱신 본격화) 가 활성화되면 §8 자율 작업 5건 시작.
 
 ---
 
@@ -102,17 +107,11 @@ INTEGRATED_PLAN §7 (결정 ①~⑮) 중 결정 ① (영상 표준 갱신 본격
 
 ---
 
-### 🟠 가장 나중: D. 영상 단원별 확장
+### (옛 D 트랙: "영상 단원별 확장" — 폐기됨)
 
-> TaskList #20
-> 전제: C 표준 확정 + D6 scope 결정 + (선택) E 배포 매핑
-
-**방식**: 단원당 별도 chatlog (mid_eun `260510_unit02.md` 패턴 답습)
-- `260mmdd_unit02_video.md` (브라마굽타)
-- `260mmdd_unit03_video.md` (알콰리즈미)
-- ...
-
-페이스 (β scope 가정): 시즌1 5편 unit-02~05 단원당 1~2주. unit-06~13은 시즌1 회고 후 결정.
+> 옛 frame 의 "13단원 영상 일괄 확장" 트랙은 폐기되었다.
+> 영상 산출물은 본 프로젝트의 **부산물** 이지 별도 트랙이 아니다.
+> 큰 그림 트랙이 어떤 단원을 진행할 때, `11_video_gen_process/` 의 시스템이 그 단원의 영상을 만들어낸다. 단원 진행 자체는 다른 트랙 (학습자 진도) 의 책임.
 
 ---
 
@@ -195,9 +194,8 @@ INTEGRATED_PLAN §7 (결정 ①~⑮) 중 결정 ① (영상 표준 갱신 본격
 | 16 | ✅ completed | A. 마이그 잔재 정리 |
 | 18 | ✅ completed | B. 수학 챕터 표준 정의 |
 | 21 | ✅ completed | F. walk_01 보강 (01단원 H1·H2·H3) |
-| 17 | 🔄 in_progress | **C. 영상 제작 프로젝트** (`11_video_gen_process/`, [INTEGRATED_PLAN](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md) 단일 진입점) |
+| 17 | 🔄 in_progress | **C. 영상 제작 시스템 구축** (`11_video_gen_process/`, [PURPOSE](../../11_video_gen_process/00_charter/PURPOSE.md) + [INTEGRATED_PLAN](../../11_video_gen_process/00_charter/INTEGRATED_PLAN.md)) |
 | 19 | ⏳ pending | E. 배포 매핑·hookup |
-| 20 | ⏳ pending | D. 영상 단원별 확장 (영상 프로젝트 결정 후) |
 
 ---
 
@@ -213,5 +211,5 @@ INTEGRATED_PLAN §7 (결정 ①~⑮) 중 결정 ① (영상 표준 갱신 본격
 | 2026-05-14 | mid_eun: 영상 1편 (에라토스테네스) 완성 |
 | 2026-05-21 | repo 통합 결정 (Round 1·2), migration plan 확정 |
 | **2026-05-22** | **A. 마이그 실행 + B 챕터 표준 정의 (Round 0~2.D)** |
-| **2026-05-23** | **B Round 2.E~G 마무리 + current-plan 갱신 + F walk_01 보강 + 영상 제작 프로젝트 (`11_video_gen_process/`) 셋업 + 출발점 분석 (1편 baseline + 5편 vs 13편 + 7갭 발견)** |
-| **2026-05-24** | **영상 제작 프로젝트 단일 진입점화 — `INTEGRATED_PLAN.md` 자체완결 재작성. 옛 표기 폐기, 자연어·새 인덱스. current-plan / CLAUDE.md 진입 안내 정리.** |
+| **2026-05-23** | **B Round 2.E~G 마무리 + current-plan 갱신 + F walk_01 보강 + 영상 트랙 디렉토리 (`11_video_gen_process/`) 셋업 + 출발점 분석** |
+| **2026-05-24** | **영상 트랙 frame 재정렬 — 산출물 양산 frame 폐기. 본질이 "영상 제작 시스템 구축" 임을 명시 (`PURPOSE.md` 신설). `INTEGRATED_PLAN.md` 3단계 진화 frame 으로 전면 재작성.** |

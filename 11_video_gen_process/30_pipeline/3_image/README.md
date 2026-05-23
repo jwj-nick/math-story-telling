@@ -17,15 +17,15 @@
 
 ### 🔴 캐릭터 시트 분리
 
-(INTEGRATED_PLAN §3.3 4가지 갱신 중 하나 — 자율 작업 1)
+(INTEGRATED_PLAN §3.3 표준 4가지 중 하나 — 자율 작업 1)
 
 - `image_prompts.md` 최상단에 ## 인물 공통 묘사 섹션
 - 각 장면 프롬프트는 "use the common character" 참조
-- 시즌1 5인 (또는 전체 19인) 모두 시트 작성
+- 인물별 시트 작성 (시스템이 다룰 인물부터 순차적으로)
 
 ### 🔴 Midjourney `--cref` 도입
 
-(INTEGRATED_PLAN §7 결정 ⑤ — 채택 시)
+(INTEGRATED_PLAN §7 결정 ③ — 채택 시)
 
 - Midjourney basic 월 $10
 - 인물 1명당 reference 이미지 1장 → 모든 장면 동일 인물
@@ -51,5 +51,5 @@
 
 - `CHARACTER_SHEET_STANDARD.md` — 시트 작성 양식 + 활용 규칙
 - `MJ_PROMPT_GUIDE.md` — Midjourney 변환 표준
-- `character_sheets/` 시즌1 5인 (또는 전체 19인)
+- `character_sheets/` (시스템이 다룰 인물별, 순차 누적)
 - `seeds/unit_02_image_prompts.md` (첫 신규)

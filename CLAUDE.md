@@ -46,7 +46,7 @@ math-story-telling/
 │   ├── 50_insights/         회고 누적
 │   ├── 60_workflows/        다단계 절차
 │   └── 70_meta/             ⚠️ VISION, MASTER_PLAN, ROADMAP (옛 00_LearningSystem 시절, outdated — 정리 대기)
-├── 11_video_gen_process/  ⭐ 영상 제작 프로젝트 (단일 진입점: `00_charter/INTEGRATED_PLAN.md`)
+├── 11_video_gen_process/  ⭐ 영상 제작 시스템 구축 (목적: `00_charter/PURPOSE.md` / 계획: `00_charter/INTEGRATED_PLAN.md`). 영상 양산 X, 시스템 구축.
 ├── 20_packages/           떼서 다른 앱에 쓸 모듈
 │   ├── design-system/       CSS 토큰 4종 + subjects/math + dist
 │   └── video-pipeline/      (future)
