@@ -26,7 +26,7 @@
 |---|---|
 | 캐릭터 일관성 기법 시드 | → `STORY_VIDEO_v1_5.md` §2.2 |
 | 길이 사전 검증 시드 | → `STORY_VIDEO_v1_5.md` §4 |
-| 인물별 음성 매핑 시드 (시즌1 5인) | → `STORY_VIDEO_v1_5.md` §3.1 |
+| 인물별 음성 매핑 시드 | → `STORY_VIDEO_v1_5.md` §3.1 |
 | 디렉토리 이중 트리 시드 | → `STORY_VIDEO_v1_5.md` §7 |
 | 운영 원칙 7가지 운영 시드 (`POLISH_LOOP_OPERATING.md`) | → 새 표준 또는 회고 양식 |
 | 영상 검증 항목 (`VIDEO_AUDIT_RUBRIC.md`) | → 새 스킬 또는 `STORY_VIDEO_v1_5.md` §5 강화 |

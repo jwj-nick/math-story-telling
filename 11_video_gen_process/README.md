@@ -10,11 +10,14 @@
 
 ## 단일 진입점
 
-⭐ **[`00_charter/INTEGRATED_PLAN.md`](./00_charter/INTEGRATED_PLAN.md)**
+⭐ **[`00_charter/PURPOSE.md`](./00_charter/PURPOSE.md)** — 절대 변하지 않는 이 프로젝트의 목적
+⭐ **[`00_charter/INTEGRATED_PLAN.md`](./00_charter/INTEGRATED_PLAN.md)** — 현재 통합 계획
 
-이 한 편으로 프로젝트 전체를 이해할 수 있다. 무엇을 만드는가, 5편 계획, 1편의 출발점, 품질 강화 5요소, 운영 원칙 7가지, 시간 모델, 결정 질문들(①~⑮), 자율 작업 5건, 검증 가설 3건, 단계별 일정.
+**이 디렉토리는 영상을 양산하는 곳이 아니다.** 영상 제작 시스템 (프로세스 + 자동화) 을 구축하는 곳이다. 디렉토리 이름 `video_gen_process` 가 말하는 그대로 — process 가 핵심.
 
-다른 charter 문서 (`VISION.md` / `GOALS.md` / `DECISIONS.md`) 는 INTEGRATED_PLAN 으로 통합되어 deprecated. 이력 보존용으로만 존재.
+INTEGRATED_PLAN 한 편으로 프로젝트 전체를 이해할 수 있다: 시스템 정의, 3단계 진화 모델 (수동 깊이 → 반복 적용 → 자동화), 1편 출발점, 흡수할 능력 5가지, 진화 원칙 7가지, 결정 질문들, 자율 작업 5건, 검증 가설.
+
+다른 charter 문서 (`VISION.md` / `GOALS.md` / `DECISIONS.md`) 는 INTEGRATED_PLAN 으로 통합되어 deprecated. 이력 보존용.
 
 ---
 

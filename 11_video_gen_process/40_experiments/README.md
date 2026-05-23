@@ -48,9 +48,9 @@ exp-NNN/_evaluation.md
 
 ## 실험 후보 (INTEGRATED_PLAN §9 검증 가설 연동)
 
-- 검증 가설 1 (표준 일반화) → `exp-005-unit02-brahmagupta-pilot/` (2편 기본 단원 빌드)
-- 검증 가설 2 (집중 단원 효과) → 1편 S4 30초만 동적 시각화 재제작 실험
-- 검증 가설 3 (음향 효과) → 1편 영상에 음향만 추가 실험
+- 검증 가설 1 (표준 일반화) → 1단계 완료 후 다음 단원 빌드 실험
+- 검증 가설 2 (핵심 시각화 30초가 영상 천장을 올리는가) → 1편 S4 30초만 재제작 실험
+- 검증 가설 3 (음향 추가가 영상 톤을 격상시키는가) → 1편 영상에 음향만 추가 실험
 - ElevenLabs 음성 비교 → `exp-001-elevenlabs-voice-compare/`
 - Midjourney 캐릭터 일관성 검증 → `exp-002-mj-cref-character-consistency/`
 - 길이 사전 검증 자동화 → `exp-003-length-dry-run-automation/`

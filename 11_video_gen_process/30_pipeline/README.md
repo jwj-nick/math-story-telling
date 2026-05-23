@@ -26,12 +26,12 @@
 
 ## 단계별 진행 우선순위
 
-INTEGRATED_PLAN §4 (품질 강화 5요소) 채택 시 우선순위:
+INTEGRATED_PLAN §4 (시스템이 흡수할 능력 5가지) 흡수 시 우선순위:
 
 | 우선 | 단계 | 작업 |
 |---|---|---|
 | 🔴 | `2_narration/` | 고급 음성 합성 (ElevenLabs) + 길이 사전 검증 + 5인 음성 매핑 |
-| 🔴 | `3_image/` | Midjourney `--cref` + 캐릭터 시트 분리 + 시즌1 5인 시트 |
+| 🔴 | `3_image/` | Midjourney `--cref` + 캐릭터 시트 분리 + 인물별 시트 |
 | 🟡 | `1_storyboard/` | 단원 메타 기반 스토리보드 시드 자동 생성 |
 | 🟡 | `4_motion/` | 모션 시드 + ken burns 표준화 + 배경음·효과음 트랙 추가 |
 | 🟢 | `5_render/` | HyperFrames 안정 (이미 검증됨) |

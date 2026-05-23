@@ -12,10 +12,10 @@
 | 파일 | 무엇을 정리 |
 |---|---|
 | `_origin.md` | 모든 원본 path 인덱스 + 발췌 일자 |
-| `01_R0_R1_summary.md` | 이 프로젝트 출발점 대화 — 1편 분석 + 5편 vs 13편 논의 + 자율 작업 4건 |
+| `01_R0_R1_summary.md` | 이 프로젝트 출발점 대화 — 1편 분석 + 시스템 구축 논의 (당시 산출물 양산 frame 포함, 폐기됨) + 자율 작업 4건 |
 | `02_baseline_unit01.md` | 1편 (에라토스테네스) 완성본 산출물 정밀 — 6장면 / SSML / 이미지 / 모션 / 메트릭 |
 | `03_current_plan_C.md` | math-story-telling 큰 그림에서 이 프로젝트의 위치 |
-| `04_R6_quality_essence.md` | 품질·에센스 원리 — 집중 단원 / 5요소 / 7원칙. INTEGRATED_PLAN 작성의 핵심 입력 |
+| `04_R6_quality_essence.md` | 품질·에센스 원리 — 5요소 / 7원칙 / 시간 사고. INTEGRATED_PLAN 작성의 원리적 입력 |
 | `260523_R6_quality_essence.md` | 위 원본의 통째 사본 (외부 위치 보존 보장) |
 
 ## 발췌의 운영 규칙
