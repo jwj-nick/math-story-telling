@@ -45,7 +45,8 @@ math-story-telling/
 │   ├── 40_proposals/        incubation (chatlog → proposals → skills)
 │   ├── 50_insights/         회고 누적
 │   ├── 60_workflows/        다단계 절차
-│   └── 70_meta/             VISION, MASTER_PLAN, ROADMAP, PATTERNS (구 00_LearningSystem)
+│   └── 70_meta/             ⚠️ VISION, MASTER_PLAN, ROADMAP (구 00_LearningSystem, outdated) — D-012 처리 대기
+├── 11_video_gen_process/  ⭐ NEW (2026-05-23) — 영상 R&D sub-project (charter/pipeline/experiments/evaluation/sessions/tools)
 ├── 20_packages/           떼서 다른 앱에 쓸 모듈
 │   ├── design-system/       CSS 토큰 4종 + subjects/math + dist
 │   └── video-pipeline/      (future)
