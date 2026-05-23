@@ -9,7 +9,7 @@
 
 ## 0. 한 줄
 
-마이그 + 수학 챕터 표준 정의 완료. **다음은 영상 v1.5 표준화 (C)** 가 우선 큰 작업.
+마이그 + 수학 챕터 표준 정의 + F walk_01 보강 완료. **다음은 영상 v1.5 표준화 (C)** 가 우선 큰 작업.
 
 ---
 
@@ -28,6 +28,13 @@
 - `40_grades/middle/math1/unit-01/` (mathtelling 시드, 정보 가치 0) 삭제
 - `_index_v_mathtelling.html` (충돌 회피 잔재) 삭제
 - commit `13b0159`
+
+### F. walk_01 보강 (2026-05-23)
+- `40_grades/middle/math1/01_소인수분해/problems/walk_01_H{1,2,3}.html` 신규 3개
+- H1: 100 이하 소수 25개 (에라토스테네스 체 100칸 시각화)
+- H2: 소피 제르맹 소수 (p=2,3,5,7 검증표)
+- H3: 자릿수 합 = 10인 가장 작은 세 자리 소수 = 109
+- 양식: unit 02 walk_01_H1.html 5페이지 표준 (문제→1·2·3단계→정답+요약)
 
 ### B. 수학 챕터 표준 정의 (2026-05-22 ~ 05-23)
 
@@ -57,7 +64,7 @@
 
 ---
 
-## 3. 다음 할 일 (TaskList #17·19·20·21)
+## 3. 다음 할 일 (TaskList #17·19·20)
 
 ### 🟢 다음 큰 작업: C. 영상 v1.5 표준화
 
@@ -79,22 +86,6 @@
 - **영상 디렉토리 재구조화**: B에서 합의된 `people/<ref>/<ep>/` 원본 + `seasons/` view 로 이동 (현 `season-1-ancient/unit-01/` → `people/eratosthenes/sieve-of-eratosthenes/` + `seasons/season-1-ancient/unit-01/`)
 - AI 이미지 생성 워크플로우 (Nick_TODO T2 — Stable Diffusion 로컬 vs API)
 - ElevenLabs 한국어 TTS 도입 (Nick_TODO T1)
-
----
-
-### 🔵 단발 후속: F. walk_01 보강
-
-> 01단원 problems/walk_01_H{1,2,3}.html 누락 (의도 아닌 단원 작업 잔재)
-> 다른 12단원은 walk_01 정상 존재
-> TaskList #21
-
-**작업 명세**:
-- `40_grades/middle/math1/01_소인수분해/problems/type_01_app.html` 의 H 난이도 3문제 추출
-- 각 문제별 `walk_01_H{1,2,3}.html` step-by-step 풀이 작성
-- skill 후보: `/se_math_practice` 또는 `/se_math_error_note`
-- 1~2 라운드면 끝남
-
-C 전에 빠르게 처리하거나, D (13단원 영상 일괄 확장) 단원 01 진입 시 합쳐서 처리 가능.
 
 ---
 
@@ -189,8 +180,8 @@ C 전에 빠르게 처리하거나, D (13단원 영상 일괄 확장) 단원 01 
 |---|---|---|
 | 16 | ✅ completed | A. 마이그 잔재 정리 |
 | 18 | ✅ completed | B. 수학 챕터 표준 정의 |
+| 21 | ✅ completed | F. walk_01 보강 (01단원 H1·H2·H3) |
 | 17 | ⏳ pending | **C. 영상 v1.5 표준화** ← 다음 |
-| 21 | ⏳ pending | F. walk_01 보강 (단발) |
 | 19 | ⏳ pending | E. 배포 매핑·hookup |
 | 20 | ⏳ pending | D. 13단원 영상 일괄 확장 |
 
@@ -208,4 +199,4 @@ C 전에 빠르게 처리하거나, D (13단원 영상 일괄 확장) 단원 01 
 | 2026-05-14 | mid_eun: 영상 v1.5 unit-01 완성 |
 | 2026-05-21 | repo 통합 결정 (Round 1·2), migration plan 확정 |
 | **2026-05-22** | **A. 마이그 실행 + B 챕터 표준 정의 (Round 0~2.D)** |
-| **2026-05-23** | **B Round 2.E~G 마무리 + current-plan 갱신** |
+| **2026-05-23** | **B Round 2.E~G 마무리 + current-plan 갱신 + F walk_01 보강** |
