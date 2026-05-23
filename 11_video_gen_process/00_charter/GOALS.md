@@ -38,26 +38,53 @@
 
 ---
 
-## scope 결정 (D6 — math-story-telling current-plan §2.C.3)
+## scope 결정 (D-004 / 상위 D6 — math-story-telling current-plan §2.C.3)
 - α 13편 일괄
-- **β 시즌1 5편 우선 (NCC 권장)**
+- β 시즌1 5편 (평준화)
 - γ 시즌1 + 시즌2 일부
+- **δ 시즌1 5편 + Cornerstone 차등 (3+2) — NCC 권장 (R6 통합 후)**
 
-→ compact 후 첫 결정 항목.
+→ compact 후 첫 결정 항목. 본 sub-project 의 거의 모든 후속 결정 의존.
+
+### δ 시간 모델 (R6 §5)
+
+| 작업 종류 | 시즌1 5편 | 시간 |
+|---|---|---|
+| 표준 v1.6 (2단원) | 30h | |
+| Cornerstone (3단원) | 180h | |
+| Polish + 진화 메커니즘 | 25h | |
+| **총 시즌1** | | **~235h** |
+
+→ **주당 15h × 16주 = 4개월 (2026-05~09) 권장**. Nick 본업·5 study 고려 시 현실적.
 
 ---
 
-## 우선순위 후보 (compact 후 정렬)
+## 우선순위 후보 (R6 통합 후 — δ 옵션 기준)
 
-1. 🔴 진화 메커니즘 본격화 (insights 2건 + skill Phase E)
-2. 🔴 STORY_VIDEO_v1_5.md → v1.6 갱신
-3. 🟡 19인 또는 5인 캐릭터 시트
-4. 🟡 unit-02 파일럿 (TTS·이미지 도구 결정 후)
-5. 🟢 시즌1 나머지 (03·04·05)
-6. 🟢 audit skill 신설 검토
+1. 🔴 **NCC 자율 sprint 0** (5건, R1.9 + R6 §5)
+   - insights 2건 → STORY_VIDEO_v1_5 반영
+   - skill 점검
+   - STORY_VIDEO_v1_5 4 항목 갱신 (= v1.6 시드)
+   - 옛 70_meta audit (D-012 후 처리)
+   - ⭐ R6 7 원칙 운영화 시드 (`20_principles/POLISH_LOOP_OPERATING.md`)
+2. 🔴 STORY_VIDEO_v1_5.md → v1.6 확정 (4 항목 + R6 §3 quality 절 추가)
+3. 🟡 시즌1 5인 voice 매핑 (D-005 ElevenLabs 결정 후)
+4. 🟡 unit-02 표준 파일럿 (v1.6 검증)
+5. 🟡 ⭐ Cornerstone 01 재빌드 — Set-piece [A] + BGM [C] 적용 (D-015 + D-016)
+6. 🟢 Cornerstone 04 or 03 빌드 (D-014 후)
+7. 🟢 Cornerstone 05 빌드
+8. 🟢 시즌1 종합 회고 + 시즌2 진입 결정 (D-011 창의 제안 검토 포함)
+
+## 마일스톤 (INTEGRATED_PLAN §6.3)
+
+- **M1 (~2026-06-15, 3주)**: NCC 자율 5건 + v1.6 + unit-02 파일럿
+- **M2 (~2026-07-15, 7주)**: Cornerstone 01 재빌드 + D-014 확정
+- **M3 (~2026-08-15, 12주)**: Cornerstone 04 or 03 + 표준 unit-04 빌드
+- **M4 (~2026-09-15, 16주)**: Cornerstone 05 + 시즌1 종합 회고 + 시즌2 진입 결정
 
 ---
 
 ## 변경 이력
 
 - 2026-05-23: placeholder 신설.
+- 2026-05-23 (compact 후): R6 통합 — D-004 옵션 δ 추가, δ 시간 모델 (235h/4개월) 추가, 우선순위 8 후보 + 마일스톤 M1~M4 (16주).

@@ -14,6 +14,8 @@
 | `01_R0_R1_summary.md` | `../../00_project_hub/10_chatlog/260523_video_v1_5_standardize.md` | 2026-05-23 |
 | `02_baseline_unit01.md` | `../../50_channel/season-1-ancient/unit-01/{storyboard_v1_5.md, narration_v1_5.{txt,xml}, image_prompts.md, config_v1_5.json}` | 2026-05-23 |
 | `03_current_plan_C.md` | `../../00_project_hub/20_plan/current-plan.md` §0 + §2.C | 2026-05-23 |
+| `04_R6_quality_essence.md` | `C:/Kids/00_LearningSystem/00_chatlog/260523_R6_quality_essence.md` ⚠️ 외부 위치 | 2026-05-23 |
+| `260523_R6_quality_essence.md` (원본 사본) | 동상. 외부 위치 보존 위해 본 폴더에 통째 사본 보관 | 2026-05-23 |
 
 ---
 
@@ -52,3 +54,4 @@
 ## 변경 이력
 
 - 2026-05-23: 신규. sub-project 셋업 시점. 발췌 3건 + 외부 참조 13건.
+- 2026-05-23 (compact 후): R6 quality_essence 발췌 추가. 발췌 4건. 원본은 `00_LearningSystem` 외부 위치 — D-012 옛 70_meta 처리 와 함께 검토 필요.

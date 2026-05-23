@@ -423,3 +423,71 @@ R0는 "13단원 영상 만들기" 에 집중. R1은 **"왜 영상을 만드는�
 
 > **다음 액션**: Nick이 D6 (scope) 만이라도 답하면 R2 시작. 동시에 NCC는 1.9의 4건 자율 진행.
 
+
+---
+
+# Round 2 — R6 (Quality / Essence) 통합 + sub-project plan 재정립
+
+> 2026-05-23 compact 후. Nick 지시: "C:/Kids/00_LearningSystem/00_chatlog/260523_R6_quality_essence.md 도 여기 갖고와서 11_video_gen_process plan을 원래 있던 파일들과 함께 생각해서 세워보기"
+>
+> 본 라운드 본문은 sub-project 내부 (`11_video_gen_process/00_charter/INTEGRATED_PLAN.md`) 에 정리. 여기는 메타 + 변경 요지만.
+
+## 2.1 R6 를 sub-project 로 가져온 방식
+
+- 원본: `C:/Kids/00_LearningSystem/00_chatlog/260523_R6_quality_essence.md` (외부 위치 — 옛 00_LearningSystem 잔존)
+- 발췌: `11_video_gen_process/10_reference/04_R6_quality_essence.md` (영상 R&D 직접 관련 §1·§2·§4.3·§5 + 외부 트랙 §3·§4.2·§6 요약)
+- 인덱스: `10_reference/_origin.md` 에 entry 추가
+- 외부 위치 D-012 옛 70_meta 처리 와 함께 검토 필요로 표시
+
+## 2.2 R6 가 sub-project plan 골격을 바꾼 부분
+
+| 이전 (R0+R1) | 이후 (R6 통합) |
+|---|---|
+| scope = β 시즌1 5편 평준화 | **scope = δ 시즌1 5편 + Cornerstone 차등 (3+2)** |
+| 표준화 = v1.5 → v1.6 단일 층 | 표준화 **2 층**: ① 표준 단원 v1.6 평균선 + ② Cornerstone 단원 peak (5 quality 레버) |
+| 시간 = 3~5주 (β) | **시간 = 235h / 4개월 (주당 15h)** |
+| 결정 항목 D-004~D-013 | + **D-014~D-019 신설** (Cornerstone / Set-piece / BGM·SFX / 일러스트 / Sub-3min / Polish Loop) |
+| NCC 자율 4건 (R1.9) | + **자율 5건째** 추가 (R6 7 원칙 운영화 시드) |
+
+## 2.3 핵심 신 frame — Cornerstone 차등
+
+R6 §1 "자동화 vs 깊이는 충돌" 명제. 같은 단원에 둘 다 부으면 둘 다 못 함.
+
+→ **5편 안에서도 3 Cornerstone + 2 표준**:
+- Cornerstone 추천: 01 에라토스테네스 + 04 디오판토스 + 05 데카르트 (방정식 = 중1 시험 최대 비중)
+- 표준: 02 브라마굽타 (시즌1 두 번째 = v1.6 표준 검증 파일럿) + 03 알콰리즈미
+
+5 quality 레버 [A]~[E] 적용 매트릭스:
+| 레버 | Cornerstone | 표준 |
+|---|---|---|
+| [A] Set-piece 30s | ✅ | ❌ |
+| [B] ElevenLabs | ✅ 5 voice | edge-tts |
+| [C] BGM | ✅ ambient + sting | ✅ ambient 만 |
+| [D] 일러스트 외주 | ✅ 한 장 | ❌ AI |
+| [E] Sub-3min 보조 | ✅ 1~3개 | △ 0~1개 |
+
+## 2.4 산출물
+
+- ⭐ `11_video_gen_process/00_charter/INTEGRATED_PLAN.md` 신설 — 4 reference 통합 plan (메인 산출물)
+- `10_reference/04_R6_quality_essence.md` 발췌
+- `10_reference/_origin.md` 갱신
+- `00_charter/DECISIONS.md` 갱신 — D-004 옵션 δ + D-014~D-019 신설
+- `00_charter/VISION.md` 갱신 — §4 Cornerstone / §5 한 단어·manifesto 신호
+- `00_charter/GOALS.md` 갱신 — δ 시간 모델 + 우선순위 8 후보 + 마일스톤 M1~M4 (16주)
+
+## 2.5 다음 액션 분기 (sub-project INTEGRATED_PLAN §7)
+
+- **분기 A** Nick 결정 우선: D-013 → D-004 → D-014 → 즉시 sprint
+- **분기 B** NCC 자율 우선 (권장): D-013 만 결정 → 자율 5건 진행 → Nick 결정은 R3 라운드로 평행
+- **분기 C** 단원 빌드 즉시: 지양 (v1.5 → v1.6 갱신 전 빌드 = polish 기회 손실)
+
+→ NCC 추천 = **분기 B**. compact 후 첫 세션 = "NCC 자율 sprint 0 + R3 안건 상정".
+
+## 2.6 R6 의 Q1~Q6 중 본 sub-project 영역 (Nick 응답 대기)
+
+- **Q1** Cornerstone 3단원 후보 — 01 + 04 + 05 (NCC 추천) or 01 + 03 + 05 → D-014
+- **Q2** Cornerstone 01 즉시 시도 1~2개 — [A] Set-piece + [C] BGM/SFX (NCC 추천) → D-015 + D-016
+- **Q4** Deep-dive 8종 중 영상 영역 — "인물의 한 단어 + 30s 영상" 만 (= Sub-3min [E])
+- **Q5** Polish Loop 운영 — 단원 완료 후 retrospective + manifesto 한 줄 (NCC 추천) → D-019
+- Q3·Q6 = 외부 트랙 (앱·ops-studio-app)
+
