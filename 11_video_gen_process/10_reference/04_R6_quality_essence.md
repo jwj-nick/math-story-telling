@@ -1,5 +1,9 @@
 <!-- 04_R6_quality_essence.md -->
 
+> ⚠️ **이 발췌는 옛 표기 (R6, D-NNN, Cornerstone, β/δ, sub-project, P1~P7 등) 를 그대로 포함한다.**
+> 자연어로 풀이된 본 프로젝트의 현재 계획은 [`../00_charter/INTEGRATED_PLAN.md`](../00_charter/INTEGRATED_PLAN.md) 에 있다.
+> R6 의 핵심 통찰 (집중 단원·5요소·7원칙·시간 모델) 은 INTEGRATED_PLAN §2.2 / §4 / §5 / §6 에 모두 통합되어 있어, 일반 사용 시 직접 읽지 않아도 된다.
+
 # 발췌 — `260523_R6_quality_essence.md` (Quality / Essence)
 
 - **원본**: `C:/Kids/00_LearningSystem/00_chatlog/260523_R6_quality_essence.md`

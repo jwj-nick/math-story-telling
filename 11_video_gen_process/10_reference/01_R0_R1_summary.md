@@ -1,5 +1,9 @@
 <!-- 01_R0_R1_summary.md -->
 
+> ⚠️ **이 발췌는 옛 표기 (R0/R1, D-NNN, β/δ, sub-project 등) 를 그대로 포함한다.**
+> 자연어로 풀이된 본 프로젝트의 현재 계획은 [`../00_charter/INTEGRATED_PLAN.md`](../00_charter/INTEGRATED_PLAN.md) 에 있다.
+> 본 발췌는 사실 자료 (출발점 대화의 핵심) 보존용. 일반 사용 시 직접 읽지 않아도 된다.
+
 # 발췌 — `260523_video_v1_5_standardize.md` R0+R1 핵심
 
 - **원본**: `../../00_project_hub/10_chatlog/260523_video_v1_5_standardize.md`

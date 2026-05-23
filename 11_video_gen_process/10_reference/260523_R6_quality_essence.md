@@ -1,5 +1,9 @@
 <!-- 260523_R6_quality_essence.md -->
 
+> ⚠️ **이 파일은 외부 원본 (`C:/Kids/00_LearningSystem/00_chatlog/260523_R6_quality_essence.md`) 의 통째 사본이다.**
+> 옛 표기 (R6, Cornerstone, P1~P7 등) 를 그대로 포함. 자연어로 풀이된 본 프로젝트의 현재 계획은 [`../00_charter/INTEGRATED_PLAN.md`](../00_charter/INTEGRATED_PLAN.md) 에 있다.
+> 본 사본은 외부 위치 보존 보장용. 일반 사용 시 INTEGRATED_PLAN 만으로 충분.
+
 # Round 1 — Quality / Essence 전략 (자동화 너머)
 
 ## 0. 출발 — Nick의 질문 (요약)

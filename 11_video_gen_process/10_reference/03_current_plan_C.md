@@ -1,5 +1,9 @@
 <!-- 03_current_plan_C.md -->
 
+> ⚠️ **이 발췌는 옛 표기 (R0/R1, D-NNN, β/δ, sub-project, Phase 0-A 등) 를 그대로 포함한다.**
+> 자연어로 풀이된 본 프로젝트의 현재 계획은 [`../00_charter/INTEGRATED_PLAN.md`](../00_charter/INTEGRATED_PLAN.md) 에 있다.
+> 본 발췌는 발췌 당시 (2026-05-23) current-plan 상태 기록. 현재 current-plan 은 INTEGRATED_PLAN 으로 통합되어 변경됨.
+
 # 발췌 — `current-plan.md` §0 + §2.C
 
 - **원본**: `../../00_project_hub/20_plan/current-plan.md`

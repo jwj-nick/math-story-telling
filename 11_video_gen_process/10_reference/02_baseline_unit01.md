@@ -1,5 +1,9 @@
 <!-- 02_baseline_unit01.md -->
 
+> ⚠️ **이 발췌는 옛 표기 (v1.5, R0 등) 를 그대로 포함한다.**
+> 자연어로 풀이된 본 프로젝트의 현재 계획은 [`../00_charter/INTEGRATED_PLAN.md`](../00_charter/INTEGRATED_PLAN.md) §3 (1편 출발점) 에 있다.
+> 본 발췌는 1편 (에라토스테네스) 의 정밀 사실 자료 보존용. 일반 사용 시 INTEGRATED_PLAN §3.1 이 충분하다.
+
 # 발췌 — unit-01 v1.5 baseline 데이터
 
 - **원본**: `../../50_channel/season-1-ancient/unit-01/` 안 6개 텍스트 소스

@@ -3,18 +3,24 @@
 # Experiments Index
 
 > 모든 실험 한 줄씩. 상태: 🔵 planned / 🟢 running / ✅ done / ⚫ archived
+>
+> 검증 가설 ↔ 실험 매핑은 [`../00_charter/INTEGRATED_PLAN.md`](../00_charter/INTEGRATED_PLAN.md) §9 참조.
 
 ## 진행
 
-(없음 — compact 후 첫 실험 시작)
+(없음 — 첫 실험 시작 대기)
 
-## 계획됨 (planned, 상위 D6~D10 결정 후 우선순위)
+## 계획됨 (planned)
 
-- 🔵 exp-001 ElevenLabs voice 5인 비교 (Korean) — D-005 결정 후
-- 🔵 exp-002 MJ `--cref` 캐릭터 일관성 검증 — D-006 결정 후
-- 🔵 exp-003 length dry run 자동화 스크립트
-- 🔵 exp-004 meta.json → storyboard seed 자동 변환
-- 🔵 exp-005 unit-02 (브라마굽타) 파일럿 풀빌드 — exp-001~004 후
+| 실험 | 검증 가설 | 의존 결정 (INTEGRATED_PLAN §7) |
+|---|---|---|
+| 🔵 exp-001 ElevenLabs 음성 5인 비교 (한국어) | (음성 매핑 결정) | 결정 ④ (음성 도구 전환) 후 |
+| 🔵 exp-002 Midjourney `--cref` 캐릭터 일관성 검증 | (이미지 도구) | 결정 ⑤ (이미지 도구 전환) 후 |
+| 🔵 exp-003 길이 사전 검증 자동화 스크립트 | (자율 작업 1 일부) | 즉시 가능 |
+| 🔵 exp-004 단원 메타 → 스토리보드 시드 자동 변환 | (시즌1 4편 시드 자동) | 결정 ⑨ (동시 시드) 후 |
+| 🔵 exp-005 2편 (브라마굽타) 기본 단원 파일럿 풀빌드 | **가설 1 (표준 일반화)** | exp-001~004 후 |
+| 🔵 exp-006 1편 S4 30초만 동적 시각화 재제작 | **가설 2 (집중 단원 효과)** | 결정 ⑬ (핵심 시각화 30초) 후 |
+| 🔵 exp-007 1편 영상에 음향만 추가 | **가설 3 (음향 효과)** | 결정 ⑭ (배경음·효과음) 후 |
 
 ## 완료 (done)
 
