@@ -7,16 +7,15 @@
 원본 path 인덱스 → [`_origin.md`](./_origin.md)
 이 프로젝트 단일 진입점 → [`../00_charter/INTEGRATED_PLAN.md`](../00_charter/INTEGRATED_PLAN.md)
 
-## 발췌 자료 (현재 5건)
+## 발췌 자료 (현재 4건)
 
-| 파일 | 무엇을 정리 |
-|---|---|
-| `_origin.md` | 모든 원본 path 인덱스 + 발췌 일자 |
-| `01_R0_R1_summary.md` | 이 프로젝트 출발점 대화 — 1편 분석 + 시스템 구축 논의 (당시 산출물 양산 frame 포함, 폐기됨) + 자율 작업 4건 |
-| `02_baseline_unit01.md` | 1편 (에라토스테네스) 완성본 산출물 정밀 — 6장면 / SSML / 이미지 / 모션 / 메트릭 |
-| `03_current_plan_C.md` | math-story-telling 큰 그림에서 이 프로젝트의 위치 |
-| `04_R6_quality_essence.md` | 품질·에센스 원리 — 5요소 / 7원칙 / 시간 사고. INTEGRATED_PLAN 작성의 원리적 입력 |
-| `260523_R6_quality_essence.md` | 위 원본의 통째 사본 (외부 위치 보존 보장) |
+| 파일 | 무엇을 정리 | 가치 |
+|---|---|---|
+| `_origin.md` | 모든 원본 path 인덱스 + 발췌 일자 | 메타 |
+| `01_R0_R1_summary.md` | 옛 출발점 대화 — 1편 분석 + 옛 양산 frame (폐기됨) | 낮음 (이력 보존) |
+| `02_baseline_unit01.md` | **1편 (에라토스테네스) 완성본 산출물 정밀** — 6장면 / SSML / 이미지 / 모션 / 메트릭 | **높음** (사실 자료, 다음 단계 [서사] 입력) |
+| `03_current_plan_C.md` | 옛 큰 그림 위치 (옛 표기) | 낮음 (이력 보존) |
+| `04_R6_quality_essence.md` | 품질·에센스 원리 — 5요소 / 7원칙 / 시간 사고 | 중간 (INTEGRATED_PLAN §9 진화 원칙 7가지의 원천 / 이미 흡수) |
 
 ## 발췌의 운영 규칙
 
