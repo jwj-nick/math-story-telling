@@ -26,7 +26,14 @@
       "Bash(git -C C:/Kids/90_Workspace/mathtelling-design-system log --oneline -5)",
       "Bash(chmod +x 70_tools/sync-skills.sh)",
       "Bash(bash 70_tools/sync-skills.sh --dry)",
-      "Bash(bash 70_tools/sync-skills.sh)"
+      "Bash(bash 70_tools/sync-skills.sh)",
+      "WebSearch",
+      "Bash(cd /c/Kids/math-story-telling/40_grades/middle/math1)",
+      "Bash([ -f \"$d/problems/types.md\" ])",
+      "Bash(head -50 __TRACKED_VAR__/problems/types.md)",
+      "Bash(ls -la 00_project_hub/30_history/Nick_TODO.md)",
+      "Bash(head -30 00_project_hub/30_history/Nick_TODO.md)",
+      "Bash(git push *)"
     ]
   }
 }
