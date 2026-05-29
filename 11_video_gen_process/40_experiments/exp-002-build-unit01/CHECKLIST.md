@@ -19,11 +19,13 @@
 | 1 | [서사] | `se-people-narrate` | ✅ v0.1 | ✅ [1-narrative.md](./1-narrative.md) | ✅ | ✅ all ok (2026-05-25) |
 | 2 | [스토리] | `se-video-story` | ✅ v0.1 | ✅ [2-story-seed.md](./2-story-seed.md) | ✅ | ✅ all ok (2026-05-25) |
 | 3 | [영상 1] 스토리보드 | `se-video-storyboard` | ✅ v0.1 | ✅ [3-storyboard.md](./3-storyboard.md) | ✅ | ✅ all ok (2026-05-25) |
-| 4 | [영상 2] 나레이션 | `se-video-narration` | 🟡 진입 대기 | ⚪ | — | — |
-| 5 | [영상 3] 이미지 | `se-video-image` | ⚪ 미정의 | ⚪ | — | — |
-| 6 | [영상 4] 모션 | `se-video-motion` | ⚪ 미정의 | ⚪ | — | — |
-| 7 | [영상 5] 렌더 | `se-video-render` | ⚪ 미정의 | ⚪ | — | — |
-| 8 | [영상 6] 합성 | `se-video-compose` | ⚪ 미정의 | ⚪ | — | — |
+| 4 | [영상 2] 나레이션 | `se-video-narration` | ✅ v0.5.2 | ✅ [4-narration.mp3](./4-narration.mp3) Kanna+Kyle 140s | ✅ | ✅ all ok (노이즈 해결, 2026-05-29) |
+| 5 | [영상 3] 이미지 | `se-video-image` | ✅ v0.1 | ✅ [5-image_prompts.md](./5-image_prompts.md) + 5-images/ 8장 (Nano Banana, S3 '소수의 체' 체 이미지 보강) | ✅ | ✅ 합격 (2026-05-29) |
+| 6 | [영상 4] 모션 | `se-video-motion` | ✅ v0.1 | ✅ [6-motion-config.json](./6-motion-config.json) | ✅ | — |
+| 7 | [영상 5] 렌더 | `se-video-render` | ✅ v0.1 | ✅ 7-raw.mp4 (FFmpeg zoompan+자막) | ✅ | — |
+| 8 | [영상 6] 합성 | `se-video-compose` | ✅ v0.1 | ✅ [8-final.mp4](./8-final.mp4) 140.27s + 8-poster.jpg | ✅ | — |
+
+> **Vertical slice 완료 (2026-05-29)**: 8 STEP 스킬 전부 시드 + 영상 1편(8-final.mp4) 완성. 회고 = [final-retrospective.md](./final-retrospective.md). 양산 계획 = [../../00_charter/MATH1_VIDEO_ROADMAP.md](../../00_charter/MATH1_VIDEO_ROADMAP.md).
 
 **범례**: ⚪ 미시작 / 🟡 진행 중 / ✅ 완료 / ⚠️ 이슈 / ❌ 차단
 

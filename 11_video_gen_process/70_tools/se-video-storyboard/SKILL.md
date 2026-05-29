@@ -148,12 +148,17 @@ allowed-tools: Read Write Grep Glob Bash AskUserQuestion WebFetch WebSearch
 ## 진화 메커니즘
 
 - **v0.1** = exp-002 STEP 3 시범 reverse-engineering. 2026-05-25.
-- **v0.2** (정련 예정):
+- **v0.2** (정련 예정 — exp-002 STEP 3 retrospective + STEP 4 결정 10 후):
   - 캐릭터 일관성 reference 양식 (description vs 이미지) 단원별 가이드
   - 카메라 워크 종류 표준화 (4~5종 vs 무제한)
   - 자막 폰트·color 시리즈 표준 vs 단원 특화
   - SVG 가능 장면 (소수 격자 등) vs AI 이미지 결정 가이드
   - 음향 단서 양식 정밀화 (STEP 8 입력으로 충분?)
+  - **SB5 나레이션 시드에 호기심 질문 + 마무리 명시** (v1) — TONE_STRUCTURE §2.
+  - **부록 A SSML break 호흡 시간 표 부합** (v1) — TONE_STRUCTURE §4.
+  - **친근 톤 평가 기준 추가** (v1) — TONE_STRUCTURE §1.
+  - **🔥 SB5 나레이션 시드 = dialog jsonl 형식 (v2)** — TONE_STRUCTURE v2 §1·§2·§7. 각 장면별 나레이션 = Q/A turn 분리 명시. 화면 인물 표시 (Q 자막 / A 자막 / 양쪽) 결정.
+  - **🔥 부록 A SSML multi-voice 양식 명시 (v2)** — TONE_STRUCTURE v2 §7. Azure/Google 호환 SSML 의 `<voice>` × 2 tag reference + edge-tts 의 turn 별 jsonl 양식.
 
 ---
 

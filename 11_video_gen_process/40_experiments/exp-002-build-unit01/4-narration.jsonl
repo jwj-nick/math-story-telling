@@ -1,0 +1,38 @@
+{"id": 1, "speaker": "Q", "scene": "S1", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "어! 기원전 3세기, 알렉산드리아라는 데가 있었다는데, 들어봤어요?"}
+{"id": 2, "speaker": "A", "scene": "S1", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "응! 나도 찾아봤는데, 이집트의 큰 항구 도시였어. 그 도시 한가운데에 세상 모든 지식이 모인 도서관이 있었지. 두루마리만 50만 권!"}
+{"id": 3, "speaker": "Q", "scene": "S1", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "와! 그럼, 그 도서관은, 누가 운영했어요?"}
+{"id": 4, "speaker": "A", "scene": "S2", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "에라토스테네스라는 학자였어. 도서관의 세 번째 관장이었지!"}
+{"id": 5, "speaker": "Q", "scene": "S2", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "오! '베타'라고 불렀다던데, 그게, 무슨 뜻이에요?"}
+{"id": 6, "speaker": "A", "scene": "S2", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "그러게! 알파벳 두 번째 글자인데, 모든 분야에서 2등이라는 뜻이래."}
+{"id": 7, "speaker": "Q", "scene": "S2", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "근데, 왜요? 1등도, 아니고?"}
+{"id": 8, "speaker": "A", "scene": "S3", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "사실 그는 정말 많은 걸 잘했거든. 수학, 천문학, 지리학, 시까지!"}
+{"id": 9, "speaker": "Q", "scene": "S3", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "어, 그건, 다재다능 한 거, 아니에요?"}
+{"id": 10, "speaker": "A", "scene": "S3", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "맞아! 어디서도 1등은 아니지만, 어디서나 2등은 됐다는 거지."}
+{"id": 11, "speaker": "A", "scene": "S3", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "근데 도서관에서 매일 책을 정리하던 그가 어느 날 이렇게 생각했대."}
+{"id": 12, "speaker": "Q", "scene": "S3", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "뭐라고요?"}
+{"id": 13, "speaker": "A", "scene": "S3", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "책처럼 수도 정리할 수 있을까, 라고!"}
+{"id": 14, "speaker": "Q", "scene": "S3", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "수를요? 어떻게요?"}
+{"id": 15, "speaker": "A", "scene": "S3", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "잘 봐. 6은 2 곱하기 3, 8은 2 곱하기 4. 이렇게 나뉘는 수가 있지?"}
+{"id": 16, "speaker": "Q", "scene": "S3", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "아, 진짜네요!"}
+{"id": 17, "speaker": "A", "scene": "S3", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "근데 2, 3, 5, 7은 더 못 나뉘잖아."}
+{"id": 18, "speaker": "Q", "scene": "S3", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "어! 신기해요."}
+{"id": 19, "speaker": "A", "scene": "S3", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "그가 만든 방법이 바로 '소수의 체'야! 큰 수까지 줄 세우고, 배수를 차례로 지우는 거지."}
+{"id": 20, "speaker": "Q", "scene": "S4", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "근데, 에라토스테네스 그분, 혼자 일했어요?"}
+{"id": 21, "speaker": "A", "scene": "S4", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "아니! 멀리 시러큐스, 이탈리아 시칠리아 섬에서 한 친구가 편지를 보냈대."}
+{"id": 22, "speaker": "Q", "scene": "S4", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "누구요?"}
+{"id": 23, "speaker": "A", "scene": "S4", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "아르키메데스!"}
+{"id": 24, "speaker": "Q", "scene": "S4", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "헐~~ 그 유명한, 아르키메데스요?"}
+{"id": 25, "speaker": "A", "scene": "S4", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "응. 수학 문제로 도전한 편지였대."}
+{"id": 26, "speaker": "A", "scene": "S4", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "두 거장이 같은 시대에 살았고, 서로 알았고, 이런 편지를 주고받았다는 거야!"}
+{"id": 27, "speaker": "Q", "scene": "S5", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "그럼, 같은 답을, 한 명만 찾은 거예요?"}
+{"id": 28, "speaker": "A", "scene": "S5", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "그것도 아니야! 한 세대 전, 같은 알렉산드리아 도서관에 유클리드가 있었어. 그도 비슷한 방법을 정리했지."}
+{"id": 29, "speaker": "Q", "scene": "S5", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "오..."}
+{"id": 30, "speaker": "A", "scene": "S5", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "그리고 500년이 더 지나서, 중국 위나라의 류후이라는 학자가 똑같은 방법을 또 찾아냈어."}
+{"id": 31, "speaker": "Q", "scene": "S5", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "혼자서요?"}
+{"id": 32, "speaker": "A", "scene": "S5", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "응, 혼자서! 인류가 같은 답에 두 번 도달한 거지."}
+{"id": 33, "speaker": "A", "scene": "S6", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "자, 이제 우리가 본 에라토스테네스를 한 단어로 표현하면 뭘까?"}
+{"id": 34, "speaker": "Q", "scene": "S6", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "음... 도서관에 책을 분류하고, 수도, 분류한 사람이니까..."}
+{"id": 35, "speaker": "A", "scene": "S6", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "잘 봤어!"}
+{"id": 36, "speaker": "A", "scene": "S6", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "지식을 정리하고, 수도 정리하고, 마지막까지 책과 함께한 사람."}
+{"id": 37, "speaker": "A", "scene": "S6", "voice": "Mike - Friendly, Balanced and Clear", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2}, "text": "한 단어로, '정리'!"}
+{"id": 38, "speaker": "Q", "scene": "S6", "voice": "Annie", "voice_settings": {"stability": 0.2, "similarity_boost": 0.75, "style": 0.7}, "text": "정리! 도서관 관장, 에라토스테네스에게, 딱이에요."}
