@@ -166,12 +166,16 @@ allowed-tools: Read Write Grep Glob Bash AskUserQuestion WebFetch WebSearch
 ## 진화 메커니즘
 
 - **v0.1** = exp-002 STEP 1 시범 (단원 1 / 에라토스테네스) 의 reverse-engineering. 2026-05-25.
-- **v0.2** (정련 예정 — exp-002 STEP 1 retrospective 후):
+- **v0.2** (정련 예정 — exp-002 STEP 1 retrospective + STEP 4 결정 10 후):
   - N4 자산-약속 매핑 표 정형화
   - fabrication 4분류 (사실 / NCC 해석 / 후세 전승 / 기록 없음) 정밀화
   - 출력 양식 §N 개수 결정 패턴 (자산 수 + 클로징)
   - 길이 기준 (원료 vs 노이즈 경계)
   - N2 Q&A 트리거 조건 정밀화
+  - **N5 서사 초안에 호기심 chain 가능 sequence 식별** (v1) — TONE_STRUCTURE §2. 자산을 *질문→답변* 순서로 배치 가능한지 검토.
+  - **친근 톤 가능 자산 명시** (v1) — TONE_STRUCTURE §1. 친근 별명 / 일상 사실 우선 식별.
+  - **풍부한 시대 배경 자산** (v1) — TONE_STRUCTURE §3. S1 풍경 시드 별도 명시.
+  - **🔥 N5 서사 원료에 dialog 가능 sequence 시드 명시 (v2)** — TONE_STRUCTURE v2 §1·§4. Q (청소년 호기심) 의 자연 질문 가능 sequence 예시 + A (대학원생) 의 *"나도 찾아봤는데..."* / *"내가 알기로는..."* 가능 사실 어디서 삽입 가능한지 시드 명시. 다음 단계 [스토리] 가 dialog turn 으로 분리 가능하도록.
 - **v0.3+** = 다음 단원 (브라마굽타 등) 시범 후 일반화 검증.
 
 ---

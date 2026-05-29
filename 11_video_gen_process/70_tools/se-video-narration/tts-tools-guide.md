@@ -9,15 +9,18 @@
 
 ---
 
-## 0. 한 줄 요약
+## 0. 한 줄 요약 (2026-05-26 갱신 — Google 1차 마이그)
 
 | 우선 | 도구 | 핵심 | 본 프로젝트 사용 |
 |---|---|---|---|
-| 🥇 1차 | **edge-tts** | 완전 무료 + 한국어 우수 + Python CLI | exp-002 STEP 4 1차 시범 |
-| 🥈 2차 | **ElevenLabs** | 감정 표현 최강 (떨림·여운) | Nick key 설정 후 비교 |
-| 🥉 3차 (대안) | **Google Cloud TTS** | SSML 풀 지원 + 무료 한도 큼 | 미사용 (향후 검증) |
+| 🥇 **1차** | **Google Cloud TTS** | **SSML 풀 + Neural2 한국어 우수 + 무료 한도 100만 chars/월** | **exp-002 STEP 4 v3.2 진행** |
+| 🥈 2차 | ElevenLabs | 감정 표현 최강 (premade voice 만 free) | Free tier API 차단 (library voice 불가) — Starter $5 결제 시 사용 |
+| 🥉 3차 | edge-tts | 완전 무료 + 한국어 3 voice 한정 | 청소년 voice 부재로 v2 폐기, fallback 가능 |
 
-본 프로젝트 110초 영상 1편 = ~550자. 어느 도구든 *비용 0~매우 낮음*.
+> **마이그 사유**: ElevenLabs Free tier 가 library voice (Mono Beige/Onyu/Kyle/Mike) API 호출 = HTTP 402 차단. Nick 결정 → 옵션 B (Google Cloud TTS) 선정.
+> 상세 setup: [`google-cloud-tts-guide.md`](./google-cloud-tts-guide.md)
+
+본 프로젝트 110초 영상 1편 = ~550자. Google Neural2 무료 한도 = **1,800편/월** → 0원.
 
 ---
 
@@ -84,22 +87,65 @@
 
 ---
 
-## 3. NCC 추천 (본 프로젝트 기준)
+## 3. NCC 추천 (본 프로젝트 기준 — 2026-05-26 v3.2 마이그)
 
 | 우선 | 도구 | 이유 |
 |---|---|---|
-| 🥇 1차 | **edge-tts** | 무료 + Azure 한국어 voice 우수 + NCC 직접 호출 + SSML 부분 (prosody/break 충분) |
-| 🥈 2차 | **ElevenLabs** | 감정 표현 최강. **결정적 순간 (S4 아르키메데스 편지 등) 의 떨림·여운** 표현에 우위 |
-| 🥉 3차 | **Google Cloud TTS** | SSML 풀 지원 필요 시 대안. 무료 한도 매우 큼 |
+| 🥇 **1차** | **Google Cloud TTS** | ko-KR-Neural2 한국어 voice 우수 + SSML 풀 + 무료 한도 100만 chars/월 + 결제 안정 (Free tier 차단 X) |
+| 🥈 2차 | **ElevenLabs Starter $5** | premade voice 만 Free 가능, library voice (Mono Beige/Mike) = $5 결제 시 사용. 감정 표현 최강 |
+| 🥉 3차 (fallback) | **edge-tts** | 한국어 3 voice 한정, 청소년 voice 부재 |
 
-본 시범 시퀀스:
-1. STEP 4 1차 = edge-tts (즉시)
-2. ElevenLabs = Nick key 설정 후 동일 입력 (4-narration.xml) 재시범
-3. 비교 결과 → 본 문서 §6 채움
+본 시범 시퀀스 (현재 진행):
+1. STEP 4 v1 = edge-tts SunHi (단일 voice) — 평면 톤 → 폐기
+2. STEP 4 v2 = edge-tts SunHi+InJoon (2 화자) — 211s, 청소년 voice 부재 → 폐기
+3. STEP 4 v3 = ElevenLabs Jessica+Will (premade) — 127.6s, 미국식 한국말 → 폐기
+4. STEP 4 v3.1 = ElevenLabs Mono Beige+Mike (library) — HTTP 402 Free tier 차단 → 결제 보류
+5. **STEP 4 v3.2 = Google Cloud TTS Neural2-A+C (현재)** — Nick setup + 시범 진행
+
+비교 결과 → 본 문서 §7 채움 + voice-pool.md Google section.
 
 ---
 
-## 4. ElevenLabs Setup 가이드 (Nick 용)
+## 4. Google Cloud TTS Setup 가이드 (1차, 현행)
+
+> **상세 가이드**: [`google-cloud-tts-guide.md`](./google-cloud-tts-guide.md) — 13 섹션 full setup.
+> 본 § = 요약.
+
+### 4.0 단계 요약
+1. Google Cloud 계정 + 새 프로젝트 + 결제 연결 (무료 한도 안 사용 시 0원)
+2. "Cloud Text-to-Speech API" 활성화
+3. IAM → 서비스 계정 `tts-narration` 생성 + 역할 "Cloud Text-to-Speech 사용자"
+4. JSON key 발급 → `C:\Users\admin\.gcloud\tts-key.json` 저장
+5. PowerShell setx:
+   ```powershell
+   [System.Environment]::SetEnvironmentVariable('GOOGLE_APPLICATION_CREDENTIALS', 'C:\Users\admin\.gcloud\tts-key.json', 'User')
+   ```
+6. `pip install google-cloud-texttospeech`
+7. NCC 에 "Google TTS setup 완료" 알림 → NCC 자동 합성
+
+### 4.1 NCC 자동 인식 패턴
+```bash
+GCRED=$(powershell -NoProfile -Command "[System.Environment]::GetEnvironmentVariable('GOOGLE_APPLICATION_CREDENTIALS', 'User')" | tr -d '\r\n')
+export GOOGLE_APPLICATION_CREDENTIALS="$GCRED"
+```
+
+(reference: [`memory/reference_powershell_key_extraction.md`](C:/Users/admin/.claude/projects/C--Kids-math-story-telling/memory/reference_powershell_key_extraction.md))
+
+### 4.2 본 프로젝트 voice 매핑 (Neural2)
+
+| 화자 | voice | 톤 |
+|---|---|---|
+| **Q (여, 청소년, 존댓말)** | `ko-KR-Neural2-A` | 표준, 따뜻 |
+| **A (남, 대학원생, 친절 반말)** | `ko-KR-Neural2-C` | 차분, 친절 |
+
+(Nick 청취 후 평가 → `voice-pool.md` Google section)
+
+### 4.3 청취 페이지
+https://cloud.google.com/text-to-speech/docs/voices
+
+---
+
+## 5. ElevenLabs Setup 가이드 (2차, Starter $5 결제 시)
 
 ### 4.1 계정 + key 발급
 

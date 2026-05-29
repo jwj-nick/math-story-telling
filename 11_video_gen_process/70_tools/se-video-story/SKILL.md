@@ -152,11 +152,17 @@ allowed-tools: Read Write Grep Glob Bash AskUserQuestion WebFetch WebSearch
 ## 진화 메커니즘
 
 - **v0.1** = exp-002 STEP 2 시범 (단원 1 / 에라토스테네스) reverse-engineering. 2026-05-25.
-- **v0.2** (정련 예정 — exp-002 STEP 2 retrospective 후):
+- **v0.2** (정련 예정 — exp-002 STEP 2 retrospective + STEP 4 결정 10 후):
   - 출력 양식 장면 카드 sub-section 수 결정 (4/5/6)
   - 약속 2 최소 운반 장면 수 — 1 vs 2
   - 옛 baseline 참조 옵션 효과 측정 (다음 단원 시범)
   - S3 통합·분할 규칙 정밀화
+  - **S4 장면 카드 초안 시 호기심 chain 명시** (v1) — TONE_STRUCTURE §2.
+  - **S6 마무리 멘트 명시** (v1) — TONE_STRUCTURE §2.
+  - **A3 영상 길이 신 범위 적용** (v1) — 잠정 110s → 시즌 1 = 150~180s.
+  - **친근 톤 + 풍부 배경 평가 기준 추가** (v1) — TONE_STRUCTURE §1·§3.
+  - **🔥 S4 장면 카드 = Q/A turn 분리 (v2)** — TONE_STRUCTURE v2 §1·§2. 각 장면 카드의 "나레이션 시드" 를 dialog jsonl 형식 (Q/A turn 별) 로 재작성. S6 마무리 = Q 시도 + A 확인 패턴.
+  - **🔥 A3 길이 신 범위 v2 = 150~210s** — dialog 자연 호흡으로 약간 더 김. TONE_STRUCTURE v2 §9.
 - **v0.3+** = 다음 단원 (브라마굽타 등) 시범 후 일반화 검증.
 
 ---

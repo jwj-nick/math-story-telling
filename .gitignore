@@ -22,6 +22,19 @@
 50_channel/**/poster*.jpg
 50_channel/**/poster*.png
 
+# 영상 제작 중간 산출물 (재생성 가능 — exp/단원 작업폴더)
+# 생성 이미지(png)는 비용·재현성 위해 보존, 중간 클립/오디오 조각만 제외
+11_video_gen_process/**/clips/
+11_video_gen_process/**/captxt/
+11_video_gen_process/**/turns/
+11_video_gen_process/**/turns_*/
+11_video_gen_process/**/concat*.txt
+11_video_gen_process/**/frame_*.png
+11_video_gen_process/**/silence_*.mp3
+11_video_gen_process/**/_*_boost.json
+11_video_gen_process/**/test_*.png
+11_video_gen_process/**/8-poster.jpg
+
 # OS·에디터
 .DS_Store
 Thumbs.db
