@@ -1,0 +1,77 @@
+{
+  "_comment": "exp-002 STEP 6 모션 config. scene별 시간=음성 sync 기준(scene 이미지는 다음 scene 음성 시작까지 표시). 자막=storyboard 기준 한글. se-video-motion v0.1 시범.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 140.27,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xE89B4F", "white": "0xFFFFFF", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/4-S1-Museion.png",
+      "start": 0.0, "end": 18.23, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/2-S2-Close-up.png",
+      "start": 18.23, "end": 33.87, "motion": "zoom_out",
+      "zoom": [1.08, 1.0],
+      "captions": [
+        { "text": "β", "x": "center", "y": "0.30", "size": 130, "color": "gold", "start": 23.5, "end": 30.0 },
+        { "text": "베타 — 모든 분야 2등", "x": "center", "y": "0.82", "size": 40, "color": "white", "start": 26.0, "end": 33.0 }
+      ]
+    },
+    {
+      "id": "S3a", "img": "5-images/7-S3-Hands.png",
+      "start": 33.87, "end": 56.36, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": []
+    },
+    {
+      "id": "S3b", "img": "5-images/8-S3.5-Sieve.png",
+      "start": 56.36, "end": 73.61, "motion": "slow_zoom",
+      "zoom": [1.02, 1.06],
+      "_comment": "소수의 체 이중 메타포(진짜 체+숫자의 체). turn15 '잘 봐 6은 2곱3'~turn19 '소수의 체!' 구간.",
+      "captions": [
+        { "text": "소수의 체", "x": "center", "y": "0.88", "size": 66, "color": "gold", "start": 67.0, "end": 73.3 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/3-S4-Syracuse.png",
+      "start": 73.61, "end": 95.31, "motion": "pan_right",
+      "zoom": [1.05, 1.05],
+      "captions": [
+        { "text": "아르키메데스의 편지", "x": "center", "y": "0.80", "size": 46, "color": "white", "start": 79.0, "end": 90.0 },
+        { "text": "기원전 250년경", "x": "center", "y": "0.90", "size": 32, "color": "white", "start": 83.0, "end": 90.0 }
+      ]
+    },
+    {
+      "id": "S5a", "img": "5-images/5-S5-Euclid.png",
+      "start": 95.31, "end": 106.4, "motion": "slow_zoom",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "유클리드 · 기원전 300년", "x": "center", "y": "0.85", "size": 40, "color": "white", "start": 96.5, "end": 106.0 }
+      ]
+    },
+    {
+      "id": "S5b", "img": "5-images/6-S5-LiuHui.png",
+      "start": 106.4, "end": 117.54, "motion": "slow_zoom",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "류후이 · 기원후 263년", "x": "center", "y": "0.85", "size": 40, "color": "white", "start": 107.5, "end": 114.0 },
+        { "text": "인류, 같은 답에 두 번", "x": "center", "y": "0.45", "size": 60, "color": "gold", "start": 114.0, "end": 117.5 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/4-S1-Museion.png",
+      "start": 117.54, "end": 140.27, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "정리", "x": "center", "y": "0.40", "size": 150, "color": "gold", "start": 123.0, "end": 136.0 },
+        { "text": "도서관 관장 · 분류 본능 · 소수의 체", "x": "center", "y": "0.78", "size": 34, "color": "white", "start": 127.0, "end": 136.0 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene 클립 시작/끝 fade. concat으로 길이 보존(음성 sync)." }
+}
