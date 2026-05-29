@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- exp-002 / step 4 [영상 2] 출력 / SSML multi-voice 풀스펙 v2 dialog -->
+<!-- 형식: Q (여 청소년, SunHi +15Hz) + A (남 대학원생, InJoon) dialog -->
+<!-- 호환: Azure Speech / Google Cloud TTS / Amazon Polly (단일 SSML 호출) -->
+<!-- edge-tts 는 multi-voice 미지원 → turn 별 mp3 + ffmpeg concat (4-narration.jsonl 사용) -->
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="ko-KR">
+
+  <!-- S1 도서관 풍경 -->
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">어! 기원전 3세기 알렉산드리아라는 데가 있었다는데, 들어봤어?</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">응! 나도 찾아봤는데, 이집트의 큰 항구 도시였대.<break time="300ms"/> 그 도시 한가운데에 세상 모든 지식이 모인 도서관이 있었어. <emphasis level="strong">두루마리만 50만 권!</emphasis></prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">와<break time="300ms"/>... 그럼 그 도서관, 누가 운영했어?</prosody></voice><break time="500ms"/>
+
+  <!-- S2 베타 + 도서관 관장 -->
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%"><emphasis level="strong">에라토스테네스</emphasis>라는 학자였대. 도서관의 세 번째 관장이었지.</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">오! '<emphasis level="moderate">베타</emphasis>'라고 불렀다던데, 그게 무슨 뜻이야?</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">그러게, 알파벳 두 번째 글자야. 모든 분야에서 2등이라는 뜻이래.</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">근데 왜 그랬어? 1등도 아니고?</prosody></voice><break time="500ms"/>
+
+  <!-- S3 다재다능 → 분류 본능 → 소수의 체 ★ -->
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">사실 그는 정말 많은 걸 잘했거든. 수학, 천문학, 지리학, 시까지.</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">어, 그건 다재다능 한 거 아냐?</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">맞아! 어디서도 1등은 아니지만, 어디서나 2등은 됐다는 거지.</prosody></voice><break time="500ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">근데 도서관에서 매일 책을 정리하던 그가 어느 날 이렇게 생각했대.</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">뭐라고?</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%"><emphasis level="moderate">책처럼 수도 정리할 수 있을까</emphasis>, 라고.</prosody></voice><break time="500ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">수를? 어떻게?</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">잘 봐. 6은 2 곱하기 3, 8은 2 곱하기 4. 이렇게 나뉘는 수가 있지?</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">응응.</prosody></voice><break time="300ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">근데 2, 3, 5, 7은 더 못 나뉘잖아.</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">어 진짜네!</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">그가 만든 방법이 바로 '<emphasis level="strong">소수의 체</emphasis>'. 큰 수까지 줄 세우고, 배수를 차례로 지우는 거지.</prosody></voice><break time="600ms"/>
+
+  <!-- S4 아르키메데스 편지 ★ -->
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">근데 에라토스테네스 그분, 혼자 일했어?</prosody></voice><break time="500ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">아니야! 멀리 시러큐스, 이탈리아 시칠리아 섬에서 한 친구가 편지를 보냈대.</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">누가?</prosody></voice><break time="300ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%"><emphasis level="strong">아르키메데스</emphasis>!</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">헐, 그 유명한 사람?</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">응. 수학 문제로 에라토스테네스에게 도전한 편지였대.</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">두 거장이 같은 시대에 살았고, 서로 알았고, 이런 편지를 주고받았다는 거야.</prosody></voice><break time="600ms"/>
+
+  <!-- S5 유클리드 + 류후이 -->
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">그럼 같은 답을 한 명만 찾은 거야?</prosody></voice><break time="500ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">그것도 아니야! 한 세대 전, 같은 알렉산드리아 도서관에 <emphasis level="moderate">유클리드</emphasis>가 있었어. 그도 비슷한 방법을 정리했지.</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">오...</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">그리고 500년이 더 지나서, 중국 위나라의 <emphasis level="moderate">류후이</emphasis>라는 학자가 똑같은 방법을 또 찾아냈어.</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">혼자서?</prosody></voice><break time="300ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">응, 혼자서. <emphasis level="strong">인류가 같은 답에 두 번 도달한 거지.</emphasis></prosody></voice><break time="700ms"/>
+
+  <!-- S6 마무리 (Q 시도 + A 확인) -->
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">자, 이제 우리가 본 에라토스테네스를 한 단어로 표현하면 뭘까?</prosody></voice><break time="700ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">음<break time="400ms"/>... 도서관에 책을 분류하고, 수도 분류한 사람이니까...</prosody></voice><break time="500ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">잘 봤어!</prosody></voice><break time="400ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">지식을 정리하고, 수도 정리하고, 마지막까지 책과 함께한 사람.</prosody></voice><break time="500ms"/>
+  <voice name="ko-KR-InJoonNeural"><prosody rate="-5%">한 단어로, '<emphasis level="strong">정리</emphasis>'!</prosody></voice><break time="500ms"/>
+  <voice name="ko-KR-SunHiNeural"><prosody rate="-5%" pitch="+15Hz">정리! 도서관 관장 에라토스테네스에게 딱이다.</prosody></voice>
+
+</speak>

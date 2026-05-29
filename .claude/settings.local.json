@@ -63,7 +63,11 @@
       "Bash(ffmpeg -y -ss 9 -i 8-final.mp4 -frames:v 1 8-poster.jpg)",
       "Bash(cd \"C:/Kids/math-story-telling/11_video_gen_process/40_experiments/exp-002-build-unit01\")",
       "Bash(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 5-images/8-S3.5-Sieve.png)",
-      "Bash(grep -iE \"\\\\.\\(mp4|mp3|wav\\)$\")"
+      "Bash(grep -iE \"\\\\.\\(mp4|mp3|wav\\)$\")",
+      "Bash([ -d \"$SRC/$s\" ])",
+      "Bash(rm -rf __TRACKED_VAR__/__TRACKED_VAR__)",
+      "Bash(cp -r __TRACKED_VAR__/__TRACKED_VAR__ __TRACKED_VAR__/__TRACKED_VAR__)",
+      "Bash(grep -iE \"\\\\.\\(mp4|mp3\\)$\")"
     ]
   }
 }

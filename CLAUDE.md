@@ -145,8 +145,23 @@ Phase 5-d: 유형별 깊이 탐구 자료
 | `/se_math_figure` | 3, 5 | 수학 그래프 네이티브 렌더링 (SVG + JSXGraph) |
 | `/se_math_practice` | 5c | 유형별 연습 문제 생성 (L/M/H 3×3) |
 | `/se_math_error_note` | 5 in-loop | 오답노트 생성 (7섹션 MD + HTML 앱) |
-| `/se_story_video_v1_5` | 4 channel | 영상 v1.5 (`50_channel/`) |
 | `/se_distill_principles` | meta | chatlog → principles 추출 |
+
+### 영상 제작 Skills (8 STEP 파이프라인, 2026-05-29 졸업)
+| 명령 | STEP | 용도 |
+|---|---|---|
+| `/se-people-pick` | 선정 | 단원 인물 발굴·평가·선정 |
+| `/se-people-narrate` | 1 서사 | 인물 서사(약속 3겹 운반) 작성 |
+| `/se-video-story` | 2 스토리 | 서사 → 6장면 스토리 시드 |
+| `/se-video-storyboard` | 3 스토리보드 | 장면별 정밀 카드(부록 A/B/C) |
+| `/se-video-narration` | 4 나레이션 | 2화자 dialog + ElevenLabs 음성 (config=voice-pool §0) |
+| `/se-video-image` | 5 이미지 | 캐릭터 일관성 프롬프트 + Nano Banana 생성 |
+| `/se-video-motion` | 6 모션 | scene 모션 + 자막 타이밍 config |
+| `/se-video-render` | 7 렌더 | FFmpeg zoompan+자막 → raw mp4 |
+| `/se-video-compose` | 8 합성 | A/V mux → final mp4 + 표지 |
+
+> 구 `/se_story_video_v1_5`(6장면 110초 edge-tts) = v1.5 레거시. 신 파이프라인 = 위 8 STEP.
+> 양산: `se-video-orchestrator` agent + `50_channel/season-1-ancient/_manifest.md`. 설계 = `11_video_gen_process/00_charter/PRODUCTION_SETUP.md`.
 
 ### NCC Audit Skills
 | 명령 | 대상 | 기준 |
@@ -163,7 +178,8 @@ Phase 5-d: 유형별 깊이 탐구 자료
 
 | 에이전트 | 용도 |
 |---|---|
-| `se_agent_unit_orchestrator` | **단일 Orchestrator** — 단원 전체 파이프라인 (Phase 0~5c) |
+| `se_agent_unit_orchestrator` | 단원 4축 파이프라인 (Phase 0~5c) — 개념·이야기·앱·문제 |
+| `se-video-orchestrator` | **영상 8 STEP 파이프라인** — "unit NN [인물]" → 영상 1편 자율 제작 + batch(manifest) |
 
 ### Skill 동기화
 
