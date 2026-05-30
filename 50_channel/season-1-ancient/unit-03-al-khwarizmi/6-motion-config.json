@@ -1,0 +1,64 @@
+{
+  "_comment": "unit-03 알콰리즈미 STEP6 모션 config. scene end=다음 scene 음성 시작. 자막=turn 타임라인 정렬. 이미지=네이티브16:9(크롭 무손실). 저울 모티프.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 174.88,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD4A23D", "white": "0xFFFFFF", "teal": "0x2E8B8B", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "start": 0.0, "end": 23.49, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "start": 23.49, "end": 53.41, "motion": "zoom_out",
+      "zoom": [1.08, 1.0],
+      "captions": [
+        { "text": "상속 계산 → 대수의 탄생", "x": "center", "y": "0.28", "size": 42, "color": "white", "start": 30.0, "end": 38.0 },
+        { "text": "알지브르 → 대수 (algebra)", "x": "center", "y": "0.44", "size": 56, "color": "gold", "start": 48.0, "end": 53.2 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "start": 53.41, "end": 82.10, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "한쪽을 더하면 → 반대쪽도", "x": "center", "y": "0.26", "size": 44, "color": "white", "start": 64.0, "end": 73.0 },
+        { "text": "양변을 늘 균형있게", "x": "center", "y": "0.44", "size": 70, "color": "gold", "start": 75.5, "end": 81.9 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "start": 82.10, "end": 110.09, "motion": "pan_right",
+      "zoom": [1.04, 1.04],
+      "captions": [
+        { "text": "0 ~ 9 · 동에서 서로", "x": "center", "y": "0.28", "size": 44, "color": "white", "start": 90.0, "end": 100.0 },
+        { "text": "그의 이름 → 알고리즘", "x": "center", "y": "0.44", "size": 60, "color": "gold", "start": 104.0, "end": 109.9 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "start": 110.09, "end": 141.92, "motion": "slow_zoom",
+      "zoom": [1.0, 1.04],
+      "captions": [
+        { "text": "글자 없이, 글로만", "x": "center", "y": "0.26", "size": 46, "color": "white", "start": 118.0, "end": 126.0 },
+        { "text": "문자 x = 발명품", "x": "center", "y": "0.44", "size": 72, "color": "gold", "start": 127.5, "end": 134.5 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "start": 141.92, "end": 174.88, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "브라마굽타 → 알콰리즈미 → 데카르트", "x": "center", "y": "0.26", "size": 38, "color": "white", "start": 152.0, "end": 162.0 },
+        { "text": "균형", "x": "center", "y": "0.42", "size": 150, "color": "gold", "start": 169.0, "end": 174.7 },
+        { "text": "저울처럼 양변을 맞추는 일", "x": "center", "y": "0.74", "size": 36, "color": "white", "start": 171.3, "end": 174.7 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존." }
+}

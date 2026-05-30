@@ -66,8 +66,9 @@ se-video-orchestrator (agent)   ← 10_system/35_agents/se-video-orchestrator.md
 - ☑ STEP8 합성 (8-final.mp4 + 8-poster.jpg, 프레임 검증)
 - ☑ retro.md + manifest 갱신
 
-### unit-03 — 문자와 식 / 알콰리즈미 / 여(Q)·남(A)  ⚪
-- ☐ STEP1~8 + retro
+### unit-03 — 문자와 식 / 알콰리즈미 / Kanna(여,Q)·Mike(남,A)  ✅ DONE
+8-final.mp4 174.88s. unit-02 학습(네이티브16:9·직업≠설명언어·bare filler) 반영 첫 단원. [retro](./unit-03-al-khwarizmi/retro.md)
+- ☑ STEP1~8 + retro. 균형(저울) + 축 C(문자=발명품) + 시즌 이어달리기(브라마굽타 callback→데카르트 예고)
 
 ### unit-04 — 일차방정식 / 디오판토스 / 남(Q)·여(A)  ⚪
 - ☐ STEP1~8 + retro
