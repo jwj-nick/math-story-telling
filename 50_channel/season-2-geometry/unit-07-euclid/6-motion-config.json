@@ -1,0 +1,64 @@
+{
+  "_comment": "unit-07 유클리드 STEP6 모션 config (시즌2 첫 단원). scene end=다음 scene 음성 시작. 자막=turn 타임라인. 이미지=네이티브16:9. 점선면·약속탑 모티프.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 201.42,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "sage": "0x8FAE7B", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "start": 0.0, "end": 32.04, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "start": 32.04, "end": 63.24, "motion": "zoom_in",
+      "zoom": [1.0, 1.07],
+      "captions": [
+        { "text": "피라미드 그림자 = 높이", "x": "center", "y": "0.28", "size": 44, "color": "white", "start": 50.0, "end": 58.0 },
+        { "text": "자 없이, 닮은꼴로", "x": "center", "y": "0.44", "size": 54, "color": "gold", "start": 58.5, "end": 63.0 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "start": 63.24, "end": 99.05, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "점 = 부분이 없는 것", "x": "center", "y": "0.24", "size": 42, "color": "white", "start": 78.0, "end": 88.0 },
+        { "text": "선 = 폭이 없는 길이", "x": "center", "y": "0.36", "size": 42, "color": "white", "start": 81.0, "end": 88.0 },
+        { "text": "점·선·면 = 약속", "x": "center", "y": "0.50", "size": 62, "color": "gold", "start": 89.0, "end": 98.8 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "start": 99.05, "end": 142.71, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "두 점을 지나는 직선은 하나뿐", "x": "center", "y": "0.26", "size": 40, "color": "white", "start": 108.0, "end": 118.0 },
+        { "text": "5개 약속  →  465개 정리", "x": "center", "y": "0.44", "size": 60, "color": "gold", "start": 123.0, "end": 142.4 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "start": 142.71, "end": 172.80, "motion": "zoom_out",
+      "zoom": [1.06, 1.0],
+      "captions": [
+        { "text": "기하학에 왕도는 없다", "x": "center", "y": "0.42", "size": 64, "color": "gold", "start": 155.0, "end": 172.5 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "start": 172.80, "end": 201.42, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "점 하나 → 데카르트의 좌표까지 2000년", "x": "center", "y": "0.26", "size": 38, "color": "white", "start": 181.0, "end": 190.0 },
+        { "text": "약속", "x": "center", "y": "0.42", "size": 140, "color": "gold", "start": 195.5, "end": 201.2 },
+        { "text": "약속에서 시작해, 증명으로 쌓는다", "x": "center", "y": "0.74", "size": 36, "color": "white", "start": 197.5, "end": 201.2 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존." }
+}
