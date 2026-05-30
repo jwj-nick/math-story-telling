@@ -213,6 +213,7 @@ ffprobe -v error -select_streams v:0 \
 - **v0.2** (예정 — 전체 6장면 렌더 + 검증 후):
   - `6-motion-config.json` → FFmpeg 명령 자동 생성 컴파일러 (references/render_compile.py). motion 5종 → z/x/y 표현식 테이블.
   - 자막 t offset 자동화 + "cap.start ≥ scene.start AND cap.end ≤ scene.end" assert.
+  - **자막 x-fraction 지원** (unit-06): `x:"center"`→중앙 / `x:"0.27"`→`w*0.27-text_w/2` (좌/우 대비 자막 = 정비례좌·반비례우 라벨). y와 동일 패턴.
   - draft/final 2-pass + 콘텐츠 해시 기반 증분·병렬 렌더.
   - 마지막 scene 길이 역산 보정으로 프레임 반올림 누적 제거.
 - **v0.3+** = 하이브리드 렌더 오케스트레이터(정지 이미지=FFmpeg + S3 격자=Remotion/GSAP 클립, 같은 1280×720/25fps/yuv420p로 통일해 concat). 컬러 그레이딩(era 팔레트)·로워서드·1080p 도약. 인물 영상 시리즈 정체성을 `render-profile.json` SSOT화.

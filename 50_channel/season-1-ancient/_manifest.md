@@ -18,7 +18,7 @@
 | 03 | 문자와 식 | 알콰리즈미 | Kanna(여)/Mike(남) | ✅ done | [unit-03-al-khwarizmi/](./unit-03-al-khwarizmi/) 8-final.mp4 174.88s |
 | 04 | 일차방정식 | 디오판토스 | Mike(남)/Kanna(여) | ✅ done | [unit-04-diophantus/](./unit-04-diophantus/) 8-final.mp4 175.23s |
 | 05 | 좌표와 그래프 | 데카르트 | Mina(여)/Kyle(남) | ✅ done | [unit-05-descartes/](./unit-05-descartes/) 8-final.mp4 171.75s |
-| 06 | 정비례와 반비례 | 케플러 (보일 조연) | 남/여 (randomize) | 🟡 pending | — (딸 약점 y=a/x 정조준) |
+| 06 | 정비례와 반비례 | 케플러 (보일 조연) | Mike(남)/Mina(여) | ✅ done | [unit-06-kepler/](./unit-06-kepler/) 8-final.mp4 183.82s (딸 약점 y=a/x 정조준) |
 
 ## 시즌 2 (기하·통계) — 인물 배정 대기
 
@@ -47,3 +47,4 @@
 - 2026-05-30: **unit-03 done** (알콰리즈미, Kanna/Mike, 174.88s). unit-02 학습(네이티브16:9·논리·필러) 반영 첫 단원. 시즌 이어달리기 강화.
 - 2026-05-30: **unit-04 done** (디오판토스, Mike/Kanna, 176.44s). 묘비 수수께끼=일차방정식 본질 직결. 시즌 3중 callback 절정. (피드백 수정: 클리핑 리미터 + 단원번호 한글)
 - 2026-05-30: **unit-05 done** (데카르트, Mina/Kyle, 171.75s). 시즌 피날레 — 5중 callback 좌표평면 만남. 식↔그림(딸 약점) 정조준. **meta 정정**: 05=데카르트(좌표) / 06=케플러(정비례·반비례)로 분리(기존 manifest "05~06 데카르트"는 부정확).
+- 2026-05-30: **unit-06 done** (케플러, Mike/Mina, 183.82s). 딸 약점(반비례) 정면 단원 — S4 정비례 직선 vs 반비례 쌍곡선 대비. **시즌1(수·대수·함수) 6편 완결**. 다음=시즌2 기하(u07~12).

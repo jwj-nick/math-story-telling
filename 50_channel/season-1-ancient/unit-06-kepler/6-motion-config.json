@@ -1,0 +1,66 @@
+{
+  "_comment": "unit-06 케플러 STEP6 모션 config. scene end=다음 scene 음성 시작. 자막=turn 타임라인. 이미지=네이티브16:9. 시소·정비례직선/반비례곡선 모티프. S4 좌우 자막(x fraction).",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 183.82,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "brass": "0x8E5A3C", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "start": 0.0, "end": 27.11, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "start": 27.11, "end": 54.83, "motion": "zoom_in",
+      "zoom": [1.0, 1.07],
+      "captions": [
+        { "text": "케플러의 첫 가설 — 정다면체 궤도", "x": "center", "y": "0.28", "size": 40, "color": "white", "start": 35.0, "end": 45.0 },
+        { "text": "틀린 가설도, 좋은 출발점", "x": "center", "y": "0.44", "size": 54, "color": "gold", "start": 47.5, "end": 54.5 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "start": 54.83, "end": 90.55, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "같은 시간 = 같은 면적", "x": "center", "y": "0.26", "size": 44, "color": "white", "start": 63.0, "end": 73.0 },
+        { "text": "거리 ↑   속도 ↓   = 반비례", "x": "center", "y": "0.44", "size": 56, "color": "gold", "start": 82.0, "end": 90.3 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "start": 90.55, "end": 129.39, "motion": "ken_burns",
+      "zoom": [1.0, 1.04],
+      "captions": [
+        { "text": "정비례 = 직선", "x": "0.27", "y": "0.13", "size": 46, "color": "white", "start": 100.0, "end": 128.8 },
+        { "text": "반비례 = 곡선", "x": "0.73", "y": "0.13", "size": 46, "color": "gold", "start": 109.0, "end": 128.8 },
+        { "text": "같이 변한다", "x": "0.27", "y": "0.88", "size": 34, "color": "white", "start": 100.0, "end": 128.8 },
+        { "text": "곱하면 일정", "x": "0.73", "y": "0.88", "size": 34, "color": "white", "start": 109.0, "end": 128.8 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "start": 129.39, "end": 152.74, "motion": "zoom_out",
+      "zoom": [1.06, 1.0],
+      "captions": [
+        { "text": "압력 ↑   부피 ↓", "x": "center", "y": "0.28", "size": 46, "color": "white", "start": 136.0, "end": 144.0 },
+        { "text": "곱하면 늘 같은 값 = 반비례", "x": "center", "y": "0.46", "size": 44, "color": "gold", "start": 145.5, "end": 152.5 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "start": 152.74, "end": 183.82, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "「세계의 조화」 · 1619", "x": "center", "y": "0.28", "size": 40, "color": "white", "start": 171.0, "end": 179.0 },
+        { "text": "조화", "x": "center", "y": "0.42", "size": 140, "color": "gold", "start": 179.0, "end": 183.6 },
+        { "text": "정비례는 같이, 반비례는 반대로", "x": "center", "y": "0.74", "size": 36, "color": "white", "start": 180.5, "end": 183.6 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존." }
+}
