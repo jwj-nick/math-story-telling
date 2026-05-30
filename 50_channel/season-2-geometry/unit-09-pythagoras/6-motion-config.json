@@ -1,0 +1,31 @@
+{
+  "_comment": "unit-09 피타고라스(다각형) STEP6. scene end=다음 scene 음성 시작. 16:9. 펜타그램·외각합360·무리수·테셀레이션. length 179.79s(R24).",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 179.79,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "olive": "0x7A8C5C", "shadow": "0x000000" },
+  "scenes": [
+    { "id": "S1", "img": "5-images/S1.png", "start": 0.0, "end": 26.61, "motion": "push_in", "zoom": [1.0, 1.08],
+      "captions": [ { "text": "만물은 수다", "x": "center", "y": "0.44", "size": 60, "color": "gold", "start": 16.0, "end": 26.4 } ] },
+    { "id": "S2", "img": "5-images/S2.png", "start": 26.61, "end": 48.24, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [ { "text": "학파의 상징 · 펜타그램", "x": "center", "y": "0.80", "size": 44, "color": "white", "start": 37.0, "end": 48.0 } ] },
+    { "id": "S3", "img": "5-images/S3.png", "start": 48.24, "end": 83.76, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "외각의 합", "x": "center", "y": "0.24", "size": 44, "color": "white", "start": 55.0, "end": 64.0 },
+        { "text": "어떤 다각형이든 = 360도", "x": "center", "y": "0.44", "size": 58, "color": "gold", "start": 72.0, "end": 83.5 } ] },
+    { "id": "S4", "img": "5-images/S4.png", "start": 83.76, "end": 119.74, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "정수의 비로 안 되는 수", "x": "center", "y": "0.26", "size": 44, "color": "white", "start": 90.0, "end": 100.0 },
+        { "text": "무리수", "x": "center", "y": "0.46", "size": 72, "color": "gold", "start": 110.0, "end": 119.4 } ] },
+    { "id": "S5", "img": "5-images/S5.png", "start": 119.74, "end": 147.83, "motion": "zoom_out", "zoom": [1.06, 1.0],
+      "captions": [ { "text": "비밀을 말한 자, 히파소스", "x": "center", "y": "0.80", "size": 44, "color": "white", "start": 128.0, "end": 147.5 } ] },
+    { "id": "S6", "img": "5-images/S6.png", "start": 147.83, "end": 179.79, "motion": "zoom_in", "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "정다각형이 평면을 채우다", "x": "center", "y": "0.26", "size": 42, "color": "white", "start": 156.0, "end": 168.0 },
+        { "text": "수", "x": "center", "y": "0.42", "size": 150, "color": "gold", "start": 172.0, "end": 179.5 },
+        { "text": "도형도 · 음악도 · 별도 — 바탕엔 수", "x": "center", "y": "0.74", "size": 34, "color": "white", "start": 174.0, "end": 179.5 } ] }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "fade in/out 0.6. concat -c copy 길이 보존." }
+}
