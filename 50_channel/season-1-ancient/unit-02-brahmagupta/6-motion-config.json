@@ -1,0 +1,68 @@
+{
+  "_comment": "unit-02 브라마굽타 STEP6 모션 config. scene 시간=음성 sync(scene end=다음 scene 음성 시작). 자막=storyboard 한글, 절대시각=turn 타임라인 정렬. 이미지 1024사각→render시 scale2560+crop2560x1440 center.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 161.67,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xE8A23D", "white": "0xFFFFFF", "plum": "0x9C5C8A", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "start": 0.0, "end": 17.88, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "start": 17.88, "end": 46.36, "motion": "zoom_out",
+      "zoom": [1.08, 1.0],
+      "captions": [
+        { "text": "재산 = +     빚 = −", "x": "center", "y": "0.30", "size": 44, "color": "white", "start": 31.5, "end": 38.0 },
+        { "text": "빚도 수다", "x": "center", "y": "0.44", "size": 92, "color": "gold", "start": 41.0, "end": 46.2 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "start": 46.36, "end": 82.29, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "재산 + 재산 = 재산", "x": "center", "y": "0.24", "size": 46, "color": "white", "start": 57.0, "end": 73.0 },
+        { "text": "빚 + 빚 = 더 큰 빚", "x": "center", "y": "0.36", "size": 46, "color": "white", "start": 59.5, "end": 73.0 },
+        { "text": "빚 × 빚 = 재산", "x": "center", "y": "0.48", "size": 50, "color": "gold", "start": 63.0, "end": 73.0 },
+        { "text": "음수 × 음수 = 양수", "x": "center", "y": "0.44", "size": 78, "color": "gold", "start": 76.5, "end": 82.2 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "start": 82.29, "end": 110.86, "motion": "slow_zoom",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "0 + a = a      0 × a = 0", "x": "center", "y": "0.28", "size": 44, "color": "white", "start": 90.0, "end": 95.0 },
+        { "text": "0 ÷ 0 = ?", "x": "center", "y": "0.44", "size": 70, "color": "white", "start": 97.0, "end": 103.2 },
+        { "text": "끝나지 않은 자리", "x": "center", "y": "0.44", "size": 56, "color": "gold", "start": 106.0, "end": 110.7 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "start": 110.86, "end": 136.53, "motion": "slow_zoom",
+      "zoom": [1.0, 1.04],
+      "captions": [
+        { "text": "그리스 : 수 = 길이", "x": "center", "y": "0.26", "size": 46, "color": "white", "start": 115.0, "end": 127.0 },
+        { "text": "−3cm 막대는 없다", "x": "center", "y": "0.38", "size": 42, "color": "white", "start": 120.5, "end": 127.0 },
+        { "text": "출발점이 달랐다", "x": "center", "y": "0.46", "size": 64, "color": "gold", "start": 130.0, "end": 136.4 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "start": 136.53, "end": 161.67, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "인도 → 바그다드", "x": "center", "y": "0.26", "size": 44, "color": "white", "start": 137.5, "end": 145.5 },
+        { "text": "발명", "x": "center", "y": "0.40", "size": 150, "color": "gold", "start": 156.0, "end": 161.5 },
+        { "text": "음수는 발견이 아니라, 필요해서 만든 발명", "x": "center", "y": "0.74", "size": 34, "color": "white", "start": 157.8, "end": 161.5 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존(음성 sync)." }
+}
