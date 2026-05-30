@@ -70,8 +70,9 @@ se-video-orchestrator (agent)   ← 10_system/35_agents/se-video-orchestrator.md
 8-final.mp4 174.88s. unit-02 학습(네이티브16:9·직업≠설명언어·bare filler) 반영 첫 단원. [retro](./unit-03-al-khwarizmi/retro.md)
 - ☑ STEP1~8 + retro. 균형(저울) + 축 C(문자=발명품) + 시즌 이어달리기(브라마굽타 callback→데카르트 예고)
 
-### unit-04 — 일차방정식 / 디오판토스 / 남(Q)·여(A)  ⚪
-- ☐ STEP1~8 + retro
+### unit-04 — 일차방정식 / 디오판토스 / Mike(남,Q)·Kanna(여,A)  ✅ DONE
+8-final.mp4 175.23s. 묘비 수수께끼(x=84)=일차방정식 본질 직결. [retro](./unit-04-diophantus/retro.md)
+- ☑ STEP1~8 + retro. 수수께끼 + 시즌 3중 callback(에라토·브라마굽타·알콰리즈미) + 페르마 카메오
 
 ### unit-05~06 — 좌표·함수 / 데카르트 / 여(Q)·남(A)  ⚪
 - ☐ STEP1~8 + retro

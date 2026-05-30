@@ -16,7 +16,7 @@
 | 01 | 소인수분해 | 에라토스테네스 | Kanna(여)/Kyle(남) | ✅ done | [unit-01-eratosthenes/](./unit-01-eratosthenes/) 8-final.mp4 140s |
 | 02 | 정수와 유리수 | 브라마굽타 | Kyle(남)/Mina(여) | ✅ done | [unit-02-brahmagupta/](./unit-02-brahmagupta/) 8-final.mp4 161.67s |
 | 03 | 문자와 식 | 알콰리즈미 | Kanna(여)/Mike(남) | ✅ done | [unit-03-al-khwarizmi/](./unit-03-al-khwarizmi/) 8-final.mp4 174.88s |
-| 04 | 일차방정식 | 디오판토스 | 남/여 | ⚪ pending | — |
+| 04 | 일차방정식 | 디오판토스 | Mike(남)/Kanna(여) | ✅ done | [unit-04-diophantus/](./unit-04-diophantus/) 8-final.mp4 175.23s |
 | 05~06 | 좌표·함수 | 데카르트 | 여/남 | ⚪ pending | — |
 
 ## 시즌 2 (기하·통계) — 인물 배정 대기
@@ -44,3 +44,4 @@
 - 2026-05-29: 신설. unit-01 done (exp-002 졸업). unit-02~06 인물 확정/pending.
 - 2026-05-30: **unit-02 done** (브라마굽타, Kyle/Mina, 161.53s). 정식 구조 첫 자율 양산. retro.md 참조.
 - 2026-05-30: **unit-03 done** (알콰리즈미, Kanna/Mike, 174.88s). unit-02 학습(네이티브16:9·논리·필러) 반영 첫 단원. 시즌 이어달리기 강화.
+- 2026-05-30: **unit-04 done** (디오판토스, Mike/Kanna, 175.23s). 묘비 수수께끼=일차방정식 본질 직결. 시즌 3중 callback 절정.
