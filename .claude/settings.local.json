@@ -18,7 +18,9 @@
       "Bash([ -d \"$SRC/$s\" ])",
       "Bash(rm -rf __TRACKED_VAR__/__TRACKED_VAR__)",
       "Bash(cp *)",
-      "Bash(mkdir *)"
+      "Bash(mkdir *)",
+      "Bash(mkdir -p 50_channel/season-1-ancient/unit-05-descartes/5-images)",
+      "Bash(cp 50_channel/season-1-ancient/unit-04-diophantus/synth.py 50_channel/season-1-ancient/unit-04-diophantus/render_compile.py 50_channel/season-1-ancient/unit-05-descartes/)"
     ]
   }
 }

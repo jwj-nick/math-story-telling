@@ -2,7 +2,7 @@
   "_comment": "unit-04 디오판토스 STEP6 모션 config. scene end=다음 scene 음성 시작. 자막=turn 타임라인. 이미지=네이티브16:9. 인생 띠·x=84 모티프.",
   "fps": 25,
   "resolution": [1280, 720],
-  "total_duration": 175.23,
+  "total_duration": 176.44,
   "audio": "4-narration.mp3",
   "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
   "palette": { "gold": "0xDDA53C", "white": "0xFFFFFF", "slate": "0x4A6B8C", "shadow": "0x000000" },
@@ -33,7 +33,7 @@
     },
     {
       "id": "S4", "img": "5-images/S4.png",
-      "start": 86.00, "end": 113.46, "motion": "ken_burns",
+      "start": 86.00, "end": 113.41, "motion": "ken_burns",
       "zoom": [1.0, 1.05],
       "captions": [
         { "text": "양변의 균형으로 정리", "x": "center", "y": "0.26", "size": 44, "color": "white", "start": 89.0, "end": 100.0 },
@@ -42,21 +42,21 @@
     },
     {
       "id": "S5", "img": "5-images/S5.png",
-      "start": 113.46, "end": 146.08, "motion": "zoom_out",
+      "start": 113.41, "end": 147.28, "motion": "zoom_out",
       "zoom": [1.07, 1.0],
       "captions": [
         { "text": "문자 x의 먼 조상", "x": "center", "y": "0.28", "size": 50, "color": "gold", "start": 122.0, "end": 130.0 },
-        { "text": "음수는 400년 뒤, 브라마굽타", "x": "center", "y": "0.46", "size": 42, "color": "white", "start": 137.0, "end": 145.9 }
+        { "text": "음수는 400년 뒤, 브라마굽타", "x": "center", "y": "0.46", "size": 42, "color": "white", "start": 137.0, "end": 147.1 }
       ]
     },
     {
       "id": "S6", "img": "5-images/S6.png",
-      "start": 146.08, "end": 175.23, "motion": "zoom_in",
+      "start": 147.28, "end": 176.44, "motion": "zoom_in",
       "zoom": [1.0, 1.08],
       "captions": [
-        { "text": "페르마의 마지막 정리 · 358년", "x": "center", "y": "0.28", "size": 40, "color": "white", "start": 161.0, "end": 168.5 },
-        { "text": "수수께끼", "x": "center", "y": "0.42", "size": 130, "color": "gold", "start": 169.0, "end": 175.0 },
-        { "text": "방정식은 수수께끼를 푸는 열쇠", "x": "center", "y": "0.74", "size": 36, "color": "white", "start": 171.0, "end": 175.0 }
+        { "text": "페르마의 마지막 정리 · 358년", "x": "center", "y": "0.28", "size": 40, "color": "white", "start": 162.2, "end": 169.0 },
+        { "text": "수수께끼", "x": "center", "y": "0.42", "size": 130, "color": "gold", "start": 170.2, "end": 176.2 },
+        { "text": "방정식은 수수께끼를 푸는 열쇠", "x": "center", "y": "0.74", "size": 36, "color": "white", "start": 172.2, "end": 176.2 }
       ]
     }
   ],

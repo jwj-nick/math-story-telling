@@ -81,8 +81,10 @@ export ELEVENLABS_API_KEY="$KEY"; export PYTHONIOENCODING=utf-8
 #    - retry 4회 (ConnectionReset 10054 대비, timeout=60, sleep 2*attempt)
 
 # 3. post-processing → turns_norm/turn-NNN.mp3
-#    - Q(Yura/Kanna): 없음 (재인코딩만 — speed 는 이미 합성에 반영)
+#    - Q(Mina/Kanna): 없음 (재인코딩만 — speed 는 이미 합성에 반영)
 #    - A: volume (Mike +8dB / Kyle +3.8dB)
+#    - ⭐ 부스트 시 **alimiter=limit=0.95 필수** (volume 뒤): "volume=8dB,alimiter=limit=0.95"
+#      → 감탄문("84살이요?!") 피크가 0dBFS 넘어 하드클립=소리 깨짐 방지 (unit-04 학습 2026-05-30)
 #    - 공통 재인코딩 libmp3lame 128k -ar 44100 -ac 1
 
 # 4. concat.txt 생성 (Q/A 300ms, scene 경계 1000ms silence 삽입)
