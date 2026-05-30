@@ -18,7 +18,9 @@ def gen(prompt, out, ref_paths=None):
     for attempt in range(1, 5):
         try:
             resp = client.models.generate_content(model=MODEL, contents=contents,
-                config=types.GenerateContentConfig(response_modalities=['Text', 'Image']))
+                config=types.GenerateContentConfig(
+                    response_modalities=['Text', 'Image'],
+                    image_config=types.ImageConfig(aspect_ratio="16:9")))  # 네이티브 16:9 (크롭 무손실)
             for p in resp.candidates[0].content.parts:
                 if getattr(p, "inline_data", None) and p.inline_data.data:
                     pathlib.Path(out).write_bytes(p.inline_data.data)
@@ -50,10 +52,12 @@ PROMPTS = {
         "night-blue sky meeting warm saffron lamplight, vast starry sky in the upper third for "
         "caption space. No text.", None),
     "S2.png": (f"{STYLE}\nUsing the SAME Brahmagupta character from the reference image (same face, "
-        "same greying beard, same white-saffron dhoti): close-up of Brahmagupta seated, holding a "
-        "clay tablet, a warm oil lamp beside him, blurred stone observatory interior behind "
-        "(shallow depth of field), calm scholarly mood, generous empty space on one side for "
-        "caption. No text, no numerals.", "REF"),
+        "same greying beard, same white-saffron dhoti): a 16:9 WIDE landscape upper-body shot of "
+        "Brahmagupta seated, holding a clay tablet, a warm oil lamp beside him, blurred stone "
+        "observatory interior behind (shallow depth of field), calm scholarly mood. IMPORTANT: "
+        "frame him so his ENTIRE head and face are fully visible with comfortable headroom (empty "
+        "space) ABOVE his head — do NOT crop the top of his head. Keep generous empty space to one "
+        "side for caption. No text, no numerals.", "REF"),
     "S3.png": (f"{STYLE}\nUsing the SAME Brahmagupta character (same hands, same dhoti): top-down "
         "close-up of Brahmagupta's hands inscribing a blank clay tablet with a stylus by warm "
         "lamplight, the tablet surface mostly empty and clean (space for overlaid rule lines "

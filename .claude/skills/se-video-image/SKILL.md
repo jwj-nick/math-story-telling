@@ -50,6 +50,7 @@ allowed-tools: Read Write Grep Glob Bash AskUserQuestion WebFetch WebSearch
 
 ### IM2. 공통 스타일 블록 정의
 - 매 프롬프트 최상단 삽입할 STYLE 블록: 시대·팔레트·16:9·**no text**·여백·anachronism 차단
+- **16:9 는 STYLE 텍스트뿐 아니라 생성 API `image_config.aspect_ratio="16:9"` 로도 강제** (IM6 ⭐). 텍스트만으로는 정사각 반환됨 → 크롭 손실.
 
 ### IM3. ⭐ 캐릭터 일관성 블록 정의 (핵심)
 - 인물별 **고정 묘사 블록** (CHAR_*): 나이·의복·소지품·표정·톤
@@ -84,15 +85,20 @@ def gen(prompt, out, ref_paths=None):
             contents.append(types.Part.from_bytes(data=pathlib.Path(rp).read_bytes(), mime_type="image/png"))
     resp = client.models.generate_content(
         model="gemini-2.5-flash-image", contents=contents,
-        config=types.GenerateContentConfig(response_modalities=['Text','Image']))
+        config=types.GenerateContentConfig(
+            response_modalities=['Text','Image'],
+            image_config=types.ImageConfig(aspect_ratio="16:9")))  # ⭐ 네이티브 16:9
     for p in resp.candidates[0].content.parts:
         if getattr(p,"inline_data",None) and p.inline_data.data:
             pathlib.Path(out).write_bytes(p.inline_data.data); return True
     return False
 
-# 순서: ① ref(에라토) 생성 → ② S2/S4 = gen(prompt, out, ref_paths=[ref]) 로 일관성
+# 순서: ① ref(인물) 생성 → ② 인물 장면 = gen(prompt, out, ref_paths=[ref]) 로 일관성
 ```
 - 도구 대안: gpt-image-1(자연어) / Midjourney(--cref, 수동) / SD(IPAdapter)
+
+> ⭐ **네이티브 16:9 필수 (unit-02 학습, 2026-05-30)**: `image_config=types.ImageConfig(aspect_ratio="16:9")` 를 **반드시 지정**. 미지정 시 Nano Banana 가 1024×1024 정사각을 반환 → 렌더의 center-crop 이 상하 21.9% 잘라내 **인물 머리/얼굴이 잘림**. 16:9 지정 시 1344×768 → 렌더 crop 무손실(~1.5%). exp-002(unit-01)는 정사각 생성 후 크롭이라 인물 클로즈업에서 머리 잘림 발생 → unit-02부터 표준.
+> ⭐ **인물 클로즈업 = 머리 위 여백(headroom) 명시**: 프롬프트에 *"frame so the ENTIRE head and face are fully visible with comfortable headroom ABOVE the head — do NOT crop the top of the head"* 삽입. 16:9 생성 + headroom 지시 2중 안전장치.
 
 ---
 
@@ -111,7 +117,8 @@ def gen(prompt, out, ref_paths=None):
 | **캐릭터 일관성** | 인물 묘사 블록 분리 + reference 우선 생성 |
 | 시대 정확성 | anachronism 차단 (의복·건축·도구) |
 | 텍스트 없음 | no text/letters (자막은 렌더 오버레이) |
-| 종횡비 | 16:9 |
+| 종횡비 | 16:9 (생성 시 `aspect_ratio="16:9"` 강제, 정사각 반환 금지) |
+| 인물 프레이밍 | 머리/얼굴 온전 + headroom (크롭에 잘리지 않음) |
 | 여백 | caption space 30%+ |
 | 팔레트 | 시대 팔레트 일관 |
 | 도구 비교 | 도구별 변형 § 작성 |

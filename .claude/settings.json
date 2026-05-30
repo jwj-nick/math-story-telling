@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffmpeg *)",
+      "Bash(ffprobe *)",
+      "Bash(/c/Users/admin/scoop/shims/gh.exe run list *)",
+      "Bash(/c/Users/admin/scoop/shims/gh.exe run view *)"
+    ]
+  }
+}
