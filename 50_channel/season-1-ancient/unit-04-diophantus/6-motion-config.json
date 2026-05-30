@@ -1,0 +1,64 @@
+{
+  "_comment": "unit-04 디오판토스 STEP6 모션 config. scene end=다음 scene 음성 시작. 자막=turn 타임라인. 이미지=네이티브16:9. 인생 띠·x=84 모티프.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 175.23,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xDDA53C", "white": "0xFFFFFF", "slate": "0x4A6B8C", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "start": 0.0, "end": 24.14, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "start": 24.14, "end": 51.65, "motion": "zoom_in",
+      "zoom": [1.0, 1.07],
+      "captions": [
+        { "text": "묘비에 새겨진 한 문제", "x": "center", "y": "0.30", "size": 44, "color": "white", "start": 30.0, "end": 39.0 },
+        { "text": "그의 일생이 곧 수수께끼", "x": "center", "y": "0.44", "size": 52, "color": "gold", "start": 44.0, "end": 51.5 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "start": 51.65, "end": 86.00, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "모르는 나이 = x", "x": "center", "y": "0.30", "size": 64, "color": "gold", "start": 57.0, "end": 68.0 },
+        { "text": "조각을 모두 더하면 = x", "x": "center", "y": "0.46", "size": 46, "color": "white", "start": 75.0, "end": 85.8 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "start": 86.00, "end": 113.46, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "양변의 균형으로 정리", "x": "center", "y": "0.26", "size": 44, "color": "white", "start": 89.0, "end": 100.0 },
+        { "text": "x = 84", "x": "center", "y": "0.44", "size": 120, "color": "gold", "start": 102.0, "end": 113.3 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "start": 113.46, "end": 146.08, "motion": "zoom_out",
+      "zoom": [1.07, 1.0],
+      "captions": [
+        { "text": "문자 x의 먼 조상", "x": "center", "y": "0.28", "size": 50, "color": "gold", "start": 122.0, "end": 130.0 },
+        { "text": "음수는 400년 뒤, 브라마굽타", "x": "center", "y": "0.46", "size": 42, "color": "white", "start": 137.0, "end": 145.9 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "start": 146.08, "end": 175.23, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "페르마의 마지막 정리 · 358년", "x": "center", "y": "0.28", "size": 40, "color": "white", "start": 161.0, "end": 168.5 },
+        { "text": "수수께끼", "x": "center", "y": "0.42", "size": 130, "color": "gold", "start": 169.0, "end": 175.0 },
+        { "text": "방정식은 수수께끼를 푸는 열쇠", "x": "center", "y": "0.74", "size": 36, "color": "white", "start": 171.0, "end": 175.0 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존." }
+}
