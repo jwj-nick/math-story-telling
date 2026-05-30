@@ -52,10 +52,11 @@ def main():
             data = synth_turn(t)
             raw.write_bytes(data)
             print(f"  ✓ turn {t['id']:03d} {t['speaker']} ({len(data)} bytes)", flush=True)
-        # post-process: volume + 재인코딩 44100 mono 128k
+        # post-process: volume + 리미터(클리핑 방지) + 재인코딩 44100 mono 128k
         db = VOLUME_DB.get(t["voice"], 0.0)
         norm = NORM / f"turn-{t['id']:03d}.mp3"
-        af = f"volume={db}dB" if db != 0.0 else "anull"
+        # 부스트 시 alimiter로 피크만 억제(음량 유지, 감탄문 클리핑 깨짐 방지) — unit-04 학습
+        af = f"volume={db}dB,alimiter=limit=0.95" if db != 0.0 else "anull"
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(raw),
                         "-af", af, "-ar", "44100", "-ac", "1", "-b:a", "128k", str(norm)], check=True)
     if "--smoke" in sys.argv:

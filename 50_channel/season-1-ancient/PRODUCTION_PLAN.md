@@ -74,8 +74,12 @@ se-video-orchestrator (agent)   ← 10_system/35_agents/se-video-orchestrator.md
 8-final.mp4 175.23s. 묘비 수수께끼(x=84)=일차방정식 본질 직결. [retro](./unit-04-diophantus/retro.md)
 - ☑ STEP1~8 + retro. 수수께끼 + 시즌 3중 callback(에라토·브라마굽타·알콰리즈미) + 페르마 카메오
 
-### unit-05~06 — 좌표·함수 / 데카르트 / 여(Q)·남(A)  ⚪
-- ☐ STEP1~8 + retro
+### unit-05 — 좌표와 그래프 / 데카르트 / Mina(여,Q)·Kyle(남,A)  ✅ DONE
+8-final.mp4 171.75s. 시즌 피날레 — 5중 callback. 식↔그림(딸 약점) 정조준. [retro](./unit-05-descartes/retro.md)
+- ☑ STEP1~8 + retro. 만남(좌표) + 천장의 파리 + 5인물 좌표평면 만남
+
+### unit-06 — 정비례와 반비례 / 케플러 (보일 조연)  ⚪ 다음
+- ☐ STEP1~8. **딸의 결정적 약점(y=a/x 반비례) 직접 단원** — 데카르트 좌표 위 함수 그래프
 
 ---
 
