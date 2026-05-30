@@ -14,7 +14,7 @@
 | unit | 개념 | 인물 | voice (Q/A) | 상태 | 산출 |
 |---|---|---|---|---|---|
 | 01 | 소인수분해 | 에라토스테네스 | Kanna(여)/Kyle(남) | ✅ done | [unit-01-eratosthenes/](./unit-01-eratosthenes/) 8-final.mp4 140s |
-| 02 | 정수와 유리수 | 브라마굽타 | 남/여 (randomize) | 🟡 pending | — |
+| 02 | 정수와 유리수 | 브라마굽타 | Kyle(남)/Mina(여) | ✅ done | [unit-02-brahmagupta/](./unit-02-brahmagupta/) 8-final.mp4 161.67s |
 | 03 | 문자와 식 | 알콰리즈미 | 여/남 | ⚪ pending | — |
 | 04 | 일차방정식 | 디오판토스 | 남/여 | ⚪ pending | — |
 | 05~06 | 좌표·함수 | 데카르트 | 여/남 | ⚪ pending | — |
@@ -42,3 +42,4 @@
 ## 변경 이력
 
 - 2026-05-29: 신설. unit-01 done (exp-002 졸업). unit-02~06 인물 확정/pending.
+- 2026-05-30: **unit-02 done** (브라마굽타, Kyle/Mina, 161.67s). 정식 구조 첫 자율 양산. retro.md 참조.

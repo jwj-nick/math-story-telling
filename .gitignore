@@ -35,6 +35,16 @@
 11_video_gen_process/**/test_*.png
 11_video_gen_process/**/8-poster.jpg
 
+# 50_channel 양산 단원 중간 산출물 (재생성 가능 — 생성 png는 보존)
+50_channel/**/clips/
+50_channel/**/captxt/
+50_channel/**/turns/
+50_channel/**/turns_*/
+50_channel/**/concat*.txt
+50_channel/**/silence_*.mp3
+50_channel/**/_*.png
+50_channel/**/_*_timing.json
+
 # OS·에디터
 .DS_Store
 Thumbs.db

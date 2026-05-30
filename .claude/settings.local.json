@@ -67,7 +67,20 @@
       "Bash([ -d \"$SRC/$s\" ])",
       "Bash(rm -rf __TRACKED_VAR__/__TRACKED_VAR__)",
       "Bash(cp -r __TRACKED_VAR__/__TRACKED_VAR__ __TRACKED_VAR__/__TRACKED_VAR__)",
-      "Bash(grep -iE \"\\\\.\\(mp4|mp3\\)$\")"
+      "Bash(grep -iE \"\\\\.\\(mp4|mp3\\)$\")",
+      "Bash(ffmpeg -y -loglevel error -f concat -safe 0 -i concat.txt -c:a libmp3lame -ar 44100 -ac 1 -b:a 128k 4-narration.mp3)",
+      "Bash(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 4-narration.mp3)",
+      "Bash(ls \"C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf\")",
+      "Bash(ffmpeg -y -loglevel error -ss 30 -i clips/S3.mp4 -frames:v 1 _test_S3.png)",
+      "Bash(ffmpeg -y -loglevel error -ss 16 -i clips/S3.mp4 -frames:v 1 _test_S3_rules.png)",
+      "Bash(ffmpeg -y -loglevel error -ss 31 -i clips/S3.mp4 -frames:v 1 _test_S3_key.png)",
+      "Bash(ffmpeg -y -loglevel error -i 7-raw.mp4 -i 4-narration.mp3 -c:v copy -c:a aac -b:a 192k -shortest 8-final.mp4)",
+      "Bash(ffprobe -v error -show_entries format=duration -show_entries stream=codec_type,codec_name -of default=nw=1 8-final.mp4)",
+      "Bash(ffmpeg -y -loglevel error -ss 24 -i 8-final.mp4 -frames:v 1 -q:v 2 8-poster.jpg)",
+      "Bash(ffmpeg -y -loglevel error -ss 43 -i 8-final.mp4 -frames:v 1 _v_s2.png)",
+      "Bash(ffmpeg -y -loglevel error -ss 132 -i 8-final.mp4 -frames:v 1 _v_s5.png)",
+      "Bash(ffmpeg -y -loglevel error -ss 159 -i 8-final.mp4 -frames:v 1 _v_s6.png)",
+      "Bash(awk '{print $5, $9}')"
     ]
   }
 }
