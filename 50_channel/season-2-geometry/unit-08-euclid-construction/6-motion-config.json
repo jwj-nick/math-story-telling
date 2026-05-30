@@ -1,0 +1,63 @@
+{
+  "_comment": "unit-08 유클리드(작도와 합동) STEP6. scene end=다음 scene 음성 시작. 자막=turn 타임라인. 16:9. 작도·합동·정17각형 모티프. length 145.94s(R24 관리).",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 145.94,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "sage": "0x8FAE7B", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "start": 0.0, "end": 17.23, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "start": 17.23, "end": 42.62, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "눈금 없는 자 + 컴퍼스", "x": "center", "y": "0.28", "size": 42, "color": "white", "start": 24.0, "end": 33.0 },
+        { "text": "손이 아니라, 규칙으로", "x": "center", "y": "0.44", "size": 54, "color": "gold", "start": 35.0, "end": 42.4 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "start": 42.62, "end": 76.14, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "완전히 포개짐 = 합동", "x": "center", "y": "0.26", "size": 50, "color": "gold", "start": 49.0, "end": 59.0 },
+        { "text": "세 변 · 두 변과 끼인각 · 한 변과 양 끝각", "x": "center", "y": "0.46", "size": 38, "color": "white", "start": 60.0, "end": 75.9 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "start": 76.14, "end": 87.44, "motion": "zoom_out",
+      "zoom": [1.05, 1.0],
+      "captions": [
+        { "text": "규칙대로 하면, 누가 해도 같다", "x": "center", "y": "0.44", "size": 48, "color": "gold", "start": 80.0, "end": 87.2 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "start": 87.44, "end": 120.08, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "이천 년 만의 돌파", "x": "center", "y": "0.26", "size": 44, "color": "white", "start": 98.0, "end": 108.0 },
+        { "text": "정17각형 · 열아홉 살 가우스", "x": "center", "y": "0.44", "size": 52, "color": "gold", "start": 110.0, "end": 119.8 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "start": 120.08, "end": 145.94, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "내 묘비엔 정17각형을 새겨다오", "x": "center", "y": "0.26", "size": 40, "color": "white", "start": 123.0, "end": 133.0 },
+        { "text": "규칙", "x": "center", "y": "0.42", "size": 140, "color": "gold", "start": 139.0, "end": 145.7 },
+        { "text": "작도는 정확히, 합동은 같음을", "x": "center", "y": "0.74", "size": 36, "color": "white", "start": 141.0, "end": 145.7 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존." }
+}
