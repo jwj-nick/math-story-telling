@@ -3,6 +3,7 @@
     "allow": [
       "Bash(ffmpeg *)",
       "Bash(ffprobe *)",
+      "Bash(edge-tts *)",
       "Bash(/c/Users/admin/scoop/shims/gh.exe run list *)",
       "Bash(/c/Users/admin/scoop/shims/gh.exe run view *)"
     ]
