@@ -80,7 +80,8 @@
       "Bash(ffmpeg -y -loglevel error -ss 43 -i 8-final.mp4 -frames:v 1 _v_s2.png)",
       "Bash(ffmpeg -y -loglevel error -ss 132 -i 8-final.mp4 -frames:v 1 _v_s5.png)",
       "Bash(ffmpeg -y -loglevel error -ss 159 -i 8-final.mp4 -frames:v 1 _v_s6.png)",
-      "Bash(awk '{print $5, $9}')"
+      "Bash(awk '{print $5, $9}')",
+      "Bash(awk '{print $2}')"
     ]
   }
 }
