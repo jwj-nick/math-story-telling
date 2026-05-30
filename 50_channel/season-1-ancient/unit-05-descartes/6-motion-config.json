@@ -1,0 +1,63 @@
+{
+  "_comment": "unit-05 데카르트 STEP6 모션 config (시즌 피날레). scene end=다음 scene 음성 시작. 자막=turn 타임라인. 이미지=네이티브16:9. 좌표축 모티프.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 171.75,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "sky": "0x6B9BD8", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "start": 0.0, "end": 28.27, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "start": 28.27, "end": 55.87, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "두 거리면, 위치가 정해진다", "x": "center", "y": "0.30", "size": 46, "color": "white", "start": 42.0, "end": 55.5 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "start": 55.87, "end": 87.77, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "가로 = x축   세로 = y축", "x": "center", "y": "0.26", "size": 44, "color": "white", "start": 62.0, "end": 73.0 },
+        { "text": "두 수의 만남 = 한 점", "x": "center", "y": "0.44", "size": 66, "color": "gold", "start": 79.0, "end": 87.5 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "start": 87.77, "end": 118.68, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "y = 2x  →  직선", "x": "center", "y": "0.24", "size": 46, "color": "white", "start": 96.0, "end": 106.0 },
+        { "text": "식 ↔ 그림", "x": "center", "y": "0.44", "size": 92, "color": "gold", "start": 108.0, "end": 118.4 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "start": 118.68, "end": 142.87, "motion": "zoom_out",
+      "zoom": [1.07, 1.0],
+      "captions": [
+        { "text": "변수 x, y, z", "x": "center", "y": "0.28", "size": 50, "color": "white", "start": 123.0, "end": 131.0 },
+        { "text": "글자가 그림을 그리다", "x": "center", "y": "0.46", "size": 56, "color": "gold", "start": 134.0, "end": 142.6 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "start": 142.87, "end": 171.75, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "페르마도 따로, 같은 좌표에", "x": "center", "y": "0.28", "size": 40, "color": "white", "start": 157.0, "end": 163.5 },
+        { "text": "만남", "x": "center", "y": "0.42", "size": 140, "color": "gold", "start": 165.0, "end": 171.5 },
+        { "text": "수와 그림이 만나는 곳", "x": "center", "y": "0.74", "size": 36, "color": "white", "start": 167.0, "end": 171.5 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존." }
+}
