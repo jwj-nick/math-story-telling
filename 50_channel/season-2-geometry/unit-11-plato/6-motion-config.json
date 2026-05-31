@@ -1,0 +1,32 @@
+{
+  "_comment": "unit-11 플라톤(다면체와 회전체) STEP6. scene end=다음 scene 음성 시작(188.47 실측 매핑). 16:9. 한 단어 다섯. 정다면체 5종·오일러·5원소·회전체·케플러. length 188.47s.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 188.47,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "blue": "0x6E93B0", "shadow": "0x000000" },
+  "scenes": [
+    { "id": "S1", "img": "5-images/S1.png", "start": 0.0, "end": 22.04, "motion": "push_in", "zoom": [1.0, 1.08],
+      "captions": [ { "text": "기하학을 모르는 자는 들어오지 말라", "x": "center", "y": "0.80", "size": 42, "color": "gold", "start": 12.0, "end": 21.6 } ] },
+    { "id": "S2", "img": "5-images/S2.png", "start": 22.04, "end": 51.74, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "면 · 모서리 · 꼭짓점", "x": "center", "y": "0.20", "size": 44, "color": "white", "start": 30.0, "end": 41.0 },
+        { "text": "꼭짓점 - 모서리 + 면 = 2", "x": "center", "y": "0.82", "size": 52, "color": "gold", "start": 42.5, "end": 51.4 } ] },
+    { "id": "S3", "img": "5-images/S3.png", "start": 51.74, "end": 93.71, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [ { "text": "정다면체는 딱 다섯뿐", "x": "center", "y": "0.16", "size": 56, "color": "gold", "start": 70.0, "end": 86.0 } ] },
+    { "id": "S4", "img": "5-images/S4.png", "start": 93.71, "end": 133.06, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "불 · 공기 · 물 · 흙 · 우주", "x": "center", "y": "0.18", "size": 44, "color": "white", "start": 104.0, "end": 119.0 },
+        { "text": "정확히 다섯, 유클리드가 증명했다", "x": "center", "y": "0.84", "size": 42, "color": "gold", "start": 122.0, "end": 132.6 } ] },
+    { "id": "S5", "img": "5-images/S5.png", "start": 133.06, "end": 160.18, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "돌려서 만든 입체, 회전체", "x": "center", "y": "0.18", "size": 44, "color": "white", "start": 140.0, "end": 150.0 },
+        { "text": "정다면체 다섯, 회전체는 끝없이", "x": "center", "y": "0.84", "size": 46, "color": "gold", "start": 151.0, "end": 159.8 } ] },
+    { "id": "S6", "img": "5-images/S6.png", "start": 160.18, "end": 188.47, "motion": "zoom_in", "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "케플러, 다섯에 행성을 끼우다", "x": "0.66", "y": "0.28", "size": 38, "color": "white", "start": 168.0, "end": 178.0 },
+        { "text": "다섯", "x": "0.66", "y": "0.46", "size": 130, "color": "gold", "start": 180.0, "end": 188.2 } ] }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "fade in/out 0.6. concat -c copy 길이 보존." }
+}
