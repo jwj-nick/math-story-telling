@@ -1,0 +1,32 @@
+{
+  "_comment": "unit-13 나이팅게일(자료의 정리와 해석) STEP6. scene end=다음 scene 음성 시작(177.00 실측 매핑). 16:9. 한 단어 그림. 도수분포표·히스토그램·장미그림·상대도수·플레이페어. length 177.00s. 시즌3 첫 편.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 177.0,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "rose": "0xC97B7B", "shadow": "0x000000" },
+  "scenes": [
+    { "id": "S1", "img": "5-images/S1.png", "start": 0.0, "end": 27.28, "motion": "push_in", "zoom": [1.0, 1.08],
+      "captions": [ { "text": "총칼보다 병이 더 죽였다", "x": "center", "y": "0.82", "size": 46, "color": "gold", "start": 15.0, "end": 26.9 } ] },
+    { "id": "S2", "img": "5-images/S2.png", "start": 27.28, "end": 53.21, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "변량 · 계급 · 도수", "x": "center", "y": "0.20", "size": 44, "color": "white", "start": 35.0, "end": 45.0 },
+        { "text": "도수분포표", "x": "center", "y": "0.84", "size": 52, "color": "gold", "start": 46.0, "end": 52.8 } ] },
+    { "id": "S3", "img": "5-images/S3.png", "start": 53.21, "end": 79.29, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "표일 땐 안 보이던 모양", "x": "center", "y": "0.20", "size": 44, "color": "white", "start": 61.0, "end": 71.0 },
+        { "text": "히스토그램 · 도수분포다각형", "x": "center", "y": "0.84", "size": 44, "color": "gold", "start": 72.0, "end": 78.8 } ] },
+    { "id": "S4", "img": "5-images/S4.png", "start": 79.29, "end": 123.22, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "장미 그림 · 상대도수", "x": "center", "y": "0.18", "size": 44, "color": "white", "start": 90.0, "end": 105.0 },
+        { "text": "그림 한 장이 군대를 바꿨다", "x": "center", "y": "0.84", "size": 48, "color": "gold", "start": 110.0, "end": 122.9 } ] },
+    { "id": "S5", "img": "5-images/S5.png", "start": 123.22, "end": 149.49, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [ { "text": "막대 · 선 · 원, 플레이페어의 발명", "x": "center", "y": "0.84", "size": 42, "color": "gold", "start": 133.0, "end": 148.8 } ] },
+    { "id": "S6", "img": "5-images/S6.png", "start": 149.49, "end": 177.0, "motion": "zoom_in", "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "표 백 줄보다, 그림 한 장", "x": "0.62", "y": "0.30", "size": 38, "color": "white", "start": 158.0, "end": 169.0 },
+        { "text": "그림", "x": "0.62", "y": "0.48", "size": 130, "color": "gold", "start": 170.0, "end": 176.8 } ] }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "fade in/out 0.6. concat -c copy 길이 보존." }
+}
