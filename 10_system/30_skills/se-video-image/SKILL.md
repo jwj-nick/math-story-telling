@@ -120,6 +120,8 @@ def gen(prompt, out, ref_paths=None):
 | 종횡비 | 16:9 (생성 시 `aspect_ratio="16:9"` 강제, 정사각 반환 금지) |
 | 인물 프레이밍 | 머리/얼굴 온전 + headroom (크롭에 잘리지 않음) |
 | **수학 그래프 정확성** | 그래프·다이어그램 = **개념과 모양 일치 필수** NCC 멀티모달 검증. 예: 반비례 = 감소 쌍곡선(S자·증가 금지), 정비례 = 원점 통과 직선 (unit-06 학습: 첫 S4가 S자곡선 오류 → 재생성) |
+| **🔥 추상 다이어그램 강제구문** | 기하·통계 개념도/데이터그래픽을 그냥 요청하면 Nano Banana가 *장면(courtyard 등)* 으로 렌더 → 개념 흐려짐. **"a clean minimal GEOMETRY DIAGRAM / DATA-GRAPHIC, flat, NO people, NO scene, NO landscape, dark charcoal bg, glowing thin gold wireframe lines, like an elegant textbook figure"** 강제. 개수·배치·색을 명시("EXACTLY FIVE distinct solids in a row", "blue wedges dominating")해야 정확 (u10·11·13 학습) |
+| **🔥 클로징 한 단어 구성** | 한 단어 오버레이가 인물 얼굴/밝은 영역과 충돌 → 클로징 이미지는 **"인물(또는 엠블럼)을 좌측 1/3 에, 우측 2/3 는 빈 어두운 하늘/배경, NOTHING in that area"** 로 생성하고 단어를 `x≈0.62~0.66` 우측 어두운 영역에 배치 (u10·12·13 학습) |
 | 여백 | caption space 30%+ |
 | 팔레트 | 시대 팔레트 일관 |
 | 도구 비교 | 도구별 변형 § 작성 |
