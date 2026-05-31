@@ -268,7 +268,7 @@ design-system의 토큰과 충돌 시:
 
 ## 10. 일관성 audit 도구
 
-신규/수정 단원 페이지는 `/se_ncc_audit_app` 으로 점검:
+신규/수정 단원 페이지는 `/se-audit-app` 으로 점검:
 - 4 root file 존재 여부
 - meta.json schema v2 준수 (slug-en, persons[])
 - 인물 카드 signature·영상 link 정확성

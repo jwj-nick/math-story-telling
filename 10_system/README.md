@@ -32,7 +32,7 @@
                    → insights/YYMMDD_unitNN_<skill>.md
                    양식: _template.md (잘 된 것 / 아쉬운 것 / 원칙 후보)
        ↓
-[3] Distill        /se_distill_principles 수동 호출
+[3] Distill        /se-distill-principles 수동 호출
                    → insights/_index.md에서 미반영 항목 스캔
                    → principles/*.md 또는 context/*.md 업데이트 제안
                    → Nick 승인 후 적용 + 해당 insight에 "반영완료 → ..." 마크

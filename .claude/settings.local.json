@@ -22,7 +22,15 @@
       "Bash(mkdir -p 50_channel/season-1-ancient/unit-05-descartes/5-images)",
       "Bash(cp 50_channel/season-1-ancient/unit-04-diophantus/synth.py 50_channel/season-1-ancient/unit-04-diophantus/render_compile.py 50_channel/season-1-ancient/unit-05-descartes/)",
       "Bash(mkdir -p 50_channel/season-2-geometry/unit-07-euclid/5-images)",
-      "Bash(cp 50_channel/season-1-ancient/unit-06-kepler/synth.py 50_channel/season-1-ancient/unit-06-kepler/render_compile.py 50_channel/season-2-geometry/unit-07-euclid/)"
+      "Bash(cp 50_channel/season-1-ancient/unit-06-kepler/synth.py 50_channel/season-1-ancient/unit-06-kepler/render_compile.py 50_channel/season-2-geometry/unit-07-euclid/)",
+      "Bash(PYTHONIOENCODING=utf-8 python render_compile.py)",
+      "Bash(sed -n '1,30p' se-video-image/SKILL.md)",
+      "Bash(sed -n '1,30p' se-video-narration/SKILL.md)",
+      "Bash(sed -n '112,128p' se-video-image/SKILL.md)",
+      "Bash(sed -n '323,340p' se-video-narration/SKILL.md)",
+      "Bash(PYTHONIOENCODING=utf-8 python -)",
+      "Bash(cd *)",
+      "Bash(git rev-list *)"
     ]
   }
 }

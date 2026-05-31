@@ -198,7 +198,7 @@ channel/season-1-ancient/unit-01/
 - **자동화**: `/se_story_video_v1_5 unit-01`
 - **수동 단계**: storyboard → narration → 프롬프트 → (Nick 이미지 생성) → config → 빌드
 - **참고 skill**:
-  - `/se_story_write` — 내러티브 텍스트 작성 (v1.5 이전 단계)
+  - `/se-story-write` — 내러티브 텍스트 작성 (v1.5 이전 단계)
   - `/se_video_make` — 영상 빌드 (v1 호환)
 
 ---

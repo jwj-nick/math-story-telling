@@ -92,44 +92,44 @@ math-story-telling/
 
 ## 단원 파이프라인 — 1개 단원 제작 과정
 
-> **착수**: Nick이 "unit 02 만들어"라고 한 줄 의뢰 → `se_agent_unit_orchestrator`가 Commission Brief(chatlog Round 0)를 자동 생성 → Nick이 확인 → 자율 실행.
+> **착수**: Nick이 "unit 02 만들어"라고 한 줄 의뢰 → `se-unit-orchestrator`가 Commission Brief(chatlog Round 0)를 자동 생성 → Nick이 확인 → 자율 실행.
 > **HITL 없음**: NCC가 전 과정 자율 진행. 각 Phase 완료 시 chatlog 기록.
 > 상세 워크플로우: `90_archive/10_docs_original/14_workflow_v4.md` (옛 기준), 신 워크플로우는 `10_system/60_workflows/`에 정리 예정.
 
 ```
 Phase 0: 디렉토리 초기화
-  └─ /se_unit_plan → 40_grades/middle/math1/NN_*/ 구조 생성
+  └─ /se-unit-plan → 40_grades/middle/math1/NN_*/ 구조 생성
 
 Phase 1: 개념 (축 A)
-  ├─ 30_content/concepts/NN_*/ 검수·보완 → /se_concept_review
-  └─ audit: /se_ncc_audit_concept
+  ├─ 30_content/concepts/NN_*/ 검수·보완 → /se-concept-review
+  └─ audit: /se-audit-concept
 
 Phase 3 (비동기, 단원 파이프라인과 독립):
-  └─ 수학 언어 업데이트 필요 여부 판단 → /se_math_figure → 30_content/literacy/
+  └─ 수학 언어 업데이트 필요 여부 판단 → /se-math-figure → 30_content/literacy/
 
 Phase 2: 이야기 (축 B)
-  ├─ 인물 리서치 + 스토리 초안 → /se_story_write
-  └─ audit: /se_ncc_audit_story
+  ├─ 인물 리서치 + 스토리 초안 → /se-story-write
+  └─ audit: /se-audit-story
 
 Phase 4: 앱 (축 A+B 통합)
   ├─ HTML 앱 제작: index.html, story.html, concepts.html
-  └─ audit: /se_ncc_audit_app
+  └─ audit: /se-audit-app
 
 Phase 5-a: 기본문제
   ├─ 단원 전체 개념 커버 기본문제 (8~10개)
-  └─ → problems/basic_app.html / audit: /se_ncc_audit_math + /se_ncc_audit_app
+  └─ → problems/basic_app.html / audit: /se-audit-math + /se-audit-app
 
 Phase 5-b: 유형 목록
   ├─ 시험 유형 목록 확정
-  └─ → problems/types.md / audit: /se_ncc_audit_problem
+  └─ → problems/types.md / audit: /se-audit-problem
 
 Phase 5-c: 유형별 연습 (3/3/3 원칙)
-  ├─ /se_math_practice → 유형별 L×3 + M×3 + H×3
-  └─ → problems/type_NN_app.html / audit: /se_ncc_audit_math + /se_ncc_audit_app
+  ├─ /se-math-practice → 유형별 L×3 + M×3 + H×3
+  └─ → problems/type_NN_app.html / audit: /se-audit-math + /se-audit-app
 
 Phase 5-d: 유형별 깊이 탐구 자료
-  ├─ M+ 난이도 유형마다 /se_type_explorer 호출
-  └─ → problems/deep_유형명_app.html / audit: /se_ncc_audit_math + /se_ncc_audit_app
+  ├─ M+ 난이도 유형마다 /se-type-explorer 호출
+  └─ → problems/deep_유형명_app.html / audit: /se-audit-math + /se-audit-app
 ```
 
 ---
@@ -139,13 +139,13 @@ Phase 5-d: 유형별 깊이 탐구 자료
 ### 제작 Skills
 | 명령 | Phase | 용도 |
 |---|---|---|
-| `/se_unit_plan` | 0 | 단원 디렉토리 초기화 |
-| `/se_concept_review` | 1 | 30_content/concepts/ 개념 MD 검수·보완 |
-| `/se_story_write` | 2 | 인물 서사 초안 생성 |
-| `/se_math_figure` | 3, 5 | 수학 그래프 네이티브 렌더링 (SVG + JSXGraph) |
-| `/se_math_practice` | 5c | 유형별 연습 문제 생성 (L/M/H 3×3) |
-| `/se_math_error_note` | 5 in-loop | 오답노트 생성 (7섹션 MD + HTML 앱) |
-| `/se_distill_principles` | meta | chatlog → principles 추출 |
+| `/se-unit-plan` | 0 | 단원 디렉토리 초기화 |
+| `/se-concept-review` | 1 | 30_content/concepts/ 개념 MD 검수·보완 |
+| `/se-story-write` | 2 | 인물 서사 초안 생성 |
+| `/se-math-figure` | 3, 5 | 수학 그래프 네이티브 렌더링 (SVG + JSXGraph) |
+| `/se-math-practice` | 5c | 유형별 연습 문제 생성 (L/M/H 3×3) |
+| `/se-math-error-note` | 5 in-loop | 오답노트 생성 (7섹션 MD + HTML 앱) |
+| `/se-distill-principles` | meta | chatlog → principles 추출 |
 
 ### 영상 제작 Skills (8 STEP 파이프라인, 2026-05-29 졸업)
 | 명령 | STEP | 용도 |
@@ -160,25 +160,25 @@ Phase 5-d: 유형별 깊이 탐구 자료
 | `/se-video-render` | 7 렌더 | FFmpeg zoompan+자막 → raw mp4 |
 | `/se-video-compose` | 8 합성 | A/V mux → final mp4 + 표지 |
 
-> 구 `/se_story_video_v1_5`(6장면 110초 edge-tts) = v1.5 레거시. 신 파이프라인 = 위 8 STEP.
+> 구 `se_story_video_v1_5`(6장면 110초 edge-tts) = **폐기·아카이브** (`90_archive/skills_legacy/`). 신 파이프라인 = 위 8 STEP.
 > 양산: `se-video-orchestrator` agent + `50_channel/season-1-ancient/_manifest.md`. 설계 = `11_video_gen_process/00_charter/PRODUCTION_SETUP.md`.
 
 ### NCC Audit Skills
 | 명령 | 대상 | 기준 |
 |---|---|---|
-| `/se_ncc_audit_app` | HTML 앱 품질 | `10_system/10_principles/APP_PRINCIPLES.md` |
-| `/se_ncc_audit_math` | 수학 정확성 (Wolfram 보조) | 중1 교육과정 |
-| `/se_ncc_audit_concept` | 개념 수준·범위 | `10_system/20_context/LEARNER_PROFILE.md` |
-| `/se_ncc_audit_problem` | 문제 커버리지·난이도 | 출제 원칙 |
-| `/se_ncc_audit_story` | 스토리 적합성 + 피드백 분석 | LEARNER_PROFILE.md |
-| `/se_unit_review` | 단원 전체 검토 | — |
-| `/se_type_explorer` | 유형별 깊이 탐구 | Phase 5-d |
+| `/se-audit-app` | HTML 앱 품질 | `10_system/10_principles/APP_PRINCIPLES.md` |
+| `/se-audit-math` | 수학 정확성 (Wolfram 보조) | 중1 교육과정 |
+| `/se-audit-concept` | 개념 수준·범위 | `10_system/20_context/LEARNER_PROFILE.md` |
+| `/se-audit-problem` | 문제 커버리지·난이도 | 출제 원칙 |
+| `/se-audit-story` | 스토리 적합성 + 피드백 분석 | LEARNER_PROFILE.md |
+| `/se-unit-review` | 단원 전체 검토 | — |
+| `/se-type-explorer` | 유형별 깊이 탐구 | Phase 5-d |
 
 ## 등록된 Agents
 
 | 에이전트 | 용도 |
 |---|---|
-| `se_agent_unit_orchestrator` | 단원 4축 파이프라인 (Phase 0~5c) — 개념·이야기·앱·문제 |
+| `se-unit-orchestrator` | 단원 4축 파이프라인 (Phase 0~5c) — 개념·이야기·앱·문제 |
 | `se-video-orchestrator` | **영상 8 STEP 파이프라인** — "unit NN [인물]" → 영상 1편 자율 제작 + batch(manifest) |
 
 ### Skill 동기화
