@@ -325,6 +325,8 @@ TONE_STRUCTURE v2 부합도 체크리스트:
 | 항목 | 합격 기준 |
 |---|---|
 | 길이 | TONE_STRUCTURE v3 §9 = **150~180s** (1.25배 속도) |
+| **🔥 길이의 진짜 레버 = narrative 자수** | A화자 speed는 ±10s 미세조정용일 뿐, **길이는 narrative 분량이 결정**. 밀도 높은 단원은 설계 단계서 **≈1650자(≤30 turn)** 로 압축. A speed 권장값: Q=1.15 고정 / A=Mina 1.13·Kyle 1.14·Mike 1.10(화자별 기본 페이스 차이). 압축+A speed 적용 시 145~180s 안착 (u10 196→184, u11 197→188, u12 145, u13 177 학습 R39·R43·R48) |
+| **🔥 PYTHONIOENCODING=utf-8** | 모든 python 합성/렌더 호출(synth.py·render_compile.py·gen_images.py)에 `PYTHONIOENCODING=utf-8` 선행. PowerShell·Bash의 cp949 콘솔이 `✓`·`π` 출력에서 UnicodeEncodeError로 **스크립트 크래시**(파일은 print 前 기록되어 보존되나 잡 실패 처리) (u10 학습 R35) |
 | turn 평균 자수 | 10~30 |
 | **2 화자 dialog** | Q/A turn 분리 + 성별 매핑 |
 | **🔥 Q = 존댓말** | "~요?", "~예요?", "~어요!" 일관 (v3) |
