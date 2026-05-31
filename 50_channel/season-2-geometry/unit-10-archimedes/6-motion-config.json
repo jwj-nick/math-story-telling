@@ -1,0 +1,33 @@
+{
+  "_comment": "unit-10 아르키메데스(원과 부채꼴) STEP6. scene end=다음 scene 음성 시작(184.11 실측 매핑). 16:9. 한 단어 π. 측정·96각형·류후이·부채꼴. length 184.11s.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 184.11,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "sea": "0x6E93B0", "shadow": "0x000000" },
+  "scenes": [
+    { "id": "S1", "img": "5-images/S1.png", "start": 0.0, "end": 28.19, "motion": "push_in", "zoom": [1.0, 1.08],
+      "captions": [ { "text": "측정의 거장, 아르키메데스", "x": "center", "y": "0.80", "size": 46, "color": "gold", "start": 15.0, "end": 27.7 } ] },
+    { "id": "S2", "img": "5-images/S2.png", "start": 28.19, "end": 53.75, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "중심 · 반지름 · 지름 · 둘레", "x": "center", "y": "0.22", "size": 42, "color": "white", "start": 33.0, "end": 44.0 },
+        { "text": "둘레 ÷ 지름 = π", "x": "center", "y": "0.82", "size": 60, "color": "gold", "start": 45.5, "end": 53.5 } ] },
+    { "id": "S3", "img": "5-images/S3.png", "start": 53.75, "end": 93.90, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "굽은 둘레를 다각형 사이에 가두다", "x": "center", "y": "0.22", "size": 42, "color": "white", "start": 63.0, "end": 78.0 },
+        { "text": "구십육 각형으로 π를 재다", "x": "center", "y": "0.46", "size": 56, "color": "gold", "start": 83.5, "end": 93.6 } ] },
+    { "id": "S4", "img": "5-images/S4.png", "start": 93.90, "end": 128.79, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [ { "text": "지구 반대편, 같은 길 · 류후이", "x": "center", "y": "0.80", "size": 44, "color": "white", "start": 106.0, "end": 128.5 } ] },
+    { "id": "S5", "img": "5-images/S5.png", "start": 128.79, "end": 157.62, "motion": "ken_burns", "zoom": [1.06, 1.0],
+      "captions": [
+        { "text": "부채꼴", "x": "center", "y": "0.24", "size": 50, "color": "white", "start": 138.0, "end": 148.0 },
+        { "text": "중심각이 2배면, 호도 넓이도 2배", "x": "center", "y": "0.46", "size": 50, "color": "gold", "start": 149.0, "end": 157.4 } ] },
+    { "id": "S6", "img": "5-images/S6.png", "start": 157.62, "end": 184.11, "motion": "zoom_in", "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "내 원을 건드리지 마라", "x": "0.66", "y": "0.30", "size": 44, "color": "white", "start": 166.0, "end": 176.0 },
+        { "text": "π", "x": "0.66", "y": "0.42", "size": 140, "color": "gold", "start": 178.0, "end": 183.9 },
+        { "text": "어떤 원이든, 둘레 ÷ 지름 = π", "x": "0.66", "y": "0.66", "size": 32, "color": "white", "start": 179.0, "end": 183.9 } ] }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "fade in/out 0.6. concat -c copy 길이 보존." }
+}

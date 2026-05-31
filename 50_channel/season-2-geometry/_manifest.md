@@ -16,7 +16,7 @@
 | 07 | 기본도형 | 유클리드 (탈레스) | Mina(여)/Mike(남) | ✅ done | [unit-07-euclid/](./unit-07-euclid/) 8-final.mp4 201s (약속) |
 | 08 | 작도와 합동 | 유클리드 (가우스) | Kyle(남)/Kanna(여) | ✅ done | [unit-08-euclid-construction/](./unit-08-euclid-construction/) 8-final.mp4 146s (규칙) |
 | 09 | 다각형 | 피타고라스 (케플러) | Kanna(여)/Mike(남) | ✅ done | [unit-09-pythagoras/](./unit-09-pythagoras/) 8-final.mp4 180s (수) |
-| 10 | 원과 부채꼴 | 아르키메데스 (류후이) | 남/여 | ⚪ pending | — (unit01 카메오→주연) |
+| 10 | 원과 부채꼴 | 아르키메데스 (류후이) | Mike(남)/Mina(여) | ✅ done | [unit-10-archimedes/](./unit-10-archimedes/) 8-final.mp4 184s (π) |
 | 11 | 다면체와 회전체 | 플라톤 (케플러) | 여/남 | ⚪ pending | — |
 | 12 | 겉넓이와 부피 | 아르키메데스 (카발리에리) | 남/여 | ⚪ pending | — (아르키메데스 재등장) |
 
@@ -33,4 +33,5 @@
 ## 변경 이력
 - 2026-05-31: 신설. unit-07 done (유클리드, 약속). u08~12 pending.
 - 2026-05-31: **unit-08 done** (유클리드 작도, 규칙, Kyle/Kanna, 146s). 길이 관리 성공(u07 201→146, R24). 가우스 정17각형.
-- 2026-05-31: **unit-09 done** (피타고라스, 수, Kanna/Mike, 180s). 외각합 360°·펜타그램·무리수·히파소스. 케플러 테셀레이션. 다음=u10 아르키메데스(원과 부채꼴).
+- 2026-05-31: **unit-09 done** (피타고라스, 수, Kanna/Mike, 180s). 외각합 360°·펜타그램·무리수·히파소스. 케플러 테셀레이션.
+- 2026-05-31: **unit-10 done** (아르키메데스, π, Mike/Mina, 184s). 96각형 squeeze·류후이 3072각형·부채꼴 비례. u01 카메오→주연. 학습 R34(A speed1.10)·R35(PYTHONIOENCODING=utf-8)·R36(abstract diagram 강제)·R37(클로징 인물 좌측구성). 다음=u11 플라톤(다면체).
