@@ -57,7 +57,7 @@ Phase 0 → Phase 1 → [Phase 3 체크] → Phase 2 → Phase 4 → Phase 5-a �
 ```
 
 각 Phase 완료 후:
-1. `/ncc_audit_*` Skill 실행 (해당 Phase 기준)
+1. `/se-audit-*` Skill 실행 (해당 Phase 기준)
 2. chatlog Round N에 결과 기록
 3. Fail 판정 시 수정 후 재검토
 4. 다음 Phase 진행
@@ -82,7 +82,10 @@ Phase 0 → Phase 1 → [Phase 3 체크] → Phase 2 → Phase 4 → Phase 5-a �
   - 필요 시: `/se-math-figure` 호출 → `40_BaseDocs/00_literacy/` 업데이트
 
 ### Phase 2 — 이야기 (축 B)
-- `/se-story-write` Skill 호출 (인물명, 단원명 전달)
+- 인물 서사 = **영상 파이프라인 산출물 재사용**: `50_channel/.../unit-NN-*/1-narrative.md` (se-people-narrate 출력).
+  - 영상이 없으면 `se-video-orchestrator`로 영상 1편 먼저 제작 → 그 1-narrative.md를 서사로 사용.
+  - story.html은 이 서사 + 영상 임베드(`mid1/story/unitNN/`)로 구성.
+- (구 `/se-story-write`는 폐기·아카이브 — `90_archive/skills_legacy/`. 인물 서사는 se-people-narrate로 일원화.)
 - 완료 후 `/se-audit-story` 실행
 
 ### Phase 4 — 앱 (축 A+B 통합)

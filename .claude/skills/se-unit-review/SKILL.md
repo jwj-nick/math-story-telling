@@ -87,7 +87,7 @@ chatlog에 정리:
 | `index.html`에 링크 누락 | Edit 직접 |
 | `type_NN_app.html` 없음 | `/se-math-practice` |
 | `deep_*.html` 없음 | `/se-type-explorer` |
-| `story.html` 없음 | `/se-story-write` + HTML 변환 (orchestrator) |
+| `story.html` 없음 | 영상 1-narrative.md(se-people-narrate) + 영상 임베드 → HTML (orchestrator) |
 | `concepts.html` 없음 | se-unit-orchestrator (전용 skill 없음) |
 | 수학 오류 | `/se-audit-math` |
 | 디자인 위반 | `/se-audit-app` |

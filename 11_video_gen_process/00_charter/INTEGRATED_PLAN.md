@@ -782,7 +782,7 @@ SKILL.md 동작 1·2 진행.
 | 본 프로젝트가 만들 스킬 | 외부 덮어쓰기 대상 | 비고 |
 |---|---|---|
 | `se-people-pick` | (신규 — 외부에 대응물 X) | 새 외부 위치: `../../10_system/30_skills/se-people-pick/` |
-| `se-people-narrate` | 기존 `se_story_write` 와 인접 — 통합 또는 분리 결정은 [서사] 단계 진행 시 | `../../10_system/30_skills/se-people-narrate/` (잠정) |
+| `se-people-narrate` | 기존 `se_story_write` 흡수·일원화 (2026-06-01 se-story-write 폐기→90_archive) | `../../10_system/30_skills/se-people-narrate/` |
 | `se-video-story` | 옛 `se_story_video_v1_5` 의 앞단 일부 | `../../10_system/30_skills/se-video-story/` (잠정) |
 | `se-video-storyboard` | 옛 `se_story_video_v1_5` 의 1단계 | 6단계 스킬 합쳐 옛 `se_story_video_v1_5` 를 분해·대체 |
 | `se-video-narration` | 옛 `se_story_video_v1_5` 의 2단계 | 동상 |
