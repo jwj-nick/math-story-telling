@@ -35,30 +35,39 @@
 
 ## 체크리스트
 ### 1. v1_5 아카이브
-- [ ] `10_system/30_skills/se_story_video_v1_5/` → `90_archive/skills_legacy/` (git mv)
-- [ ] `.claude/skills/se_story_video_v1_5/` 삭제
+- [x] `10_system/30_skills/se_story_video_v1_5/` → `90_archive/skills_legacy/` (git mv)
+- [x] `.claude/skills/se_story_video_v1_5/` 삭제
 
 ### 2. 디렉터리 rename (SSOT) — 14개 (story-write 포함 13 skill + 1 agent)
-- [ ] 13 skill dir git mv (old→new)
-- [ ] agent file git mv se_agent_unit_orchestrator.md → se-unit-orchestrator.md
+- [x] 13 skill dir git mv (old→new)
+- [x] agent file git mv se_agent_unit_orchestrator.md → se-unit-orchestrator.md
 
 ### 3. frontmatter `name:` kebab 갱신 (각 skill/agent)
-- [ ] 13 skill `name:` + ssot 경로 라인
-- [ ] agent `name:`
+- [x] 13 skill `name:` + ssot 경로 라인
+- [x] agent `name:`
 
 ### 4. 참조 일괄 치환 (forward 파일)
-- [ ] skills 내부 cross-link [[..]]·경로·/명령
-- [ ] agents (se-unit-orchestrator 내부 스킬 호출, se-video-orchestrator)
-- [ ] CLAUDE.md 스킬표·agent표
-- [ ] 10_system/README.md, principles(STORY_VIDEO_v1_5·UNIT_PAGE_STANDARD)
-- [ ] (70_meta = outdated, skip — §4.5에서 별도 정리)
+- [x] skills 내부 cross-link [[..]]·경로·/명령
+- [x] agents (se-unit-orchestrator 내부 스킬 호출, se-video-orchestrator)
+- [x] CLAUDE.md 스킬표·agent표
+- [x] 10_system/README.md, principles(STORY_VIDEO_v1_5·UNIT_PAGE_STANDARD)
+- [x] (70_meta = outdated, skip — §4.5에서 별도 정리)
 
 ### 5. mirror 재동기화
-- [ ] `.claude/skills` 옛 디렉터리 14개 삭제
-- [ ] `.claude/agents/se_agent_unit_orchestrator.md` 삭제
-- [ ] bash 70_tools/sync-skills.sh
+- [x] `.claude/skills` 옛 디렉터리 14개 삭제
+- [x] `.claude/agents/se_agent_unit_orchestrator.md` 삭제
+- [x] bash 70_tools/sync-skills.sh
 
 ### 6. 검증·커밋
-- [ ] 잔존 underscore 스킬명 grep 0 (forward 파일)
-- [ ] skill 디렉터리 전부 kebab
-- [ ] commit
+- [x] 잔존 underscore 스킬명 grep 0 (forward 파일)
+- [x] skill 디렉터리 전부 kebab
+- [x] commit (`f811346` push 완료)
+
+---
+
+## 실제 결과 (2026-06-01 종료 기록)
+- **최종 인벤토리:** 23 skill + 2 agent, 전부 kebab. (영상 9 + math/audit/meta 13 + se-story-write 1 / orchestrator 2)
+- **검증:** SSOT underscore 0 · `.claude` 미러 underscore 0 · forward 잔존 0 (v1_5는 "폐기·아카이브" 노트로만 잔존).
+- **커밋:** `f811346` ("refactor(skills): 옛 underbar 스킬 14개 + agent 1개 최신 kebab 스타일로 정리") → origin push 완료.
+- **available-skills 목록**에 새 kebab 스킬 정상 등록 확인.
+- 남은 후속 논의는 `00_project_hub/10_chatlog/0602_skill_cleanup_retro_and_open.md` 참조.
