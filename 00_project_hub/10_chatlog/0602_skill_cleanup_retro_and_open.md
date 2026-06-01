@@ -23,20 +23,31 @@
 ## 1. 🟡 더 논의할 것 (Nick 결정 대기)
 
 1. **se-story-write 흡수 여부** — 현재 보존. 영상 파이프라인의 `se-people-narrate`와 역할 겹침(인물 산문). story.html(축B 앱) 입력으로 실사용 중이라 즉시 삭제 위험 → 보류. *추후: 두 스킬 입력/출력 스펙 비교 후 통합 or 분리 확정.*
-2. **audit 접두 "ncc" 제거 수용 확인** — `se_ncc_audit_*` → `se-audit-*`로 줄임(TODO 선례). 호칭 NCC는 chatlog에서 유지, 스킬명에서만 탈락. 문제없으면 확정.
-3. **nav app 위치** — `mid1/` 통합 vs 새 앱/새 배포. (0601 §5-2)
-4. **연결망(connection-graph) 범위** — 중1 13단원만 vs 중2~고1 골격까지. (0601 §5-3) → 데이터 모델 SSOT 위치(`30_content/` graph)와 직결.
-5. **감싼 설명(wrapping) 톤** — 딸용 짧은 감성 vs 참고형, 빈칸 남길지(절대원칙 5). (0601 §5-4)
+(Nick) 두 skill 중 하나만 남기기. 최근 workflow setup 때 se-people-narrate 를 주력으로 했고 se-story-write 가 이전에 만든거였던 것 같은데, agent, 다른 major skill 들, orchestrator 가 어떤걸 major 로 쓰는 지 확인하고 지금 정리하기.
 
+2. **audit 접두 "ncc" 제거 수용 확인** — `se_ncc_audit_*` → `se-audit-*`로 줄임(TODO 선례). 호칭 NCC는 chatlog에서 유지, 스킬명에서만 탈락. 문제없으면 확정.
+(Nick) se_ncc_audit_* 는 이미 사라진 것 같은데?? 문제 없음
+
+3. **nav app 위치** — `mid1/` 통합 vs 새 앱/새 배포. (0601 §5-2)
+(Nick) nav app 위치는 mid1/ 통합이 적절할 것 같음. (일단은 그렇게)
+
+4. **연결망(connection-graph) 범위** — 중1 13단원만 vs 중2~고1 골격까지. (0601 §5-3) → 데이터 모델 SSOT 위치(`30_content/` graph)와 직결.
+(Nick) 나중에는 계속 연결됨. 중1에 한정하지 않음.
+
+5. **감싼 설명(wrapping) 톤** — 딸용 짧은 감성 vs 참고형, 빈칸 남길지(절대원칙 5). (0601 §5-4)
+(Nick) '0601 §5-4'?? 어느파일?  당신이 합리적인 방법으로 정리 바람. 지금 어느정도 셋업 완료 된걸로 아는데...
 ---
 
 ## 2. ❓ 불확실한 것
 
 - **sync-skills.sh 비-mirror 위험** — 삭제 동기화 안 됨. rename·폐기마다 `.claude/` 옛 디렉터리 수동 삭제 필요. → *개선안 §3-1.*
+(Nick) 당신이 합리적인 방법으로 정리 바람.
 - **70_meta/ outdated 3종**(VISION·MASTER_PLAN·ROADMAP) — 옛 00_LearningSystem 시절 표기 잔존. 이번 정리에서 의도적으로 skip. 폐기 vs 갱신 미정.
+(Nick) 폐기
 - **.claude/settings.local.json 추적 상태** — git status에 계속 M으로 뜸. untrack(.gitignore) 할지 (0601 G1).
+(Nick) Git 에 나중에 push 하길 
 - **se-story-write 실제 호출 경로** — 축B 앱 제작이 현재 수동인지 스킬 경유인지 재확인 필요(흡수 결정의 전제).
-
+(Nick) se-people-narrate 만 남기는게 좋지 않을까?
 ---
 
 ## 3. 🔧 개선할 것
@@ -46,6 +57,8 @@
 3. **lower-third(인물명 자막)·지도(maps)** — 영상 품질 개선 백로그. (0601 B1·B2)
 4. **13편 전수 리뷰** — 일관성·길이·이미지 품질 최종 점검 1회. (0601 B3)
 5. **70_meta 정리** — outdated 3종 폐기/갱신 결정 후 처리.
+
+(Nick) 모두 정리 및 확인 필요. 검토 의견 파일에 잘 정리해두기.
 
 ---
 
@@ -71,6 +84,13 @@
 | G1 | settings.local.json untrack | repo root | — |
 
 > 불일치 4건 메모: u06 데카르트→케플러, u09 가우스→피타고라스, u11 케플러→플라톤, u12 카발리에리→아르키메데스. (영상·meta.json 기준이 정본, 옛 앱 애니는 `anim.html`로 보존 = 단원당 2인 보너스 콘텐츠.)
+
+(Nick) 
+G1 수행
+A3, A2 는 이번에 수행 해보면 좋겠음.
+F1 은 어떤 일인가?
+A4+A1+A5+B4 한번에 처리하기. 그때 계획 정교하게 세워서 진행해야 함. 단 다른 작업 모두 완료후 시작... 새로운 영상들 제작및 app 형태 달리지는 큰 단위의 일이다.
+
 
 ---
 

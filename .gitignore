@@ -54,3 +54,4 @@ Thumbs.db
 # 일시 파일
 *.tmp
 *.log
+.claude/settings.local.json

@@ -27,7 +27,7 @@ description: 단원 파이프라인을 킥오프한다. chatlog 파일을 생성
 
 ## Phase 2: 이야기 (축 B)
 - [ ] 인물/에피소드 리서치
-- [ ] 스토리 텍스트 초안 (/se-story-write)
+- [ ] 인물 서사 = 영상 파이프라인 1-narrative.md 재사용 (se-people-narrate 출력)
 - [ ] Nick 리뷰 → 확정
 - [ ] 50_units/NN/story/ 저장
 

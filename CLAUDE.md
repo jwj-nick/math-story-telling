@@ -40,12 +40,12 @@ math-story-telling/
 ├── 10_system/             원칙·skill·진화 메커니즘
 │   ├── 10_principles/       APP_PRINCIPLES, STORY_VIDEO_v1_5 등 SSOT
 │   ├── 20_context/          LEARNER_PROFILE, TONE_GUIDE, ERA_PALETTES
-│   ├── 30_skills/           ⭐ Claude Code skill SSOT (15개)
+│   ├── 30_skills/           ⭐ Claude Code skill SSOT (22개, 전부 kebab)
 │   ├── 35_agents/           ⭐ agent SSOT
 │   ├── 40_proposals/        incubation (chatlog → proposals → skills)
 │   ├── 50_insights/         회고 누적
 │   ├── 60_workflows/        다단계 절차
-│   └── 70_meta/             ⚠️ VISION, MASTER_PLAN, ROADMAP (옛 00_LearningSystem 시절, outdated — 정리 대기)
+│   └── 70_meta/             concept.md(서사 5단계)·LEARNERS·BLUEPRINTS 등. (VISION/MASTER_PLAN/ROADMAP = 폐기→90_archive/70_meta_legacy/)
 ├── 11_video_gen_process/  ⭐ 영상 제작 시스템 구축 (목적: `00_charter/PURPOSE.md` / 계획: `00_charter/INTEGRATED_PLAN.md`). 영상 양산 X, 시스템 구축.
 ├── 20_packages/           떼서 다른 앱에 쓸 모듈
 │   ├── design-system/       CSS 토큰 4종 + subjects/math + dist
@@ -108,7 +108,7 @@ Phase 3 (비동기, 단원 파이프라인과 독립):
   └─ 수학 언어 업데이트 필요 여부 판단 → /se-math-figure → 30_content/literacy/
 
 Phase 2: 이야기 (축 B)
-  ├─ 인물 리서치 + 스토리 초안 → /se-story-write
+  ├─ 인물 서사 = 영상 파이프라인 산출물 재사용 (50_channel/.../1-narrative.md, se-people-narrate 출력)
   └─ audit: /se-audit-story
 
 Phase 4: 앱 (축 A+B 통합)
@@ -141,7 +141,6 @@ Phase 5-d: 유형별 깊이 탐구 자료
 |---|---|---|
 | `/se-unit-plan` | 0 | 단원 디렉토리 초기화 |
 | `/se-concept-review` | 1 | 30_content/concepts/ 개념 MD 검수·보완 |
-| `/se-story-write` | 2 | 인물 서사 초안 생성 |
 | `/se-math-figure` | 3, 5 | 수학 그래프 네이티브 렌더링 (SVG + JSXGraph) |
 | `/se-math-practice` | 5c | 유형별 연습 문제 생성 (L/M/H 3×3) |
 | `/se-math-error-note` | 5 in-loop | 오답노트 생성 (7섹션 MD + HTML 앱) |
@@ -254,8 +253,6 @@ bash 70_tools/sync-skills.sh --dry     # dry run
 | `30_content/literacy/00_track_overview.md` | 수학 언어 트랙 L1~L7 |
 | `10_system/10_principles/APP_PRINCIPLES.md` | HTML 앱 디자인 원칙 |
 | `10_system/10_principles/STORY_VIDEO_v1_5.md` | 영상 v1.5 원칙 |
-| `10_system/70_meta/VISION.md` | 메타 비전 |
-| `10_system/70_meta/MASTER_PLAN.md` | 메타 마스터 플랜 |
 | `00_project_hub/40_context/external_repos.md` | 옛 4개 repo 참조 메타 |
 | `90_archive/mid_eun_CLAUDE.md` | 옛 CLAUDE.md (참고) |
 | `90_archive/10_docs_original/14_workflow_v4.md` | 옛 워크플로우 (참고) |
