@@ -177,4 +177,39 @@ Nick: "A3, A2 는 이번에 수행 해보면 좋겠음." 두 작업은 outward-f
 - **확인 Q2:** (가)/(나)/(다) 중 선호? (NCC 추천 = **(다)** — 폰 친화 + 연결성 둘 다.)
 - **확인 Q3:** A2 데이터부터 만들고(반나절) → A3 앱(반나절) 순차 진행 OK? 아니면 A3 목업 먼저 보고 A2 스키마 확정?
 
+---
+
+# Round 2 — A2 + A3 빌드 완료 (2026-06-01, NCC 자율)
+
+## R2.0 Nick 결정 (AskUserQuestion)
+- **A3 형태 = (다) 하이브리드** (타임라인 + 연결 보기 토글)
+- **A2 노드 단위 = 개념 단위** → 단원 노드 + 그 아래 개념 노드 2-레벨로 구현
+
+## R2.1 A2 — 연결망 SSOT (commit `26cbd3c` 다음, SSOT repo push 완료)
+- **파일:** `30_content/graph/connections.json` (SSOT) + 생성기 `70_tools/build_connections.py` (meta.json 13개 기반, 재현 가능).
+- **107 노드:** 단원 13 + 개념 89 + 상위학년(future) 5.
+- **24 엣지:** `same-person` 6(persons 교차 자동 도출) + `concept-prereq` 13(학습 선후 큐레이션) + `forward` 5(중2~중3 예고 stub).
+- **링크:** 배포 mid1 기준 상대경로. 13단원 video+app 링크 26개 **전부 실파일 존재 검증 완료** (mid1 디렉터리명이 meta slug-en과 8건 불일치 → 검증본 `MID1_DIR` 고정).
+- **확장성:** 중2~고1·과목 간 노드를 같은 스키마로 추가 가능. future 노드를 실단원으로 승격하면 끝.
+
+## R2.2 A3 — 수학 지도 nav app (mid1 repo commit `2e6dfc5`, push 완료 → **live**)
+- **위치:** `mid1/map/index.html` (+ `mid1/index.html`에 "🗺️ 수학 지도" 카드 추가). **live: https://jwj-nick.github.io/mid1/map/**
+- **형태:** 폰 우선 **세로 타임라인** (1→13단원, era 색 점). story 페이지와 같은 다크 팔레트.
+- **하이브리드 토글 3종:** [개념 흐름]🔵 / [같은 인물]🟡 / [상위 학년 →]🟣 — 켜면 각 카드에 연결 chip 표시, chip 탭 → 해당 단원으로 스크롤.
+- **카드 탭:** 펼치면 그 단원 개념 목록 + [📺 인물 영상] [📱 수학 앱] 버튼.
+- **검증:** JS 문법 OK(node --check) + 데이터 contract OK + 링크 26개 실존.
+
+## R2.3 배포 메모 (중요)
+- connections.json은 **SSOT=`30_content/graph/`**, **배포본=`mid1/map/connections.json`** (수동 복사). 그래프 수정 시:
+  ```
+  PYTHONIOENCODING=utf-8 python 70_tools/build_connections.py
+  cp 30_content/graph/connections.json <mid1>/map/connections.json
+  ```
+  → 추후 deploy 스크립트(E.배포 hookup, #19)에 이 복사 단계 포함 권고.
+
+## R2.4 남은 것 / Nick 확인 요청
+- **폰에서 실제 시청 확인 바람** (live 링크). 타임라인 가독성·연결 chip·영상/앱 이동 잘 되는지.
+- 개선 여지(차후): 시대순 정렬 토글, SVG 곡선 연결선(데스크톱), 개념 노드 간 직접 연결 시각화.
+- **다음 큰 batch (A1+A4+A5+B4)** = Nick이 "다른 작업 모두 완료 후 시작"이라 한 영상 재제작·앱 형태 변경 대단위. 착수 시 별도 정교한 플랜 필요.
+
 > 이 Round의 §R1.6 답이 오면 A2→A3 착수. (A1·A4·A5·B4 큰 batch는 그 뒤.)
