@@ -1,0 +1,65 @@
+{
+  "_comment": "unit-06 보일 STEP6 모션 config. scene 경계=음성 silence 중점 → 실제 mp3 152.12s에 비례 스케일. 자막=turn 타임라인. 이미지=네이티브16:9. 유리관압축·시소·y=k/x곡선 모티프. S5 좌우 라벨(x fraction). 케플러(Mike/Mina)와 다른 화자(Kanna/Kyle).",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 152.12,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "slate": "0x5C7A8E", "brass": "0x8E5A3C", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "start": 0.0, "end": 15.73, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "start": 15.73, "end": 34.66, "motion": "zoom_in",
+      "zoom": [1.0, 1.07],
+      "captions": [
+        { "text": "공기는 모양 없는 빈 것?", "x": "center", "y": "0.26", "size": 42, "color": "white", "start": 19.5, "end": 27.0 },
+        { "text": "재서 나온 숫자만 진짜", "x": "center", "y": "0.44", "size": 54, "color": "gold", "start": 28.5, "end": 34.4 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "start": 34.66, "end": 60.47, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "진공 펌프 · 조수 로버트 훅", "x": "center", "y": "0.26", "size": 42, "color": "white", "start": 40.0, "end": 50.0 },
+        { "text": "추측이 아니라 기록", "x": "center", "y": "0.44", "size": 54, "color": "gold", "start": 53.0, "end": 60.2 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "start": 60.47, "end": 96.72, "motion": "ken_burns",
+      "zoom": [1.0, 1.04],
+      "captions": [
+        { "text": "압력 ↑    부피 ↓", "x": "center", "y": "0.15", "size": 50, "color": "white", "start": 72.0, "end": 96.5 },
+        { "text": "곱하면 늘 같은 값 = 반비례", "x": "center", "y": "0.86", "size": 50, "color": "gold", "start": 86.0, "end": 96.5 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "start": 96.72, "end": 130.73, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "케플러 — 하늘", "x": "0.22", "y": "0.13", "size": 40, "color": "white", "start": 101.0, "end": 130.5 },
+        { "text": "보일 — 땅", "x": "0.74", "y": "0.13", "size": 40, "color": "white", "start": 105.0, "end": 130.5 },
+        { "text": "y = k / x    곱하면 일정 = 반비례", "x": "center", "y": "0.5", "size": 46, "color": "gold", "start": 119.0, "end": 130.5 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "start": 130.73, "end": 152.12, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "추측의 시대  →  측정의 시대", "x": "center", "y": "0.26", "size": 42, "color": "white", "start": 138.0, "end": 146.0 },
+        { "text": "측정", "x": "center", "y": "0.44", "size": 140, "color": "gold", "start": 146.0, "end": 151.9 },
+        { "text": "곱하면 일정 = 반비례  (y = k / x)", "x": "center", "y": "0.76", "size": 34, "color": "white", "start": 147.5, "end": 151.9 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존." }
+}

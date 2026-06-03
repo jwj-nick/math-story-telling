@@ -180,3 +180,64 @@
 - 검증: moov@36 (mdat 앞), size 무변화(x1.0, 무손실). 폰 스트리밍 시작 지연 제거.
 
 **다음**: 단계 3(인물 확장 12편) = 별도 큰 단계. 착수 전 위 Q(2nd 인물 범위·u01 인물) 확정 필요.
+
+---
+
+## Round 2 — 단계 3 세부 제안: 한 유닛 detail flow
+
+> Nick: u01 인물추가 불필요 확정. "한 unit 추가 detail flow 구체적으로 + 스킬 잘 사용 + 높은 퀄리티 + 좋은 계획."
+
+### A. 단계 3 전체 범위 (확정)
+
+**12편** (u01 제외, u02~u13 각 secondary 1인). 두 부류로 비용/리스크가 갈린다:
+
+| 부류 | 단원·인물 | 캐릭터 | 비용 |
+|---|---|---|---|
+| **캐릭터 재사용** (이미 primary로 제작) | u02 알콰리즈미(←u03), u04 알콰리즈미(←u03), u09 케플러(←u06), u11 케플러(←u06) | 기존 reference 재사용 → 일관성 자동 | **낮음** (4편) |
+| **신규 캐릭터** | u03 비에트, u05 페르마, u06 보일, u07 탈레스, u08 가우스, u10 유휘, u12 카발리에리, u13 플레이페어 | 신규 reference 생성 | 보통 (8편) |
+
+**서사 연속성 자산**: secondary 다수가 primary 영상에 **이미 카메오**로 등장. 예) u06 케플러 영상 S5 = "보일 = 또 다른 반비례(공기 압축)". → 2nd 영상 = *그 카메오가 자기 이야기를 얻는다*. 같은 개념의 **보완적 facet**(케플러=면적속도 / 보일=압력·부피)으로 딸 약점(반비례)을 2각도 반복 학습.
+
+### B. 한 유닛 detail flow (= 1편 + 통합) — 5 Phase
+
+> 실행 주체 = `se-video-orchestrator` agent(8-STEP 검증됨). 아래는 2nd 인물 특화 wrapper.
+
+**Phase A — 준비 (정본·디렉토리·각도)**
+- A1. `30_content/units/NN/meta.json` persons[role=secondary]에서 ref·story-hook·videos-slug·era-palette·signature 추출 (= 서사 시드).
+- A2. **디렉토리 2단화**(단계 1 연기분 실행): `git mv unit-NN-<primary> unit-NN/<primary>` → `unit-NN/<secondary>/` 생성. (시즌 폴더 내)
+- A3. 인물 사실자료 `30_content/people/<ref>.md` 확인(전부 보유). 재사용 인물이면 primary 디렉토리의 `5-images/` 캐릭터 reference 경로 확보.
+- A4. **개념 각도 정의**: 이 단원 핵심개념(`30_content/concepts/NN/`) + primary가 다룬 facet → secondary가 다룰 **보완 facet** 1줄 확정. (모순·중복 방지 기준)
+
+**Phase B — 영상 8-STEP** (se-video-orchestrator, 산출=`unit-NN/<secondary>/`)
+- STEP1 서사 `se-people-narrate`: 약속 3겹 + secondary story-hook 각도. primary 영상의 카메오와 callback.
+- STEP2 스토리 `se-video-story`: 6장면 ~140s, 한 단어 키워드, 같은 개념 보완.
+- STEP3 스토리보드 `se-video-storyboard`: 부록 A/B/C.
+- STEP4 나레이션 `se-video-narration`: voice-pool §0. **voice = 해당 단원 primary와 다른 pairing**(두 영상 구분감, §3.1 randomize 활용).
+- STEP5 이미지 `se-video-image`: 신규=캐릭터 reference 1장→후속 일관성 / 재사용=기존 reference 전달.
+- STEP6 모션 / STEP7 렌더 / STEP8 합성 → `8-final.mp4` + `8-poster.jpg`.
+
+**Phase C — 품질 게이트 (기존 + 신규 2)**
+- 기존: 약속 3겹·캐릭터 일관성(멀티모달 Read)·시대 정확성·sync·길이 ~140s·자막 가독성.
+- 🆕 **개념 정합 게이트**: secondary 영상이 primary와 같은 개념을 **모순 없이 보완**하는가 (`se-audit-math`/`se-audit-concept` 연계).
+- 🆕 **인물 재사용 일관성**: 케플러·알콰리즈미는 primary 얼굴과 동일 디자인인가 (재사용 reference 검증).
+
+**Phase D — 배포 hookup (경량, 단계 4 precursor)**
+- D1. `8-final.mp4`→ `mid1/story/_video/unitNN-<secondary>.mp4` (+ poster). **faststart 적용**(단계 2 규칙).
+- D2. 기존 `_video/unitNN.mp4` → `unitNN-<primary>.mp4` 리네임. `story/unitNN/index.html`을 **인물 2버튼 선택**으로 경량 갱신(단계 4에서 "감싼 설명"으로 확장).
+- D3. 수학앱 버튼은 그대로 `story/unitNN/index.html` → 자동 다인물 대응.
+
+**Phase E — 기록**
+- `unit-NN/<secondary>/retro.md`, manifest 상태 갱신, connections.json은 이미 secondary 포함(무변화 확인).
+
+### C. 배치 순서 (rate-limit 인식)
+
+ElevenLabs 5h window + Gemini Tier1 한도 → **세션당 2~3편**. 권장 웨이브:
+1. **파일럿 1편** (신규 캐릭터 = 가장 비싼 경로 검증 + 배포 chooser 첫 구현).
+2. 재사용 4편(저비용) → 신규 7편. 캐릭터 재사용 인물(알콰리즈미·케플러)을 묶어 reference 일관성 유지.
+
+### D. 파일럿 제안 + 자율진행 방침
+
+- **파일럿 = u06 보일** 추천. 이유: ① 신규 캐릭터(풀 경로 검증) ② 케플러 영상에 이미 카메오 → 서사 연속성 시범 최적 ③ 반비례=딸 핵심 약점, 보완 facet(압력×부피) 가치 큼 ④ 디렉토리 2단화·배포 2버튼 chooser를 u06에서 첫 검증.
+- 파일럿 1편 완성→폰 확인 OK면 **나머지 11편 자율 batch**(웨이브 분할).
+
+**→ Nick 확인 1개만**: 파일럿을 **u06 보일**로 바로 착수할지, 다른 단원 선호 있는지. (영상 1편은 재작업 비싸 파일럿 타깃만 확인)
