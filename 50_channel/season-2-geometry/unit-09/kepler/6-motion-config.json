@@ -1,0 +1,30 @@
+{
+  "_comment": "unit-09 케플러(secondary, 다각형 테셀레이션) STEP6. scene end=SCENE_ENDS 실측, S6 end=audio total. 16:9. 쪽맞춤·360약수·정오각형108. length 151.43s.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 151.43,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "olive": "0x7A8C5C", "shadow": "0x000000" },
+  "scenes": [
+    { "id": "S1", "img": "5-images/S1.png", "start": 0.0, "end": 17.90, "motion": "push_in", "zoom": [1.0, 1.08],
+      "captions": [ { "text": "하늘을 푼 사람, 바닥도 풀다", "x": "center", "y": "0.80", "size": 40, "color": "white", "start": 10.0, "end": 17.4 } ] },
+    { "id": "S2", "img": "5-images/S2.png", "start": 17.90, "end": 40.00, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [ { "text": "쪽맞춤 · 테셀레이션", "x": "center", "y": "0.44", "size": 58, "color": "gold", "start": 30.0, "end": 39.6 } ] },
+    { "id": "S3", "img": "5-images/S3.png", "start": 40.00, "end": 61.36, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [ { "text": "한 점에 모인 각 = 360도", "x": "center", "y": "0.44", "size": 56, "color": "gold", "start": 52.0, "end": 60.9 } ] },
+    { "id": "S4", "img": "5-images/S4.png", "start": 61.36, "end": 86.52, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "정삼각형 · 정사각형 · 정육각형", "x": "center", "y": "0.24", "size": 42, "color": "white", "start": 68.0, "end": 77.0 },
+        { "text": "60 · 90 · 120 → 360의 약수", "x": "center", "y": "0.46", "size": 52, "color": "gold", "start": 78.0, "end": 86.2 } ] },
+    { "id": "S5", "img": "5-images/S5.png", "start": 86.52, "end": 118.51, "motion": "zoom_out", "zoom": [1.06, 1.0],
+      "captions": [
+        { "text": "정오각형 108도", "x": "center", "y": "0.26", "size": 44, "color": "white", "start": 95.0, "end": 104.0 },
+        { "text": "혼자선 평면을 못 채운다", "x": "center", "y": "0.46", "size": 52, "color": "gold", "start": 106.0, "end": 118.2 } ] },
+    { "id": "S6", "img": "5-images/S6.png", "start": 118.51, "end": 151.43, "motion": "zoom_in", "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "쪽맞춤", "x": "center", "y": "0.42", "size": 140, "color": "gold", "start": 128.0, "end": 140.0 },
+        { "text": "한 내각이 정한다", "x": "center", "y": "0.72", "size": 40, "color": "white", "start": 141.0, "end": 151.0 } ] }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "fade in/out. concat -c copy 길이 보존." }
+}

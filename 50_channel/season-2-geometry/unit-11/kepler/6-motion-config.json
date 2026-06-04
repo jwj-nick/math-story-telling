@@ -1,0 +1,34 @@
+{
+  "_comment": "unit-11 케플러(secondary, 정다면체 우주모형) STEP6. scene end=concat 실측×보정(191.51 audio). 5정다면체·끼움·Mysterium 1596. length 191.51s.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 191.51,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "ink": "0x5C7DA8", "shadow": "0x000000" },
+  "scenes": [
+    { "id": "S1", "img": "5-images/S1.png", "start": 0.0, "end": 34.71, "motion": "push_in", "zoom": [1.0, 1.08],
+      "captions": [ { "text": "신은 기하학으로 우주를 만들었다", "x": "center", "y": "0.82", "size": 42, "color": "gold", "start": 25.0, "end": 34.3 } ] },
+    { "id": "S2", "img": "5-images/S2.png", "start": 34.71, "end": 60.73, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "행성 여섯 → 사이의 틈 다섯", "x": "center", "y": "0.18", "size": 42, "color": "white", "start": 42.0, "end": 50.0 },
+        { "text": "정다면체도 다섯뿐", "x": "center", "y": "0.82", "size": 52, "color": "gold", "start": 51.0, "end": 60.3 } ] },
+    { "id": "S3", "img": "5-images/S3.png", "start": 60.73, "end": 97.73, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "공 — 정다면체 — 공, 차곡차곡 끼움", "x": "center", "y": "0.18", "size": 40, "color": "white", "start": 70.0, "end": 82.0 },
+        { "text": "끼움 — 우주의 신비 (1596)", "x": "center", "y": "0.82", "size": 48, "color": "gold", "start": 83.0, "end": 97.3 } ] },
+    { "id": "S4", "img": "5-images/S4.png", "start": 97.73, "end": 137.36, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "정사 · 정육 · 정팔 · 정십이 · 정이십", "x": "center", "y": "0.18", "size": 40, "color": "white", "start": 105.0, "end": 120.0 },
+        { "text": "정다면체는 딱 다섯뿐", "x": "center", "y": "0.82", "size": 52, "color": "gold", "start": 121.0, "end": 137.0 } ] },
+    { "id": "S5", "img": "5-images/S5.png", "start": 137.36, "end": 167.00, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "틀렸다 — 그러나 멈추지 않았다", "x": "center", "y": "0.18", "size": 42, "color": "white", "start": 145.0, "end": 156.0 },
+        { "text": "자료를 믿고, 타원을 찾다", "x": "center", "y": "0.82", "size": 50, "color": "gold", "start": 157.0, "end": 166.6 } ] },
+    { "id": "S6", "img": "5-images/S6.png", "start": 167.00, "end": 191.51, "motion": "zoom_in", "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "플라톤은 원소를, 케플러는 하늘을 끼웠다", "x": "center", "y": "0.28", "size": 36, "color": "white", "start": 172.0, "end": 184.0 },
+        { "text": "끼움", "x": "center", "y": "0.46", "size": 130, "color": "gold", "start": 185.0, "end": 191.1 } ] }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "fade in/out. concat -c copy 길이 보존." }
+}
