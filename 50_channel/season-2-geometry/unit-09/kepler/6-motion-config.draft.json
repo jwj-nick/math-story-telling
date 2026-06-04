@@ -1,0 +1,25 @@
+{
+  "_unit": "u09-kepler (테셀레이션) — DRAFT (rel timing 0~1, 실측 매핑은 finish_video)",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "olive": "0x7A8C5C" },
+  "scenes": [
+    { "id": "S1", "motion": "push_in", "zoom": [1.0, 1.08],
+      "captions": [ { "text": "하늘을 푼 사람, 바닥도 풀다", "y": "0.80", "size": 40, "color": "white", "rel_start": 0.56, "rel_end": 0.97 } ] },
+    { "id": "S2", "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [ { "text": "쪽맞춤 · 테셀레이션", "y": "0.44", "size": 58, "color": "gold", "rel_start": 0.55, "rel_end": 0.97 } ] },
+    { "id": "S3", "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [ { "text": "한 점에 모인 각 = 360도", "y": "0.44", "size": 56, "color": "gold", "rel_start": 0.56, "rel_end": 0.97 } ] },
+    { "id": "S4", "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "정삼각형 · 정사각형 · 정육각형", "y": "0.24", "size": 42, "color": "white", "rel_start": 0.26, "rel_end": 0.62 },
+        { "text": "60 · 90 · 120 → 360의 약수", "y": "0.46", "size": 52, "color": "gold", "rel_start": 0.66, "rel_end": 0.98 } ] },
+    { "id": "S5", "motion": "zoom_out", "zoom": [1.06, 1.0],
+      "captions": [
+        { "text": "정오각형 108도", "y": "0.26", "size": 44, "color": "white", "rel_start": 0.27, "rel_end": 0.55 },
+        { "text": "혼자선 평면을 못 채운다", "y": "0.46", "size": 52, "color": "gold", "rel_start": 0.61, "rel_end": 0.98 } ] },
+    { "id": "S6", "motion": "zoom_in", "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "쪽맞춤", "y": "0.42", "size": 140, "color": "gold", "rel_start": 0.30, "rel_end": 0.70 },
+        { "text": "한 내각이 정한다", "y": "0.72", "size": 40, "color": "white", "rel_start": 0.73, "rel_end": 0.99 } ] }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6 }
+}

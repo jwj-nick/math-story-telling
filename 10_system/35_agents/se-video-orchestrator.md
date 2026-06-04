@@ -42,7 +42,22 @@ exp-002(에라토스테네스)에서 검증된 파이프라인의 양산 실행�
 | 7 렌더 | se-video-render | config + 이미지 | N-raw.mp4 | ✅ FFmpeg |
 | 8 합성 | se-video-compose | raw + 음성 | N-final.mp4 + poster | ✅ |
 
-각 STEP 후 자가검증(품질 게이트 §). 실패 시 재시도. STEP 4·5·7·8은 외부 도구(키 PowerShell 경유 추출).
+각 STEP 후 자가검증(품질 게이트 §).
+
+---
+
+## ⚠️ 환경 제약 — PREP / EXECUTE 분리 (2026-06-04 근본해결)
+
+**background/subagent 는 API(ElevenLabs·Gemini)·PowerShell 키추출이 정책상 차단**된다. 영상을 통째로 못 만든다. 역할 둘로 분리:
+
+| 단계 | 주체 | 산출/실행 | API |
+|---|---|---|---|
+| **PREP** | 이 agent (background OK) | STEP1~3 대본 + `synth.py`·`gen_images.py`·`render_compile.py` + **`6-motion-config.draft.json`** | ✗ |
+| **EXECUTE** | **메인 세션** | `python 70_tools/finish_video.py <unit_dir>` 1개 = synth→images→SCENE_ENDS 실측→config→render→mux+poster | ✓ 여기만 |
+
+- **이 agent는 PREP 까지만.** STEP4~8 직접 시도 금지(차단=헛수고). 4개 산출물 완비 후 "EXECUTE 준비됨" 보고.
+- draft 스키마: `{scenes:[{id,motion,zoom,captions:[{text,x,y,size,color,rel_start,rel_end}]}]}`. 타이밍은 **상대값 0~1**(finish_video 가 음성 실측으로 자동 매핑).
+- git/ffmpeg/파일은 Bash 불안정 시 PowerShell 우선.
 
 ---
 
