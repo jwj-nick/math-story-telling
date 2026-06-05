@@ -1,0 +1,56 @@
+{
+  "_comment": "unit-02 알콰리즈미(secondary) STEP6 모션 config DRAFT. ★타이밍=상대값 rel_start/rel_end(0~1, scene 내부 비율)만. 실측 매핑(scene start/end·caption start/end 절대초)은 메인세션 finish_video.py 가 4-narration.mp3 ffprobe + jsonl scene 경계로 계산해 6-motion-config.json 으로 확정. 자막=3-storyboard 부록 C. 이미지=네이티브16:9(크롭 무손실). 저울 모티프. 음성 Q=Mina/A=Mike.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD4A23D", "white": "0xFFFFFF", "teal": "0x2E8B8B", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png", "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png", "motion": "zoom_out",
+      "zoom": [1.08, 1.0],
+      "captions": [
+        { "text": "음수를 어떻게 다루지?", "x": "center", "y": "0.42", "size": 56, "color": "gold", "rel_start": 0.55, "rel_end": 0.97 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png", "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "빼는 항 → 반대편으로", "x": "center", "y": "0.26", "size": 44, "color": "white", "rel_start": 0.38, "rel_end": 0.70 },
+        { "text": "이항 = 반대편으로 옮기기", "x": "center", "y": "0.44", "size": 60, "color": "gold", "rel_start": 0.76, "rel_end": 0.98 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png", "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "양쪽 같은 것은 상쇄", "x": "center", "y": "0.26", "size": 44, "color": "white", "rel_start": 0.36, "rel_end": 0.66 },
+        { "text": "양변을 늘 균형있게", "x": "center", "y": "0.44", "size": 70, "color": "gold", "rel_start": 0.72, "rel_end": 0.98 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png", "motion": "slow_zoom",
+      "zoom": [1.0, 1.04],
+      "captions": [
+        { "text": "음수가 무서운 건 다룰 줄 몰라서", "x": "center", "y": "0.26", "size": 42, "color": "white", "rel_start": 0.20, "rel_end": 0.55 },
+        { "text": "음수는 옮기고 맞비기는 것", "x": "center", "y": "0.44", "size": 60, "color": "gold", "rel_start": 0.62, "rel_end": 0.98 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png", "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "브라마굽타 → 알콰리즈미 → 데카르트", "x": "center", "y": "0.26", "size": 38, "color": "white", "rel_start": 0.22, "rel_end": 0.58 },
+        { "text": "균형", "x": "center", "y": "0.42", "size": 150, "color": "gold", "rel_start": 0.72, "rel_end": 0.99 },
+        { "text": "빼는 건 옮기고, 같은 건 맞비긴다", "x": "center", "y": "0.74", "size": 36, "color": "white", "rel_start": 0.80, "rel_end": 0.99 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존. rel_start/rel_end 는 해당 scene 내부 0~1 비율 — finish_video.py 가 scene 절대구간[start,end]에 매핑." }
+}

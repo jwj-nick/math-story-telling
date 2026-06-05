@@ -1,0 +1,57 @@
+{
+  "_comment": "unit-04 알콰리즈미(secondary) STEP6 모션 config DRAFT. 타이밍 = 상대값 rel_start/rel_end(0~1, scene 내 비율). EXECUTE 시 합성된 4-narration.mp3 의 scene 경계(음성 기준 절대 초)를 측정해 각 scene start/end + caption start/end(절대 초)로 변환 → 6-motion-config.json 생성. 한 단어=옮김. 자막=시각 기호('x' 유지, 발화는 한글 음차). era-medieval 팔레트.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD4A23D", "white": "0xFFFFFF", "teal": "0x2E8B8B", "terracotta": "0xC0604A", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png", "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png", "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "옮기면 부호가 바뀐다", "x": "center", "y": "0.26", "size": 46, "color": "white", "rel_start": 0.40, "rel_end": 0.72 },
+        { "text": "이항 (al-jabr)", "x": "center", "y": "0.44", "size": 64, "color": "gold", "rel_start": 0.80, "rel_end": 0.99 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png", "motion": "zoom_out",
+      "zoom": [1.06, 1.0],
+      "captions": [
+        { "text": "양쪽의 같은 것을 지운다", "x": "center", "y": "0.26", "size": 44, "color": "white", "rel_start": 0.32, "rel_end": 0.64 },
+        { "text": "동류항 정리 (al-muqabala)", "x": "center", "y": "0.44", "size": 52, "color": "gold", "rel_start": 0.72, "rel_end": 0.99 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png", "motion": "pan_right",
+      "zoom": [1.04, 1.04],
+      "captions": [
+        { "text": "모든 식을 정해진 유형으로", "x": "center", "y": "0.28", "size": 44, "color": "white", "rel_start": 0.16, "rel_end": 0.50 },
+        { "text": "정해진 단계 = 알고리즘", "x": "center", "y": "0.44", "size": 58, "color": "gold", "rel_start": 0.62, "rel_end": 0.99 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png", "motion": "slow_zoom",
+      "zoom": [1.0, 1.04],
+      "captions": [
+        { "text": "절차가 먼저, 문자는 나중", "x": "center", "y": "0.26", "size": 46, "color": "white", "rel_start": 0.24, "rel_end": 0.56 },
+        { "text": "문자 x = 발명품", "x": "center", "y": "0.44", "size": 70, "color": "gold", "rel_start": 0.66, "rel_end": 0.99 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png", "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "디오판토스 → 알콰리즈미 → 데카르트", "x": "center", "y": "0.26", "size": 38, "color": "white", "rel_start": 0.32, "rel_end": 0.64 },
+        { "text": "옮김", "x": "center", "y": "0.42", "size": 150, "color": "gold", "rel_start": 0.70, "rel_end": 0.99 },
+        { "text": "음항을 옮기고 같은 것을 상쇄하는 일", "x": "center", "y": "0.74", "size": 34, "color": "white", "rel_start": 0.82, "rel_end": 0.99 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. cut: S1→S2, S2→S3 / fade: S3→S4, S4→S5, S5→S6. concat -c copy 길이 보존. zoom_out 은 z0>z1." }
+}

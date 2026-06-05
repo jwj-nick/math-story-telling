@@ -1,0 +1,204 @@
+{
+  "_comment": "AUTO finish_video. total=170.255s, SCENE_ENDS=[25.602, 54.016, 78.621, 106.292, 137.166, 170.255]",
+  "fps": 25,
+  "resolution": [
+    1280,
+    720
+  ],
+  "total_duration": 170.255,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": {
+    "gold": "0xD4A23D",
+    "white": "0xFFFFFF",
+    "olive": "0x7A8C5C",
+    "ink": "0x5C7DA8",
+    "shadow": "0x000000",
+    "teal": "0x2E8B8B",
+    "terracotta": "0xC0604A"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "img": "5-images/S1.png",
+      "start": 0.0,
+      "end": 25.602,
+      "motion": "push_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": []
+    },
+    {
+      "id": "S2",
+      "img": "5-images/S2.png",
+      "start": 25.602,
+      "end": 54.016,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "옮기면 부호가 바뀐다",
+          "x": "center",
+          "y": "0.26",
+          "size": 46,
+          "color": "white",
+          "start": 36.97,
+          "end": 46.06
+        },
+        {
+          "text": "이항 (al-jabr)",
+          "x": "center",
+          "y": "0.44",
+          "size": 64,
+          "color": "gold",
+          "start": 48.33,
+          "end": 53.73
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "img": "5-images/S3.png",
+      "start": 54.016,
+      "end": 78.621,
+      "motion": "zoom_out",
+      "zoom": [
+        1.06,
+        1.0
+      ],
+      "captions": [
+        {
+          "text": "양쪽의 같은 것을 지운다",
+          "x": "center",
+          "y": "0.26",
+          "size": 44,
+          "color": "white",
+          "start": 61.89,
+          "end": 69.76
+        },
+        {
+          "text": "동류항 정리 (al-muqabala)",
+          "x": "center",
+          "y": "0.44",
+          "size": 52,
+          "color": "gold",
+          "start": 71.73,
+          "end": 78.37
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "img": "5-images/S4.png",
+      "start": 78.621,
+      "end": 106.292,
+      "motion": "pan_right",
+      "zoom": [
+        1.04,
+        1.04
+      ],
+      "captions": [
+        {
+          "text": "모든 식을 정해진 유형으로",
+          "x": "center",
+          "y": "0.28",
+          "size": 44,
+          "color": "white",
+          "start": 83.05,
+          "end": 92.46
+        },
+        {
+          "text": "정해진 단계 = 알고리즘",
+          "x": "center",
+          "y": "0.44",
+          "size": 58,
+          "color": "gold",
+          "start": 95.78,
+          "end": 106.02
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "img": "5-images/S5.png",
+      "start": 106.292,
+      "end": 137.166,
+      "motion": "slow_zoom",
+      "zoom": [
+        1.0,
+        1.04
+      ],
+      "captions": [
+        {
+          "text": "절차가 먼저, 문자는 나중",
+          "x": "center",
+          "y": "0.26",
+          "size": 46,
+          "color": "white",
+          "start": 113.7,
+          "end": 123.58
+        },
+        {
+          "text": "문자 x = 발명품",
+          "x": "center",
+          "y": "0.44",
+          "size": 70,
+          "color": "gold",
+          "start": 126.67,
+          "end": 136.86
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "img": "5-images/S6.png",
+      "start": 137.166,
+      "end": 170.255,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "디오판토스 → 알콰리즈미 → 데카르트",
+          "x": "center",
+          "y": "0.26",
+          "size": 38,
+          "color": "white",
+          "start": 147.75,
+          "end": 158.34
+        },
+        {
+          "text": "옮김",
+          "x": "center",
+          "y": "0.42",
+          "size": 150,
+          "color": "gold",
+          "start": 160.33,
+          "end": 169.92
+        },
+        {
+          "text": "음항을 옮기고 같은 것을 상쇄하는 일",
+          "x": "center",
+          "y": "0.74",
+          "size": 34,
+          "color": "white",
+          "start": 164.3,
+          "end": 169.92
+        }
+      ]
+    }
+  ],
+  "transition": {
+    "type": "fade",
+    "in": 0.6,
+    "out": 0.6,
+    "_note": "각 scene fade in/out 0.6. cut: S1→S2, S2→S3 / fade: S3→S4, S4→S5, S5→S6. concat -c copy 길이 보존. zoom_out 은 z0>z1."
+  }
+}

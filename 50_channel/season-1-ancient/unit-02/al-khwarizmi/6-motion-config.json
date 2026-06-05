@@ -1,0 +1,194 @@
+{
+  "_comment": "AUTO finish_video. total=166.47s, SCENE_ENDS=[23.048, 47.911, 75.628, 105.734, 133.941, 166.47]",
+  "fps": 25,
+  "resolution": [
+    1280,
+    720
+  ],
+  "total_duration": 166.47,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": {
+    "gold": "0xD4A23D",
+    "white": "0xFFFFFF",
+    "olive": "0x7A8C5C",
+    "ink": "0x5C7DA8",
+    "shadow": "0x000000",
+    "teal": "0x2E8B8B"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "img": "5-images/S1.png",
+      "start": 0.0,
+      "end": 23.048,
+      "motion": "push_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": []
+    },
+    {
+      "id": "S2",
+      "img": "5-images/S2.png",
+      "start": 23.048,
+      "end": 47.911,
+      "motion": "zoom_out",
+      "zoom": [
+        1.08,
+        1.0
+      ],
+      "captions": [
+        {
+          "text": "음수를 어떻게 다루지?",
+          "x": "center",
+          "y": "0.42",
+          "size": 56,
+          "color": "gold",
+          "start": 36.72,
+          "end": 47.17
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "img": "5-images/S3.png",
+      "start": 47.911,
+      "end": 75.628,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "빼는 항 → 반대편으로",
+          "x": "center",
+          "y": "0.26",
+          "size": 44,
+          "color": "white",
+          "start": 58.44,
+          "end": 67.31
+        },
+        {
+          "text": "이항 = 반대편으로 옮기기",
+          "x": "center",
+          "y": "0.44",
+          "size": 60,
+          "color": "gold",
+          "start": 68.98,
+          "end": 75.07
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "img": "5-images/S4.png",
+      "start": 75.628,
+      "end": 105.734,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "양쪽 같은 것은 상쇄",
+          "x": "center",
+          "y": "0.26",
+          "size": 44,
+          "color": "white",
+          "start": 86.47,
+          "end": 95.5
+        },
+        {
+          "text": "양변을 늘 균형있게",
+          "x": "center",
+          "y": "0.44",
+          "size": 70,
+          "color": "gold",
+          "start": 97.3,
+          "end": 105.13
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "img": "5-images/S5.png",
+      "start": 105.734,
+      "end": 133.941,
+      "motion": "slow_zoom",
+      "zoom": [
+        1.0,
+        1.04
+      ],
+      "captions": [
+        {
+          "text": "음수가 무서운 건 다룰 줄 몰라서",
+          "x": "center",
+          "y": "0.26",
+          "size": 42,
+          "color": "white",
+          "start": 111.38,
+          "end": 121.25
+        },
+        {
+          "text": "음수는 옮기고 맞비기는 것",
+          "x": "center",
+          "y": "0.44",
+          "size": 60,
+          "color": "gold",
+          "start": 123.22,
+          "end": 133.38
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "img": "5-images/S6.png",
+      "start": 133.941,
+      "end": 166.47,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "브라마굽타 → 알콰리즈미 → 데카르트",
+          "x": "center",
+          "y": "0.26",
+          "size": 38,
+          "color": "white",
+          "start": 141.1,
+          "end": 152.81
+        },
+        {
+          "text": "균형",
+          "x": "center",
+          "y": "0.42",
+          "size": 150,
+          "color": "gold",
+          "start": 157.36,
+          "end": 166.14
+        },
+        {
+          "text": "빼는 건 옮기고, 같은 건 맞비긴다",
+          "x": "center",
+          "y": "0.74",
+          "size": 36,
+          "color": "white",
+          "start": 159.96,
+          "end": 166.14
+        }
+      ]
+    }
+  ],
+  "transition": {
+    "type": "fade",
+    "in": 0.6,
+    "out": 0.6,
+    "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존. rel_start/rel_end 는 해당 scene 내부 0~1 비율 — finish_video.py 가 scene 절대구간[start,end]에 매핑."
+  }
+}
