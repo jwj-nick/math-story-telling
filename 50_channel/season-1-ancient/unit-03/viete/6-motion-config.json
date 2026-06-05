@@ -1,0 +1,184 @@
+{
+  "_comment": "AUTO finish_video. total=166.47s, SCENE_ENDS=[21.469, 49.207, 82.54, 109.396, 131.958, 166.47]",
+  "fps": 25,
+  "resolution": [
+    1280,
+    720
+  ],
+  "total_duration": 166.47,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": {
+    "gold": "0xC8923D",
+    "white": "0xFFFFFF",
+    "olive": "0x7B6F49",
+    "ink": "0x5C7DA8",
+    "shadow": "0x000000",
+    "slate": "0x4A5A66"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "img": "5-images/S1.png",
+      "start": 0.0,
+      "end": 21.469,
+      "motion": "push_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": []
+    },
+    {
+      "id": "S2",
+      "img": "5-images/S2.png",
+      "start": 21.469,
+      "end": 49.207,
+      "motion": "zoom_out",
+      "zoom": [
+        1.08,
+        1.0
+      ],
+      "captions": []
+    },
+    {
+      "id": "S3",
+      "img": "5-images/S3.png",
+      "start": 49.207,
+      "end": 82.54,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "수를 글자로 적다 (1591)",
+          "x": "center",
+          "y": "0.26",
+          "size": 44,
+          "color": "white",
+          "start": 61.21,
+          "end": 69.87
+        },
+        {
+          "text": "모음 = 미지수 · 자음 = 아는 수",
+          "x": "center",
+          "y": "0.44",
+          "size": 58,
+          "color": "gold",
+          "start": 72.54,
+          "end": 82.21
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "img": "5-images/S4.png",
+      "start": 82.54,
+      "end": 109.396,
+      "motion": "slow_zoom",
+      "zoom": [
+        1.0,
+        1.04
+      ],
+      "captions": [
+        {
+          "text": "자연 법칙이 아니라",
+          "x": "center",
+          "y": "0.26",
+          "size": 44,
+          "color": "white",
+          "start": 87.37,
+          "end": 95.97
+        },
+        {
+          "text": "기호 = 발명된 약속",
+          "x": "center",
+          "y": "0.44",
+          "size": 70,
+          "color": "gold",
+          "start": 98.12,
+          "end": 109.13
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "img": "5-images/S5.png",
+      "start": 109.396,
+      "end": 131.958,
+      "motion": "slow_zoom",
+      "zoom": [
+        1.0,
+        1.04
+      ],
+      "captions": [
+        {
+          "text": "A의 제곱을 단어로",
+          "x": "center",
+          "y": "0.26",
+          "size": 46,
+          "color": "white",
+          "start": 113.01,
+          "end": 121.13
+        },
+        {
+          "text": "A의 제곱 → A²",
+          "x": "center",
+          "y": "0.44",
+          "size": 66,
+          "color": "gold",
+          "start": 122.93,
+          "end": 131.73
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "img": "5-images/S6.png",
+      "start": 131.958,
+      "end": 166.47,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "알콰리즈미 → 비에트 → 데카르트",
+          "x": "center",
+          "y": "0.26",
+          "size": 38,
+          "color": "white",
+          "start": 141.62,
+          "end": 152.67
+        },
+        {
+          "text": "기호",
+          "x": "center",
+          "y": "0.42",
+          "size": 150,
+          "color": "gold",
+          "start": 156.12,
+          "end": 166.12
+        },
+        {
+          "text": "수를 글자로 적는 약속",
+          "x": "center",
+          "y": "0.74",
+          "size": 36,
+          "color": "white",
+          "start": 159.57,
+          "end": 166.12
+        }
+      ]
+    }
+  ],
+  "transition": {
+    "type": "fade",
+    "in": 0.6,
+    "out": 0.6,
+    "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존."
+  }
+}

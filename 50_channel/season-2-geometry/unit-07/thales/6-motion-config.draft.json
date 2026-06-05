@@ -1,0 +1,65 @@
+{
+  "_comment": "unit-07 탈레스 STEP6 모션 config DRAFT. ★PREP 단계 — 음성(4-narration.mp3) 미생성. 자막 타이밍은 각 scene 내부 상대(rel 0~1) 비율로만 명시. EXECUTE(STEP4 합성) 후 실제 scene 경계(다음 scene 첫 turn 음성 시작)로 start/end 절대초 확정 → rel*scene_dur+scene_start 로 자막 절대초 산출. 그림자=높이·닮은꼴 모티프.",
+  "_status": "DRAFT (rel timing) — synth 후 abs 확정",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration_est": 148.0,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "khaki": "0xA89368", "shadow": "0x000000" },
+  "_rel_note": "captions[].rel_start/rel_end = scene 내부 0~1 비율. EXECUTE 시 abs = scene.start + rel*(scene.end-scene.start). scene.start/end 도 synth 후 실제 음성 scene 경계로 채움(현재 _dur_est 잠정).",
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "motion": "push_in", "zoom": [1.0, 1.08],
+      "_dur_est": 20.0,
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "motion": "zoom_in", "zoom": [1.0, 1.07],
+      "_dur_est": 24.0,
+      "captions": [
+        { "text": "어떻게 재지?", "x": "center", "y": "0.40", "size": 54, "color": "white", "rel_start": 0.55, "rel_end": 0.97 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "_dur_est": 30.0,
+      "captions": [
+        { "text": "사람 그림자 = 키", "x": "center", "y": "0.24", "size": 44, "color": "white", "rel_start": 0.30, "rel_end": 0.62 },
+        { "text": "피라미드 그림자 = 높이", "x": "center", "y": "0.38", "size": 44, "color": "white", "rel_start": 0.55, "rel_end": 0.88 },
+        { "text": "그림자 하나로, 자 없이", "x": "center", "y": "0.52", "size": 58, "color": "gold", "rel_start": 0.88, "rel_end": 0.99 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "_dur_est": 28.0,
+      "captions": [
+        { "text": "같은 햇빛  →  같은 모양", "x": "center", "y": "0.26", "size": 42, "color": "white", "rel_start": 0.25, "rel_end": 0.57 },
+        { "text": "막대 : 그림자  =  피라미드 : 그림자", "x": "center", "y": "0.46", "size": 50, "color": "gold", "rel_start": 0.62, "rel_end": 0.99 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "motion": "zoom_out", "zoom": [1.06, 1.0],
+      "_dur_est": 22.0,
+      "captions": [
+        { "text": "첫 문장을 적은 사람", "x": "center", "y": "0.42", "size": 60, "color": "gold", "rel_start": 0.50, "rel_end": 0.99 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "motion": "zoom_in", "zoom": [1.0, 1.08],
+      "_dur_est": 24.0,
+      "captions": [
+        { "text": "자 없이도, 그림자만 있으면", "x": "center", "y": "0.26", "size": 40, "color": "white", "rel_start": 0.30, "rel_end": 0.65 },
+        { "text": "그림자", "x": "center", "y": "0.42", "size": 140, "color": "gold", "rel_start": 0.70, "rel_end": 0.99 },
+        { "text": "닿을 수 없는 것을, 그림자로 옮겨 잰다", "x": "center", "y": "0.74", "size": 36, "color": "white", "rel_start": 0.78, "rel_end": 0.99 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존. 전환: fade(S1>S2), cut(S2>S3), cut(S3>S4), fade(S4>S5), fade(S5>S6) — 이미지 컷이라 실제 concat 동일." }
+}

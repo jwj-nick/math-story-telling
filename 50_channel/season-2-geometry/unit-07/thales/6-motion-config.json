@@ -1,0 +1,194 @@
+{
+  "_comment": "AUTO finish_video. total=168.885s, SCENE_ENDS=[24.302, 48.215, 85.448, 118.738, 143.765, 168.885]",
+  "fps": 25,
+  "resolution": [
+    1280,
+    720
+  ],
+  "total_duration": 168.885,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": {
+    "gold": "0xD9A441",
+    "white": "0xFFFFFF",
+    "olive": "0x7A8C5C",
+    "ink": "0x5C7DA8",
+    "shadow": "0x000000",
+    "khaki": "0xA89368"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "img": "5-images/S1.png",
+      "start": 0.0,
+      "end": 24.302,
+      "motion": "push_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": []
+    },
+    {
+      "id": "S2",
+      "img": "5-images/S2.png",
+      "start": 24.302,
+      "end": 48.215,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.07
+      ],
+      "captions": [
+        {
+          "text": "어떻게 재지?",
+          "x": "center",
+          "y": "0.40",
+          "size": 54,
+          "color": "white",
+          "start": 37.45,
+          "end": 47.5
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "img": "5-images/S3.png",
+      "start": 48.215,
+      "end": 85.448,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "사람 그림자 = 키",
+          "x": "center",
+          "y": "0.24",
+          "size": 44,
+          "color": "white",
+          "start": 59.38,
+          "end": 71.3
+        },
+        {
+          "text": "피라미드 그림자 = 높이",
+          "x": "center",
+          "y": "0.38",
+          "size": 44,
+          "color": "white",
+          "start": 68.69,
+          "end": 80.98
+        },
+        {
+          "text": "그림자 하나로, 자 없이",
+          "x": "center",
+          "y": "0.52",
+          "size": 58,
+          "color": "gold",
+          "start": 80.98,
+          "end": 85.08
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "img": "5-images/S4.png",
+      "start": 85.448,
+      "end": 118.738,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "같은 햇빛  →  같은 모양",
+          "x": "center",
+          "y": "0.26",
+          "size": 42,
+          "color": "white",
+          "start": 93.77,
+          "end": 104.42
+        },
+        {
+          "text": "막대 : 그림자  =  피라미드 : 그림자",
+          "x": "center",
+          "y": "0.46",
+          "size": 50,
+          "color": "gold",
+          "start": 106.09,
+          "end": 118.41
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "img": "5-images/S5.png",
+      "start": 118.738,
+      "end": 143.765,
+      "motion": "zoom_out",
+      "zoom": [
+        1.06,
+        1.0
+      ],
+      "captions": [
+        {
+          "text": "첫 문장을 적은 사람",
+          "x": "center",
+          "y": "0.42",
+          "size": 60,
+          "color": "gold",
+          "start": 131.25,
+          "end": 143.51
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "img": "5-images/S6.png",
+      "start": 143.765,
+      "end": 168.885,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "자 없이도, 그림자만 있으면",
+          "x": "center",
+          "y": "0.26",
+          "size": 40,
+          "color": "white",
+          "start": 151.3,
+          "end": 160.09
+        },
+        {
+          "text": "그림자",
+          "x": "center",
+          "y": "0.42",
+          "size": 140,
+          "color": "gold",
+          "start": 161.35,
+          "end": 168.63
+        },
+        {
+          "text": "닿을 수 없는 것을, 그림자로 옮겨 잰다",
+          "x": "center",
+          "y": "0.74",
+          "size": 36,
+          "color": "white",
+          "start": 163.36,
+          "end": 168.63
+        }
+      ]
+    }
+  ],
+  "transition": {
+    "type": "fade",
+    "in": 0.6,
+    "out": 0.6,
+    "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존. 전환: fade(S1>S2), cut(S2>S3), cut(S3>S4), fade(S4>S5), fade(S5>S6) — 이미지 컷이라 실제 concat 동일."
+  }
+}

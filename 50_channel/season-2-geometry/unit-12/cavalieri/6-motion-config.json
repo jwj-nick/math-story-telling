@@ -1,0 +1,195 @@
+{
+  "_comment": "AUTO finish_video. total=173.906s, SCENE_ENDS=[27.671, 51.769, 81.947, 110.711, 139.985, 173.906]",
+  "fps": 25,
+  "resolution": [
+    1280,
+    720
+  ],
+  "total_duration": 173.906,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": {
+    "gold": "0xD9A441",
+    "white": "0xFFFFFF",
+    "olive": "0x7A8C5C",
+    "ink": "0x5C7DA8",
+    "shadow": "0x000000",
+    "violet": "0xB8A6CC"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "img": "5-images/S1.png",
+      "start": 0.0,
+      "end": 27.671,
+      "motion": "push_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "모양이 달라도 부피는 같다",
+          "x": "center",
+          "y": "0.82",
+          "size": 44,
+          "color": "gold",
+          "start": 12.45,
+          "end": 26.84
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "img": "5-images/S2.png",
+      "start": 27.671,
+      "end": 51.769,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "불가분량 — 두께 없는 단면",
+          "x": "center",
+          "y": "0.18",
+          "size": 42,
+          "color": "white",
+          "start": 38.52,
+          "end": 51.05
+        },
+        {
+          "text": "입체는 단면이 쌓인 것",
+          "x": "center",
+          "y": "0.84",
+          "size": 48,
+          "color": "gold",
+          "start": 38.52,
+          "end": 51.05
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "img": "5-images/S3.png",
+      "start": 51.769,
+      "end": 81.947,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "카발리에리의 원리 (1635)",
+          "x": "center",
+          "y": "0.16",
+          "size": 44,
+          "color": "white",
+          "start": 65.35,
+          "end": 81.04
+        },
+        {
+          "text": "단면이 같으면 부피도 같다",
+          "x": "center",
+          "y": "0.84",
+          "size": 52,
+          "color": "gold",
+          "start": 65.35,
+          "end": 81.04
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "img": "5-images/S4.png",
+      "start": 81.947,
+      "end": 110.711,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "captions": [
+        {
+          "text": "스승 갈릴레오의 길을 잇다",
+          "x": "center",
+          "y": "0.84",
+          "size": 46,
+          "color": "gold",
+          "start": 94.89,
+          "end": 109.85
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "img": "5-images/S5.png",
+      "start": 110.711,
+      "end": 139.985,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "1400년 앞서 — 류후이",
+          "x": "center",
+          "y": "0.16",
+          "size": 44,
+          "color": "white",
+          "start": 123.88,
+          "end": 139.11
+        },
+        {
+          "text": "동서양이 같은 통찰에",
+          "x": "center",
+          "y": "0.84",
+          "size": 46,
+          "color": "gold",
+          "start": 123.88,
+          "end": 139.11
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "img": "5-images/S6.png",
+      "start": 139.985,
+      "end": 173.906,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "단면 쌓기가 적분이 되다",
+          "x": "0.62",
+          "y": "0.30",
+          "size": 36,
+          "color": "white",
+          "start": 155.25,
+          "end": 172.89
+        },
+        {
+          "text": "단면",
+          "x": "0.62",
+          "y": "0.50",
+          "size": 130,
+          "color": "gold",
+          "start": 155.25,
+          "end": 172.89
+        }
+      ]
+    }
+  ],
+  "transition": {
+    "type": "fade",
+    "in": 0.6,
+    "out": 0.6,
+    "_note": "fade in/out 0.6. concat -c copy 길이 보존."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "_comment": "unit-12 카발리에리(단면·불가분량) STEP6 DRAFT. 타이밍은 rel(0~1, total_duration 비율). EXECUTE 시: synth → 4-narration.mp3 실측 길이로 (1) total_duration 채우고 (2) 각 scene.start/end·caption.start/end 의 rel 값 × 실측초 = 절대초로 변환 → 6-motion-config.json 작성. scene 경계는 jsonl scene 변화 turn 의 음성 시작 시각에 정렬할 것(아르키메데스 패턴). 16:9. 한 단어 단면. era-modern 자주빛.",
+  "_timing_mode": "rel",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": null,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "violet": "0xB8A6CC", "shadow": "0x000000" },
+  "_scene_map": "S1 turns1-5 / S2 6-9 / S3 10-15 / S4 16-20 / S5 21-25 / S6 26-30. rel 경계는 turn 분량 가중 근사치 — EXECUTE 시 scene 첫 turn 음성 시작 실측으로 정렬.",
+  "scenes": [
+    { "id": "S1", "img": "5-images/S1.png", "start": 0.0, "end": 0.18, "motion": "push_in", "zoom": [1.0, 1.08],
+      "captions": [ { "text": "모양이 달라도 부피는 같다", "x": "center", "y": "0.82", "size": 44, "color": "gold", "start": 0.10, "end": 0.175 } ] },
+    { "id": "S2", "img": "5-images/S2.png", "start": 0.18, "end": 0.34, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "불가분량 — 두께 없는 단면", "x": "center", "y": "0.18", "size": 42, "color": "white", "start": 0.215, "end": 0.30 },
+        { "text": "입체는 단면이 쌓인 것", "x": "center", "y": "0.84", "size": 48, "color": "gold", "start": 0.285, "end": 0.335 } ] },
+    { "id": "S3", "img": "5-images/S3.png", "start": 0.34, "end": 0.55, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "카발리에리의 원리 (1635)", "x": "center", "y": "0.16", "size": 44, "color": "white", "start": 0.36, "end": 0.45 },
+        { "text": "단면이 같으면 부피도 같다", "x": "center", "y": "0.84", "size": 52, "color": "gold", "start": 0.46, "end": 0.545 } ] },
+    { "id": "S4", "img": "5-images/S4.png", "start": 0.55, "end": 0.71, "motion": "ken_burns", "zoom": [1.0, 1.06],
+      "captions": [ { "text": "스승 갈릴레오의 길을 잇다", "x": "center", "y": "0.84", "size": 46, "color": "gold", "start": 0.58, "end": 0.70 } ] },
+    { "id": "S5", "img": "5-images/S5.png", "start": 0.71, "end": 0.87, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "1400년 앞서 — 류후이", "x": "center", "y": "0.16", "size": 44, "color": "white", "start": 0.735, "end": 0.81 },
+        { "text": "동서양이 같은 통찰에", "x": "center", "y": "0.84", "size": 46, "color": "gold", "start": 0.815, "end": 0.865 } ] },
+    { "id": "S6", "img": "5-images/S6.png", "start": 0.87, "end": 1.0, "motion": "zoom_in", "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "단면 쌓기가 적분이 되다", "x": "0.62", "y": "0.30", "size": 36, "color": "white", "start": 0.89, "end": 0.965 },
+        { "text": "단면", "x": "0.62", "y": "0.50", "size": 130, "color": "gold", "start": 0.97, "end": 0.998 } ] }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "fade in/out 0.6. concat -c copy 길이 보존." }
+}

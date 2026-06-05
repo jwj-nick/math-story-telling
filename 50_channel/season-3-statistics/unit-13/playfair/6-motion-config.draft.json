@@ -1,0 +1,42 @@
+{
+  "_comment": "unit-13 플레이페어(자료의 정리와 해석) STEP6 DRAFT. ★PREP 산출 — 절대 시간은 아직 미측정. rel(0~1) = 전체 길이 대비 비율. EXECUTE 시: (1) synth.py 실행해 4-narration.mp3 실측 총길이 T 확보, (2) 각 scene start/end = (해당 scene 첫 turn 음성 시작 ~ 다음 scene 첫 turn 음성 시작)의 실측값으로 절대화, (3) caption start/end 도 실측 매핑 후 6-motion-config.json(확정본)으로 저장. 아래 rel 은 추정 비율(나이팅게일 177s 패턴 + 26 turn 기준 ~150s 예상). 16:9. 한 단어 그림. 막대·꺾은선·원그래프·상대도수·발명.",
+  "_draft": true,
+  "_rel_basis": "rel 값은 total_duration_est 대비 0~1. EXECUTE 가 실측 T 로 곱해 절대 초로 변환. scene_end_rel = 다음 scene 첫 turn 음성 시작 시점(실측 매핑).",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration_est": 150.0,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "olive": "0x8E7E3C", "shadow": "0x000000" },
+  "scenes": [
+    { "id": "S1", "img": "5-images/S1.png", "start_rel": 0.0, "end_rel": 0.175, "motion": "push_in", "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "아무도 표를 안 봤다", "x": "center", "y": "0.82", "size": 46, "color": "gold", "start_rel": 0.095, "end_rel": 0.172 } ] },
+    { "id": "S2", "img": "5-images/S2.png", "start_rel": 0.175, "end_rel": 0.345, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "숫자를 길이로", "x": "center", "y": "0.20", "size": 44, "color": "white", "start_rel": 0.215, "end_rel": 0.285 },
+        { "text": "막대그래프", "x": "center", "y": "0.84", "size": 52, "color": "gold", "start_rel": 0.295, "end_rel": 0.342 } ] },
+    { "id": "S3", "img": "5-images/S3.png", "start_rel": 0.345, "end_rel": 0.520, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "시간을 선으로", "x": "center", "y": "0.20", "size": 44, "color": "white", "start_rel": 0.385, "end_rel": 0.455 },
+        { "text": "꺾은선그래프", "x": "center", "y": "0.84", "size": 48, "color": "gold", "start_rel": 0.465, "end_rel": 0.515 } ] },
+    { "id": "S4", "img": "5-images/S4.png", "start_rel": 0.520, "end_rel": 0.715, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "전체를 조각으로 · 상대도수", "x": "center", "y": "0.18", "size": 42, "color": "white", "start_rel": 0.560, "end_rel": 0.640 },
+        { "text": "정치인도 그림은 본다", "x": "center", "y": "0.84", "size": 46, "color": "gold", "start_rel": 0.655, "end_rel": 0.710 } ] },
+    { "id": "S5", "img": "5-images/S5.png", "start_rel": 0.715, "end_rel": 0.860, "motion": "ken_burns", "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "막대 · 선 · 원, 한 사람의 발명", "x": "center", "y": "0.84", "size": 42, "color": "gold", "start_rel": 0.760, "end_rel": 0.855 } ] },
+    { "id": "S6", "img": "5-images/S6.png", "start_rel": 0.860, "end_rel": 1.0, "motion": "zoom_in", "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "표를 안 본다면, 보이게 만들자", "x": "0.62", "y": "0.30", "size": 36, "color": "white", "start_rel": 0.895, "end_rel": 0.955 },
+        { "text": "그림", "x": "0.62", "y": "0.48", "size": 130, "color": "gold", "start_rel": 0.960, "end_rel": 0.998 } ] }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "fade in/out 0.6. concat -c copy 길이 보존." },
+  "_execute_notes": [
+    "EXECUTE: rel→절대 변환 후 키 이름을 start/end, total_duration 으로 바꿔 6-motion-config.json 저장(render_compile.py 가 절대 start/end·total_duration 기대).",
+    "palette: gold(0xD9A441) 자막은 가독성 위해 나이팅게일과 동일 유지. olive(#8E7E3C)=era-modern 시그니처, 이미지 톤/필요시 강조용. render_compile 은 cap.color 로 참조하므로 사용 색만 palette 에 있으면 됨.",
+    "scene end = 다음 scene 첫 turn 음성 시작에 맞춤(synth 실측). S6 end = 오디오 총길이.",
+    "caption start/end 도 실측 후 각 scene 내부 음성 흐름에 맞춰 미세조정."
+  ]
+}

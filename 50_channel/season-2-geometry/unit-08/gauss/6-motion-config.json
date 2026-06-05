@@ -1,0 +1,194 @@
+{
+  "_comment": "AUTO finish_video. total=188.938s, SCENE_ENDS=[21.101, 48.1, 88.352, 126.539, 157.532, 188.938]",
+  "fps": 25,
+  "resolution": [
+    1280,
+    720
+  ],
+  "total_duration": 188.938,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": {
+    "gold": "0xD9A441",
+    "white": "0xFFFFFF",
+    "olive": "0x7A8C5C",
+    "ink": "0x5C7DA8",
+    "shadow": "0x000000",
+    "slate": "0x3E5A6E"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "img": "5-images/S1.png",
+      "start": 0.0,
+      "end": 21.101,
+      "motion": "push_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": []
+    },
+    {
+      "id": "S2",
+      "img": "5-images/S2.png",
+      "start": 21.101,
+      "end": 48.1,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "정삼각형 · 정오각형까지만",
+          "x": "center",
+          "y": "0.28",
+          "size": 42,
+          "color": "white",
+          "start": 26.5,
+          "end": 35.95
+        },
+        {
+          "text": "그 위는 이천 년간 막힌 벽",
+          "x": "center",
+          "y": "0.44",
+          "size": 50,
+          "color": "gold",
+          "start": 36.76,
+          "end": 47.56
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "img": "5-images/S3.png",
+      "start": 48.1,
+      "end": 88.352,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "1796년, 열아홉 살 가우스",
+          "x": "center",
+          "y": "0.26",
+          "size": 46,
+          "color": "white",
+          "start": 60.18,
+          "end": 71.45
+        },
+        {
+          "text": "정17각형 작도 — 이천 년 만의 돌파",
+          "x": "center",
+          "y": "0.44",
+          "size": 42,
+          "color": "gold",
+          "start": 73.06,
+          "end": 87.55
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "img": "5-images/S4.png",
+      "start": 88.352,
+      "end": 126.539,
+      "motion": "zoom_out",
+      "zoom": [
+        1.05,
+        1.0
+      ],
+      "captions": [
+        {
+          "text": "가능과 불가능의 경계",
+          "x": "center",
+          "y": "0.26",
+          "size": 48,
+          "color": "gold",
+          "start": 99.81,
+          "end": 112.03
+        },
+        {
+          "text": "이것이 작도가능성",
+          "x": "center",
+          "y": "0.46",
+          "size": 44,
+          "color": "white",
+          "start": 113.56,
+          "end": 125.78
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "img": "5-images/S5.png",
+      "start": 126.539,
+      "end": 157.532,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "한계를 아는 것이, 끝까지 갈 힘",
+          "x": "center",
+          "y": "0.44",
+          "size": 46,
+          "color": "gold",
+          "start": 143.59,
+          "end": 156.91
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "img": "5-images/S6.png",
+      "start": 157.532,
+      "end": 188.938,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "유클리드는 어떻게 — 가우스는 어디까지",
+          "x": "center",
+          "y": "0.26",
+          "size": 38,
+          "color": "white",
+          "start": 161.3,
+          "end": 173.86
+        },
+        {
+          "text": "가능",
+          "x": "center",
+          "y": "0.44",
+          "size": 140,
+          "color": "gold",
+          "start": 177.0,
+          "end": 188.89
+        },
+        {
+          "text": "어디까지 그릴 수 있을까",
+          "x": "center",
+          "y": "0.74",
+          "size": 36,
+          "color": "white",
+          "start": 178.26,
+          "end": 188.89
+        }
+      ]
+    }
+  ],
+  "transition": {
+    "type": "fade",
+    "in": 0.6,
+    "out": 0.6,
+    "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존."
+  }
+}

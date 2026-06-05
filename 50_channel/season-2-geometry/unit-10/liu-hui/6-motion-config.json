@@ -1,0 +1,186 @@
+{
+  "_comment": "AUTO finish_video. total=209.305s, SCENE_ENDS=[27.734, 54.686, 110.661, 139.192, 172.667, 209.305]",
+  "fps": 25,
+  "resolution": [
+    1280,
+    720
+  ],
+  "total_duration": 209.305,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": {
+    "gold": "0xD9A441",
+    "white": "0xFFFFFF",
+    "olive": "0x7A8C5C",
+    "ink": "0x5C7DA8",
+    "shadow": "0x000000",
+    "crimson": "0xC06A6A"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "img": "5-images/S1.png",
+      "start": 0.0,
+      "end": 27.734,
+      "motion": "push_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "옛 책에 주석을 달던 사람, 류후이",
+          "x": "center",
+          "y": "0.80",
+          "size": 44,
+          "color": "gold",
+          "start": 13.87,
+          "end": 27.18
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "img": "5-images/S2.png",
+      "start": 27.734,
+      "end": 54.686,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "굽은 둘레를 어떻게 잴까",
+          "x": "center",
+          "y": "0.22",
+          "size": 42,
+          "color": "white",
+          "start": 32.59,
+          "end": 42.56
+        },
+        {
+          "text": "곧은 자로는 잴 수 없다",
+          "x": "center",
+          "y": "0.82",
+          "size": 50,
+          "color": "gold",
+          "start": 43.91,
+          "end": 54.15
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "img": "5-images/S3.png",
+      "start": 54.686,
+      "end": 110.661,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "할원술 · 끊임없이 더 잘게",
+          "x": "center",
+          "y": "0.22",
+          "size": 44,
+          "color": "white",
+          "start": 61.4,
+          "end": 85.47
+        },
+        {
+          "text": "삼천칠십이 각형 → 원과 하나",
+          "x": "center",
+          "y": "0.46",
+          "size": 50,
+          "color": "gold",
+          "start": 93.87,
+          "end": 109.54
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "img": "5-images/S4.png",
+      "start": 110.661,
+      "end": 139.192,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "원주율 = 삼점일사일오구",
+          "x": "center",
+          "y": "0.80",
+          "size": 52,
+          "color": "gold",
+          "start": 115.8,
+          "end": 130.63
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "img": "5-images/S5.png",
+      "start": 139.192,
+      "end": 172.667,
+      "motion": "ken_burns",
+      "zoom": [
+        1.06,
+        1.0
+      ],
+      "captions": [
+        {
+          "text": "더 잘게 자른 사람들 · 조충지",
+          "x": "center",
+          "y": "0.80",
+          "size": 44,
+          "color": "white",
+          "start": 145.89,
+          "end": 172.0
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "img": "5-images/S6.png",
+      "start": 172.667,
+      "end": 209.305,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "주석가의 자리 — 왜?를 멈추지 않다",
+          "x": "0.62",
+          "y": "0.30",
+          "size": 38,
+          "color": "white",
+          "start": 183.66,
+          "end": 199.05
+        },
+        {
+          "text": "더 잘게",
+          "x": "0.62",
+          "y": "0.46",
+          "size": 96,
+          "color": "gold",
+          "start": 199.78,
+          "end": 208.94
+        }
+      ]
+    }
+  ],
+  "transition": {
+    "type": "fade",
+    "in": 0.6,
+    "out": 0.6,
+    "_note": "fade in/out 0.6. concat -c copy 길이 보존."
+  }
+}

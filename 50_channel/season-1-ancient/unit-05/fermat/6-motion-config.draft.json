@@ -1,0 +1,64 @@
+{
+  "_comment": "unit-05 페르마 STEP6 모션 config DRAFT. 데카르트편 6-motion-config.json 과 스키마 동일. ★ 타이밍은 rel(0~1) = total 대비 상대값. EXECUTE 단계: synth.py 로 4-narration.mp3 생성 → 실제 길이 측정 → rel × 실제길이 = 절대 start/end/caption 으로 환산하여 6-motion-config.json(절대초) 생성 후 render_compile.py 실행. scene end=다음 scene 음성 시작. 자막=turn 타임라인 근사. 이미지=네이티브16:9. 좌표축 모티프(데카르트편 자산 계보). 신규 캐릭터 페르마.",
+  "_timing": "rel",
+  "_est_total_duration_s": 148,
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration": 1.0,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "teal": "0x5E8C7D", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "start": 0.0, "end": 0.1486, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "start": 0.1486, "end": 0.2973, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "수학은 취미였다", "x": "center", "y": "0.74", "size": 46, "color": "white", "start": 0.2162, "end": 0.2905 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "start": 0.2973, "end": 0.4730, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "따로, 같은 발견", "x": "center", "y": "0.44", "size": 58, "color": "white", "start": 0.4054, "end": 0.4716 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "start": 0.4730, "end": 0.6622, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "데카르트: 그림→식    페르마: 식→그림", "x": "center", "y": "0.24", "size": 40, "color": "white", "start": 0.4912, "end": 0.5588 },
+        { "text": "식 ↔ 그림, 양방향", "x": "center", "y": "0.46", "size": 72, "color": "gold", "start": 0.6149, "end": 0.6608 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "start": 0.6622, "end": 0.8378, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "y = 2x  →  (1, 2), (2, 4)", "x": "center", "y": "0.24", "size": 46, "color": "white", "start": 0.7162, "end": 0.7770 },
+        { "text": "식이 그림이 된다", "x": "center", "y": "0.46", "size": 78, "color": "gold", "start": 0.7973, "end": 0.8365 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "start": 0.8378, "end": 1.0, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "식도 언어, 그림도 언어", "x": "center", "y": "0.74", "size": 40, "color": "white", "start": 0.8919, "end": 0.9392 },
+        { "text": "번역", "x": "center", "y": "0.42", "size": 140, "color": "gold", "start": 0.9459, "end": 0.9966 },
+        { "text": "식과 그림은 같은 말", "x": "center", "y": "0.74", "size": 36, "color": "white", "start": 0.9595, "end": 0.9966 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존. S3→S4, S4→S5 = cut(스토리), 나머지 fade. (현 컴파일러는 전 scene fade in/out 균일 — 데카르트편과 동일 동작)" }
+}

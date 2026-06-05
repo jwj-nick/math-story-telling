@@ -1,0 +1,65 @@
+{
+  "_comment": "unit-08 가우스(작도가능성) STEP6 DRAFT. 타이밍은 rel(0~1) — EXECUTE 단계에서 실제 4-narration.mp3 길이 측정 후 절대초로 환산. scene rel_start/rel_end = 전체길이 기준 0~1. caption rel_start/rel_end = 해당 scene 내부 0~1. 16:9. 작도가능성 모티프. 한 단어=가능. era-modern 슬레이트블루(#3E5A6E).",
+  "_resolve_note": "EXECUTE 절차: (1) synth.py 로 4-narration.mp3 생성·길이 D 측정 (목표 ~146s). (2) ffprobe 로 turn/scene 경계 누적초 측정 → scene.start = scene 첫 turn 시작, scene.end = 다음 scene 첫 turn 시작(마지막은 D). (3) 각 caption rel → start=scene.start + rel_start*(scene.end-scene.start) 형태로 환산하되, 자막은 발화 타임라인에 맞춰 미세조정. (4) 환산 결과를 6-motion-config.json 으로 저장 후 render_compile.py 실행.",
+  "fps": 25,
+  "resolution": [1280, 720],
+  "total_duration_target": 146.0,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": { "gold": "0xD9A441", "white": "0xFFFFFF", "slate": "0x3E5A6E", "shadow": "0x000000" },
+  "scenes": [
+    {
+      "id": "S1", "img": "5-images/S1.png",
+      "rel_start": 0.0, "rel_end": 0.151, "motion": "push_in",
+      "zoom": [1.0, 1.08],
+      "captions": []
+    },
+    {
+      "id": "S2", "img": "5-images/S2.png",
+      "rel_start": 0.151, "rel_end": 0.315, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "정삼각형 · 정오각형까지만", "x": "center", "y": "0.28", "size": 42, "color": "white", "rel_start": 0.20, "rel_end": 0.55 },
+        { "text": "그 위는 이천 년간 막힌 벽", "x": "center", "y": "0.44", "size": 50, "color": "gold", "rel_start": 0.58, "rel_end": 0.98 }
+      ]
+    },
+    {
+      "id": "S3", "img": "5-images/S3.png",
+      "rel_start": 0.315, "rel_end": 0.507, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "1796년, 열아홉 살 가우스", "x": "center", "y": "0.26", "size": 46, "color": "white", "rel_start": 0.30, "rel_end": 0.58 },
+        { "text": "정17각형 작도 — 이천 년 만의 돌파", "x": "center", "y": "0.44", "size": 42, "color": "gold", "rel_start": 0.62, "rel_end": 0.98 }
+      ]
+    },
+    {
+      "id": "S4", "img": "5-images/S4.png",
+      "rel_start": 0.507, "rel_end": 0.699, "motion": "zoom_out",
+      "zoom": [1.05, 1.0],
+      "captions": [
+        { "text": "가능과 불가능의 경계", "x": "center", "y": "0.26", "size": 48, "color": "gold", "rel_start": 0.30, "rel_end": 0.62 },
+        { "text": "이것이 작도가능성", "x": "center", "y": "0.46", "size": 44, "color": "white", "rel_start": 0.66, "rel_end": 0.98 }
+      ]
+    },
+    {
+      "id": "S5", "img": "5-images/S5.png",
+      "rel_start": 0.699, "rel_end": 0.863, "motion": "ken_burns",
+      "zoom": [1.0, 1.05],
+      "captions": [
+        { "text": "한계를 아는 것이, 끝까지 갈 힘", "x": "center", "y": "0.44", "size": 46, "color": "gold", "rel_start": 0.55, "rel_end": 0.98 }
+      ]
+    },
+    {
+      "id": "S6", "img": "5-images/S6.png",
+      "rel_start": 0.863, "rel_end": 1.0, "motion": "zoom_in",
+      "zoom": [1.0, 1.08],
+      "captions": [
+        { "text": "유클리드는 어떻게 — 가우스는 어디까지", "x": "center", "y": "0.26", "size": 38, "color": "white", "rel_start": 0.12, "rel_end": 0.52 },
+        { "text": "가능", "x": "center", "y": "0.44", "size": 140, "color": "gold", "rel_start": 0.62, "rel_end": 1.0 },
+        { "text": "어디까지 그릴 수 있을까", "x": "center", "y": "0.74", "size": 36, "color": "white", "rel_start": 0.66, "rel_end": 1.0 }
+      ]
+    }
+  ],
+  "transition": { "type": "fade", "in": 0.6, "out": 0.6, "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존." },
+  "scene_seed_durations_s": { "S1": 22, "S2": 24, "S3": 28, "S4": 28, "S5": 24, "S6": 20, "_sum": 146, "_note": "story-seed 기준 잠정 길이. EXECUTE 에서 실제 음성으로 대체." }
+}

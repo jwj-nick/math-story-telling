@@ -1,0 +1,185 @@
+{
+  "_comment": "AUTO finish_video. total=169.57s, SCENE_ENDS=[26.949, 51.926, 80.479, 113.325, 144.5, 169.57]",
+  "fps": 25,
+  "resolution": [
+    1280,
+    720
+  ],
+  "total_duration": 169.57,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": {
+    "gold": "0xD9A441",
+    "white": "0xFFFFFF",
+    "olive": "0x7A8C5C",
+    "ink": "0x5C7DA8",
+    "shadow": "0x000000",
+    "teal": "0x5E8C7D"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "img": "5-images/S1.png",
+      "start": 0.0,
+      "end": 26.949,
+      "motion": "push_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": []
+    },
+    {
+      "id": "S2",
+      "img": "5-images/S2.png",
+      "start": 26.949,
+      "end": 51.926,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "수학은 취미였다",
+          "x": "center",
+          "y": "0.74",
+          "size": 46,
+          "color": "white",
+          "start": 38.19,
+          "end": 51.18
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "img": "5-images/S3.png",
+      "start": 51.926,
+      "end": 80.479,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "따로, 같은 발견",
+          "x": "center",
+          "y": "0.44",
+          "size": 58,
+          "color": "white",
+          "start": 64.77,
+          "end": 79.62
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "img": "5-images/S4.png",
+      "start": 80.479,
+      "end": 113.325,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "데카르트: 그림→식    페르마: 식→그림",
+          "x": "center",
+          "y": "0.24",
+          "size": 40,
+          "color": "white",
+          "start": 95.26,
+          "end": 112.34
+        },
+        {
+          "text": "식 ↔ 그림, 양방향",
+          "x": "center",
+          "y": "0.46",
+          "size": 72,
+          "color": "gold",
+          "start": 95.26,
+          "end": 112.34
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "img": "5-images/S5.png",
+      "start": 113.325,
+      "end": 144.5,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "y = 2x  →  (1, 2), (2, 4)",
+          "x": "center",
+          "y": "0.24",
+          "size": 46,
+          "color": "white",
+          "start": 127.35,
+          "end": 143.56
+        },
+        {
+          "text": "식이 그림이 된다",
+          "x": "center",
+          "y": "0.46",
+          "size": 78,
+          "color": "gold",
+          "start": 127.35,
+          "end": 143.56
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "img": "5-images/S6.png",
+      "start": 144.5,
+      "end": 169.57,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "식도 언어, 그림도 언어",
+          "x": "center",
+          "y": "0.74",
+          "size": 40,
+          "color": "white",
+          "start": 155.78,
+          "end": 168.82
+        },
+        {
+          "text": "번역",
+          "x": "center",
+          "y": "0.42",
+          "size": 140,
+          "color": "gold",
+          "start": 155.78,
+          "end": 168.82
+        },
+        {
+          "text": "식과 그림은 같은 말",
+          "x": "center",
+          "y": "0.74",
+          "size": 36,
+          "color": "white",
+          "start": 155.78,
+          "end": 168.82
+        }
+      ]
+    }
+  ],
+  "transition": {
+    "type": "fade",
+    "in": 0.6,
+    "out": 0.6,
+    "_note": "각 scene fade in/out 0.6. concat -c copy 길이 보존. S3→S4, S4→S5 = cut(스토리), 나머지 fade. (현 컴파일러는 전 scene fade in/out 균일 — 데카르트편과 동일 동작)"
+  }
+}

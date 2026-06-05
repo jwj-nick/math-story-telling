@@ -1,0 +1,194 @@
+{
+  "_comment": "AUTO finish_video. total=170.908s, SCENE_ENDS=[26.767, 49.751, 73.803, 103.381, 131.891, 170.908]",
+  "fps": 25,
+  "resolution": [
+    1280,
+    720
+  ],
+  "total_duration": 170.908,
+  "audio": "4-narration.mp3",
+  "font": "C:/Windows/Fonts/NotoSerifCJKkr-Regular.otf",
+  "palette": {
+    "gold": "0xD9A441",
+    "white": "0xFFFFFF",
+    "olive": "0x8E7E3C",
+    "ink": "0x5C7DA8",
+    "shadow": "0x000000"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "img": "5-images/S1.png",
+      "start": 0.0,
+      "end": 26.767,
+      "motion": "push_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "아무도 표를 안 봤다",
+          "x": "center",
+          "y": "0.82",
+          "size": 46,
+          "color": "gold",
+          "start": 12.05,
+          "end": 25.96
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "img": "5-images/S2.png",
+      "start": 26.767,
+      "end": 49.751,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "숫자를 길이로",
+          "x": "center",
+          "y": "0.20",
+          "size": 44,
+          "color": "white",
+          "start": 37.11,
+          "end": 49.06
+        },
+        {
+          "text": "막대그래프",
+          "x": "center",
+          "y": "0.84",
+          "size": 52,
+          "color": "gold",
+          "start": 37.11,
+          "end": 49.06
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "img": "5-images/S3.png",
+      "start": 49.751,
+      "end": 73.803,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "시간을 선으로",
+          "x": "center",
+          "y": "0.20",
+          "size": 44,
+          "color": "white",
+          "start": 60.57,
+          "end": 73.08
+        },
+        {
+          "text": "꺾은선그래프",
+          "x": "center",
+          "y": "0.84",
+          "size": 48,
+          "color": "gold",
+          "start": 60.57,
+          "end": 73.08
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "img": "5-images/S4.png",
+      "start": 73.803,
+      "end": 103.381,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "전체를 조각으로 · 상대도수",
+          "x": "center",
+          "y": "0.18",
+          "size": 42,
+          "color": "white",
+          "start": 87.11,
+          "end": 102.49
+        },
+        {
+          "text": "정치인도 그림은 본다",
+          "x": "center",
+          "y": "0.84",
+          "size": 46,
+          "color": "gold",
+          "start": 87.11,
+          "end": 102.49
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "img": "5-images/S5.png",
+      "start": 103.381,
+      "end": 131.891,
+      "motion": "ken_burns",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "captions": [
+        {
+          "text": "막대 · 선 · 원, 한 사람의 발명",
+          "x": "center",
+          "y": "0.84",
+          "size": 42,
+          "color": "gold",
+          "start": 116.21,
+          "end": 131.04
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "img": "5-images/S6.png",
+      "start": 131.891,
+      "end": 170.908,
+      "motion": "zoom_in",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "captions": [
+        {
+          "text": "표를 안 본다면, 보이게 만들자",
+          "x": "0.62",
+          "y": "0.30",
+          "size": 36,
+          "color": "white",
+          "start": 149.45,
+          "end": 169.74
+        },
+        {
+          "text": "그림",
+          "x": "0.62",
+          "y": "0.48",
+          "size": 130,
+          "color": "gold",
+          "start": 149.45,
+          "end": 169.74
+        }
+      ]
+    }
+  ],
+  "transition": {
+    "type": "fade",
+    "in": 0.6,
+    "out": 0.6,
+    "_note": "fade in/out 0.6. concat -c copy 길이 보존."
+  }
+}
