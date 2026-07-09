@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>중2-1 수학</title>
+<link rel="stylesheet" href="concept.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="bar">
+    <div class="crumbs"><a href="../index.html">← Nick's Apps</a></div>
+    <button class="ttoggle" id="ttoggle" aria-label="밝기 전환"></button>
+  </div>
+
+  <div class="hub-hero">
+    <h1>중2-1 수학</h1>
+    <p class="lede">작년에 배운 것에서 한 걸음씩. 각 단원은 <b class="hl">개념</b> → <b class="gold">연습</b> → <b style="color:#fff">심화</b> 로 이어져.</p>
+  </div>
+
+  <div class="units" id="units">
+    <a class="unit" href="u1.html" data-u="u1"><span class="u-no">1</span><span><div class="u-t">유리수와 순환소수</div><div class="u-d">분수를 소수로 — 딱 떨어질까, 끝없이 반복될까</div></span><span class="u-chk">✓</span></a>
+    <a class="unit" href="u2.html" data-u="u2"><span class="u-no">2</span><span><div class="u-t">식의 계산</div><div class="u-d">동류항 · 괄호 풀기 · 지수법칙</div></span><span class="u-chk">✓</span></a>
+    <a class="unit" href="u3.html" data-u="u3"><span class="u-no">3</span><span><div class="u-t">일차부등식</div><div class="u-d">'같다'가 아니라 크다·작다 — 그리고 부호의 함정</div></span><span class="u-chk">✓</span></a>
+    <a class="unit" href="u4.html" data-u="u4"><span class="u-no">4</span><span><div class="u-t">연립일차방정식</div><div class="u-d">미지수가 둘일 때 — 대입해서 풀기</div></span><span class="u-chk">✓</span></a>
+    <a class="unit" href="u5.html" data-u="u5"><span class="u-no">5</span><span><div class="u-t">일차함수와 그래프</div><div class="u-d">y = ax + b — 기울기와 출발 높이</div></span><span class="u-chk">✓</span></a>
+    <a class="unit" href="u6.html" data-u="u6"><span class="u-no">6</span><span><div class="u-t">일차함수와 일차방정식</div><div class="u-d">그래프의 어디에 방정식의 답이 있을까</div></span><span class="u-chk">✓</span></a>
+  </div>
+
+  <p class="lede" style="font-size:13.5px;margin:18px 2px 0">💡 단원에 들어가면 위쪽 <b>탭</b>에서 개념 · 연습 · 심화 탐구 · 심화 문제로 자유롭게 오갈 수 있어.</p>
+
+  <a class="tool-card" href="drill.html">
+    <span class="u-no" style="background:rgba(255,255,255,.22);color:#fff">✏️</span>
+    <span><div class="u-t">계산 연습 <span style="font-size:11px;font-weight:600;opacity:.85">· preview</span></div><div class="u-d">아주 초기 맛보기 버전이야. 앞으로 새 연습으로 다듬어질 예정.</div></span>
+  </a>
+
+  <div class="foot">세은의 중2-1 · 기초 과정 · 천천히 정확하게 → 그다음 빠르게</div>
+</div>
+
+<script src="concept.js"></script>
+<script>
+  MJ.boot();
+  document.querySelectorAll('.unit').forEach(function(a){
+    var id=a.getAttribute('data-u');
+    if(MJ.isDone(id)) a.classList.add('done');
+    var u=MJ.UNITS.filter(function(x){return x.id===id;})[0];
+    if(u){var no=a.querySelector('.u-no'); if(no) no.style.background='linear-gradient(135deg,'+u.u+','+u.u2+')';}
+  });
+</script>
+</body>
+</html>
