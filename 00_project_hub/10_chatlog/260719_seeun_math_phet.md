@@ -166,4 +166,18 @@
 2. **우리 실험실(dN) 자체 sim 강화** (특히 갭 단원 1·3).
 3. **소스 repo(math-story-telling) 커밋** — 현재 x1~x6·concept.*·index·chatlog 미커밋(배포 repo는 push 완료). CLAUDE.md "요청 시 커밋" 원칙이라 대기.
 
+## Round 7 — 후속 2·1·3 모두 진행 (Nick "2,1,3 순서대로", 2026-07-19)
+
+**Task 2 — 갭 단원 자체 실험실 강화:**
+- **d1 긴 나눗셈 애니메이터**(분수→순환소수): 프리셋 6개(1/3·2/7·1/6·5/11·1/4·3/8), 나눗셈 스텝 애니 + "나머지가 되돌아옴 = 순환마디 탄생"(pigeonhole 직관). Node 6/6 정답 검증.
+- **d3 뒤집힘 실험실**(양변 ×k 반사 수직선): 2<5에 k(−3~3) 곱해 두 점이 0 기준 반사→순서 뒤집힘 실시간. 음수 곱=부등호 뒤집힘의 근본 시각화(PhET 못 함).
+
+**Task 1 — 탐험 한 줄 기록:** x1~x6 각 끝에 "한 줄 기록·오늘의 발견" teach-back 섹션(단원별 맞춤 placeholder + localStorage `m2reflect_<page>` 저장·복원). 세은 언어 강점 활용, 빈칸 원칙.
+
+**Task 3 — 소스 repo 커밋:** `C:/Kids/math-story-telling` main에 app2 전체 + 이 chatlog 커밋(`8f212bb`, 35파일). 무관한 사전 변경(CLAUDE.md·기타 chatlog·app/·prototypes/·__pycache__)은 제외=Nick 몫. push는 안 함(요청=커밋).
+
+**검증·배포:** node --check + 8페이지 파스 0에러 + d1 6/6 + 탐험 정합 유지 → 배포 커밋 `6486456` push(`6c78235..6486456`), Pages built. 라이브 확인: d1 긴나눗셈·d3 뒤집힘·x5 한 줄 기록 모두 정상.
+
+**✅ seeun-math-phet 후속 3건 완료.** 남은 것: Nick 폰 리뷰 → 피드백. (선택) 나머지 갭/우리실험실 추가 강화, 자체 sim 확대.
+
 
