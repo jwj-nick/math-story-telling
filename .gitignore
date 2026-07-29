@@ -11,6 +11,13 @@
 !60_deploy/high-school/.gitkeep
 !60_deploy/channel/.gitkeep
 
+# 프린트 학습지 중간 HTML (은행+config 에서 언제든 재생성). PDF 는 40_grades/**/print/ 에 보관·추적
+60_deploy/print/
+
+# Python 캐시
+__pycache__/
+*.pyc
+
 # 영상·이미지 binary (생성 가능 자산)
 *.mp4
 *.mp3
