@@ -1,0 +1,35 @@
+{
+  "id": "m2-u01-mock",
+  "kind": "mock",
+  "grade": "math2",
+  "unit": 1,
+  "unit_name": "유리수와 순환소수",
+  "title": "단원 1 시험 대비 회차",
+  "subtitle": "7개 유형을 섞어서 · 쉬운 것부터 어려운 것 순서로",
+  "bank": "math2/u01/practice.json",
+  "misconceptions": "misconceptions/math2_u01.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "order": "level",
+    "per_type": 2,
+    "levels": [
+      "L",
+      "M",
+      "H"
+    ]
+  },
+  "time_min": 22,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

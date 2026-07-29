@@ -1,0 +1,20 @@
+{
+  "id": "m1-u13-t6",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 13,
+  "unit_name": "자료의 정리와 해석",
+  "title": "상대도수",
+  "subtitle": "상대도수 구하기 · 합이 1 · 도수와 전체 도수 되찾기",
+  "bank": "math1/u13/practice.json",
+  "misconceptions": "misconceptions/math1_u13.json",
+  "types": [
+    6
+  ],
+  "time_min": 25,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

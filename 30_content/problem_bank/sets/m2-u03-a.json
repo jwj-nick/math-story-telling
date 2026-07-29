@@ -1,0 +1,23 @@
+{
+  "id": "m2-u03-a",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 3,
+  "unit_name": "일차부등식",
+  "title": "부등식의 뜻과 성질",
+  "subtitle": "부등식으로 나타내기 · 해 확인하기 · 부등식의 성질 · 일차부등식 풀기",
+  "bank": "math2/u03/practice.json",
+  "misconceptions": "misconceptions/math2_u03.json",
+  "types": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "time_min": 18,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

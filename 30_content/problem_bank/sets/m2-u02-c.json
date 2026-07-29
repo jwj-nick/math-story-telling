@@ -1,0 +1,22 @@
+{
+  "id": "m2-u02-c",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 2,
+  "unit_name": "식의 계산",
+  "title": "다항식의 계산",
+  "subtitle": "다항식의 덧셈·뺄셈 · (다항식)×÷(단항식) · 식의 값",
+  "bank": "math2/u02/practice.json",
+  "misconceptions": "misconceptions/math2_u02.json",
+  "types": [
+    7,
+    8,
+    9
+  ],
+  "time_min": 18,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,31 @@
+{
+  "id": "m2-u10-mock",
+  "kind": "mock",
+  "grade": "math2",
+  "unit": 10,
+  "unit_name": "피타고라스 정리",
+  "title": "피타고라스 정리 모의 회차",
+  "subtitle": "6개 유형에서 골고루 · 난이도 오름차순 12문항",
+  "bank": "math2/u10/practice.json",
+  "misconceptions": "misconceptions/math2_u10.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "pick": {
+    "quota": {
+      "L": 1,
+      "M": 1
+    }
+  },
+  "time_min": 25,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

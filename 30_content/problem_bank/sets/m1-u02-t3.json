@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 2,
+  "unit_name": "정수와 유리수",
+  "bank": "math1/u02/practice.json",
+  "misconceptions": "misconceptions/math1_u02.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u02-t3",
+  "kind": "type-set",
+  "title": "절댓값",
+  "subtitle": "유형 3 · 절댓값의 뜻 · 절댓값이 주어진 수 · 절댓값의 성질",
+  "types": [
+    3
+  ],
+  "time_min": 22
+}

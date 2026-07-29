@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 1,
+    "unit_name": "유리수와 순환소수",
+    "authored": "2026-07-29",
+    "review": "draft",
+    "rule": "카드는 그 문제의 정답을 포함하지 않는다. counter=짧은 반례, ask=되돌리는 질문(답 없음), check=확인 미니문제(정답은 카드 맨 아래 모아서 인쇄)."
+  },
+  "items": {
+    "dec.frac-as-division": {
+      "no": 1,
+      "label": "분수를 소수로 바꿀 때 나눗셈 방향이 거꾸로  (3/4 을 4 ÷ 3 으로 계산)",
+      "empathy": "큰 수를 작은 수로 나누는 게 손에 익어서 방향이 뒤집히기 쉬워요. 한 번만 못 박아 두면 다시는 안 헷갈려요.",
+      "counter": "3/4 은 1 보다 작은 수예요. 그런데 4 ÷ 3 을 계산하면 1 보다 큰 수가 나오죠. 어느 쪽이 맞나요?",
+      "ask": "분수를 나눗셈으로 읽으면 무엇을 무엇으로 나누는 것인가요?",
+      "check": {
+        "q": "1/8 을 소수로 나타내면?",
+        "a": "0.125"
+      },
+      "link": "중2 단원 1 · 분수를 소수로 바꾸기"
+    },
+    "dec.division-stop-early": {
+      "no": 2,
+      "label": "나눗셈을 끝까지 하지 않고 도중에 멈춤  (7 ÷ 8 을 0.87 에서 끊음)",
+      "empathy": "나누기가 길어지면 이쯤이면 됐다 싶어지죠. 어디까지 내려가야 하는지 기준만 있으면 편해져요.",
+      "counter": "0.87 에 8 을 곱하면 6.96 이에요. 원래 나누려던 수 7 과 같은가요?",
+      "ask": "나머지가 아직 남아 있는데 멈춰도 될까요? 언제까지 내려가야 할까요?",
+      "check": {
+        "q": "3/8 을 소수로 나타내면?",
+        "a": "0.375"
+      },
+      "link": "중2 단원 1 · 분수를 소수로 바꾸기"
+    },
+    "dec.denominator-factor": {
+      "no": 3,
+      "label": "분모를 크기로 보고 판단함  (분모가 크면 안 끝난다고 생각)",
+      "empathy": "분모가 크면 딱 떨어지지 않을 것 같은 느낌이 들죠. 기준은 크기가 아니라 소인수예요.",
+      "counter": "1/8 과 1/9 를 각각 나눠 볼까요? 8 = 2×2×2, 9 = 3×3 이에요. 어느 쪽이 딱 떨어지나요?",
+      "ask": "분모를 소인수분해했을 때 어떤 소인수만 남아 있어야 딱 떨어질까요?",
+      "check": {
+        "q": "1/40 을 소수로 나타내면 딱 떨어질까요?",
+        "a": "네, 40 = 2³ × 5 라서 0.025 로 끝나요"
+      },
+      "link": "중2 단원 1 · 유한소수·순환소수 판별"
+    },
+    "dec.numerator-decides": {
+      "no": 4,
+      "label": "분자를 보고 판별함  (분자가 홀수면 안 끝난다고 생각)",
+      "empathy": "분자에 먼저 눈이 가는 건 자연스러워요. 판별의 열쇠는 다른 곳에 있어요.",
+      "counter": "1/4 과 1/3 은 분자가 똑같이 1 이에요. 그런데 하나는 0.25 로 끝나고, 다른 하나는 0.333… 으로 계속 이어져요.",
+      "ask": "그러면 끝이 나는지 아닌지를 정하는 것은 분자인가요, 분모인가요?",
+      "check": {
+        "q": "5/6 과 5/8 중에서 소수로 나타냈을 때 끝이 나는 것은?",
+        "a": "5/8 (8 = 2³)"
+      },
+      "link": "중2 단원 1 · 유한소수·순환소수 판별"
+    },
+    "dec.denom-before-reduce": {
+      "no": 5,
+      "label": "약분하기 전의 분모로 판별함  (6/15 를 그대로 두고 판단)",
+      "empathy": "분모를 보라고 배웠으니 바로 분모를 본 거예요. 앞에 한 걸음만 더 붙이면 돼요.",
+      "counter": "6/15 의 분모 15 에는 3 이 들어 있어요. 그런데 약분하면 2/5 가 되죠. 어느 분모를 보고 판단해야 할까요?",
+      "ask": "분모를 보기 전에 반드시 해야 할 일이 하나 있어요. 무엇일까요?",
+      "check": {
+        "q": "12/45 를 약분하면?",
+        "a": "4/15"
+      },
+      "link": "중2 단원 1 · 유한소수·순환소수 판별"
+    },
+    "dec.make-finite-multiply": {
+      "no": 6,
+      "label": "분모를 고쳐서 만들려 하거나, 곱할 수를 덜 곱함",
+      "empathy": "분모가 말썽이니 분모를 고치고 싶어지죠. 그런데 분모를 바꾸면 아예 다른 수가 돼요.",
+      "counter": "45 = 3 × 3 × 5 예요. 분자에 3 을 한 번만 곱하면 분모에 3 이 아직 하나 남아요. 그래도 딱 떨어질까요?",
+      "ask": "분모에 남은 2·5 아닌 소인수를 남김없이 지우려면 무엇을 얼마나 곱해야 할까요?",
+      "check": {
+        "q": "a/45 이 유한소수가 되게 하는 가장 작은 자연수 a 는?",
+        "a": "9"
+      },
+      "link": "중2 단원 1 · 유한소수가 되는 조건"
+    },
+    "dec.repetend-include-head": {
+      "no": 7,
+      "label": "순환마디에 되풀이되지 않는 앞부분까지 넣음  (0.8333… 의 마디를 83 으로 봄)",
+      "empathy": "소수점 뒤를 앞에서부터 읽으니 앞 숫자까지 묶고 싶어져요. 아주 흔한 지점이에요.",
+      "counter": "0.8333… 을 길게 늘여 써 볼까요? 8 이 다시 나타나는 자리가 있나요?",
+      "ask": "순환마디에는 되풀이되는 부분만 넣나요, 앞부분까지 함께 넣나요?",
+      "check": {
+        "q": "0.4171717… 의 순환마디는?",
+        "a": "17"
+      },
+      "link": "중2 단원 1 · 순환마디 찾기"
+    },
+    "dec.repetend-dot-place": {
+      "no": 8,
+      "label": "순환마디 점을 잘못 찍음  (0.<span style=\"position:relative\">1<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">8<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 과 0.1<span style=\"position:relative\">8<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 을 같은 수로 봄)",
+      "empathy": "점을 몇 개, 어디에 찍는지가 매번 헷갈리죠. 규칙은 딱 하나예요.",
+      "counter": "0.<span style=\"position:relative\">1<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">8<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 과 0.1<span style=\"position:relative\">8<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 을 각각 길게 늘여 써 볼까요? 두 수가 같은 수인가요?",
+      "ask": "점은 순환마디의 어디와 어디에 찍나요?",
+      "check": {
+        "q": "0.727272… 를 점을 찍어 짧게 나타내면?",
+        "a": "0.<span style=\"position:relative\">7<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span>"
+      },
+      "link": "중2 단원 1 · 순환마디 표기"
+    },
+    "dec.position-remainder": {
+      "no": 9,
+      "label": "자리 번호를 마디 길이로 나눴을 때 나머지 0 을 잘못 봄",
+      "empathy": "나머지가 0 이 나오면 어디를 가리키는지 순간 멈칫하게 돼요. 여기만 잡으면 이 유형은 끝이에요.",
+      "counter": "마디가 두 자리인 순환소수에서 소수점 아래 네 번째 자리를 손으로 세어 볼까요? 4 ÷ 2 의 나머지는 0 인데, 네 번째는 마디의 몇 번째인가요?",
+      "ask": "나머지가 0 일 때는 마디의 첫 번째를 가리킬까요, 마지막을 가리킬까요?",
+      "check": {
+        "q": "0.<span style=\"position:relative\">4<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">5<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 의 소수점 아래 20번째 자리 숫자는?",
+        "a": "5"
+      },
+      "link": "중2 단원 1 · 소수점 아래 n번째 자리"
+    },
+    "dec.nonrepeating-head-offset": {
+      "no": 10,
+      "label": "앞에 돌지 않는 자리가 있는데 자리 번호를 그대로 나눔",
+      "empathy": "앞에 한 자리가 끼어 있으면 세는 기준이 흔들리죠. 끊어서 그려 두면 훨씬 편해져요.",
+      "counter": "0.2444… 에서 되풀이되는 부분은 몇 번째 자리부터 시작하나요? 첫째 자리도 되풀이에 들어가나요?",
+      "ask": "앞에 돌지 않는 자리가 있으면, 자리 번호를 그대로 나눠도 될까요?",
+      "check": {
+        "q": "0.2444… 의 소수점 아래 50번째 자리 숫자는?",
+        "a": "4"
+      },
+      "link": "중2 단원 1 · 소수점 아래 n번째 자리"
+    },
+    "dec.to-frac-denominator": {
+      "no": 11,
+      "label": "분모의 9 개수를 잘못 셈  (0.<span style=\"position:relative\">1<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 를 12/9 로 봄)",
+      "empathy": "9 를 몇 개 써야 하는지가 매번 헷갈리죠. 세는 기준은 하나뿐이에요.",
+      "counter": "0.<span style=\"position:relative\">7<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 은 마디가 한 자리, 0.<span style=\"position:relative\">1<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 는 마디가 두 자리예요. 두 분수의 분모는 각각 몇 자리 수가 될까요?",
+      "ask": "분모에 쓰는 9 의 개수는 무엇의 개수와 같나요?",
+      "check": {
+        "q": "0.<span style=\"position:relative\">5<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 를 분수로 나타내면?",
+        "a": "5/9"
+      },
+      "link": "중2 단원 1 · 순환소수를 분수로"
+    },
+    "dec.to-frac-reduce": {
+      "no": 12,
+      "label": "분수로 바꾼 뒤 약분하지 않음",
+      "empathy": "분수로 바꾸는 데 성공했으면 거의 다 온 거예요. 마지막 한 걸음만 남았어요.",
+      "counter": "24/99 에서 분자와 분모를 함께 나눌 수 있는 수가 있나요? 이대로 기약분수라고 할 수 있을까요?",
+      "ask": "기약분수는 분자와 분모에 무엇이 더 남아 있지 않은 분수인가요?",
+      "check": {
+        "q": "18/45 를 기약분수로 나타내면?",
+        "a": "2/5"
+      },
+      "link": "중2 단원 1 · 순환소수를 분수로"
+    },
+    "dec.to-frac-head-subtract": {
+      "no": 13,
+      "label": "돌지 않는 부분이 있는데 빼기를 하지 않음  (0.1<span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 를 12/99 로 봄)",
+      "empathy": "9 만 쓰면 될 것 같은데 0 이 붙고 빼기까지 나오니 복잡해 보이죠. 한 번 끊어서 그려 보면 이유가 보여요.",
+      "counter": "0.1<span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 는 0.1 뒤부터 도는 수예요. 돌지 않는 자리가 하나 있으면 분모 뒤에 무엇이 하나 더 붙을까요?",
+      "ask": "분자에서는 어떤 부분을 한 번 빼 주게 될까요?",
+      "check": {
+        "q": "0.<span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">3<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 와 0.2<span style=\"position:relative\">3<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 중에서 분모가 90 이 되는 것은?",
+        "a": "0.2<span style=\"position:relative\">3<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span>"
+      },
+      "link": "중2 단원 1 · 순환소수를 분수로"
+    },
+    "num.infinite-vs-repeating": {
+      "no": 14,
+      "label": "끝없이 이어지는 소수는 모두 유리수라고 봄",
+      "empathy": "끝없이 이어지는 소수는 다 한 가족처럼 보여요. 그 안에 두 종류가 있다는 게 이 단원의 열쇠예요.",
+      "counter": "π = 3.141592653… 에서 되풀이되는 마디를 찾을 수 있나요? π 를 분수로 쓸 수 있나요?",
+      "ask": "끝없이 이어지는 소수 중에서, 분수로 바꿀 수 있는 것은 어떤 소수일까요?",
+      "check": {
+        "q": "0.1010010001… 처럼 규칙은 있지만 되풀이되지 않는 소수는 유리수일까요?",
+        "a": "아니에요 — 순환마디가 없어서 분수로 쓸 수 없어요"
+      },
+      "link": "중2 단원 1 · 유리수와 소수의 관계"
+    },
+    "num.rational-definition": {
+      "no": 15,
+      "label": "유리수를 분수 모양인 것만이라고 봄  (소수는 유리수가 아니라고 생각)",
+      "empathy": "‘유리수’ 하면 분수 모양이 먼저 떠오르죠. 모양이 아니라 ‘분수로 바꿀 수 있는가’ 가 기준이에요.",
+      "counter": "0.7 을 분수로 써 볼까요? 0.7 = 7/10 이죠. 그러면 0.7 은 분수로 쓸 수 있는 수인가요?",
+      "ask": "어떤 수가 유리수가 되려면 무엇으로 쓸 수 있어야 하나요?",
+      "check": {
+        "q": "1.25 는 유리수인가요?",
+        "a": "네 — 1.25 = 5/4 예요"
+      },
+      "link": "중2 단원 1 · 유리수와 소수의 관계"
+    }
+  }
+}

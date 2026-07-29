@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 4,
+  "unit_name": "일차방정식",
+  "bank": "math1/u04/practice.json",
+  "misconceptions": "misconceptions/math1_u04.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u04-t7",
+  "kind": "type-set",
+  "title": "일차방정식의 활용",
+  "subtitle": "유형 7 · 미지수 정하기 → 식 세우기 → 풀기 → 검토 · 개수·나이·속력·농도·도형",
+  "types": [
+    7
+  ],
+  "time_min": 30
+}

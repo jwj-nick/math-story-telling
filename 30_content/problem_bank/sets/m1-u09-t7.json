@@ -1,0 +1,15 @@
+{
+  "id": "m1-u09-t7",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 9,
+  "unit_name": "다각형",
+  "title": "다각형 종합·복합",
+  "subtitle": "유형 7 · 별 모양 · 복합 도형 · 조건이 섞인 문제",
+  "bank": "math1/u09/practice.json",
+  "misconceptions": "misconceptions/math1_u09.json",
+  "types": [7],
+  "time_min": 25,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 6,
+  "unit_name": "정비례와 반비례",
+  "bank": "math1/u06/practice.json",
+  "misconceptions": "misconceptions/math1_u06.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u06-t5",
+  "kind": "type-set",
+  "title": "비례상수 결정",
+  "subtitle": "유형 5 · 한 점에서 비례상수 구하기 → 식 세우기 → 다른 값 구하기",
+  "types": [
+    5
+  ],
+  "time_min": 20
+}

@@ -1,0 +1,22 @@
+{
+  "id": "m2-u07-a",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 7,
+  "unit_name": "삼각형의 성질",
+  "title": "삼각형의 각과 이등변삼각형",
+  "subtitle": "세 각의 합 · 이등변삼각형의 밑각 · 성질과 그 역",
+  "bank": "math2/u07/practice.json",
+  "misconceptions": "misconceptions/math2_u07.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 4,
+  "unit_name": "일차방정식",
+  "bank": "math1/u04/practice.json",
+  "misconceptions": "misconceptions/math1_u04.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u04-t1",
+  "kind": "type-set",
+  "title": "방정식과 항등식",
+  "subtitle": "유형 1 · 방정식과 항등식 구분 · 해의 뜻 · 항등식의 미정계수",
+  "types": [
+    1
+  ],
+  "time_min": 20
+}

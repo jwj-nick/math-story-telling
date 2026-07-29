@@ -1,0 +1,22 @@
+{
+  "id": "m2-u08-a",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 8,
+  "unit_name": "사각형의 성질",
+  "title": "평행사변형까지",
+  "subtitle": "사각형 네 각의 합 · 평행사변형의 변과 각 · 평행사변형의 대각선",
+  "bank": "math2/u08/practice.json",
+  "misconceptions": "misconceptions/math2_u08.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,22 @@
+{
+  "id": "m2-u07-b",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 7,
+  "unit_name": "삼각형의 성질",
+  "title": "삼각형의 외심과 내심",
+  "subtitle": "외심과 외접원 · 내심과 내접원 · 외심 내심 구분",
+  "bank": "math2/u07/practice.json",
+  "misconceptions": "misconceptions/math2_u07.json",
+  "types": [
+    4,
+    5,
+    6
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,22 @@
+{
+  "id": "m2-u04-c",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 4,
+  "unit_name": "연립일차방정식",
+  "title": "A = B = C 꼴과 활용",
+  "subtitle": "A = B = C 꼴 · 해가 주어졌을 때 상수 구하기 · 연립방정식의 활용",
+  "bank": "math2/u04/practice.json",
+  "misconceptions": "misconceptions/math2_u04.json",
+  "types": [
+    7,
+    8,
+    9
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

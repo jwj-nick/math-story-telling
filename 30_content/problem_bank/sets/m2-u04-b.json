@@ -1,0 +1,22 @@
+{
+  "id": "m2-u04-b",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 4,
+  "unit_name": "연립일차방정식",
+  "title": "대입법과 계수 정리",
+  "subtitle": "대입법 · 괄호가 있는 연립방정식 · 분수·소수 계수",
+  "bank": "math2/u04/practice.json",
+  "misconceptions": "misconceptions/math2_u04.json",
+  "types": [
+    4,
+    5,
+    6
+  ],
+  "time_min": 18,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

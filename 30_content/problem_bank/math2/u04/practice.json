@@ -1,0 +1,735 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 4,
+    "unit_name": "연립일차방정식",
+    "source": "40_grades/middle/math2/app2/p4.html",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_math2_p.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 script 의 P(...) 값 그대로. 절대 손으로 고치지 않는다. answer_print 는 원자에서 합성한 지면 정답. 유형 2 세 문항은 원본이 2지선다(choice2) 였고, 지면에서는 대입 결과를 쓰게 하는 단답형으로 재작성했다."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "미지수가 2개인 일차방정식의 해",
+      "principle": "미지수가 2개인 일차방정식은 해가 하나가 아니에요. x 값을 정하면 그에 맞는 y 값이 하나로 정해져요.",
+      "problems": [
+        {
+          "id": "m2-u04-t01-01",
+          "level": "L",
+          "stem_src": "2x + y = 7 에서 x = 2 일 때 y?",
+          "stem_print": "일차방정식 2x + y = 7 에서 x = 2 일 때, y 의 값을 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "y = 3",
+          "answer_accept": [
+            "3"
+          ],
+          "answer_unit": null,
+          "answer_format": "y = 꼴로 (단위 없음)",
+          "figure": null,
+          "hint": "x 자리에 2 를 넣을 때, x 앞의 계수 2 도 함께 곱해요.",
+          "solution": "2x + y = 7 에 x = 2 를 대입하면 2 × 2 + y = 7, 즉 4 + y = 7 이에요. 따라서 y = 3.",
+          "work_space": "sm",
+          "misconceptions": [
+            "sub.coefficient-ignored",
+            "sim.two-unknown-many"
+          ]
+        },
+        {
+          "id": "m2-u04-t01-02",
+          "level": "L",
+          "stem_src": "x + 2y = 8 에서 y = 3 일 때 x?",
+          "stem_print": "일차방정식 x + 2y = 8 에서 y = 3 일 때, x 의 값을 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "x = 2",
+          "answer_accept": [
+            "2"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = 꼴로 (단위 없음)",
+          "figure": null,
+          "hint": "y 자리에 3 을 넣어요. x 자리에 넣지 않도록 조심해요.",
+          "solution": "x + 2y = 8 에 y = 3 을 대입하면 x + 2 × 3 = 8, 즉 x + 6 = 8 이에요. 따라서 x = 2.",
+          "work_space": "sm",
+          "misconceptions": [
+            "sub.coefficient-ignored",
+            "sim.swap-xy"
+          ]
+        },
+        {
+          "id": "m2-u04-t01-03",
+          "level": "M",
+          "stem_src": "3x − y = 5 에서 x = 2 일 때 y?",
+          "stem_print": "일차방정식 3x − y = 5 에서 x = 2 일 때, y 의 값을 구하시오.",
+          "answer_atoms": [
+            "1"
+          ],
+          "answer_print": "y = 1",
+          "answer_accept": [
+            "1"
+          ],
+          "answer_unit": null,
+          "answer_format": "y = 꼴로 (단위 없음)",
+          "figure": null,
+          "hint": "y 앞에 붙은 − 부호를 그대로 살려서 대입해요.",
+          "solution": "3x − y = 5 에 x = 2 를 대입하면 3 × 2 − y = 5, 즉 6 − y = 5 예요. 따라서 y = 1.",
+          "work_space": "sm",
+          "misconceptions": [
+            "sim.minus-sign-drop",
+            "sub.coefficient-ignored"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "연립방정식과 그 해",
+      "principle": "순서쌍 (x, y) 가 두 식을 모두 만족해야 연립방정식의 해예요. 한 식이라도 어긋나면 해가 될 수 없어요.",
+      "problems": [
+        {
+          "id": "m2-u04-t02-01",
+          "level": "L",
+          "stem_src": "(1, 2) 는 [ x+y=3, x−y=−1 ] 의 해일까요? (2지선다)",
+          "stem_print": "순서쌍 (1, 2) 를 연립방정식 x + y = 3, x − y = −1 의 두 식에 각각 대입한 결과를 풀이 공간에 쓰고, 이 순서쌍이 연립방정식의 해인지 판단하시오.",
+          "answer_atoms": [
+            "해가 맞아요"
+          ],
+          "answer_print": "해가 맞아요",
+          "answer_accept": [
+            "해가 맞다",
+            "해예요",
+            "맞아요"
+          ],
+          "answer_unit": null,
+          "answer_format": "해가 맞아요 / 해가 아니에요 중 하나를 쓰는 꼴로",
+          "figure": null,
+          "hint": "첫 식만 확인하고 넘어가지 말고, 둘째 식에도 넣어 봐요.",
+          "solution": "1 + 2 = 3 이므로 첫 식이 맞아요. 1 − 2 = −1 이므로 둘째 식도 맞아요. 두 식을 모두 만족하니 이 순서쌍은 연립방정식의 해예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.pair-both-equations"
+          ]
+        },
+        {
+          "id": "m2-u04-t02-02",
+          "level": "M",
+          "stem_src": "(3, 1) 은 [ 2x−y=5, x+y=5 ] 의 해일까요? (2지선다)",
+          "stem_print": "순서쌍 (3, 1) 을 연립방정식 2x − y = 5, x + y = 5 의 두 식에 각각 대입한 결과를 풀이 공간에 쓰고, 이 순서쌍이 연립방정식의 해인지 판단하시오.",
+          "answer_atoms": [
+            "해가 아니에요"
+          ],
+          "answer_print": "해가 아니에요",
+          "answer_accept": [
+            "해가 아니다",
+            "아니에요"
+          ],
+          "answer_unit": null,
+          "answer_format": "해가 맞아요 / 해가 아니에요 중 하나를 쓰는 꼴로",
+          "figure": null,
+          "hint": "두 식 중 하나라도 어긋나면 어떻게 될까요?",
+          "solution": "2 × 3 − 1 = 5 이므로 첫 식은 맞아요. 그런데 3 + 1 = 4 로 둘째 식의 5 와 달라요. 한 식이 어긋나므로 이 순서쌍은 연립방정식의 해가 될 수 없어요.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.pair-both-equations",
+            "sim.swap-xy"
+          ]
+        },
+        {
+          "id": "m2-u04-t02-03",
+          "level": "M",
+          "stem_src": "(2, 2) 는 [ x+2y=6, 3x−y=4 ] 의 해일까요? (2지선다)",
+          "stem_print": "순서쌍 (2, 2) 를 연립방정식 x + 2y = 6, 3x − y = 4 의 두 식에 각각 대입한 결과를 풀이 공간에 쓰고, 이 순서쌍이 연립방정식의 해인지 판단하시오.",
+          "answer_atoms": [
+            "해가 맞아요"
+          ],
+          "answer_print": "해가 맞아요",
+          "answer_accept": [
+            "해가 맞다",
+            "해예요",
+            "맞아요"
+          ],
+          "answer_unit": null,
+          "answer_format": "해가 맞아요 / 해가 아니에요 중 하나를 쓰는 꼴로",
+          "figure": null,
+          "hint": "둘째 식의 − 부호까지 살려서 계산해요.",
+          "solution": "2 + 2 × 2 = 6 이므로 첫 식이 맞아요. 3 × 2 − 2 = 4 이므로 둘째 식도 맞아요. 두 식을 모두 만족해요.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.pair-both-equations",
+            "sim.minus-sign-drop"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "가감법 (더하거나 빼서 소거)",
+      "principle": "두 식을 더하거나 빼서 한 문자를 없애요. 없애려는 문자의 계수가 부호까지 같으면 빼고, 부호만 반대면 더해요.",
+      "problems": [
+        {
+          "id": "m2-u04-t03-01",
+          "level": "L",
+          "stem_src": "x + y = 10, x − y = 4 → (x, y)?",
+          "stem_print": "연립방정식 x + y = 10, x − y = 4 의 해를 구하시오.",
+          "answer_atoms": [
+            "7",
+            "3"
+          ],
+          "answer_print": "x = 7, y = 3",
+          "answer_accept": [
+            "(7, 3)",
+            "(x, y) = (7, 3)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "y 의 부호가 서로 반대예요. 두 식을 더하면 y 가 사라져요.",
+          "solution": "두 식을 더하면 2x = 14 이므로 x = 7 이에요. x = 7 을 x + y = 10 에 넣으면 y = 3. 따라서 x = 7, y = 3.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.add-sub-choice",
+            "sim.forget-second-value"
+          ]
+        },
+        {
+          "id": "m2-u04-t03-02",
+          "level": "L",
+          "stem_src": "2x + y = 8, x − y = 1 → (x, y)?",
+          "stem_print": "연립방정식 2x + y = 8, x − y = 1 의 해를 구하시오.",
+          "answer_atoms": [
+            "3",
+            "2"
+          ],
+          "answer_print": "x = 3, y = 2",
+          "answer_accept": [
+            "(3, 2)",
+            "(x, y) = (3, 2)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "y 의 계수가 +1 과 −1 이에요. 두 식을 더해 봐요.",
+          "solution": "두 식을 더하면 3x = 9 이므로 x = 3 이에요. x = 3 을 x − y = 1 에 넣으면 3 − y = 1 이므로 y = 2.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.add-sub-choice",
+            "sim.subtract-sign"
+          ]
+        },
+        {
+          "id": "m2-u04-t03-03",
+          "level": "M",
+          "stem_src": "3x + 2y = 12, x − 2y = −4 → (x, y)?",
+          "stem_print": "연립방정식 3x + 2y = 12, x − 2y = −4 의 해를 구하시오.",
+          "answer_atoms": [
+            "2",
+            "3"
+          ],
+          "answer_print": "x = 2, y = 3",
+          "answer_accept": [
+            "(2, 3)",
+            "(x, y) = (2, 3)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "2y 와 −2y 를 함께 없애 봐요. 오른쪽의 −4 도 그대로 계산해요.",
+          "solution": "두 식을 더하면 4x = 8 이므로 x = 2 예요. x = 2 를 3x + 2y = 12 에 넣으면 6 + 2y = 12, 즉 2y = 6 이므로 y = 3.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.add-sub-choice",
+            "sim.subtract-sign"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "대입법 (한 식을 끼워넣기)",
+      "principle": "한 문자를 나타낸 식을 다른 식의 그 문자 자리에 통째로 넣어요. 넣을 때는 반드시 괄호로 감싸요.",
+      "problems": [
+        {
+          "id": "m2-u04-t04-01",
+          "level": "L",
+          "stem_src": "y = x + 1, x + y = 7 → (x, y)?",
+          "stem_print": "연립방정식 y = x + 1, x + y = 7 의 해를 구하시오.",
+          "answer_atoms": [
+            "3",
+            "4"
+          ],
+          "answer_print": "x = 3, y = 4",
+          "answer_accept": [
+            "(3, 4)",
+            "(x, y) = (3, 4)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "x + y = 7 의 y 자리에 (x + 1) 을 괄호째 넣어요.",
+          "solution": "x + (x + 1) = 7 → 2x + 1 = 7 → 2x = 6 → x = 3. 이 값을 y = x + 1 에 넣으면 y = 4.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.substitute-no-paren",
+            "sim.forget-second-value"
+          ]
+        },
+        {
+          "id": "m2-u04-t04-02",
+          "level": "L",
+          "stem_src": "x = 2y, x + y = 9 → (x, y)?",
+          "stem_print": "연립방정식 x = 2y, x + y = 9 의 해를 구하시오.",
+          "answer_atoms": [
+            "6",
+            "3"
+          ],
+          "answer_print": "x = 6, y = 3",
+          "answer_accept": [
+            "(6, 3)",
+            "(x, y) = (6, 3)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "x 자리에 2y 를 넣으면 y 만 남은 방정식이 돼요.",
+          "solution": "2y + y = 9 → 3y = 9 → y = 3. 이 값을 x = 2y 에 넣으면 x = 6. 두 값을 x, y 자리에 맞게 적어요.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.forget-second-value",
+            "sim.swap-xy"
+          ]
+        },
+        {
+          "id": "m2-u04-t04-03",
+          "level": "M",
+          "stem_src": "y = 2x − 1, 3x + y = 9 → (x, y)?",
+          "stem_print": "연립방정식 y = 2x − 1, 3x + y = 9 의 해를 구하시오.",
+          "answer_atoms": [
+            "2",
+            "3"
+          ],
+          "answer_print": "x = 2, y = 3",
+          "answer_accept": [
+            "(2, 3)",
+            "(x, y) = (2, 3)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "3x + y = 9 의 y 자리에 (2x − 1) 을 괄호째 넣어요.",
+          "solution": "3x + (2x − 1) = 9 → 5x − 1 = 9 → 5x = 10 → x = 2. 이 값을 y = 2x − 1 에 넣으면 y = 3.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.substitute-no-paren",
+            "sim.minus-sign-drop"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "괄호가 있는 연립방정식",
+      "principle": "괄호를 먼저 풀거나 양변을 나누어 간단한 꼴로 정리한 뒤에 가감법이나 대입법으로 풀어요.",
+      "problems": [
+        {
+          "id": "m2-u04-t05-01",
+          "level": "L",
+          "stem_src": "2(x + y) = 10, x − y = 1 → (x, y)?",
+          "stem_print": "연립방정식 2(x + y) = 10, x − y = 1 의 해를 구하시오.",
+          "answer_atoms": [
+            "3",
+            "2"
+          ],
+          "answer_print": "x = 3, y = 2",
+          "answer_accept": [
+            "(3, 2)",
+            "(x, y) = (3, 2)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "양변을 2 로 나누면 첫 식이 훨씬 간단해져요.",
+          "solution": "2(x + y) = 10 의 양변을 2 로 나누면 x + y = 5. 이 식과 x − y = 1 을 더하면 2x = 6 → x = 3, 그러면 y = 2.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.multiply-all-terms",
+            "sim.add-sub-choice"
+          ]
+        },
+        {
+          "id": "m2-u04-t05-02",
+          "level": "M",
+          "stem_src": "2(x − 1) + y = 7, x + y = 5 → (x, y)?",
+          "stem_print": "연립방정식 2(x − 1) + y = 7, x + y = 5 의 해를 구하시오.",
+          "answer_atoms": [
+            "4",
+            "1"
+          ],
+          "answer_print": "x = 4, y = 1",
+          "answer_accept": [
+            "(4, 1)",
+            "(x, y) = (4, 1)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "2 를 괄호 안의 x 와 −1 에 모두 곱해요.",
+          "solution": "2(x − 1) + y = 7 → 2x − 2 + y = 7 → 2x + y = 9. 여기서 x + y = 5 를 빼면 x = 4, 그러면 y = 1.",
+          "work_space": "md",
+          "misconceptions": [
+            "poly.distribute-partial",
+            "sim.substitute-no-paren"
+          ]
+        },
+        {
+          "id": "m2-u04-t05-03",
+          "level": "M",
+          "stem_src": "3(x − y) = 6, x + y = 6 → (x, y)?",
+          "stem_print": "연립방정식 3(x − y) = 6, x + y = 6 의 해를 구하시오.",
+          "answer_atoms": [
+            "4",
+            "2"
+          ],
+          "answer_print": "x = 4, y = 2",
+          "answer_accept": [
+            "(4, 2)",
+            "(x, y) = (4, 2)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "3(x − y) = 6 의 양변을 3 으로 나눠 봐요.",
+          "solution": "3(x − y) = 6 의 양변을 3 으로 나누면 x − y = 2. 이 식과 x + y = 6 을 더하면 2x = 8 → x = 4, 그러면 y = 2.",
+          "work_space": "md",
+          "misconceptions": [
+            "poly.distribute-partial",
+            "sim.multiply-all-terms"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "분수·소수 계수의 연립방정식",
+      "principle": "분수는 분모의 최소공배수를, 소수는 10 이나 100 을 양변에 곱해서 정수 계수로 바꾼 뒤에 풀어요. 곱할 때는 모든 항에 빠짐없이 곱해요.",
+      "problems": [
+        {
+          "id": "m2-u04-t06-01",
+          "level": "M",
+          "stem_src": "x/2 + y/2 = 4, x − y = 2 → (x, y)?",
+          "stem_print": "연립방정식 <span class=\"frac\"><b>x</b><i>2</i></span> + <span class=\"frac\"><b>y</b><i>2</i></span> = 4, x − y = 2 의 해를 구하시오.",
+          "answer_atoms": [
+            "5",
+            "3"
+          ],
+          "answer_print": "x = 5, y = 3",
+          "answer_accept": [
+            "(5, 3)",
+            "(x, y) = (5, 3)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "첫 식의 양변에 2 를 곱하면 분모가 사라져요. 오른쪽의 4 에도 곱해요.",
+          "solution": "첫 식의 양변에 2 를 곱하면 x + y = 8. 이 식과 x − y = 2 를 더하면 2x = 10 → x = 5, 그러면 y = 3.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.multiply-all-terms",
+            "sim.wrong-multiplier"
+          ]
+        },
+        {
+          "id": "m2-u04-t06-02",
+          "level": "M",
+          "stem_src": "0.3x + 0.1y = 1.1, x + y = 5 → (x, y)?",
+          "stem_print": "연립방정식 0.3x + 0.1y = 1.1, x + y = 5 의 해를 구하시오.",
+          "answer_atoms": [
+            "3",
+            "2"
+          ],
+          "answer_print": "x = 3, y = 2",
+          "answer_accept": [
+            "(3, 2)",
+            "(x, y) = (3, 2)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "소수 첫째 자리까지 있으니 양변에 10 을 곱해요. 오른쪽의 1.1 에도 곱해요.",
+          "solution": "첫 식의 양변에 10 을 곱하면 3x + y = 11. 여기서 x + y = 5 를 빼면 2x = 6 → x = 3, 그러면 y = 2.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.wrong-multiplier",
+            "sim.multiply-all-terms"
+          ]
+        },
+        {
+          "id": "m2-u04-t06-03",
+          "level": "H",
+          "stem_src": "x/3 + y = 4, x + y = 6 → (x, y)?",
+          "stem_print": "연립방정식 <span class=\"frac\"><b>x</b><i>3</i></span> + y = 4, x + y = 6 의 해를 구하시오.",
+          "answer_atoms": [
+            "3",
+            "3"
+          ],
+          "answer_print": "x = 3, y = 3",
+          "answer_accept": [
+            "(3, 3)",
+            "(x, y) = (3, 3)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "첫 식의 양변에 3 을 곱해요. y 와 4 에도 3 을 곱해야 해요.",
+          "solution": "첫 식의 양변에 3 을 곱하면 x + 3y = 12. 여기서 x + y = 6 을 빼면 2y = 6 → y = 3, 그러면 x = 3.",
+          "work_space": "lg",
+          "misconceptions": [
+            "sim.wrong-multiplier",
+            "sim.multiply-all-terms"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "A = B = C 꼴",
+      "principle": "A = B = C 는 두 개의 식으로 나눠서 풀어요. 보통 A = C 와 B = C 로 나누면 편해요.",
+      "problems": [
+        {
+          "id": "m2-u04-t07-01",
+          "level": "M",
+          "stem_src": "x + 2y = 2x + y = 9 → (x, y)?",
+          "stem_print": "방정식 x + 2y = 2x + y = 9 의 해를 구하시오.",
+          "answer_atoms": [
+            "3",
+            "3"
+          ],
+          "answer_print": "x = 3, y = 3",
+          "answer_accept": [
+            "(3, 3)",
+            "(x, y) = (3, 3)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "x + 2y = 9 와 2x + y = 9 두 식으로 나눠요.",
+          "solution": "x + 2y = 9, 2x + y = 9 로 나눠요. 두 식을 빼면 −x + y = 0 이므로 x 와 y 가 같아요. x + 2x = 9 → x = 3, 그러면 y = 3.",
+          "work_space": "lg",
+          "misconceptions": [
+            "sim.abc-split",
+            "sim.subtract-sign"
+          ]
+        },
+        {
+          "id": "m2-u04-t07-02",
+          "level": "M",
+          "stem_src": "2x + y = x + 3y = 10 → (x, y)?",
+          "stem_print": "방정식 2x + y = x + 3y = 10 의 해를 구하시오.",
+          "answer_atoms": [
+            "4",
+            "2"
+          ],
+          "answer_print": "x = 4, y = 2",
+          "answer_accept": [
+            "(4, 2)",
+            "(x, y) = (4, 2)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "= 10 인 식 두 개로 나눠 봐요.",
+          "solution": "2x + y = 10, x + 3y = 10 으로 나눠요. 첫 식에서 y = 10 − 2x 를 둘째 식에 넣으면 x + 3(10 − 2x) = 10 → −5x = −20 → x = 4, 그러면 y = 2.",
+          "work_space": "lg",
+          "misconceptions": [
+            "sim.abc-split",
+            "sim.add-sub-choice"
+          ]
+        },
+        {
+          "id": "m2-u04-t07-03",
+          "level": "H",
+          "stem_src": "x + y = 2x − y = 3 → (x, y)?",
+          "stem_print": "방정식 x + y = 2x − y = 3 의 해를 구하시오.",
+          "answer_atoms": [
+            "2",
+            "1"
+          ],
+          "answer_print": "x = 2, y = 1",
+          "answer_accept": [
+            "(2, 1)",
+            "(x, y) = (2, 1)"
+          ],
+          "answer_unit": null,
+          "answer_format": "x = , y = 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "= 3 인 식 두 개로 나눈 뒤 두 식을 더해 봐요.",
+          "solution": "x + y = 3, 2x − y = 3 으로 나눠요. 두 식을 더하면 3x = 6 → x = 2, 그러면 y = 1.",
+          "work_space": "lg",
+          "misconceptions": [
+            "sim.abc-split",
+            "sim.forget-second-value"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "해가 주어졌을 때 상수 구하기",
+      "principle": "주어진 해를 식에 대입하면 모르는 상수만 남는 방정식이 돼요. 순서쌍의 앞이 x, 뒤가 y 예요.",
+      "problems": [
+        {
+          "id": "m2-u04-t08-01",
+          "level": "L",
+          "stem_src": "ax + y = 7 의 해가 (3, 1) 일 때 상수 a?",
+          "stem_print": "일차방정식 ax + y = 7 의 해가 (3, 1) 일 때, 상수 a 의 값을 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "a = 2",
+          "answer_accept": [
+            "2"
+          ],
+          "answer_unit": null,
+          "answer_format": "a = 꼴로 (단위 없음)",
+          "figure": null,
+          "hint": "x 자리에 3, y 자리에 1 을 넣어요.",
+          "solution": "ax + y = 7 에 (3, 1) 을 대입하면 3a + 1 = 7 → 3a = 6 → a = 2.",
+          "work_space": "sm",
+          "misconceptions": [
+            "sim.swap-xy"
+          ]
+        },
+        {
+          "id": "m2-u04-t08-02",
+          "level": "M",
+          "stem_src": "x + ay = 14 의 해가 (2, 4) 일 때 상수 a?",
+          "stem_print": "일차방정식 x + ay = 14 의 해가 (2, 4) 일 때, 상수 a 의 값을 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "a = 3",
+          "answer_accept": [
+            "3"
+          ],
+          "answer_unit": null,
+          "answer_format": "a = 꼴로 (단위 없음)",
+          "figure": null,
+          "hint": "x 자리에 2, y 자리에 4 를 넣으면 a 만 남아요.",
+          "solution": "x + ay = 14 에 (2, 4) 를 대입하면 2 + 4a = 14 → 4a = 12 → a = 3.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.swap-xy"
+          ]
+        },
+        {
+          "id": "m2-u04-t08-03",
+          "level": "M",
+          "stem_src": "2x − ay = 2 의 해가 (3, 1) 일 때 상수 a?",
+          "stem_print": "일차방정식 2x − ay = 2 의 해가 (3, 1) 일 때, 상수 a 의 값을 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "a = 4",
+          "answer_accept": [
+            "4"
+          ],
+          "answer_unit": null,
+          "answer_format": "a = 꼴로 (단위 없음)",
+          "figure": null,
+          "hint": "ay 앞의 − 부호를 그대로 살려서 대입해요.",
+          "solution": "2x − ay = 2 에 (3, 1) 을 대입하면 6 − a = 2 → a = 4.",
+          "work_space": "md",
+          "misconceptions": [
+            "sim.minus-sign-drop",
+            "sim.swap-xy"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "연립방정식의 활용 (개수·나이·점수)",
+      "principle": "모르는 두 값을 x, y 로 놓고 조건 두 개를 식 두 개로 세워요. 개수 조건과 금액 조건처럼 성격이 다른 조건은 각각 다른 식이 돼요.",
+      "problems": [
+        {
+          "id": "m2-u04-t09-01",
+          "level": "M",
+          "stem_src": "볼펜(500원) x자루와 형광펜(800원) y개를 모두 10개 사고 6200원 냈어요. 각각 몇 개?",
+          "stem_print": "한 자루에 500원인 볼펜과 한 개에 800원인 형광펜을 합하여 모두 10개 사고 6200원을 냈다. 볼펜과 형광펜을 각각 몇 개 샀는지 구하시오.",
+          "answer_atoms": [
+            "6",
+            "4"
+          ],
+          "answer_print": "볼펜 6자루, 형광펜 4개",
+          "answer_accept": [
+            "볼펜 6개, 형광펜 4개",
+            "(6, 4)"
+          ],
+          "answer_unit": null,
+          "answer_format": "볼펜 ○자루, 형광펜 ○개 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "개수에 대한 식 하나, 금액에 대한 식 하나를 세워요.",
+          "solution": "볼펜을 x자루, 형광펜을 y개라 하면 x + y = 10, 500x + 800y = 6200 이에요. 둘째 식을 100 으로 나누면 5x + 8y = 62, 첫 식에 5 를 곱한 5x + 5y = 50 을 빼면 3y = 12 → y = 4, 그러면 x = 6.",
+          "work_space": "lg",
+          "misconceptions": [
+            "word.set-two-equations",
+            "word.check-back"
+          ]
+        },
+        {
+          "id": "m2-u04-t09-02",
+          "level": "M",
+          "stem_src": "엄마와 딸의 나이 합이 50살, 엄마가 딸보다 26살 많아요. 각각 몇 살?",
+          "stem_print": "엄마와 딸의 나이의 합은 50살이고, 엄마는 딸보다 26살이 많다. 엄마와 딸의 나이를 각각 구하시오.",
+          "answer_atoms": [
+            "38",
+            "12"
+          ],
+          "answer_print": "엄마 38살, 딸 12살",
+          "answer_accept": [
+            "(38, 12)"
+          ],
+          "answer_unit": null,
+          "answer_format": "엄마 ○살, 딸 ○살 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "합에 대한 식 하나, 차에 대한 식 하나를 세워요.",
+          "solution": "엄마를 x살, 딸을 y살이라 하면 x + y = 50, x − y = 26 이에요. 두 식을 더하면 2x = 76 → x = 38, 그러면 y = 12.",
+          "work_space": "md",
+          "misconceptions": [
+            "word.set-two-equations",
+            "sim.add-sub-choice"
+          ]
+        },
+        {
+          "id": "m2-u04-t09-03",
+          "level": "H",
+          "stem_src": "농구에서 2점슛 x개와 3점슛 y개로 모두 10골, 23점을 넣었어요. 각각 몇 개?",
+          "stem_print": "농구 경기에서 2점슛과 3점슛을 합하여 모두 10골을 넣어 23점을 얻었다. 2점슛과 3점슛을 각각 몇 개 넣었는지 구하시오.",
+          "answer_atoms": [
+            "7",
+            "3"
+          ],
+          "answer_print": "2점슛 7개, 3점슛 3개",
+          "answer_accept": [
+            "(7, 3)"
+          ],
+          "answer_unit": null,
+          "answer_format": "2점슛 ○개, 3점슛 ○개 꼴로 (두 값 모두)",
+          "figure": null,
+          "hint": "골 수에 대한 식 하나, 점수에 대한 식 하나를 세워요.",
+          "solution": "2점슛을 x개, 3점슛을 y개라 하면 x + y = 10, 2x + 3y = 23 이에요. 첫 식에 2 를 곱한 2x + 2y = 20 을 빼면 y = 3, 그러면 x = 7.",
+          "work_space": "lg",
+          "misconceptions": [
+            "word.set-two-equations",
+            "word.check-back"
+          ]
+        }
+      ]
+    }
+  ]
+}

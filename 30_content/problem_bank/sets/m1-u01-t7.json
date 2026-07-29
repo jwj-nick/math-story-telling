@@ -1,0 +1,20 @@
+{
+  "id": "m1-u01-t7",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 1,
+  "unit_name": "소인수분해",
+  "title": "최대공약수와 최소공배수의 관계",
+  "subtitle": "유형 7 · 두 수의 곱 = 최대공약수 × 최소공배수 · 9문항",
+  "bank": "math1/u01/practice.json",
+  "misconceptions": "misconceptions/math1_u01.json",
+  "types": [
+    7
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

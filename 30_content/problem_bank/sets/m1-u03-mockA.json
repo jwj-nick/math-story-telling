@@ -1,0 +1,32 @@
+{
+  "grade": "math1",
+  "unit": 3,
+  "unit_name": "문자와 식",
+  "bank": "math1/u03/practice.json",
+  "misconceptions": "misconceptions/math1_u03.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u03-mockA",
+  "kind": "mock",
+  "title": "문자와 식 모의고사 A",
+  "subtitle": "유형 1~7 에서 기본·보통 난이도로 14 문항 · 단원 전체 점검",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "L": 1,
+      "M": 1
+    }
+  },
+  "time_min": 35
+}

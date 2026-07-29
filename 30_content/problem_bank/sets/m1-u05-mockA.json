@@ -1,0 +1,16 @@
+{
+  "id": "m1-u05-mockA",
+  "kind": "mock",
+  "grade": "math1",
+  "unit": 5,
+  "unit_name": "좌표와 그래프",
+  "title": "좌표와 그래프 모의 A",
+  "subtitle": "유형 1~7 · 기본 다지기 (쉬움 + 보통)",
+  "bank": "math1/u05/practice.json",
+  "misconceptions": "misconceptions/math1_u05.json",
+  "types": [1, 2, 3, 4, 5, 6, 7],
+  "pick": {"quota": {"L": 1, "M": 1}},
+  "time_min": 30,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

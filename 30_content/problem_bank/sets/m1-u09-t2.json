@@ -1,0 +1,15 @@
+{
+  "id": "m1-u09-t2",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 9,
+  "unit_name": "다각형",
+  "title": "대각선의 수",
+  "subtitle": "유형 2 · 대각선 공식 직접 계산 · 역산 · 두 다각형 비교",
+  "bank": "math1/u09/practice.json",
+  "misconceptions": "misconceptions/math1_u09.json",
+  "types": [2],
+  "time_min": 20,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

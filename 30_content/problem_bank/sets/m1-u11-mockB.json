@@ -1,0 +1,32 @@
+{
+  "id": "m1-u11-mockB",
+  "kind": "mock",
+  "grade": "math1",
+  "unit": 11,
+  "unit_name": "다면체와 회전체",
+  "title": "2차 모의 · 보통",
+  "subtitle": "7유형 전체에서 유형마다 보통·도전 1문항씩 · 14문항",
+  "bank": "math1/u11/practice.json",
+  "misconceptions": "misconceptions/math1_u11.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "M": 1,
+      "H": 1
+    }
+  },
+  "time_min": 25,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,22 @@
+{
+  "id": "m2-u05-b",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 5,
+  "unit_name": "일차함수와 그래프",
+  "title": "절편과 기울기",
+  "subtitle": "x절편·y절편 · 기울기 구하기 · 그래프의 모양",
+  "bank": "math2/u05/practice.json",
+  "misconceptions": "misconceptions/math2_u05.json",
+  "types": [
+    4,
+    5,
+    6
+  ],
+  "time_min": 16,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

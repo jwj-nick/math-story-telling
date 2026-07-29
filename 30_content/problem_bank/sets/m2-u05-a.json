@@ -1,0 +1,22 @@
+{
+  "id": "m2-u05-a",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 5,
+  "unit_name": "일차함수와 그래프",
+  "title": "일차함수의 뜻과 평행이동",
+  "subtitle": "함숫값 구하기 · 일차함수인지 판별 · 평행이동",
+  "bank": "math2/u05/practice.json",
+  "misconceptions": "misconceptions/math2_u05.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

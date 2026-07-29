@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 4,
+  "unit_name": "일차방정식",
+  "bank": "math1/u04/practice.json",
+  "misconceptions": "misconceptions/math1_u04.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u04-t2",
+  "kind": "type-set",
+  "title": "등식의 성질",
+  "subtitle": "유형 2 · 양변에 같은 수 더하기·빼기·곱하기·나누기 · 0 으로 나눌 수 없는 까닭",
+  "types": [
+    2
+  ],
+  "time_min": 20
+}

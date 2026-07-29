@@ -1,0 +1,20 @@
+{
+  "id": "m1-u12-t1",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 12,
+  "unit_name": "입체도형의 겉넓이와 부피",
+  "title": "각기둥의 겉넓이·부피",
+  "subtitle": "직육면체 · 정육면체 · 삼각기둥 — 밑면 2개와 옆넓이",
+  "bank": "math1/u12/practice.json",
+  "misconceptions": "misconceptions/math1_u12.json",
+  "types": [
+    1
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

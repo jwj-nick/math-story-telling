@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 2,
+  "unit_name": "정수와 유리수",
+  "bank": "math1/u02/practice.json",
+  "misconceptions": "misconceptions/math1_u02.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u02-t7",
+  "kind": "type-set",
+  "title": "사칙 혼합 계산",
+  "subtitle": "유형 7 · 계산 순서 · 괄호와 거듭제곱 · 여러 단계 계산",
+  "types": [
+    7
+  ],
+  "time_min": 26
+}

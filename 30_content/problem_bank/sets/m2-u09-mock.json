@@ -1,0 +1,32 @@
+{
+  "id": "m2-u09-mock",
+  "kind": "mock",
+  "grade": "math2",
+  "unit": 9,
+  "unit_name": "도형의 닮음",
+  "title": "단원 9 시험 대비 회차",
+  "subtitle": "6개 유형을 섞어서 · 쉬운 것부터 어려운 것 순서로",
+  "bank": "math2/u09/practice.json",
+  "misconceptions": "misconceptions/math2_u09.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "pick": {
+    "order": "level",
+    "quota": {
+      "L": 1,
+      "M": 1
+    }
+  },
+  "time_min": 22,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

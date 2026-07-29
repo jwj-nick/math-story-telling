@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 7,
+  "unit_name": "기본 도형",
+  "bank": "math1/u07/practice.json",
+  "misconceptions": "misconceptions/math1_u07.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u07-t7",
+  "kind": "type-set",
+  "title": "공간에서 위치 관계",
+  "subtitle": "공간에만 있는 꼬인 위치 · 직육면체로 세어 보기 · 기본 3 · 보통 3 · 도전 3",
+  "types": [
+    7
+  ],
+  "time_min": 20
+}

@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 2,
+  "unit_name": "정수와 유리수",
+  "bank": "math1/u02/practice.json",
+  "misconceptions": "misconceptions/math1_u02.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u02-t6",
+  "kind": "type-set",
+  "title": "곱셈과 나눗셈",
+  "subtitle": "유형 6 · 부호 정하기 · 역수 · 분배법칙 · 음수의 거듭제곱",
+  "types": [
+    6
+  ],
+  "time_min": 24
+}

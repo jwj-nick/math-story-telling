@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 8,
+  "unit_name": "작도와 합동",
+  "bank": "math1/u08/practice.json",
+  "misconceptions": "misconceptions/math1_u08.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u08-t1",
+  "kind": "type-set",
+  "title": "작도 도구·기본 작도의 의미",
+  "subtitle": "눈금 없는 자와 컴퍼스로 할 수 있는 일 · 작도의 뜻 · 기본 3 · 보통 3 · 도전 3",
+  "types": [
+    1
+  ],
+  "time_min": 20
+}

@@ -1,0 +1,36 @@
+{
+  "id": "m2-u05-mock",
+  "kind": "mock",
+  "grade": "math2",
+  "unit": 5,
+  "unit_name": "일차함수와 그래프",
+  "title": "일차함수와 그래프 모의",
+  "subtitle": "9가지 유형에서 한 문항씩 · 난이도 오름차순 · 시험처럼 풀어요",
+  "bank": "math2/u05/practice.json",
+  "misconceptions": "misconceptions/math2_u05.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "pick": {
+    "per_type": 1,
+    "levels": [
+      "H",
+      "M",
+      "L"
+    ]
+  },
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

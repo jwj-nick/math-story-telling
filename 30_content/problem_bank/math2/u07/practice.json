@@ -1,0 +1,465 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 7,
+    "unit_name": "삼각형의 성질",
+    "source": "40_grades/middle/math2/app2/p7.html",
+    "generation": "D",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_math2_p.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 script 의 P(...)/pick(...) 값 그대로. 절대 손으로 고치지 않는다. 2지선다 5문항은 지면에서 단답형으로 재작성했다."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "삼각형의 세 각의 크기의 합",
+      "principle": "삼각형의 세 각의 크기의 합은 언제나 180°예요. 두 각을 알면 180°에서 그 두 각을 빼서 나머지 각을 구해요.",
+      "problems": [
+        {
+          "id": "m2-u07-t01-01",
+          "level": "L",
+          "stem_src": "두 각이 50°, 60°일 때 나머지 각은?",
+          "stem_print": "삼각형의 세 각 중 두 각의 크기가 50°, 60°이다. 나머지 한 각의 크기를 구하시오.",
+          "answer_atoms": [
+            "70"
+          ],
+          "answer_print": "70",
+          "answer_accept": [
+            "70도"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "세 각을 모두 더하면 180°예요.",
+          "solution": "180° − (50° + 60°) = 180° − 110° = 70°.",
+          "work_space": "sm",
+          "misconceptions": [
+            "tri.angle-sum-not180",
+            "tri.subtract-one-angle"
+          ]
+        },
+        {
+          "id": "m2-u07-t01-02",
+          "level": "L",
+          "stem_src": "두 각이 90°, 35°일 때 나머지 각은?",
+          "stem_print": "삼각형의 세 각 중 두 각의 크기가 90°, 35°이다. 나머지 한 각의 크기를 구하시오.",
+          "answer_atoms": [
+            "55"
+          ],
+          "answer_print": "55",
+          "answer_accept": [
+            "55도"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "직각인 90°도 세 각 가운데 하나예요.",
+          "solution": "180° − (90° + 35°) = 180° − 125° = 55°.",
+          "work_space": "sm",
+          "misconceptions": [
+            "tri.right-angle-excluded",
+            "tri.angle-sum-not180"
+          ]
+        },
+        {
+          "id": "m2-u07-t01-03",
+          "level": "M",
+          "stem_src": "두 각이 72°, 68°일 때 나머지 각은?",
+          "stem_print": "삼각형의 세 각 중 두 각의 크기가 72°, 68°이다. 나머지 한 각의 크기를 구하시오.",
+          "answer_atoms": [
+            "40"
+          ],
+          "answer_print": "40",
+          "answer_accept": [
+            "40도"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "두 각을 먼저 더한 다음 180°에서 빼요.",
+          "solution": "72° + 68° = 140° 이므로 180° − 140° = 40°.",
+          "work_space": "md",
+          "misconceptions": [
+            "tri.subtract-one-angle"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "이등변삼각형의 밑각",
+      "principle": "이등변삼각형에서는 두 밑각의 크기가 같아요. 꼭지각을 알면 밑각 = (180° − 꼭지각) ÷ 2 로 구해요.",
+      "problems": [
+        {
+          "id": "m2-u07-t02-01",
+          "level": "L",
+          "stem_src": "꼭지각이 40°인 이등변삼각형의 한 밑각은?",
+          "stem_print": "두 변의 길이가 같은 이등변삼각형에서 꼭지각의 크기가 40°이다. 한 밑각의 크기를 구하시오.",
+          "answer_atoms": [
+            "70"
+          ],
+          "answer_print": "70",
+          "answer_accept": [
+            "70도"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "180°에서 꼭지각을 먼저 빼고, 남은 것을 두 밑각이 똑같이 나눠 가져요.",
+          "solution": "(180° − 40°) ÷ 2 = 140° ÷ 2 = 70°.",
+          "work_space": "sm",
+          "misconceptions": [
+            "iso.halve-apex",
+            "iso.apex-base-swap"
+          ]
+        },
+        {
+          "id": "m2-u07-t02-02",
+          "level": "M",
+          "stem_src": "한 밑각이 65°인 이등변삼각형의 꼭지각은?",
+          "stem_print": "이등변삼각형의 한 밑각의 크기가 65°이다. 이 삼각형의 꼭지각의 크기를 구하시오.",
+          "answer_atoms": [
+            "50"
+          ],
+          "answer_print": "50",
+          "answer_accept": [
+            "50도"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "밑각은 하나가 아니라 둘이라는 점을 잊지 말아요.",
+          "solution": "밑각이 65°씩 두 개이므로 65° + 65° = 130°. 따라서 꼭지각은 180° − 130° = 50°.",
+          "work_space": "md",
+          "misconceptions": [
+            "iso.base-to-apex-forget-double",
+            "iso.apex-base-swap"
+          ]
+        },
+        {
+          "id": "m2-u07-t02-03",
+          "level": "M",
+          "stem_src": "꼭지각이 100°인 이등변삼각형의 한 밑각은?",
+          "stem_print": "이등변삼각형의 꼭지각의 크기가 100°이다. 한 밑각의 크기를 구하시오.",
+          "answer_atoms": [
+            "40"
+          ],
+          "answer_print": "40",
+          "answer_accept": [
+            "40도"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "꼭지각이 커지면 두 밑각은 그만큼 작아져요.",
+          "solution": "(180° − 100°) ÷ 2 = 80° ÷ 2 = 40°.",
+          "work_space": "md",
+          "misconceptions": [
+            "iso.halve-apex"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "이등변삼각형의 성질과 그 역",
+      "principle": "두 변의 길이가 같으면 두 밑각의 크기가 같아요. 거꾸로 두 각의 크기가 같으면 그 두 각과 마주 보는 변의 길이도 같아요.",
+      "problems": [
+        {
+          "id": "m2-u07-t03-01",
+          "level": "L",
+          "stem_src": "이등변삼각형의 한 밑각이 58°일 때, 다른 밑각은?",
+          "stem_print": "이등변삼각형의 한 밑각의 크기가 58°이다. 다른 한 밑각의 크기를 구하시오.",
+          "answer_atoms": [
+            "58"
+          ],
+          "answer_print": "58",
+          "answer_accept": [
+            "58도"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "두 밑각은 크기가 서로 같아요.",
+          "solution": "이등변삼각형의 두 밑각은 크기가 같으므로 다른 밑각도 58°.",
+          "work_space": "sm",
+          "misconceptions": [
+            "iso.side-angle-direction"
+          ]
+        },
+        {
+          "id": "m2-u07-t03-02",
+          "level": "M",
+          "stem_src": "두 각이 55°, 55°인 삼각형은 이등변삼각형일까요? (2지선다 → 단답 재작성)",
+          "stem_print": "두 내각의 크기가 각각 55°인 삼각형이 있다. 이 삼각형은 어떤 삼각형인지 그 이름을 쓰시오.",
+          "answer_atoms": [
+            "이등변이에요"
+          ],
+          "answer_print": "이등변삼각형",
+          "answer_accept": [
+            "이등변삼각형이에요",
+            "두 변의 길이가 같은 삼각형"
+          ],
+          "answer_unit": null,
+          "answer_format": "삼각형의 이름을 낱말로 (단위 없음)",
+          "figure": null,
+          "hint": "두 각의 크기가 같으면 그 각과 마주 보는 두 변은 어떻게 될까요?",
+          "solution": "두 내각의 크기가 같으면 그 두 각과 마주 보는 두 변의 길이도 같아요(성질의 역). 그래서 두 변의 길이가 같은 삼각형이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "iso.side-angle-direction"
+          ]
+        },
+        {
+          "id": "m2-u07-t03-03",
+          "level": "M",
+          "stem_src": "이등변삼각형에서 한 밑각이 70°일 때, 꼭지각은?",
+          "stem_print": "이등변삼각형의 한 밑각의 크기가 70°이다. 꼭지각의 크기를 구하시오.",
+          "answer_atoms": [
+            "40"
+          ],
+          "answer_print": "40",
+          "answer_accept": [
+            "40도"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "밑각 두 개를 먼저 더해 보아요.",
+          "solution": "밑각이 70°씩 두 개이므로 70° + 70° = 140°. 따라서 꼭지각은 180° − 140° = 40°.",
+          "work_space": "md",
+          "misconceptions": [
+            "iso.apex-base-swap",
+            "iso.bisector-not-perp"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "삼각형의 외심과 외접원",
+      "principle": "외심은 세 변의 수직이등분선이 만나는 점이에요. 외심에서 세 꼭짓점까지의 거리는 모두 같고, 그 거리가 외접원의 반지름이에요.",
+      "problems": [
+        {
+          "id": "m2-u07-t04-01",
+          "level": "L",
+          "stem_src": "외심 O에서 OA = 5일 때, OB는?",
+          "stem_print": "삼각형 ABC의 외심을 O라 하자. 선분 OA의 길이가 5 cm일 때, 선분 OB의 길이를 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [
+            "5 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 cm 단위 수로",
+          "figure": null,
+          "hint": "외심에서 세 꼭짓점까지의 거리는 모두 같아요.",
+          "solution": "외심 O는 세 꼭짓점에서 같은 거리에 있으므로 선분 OB의 길이는 선분 OA와 같은 5 cm.",
+          "work_space": "sm",
+          "misconceptions": [
+            "center.circum-distance-target"
+          ]
+        },
+        {
+          "id": "m2-u07-t04-02",
+          "level": "M",
+          "stem_src": "외심은 세 변의 수직이등분선이 만나는 점일까요? (2지선다 → 단답 재작성)",
+          "stem_print": "삼각형의 세 변의 수직이등분선은 한 점에서 만난다. 이 점을 무엇이라 하는지 이름을 쓰시오.",
+          "answer_atoms": [
+            "맞아요"
+          ],
+          "answer_print": "외심 (외접원의 중심)",
+          "answer_accept": [
+            "외심"
+          ],
+          "answer_unit": null,
+          "answer_format": "점의 이름을 낱말로 (단위 없음)",
+          "figure": null,
+          "hint": "변을 수직으로 반 나누는 선을 따라가면 어떤 원의 중심에 닿을까요?",
+          "solution": "세 변의 수직이등분선이 한 점에서 만나요. 그 점은 세 꼭짓점에서 거리가 같아서 삼각형을 감싸는 원의 중심이 돼요.",
+          "work_space": "md",
+          "misconceptions": [
+            "center.circum-vs-in-line",
+            "center.circum-inside-always"
+          ]
+        },
+        {
+          "id": "m2-u07-t04-03",
+          "level": "M",
+          "stem_src": "빗변이 10인 직각삼각형의 외접원 반지름은? (직각삼각형의 외심 = 빗변의 중점)",
+          "stem_print": "빗변의 길이가 10 cm인 직각삼각형이 있다. 이 삼각형의 외접원의 반지름의 길이를 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [
+            "5 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 cm 단위 수로",
+          "figure": null,
+          "hint": "직각삼각형의 외심은 빗변의 한가운데에 있어요.",
+          "solution": "직각삼각형의 외심은 빗변의 중점이에요. 빗변이 지름이 되므로 반지름은 10 ÷ 2 = 5 (cm).",
+          "work_space": "md",
+          "misconceptions": [
+            "center.right-circum-midpoint",
+            "circle.radius-diameter"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "삼각형의 내심과 내접원",
+      "principle": "내심은 세 내각의 이등분선이 만나는 점이에요. 내심에서 세 변까지의 거리는 모두 같고, 그 거리가 내접원의 반지름이에요.",
+      "problems": [
+        {
+          "id": "m2-u07-t05-01",
+          "level": "L",
+          "stem_src": "내심 I에서 한 변까지 거리가 3일 때, 다른 변까지 거리는?",
+          "stem_print": "삼각형 ABC의 내심을 I라 하자. 점 I에서 한 변까지의 거리가 3 cm일 때, 다른 한 변까지의 거리를 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "3",
+          "answer_accept": [
+            "3 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 cm 단위 수로",
+          "figure": null,
+          "hint": "내심에서 세 변까지의 거리는 모두 같아요.",
+          "solution": "내심은 세 변에서 같은 거리에 있으므로 다른 변까지의 거리도 3 cm. 이 거리가 내접원의 반지름이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "center.circum-distance-target"
+          ]
+        },
+        {
+          "id": "m2-u07-t05-02",
+          "level": "M",
+          "stem_src": "내심은 세 각의 이등분선이 만나는 점일까요? (2지선다 → 단답 재작성)",
+          "stem_print": "삼각형의 세 내각의 이등분선은 한 점에서 만난다. 이 점을 무엇이라 하는지 이름을 쓰시오.",
+          "answer_atoms": [
+            "맞아요"
+          ],
+          "answer_print": "내심 (내접원의 중심)",
+          "answer_accept": [
+            "내심"
+          ],
+          "answer_unit": null,
+          "answer_format": "점의 이름을 낱말로 (단위 없음)",
+          "figure": null,
+          "hint": "각을 반으로 나누는 선을 따라가면 어떤 원의 중심에 닿을까요?",
+          "solution": "세 내각의 이등분선이 한 점에서 만나요. 그 점은 세 변에서 거리가 같아서 삼각형 안에 꼭 맞는 원의 중심이 돼요.",
+          "work_space": "md",
+          "misconceptions": [
+            "center.circum-vs-in-line"
+          ]
+        },
+        {
+          "id": "m2-u07-t05-03",
+          "level": "M",
+          "stem_src": "내접원이 한 변에 닿는 곳에서, 반지름은 그 변과 몇 도로 만날까요?",
+          "stem_print": "삼각형의 내접원이 한 변과 만나는 점을 T라 하고, 내심 I와 점 T를 선분으로 이었다. 선분 IT와 그 변이 이루는 각의 크기를 구하시오.",
+          "answer_atoms": [
+            "90"
+          ],
+          "answer_print": "90",
+          "answer_accept": [
+            "90도",
+            "직각"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "원의 접선과 반지름이 만나는 모양을 떠올려 보아요.",
+          "solution": "원의 접선은 접점을 지나는 반지름과 서로 수직이에요(⊥). 선분 IT가 내접원의 반지름이므로 두 선이 이루는 각은 90°.",
+          "work_space": "md",
+          "misconceptions": [
+            "center.incircle-tangent-perp"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "외심과 내심 구분·종합",
+      "principle": "외심은 변의 수직이등분선에서 나오고 삼각형을 감싸는 외접원의 중심이에요. 내심은 각의 이등분선에서 나오고 삼각형 안에 꼭 맞는 내접원의 중심이에요.",
+      "problems": [
+        {
+          "id": "m2-u07-t06-01",
+          "level": "L",
+          "stem_src": "삼각형을 감싸는 외접원의 중심은 무엇일까요? (2지선다 → 단답 재작성)",
+          "stem_print": "삼각형의 세 꼭짓점을 모두 지나는 원의 중심을 무엇이라 하는지 이름을 쓰시오.",
+          "answer_atoms": [
+            "외심"
+          ],
+          "answer_print": "외심 (외접원의 중심)",
+          "answer_accept": [
+            "외심"
+          ],
+          "answer_unit": null,
+          "answer_format": "점의 이름을 낱말로 (단위 없음)",
+          "figure": null,
+          "hint": "세 꼭짓점에서 거리가 같아야 그 원을 그릴 수 있어요.",
+          "solution": "세 꼭짓점을 모두 지나는 원이 외접원이고, 그 중심이 외심이에요. 외심은 세 변의 수직이등분선이 만나는 점이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "center.circum-vs-in-line",
+            "center.angle-formula-swap"
+          ]
+        },
+        {
+          "id": "m2-u07-t06-02",
+          "level": "M",
+          "stem_src": "삼각형 안에 꼭 맞는 내접원의 중심은 무엇일까요? (2지선다 → 단답 재작성)",
+          "stem_print": "삼각형의 세 변에 모두 접하는 원의 중심을 무엇이라 하는지 이름을 쓰시오.",
+          "answer_atoms": [
+            "내심"
+          ],
+          "answer_print": "내심 (내접원의 중심)",
+          "answer_accept": [
+            "내심"
+          ],
+          "answer_unit": null,
+          "answer_format": "점의 이름을 낱말로 (단위 없음)",
+          "figure": null,
+          "hint": "세 변에서 거리가 같아야 원이 세 변에 모두 닿아요.",
+          "solution": "세 변에 모두 접하는 원이 내접원이고, 그 중심이 내심이에요. 내심은 세 내각의 이등분선이 만나는 점이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "center.circum-distance-target",
+            "center.angle-formula-swap"
+          ]
+        },
+        {
+          "id": "m2-u07-t06-03",
+          "level": "M",
+          "stem_src": "외심에서 OA = OB = OC = 6일 때, 외접원의 지름은?",
+          "stem_print": "삼각형 ABC의 외심을 O라 하자. 선분 OA, 선분 OB, 선분 OC의 길이가 모두 6 cm일 때, 외접원의 지름의 길이를 구하시오.",
+          "answer_atoms": [
+            "12"
+          ],
+          "answer_print": "12",
+          "answer_accept": [
+            "12 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 cm 단위 수로",
+          "figure": null,
+          "hint": "지름은 반지름의 두 배예요.",
+          "solution": "외심에서 세 꼭짓점까지의 거리 6 cm가 외접원의 반지름이에요. 따라서 지름은 6 × 2 = 12 (cm).",
+          "work_space": "md",
+          "misconceptions": [
+            "circle.radius-diameter"
+          ]
+        }
+      ]
+    }
+  ]
+}

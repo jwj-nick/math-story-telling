@@ -1,0 +1,20 @@
+{
+  "id": "m1-u10-t1",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 10,
+  "unit_name": "원과 부채꼴",
+  "title": "원의 구성요소",
+  "subtitle": "유형 1 — 중심·반지름·지름 / 호·현 / 접선·할선 / 부채꼴·활꼴의 뜻",
+  "bank": "math1/u10/practice.json",
+  "misconceptions": "misconceptions/math1_u10.json",
+  "types": [
+    1
+  ],
+  "time_min": 18,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

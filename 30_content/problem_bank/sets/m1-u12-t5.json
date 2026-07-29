@@ -1,0 +1,20 @@
+{
+  "id": "m1-u12-t5",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 12,
+  "unit_name": "입체도형의 겉넓이와 부피",
+  "title": "구의 겉넓이·부피",
+  "subtitle": "4πr² 와 3분의 4 πr³ · 반구 · 1 : 2 : 3",
+  "bank": "math1/u12/practice.json",
+  "misconceptions": "misconceptions/math1_u12.json",
+  "types": [
+    5
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

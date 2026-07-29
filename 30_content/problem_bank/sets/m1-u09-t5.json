@@ -1,0 +1,15 @@
+{
+  "id": "m1-u09-t5",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 9,
+  "unit_name": "다각형",
+  "title": "외각의 합과 미지 외각",
+  "subtitle": "유형 5 · 외각의 합 360° · 내각과 외각의 관계",
+  "bank": "math1/u09/practice.json",
+  "misconceptions": "misconceptions/math1_u09.json",
+  "types": [5],
+  "time_min": 22,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

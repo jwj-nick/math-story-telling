@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 6,
+  "unit_name": "정비례와 반비례",
+  "bank": "math1/u06/practice.json",
+  "misconceptions": "misconceptions/math1_u06.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u06-t7",
+  "kind": "type-set",
+  "title": "비례 활용",
+  "subtitle": "유형 7 · 속도 · 톱니바퀴 · 나누어 가지기 · 일의 양",
+  "types": [
+    7
+  ],
+  "time_min": 20
+}

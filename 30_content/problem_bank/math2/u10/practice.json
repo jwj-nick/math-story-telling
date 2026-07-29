@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 10,
+    "unit_name": "피타고라스 정리",
+    "source": "40_grades/middle/math2/app2/p10.html",
+    "generation": "D",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_math2_p.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 script 의 P(...)/pick(...) 값 그대로. 절대 손으로 고치지 않는다. 2지선다 3문항(유형3)은 지면에서 단답형으로 재작성했고, 짧은 낱말 정답에는 뜻을 괄호로 덧붙였다. 근호 표기 방침 = √ 단순 표기(overline 미사용), 근호 안이 두 항 이상이면 반드시 괄호로 묶는다. 이 단원 18문항의 정답은 모두 자연수이므로 answer_format 에 '자연수로'를 못 박았다."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "빗변 구하기",
+      "principle": "직각을 낀 두 변의 길이가 a, b이고 빗변의 길이가 c이면 a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> 이에요. 빗변은 직각을 마주 보는 가장 긴 변이에요.",
+      "problems": [
+        {
+          "id": "m2-u10-t01-01",
+          "level": "L",
+          "stem_src": "두 변이 3, 4일 때 빗변은?",
+          "stem_print": "직각을 낀 두 변의 길이가 각각 3 cm, 4 cm인 직각삼각형이 있다. 빗변(직각을 마주 보는 가장 긴 변)의 길이를 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [
+            "5 cm",
+            "√25"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "직각을 낀 두 변의 제곱을 더한 값이 빗변의 제곱이에요.",
+          "solution": "3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 이고, 빗변의 길이는 √25 = 5 (cm) 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "pyt.square-as-double",
+            "pyt.forgot-sqrt"
+          ]
+        },
+        {
+          "id": "m2-u10-t01-02",
+          "level": "L",
+          "stem_src": "두 변이 6, 8일 때 빗변은?",
+          "stem_print": "직각을 낀 두 변의 길이가 각각 6 cm, 8 cm인 직각삼각형이 있다. 빗변(직각을 마주 보는 가장 긴 변)의 길이를 구하시오.",
+          "answer_atoms": [
+            "10"
+          ],
+          "answer_print": "10",
+          "answer_accept": [
+            "10 cm",
+            "√100"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "두 변의 제곱을 각각 구한 뒤 더하고, 마지막에 근호를 씌워요.",
+          "solution": "6<sup>2</sup> + 8<sup>2</sup> = 36 + 64 = 100 이고, 빗변의 길이는 √100 = 10 (cm) 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "pyt.sqrt-distribute",
+            "pyt.triple-overapply"
+          ]
+        },
+        {
+          "id": "m2-u10-t01-03",
+          "level": "M",
+          "stem_src": "두 변이 5, 12일 때 빗변은?",
+          "stem_print": "직각을 낀 두 변의 길이가 각각 5 cm, 12 cm인 직각삼각형이 있다. 빗변(직각을 마주 보는 가장 긴 변)의 길이를 구하시오.",
+          "answer_atoms": [
+            "13"
+          ],
+          "answer_print": "13",
+          "answer_accept": [
+            "13 cm",
+            "√169"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "제곱의 합을 구한 뒤, 그 수가 어떤 자연수를 두 번 곱한 수인지 살펴보세요.",
+          "solution": "5<sup>2</sup> + 12<sup>2</sup> = 25 + 144 = 169 이고, 169 = 13 × 13 이므로 빗변의 길이는 √169 = 13 (cm) 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "pyt.forgot-sqrt",
+            "pyt.sqrt-as-half",
+            "pyt.root-leave-or-eval"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "직각을 낀 나머지 한 변 구하기",
+      "principle": "빗변의 길이 c와 직각을 낀 한 변의 길이 a를 알면, 나머지 한 변의 길이 b는 b<sup>2</sup> = c<sup>2</sup> − a<sup>2</sup> 으로 구해요. 가장 긴 변의 제곱에서 빼는 것이 핵심이에요.",
+      "problems": [
+        {
+          "id": "m2-u10-t02-01",
+          "level": "L",
+          "stem_src": "빗변 5, 한 변 3 → 나머지 변은?",
+          "stem_print": "어떤 직각삼각형의 빗변의 길이가 5 cm이고, 직각을 낀 한 변의 길이가 3 cm이다. 직각을 낀 나머지 한 변의 길이를 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "4",
+          "answer_accept": [
+            "4 cm",
+            "√16"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "구하려는 변은 가장 긴 변이 아니에요. 빗변의 제곱에서 아는 변의 제곱을 빼요.",
+          "solution": "5<sup>2</sup> − 3<sup>2</sup> = 25 − 9 = 16 이고, 나머지 한 변의 길이는 √16 = 4 (cm) 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "pyt.add-subtract-swap",
+            "pyt.hyp-misassigned"
+          ]
+        },
+        {
+          "id": "m2-u10-t02-02",
+          "level": "M",
+          "stem_src": "빗변 13, 한 변 5 → 나머지 변은?",
+          "stem_print": "어떤 직각삼각형의 빗변의 길이가 13 cm이고, 직각을 낀 한 변의 길이가 5 cm이다. 직각을 낀 나머지 한 변의 길이를 구하시오.",
+          "answer_atoms": [
+            "12"
+          ],
+          "answer_print": "12",
+          "answer_accept": [
+            "12 cm",
+            "√144"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "두 제곱을 더하면 빗변보다 긴 변이 나와요. 여기서는 빼야 해요.",
+          "solution": "13<sup>2</sup> − 5<sup>2</sup> = 169 − 25 = 144 이고, 나머지 한 변의 길이는 √144 = 12 (cm) 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "pyt.add-subtract-swap",
+            "pyt.sqrt-as-half"
+          ]
+        },
+        {
+          "id": "m2-u10-t02-03",
+          "level": "M",
+          "stem_src": "빗변 10, 한 변 6 → 나머지 변은?",
+          "stem_print": "어떤 직각삼각형의 빗변의 길이가 10 cm이고, 직각을 낀 한 변의 길이가 6 cm이다. 직각을 낀 나머지 한 변의 길이를 구하시오.",
+          "answer_atoms": [
+            "8"
+          ],
+          "answer_print": "8",
+          "answer_accept": [
+            "8 cm",
+            "√64"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "빗변의 제곱이 언제나 가장 큰 값이에요. 큰 값에서 작은 값을 빼요.",
+          "solution": "10<sup>2</sup> − 6<sup>2</sup> = 100 − 36 = 64 이고, 나머지 한 변의 길이는 √64 = 8 (cm) 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "pyt.hyp-misassigned",
+            "pyt.square-as-double"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "직각삼각형인지 판별하기 (피타고라스 정리의 역)",
+      "principle": "세 변 중 가장 긴 변의 길이를 c, 나머지 두 변의 길이를 a, b라 할 때 a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> 이면 그 삼각형은 직각삼각형이에요. 가장 긴 변을 먼저 찾는 것이 첫 걸음이에요.",
+      "problems": [
+        {
+          "id": "m2-u10-t03-01",
+          "level": "L",
+          "stem_src": "세 변 3, 4, 5인 삼각형은 직각삼각형일까요? (2지선다)",
+          "stem_print": "세 변의 길이가 각각 3 cm, 4 cm, 5 cm인 삼각형이 있다. 이 삼각형이 직각삼각형인지 아닌지 쓰시오.",
+          "answer_atoms": [
+            "직각삼각형"
+          ],
+          "answer_print": "직각삼각형이에요 (가장 긴 변의 제곱 = 나머지 두 변의 제곱의 합)",
+          "answer_accept": [
+            "직각삼각형",
+            "네, 직각삼각형이에요",
+            "직각삼각형입니다"
+          ],
+          "answer_unit": null,
+          "answer_format": "직각삼각형인지 아닌지 말로 (단위 없음)",
+          "figure": null,
+          "hint": "가장 긴 변을 먼저 찾고, 그 변의 제곱과 나머지 두 변의 제곱의 합을 비교해요.",
+          "solution": "가장 긴 변은 5 cm 예요. 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 이고 5<sup>2</sup> = 25 이므로 두 값이 같아요. 따라서 직각삼각형이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "pyt.check-sum-not-square",
+            "pyt.longest-side-not-found"
+          ]
+        },
+        {
+          "id": "m2-u10-t03-02",
+          "level": "L",
+          "stem_src": "세 변 5, 12, 13인 삼각형은? (2지선다)",
+          "stem_print": "세 변의 길이가 각각 5 cm, 12 cm, 13 cm인 삼각형이 있다. 이 삼각형이 직각삼각형인지 아닌지 쓰시오.",
+          "answer_atoms": [
+            "직각삼각형"
+          ],
+          "answer_print": "직각삼각형이에요 (가장 긴 변의 제곱 = 나머지 두 변의 제곱의 합)",
+          "answer_accept": [
+            "직각삼각형",
+            "네, 직각삼각형이에요",
+            "직각삼각형입니다"
+          ],
+          "answer_unit": null,
+          "answer_format": "직각삼각형인지 아닌지 말로 (단위 없음)",
+          "figure": null,
+          "hint": "가장 긴 변의 제곱만 오른쪽에 두고, 나머지 두 변의 제곱의 합과 견주어 보세요.",
+          "solution": "가장 긴 변은 13 cm 예요. 5<sup>2</sup> + 12<sup>2</sup> = 25 + 144 = 169 이고 13<sup>2</sup> = 169 이므로 두 값이 같아요. 따라서 직각삼각형이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "pyt.longest-side-not-found",
+            "pyt.triple-overapply"
+          ]
+        },
+        {
+          "id": "m2-u10-t03-03",
+          "level": "M",
+          "stem_src": "세 변 2, 3, 4인 삼각형은? (2지선다)",
+          "stem_print": "세 변의 길이가 각각 2 cm, 3 cm, 4 cm인 삼각형이 있다. 이 삼각형이 직각삼각형인지 아닌지 쓰시오.",
+          "answer_atoms": [
+            "아니에요"
+          ],
+          "answer_print": "직각삼각형이 아니에요 (가장 긴 변의 제곱이 나머지 두 변의 제곱의 합과 달라요)",
+          "answer_accept": [
+            "아니에요",
+            "직각삼각형이 아니다",
+            "아니요"
+          ],
+          "answer_unit": null,
+          "answer_format": "직각삼각형인지 아닌지 말로 (단위 없음)",
+          "figure": null,
+          "hint": "두 값이 같지 않다면 직각삼각형이 아니에요. 계산한 두 값을 나란히 적어 비교해요.",
+          "solution": "가장 긴 변은 4 cm 예요. 2<sup>2</sup> + 3<sup>2</sup> = 4 + 9 = 13 이고 4<sup>2</sup> = 16 이므로 두 값이 달라요. 따라서 직각삼각형이 아니에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "pyt.check-sum-not-square",
+            "pyt.not-right-triangle"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "직사각형의 대각선",
+      "principle": "직사각형의 대각선은 가로와 세로를 직각을 낀 두 변으로 하는 직각삼각형의 빗변이에요. 그래서 (대각선)<sup>2</sup> = (가로)<sup>2</sup> + (세로)<sup>2</sup> 이에요.",
+      "problems": [
+        {
+          "id": "m2-u10-t04-01",
+          "level": "L",
+          "stem_src": "가로 3, 세로 4 → 대각선은?",
+          "stem_print": "가로의 길이가 3 cm, 세로의 길이가 4 cm인 직사각형이 있다. 이 직사각형의 대각선의 길이를 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [
+            "5 cm",
+            "√25"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "대각선을 그으면 직각삼각형이 두 개 생겨요. 그때 대각선이 빗변이에요.",
+          "solution": "3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 이고, 대각선의 길이는 √25 = 5 (cm) 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "pyt.rect-diagonal-add",
+            "pyt.forgot-sqrt"
+          ]
+        },
+        {
+          "id": "m2-u10-t04-02",
+          "level": "M",
+          "stem_src": "가로 6, 세로 8 → 대각선은?",
+          "stem_print": "가로의 길이가 6 cm, 세로의 길이가 8 cm인 직사각형이 있다. 이 직사각형의 대각선의 길이를 구하시오.",
+          "answer_atoms": [
+            "10"
+          ],
+          "answer_print": "10",
+          "answer_accept": [
+            "10 cm",
+            "√100"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "가로와 세로를 그냥 더한 값은 대각선이 아니에요. 각각 제곱해서 더해요.",
+          "solution": "6<sup>2</sup> + 8<sup>2</sup> = 36 + 64 = 100 이고, 대각선의 길이는 √100 = 10 (cm) 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "pyt.rect-diagonal-add",
+            "pyt.triple-overapply"
+          ]
+        },
+        {
+          "id": "m2-u10-t04-03",
+          "level": "M",
+          "stem_src": "가로 5, 세로 12 → 대각선은?",
+          "stem_print": "가로의 길이가 5 cm, 세로의 길이가 12 cm인 직사각형이 있다. 이 직사각형의 대각선의 길이를 구하시오.",
+          "answer_atoms": [
+            "13"
+          ],
+          "answer_print": "13",
+          "answer_accept": [
+            "13 cm",
+            "√169"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "대각선은 직사각형에서 가장 긴 선분이에요. 빗변 자리에 놓고 식을 세워요.",
+          "solution": "5<sup>2</sup> + 12<sup>2</sup> = 25 + 144 = 169 이고, 대각선의 길이는 √169 = 13 (cm) 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "pyt.hyp-misassigned",
+            "pyt.square-as-double"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "좌표평면 위 두 점 사이의 거리",
+      "principle": "두 점 사이의 거리는 두 x좌표의 차와 두 y좌표의 차를 직각을 낀 두 변으로 하는 직각삼각형의 빗변이에요. 좌표값을 그대로 쓰지 말고 차를 먼저 구해요.",
+      "problems": [
+        {
+          "id": "m2-u10-t05-01",
+          "level": "L",
+          "stem_src": "(0, 0) 과 (3, 4) 사이 거리는?",
+          "stem_print": "좌표평면 위의 두 점 (0, 0) 과 (3, 4) 사이의 거리를 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [
+            "√25"
+          ],
+          "answer_unit": null,
+          "answer_format": "자연수로 (단위 없음, 근호가 남지 않아요)",
+          "figure": null,
+          "hint": "가로로 몇 칸, 세로로 몇 칸 움직였는지 먼저 세어 보세요.",
+          "solution": "가로 차는 3, 세로 차는 4 예요. 3<sup>2</sup> + 4<sup>2</sup> = 25 이므로 거리는 √25 = 5 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "pyt.coord-no-difference",
+            "pyt.forgot-sqrt"
+          ]
+        },
+        {
+          "id": "m2-u10-t05-02",
+          "level": "L",
+          "stem_src": "(0, 0) 과 (6, 8) 사이 거리는?",
+          "stem_print": "좌표평면 위의 두 점 (0, 0) 과 (6, 8) 사이의 거리를 구하시오.",
+          "answer_atoms": [
+            "10"
+          ],
+          "answer_print": "10",
+          "answer_accept": [
+            "√100"
+          ],
+          "answer_unit": null,
+          "answer_format": "자연수로 (단위 없음, 근호가 남지 않아요)",
+          "figure": null,
+          "hint": "원점에서 잰 거리는 두 좌표가 그대로 가로 차, 세로 차가 돼요.",
+          "solution": "가로 차는 6, 세로 차는 8 예요. 6<sup>2</sup> + 8<sup>2</sup> = 100 이므로 거리는 √100 = 10 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "pyt.coord-no-difference",
+            "pyt.sqrt-distribute"
+          ]
+        },
+        {
+          "id": "m2-u10-t05-03",
+          "level": "M",
+          "stem_src": "(1, 2) 와 (4, 6) 사이 거리는?",
+          "stem_print": "좌표평면 위의 두 점 (1, 2) 와 (4, 6) 사이의 거리를 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [
+            "√25"
+          ],
+          "answer_unit": null,
+          "answer_format": "자연수로 (단위 없음, 근호가 남지 않아요)",
+          "figure": null,
+          "hint": "원점이 아니어도 방법은 같아요. x끼리, y끼리 빼서 차를 구해요.",
+          "solution": "가로 차는 4 − 1 = 3, 세로 차는 6 − 2 = 4 예요. 3<sup>2</sup> + 4<sup>2</sup> = 25 이므로 거리는 √25 = 5 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "pyt.coord-no-difference",
+            "pyt.coord-negative-length"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "실생활 활용",
+      "principle": "실생활 문제도 직각을 이루는 곳을 찾으면 직각삼각형이 보여요. 직각을 마주 보는 변이 빗변이고, 직각을 낀 두 변이 나머지 변이에요.",
+      "problems": [
+        {
+          "id": "m2-u10-t06-01",
+          "level": "M",
+          "stem_src": "벽 아래 6 m 떨어진 곳에 10 m 사다리를 세우면 닿는 높이는?",
+          "stem_print": "벽과 바닥이 직각을 이루고 있다. 벽에서 6 m 떨어진 바닥 지점에 길이가 10 m인 사다리의 아래 끝을 놓고 벽에 기대어 세웠다. 사다리가 빗변일 때, 사다리의 위 끝이 벽에 닿는 지점의 높이를 구하시오.",
+          "answer_atoms": [
+            "8"
+          ],
+          "answer_print": "8",
+          "answer_accept": [
+            "8 m",
+            "√64"
+          ],
+          "answer_unit": "m",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "사다리가 가장 긴 변이에요. 사다리의 제곱에서 바닥 거리의 제곱을 빼요.",
+          "solution": "10<sup>2</sup> − 6<sup>2</sup> = 100 − 36 = 64 이고, 벽에 닿는 높이는 √64 = 8 (m) 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "pyt.real-hyp-pick",
+            "pyt.add-subtract-swap"
+          ]
+        },
+        {
+          "id": "m2-u10-t06-02",
+          "level": "L",
+          "stem_src": "빗변 15, 한 변 9 → 나머지 변은?",
+          "stem_print": "직각삼각형 모양의 액자가 있다. 빗변의 길이가 15 cm이고 직각을 낀 한 변의 길이가 9 cm일 때, 직각을 낀 나머지 한 변의 길이를 구하시오.",
+          "answer_atoms": [
+            "12"
+          ],
+          "answer_print": "12",
+          "answer_accept": [
+            "12 cm",
+            "√144"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "빗변이 주어졌으니 빼기예요. 빗변의 제곱에서 아는 변의 제곱을 빼요.",
+          "solution": "15<sup>2</sup> − 9<sup>2</sup> = 225 − 81 = 144 이고, 나머지 한 변의 길이는 √144 = 12 (cm) 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "pyt.hyp-misassigned",
+            "pyt.add-subtract-swap"
+          ]
+        },
+        {
+          "id": "m2-u10-t06-03",
+          "level": "H",
+          "stem_src": "직각을 낀 두 변이 8, 15일 때 빗변은?",
+          "stem_print": "직각을 낀 두 변의 길이가 각각 8 cm, 15 cm인 직각삼각형 모양의 깃발이 있다. 이 깃발의 빗변의 길이를 구하시오.",
+          "answer_atoms": [
+            "17"
+          ],
+          "answer_print": "17",
+          "answer_accept": [
+            "17 cm",
+            "√289"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "자연수로 (근호가 남지 않아요)",
+          "figure": null,
+          "hint": "익숙한 조합이 아니어도 방법은 같아요. 제곱의 합을 구한 뒤 근호를 씌워요.",
+          "solution": "8<sup>2</sup> + 15<sup>2</sup> = 64 + 225 = 289 이고, 289 = 17 × 17 이므로 빗변의 길이는 √289 = 17 (cm) 예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "pyt.triple-overapply",
+            "pyt.root-leave-or-eval"
+          ]
+        }
+      ]
+    }
+  ]
+}

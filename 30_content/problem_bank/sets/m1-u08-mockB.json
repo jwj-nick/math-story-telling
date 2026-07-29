@@ -1,0 +1,32 @@
+{
+  "grade": "math1",
+  "unit": 8,
+  "unit_name": "작도와 합동",
+  "bank": "math1/u08/practice.json",
+  "misconceptions": "misconceptions/math1_u08.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u08-mockB",
+  "kind": "mock",
+  "title": "단원 8 실전 회차",
+  "subtitle": "7유형 전체에서 유형마다 보통·도전 1문항씩 · 14문항",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "M": 1,
+      "H": 1
+    }
+  },
+  "time_min": 30
+}

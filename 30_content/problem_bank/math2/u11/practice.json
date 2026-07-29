@@ -1,0 +1,473 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 11,
+    "unit_name": "확률",
+    "generation": "D",
+    "source": "40_grades/middle/math2/app2/p11.html",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_math2_p.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 script 의 P(...) 값 그대로. 절대 손으로 고치지 않는다. ★ 원본 앱은 확률을 백분율(%)로 답하게 되어 있었으나, 지면 표준(PRINT_PRINCIPLES §2 R4 '확률 = 기약분수')에 맞춰 발문·답 형태를 기약분수로 재작성했다. 추출 원자(백분율 수치)와의 추적성을 지키려고 answer_print 에 '(= NN%)' 를 병기한다. 경우의 수 문항만 단위 '가지'를 쓰고 확률 문항은 단위가 없다. 원본이 앱 화면 맥락에 기대던 문항(유형3 #2 '같은 주머니에서', 유형5 두 주사위 합)은 지면에서 홀로 서도록 조건을 발문에 글로 모두 적었다."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "경우의 수",
+      "principle": "잇따라 일어나는 일은 각각의 경우의 수를 곱해요(곱의 법칙). 동전 한 개는 앞·뒤 2가지, 주사위 한 개는 1부터 6까지 6가지예요.",
+      "problems": [
+        {
+          "id": "m2-u11-t01-01",
+          "level": "M",
+          "stem_src": "동전 3개를 던질 때 모든 경우의 수는?",
+          "stem_print": "서로 다른 동전 3개를 동시에 던질 때, 앞면과 뒷면이 나오는 모든 경우의 수를 구하시오.",
+          "answer_atoms": [
+            "8"
+          ],
+          "answer_print": "8",
+          "answer_accept": [
+            "8가지"
+          ],
+          "answer_unit": "가지",
+          "answer_format": "수로 (단위 가지)",
+          "figure": null,
+          "hint": "동전 한 개는 앞면·뒷면 2가지예요. 동전이 3개면 2 를 몇 번 곱할까요?",
+          "solution": "동전 한 개마다 앞면·뒷면 2가지가 있어요. 세 동전이 잇따라 정해지므로 곱의 법칙을 써요. 2 × 2 × 2 = 8 이므로 모든 경우의 수는 8가지예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "prob.and-or-mixup",
+            "prob.answer-form-count"
+          ]
+        },
+        {
+          "id": "m2-u11-t01-02",
+          "level": "M",
+          "stem_src": "주사위 2개를 던질 때 모든 경우의 수는?",
+          "stem_print": "서로 다른 두 주사위 A, B 를 동시에 던질 때, 나오는 눈의 모든 경우의 수를 구하시오.",
+          "answer_atoms": [
+            "36"
+          ],
+          "answer_print": "36",
+          "answer_accept": [
+            "36가지"
+          ],
+          "answer_unit": "가지",
+          "answer_format": "수로 (단위 가지)",
+          "figure": null,
+          "hint": "주사위 한 개는 1 부터 6 까지 6가지예요. A 의 눈이 하나 정해질 때마다 B 의 눈은 몇 가지일까요?",
+          "solution": "A 의 눈이 6가지이고, 그 각각에 대해 B 의 눈도 6가지예요. 곱의 법칙으로 6 × 6 을 계산하면 모든 경우의 수가 나와요.",
+          "work_space": "md",
+          "misconceptions": [
+            "prob.and-or-mixup",
+            "prob.sample-space-miss"
+          ]
+        },
+        {
+          "id": "m2-u11-t01-03",
+          "level": "L",
+          "stem_src": "1~5 카드 중 한 장을 뽑는 경우의 수는?",
+          "stem_print": "1, 2, 3, 4, 5 가 각각 하나씩 적힌 카드 5장이 들어 있는 상자에서 한 장을 뽑을 때, 나올 수 있는 모든 경우의 수를 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [
+            "5가지"
+          ],
+          "answer_unit": "가지",
+          "answer_format": "수로 (단위 가지)",
+          "figure": null,
+          "hint": "카드를 한 장만 뽑아요. 뽑힐 수 있는 카드를 하나씩 적어 볼까요?",
+          "solution": "뽑힐 수 있는 카드는 1, 2, 3, 4, 5 예요. 서로 다른 결과가 5개이므로 모든 경우의 수는 5가지예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "prob.sample-space-miss",
+            "prob.answer-form-count"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "확률의 뜻",
+      "principle": "확률은 (사건이 일어나는 경우의 수) ÷ (모든 경우의 수) 예요. 답은 언제나 약분까지 끝낸 기약분수로 정리해요.",
+      "problems": [
+        {
+          "id": "m2-u11-t02-01",
+          "level": "L",
+          "stem_src": "주사위에서 짝수가 나올 확률은? (%)",
+          "stem_print": "주사위 한 개를 던질 때, 짝수의 눈이 나올 확률을 구하시오.",
+          "answer_atoms": [
+            "50"
+          ],
+          "answer_print": "<span class=\"frac\"><b>1</b><i>2</i></span> (= 50%)",
+          "answer_accept": [
+            "1/2"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "주사위의 눈은 모두 몇 가지인가요? 그중 짝수는 2, 4, 6 이에요.",
+          "solution": "모든 경우는 1, 2, 3, 4, 5, 6 의 6가지예요. 짝수의 눈은 2, 4, 6 의 3가지이므로 확률은 <span class=\"frac\"><b>3</b><i>6</i></span> 이고, 약분하면 <span class=\"frac\"><b>1</b><i>2</i></span> 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "prob.count-as-prob",
+            "prob.not-reduced"
+          ]
+        },
+        {
+          "id": "m2-u11-t02-02",
+          "level": "M",
+          "stem_src": "1~10 중 3의 배수가 나올 확률은? (%)",
+          "stem_print": "1 부터 10 까지의 자연수가 각각 하나씩 적힌 카드 10장 중에서 한 장을 뽑을 때, 3의 배수가 적힌 카드를 뽑을 확률을 구하시오.",
+          "answer_atoms": [
+            "30"
+          ],
+          "answer_print": "<span class=\"frac\"><b>3</b><i>10</i></span> (= 30%)",
+          "answer_accept": [
+            "3/10"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "1 부터 10 까지 중에서 3의 배수를 하나씩 적어 봐요. 몇 개인가요?",
+          "solution": "1 부터 10 까지의 3의 배수는 3, 6, 9 의 3개예요. 모든 경우는 10가지이므로 확률은 <span class=\"frac\"><b>3</b><i>10</i></span> 이에요. 3 과 10 은 더 약분되지 않아요.",
+          "work_space": "md",
+          "misconceptions": [
+            "prob.multiple-count-off",
+            "prob.denominator-wrong"
+          ]
+        },
+        {
+          "id": "m2-u11-t02-03",
+          "level": "L",
+          "stem_src": "1~4 카드 중 1이 뽑힐 확률은? (%)",
+          "stem_print": "1, 2, 3, 4 가 각각 하나씩 적힌 카드 4장 중에서 한 장을 뽑을 때, 1이 적힌 카드를 뽑을 확률을 구하시오.",
+          "answer_atoms": [
+            "25"
+          ],
+          "answer_print": "<span class=\"frac\"><b>1</b><i>4</i></span> (= 25%)",
+          "answer_accept": [
+            "1/4"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "카드는 모두 4장이고, 1이 적힌 카드는 그중 몇 장일까요?",
+          "solution": "모든 경우는 4가지이고 1이 적힌 카드는 1장이에요. 그러므로 확률은 <span class=\"frac\"><b>1</b><i>4</i></span> 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "prob.count-as-prob",
+            "prob.percent-mixup"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "공·카드 뽑기의 확률",
+      "principle": "주머니에서 하나를 꺼낼 때의 확률은 (원하는 것의 개수) ÷ (전체 개수) 예요. 전체 개수를 먼저 세고 시작해요.",
+      "problems": [
+        {
+          "id": "m2-u11-t03-01",
+          "level": "L",
+          "stem_src": "빨강 3개, 파랑 2개 중 빨강을 뽑을 확률은? (%)",
+          "stem_print": "빨간 공 3개와 파란 공 2개가 들어 있는 주머니에서 공 한 개를 꺼낼 때, 빨간 공이 나올 확률을 구하시오.",
+          "answer_atoms": [
+            "60"
+          ],
+          "answer_print": "<span class=\"frac\"><b>3</b><i>5</i></span> (= 60%)",
+          "answer_accept": [
+            "3/5"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "주머니 안의 공은 모두 몇 개인가요? 빨간 공과 파란 공을 함께 세어야 해요.",
+          "solution": "공은 모두 3 + 2 = 5 개이고 빨간 공은 3개예요. 그러므로 확률은 <span class=\"frac\"><b>3</b><i>5</i></span> 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "prob.denominator-wrong",
+            "prob.count-as-prob"
+          ]
+        },
+        {
+          "id": "m2-u11-t03-02",
+          "level": "M",
+          "stem_src": "같은 주머니에서 파랑을 뽑을 확률은? (%)",
+          "stem_print": "빨간 공 3개와 파란 공 2개가 들어 있는 주머니에서 공 한 개를 꺼낼 때, 파란 공이 나올 확률을 구하시오.",
+          "answer_atoms": [
+            "40"
+          ],
+          "answer_print": "<span class=\"frac\"><b>2</b><i>5</i></span> (= 40%)",
+          "answer_accept": [
+            "2/5"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "분모는 앞 문제와 같아요. 파란 공은 몇 개인가요?",
+          "solution": "공은 모두 5개이고 파란 공은 2개예요. 그러므로 확률은 <span class=\"frac\"><b>2</b><i>5</i></span> 예요. 빨간 공이 나올 확률과 더하면 1 이 되는지 확인해 보면 좋아요.",
+          "work_space": "md",
+          "misconceptions": [
+            "prob.denominator-wrong",
+            "prob.replace-mixup"
+          ]
+        },
+        {
+          "id": "m2-u11-t03-03",
+          "level": "M",
+          "stem_src": "1~20 중 5의 배수가 나올 확률은? (%)",
+          "stem_print": "1 부터 20 까지의 자연수가 각각 하나씩 적힌 카드 20장 중에서 한 장을 뽑을 때, 5의 배수가 적힌 카드를 뽑을 확률을 구하시오.",
+          "answer_atoms": [
+            "20"
+          ],
+          "answer_print": "<span class=\"frac\"><b>1</b><i>5</i></span> (= 20%)",
+          "answer_accept": [
+            "1/5"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "1 부터 20 까지 중 5의 배수를 하나씩 적어 봐요. 그다음 약분까지 끝내요.",
+          "solution": "5의 배수는 5, 10, 15, 20 의 4개예요. 모든 경우는 20가지이므로 확률은 <span class=\"frac\"><b>4</b><i>20</i></span> 이고, 4 로 약분하면 <span class=\"frac\"><b>1</b><i>5</i></span> 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "prob.multiple-count-off",
+            "prob.not-reduced"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "여사건의 확률",
+      "principle": "어떤 사건이 일어나지 않을 확률은 1 에서 그 사건이 일어날 확률을 뺀 값이에요. 이것을 여사건의 확률이라고 해요.",
+      "problems": [
+        {
+          "id": "m2-u11-t04-01",
+          "level": "L",
+          "stem_src": "이길 확률이 40%면, 질 확률은?",
+          "stem_print": "어떤 경기에서 이길 확률이 <span class=\"frac\"><b>2</b><i>5</i></span> 이다. 이 경기에서 질 확률을 구하시오. (비기는 경우는 없다.)",
+          "answer_atoms": [
+            "60"
+          ],
+          "answer_print": "<span class=\"frac\"><b>3</b><i>5</i></span> (= 60%)",
+          "answer_accept": [
+            "3/5"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "이기거나 지거나 둘 중 하나예요. 두 확률을 더하면 얼마가 될까요?",
+          "solution": "질 사건은 이길 사건의 여사건이에요. 그러므로 확률은 1 − <span class=\"frac\"><b>2</b><i>5</i></span> = <span class=\"frac\"><b>5</b><i>5</i></span> − <span class=\"frac\"><b>2</b><i>5</i></span> = <span class=\"frac\"><b>3</b><i>5</i></span> 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "prob.complement-forget",
+            "prob.complement-not-opposite"
+          ]
+        },
+        {
+          "id": "m2-u11-t04-02",
+          "level": "M",
+          "stem_src": "비가 올 확률이 25%면, 안 올 확률은?",
+          "stem_print": "내일 비가 올 확률이 <span class=\"frac\"><b>1</b><i>4</i></span> 이다. 내일 비가 오지 않을 확률을 구하시오.",
+          "answer_atoms": [
+            "75"
+          ],
+          "answer_print": "<span class=\"frac\"><b>3</b><i>4</i></span> (= 75%)",
+          "answer_accept": [
+            "3/4"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "1 을 분모가 4 인 분수로 바꾸면 얼마일까요?",
+          "solution": "비가 오지 않을 사건은 비가 올 사건의 여사건이에요. 1 − <span class=\"frac\"><b>1</b><i>4</i></span> = <span class=\"frac\"><b>4</b><i>4</i></span> − <span class=\"frac\"><b>1</b><i>4</i></span> = <span class=\"frac\"><b>3</b><i>4</i></span> 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "prob.complement-forget",
+            "prob.percent-mixup"
+          ]
+        },
+        {
+          "id": "m2-u11-t04-03",
+          "level": "M",
+          "stem_src": "당첨 확률이 10%면, 꽝일 확률은?",
+          "stem_print": "어떤 뽑기에서 당첨될 확률이 <span class=\"frac\"><b>1</b><i>10</i></span> 이다. 이 뽑기에서 당첨되지 않을 확률을 구하시오.",
+          "answer_atoms": [
+            "90"
+          ],
+          "answer_print": "<span class=\"frac\"><b>9</b><i>10</i></span> (= 90%)",
+          "answer_accept": [
+            "9/10"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "1 을 분모가 10 인 분수로 바꾸어 빼 봐요.",
+          "solution": "당첨되지 않을 사건은 당첨될 사건의 여사건이에요. 1 − <span class=\"frac\"><b>1</b><i>10</i></span> = <span class=\"frac\"><b>10</b><i>10</i></span> − <span class=\"frac\"><b>1</b><i>10</i></span> = <span class=\"frac\"><b>9</b><i>10</i></span> 예요. 답이 0 과 1 사이에 있는지 꼭 확인해요.",
+          "work_space": "md",
+          "misconceptions": [
+            "prob.complement-forget",
+            "prob.out-of-range"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "두 사건이 겹칠 때의 경우의 수",
+      "principle": "두 주사위를 던질 때 (1, 2) 와 (2, 1) 은 서로 다른 경우예요. 순서쌍 (A 의 눈, B 의 눈) 으로 표를 만들어 빠짐없이 세어요.",
+      "problems": [
+        {
+          "id": "m2-u11-t05-01",
+          "level": "M",
+          "stem_src": "두 주사위의 눈의 합이 7인 경우의 수는?",
+          "stem_print": "서로 다른 두 주사위 A, B 를 동시에 던질 때, 나온 두 눈의 수의 합이 7 이 되는 경우의 수를 구하시오. (A 의 눈이 1 이고 B 의 눈이 6 인 경우와, A 의 눈이 6 이고 B 의 눈이 1 인 경우는 서로 다른 경우로 센다.)",
+          "answer_atoms": [
+            "6"
+          ],
+          "answer_print": "6",
+          "answer_accept": [
+            "6가지"
+          ],
+          "answer_unit": "가지",
+          "answer_format": "수로 (단위 가지)",
+          "figure": null,
+          "hint": "A 의 눈을 1, 2, 3, 4, 5, 6 으로 차례차례 정해 놓고, 그때마다 B 의 눈이 얼마여야 하는지 적어 봐요.",
+          "solution": "순서쌍 (A, B) 로 적으면 (1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1) 이에요. A 의 눈이 정해지면 B 의 눈은 하나로 정해지므로 모두 6가지예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "prob.ordered-pair-merge",
+            "prob.at-least-miss"
+          ]
+        },
+        {
+          "id": "m2-u11-t05-02",
+          "level": "M",
+          "stem_src": "두 주사위의 눈의 합이 5인 경우의 수는?",
+          "stem_print": "서로 다른 두 주사위 A, B 를 동시에 던질 때, 나온 두 눈의 수의 합이 5 가 되는 경우의 수를 구하시오. (A 의 눈이 1 이고 B 의 눈이 4 인 경우와, A 의 눈이 4 이고 B 의 눈이 1 인 경우는 서로 다른 경우로 센다.)",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "4",
+          "answer_accept": [
+            "4가지"
+          ],
+          "answer_unit": "가지",
+          "answer_format": "수로 (단위 가지)",
+          "figure": null,
+          "hint": "A 의 눈이 5 이거나 6 이면 합이 5 가 될 수 있을까요? 될 수 있는 것만 골라 적어 봐요.",
+          "solution": "순서쌍 (A, B) 로 적으면 (1, 4), (2, 3), (3, 2), (4, 1) 이에요. A 의 눈이 5 나 6 이면 B 의 눈이 0 이나 음수가 되어야 하므로 그런 경우는 없어요. 그러므로 모두 4가지예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "prob.ordered-pair-merge",
+            "prob.sample-space-miss"
+          ]
+        },
+        {
+          "id": "m2-u11-t05-03",
+          "level": "L",
+          "stem_src": "동전 2개가 모두 앞면인 경우의 수는?",
+          "stem_print": "서로 다른 동전 2개를 동시에 던질 때, 두 동전이 모두 앞면이 나오는 경우의 수를 구하시오.",
+          "answer_atoms": [
+            "1"
+          ],
+          "answer_print": "1",
+          "answer_accept": [
+            "1가지"
+          ],
+          "answer_unit": "가지",
+          "answer_format": "수로 (단위 가지)",
+          "figure": null,
+          "hint": "일어날 수 있는 경우는 (앞, 앞), (앞, 뒤), (뒤, 앞), (뒤, 뒤) 예요. 이 중 조건에 맞는 것은 몇 가지일까요?",
+          "solution": "모든 경우는 (앞, 앞), (앞, 뒤), (뒤, 앞), (뒤, 뒤) 의 4가지예요. 이 중 두 동전이 모두 앞면인 경우는 (앞, 앞) 하나뿐이므로 답은 1가지예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "prob.ordered-pair-merge",
+            "prob.at-least-miss"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "경우의 수와 확률 종합",
+      "principle": "경우의 수를 묻는지 확률을 묻는지 먼저 가려요. 경우의 수는 단위 '가지' 를 붙여 쓰고, 확률은 단위 없이 기약분수로 답해요.",
+      "problems": [
+        {
+          "id": "m2-u11-t06-01",
+          "level": "H",
+          "stem_src": "두 주사위가 모두 짝수인 경우의 수는? (짝수는 2,4,6)",
+          "stem_print": "서로 다른 두 주사위 A, B 를 동시에 던질 때, 나온 두 눈의 수가 모두 짝수인 경우의 수를 구하시오. (주사위의 눈 중 짝수는 2, 4, 6 이다.)",
+          "answer_atoms": [
+            "9"
+          ],
+          "answer_print": "9",
+          "answer_accept": [
+            "9가지"
+          ],
+          "answer_unit": "가지",
+          "answer_format": "수로 (단위 가지)",
+          "figure": null,
+          "hint": "A 의 눈이 짝수인 경우는 몇 가지인가요? B 도 마찬가지예요. 두 조건이 함께 일어나야 해요.",
+          "solution": "A 의 눈이 짝수인 경우는 2, 4, 6 의 3가지이고, B 도 똑같이 3가지예요. 두 조건이 함께 일어나야 하므로 곱의 법칙을 써서 3 × 3 = 9 예요. 순서쌍으로 적으면 (2, 2), (2, 4), (2, 6), (4, 2), (4, 4), (4, 6), (6, 2), (6, 4), (6, 6) 의 9가지예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "prob.and-or-mixup",
+            "prob.ordered-pair-merge"
+          ]
+        },
+        {
+          "id": "m2-u11-t06-02",
+          "level": "L",
+          "stem_src": "성공 확률이 30%면, 실패할 확률은?",
+          "stem_print": "어떤 실험이 성공할 확률이 <span class=\"frac\"><b>3</b><i>10</i></span> 이다. 이 실험이 실패할 확률을 구하시오.",
+          "answer_atoms": [
+            "70"
+          ],
+          "answer_print": "<span class=\"frac\"><b>7</b><i>10</i></span> (= 70%)",
+          "answer_accept": [
+            "7/10"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "성공하거나 실패하거나 둘 중 하나예요. 여사건의 확률을 떠올려 봐요.",
+          "solution": "실패할 사건은 성공할 사건의 여사건이에요. 1 − <span class=\"frac\"><b>3</b><i>10</i></span> = <span class=\"frac\"><b>10</b><i>10</i></span> − <span class=\"frac\"><b>3</b><i>10</i></span> = <span class=\"frac\"><b>7</b><i>10</i></span> 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "prob.complement-forget",
+            "prob.percent-mixup"
+          ]
+        },
+        {
+          "id": "m2-u11-t06-03",
+          "level": "M",
+          "stem_src": "1~10 중 소수가 나올 확률은? (소수: 2,3,5,7)",
+          "stem_print": "1 부터 10 까지의 자연수가 각각 하나씩 적힌 카드 10장 중에서 한 장을 뽑을 때, 소수가 적힌 카드를 뽑을 확률을 구하시오. (1 부터 10 까지의 자연수 중 소수는 2, 3, 5, 7 이다.)",
+          "answer_atoms": [
+            "40"
+          ],
+          "answer_print": "<span class=\"frac\"><b>2</b><i>5</i></span> (= 40%)",
+          "answer_accept": [
+            "2/5"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로 (단위 없음)",
+          "figure": null,
+          "hint": "소수는 4개예요. 분모를 먼저 정하고, 마지막에 약분까지 끝냈는지 살펴봐요.",
+          "solution": "소수는 2, 3, 5, 7 의 4개이고 모든 경우는 10가지예요. 확률은 <span class=\"frac\"><b>4</b><i>10</i></span> 이고, 2 로 약분하면 <span class=\"frac\"><b>2</b><i>5</i></span> 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "prob.multiple-count-off",
+            "prob.not-reduced",
+            "prob.out-of-range"
+          ]
+        }
+      ]
+    }
+  ]
+}

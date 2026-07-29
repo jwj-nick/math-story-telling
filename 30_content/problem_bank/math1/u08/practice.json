@@ -1,0 +1,1498 @@
+{
+  "meta": {
+    "grade": "math1",
+    "unit": 8,
+    "unit_name": "작도와 합동",
+    "generation": "A",
+    "source": "40_grades/middle/math1/08_작도와합동/problems",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_gen_ac.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 .sol-panel 첫 <strong> 값 그대로. 절대 손으로 고치지 않는다. answer_print 는 원자를 KaTeX 없는 지면 표기로 옮긴 것."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "작도 도구·기본 작도의 의미",
+      "principle": "작도는 <b>눈금 없는 자</b>와 <b>컴퍼스</b>, 두 가지만 써요. 자는 두 점을 잇는 직선을 긋고, 컴퍼스는 원과 호를 그려서 같은 길이를 옮겨요. 자로 길이를 재거나 각도기로 각을 재면 작도가 아니에요.",
+      "problems": [
+        {
+          "id": "m1-u08-t01-01",
+          "level": "L",
+          "stem_src": "작도(作圖)에 대한 설명으로 옳은 것을 모두 고르시오.",
+          "stem_print": "작도에 대한 설명으로 옳은 것을 <b>모두</b> 골라 쓰시오.<br>(가) 자에 눈금이 있어도 된다 &nbsp; (나) 컴퍼스로 길이를 옮길 수 있다 &nbsp; (다) 각도기로 각의 크기를 잴 수 있다 &nbsp; (라) 자로 두 점을 잇는 직선을 그을 수 있다",
+          "answer_atoms": [
+            "(나), (라)"
+          ],
+          "answer_print": "(나), (라)",
+          "answer_accept": [
+            "(나)(라)",
+            "나, 라"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "작도에는 <b>눈금 없는 자</b>와 <b>컴퍼스</b>만 써요. 각도기와 눈금은 쓸 수 없어요.",
+          "solution": "(가) 자에 눈금이 있으면 작도가 아니에요. ✗<br>(나) 컴퍼스 벌림이 곧 길이라서 옮길 수 있어요. ✓<br>(다) 각도기는 쓸 수 없어요. ✗<br>(라) 자의 역할이 바로 직선 긋기예요. ✓",
+          "work_space": "sm",
+          "misconceptions": [
+            "constr.tool-role"
+          ]
+        },
+        {
+          "id": "m1-u08-t01-02",
+          "level": "L",
+          "stem_src": "컴퍼스만으로 할 수 있는 일이 아닌 것은?",
+          "stem_print": "컴퍼스만으로 할 수 있는 일이 <b>아닌</b> 것을 골라 번호를 쓰시오.<br>① 한 점을 중심으로 호 그리기 &nbsp; ② 같은 길이를 다른 위치에 옮기기 &nbsp; ③ 한 점을 중심으로 원 그리기 &nbsp; ④ 두 점을 잇는 직선 긋기",
+          "answer_atoms": [
+            "④ 직선 긋기는 자의 역할"
+          ],
+          "answer_print": "④ 직선 긋기는 자의 역할",
+          "answer_accept": [
+            "④",
+            "4"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호로 (단위 없음)",
+          "figure": null,
+          "hint": "컴퍼스의 두 다리는 굽어지지 않아요. 직선은 누가 그을까요?",
+          "solution": "①, ②, ③ 은 모두 컴퍼스로 할 수 있어요.<br>④ 두 점을 잇는 직선은 <b>자</b>가 그어요. 컴퍼스로는 못 해요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "constr.tool-role"
+          ]
+        },
+        {
+          "id": "m1-u08-t01-03",
+          "level": "L",
+          "stem_src": "다음 중 작도라고 할 수 있는 것은?",
+          "stem_print": "다음 중 작도라고 할 수 있는 것을 골라 번호를 쓰시오.<br>① 눈금자로 5 cm를 잰 후 그 길이만큼 선분을 그린다 &nbsp; ② 각도기로 60°를 잰 후 정삼각형을 그린다 &nbsp; ③ 컴퍼스를 같은 반지름으로 두 점에서 호를 그어 교점을 찾는다 &nbsp; ④ 자유로운 손으로 곡선을 그린다",
+          "answer_atoms": [
+            "③"
+          ],
+          "answer_print": "③",
+          "answer_accept": [
+            "3"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호로 (단위 없음)",
+          "figure": null,
+          "hint": "길이나 각도를 직접 재면 작도가 아니에요. 손으로 그린 선도 정확하지 않아요.",
+          "solution": "① 눈금자 사용 ✗ &nbsp; ② 각도기 사용 ✗ &nbsp; ④ 자유 곡선 ✗<br>③ 같은 반지름의 두 호로 교점을 찾는 것이 작도의 핵심 절차예요. ✓",
+          "work_space": "sm",
+          "misconceptions": [
+            "constr.tool-role"
+          ]
+        },
+        {
+          "id": "m1-u08-t01-04",
+          "level": "M",
+          "stem_src": "선분 AB와 같은 길이의 선분 CD를 작도하는 절차에서, 가장 먼저 컴퍼스로 해야 할 일은?",
+          "stem_print": "선분 AB 와 같은 길이의 선분 CD 를 작도하려고 한다. <b>가장 먼저 컴퍼스로 해야 할 일</b>을 한 문장으로 쓰시오.",
+          "answer_atoms": [
+            "컴퍼스를 A에 꽂고 B까지 벌려 $\\overline{AB}$ 길이를 잡는다"
+          ],
+          "answer_print": "컴퍼스를 A 에 꽂고 B 까지 벌려 선분 AB 의 길이를 잡아요",
+          "answer_accept": [
+            "컴퍼스 벌림을 선분 AB 의 길이로 맞춘다",
+            "컴퍼스를 A 에 꽂고 B 까지 벌린다"
+          ],
+          "answer_unit": null,
+          "answer_format": "한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "컴퍼스 벌림이 곧 옮길 길이예요. 어떤 길이를 먼저 기억해 두어야 할까요?",
+          "solution": "컴퍼스를 A 에 꽂고 B 까지 벌리면 컴퍼스 벌림이 곧 선분 AB 의 길이가 돼요.<br>그다음 새 직선 위의 점 C 에 컴퍼스를 꽂고 호를 그어 교점 D 를 찾으면 선분 CD = 선분 AB 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "constr.tool-role"
+          ]
+        },
+        {
+          "id": "m1-u08-t01-05",
+          "level": "M",
+          "stem_src": "아래 작도 단계 중 옳지 않은 단계를 고르시오 (수직이등분선 작도).",
+          "stem_print": "아래는 선분 AB 의 수직이등분선을 작도하는 단계이다. 이 중 <b>옳지 않은</b> 단계를 골라 번호를 쓰시오.<br>① 컴퍼스를 A에 꽂고 적당한 호를 그린다<br>② 같은 반지름으로 B에 꽂고 호를 그어 두 교점 P, Q를 얻는다<br>③ 자로 P와 Q를 연결한다<br>④ 자로 직접 선분 AB 의 중점을 표시한 후 그 점에서 90°로 직선을 긋는다",
+          "answer_atoms": [
+            "④"
+          ],
+          "answer_print": "④",
+          "answer_accept": [
+            "4"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호로 (단위 없음)",
+          "figure": null,
+          "hint": "중점을 직접 표시하거나 90° 를 직접 긋는 것은 작도의 결과를 미리 가정하는 일이에요.",
+          "solution": "① ~ ③ 은 정상 절차예요. ✓<br>④ 작도는 중점이나 90° 같은 결과를 미리 가정하지 않고 두 도구만으로 만들어 내요. 자나 각도기로 직접 만들면 안 돼요.",
+          "work_space": "md",
+          "misconceptions": [
+            "constr.assume-result"
+          ]
+        },
+        {
+          "id": "m1-u08-t01-06",
+          "level": "M",
+          "stem_src": "아래 표현 중 작도에서 사용 가능한 것을 모두 고르시오.",
+          "stem_print": "다음 표현 중 작도에서 사용할 수 있는 것을 <b>모두</b> 골라 쓰시오.<br>(가) 컴퍼스로 호 그리기 &nbsp; (나) 자로 직선 긋기 &nbsp; (다) “두 호의 교점”이라는 표현 &nbsp; (라) “직선 위 임의의 점 P를 잡는다” &nbsp; (마) “각도기로 50°를 잰다”",
+          "answer_atoms": [
+            "(가), (나), (다), (라)"
+          ],
+          "answer_print": "(가), (나), (다), (라)",
+          "answer_accept": [
+            "(가)(나)(다)(라)",
+            "가, 나, 다, 라"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "교점을 <b>찾는</b> 것과 자로 <b>재는</b> 것은 서로 달라요.",
+          "solution": "(가), (나) 두 도구의 정상 사용이에요. ✓<br>(다) 두 호의 교점은 저절로 정해져요. ✓<br>(라) 직선 위 임의의 점은 잡아도 돼요. ✓<br>(마) 각도기로 직접 재는 것은 작도가 아니에요. ✗",
+          "work_space": "md",
+          "misconceptions": [
+            "constr.tool-role",
+            "constr.assume-result"
+          ]
+        },
+        {
+          "id": "m1-u08-t01-07",
+          "level": "H",
+          "stem_src": "자만으로 정확히 그릴 수 있는 도형을 모두 고르시오.",
+          "stem_print": "한 친구가 자만 가지고 있다. 자만으로 정확히 그릴 수 있는 도형을 <b>모두</b> 골라 쓰시오.<br>(가) 정삼각형 &nbsp; (나) 직선 &nbsp; (다) 두 점을 잇는 선분 &nbsp; (라) 원 &nbsp; (마) 정사각형",
+          "answer_atoms": [
+            "(나), (다)"
+          ],
+          "answer_print": "(나), (다)",
+          "answer_accept": [
+            "(나)(다)",
+            "나, 다"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "눈금 없는 자는 두 점이 주어졌을 때 그 둘을 잇는 선만 그어요. 같은 길이는 만들어 주지 못해요.",
+          "solution": "자는 두 점을 잇는 직선과 선분만 그릴 수 있어요.<br>(가) 정삼각형 — 세 변이 같은 길이라는 것을 보장하지 못해요. ✗<br>(라) 원 — 자로는 곡선을 그릴 수 없어요. ✗<br>(마) 정사각형 — 직각도 같은 길이도 보장하지 못해요. ✗<br>→ 컴퍼스가 빠지면 “같은 길이”라는 핵심 정보를 만들 수 없어요. 작도에 두 도구가 모두 필요한 이유예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "constr.tool-role"
+          ]
+        },
+        {
+          "id": "m1-u08-t01-08",
+          "level": "H",
+          "stem_src": "정삼각형 ABC를 작도하는 절차에서 ⓓ 단계의 의미를 설명하시오.",
+          "stem_print": "정삼각형 ABC 를 작도하는 다음 절차에서 ⓓ 단계의 의미를 설명하시오.<br>ⓐ 자로 선분 AB 를 그린다<br>ⓑ 컴퍼스를 A에 꽂고 B까지 벌려 호를 그린다<br>ⓒ 컴퍼스 벌림을 그대로 두고 B에 꽂아 호를 그린다<br>ⓓ <b>두 호가 만나는 점을 C라 한다</b>",
+          "answer_atoms": [
+            "C는 A에서도 B에서도 같은 거리(=$\\overline{AB}$의 길이)에 있는 점"
+          ],
+          "answer_print": "C 는 A 에서도 B 에서도 같은 거리(= 선분 AB 의 길이)에 있는 점이에요",
+          "answer_accept": [
+            "선분 CA = 선분 CB = 선분 AB 인 점",
+            "A 와 B 에서 거리가 같은 점"
+          ],
+          "answer_unit": null,
+          "answer_format": "한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "A 에서 그린 호 위의 점은 A 에서 거리가 얼마인가요? B 에서 그린 호는요? 두 조건을 동시에 만족하는 점은 어디일까요?",
+          "solution": "ⓑ A 를 중심으로 한 호 위의 모든 점은 A 에서 거리가 선분 AB 예요.<br>ⓒ B 를 중심으로 한 호 위의 모든 점은 B 에서 거리가 선분 AB 예요. (같은 반지름)<br>두 호의 교점 C 는 A 와 B 에서 모두 같은 거리에 있어요. → 선분 CA = 선분 CB = 선분 AB<br>→ 정삼각형이 완성돼요. 컴퍼스의 “같은 반지름”이 정삼각형을 보장해 줘요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "constr.same-radius"
+          ]
+        },
+        {
+          "id": "m1-u08-t01-09",
+          "level": "H",
+          "stem_src": "임의의 각의 삼등분이 불가능하다는 사실이 의미하는 것을 모두 고르시오.",
+          "stem_print": "“눈금 없는 자와 컴퍼스로는 임의의 각을 삼등분할 수 없다”는 사실이 19세기에 증명되었다. 이 사실이 뜻하는 것을 <b>모두</b> 골라 쓰시오.<br>(가) 어떤 도구로도 각을 삼등분할 수 없다 &nbsp; (나) 종이접기로는 각을 삼등분할 수 있다 &nbsp; (다) 자와 컴퍼스라는 <b>도구의 한계</b>를 증명한 것이다 &nbsp; (라) 각의 이등분도 같은 이유로 불가능하다",
+          "answer_atoms": [
+            "(나), (다)"
+          ],
+          "answer_print": "(나), (다)",
+          "answer_accept": [
+            "(나)(다)",
+            "나, 다"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "“자와 컴퍼스로는 안 된다”는 말과 “어떤 도구로도 안 된다”는 말은 서로 달라요.",
+          "solution": "(가) ✗ — 자와 컴퍼스로 안 될 뿐이고, 다른 도구로는 될 수 있어요.<br>(나) ✓ — 종이접기는 더 강력한 도구라서 각의 삼등분이 가능해요.<br>(다) ✓ — 도구 자체의 한계를 밝힌 것이 이 증명의 의의예요.<br>(라) ✗ — 각의 이등분은 자와 컴퍼스로 할 수 있어요. 삼등분만 안 돼요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "constr.trisection"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "길이·각 옮기기",
+      "principle": "컴퍼스 벌림이 곧 길이예요. 같은 벌림으로 호를 그리면 같은 길이가 그대로 옮겨져요. 각을 옮길 때는 두 변 위 두 점 사이의 거리까지 함께 옮겨서, 세 변이 같은 두 삼각형(SSS 합동)을 만들어요.",
+      "problems": [
+        {
+          "id": "m1-u08-t02-01",
+          "level": "L",
+          "stem_src": "선분 AB와 같은 길이의 선분을 다른 직선 위에 작도할 때 사용하는 도구를 모두 고르시오.",
+          "stem_print": "선분 AB 와 같은 길이의 선분을 다른 직선 위에 작도하려고 한다. 사용하는 도구를 <b>모두</b> 골라 쓰시오.<br>(가) 눈금 있는 자 &nbsp; (나) 눈금 없는 자 &nbsp; (다) 컴퍼스 &nbsp; (라) 각도기",
+          "answer_atoms": [
+            "(나), (다)"
+          ],
+          "answer_print": "(나), (다)",
+          "answer_accept": [
+            "(나)(다)",
+            "나, 다"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "작도에는 언제나 두 가지 도구만 써요.",
+          "solution": "눈금 없는 자로 직선을 긋고, 컴퍼스로 길이를 옮겨요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "constr.tool-role"
+          ]
+        },
+        {
+          "id": "m1-u08-t02-02",
+          "level": "L",
+          "stem_src": "∠XOY와 크기가 같은 각을 작도할 때 처음에 컴퍼스로 해야 할 일은?",
+          "stem_print": "∠XOY 와 크기가 같은 각을 다른 직선 위의 점 O′ 에 작도하려고 한다. <b>가장 먼저 컴퍼스로</b> 해야 할 일을 골라 번호를 쓰시오.<br>① O를 중심으로 호를 그어 반직선 OX, OY와 만나는 두 점 A, B를 잡는다 &nbsp; ② 선분 AB를 자로 측정한다 &nbsp; ③ 새 직선에 90°를 표시한다 &nbsp; ④ 각도기로 ∠XOY를 잰다",
+          "answer_atoms": [
+            "①"
+          ],
+          "answer_print": "①",
+          "answer_accept": [
+            "1"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호로 (단위 없음)",
+          "figure": null,
+          "hint": "각도기와 눈금자는 쓸 수 없어요. 컴퍼스로 무엇을 먼저 붙잡아 두면 좋을까요?",
+          "solution": "① 원래 각의 두 변 위에 두 점을 잡으면, 그 두 점 사이의 거리가 각의 크기 정보를 그대로 담아 줘요.<br>② 측정 ✗ &nbsp; ③ 결과를 미리 가정 ✗ &nbsp; ④ 각도기 ✗",
+          "work_space": "sm",
+          "misconceptions": [
+            "constr.tool-role",
+            "constr.assume-result"
+          ]
+        },
+        {
+          "id": "m1-u08-t02-03",
+          "level": "L",
+          "stem_src": "컴퍼스로 같은 길이를 옮길 때 컴퍼스 벌림을 바꾸지 않는 이유는?",
+          "stem_print": "컴퍼스로 같은 길이를 옮길 때 <b>컴퍼스 벌림을 바꾸지 않는 이유</b>를 한 문장으로 쓰시오.",
+          "answer_atoms": [
+            "벌림이 곧 옮기는 길이이기 때문"
+          ],
+          "answer_print": "벌림이 곧 옮기는 길이이기 때문이에요",
+          "answer_accept": [
+            "컴퍼스 벌림 = 옮기는 길이라서"
+          ],
+          "answer_unit": null,
+          "answer_format": "한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "컴퍼스 벌림은 두 다리 끝 사이의 거리예요.",
+          "solution": "컴퍼스 벌림은 두 다리 끝 사이의 거리이고, 그 거리가 그대로 새 자리에 옮겨져요.<br>벌림이 바뀌면 옮긴 길이도 달라져서 작도가 무너져요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "constr.same-radius"
+          ]
+        },
+        {
+          "id": "m1-u08-t02-04",
+          "level": "M",
+          "stem_src": "∠XOY와 크기가 같은 각을 작도했을 때 두 각이 같음을 보장하는 핵심 근거는?",
+          "stem_print": "∠XOY 와 크기가 같은 각을 작도했을 때, 두 각이 같음을 보장하는 핵심 근거를 골라 번호를 쓰시오.<br>① 각도기로 같은 값을 두 번 잰다 &nbsp; ② 컴퍼스 두 번의 같은 반지름이 두 삼각형을 SSS 합동으로 만든다 &nbsp; ③ 자로 같은 길이를 직접 측정해 옮긴다 &nbsp; ④ 우연히 같은 각이 나온다",
+          "answer_atoms": [
+            "②"
+          ],
+          "answer_print": "②",
+          "answer_accept": [
+            "2"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호로 (단위 없음)",
+          "figure": null,
+          "hint": "각을 옮기는 절차에서 컴퍼스로 어떤 길이들을 같게 맞추었는지 떠올려 봐요.",
+          "solution": "각 옮기기 절차예요.<br>1) O 중심 호 → A, B (선분 OA = 선분 OB)<br>2) 같은 반지름으로 O′ 중심 호 → A′, B′ (선분 O′A′ = 선분 O′B′ = 선분 OA)<br>3) 선분 AB 의 길이로 A′ 에서 호 → B′ (선분 A′B′ = 선분 AB)<br>→ 삼각형 OAB ≡ 삼각형 O′A′B′ (SSS) → ∠O = ∠O′ ✓<br>→ 작도의 정확성은 합동에서 나와요.",
+          "work_space": "md",
+          "misconceptions": [
+            "constr.same-radius"
+          ]
+        },
+        {
+          "id": "m1-u08-t02-05",
+          "level": "M",
+          "stem_src": "길이 a인 선분을 직선 l 위에 옮기려고 한다. 옳은 작도 절차는?",
+          "stem_print": "길이가 a 인 선분을 직선 l 위에 옮기려고 한다. 옳은 작도 절차를 골라 번호를 쓰시오.<br>① 직선 l 위 임의의 점 P를 잡고, P에 컴퍼스를 꽂아 a 만큼 벌린 후 호를 그어 직선과의 교점을 Q로 한다 &nbsp; ② 직선 l 위에 자로 a cm를 잰다 &nbsp; ③ 임의의 두 점을 직선 l 위에 자로 표시한다",
+          "answer_atoms": [
+            "①"
+          ],
+          "answer_print": "①",
+          "answer_accept": [
+            "1"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호로 (단위 없음)",
+          "figure": null,
+          "hint": "길이를 직접 재면 작도가 아니에요. 컴퍼스로 길이를 가져와요.",
+          "solution": "① 점 P 에서 길이 a 만큼 호를 그어 직선과 만나는 점 Q 를 찾으면 선분 PQ = a 예요. ✓<br>② 자로 cm 를 재는 것은 작도가 아니에요. ✗<br>③ 임의의 두 점에는 길이 정보가 없어요. ✗",
+          "work_space": "md",
+          "misconceptions": [
+            "constr.tool-role"
+          ]
+        },
+        {
+          "id": "m1-u08-t02-06",
+          "level": "M",
+          "stem_src": "직선 l 위에 AB − CD 길이의 선분을 작도하는 절차는?",
+          "stem_print": "두 선분 AB 와 CD 가 주어져 있다. (선분 AB > 선분 CD) 직선 l 위에 (선분 AB) − (선분 CD) 의 길이를 갖는 선분을 작도하는 절차를 순서대로 쓰시오.",
+          "answer_atoms": [
+            "① 직선 $l$ 위에 점 P 잡기 → ② P에서 호 (반지름 $\\overline{AB}$) → 교점 Q ($\\overline{PQ} = \\overline{AB}$) → ③ Q에서 호 (반지름 $\\overline{CD}$, P 방향) → 교점 R ($\\overline{QR} = \\overline{CD}$) → 결과: $\\overline{PR} = \\overline{AB} - \\overline{CD}$"
+          ],
+          "answer_print": "① 직선 l 위에 점 P 를 잡아요 → ② P 에서 반지름 선분 AB 인 호를 그어 교점 Q 를 잡아요 (선분 PQ = 선분 AB) → ③ Q 에서 반지름 선분 CD 인 호를 P 쪽으로 그어 교점 R 을 잡아요 (선분 QR = 선분 CD) → ④ 결과는 선분 PR = 선분 AB − 선분 CD 예요",
+          "answer_accept": [
+            "선분 AB 를 옮긴 뒤 그 안쪽으로 선분 CD 만큼 되돌아온다"
+          ],
+          "answer_unit": null,
+          "answer_format": "절차를 순서대로, 한 문장씩 (단위 없음)",
+          "figure": null,
+          "hint": "먼저 선분 AB 를 옮기고, 그 안쪽으로 선분 CD 만큼 되돌아와요.",
+          "solution": "컴퍼스를 두 번 써요. 직접 빼는 것이 아니라 “긴 거리에서 짧은 거리만큼 안쪽으로 들어가기”로 차이를 작도해요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "constr.tool-role"
+          ]
+        },
+        {
+          "id": "m1-u08-t02-07",
+          "level": "H",
+          "stem_src": "∠XOY를 옮길 때 변경 불가한 단계를 모두 고르시오.",
+          "stem_print": "∠XOY 를 옮길 때 쓰는 컴퍼스 절차에서 <b>바꾸면 안 되는</b> 단계를 모두 고르고, 그 이유를 쓰시오.<br>(가) 1단계 호의 반지름 (O 중심) &nbsp; (나) 2단계 새 직선 위 호의 반지름 (O′ 중심) &nbsp; (다) 3단계 새 호의 반지름 (A′ 중심, 선분 AB 의 길이) &nbsp; (라) 호를 그리는 시계·반시계 방향",
+          "answer_atoms": [
+            "(가) = (나), (다)는 AB 길이와 같아야"
+          ],
+          "answer_print": "(가) = (나), (다)는 AB 길이와 같아야 해요",
+          "answer_accept": [
+            "(가)와 (나)는 서로 같아야 하고 (다)는 선분 AB 와 같아야 한다"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호와 이유를 한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "세 변이 각각 같아야 두 삼각형이 합동이 돼요. 어떤 길이들이 짝을 이루어야 할까요?",
+          "solution": "(가)와 (나) — 둘이 같은 반지름이어야 선분 OA = 선분 O′A′ 가 보장돼요.<br>(다) — 선분 AB 의 길이와 같아야 선분 A′B′ = 선분 AB 가 보장돼요.<br>→ 세 변이 각각 같아지므로 SSS 합동이 성립해요.<br>(라) 호를 그리는 방향은 결과에 영향을 주지 않아요. 다만 보통 같은 방향으로 통일해요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "constr.same-radius"
+          ]
+        },
+        {
+          "id": "m1-u08-t02-08",
+          "level": "H",
+          "stem_src": "선분 AB의 2배 길이의 선분을 직선 l 위에 작도하는 방법을 단계별로 설명하시오.",
+          "stem_print": "선분 AB 가 주어져 있다. 선분 AB 의 <b>2배</b> 길이인 선분을 직선 l 위에 작도하는 방법을 단계별로 쓰시오.",
+          "answer_atoms": [
+            "① 직선 $l$ 위 점 P 잡기 ② P에 컴퍼스 꽂고 $\\overline{AB}$ 길이로 벌려 호 → 교점 Q ($\\overline{PQ} = \\overline{AB}$) ③ 컴퍼스 같은 벌림으로 Q에 꽂아 호 (P 반대 방향) → 교점 R ($\\overline{QR} = \\overline{AB}$) ④ 결과: $\\overline{PR} = \\overline{PQ} + \\overline{QR} = 2\\overline{AB}$"
+          ],
+          "answer_print": "① 직선 l 위에 점 P 를 잡아요 ② P 에 컴퍼스를 꽂고 선분 AB 만큼 벌려 호를 그어 교점 Q 를 잡아요 (선분 PQ = 선분 AB) ③ 같은 벌림으로 Q 에 꽂아 P 반대쪽으로 호를 그어 교점 R 을 잡아요 (선분 QR = 선분 AB) ④ 결과는 선분 PR = 선분 PQ + 선분 QR = 2 × 선분 AB 예요",
+          "answer_accept": [
+            "같은 컴퍼스 벌림으로 선분 AB 를 두 번 이어 옮긴다"
+          ],
+          "answer_unit": null,
+          "answer_format": "절차를 순서대로, 한 문장씩 (단위 없음)",
+          "figure": null,
+          "hint": "선분 AB 만큼을 직선 위에 두 번 연달아 옮겨요.",
+          "solution": "같은 컴퍼스 벌림을 두 번 연속으로 쓰면 같은 길이 두 개가 이어져요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "constr.same-radius",
+            "constr.tool-role"
+          ]
+        },
+        {
+          "id": "m1-u08-t02-09",
+          "level": "H",
+          "stem_src": "∠AOB의 2배 크기의 각을 작도할 때 핵심 아이디어를 설명하시오.",
+          "stem_print": "예각 ∠AOB 가 주어져 있다. 직선 l 위에 ∠AOB 의 <b>2배</b> 크기인 각을 작도하려고 할 때, 핵심 아이디어를 한 문장으로 쓰시오.",
+          "answer_atoms": [
+            "각 옮기기를 연달아 두 번"
+          ],
+          "answer_print": "각 옮기기를 연달아 두 번 해요",
+          "answer_accept": [
+            "같은 각을 이어 붙여 두 번 옮긴다"
+          ],
+          "answer_unit": null,
+          "answer_format": "한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "각 옮기기를 두 번 써서 두 각을 이어 붙여요.",
+          "solution": "① 직선 l 위에 점 O′ 를 잡아요.<br>② 반직선 O′X 를 한 변으로 하여 ∠AOB 와 같은 각을 작도해요. → 새 변 반직선 O′P (∠XO′P = ∠AOB)<br>③ 이번에는 반직선 O′P 를 한 변으로 하여 같은 방향으로 ∠AOB 와 같은 각을 다시 작도해요. → 새 변 반직선 O′Q<br>④ ∠XO′Q = 2 × ∠AOB<br>→ 옮기기는 반복할 수 있어요. 각의 합과 차도 같은 원리로 작도해요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "constr.trisection"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "수직이등분선 작도",
+      "principle": "선분의 <b>수직이등분선</b>은 중점을 지나면서 그 선분에 수직인 직선이에요. 이 직선 위의 점은 선분의 두 끝점에서 거리가 같아요. 작도할 때는 두 끝점에서 <b>같은 반지름</b>의 호를 그어 두 교점을 이어요.",
+      "problems": [
+        {
+          "id": "m1-u08-t03-01",
+          "level": "L",
+          "stem_src": "선분 AB의 수직이등분선의 정의는?",
+          "stem_print": "선분 AB 의 수직이등분선의 정의로 옳은 것을 골라 번호를 쓰시오.<br>① 선분 AB 를 반으로 나누는 직선 &nbsp; ② 선분 AB 에 수직인 직선 &nbsp; ③ 선분 AB 의 중점을 지나면서 선분 AB 에 수직인 직선 &nbsp; ④ 선분 AB 위 임의의 점을 지나는 직선",
+          "answer_atoms": [
+            "③"
+          ],
+          "answer_print": "③",
+          "answer_accept": [
+            "3"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호로 (단위 없음)",
+          "figure": null,
+          "hint": "“수직”과 “이등분”, 두 조건이 동시에 만족되어야 해요.",
+          "solution": "① 이등분 조건만 있어요. ✗ &nbsp; ② 수직 조건만 있어요. ✗<br>③ 중점을 지나고(이등분) 수직이에요. 두 조건 모두 만족 ✓",
+          "work_space": "sm",
+          "misconceptions": [
+            "perp.bisector-property"
+          ]
+        },
+        {
+          "id": "m1-u08-t03-02",
+          "level": "L",
+          "stem_src": "선분 AB의 수직이등분선을 작도하는 절차로 옳은 것은?",
+          "stem_print": "선분 AB 의 수직이등분선을 작도하는 절차로 옳은 것을 골라 쓰시오.<br>(가) A 중심 호 → B 중심 호 (같은 반지름) → 두 교점 P, Q 를 자로 잇기<br>(나) A 중심 호 → B 중심 호 (다른 반지름) → 두 교점을 자로 잇기<br>(다) 선분 AB 의 중점을 자로 표시 → 그 점에서 90°로 직선 긋기",
+          "answer_atoms": [
+            "(가)"
+          ],
+          "answer_print": "(가)",
+          "answer_accept": [
+            "가"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로 (단위 없음)",
+          "figure": null,
+          "hint": "두 호의 반지름이 같아야 두 교점이 A 와 B 에서 같은 거리에 있어요.",
+          "solution": "(가) 같은 반지름 → 교점이 A·B 에서 같은 거리 → 수직이등분선 위 ✓<br>(나) 반지름이 다르면 교점이 A·B 에서 다른 거리에 있어요. ✗<br>(다) 자로 중점과 90° 를 직접 만드는 것은 작도가 아니에요. ✗",
+          "work_space": "sm",
+          "misconceptions": [
+            "constr.same-radius",
+            "constr.assume-result"
+          ]
+        },
+        {
+          "id": "m1-u08-t03-03",
+          "level": "L",
+          "stem_src": "선분 AB의 수직이등분선을 PQ라 할 때 옳은 것은?",
+          "stem_print": "선분 AB 의 수직이등분선을 직선 PQ 라 할 때 옳은 것을 골라 번호를 쓰시오. (M 은 선분 AB 의 중점, P 는 수직이등분선 위의 점)<br>① 선분 PA = 선분 PB &nbsp; ② 선분 PA > 선분 PB &nbsp; ③ ∠PMA = 60° &nbsp; ④ P 는 항상 선분 AB 위에 있다",
+          "answer_atoms": [
+            "①"
+          ],
+          "answer_print": "①",
+          "answer_accept": [
+            "1"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호로 (단위 없음)",
+          "figure": null,
+          "hint": "수직이등분선 위의 모든 점은 두 끝점에서 거리가 같아요.",
+          "solution": "① 수직이등분선 위의 점 P 는 A 와 B 에서 거리가 같아요. ✓<br>② 같으므로 ✗ &nbsp; ③ 수직이므로 90° 예요. ✗ &nbsp; ④ P 는 보통 선분 AB 밖에 있어요. ✗",
+          "work_space": "sm",
+          "misconceptions": [
+            "perp.bisector-property"
+          ]
+        },
+        {
+          "id": "m1-u08-t03-04",
+          "level": "M",
+          "stem_src": "AB = 8 cm일 때 수직이등분선 작도에 사용 가능한 컴퍼스 반지름을 모두 고르시오.",
+          "stem_print": "선분 AB = 8 cm 이다. 이 선분의 수직이등분선을 작도할 때 컴퍼스 반지름으로 <b>쓸 수 있는</b> 길이를 모두 골라 쓰시오.<br>(가) 3 cm &nbsp; (나) 4 cm &nbsp; (다) 5 cm &nbsp; (라) 8 cm &nbsp; (마) 10 cm",
+          "answer_atoms": [
+            "(다), (라), (마)"
+          ],
+          "answer_print": "(다), (라), (마)",
+          "answer_accept": [
+            "(다)(라)(마)",
+            "다, 라, 마"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "두 호가 만나려면 반지름이 선분 AB 의 절반보다 커야 해요.",
+          "solution": "두 호가 서로 만나려면 반지름 r > 4 cm 여야 해요. (선분 AB 의 절반 = 4 cm)<br>(가) r = 3 < 4 → 두 호가 만나지 않아요. ✗<br>(나) r = 4 → 두 호가 중점 한 곳에서만 닿아서 직선을 정할 수 없어요. ✗<br>(다) r = 5 ✓ &nbsp; (라) r = 8 ✓ &nbsp; (마) r = 10 ✓",
+          "work_space": "md",
+          "misconceptions": [
+            "constr.radius-too-small"
+          ]
+        },
+        {
+          "id": "m1-u08-t03-05",
+          "level": "M",
+          "stem_src": "수직이등분선 위의 점 P에 대해 PA = 7 cm일 때 PB의 길이는?",
+          "stem_print": "선분 AB 의 수직이등분선 위에 점 P 가 있다. 선분 PA = 7 cm 일 때 선분 PB 의 길이를 구하시오.",
+          "answer_atoms": [
+            "$\\overline{PB} = 7$ cm"
+          ],
+          "answer_print": "선분 PB = 7",
+          "answer_accept": [
+            "7",
+            "7 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "수로 (단위 cm)",
+          "figure": null,
+          "hint": "수직이등분선의 핵심 성질을 떠올려 봐요.",
+          "solution": "수직이등분선 위의 점 P 는 선분 PA = 선분 PB 예요. (두 끝점에서 같은 거리)<br>따라서 선분 PB = 7 cm 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "perp.bisector-property"
+          ]
+        },
+        {
+          "id": "m1-u08-t03-06",
+          "level": "M",
+          "stem_src": "두 점 A, B에서 같은 거리에 있는 모든 점들의 모임은 어떤 도형인가?",
+          "stem_print": "두 점 A, B 에서 <b>같은 거리</b>에 있는 모든 점들의 모임은 어떤 도형인지 쓰시오.",
+          "answer_atoms": [
+            "$\\overline{AB}$의 수직이등분선"
+          ],
+          "answer_print": "선분 AB 의 수직이등분선",
+          "answer_accept": [
+            "AB 의 수직이등분선"
+          ],
+          "answer_unit": null,
+          "answer_format": "도형의 이름으로 (단위 없음)",
+          "figure": null,
+          "hint": "수직이등분선의 성질을 거꾸로 생각해 봐요.",
+          "solution": "“두 점 A, B 에서 같은 거리에 있는 점”은 선분 PA = 선분 PB 인 점 P 예요.<br>이 조건을 만족하는 점을 모두 모으면 선분 AB 의 수직이등분선(직선)이 돼요.<br>중점 M 도 이 모임에 들어가요. (선분 MA = 선분 MB)",
+          "work_space": "md",
+          "misconceptions": [
+            "perp.bisector-property"
+          ]
+        },
+        {
+          "id": "m1-u08-t03-07",
+          "level": "H",
+          "stem_src": "수직이등분선 작도가 정확하다는 것을 합동을 사용해 설명하시오.",
+          "stem_print": "선분 AB 의 수직이등분선이 직선 PQ 이고 중점이 M 일 때, ∠AMP = 90° 인 이유를 합동을 사용해 설명하시오.",
+          "answer_atoms": [
+            "삼각형 APM ≡ 삼각형 BPM (SSS)"
+          ],
+          "answer_print": "삼각형 APM ≡ 삼각형 BPM (SSS)",
+          "answer_accept": [
+            "△APM ≡ △BPM (SSS)"
+          ],
+          "answer_unit": null,
+          "answer_format": "합동인 두 삼각형과 합동조건을 SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "두 삼각형 APM 과 BPM 을 견주어 봐요. 세 변 중 무엇과 무엇이 같은가요?",
+          "solution": "선분 PA = 선분 PB (호의 반지름이 같아요)<br>선분 MA = 선분 MB (M 이 중점이에요)<br>선분 PM 은 공통이에요.<br>→ 세 변이 각각 같으므로 삼각형 APM ≡ 삼각형 BPM (SSS)<br>→ ∠AMP = ∠BMP (대응각)<br>두 각을 합하면 평각이므로 ∠AMP + ∠BMP = 180°<br>→ ∠AMP = 90° ✓ 따라서 직선 PQ 는 선분 AB 에 수직이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "perp.bisector-property",
+            "cong.correspondence-order"
+          ]
+        },
+        {
+          "id": "m1-u08-t03-08",
+          "level": "H",
+          "stem_src": "두 마을에서 똑같이 떨어진 곳에 우체국을 짓고 싶다. 가능한 위치를 모두 표현하면?",
+          "stem_print": "두 마을 A, B 가 있다. 두 마을에서 <b>똑같이 떨어진 곳</b>에 우체국을 지으려고 한다. 가능한 위치를 모두 나타내시오.",
+          "answer_atoms": [
+            "$\\overline{AB}$의 수직이등분선 위 모든 점"
+          ],
+          "answer_print": "선분 AB 의 수직이등분선 위의 모든 점",
+          "answer_accept": [
+            "AB 의 수직이등분선 위"
+          ],
+          "answer_unit": null,
+          "answer_format": "도형으로 (단위 없음)",
+          "figure": null,
+          "hint": "두 점에서 거리가 같은 점들이 모이면 어떤 도형이 될까요?",
+          "solution": "두 마을 A, B 에서 같은 거리에 있는 점은 수직이등분선 위의 점이에요.<br>가능한 위치는 무수히 많고, 모두 선분 AB 의 수직이등분선 위에 있어요.<br>→ 작도로 그 직선을 그려 두면 어디든 우체국 후보지가 돼요. 수직이등분선의 쓸모예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "perp.bisector-property"
+          ]
+        },
+        {
+          "id": "m1-u08-t03-09",
+          "level": "H",
+          "stem_src": "삼각형 ABC에서 세 변의 수직이등분선이 한 점 O에서 만났다. 점 O의 의미는?",
+          "stem_print": "삼각형 ABC 에서 세 변의 수직이등분선을 모두 그렸더니 한 점 O 에서 만났다. 점 O 의 의미를 쓰시오.",
+          "answer_atoms": [
+            "O는 세 꼭짓점 A, B, C에서 모두 같은 거리"
+          ],
+          "answer_print": "O 는 세 꼭짓점 A, B, C 에서 모두 같은 거리에 있는 점이에요 (외심)",
+          "answer_accept": [
+            "삼각형의 외접원의 중심 (외심)"
+          ],
+          "answer_unit": null,
+          "answer_format": "한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "선분 AB 의 수직이등분선 위에 O 가 있으면 무엇을 알 수 있나요? 선분 BC 쪽도 함께 생각해 봐요.",
+          "solution": "선분 AB 의 수직이등분선 위 O → 선분 OA = 선분 OB<br>선분 BC 의 수직이등분선 위 O → 선분 OB = 선분 OC<br>→ 선분 OA = 선분 OB = 선분 OC<br>→ O 를 중심으로 반지름 선분 OA 인 원을 그리면 A, B, C 를 모두 지나요. = <b>삼각형의 외접원의 중심(외심)</b><br>→ 세 수직이등분선이 늘 한 점에서 만나는 이유예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "perp.bisector-property"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "각의 이등분선 작도",
+      "principle": "각의 <b>이등분선</b>은 한 각을 똑같이 둘로 나누는 반직선이에요. 이 선 위의 점은 각의 두 변에서 거리가 같아요. 작도할 때는 두 변 위에 같은 거리의 두 점을 잡고, 그 두 점에서 같은 반지름의 호를 그어 얻은 교점을 꼭짓점과 이어요.",
+      "problems": [
+        {
+          "id": "m1-u08-t04-01",
+          "level": "L",
+          "stem_src": "∠XOY의 이등분선 작도 절차를 옳은 순서로 나열하시오.",
+          "stem_print": "∠XOY (꼭짓점 O) 의 이등분선 작도 절차를 옳은 순서로 나열하시오.<br>(가) O 를 중심으로 호를 그어 반직선 OX, OY 와 만나는 두 점 A, B 를 잡는다<br>(나) A 중심 호와 B 중심 호 (같은 반지름) 의 교점을 P 라 한다<br>(다) 자로 O 와 P 를 잇는다",
+          "answer_atoms": [
+            "(가) → (나) → (다)"
+          ],
+          "answer_print": "(가) → (나) → (다)",
+          "answer_accept": [
+            "가 → 나 → 다",
+            "(가)(나)(다)"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호를 순서대로 (단위 없음)",
+          "figure": null,
+          "hint": "먼저 각의 두 변 위에 두 점을 잡고, 그다음 그 두 점에서 호를 그어요.",
+          "solution": "(가) 두 변 위에 두 점 A, B 를 잡아요. (출발점)<br>(나) A 와 B 에서 같은 반지름의 호를 그어 교점 P 를 얻어요.<br>(다) O 와 P 를 이으면 이등분선이 돼요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "constr.same-radius"
+          ]
+        },
+        {
+          "id": "m1-u08-t04-02",
+          "level": "L",
+          "stem_src": "∠XOY = 80°일 때 이등분선을 작도하면 ∠XOP의 크기는?",
+          "stem_print": "∠XOY = 80° 일 때 이 각의 이등분선을 작도하였다. ∠XOP 의 크기를 구하시오. (P 는 이등분선 위의 한 점)",
+          "answer_atoms": [
+            "40°"
+          ],
+          "answer_print": "40°",
+          "answer_accept": [
+            "40"
+          ],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 °)",
+          "figure": null,
+          "hint": "“이등분”은 똑같이 둘로 나눈다는 뜻이에요.",
+          "solution": "이등분선이 ∠XOY 를 똑같이 둘로 나누므로 ∠XOP = ∠POY = 80° ÷ 2 = 40° 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "angle.bisect-arithmetic"
+          ]
+        },
+        {
+          "id": "m1-u08-t04-03",
+          "level": "L",
+          "stem_src": "각의 이등분선 작도가 정확하다는 것은 어느 합동 조건으로 보장되는가?",
+          "stem_print": "각의 이등분선 작도가 정확하다는 것은 어느 합동조건으로 보장되는지 골라 쓰시오.<br>① SSS &nbsp; ② SAS &nbsp; ③ ASA &nbsp; ④ AAA",
+          "answer_atoms": [
+            "① SSS"
+          ],
+          "answer_print": "① SSS",
+          "answer_accept": [
+            "SSS",
+            "①"
+          ],
+          "answer_unit": null,
+          "answer_format": "SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "두 삼각형 OAP 와 OBP 의 세 변을 견주어 봐요.",
+          "solution": "삼각형 OAP 와 OBP 에서<br>선분 OA = 선분 OB (1단계에서 같은 반지름의 호)<br>선분 AP = 선분 BP (2단계에서 같은 반지름의 호)<br>선분 OP 는 공통이에요.<br>→ 세 변이 각각 같으므로 SSS 합동 → ∠AOP = ∠BOP (대응각) → 이등분 ✓",
+          "work_space": "sm",
+          "misconceptions": [
+            "constr.same-radius",
+            "tri.aaa-congruent"
+          ]
+        },
+        {
+          "id": "m1-u08-t04-04",
+          "level": "M",
+          "stem_src": "∠AOB의 이등분선 위의 점 P에서 OA와 OB까지의 거리는 어떤 관계인가?",
+          "stem_print": "∠AOB 의 이등분선 위에 점 P 가 있다. P 에서 반직선 OA 까지의 거리와 반직선 OB 까지의 거리는 어떤 관계인지 쓰시오. (거리 = 점 P 에서 직선까지의 수직 거리)",
+          "answer_atoms": [
+            "같다 ($d_1 = d_2$)"
+          ],
+          "answer_print": "같아요 (두 거리가 서로 같아요)",
+          "answer_accept": [
+            "같다",
+            "두 거리가 같다"
+          ],
+          "answer_unit": null,
+          "answer_format": "관계를 한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "P 에서 두 변에 내린 두 수선의 길이를 견주어 봐요. 그 두 삼각형은 합동일까요?",
+          "solution": "P 에서 반직선 OA, OB 에 내린 수선의 발을 각각 H₁, H₂ 라 해요.<br>두 직각삼각형 OPH₁ 과 OPH₂ 에서<br>∠POH₁ = ∠POH₂ (이등분선이니까)<br>∠PH₁O = ∠PH₂O = 90° (수선이니까)<br>선분 OP 는 공통이에요.<br>→ 한 변과 그 양 끝 두 각이 같으므로 ASA 합동<br>→ 선분 PH₁ = 선분 PH₂ ✓<br>→ 각의 이등분선 위의 점은 두 변에서 거리가 같아요.",
+          "work_space": "md",
+          "misconceptions": [
+            "angbis.distance-property"
+          ]
+        },
+        {
+          "id": "m1-u08-t04-05",
+          "level": "M",
+          "stem_src": "∠AOB = 60°를 두 번 연속 이등분하면 결과 각의 크기는?",
+          "stem_print": "∠AOB = 60° 이다. 이 각을 두 번 연속 이등분하면 마지막에 생기는 각의 크기를 구하시오.",
+          "answer_atoms": [
+            "15°"
+          ],
+          "answer_print": "15°",
+          "answer_accept": [
+            "15"
+          ],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 °)",
+          "figure": null,
+          "hint": "한 번 이등분하면 얼마인가요? 그 결과를 다시 이등분해 봐요.",
+          "solution": "1번 이등분 — 60° ÷ 2 = 30°<br>2번 이등분 — 30° ÷ 2 = 15°<br>→ 자와 컴퍼스로 60° 를 4등분한 셈이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "angle.bisect-arithmetic"
+          ]
+        },
+        {
+          "id": "m1-u08-t04-06",
+          "level": "M",
+          "stem_src": "∠XOY = 90°의 이등분선과 OX 사이의 각은? 또 그 이등분선의 특별한 성질은?",
+          "stem_print": "∠XOY = 90° 의 이등분선을 작도하였다. 이 이등분선과 반직선 OX 가 이루는 각의 크기를 구하고, 이 이등분선이 갖는 특별한 성질을 쓰시오.",
+          "answer_atoms": [
+            "45° / 직각이등변삼각형의 대각선과 같은 방향"
+          ],
+          "answer_print": "45° / 직각이등변삼각형의 대각선과 같은 방향이에요",
+          "answer_accept": [
+            "45°, 정사각형의 대각선 방향"
+          ],
+          "answer_unit": null,
+          "answer_format": "각의 크기(단위 °)와 성질을 한 문장으로",
+          "figure": null,
+          "hint": "90° 를 반으로 나누면 몇 도인가요? 45° 인 도형이라면 두 변의 길이는 어떨까요?",
+          "solution": "90° ÷ 2 = 45° 예요.<br>이등분선은 반직선 OX, OY 와 각각 45° 를 이루므로 직각이등변삼각형의 대각선 방향과 같아요.<br>→ 정사각형이나 직각이등변삼각형을 작도할 때 쓸 수 있어요.",
+          "work_space": "md",
+          "misconceptions": [
+            "angle.bisect-arithmetic"
+          ]
+        },
+        {
+          "id": "m1-u08-t04-07",
+          "level": "H",
+          "stem_src": "두 직선에서 같은 거리에 있는 점들의 자취는?",
+          "stem_print": "두 직선 l, m 이 점 O 에서 만나 90° 가 아닌 각을 이룬다. 두 직선에서 같은 거리에 있는 점들의 자취를 쓰시오.",
+          "answer_atoms": [
+            "O에서 만나는 서로 수직인 두 이등분선"
+          ],
+          "answer_print": "O 에서 만나는 서로 수직인 두 이등분선",
+          "answer_accept": [
+            "점 O 를 지나는, 서로 수직인 두 각의 이등분선"
+          ],
+          "answer_unit": null,
+          "answer_format": "도형으로 (단위 없음)",
+          "figure": null,
+          "hint": "두 직선이 만나면 네 개의 각이 생겨요. 각각의 이등분선을 그려 봐요.",
+          "solution": "두 직선이 만나면 네 개의 각이 생겨요. (맞꼭지각 두 쌍)<br>네 각의 이등분선을 그리면 서로 수직인 두 직선이 돼요.<br>두 직선 모두 점 O 를 지나요.<br>→ 각의 이등분선 위의 점은 두 변에서 거리가 같다는 성질의 역이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "angbis.distance-property"
+          ]
+        },
+        {
+          "id": "m1-u08-t04-08",
+          "level": "H",
+          "stem_src": "삼각형 ABC의 세 내각의 이등분선이 한 점 I에서 만난다. 점 I의 의미는?",
+          "stem_print": "삼각형 ABC 의 세 내각의 이등분선이 한 점 I 에서 만난다. 점 I 의 의미를 쓰시오.",
+          "answer_atoms": [
+            "I는 세 변 AB, BC, CA에서 모두 같은 거리에 있는 점"
+          ],
+          "answer_print": "I 는 세 변 AB, BC, CA 에서 모두 같은 거리에 있는 점이에요 (내심)",
+          "answer_accept": [
+            "삼각형의 내접원의 중심 (내심)"
+          ],
+          "answer_unit": null,
+          "answer_format": "한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "∠A 의 이등분선 위에 I 가 있으면 I 는 어느 두 변에서 거리가 같을까요? ∠B 쪽도 함께 생각해 봐요.",
+          "solution": "∠A 의 이등분선 위 I → I 는 변 AB 와 변 AC 에서 거리가 같아요.<br>∠B 의 이등분선 위 I → I 는 변 BA 와 변 BC 에서 거리가 같아요.<br>→ I 는 세 변 AB, BC, CA 에서 모두 거리가 같아요.<br>→ I 를 중심으로 그 거리만큼 반지름인 원을 그리면 세 변에 모두 닿아요. = <b>삼각형의 내접원의 중심(내심)</b><br>→ 세 각의 이등분선이 늘 한 점에서 만나는 이유예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "angbis.distance-property"
+          ]
+        },
+        {
+          "id": "m1-u08-t04-09",
+          "level": "H",
+          "stem_src": "이등분 작도만으로 만들 수 없는 각은?",
+          "stem_print": "자와 컴퍼스로 60° 를 작도한 뒤 이등분 작도를 거듭해 30° 와 15° 를 만들었다. 같은 방법으로 만들 수 <b>없는</b> 각을 골라 쓰시오.<br>(가) 7.5° &nbsp; (나) 22.5° &nbsp; (다) 20° &nbsp; (라) 45°",
+          "answer_atoms": [
+            "(다) 20°"
+          ],
+          "answer_print": "(다) 20°",
+          "answer_accept": [
+            "(다)",
+            "20°"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로 (단위 없음)",
+          "figure": null,
+          "hint": "자와 컴퍼스로는 이등분을 거듭하거나 각을 더하고 뺄 수 있어요. 삼등분은 어떨까요?",
+          "solution": "(가) 7.5° = 60° → 30° → 15° → 7.5° (이등분 4번) ✓<br>(나) 22.5° = 90° → 45° → 22.5° (이등분 2번) ✓<br>(다) 20° 는 60° 의 3분의 1 이에요. 자와 컴퍼스로는 임의의 각을 삼등분할 수 없어요. (19세기에 증명) ✗<br>(라) 45° = 90° 의 이등분 ✓<br>→ 같은 도구라도 모든 각을 만들 수는 없어요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "constr.trisection",
+            "angle.bisect-arithmetic"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "삼각형 작도 조건 SSS·SAS·ASA",
+      "principle": "삼각형이 하나로 정해지는 조건은 세 가지예요. <b>세 변</b>(SSS), <b>두 변과 그 끼인각</b>(SAS), <b>한 변과 그 양 끝 두 각</b>(ASA). 세 각만 알거나(AAA) 각이 끼인각이 아니면(SSA) 삼각형이 하나로 정해지지 않아요.",
+      "problems": [
+        {
+          "id": "m1-u08-t05-01",
+          "level": "L",
+          "stem_src": "다음 중 삼각형이 하나로 정해지는 조건을 모두 고르시오.",
+          "stem_print": "다음 중 삼각형이 <b>하나로 정해지는</b> 조건을 모두 골라 쓰시오.<br>(가) 세 변의 길이 &nbsp; (나) 두 변과 그 끼인각 &nbsp; (다) 한 변과 그 양 끝 두 각 &nbsp; (라) 세 각 &nbsp; (마) 두 변과, 끼인각이 아닌 한 각",
+          "answer_atoms": [
+            "(가), (나), (다)"
+          ],
+          "answer_print": "(가), (나), (다)",
+          "answer_accept": [
+            "(가)(나)(다)",
+            "가, 나, 다"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "삼각형이 하나로 정해지는 조건은 정확히 세 가지예요.",
+          "solution": "(가), (나), (다) 는 합동조건이에요. ✓<br>(라) 세 각만 같으면 모양은 같지만 크기가 여러 가지라서 하나로 정해지지 않아요. ✗<br>(마) 끼인각이 아닌 각이면 두 가지 모양이 나올 수 있어요. ✗",
+          "work_space": "sm",
+          "misconceptions": [
+            "tri.aaa-congruent",
+            "tri.ssa-congruent"
+          ]
+        },
+        {
+          "id": "m1-u08-t05-02",
+          "level": "L",
+          "stem_src": "두 변 5cm, 7cm와 끼인각 60°는 어느 작도 조건인가?",
+          "stem_print": "“두 변의 길이가 5 cm, 7 cm 이고 그 사이의 끼인각이 60° 이다.” 이 조건이 어느 작도 조건에 해당하는지 쓰시오.",
+          "answer_atoms": [
+            "SAS"
+          ],
+          "answer_print": "SAS",
+          "answer_accept": [
+            "S A S",
+            "변각변"
+          ],
+          "answer_unit": null,
+          "answer_format": "SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "“끼인각”은 두 변 사이에 끼어 있는 각이에요.",
+          "solution": "두 변 5 cm, 7 cm 와 그 사이의 끼인각 60° 예요. → SAS (Side-Angle-Side)<br>→ 삼각형이 하나로 정해져요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "cong.included-angle"
+          ]
+        },
+        {
+          "id": "m1-u08-t05-03",
+          "level": "L",
+          "stem_src": "한 변 6cm와 양 끝 두 각 50°, 70°는 어느 작도 조건인가?",
+          "stem_print": "“한 변의 길이가 6 cm 이고 그 양 끝의 두 각이 50° 와 70° 이다.” 이 조건이 어느 작도 조건에 해당하는지 쓰시오.",
+          "answer_atoms": [
+            "ASA"
+          ],
+          "answer_print": "ASA",
+          "answer_accept": [
+            "A S A",
+            "각변각"
+          ],
+          "answer_unit": null,
+          "answer_format": "SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "“양 끝 두 각”은 그 변의 양쪽 끝점에 있는 두 각이에요.",
+          "solution": "한 변 6 cm 와 그 양 끝 두 각 50°, 70° 예요. → ASA (Angle-Side-Angle)<br>50° + 70° = 120° < 180° 이므로 조건도 맞아요.<br>→ 삼각형이 하나로 정해져요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "tri.angle-sum"
+          ]
+        },
+        {
+          "id": "m1-u08-t05-04",
+          "level": "M",
+          "stem_src": "다음 정보 중 삼각형을 작도할 수 없는 것을 모두 고르시오.",
+          "stem_print": "다음 중 삼각형을 작도할 수 <b>없는</b> 것을 모두 골라 쓰시오.<br>(가) 세 변 4 cm, 5 cm, 6 cm &nbsp; (나) 세 변 2 cm, 3 cm, 6 cm &nbsp; (다) 세 변 4 cm, 4 cm, 4 cm &nbsp; (라) 두 각 100°, 90° 와 한 변 5 cm",
+          "answer_atoms": [
+            "(나), (라)"
+          ],
+          "answer_print": "(나), (라)",
+          "answer_accept": [
+            "(나)(라)",
+            "나, 라"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "가장 긴 변은 나머지 두 변의 합보다 짧아야 해요. 그리고 세 각의 합은 180° 예요.",
+          "solution": "(가) 4 + 5 = 9 > 6 ✓ 삼각형이 돼요.<br>(나) 2 + 3 = 5 < 6 → 두 변의 합이 가장 긴 변보다 짧아서 닿지 않아요. ✗<br>(다) 정삼각형이에요. ✓<br>(라) 100° + 90° = 190° > 180° → 세 각의 합을 넘어요. ✗",
+          "work_space": "md",
+          "misconceptions": [
+            "tri.inequality-equal",
+            "tri.angle-sum"
+          ]
+        },
+        {
+          "id": "m1-u08-t05-05",
+          "level": "M",
+          "stem_src": "두 변 5cm, 6cm와 한 각 40°만으로 삼각형이 하나로 정해지는가?",
+          "stem_print": "“두 변 5 cm, 6 cm 와 한 각 40°” 가 주어졌다. 이 조건만으로 삼각형이 하나로 정해지는지 판단하고 그 이유를 쓰시오.",
+          "answer_atoms": [
+            "40°가 끼인각이면 SAS로 하나로 정해짐. 끼인각이 아니면 SSA로 두 가지 가능 (모호)."
+          ],
+          "answer_print": "40°가 끼인각이면 SAS로 하나로 정해짐. 끼인각이 아니면 SSA로 두 가지 가능 (모호).",
+          "answer_accept": [
+            "끼인각이면 하나로 정해지고, 끼인각이 아니면 두 가지가 가능하다"
+          ],
+          "answer_unit": null,
+          "answer_format": "판단과 이유를 한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "그 각이 두 변 사이에 끼어 있는지 아닌지가 갈림길이에요.",
+          "solution": "경우 1 — 5 cm 와 6 cm 사이의 끼인각이 40° 예요. → SAS → 하나로 정해져요. ✓<br>경우 2 — 40° 가 끼인각이 아니에요. → SSA → 두 가지 모양이 나올 수 있어요. ✗<br>→ “한 각”이 어디에 있는지를 알아야 답이 정해져요.",
+          "work_space": "md",
+          "misconceptions": [
+            "cong.included-angle",
+            "tri.ssa-congruent"
+          ]
+        },
+        {
+          "id": "m1-u08-t05-06",
+          "level": "M",
+          "stem_src": "한 변 5cm와 그 한쪽 끝 각 60°에 추가로 필요한 정보를 고르시오.",
+          "stem_print": "“한 변 5 cm 와 그 한쪽 끝의 한 각 60°” 가 주어졌다. 삼각형을 작도하기 위해 더 필요한 정보를 모두 골라 쓰시오.<br>(가) 그 변의 다른 쪽 끝 각 &nbsp; (나) 그 각을 끼고 있는 다른 한 변의 길이 &nbsp; (다) 나머지 두 변의 길이",
+          "answer_atoms": [
+            "(가), (나)"
+          ],
+          "answer_print": "(가), (나)",
+          "answer_accept": [
+            "(가)(나)",
+            "가, 나"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "세 가지 합동조건 중 무엇을 완성할 수 있는지 하나씩 맞춰 봐요.",
+          "solution": "(가) 한 변 + 그 양 끝 두 각 → ASA ✓<br>(나) 한 변(5 cm) + 그 각을 끼고 있는 다른 변 + 끼인각(60°) → SAS ✓<br>(다) 한 각만 알고 두 변을 더하면 그 각이 끼인각인지 알 수 없어요. → SSA 가 될 수 있어서 늘 정해지지는 않아요. ✗<br>→ 합동조건은 “어떤 정보가 어디에 있는지”가 핵심이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "cong.included-angle",
+            "tri.ssa-congruent"
+          ]
+        },
+        {
+          "id": "m1-u08-t05-07",
+          "level": "H",
+          "stem_src": "SSA(모호한 경우)에 해당하는지 확인하고 가능한 삼각형의 개수를 구하시오.",
+          "stem_print": "“두 변 7 cm, 5 cm 와 5 cm 인 변의 한쪽 끝 각 30° 가 주어졌다. 5 cm 인 변의 다른 끝과 7 cm 인 변의 다른 끝을 잇는다.” 이 조건이 SSA (모호한 경우) 에 해당하는지 확인하고, 가능한 삼각형의 개수를 구하시오.",
+          "answer_atoms": [
+            "SSA에 해당. 가능한 삼각형 2개"
+          ],
+          "answer_print": "SSA에 해당. 가능한 삼각형 2개",
+          "answer_accept": [
+            "SSA 이고 2개"
+          ],
+          "answer_unit": null,
+          "answer_format": "조건 이름과 삼각형의 개수로 (단위 개)",
+          "figure": null,
+          "hint": "5 cm 인 변과 30° 각이 한 끝에서 만나고, 7 cm 인 변은 그 각에 끼여 있지 않아요. 호를 그어 만나는 점이 몇 개인지 세어 봐요.",
+          "solution": "꼭짓점 O 에 30° 각이 있고 한 변 선분 OA = 5 cm 예요. 점 A 에서 7 cm 떨어진 점 B 가 30° 각의 다른 변 위에 있어야 해요.<br>A 에서 반지름 7 cm 인 호를 그으면 그 변과 <b>두 점</b>에서 만나요. (하나는 O 가까이, 하나는 O 에서 멀리)<br>→ 두 가지 모양의 삼각형이 나와요. <b>SSA 는 합동조건이 아니에요.</b><br>(특별한 경우 — 호가 한 점에서 닿으면 1개, 만나지 않으면 0개예요.)",
+          "work_space": "lg",
+          "misconceptions": [
+            "tri.ssa-congruent",
+            "cong.included-angle"
+          ]
+        },
+        {
+          "id": "m1-u08-t05-08",
+          "level": "H",
+          "stem_src": "SAS 조건으로 삼각형 ABC를 작도하는 절차를 단계별로 설명하시오.",
+          "stem_print": "SAS 조건으로 삼각형 ABC 를 작도하려고 한다. 선분 AB = 4 cm, 선분 AC = 6 cm, ∠A = 60° 일 때 작도 절차를 단계별로 쓰시오.",
+          "answer_atoms": [
+            "① 자로 길이 4cm의 선분 $\\overline{AB}$ 그리기 (다른 단위 선분이 주어졌다고 가정) ② A에서 ∠A = 60°를 작도 (각 옮기기 절차로) ③ ②에서 그린 다른 변 위에 컴퍼스로 길이 6cm 옮겨 점 C 결정 ④ B와 C를 자로 잇기 → 삼각형 ABC 완성"
+          ],
+          "answer_print": "① 선분 AB = 4 cm 를 그려요 ② A 에서 ∠A = 60° 를 각 옮기기로 작도해요 ③ 그 각의 다른 변 위에 컴퍼스로 6 cm 를 옮겨 점 C 를 정해요 ④ B 와 C 를 자로 이어 삼각형 ABC 를 완성해요",
+          "answer_accept": [
+            "끼인각을 먼저 작도하고 그 양쪽 변에 두 길이를 옮긴다"
+          ],
+          "answer_unit": null,
+          "answer_format": "절차를 순서대로, 한 문장씩 (단위 없음)",
+          "figure": null,
+          "hint": "한 변을 먼저 그리고 그 한쪽 끝에 60° 를 작도해요. 그 각의 다른 변 위에 6 cm 를 옮겨요.",
+          "solution": "핵심은 SAS 의 끼인각 ∠A 를 먼저 작도하고, 그 양쪽 변에 두 길이 4 cm 와 6 cm 를 옮기는 거예요.<br>이 절차로는 삼각형이 단 하나만 만들어져요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "cong.included-angle"
+          ]
+        },
+        {
+          "id": "m1-u08-t05-09",
+          "level": "H",
+          "stem_src": "세 각의 크기만 같으면 합동이라는 명제가 거짓임을 보이는 반례를 들으시오.",
+          "stem_print": "“세 각의 크기만 같으면 두 삼각형은 합동이다” 라는 말이 거짓임을 보이는 반례를 들고, 이때 두 삼각형이 닮음이 되는 까닭을 설명하시오.",
+          "answer_atoms": [
+            "반례: 한 변 1cm 정삼각형과 한 변 100cm 정삼각형"
+          ],
+          "answer_print": "반례: 한 변 1cm 정삼각형과 한 변 100cm 정삼각형",
+          "answer_accept": [
+            "크기가 다른 두 정삼각형"
+          ],
+          "answer_unit": null,
+          "answer_format": "반례를 한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "정삼각형은 세 각이 모두 60° 예요. 크기가 다른 정삼각형을 두 개 그릴 수 있을까요?",
+          "solution": "두 삼각형 모두 세 각이 60°, 60°, 60° 로 같아요. 그런데 변의 길이가 달라서 포개도 겹치지 않아요. → 합동이 아니에요.<br>→ 모양은 같지만 크기가 다른 두 도형을 <b>닮음</b>이라고 해요.<br>→ 합동은 닮음이면서 크기까지 같은 경우예요.<br>→ 그래서 AAA 는 합동조건이 아니에요. 합동조건에는 길이 정보가 적어도 하나 필요해요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "tri.aaa-congruent"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "합동 식별·대응",
+      "principle": "합동 표기의 <b>순서가 곧 대응</b>이에요. 삼각형 ABC ≡ 삼각형 DEF 이면 A↔D, B↔E, C↔F 예요. 대응변과 대응각은 같은 자리끼리 짝지어 찾아요.",
+      "problems": [
+        {
+          "id": "m1-u08-t06-01",
+          "level": "L",
+          "stem_src": "삼각형 ABC ≡ 삼각형 DEF일 때, 점 A의 대응점은?",
+          "stem_print": "삼각형 ABC ≡ 삼각형 DEF 일 때 점 A 의 대응점을 쓰시오.",
+          "answer_atoms": [
+            "점 D"
+          ],
+          "answer_print": "점 D",
+          "answer_accept": [
+            "D"
+          ],
+          "answer_unit": null,
+          "answer_format": "점의 이름으로 (단위 없음)",
+          "figure": null,
+          "hint": "표기 순서가 곧 대응이에요. ABC 의 첫째는 DEF 의 첫째와 짝이에요.",
+          "solution": "삼각형 ABC ≡ 삼각형 DEF → A↔D, B↔E, C↔F (같은 자리끼리)",
+          "work_space": "sm",
+          "misconceptions": [
+            "cong.correspondence-order"
+          ]
+        },
+        {
+          "id": "m1-u08-t06-02",
+          "level": "L",
+          "stem_src": "삼각형 ABC ≡ 삼각형 DEF일 때, ∠C의 대응각은?",
+          "stem_print": "삼각형 ABC ≡ 삼각형 DEF 일 때 ∠C 의 대응각을 쓰시오.",
+          "answer_atoms": [
+            "∠F"
+          ],
+          "answer_print": "∠F",
+          "answer_accept": [
+            "F",
+            "각 F"
+          ],
+          "answer_unit": null,
+          "answer_format": "각의 이름으로 (단위 없음)",
+          "figure": null,
+          "hint": "C 는 ABC 에서 세 번째예요.",
+          "solution": "C ↔ F (둘 다 세 번째 자리) → ∠C 의 대응각은 ∠F 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "cong.correspondence-order"
+          ]
+        },
+        {
+          "id": "m1-u08-t06-03",
+          "level": "L",
+          "stem_src": "삼각형 ABC ≡ 삼각형 DEF일 때, 변 AB의 대응변은?",
+          "stem_print": "삼각형 ABC ≡ 삼각형 DEF 일 때 변 AB 의 대응변을 쓰시오.",
+          "answer_atoms": [
+            "$\\overline{DE}$"
+          ],
+          "answer_print": "선분 DE",
+          "answer_accept": [
+            "DE",
+            "변 DE"
+          ],
+          "answer_unit": null,
+          "answer_format": "변의 이름으로 (단위 없음)",
+          "figure": null,
+          "hint": "A 의 짝과 B 의 짝을 찾아 두 글자로 묶어요.",
+          "solution": "A↔D, B↔E → 변 AB 의 대응변은 선분 DE 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "cong.correspondence-order"
+          ]
+        },
+        {
+          "id": "m1-u08-t06-04",
+          "level": "M",
+          "stem_src": "삼각형 ABC ≡ 삼각형 DEF, AB=8, BC=5, CA=7일 때 DF의 길이는?",
+          "stem_print": "삼각형 ABC ≡ 삼각형 DEF 이고 선분 AB = 8 cm, 선분 BC = 5 cm, 선분 CA = 7 cm 이다. 선분 DF 의 길이를 구하시오.",
+          "answer_atoms": [
+            "7 cm"
+          ],
+          "answer_print": "7",
+          "answer_accept": [
+            "7 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "수로 (단위 cm)",
+          "figure": null,
+          "hint": "선분 DF 의 대응변을 먼저 찾아요. D 의 짝은 무엇이고 F 의 짝은 무엇일까요?",
+          "solution": "D↔A, F↔C → 선분 DF 의 대응변은 선분 AC 예요.<br>선분 AC 와 선분 CA 는 같은 선분이므로 7 cm 예요.<br>따라서 선분 DF = 7 cm 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "cong.correspondence-order"
+          ]
+        },
+        {
+          "id": "m1-u08-t06-05",
+          "level": "M",
+          "stem_src": "삼각형 ABC ≡ 삼각형 DEF, ∠A=70°, ∠B=60°일 때 ∠F의 크기는?",
+          "stem_print": "삼각형 ABC ≡ 삼각형 DEF 이고 ∠A = 70°, ∠B = 60° 이다. ∠F 의 크기를 구하시오.",
+          "answer_atoms": [
+            "∠F = 50°"
+          ],
+          "answer_print": "∠F = 50°",
+          "answer_accept": [
+            "50°",
+            "50"
+          ],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 °)",
+          "figure": null,
+          "hint": "∠F 의 대응각을 먼저 찾고, 삼각형 세 각의 합을 써요.",
+          "solution": "F ↔ C → ∠F = ∠C 예요.<br>∠C = 180° − 70° − 60° = 50°<br>따라서 ∠F = 50° 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "cong.correspondence-order",
+            "tri.angle-sum"
+          ]
+        },
+        {
+          "id": "m1-u08-t06-06",
+          "level": "M",
+          "stem_src": "삼각형 PQR ≡ 삼각형 XYZ일 때 옳은 것을 모두 고르시오.",
+          "stem_print": "삼각형 PQR ≡ 삼각형 XYZ 일 때 옳은 것을 모두 골라 쓰시오.<br>(가) 선분 PQ = 선분 XY &nbsp; (나) 선분 QR = 선분 YZ &nbsp; (다) ∠R = ∠X &nbsp; (라) ∠Q = ∠Y &nbsp; (마) 선분 PR = 선분 YZ",
+          "answer_atoms": [
+            "(가), (나), (라)"
+          ],
+          "answer_print": "(가), (나), (라)",
+          "answer_accept": [
+            "(가)(나)(라)",
+            "가, 나, 라"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "표기 순서는 P↔X, Q↔Y, R↔Z 예요. 같은 자리끼리 짝지어요.",
+          "solution": "P↔X, Q↔Y, R↔Z 예요.<br>(가) 선분 PQ ↔ 선분 XY ✓<br>(나) 선분 QR ↔ 선분 YZ ✓<br>(다) ∠R 의 대응각은 ∠Z 예요. ✗<br>(라) ∠Q ↔ ∠Y ✓<br>(마) 선분 PR 의 대응변은 선분 XZ 예요. ✗",
+          "work_space": "md",
+          "misconceptions": [
+            "cong.correspondence-order"
+          ]
+        },
+        {
+          "id": "m1-u08-t06-07",
+          "level": "H",
+          "stem_src": "두 삼각형이 합동일 때 적절한 합동 표기를 모두 고르시오.",
+          "stem_print": "두 삼각형이 합동이고, 왼쪽 삼각형의 꼭짓점 A, B, C 에 대응하는 점이 각각 P, Q, R 이다. 알맞은 합동 표기를 모두 골라 쓰시오.<br>(가) 삼각형 ABC ≡ 삼각형 PQR &nbsp; (나) 삼각형 ACB ≡ 삼각형 PRQ &nbsp; (다) 삼각형 BAC ≡ 삼각형 QPR &nbsp; (라) 삼각형 CBA ≡ 삼각형 PQR",
+          "answer_atoms": [
+            "(가), (나), (다)"
+          ],
+          "answer_print": "(가), (나), (다)",
+          "answer_accept": [
+            "(가)(나)(다)",
+            "가, 나, 다"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "A↔P, B↔Q, C↔R 만 <b>일관되게</b> 지키면 표기 방법은 여러 가지예요.",
+          "solution": "A↔P, B↔Q, C↔R 만 지키면 돼요.<br>(가) ABC ↔ PQR ✓<br>(나) ACB ↔ PRQ ✓ (A↔P, C↔R, B↔Q)<br>(다) BAC ↔ QPR ✓ (B↔Q, A↔P, C↔R)<br>(라) CBA ↔ PQR ✗ (C 의 짝은 R 인데 P 와 짝지었어요)<br>→ 대응이 정해져 있을 때, 그 대응을 일관되게 따른 표기는 모두 옳아요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "cong.correspondence-order"
+          ]
+        },
+        {
+          "id": "m1-u08-t06-08",
+          "level": "H",
+          "stem_src": "삼각형 ABC ≡ 삼각형 DEF일 때 항상 참인 것을 모두 고르시오.",
+          "stem_print": "삼각형 ABC ≡ 삼각형 DEF 이다. 항상 참인 것을 모두 골라 쓰시오.<br>(가) 둘레의 길이가 같다 &nbsp; (나) 넓이가 같다 &nbsp; (다) 가장 긴 변의 길이가 같다 &nbsp; (라) 놓인 위치(좌표)가 같다 &nbsp; (마) 모양과 크기가 같다",
+          "answer_atoms": [
+            "(가), (나), (다), (마)"
+          ],
+          "answer_print": "(가), (나), (다), (마)",
+          "answer_accept": [
+            "(가)(나)(다)(마)",
+            "가, 나, 다, 마"
+          ],
+          "answer_unit": null,
+          "answer_format": "기호로, 모두 (단위 없음)",
+          "figure": null,
+          "hint": "합동은 옮겨서 포개면 겹친다는 뜻이에요. 놓인 자리는 어떨까요?",
+          "solution": "합동이면 대응변과 대응각이 모두 같아요.<br>(가) 둘레는 세 변의 합이므로 같아요. ✓<br>(나) 넓이도 같아요. ✓<br>(다) 가장 긴 변도 대응변이 있어서 같아요. ✓<br>(라) 자리가 달라도 합동일 수 있어요. ✗<br>(마) 합동은 모양과 크기가 같다는 뜻이에요. ✓",
+          "work_space": "lg",
+          "misconceptions": [
+            "cong.same-position"
+          ]
+        },
+        {
+          "id": "m1-u08-t06-09",
+          "level": "H",
+          "stem_src": "사각형 ABCD ≡ 사각형 EFGH일 때 GH와 HE의 길이는?",
+          "stem_print": "두 사각형 ABCD 와 EFGH 가 합동이다. (사각형 ABCD ≡ 사각형 EFGH) 선분 AB = 5, 선분 BC = 7, 선분 CD = 4, 선분 DA = 6 일 때 선분 GH 와 선분 HE 의 길이를 각각 구하시오.",
+          "answer_atoms": [
+            "$\\overline{GH} = 4, \\overline{HE} = 6$"
+          ],
+          "answer_print": "선분 GH = 4, 선분 HE = 6",
+          "answer_accept": [
+            "GH = 4, HE = 6",
+            "4, 6"
+          ],
+          "answer_unit": null,
+          "answer_format": "두 길이를 수로 (단위 없음)",
+          "figure": null,
+          "hint": "사각형도 원리는 같아요. A↔E, B↔F, C↔G, D↔H 예요. 변은 두 글자 묶음으로 짝지어요.",
+          "solution": "대응은 A↔E, B↔F, C↔G, D↔H 예요.<br>선분 GH 의 대응변 — G↔C, H↔D → 선분 CD = 4<br>선분 HE 의 대응변 — H↔D, E↔A → 선분 DA = 6<br>→ 사각형의 합동도 표기 순서가 대응을 정해요. 삼각형과 같은 원리예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "cong.correspondence-order"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "합동 조건 활용",
+      "principle": "두 삼각형이 합동인지 보이려면 세 가지 조건 중 하나를 찾아요. <b>SSS</b>(세 변), <b>SAS</b>(두 변과 그 끼인각), <b>ASA</b>(한 변과 그 양 끝 두 각). 합동을 보이고 나면 나머지 대응변과 대응각도 같다는 결론까지 얻어요.",
+      "problems": [
+        {
+          "id": "m1-u08-t07-01",
+          "level": "L",
+          "stem_src": "두 삼각형의 세 변 길이가 모두 같음을 알았다. 어떤 합동 조건인가?",
+          "stem_print": "두 삼각형의 세 변의 길이가 모두 같음을 알았다. 어떤 합동조건인지 쓰시오.",
+          "answer_atoms": [
+            "SSS"
+          ],
+          "answer_print": "SSS",
+          "answer_accept": [
+            "S S S",
+            "변변변"
+          ],
+          "answer_unit": null,
+          "answer_format": "SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "S 는 Side(변), A 는 Angle(각) 이에요.",
+          "solution": "세 변(Side · Side · Side) 이 같으므로 SSS 합동이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "tri.aaa-congruent"
+          ]
+        },
+        {
+          "id": "m1-u08-t07-02",
+          "level": "L",
+          "stem_src": "두 변의 길이가 같고 그 끼인각도 같다. 어떤 합동 조건인가?",
+          "stem_print": "두 삼각형에서 두 변의 길이가 같고 그 끼인각도 같음을 알았다. 어떤 합동조건인지 쓰시오.",
+          "answer_atoms": [
+            "SAS"
+          ],
+          "answer_print": "SAS",
+          "answer_accept": [
+            "S A S",
+            "변각변"
+          ],
+          "answer_unit": null,
+          "answer_format": "SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "변 · 각 · 변 의 순서예요.",
+          "solution": "두 변과 그 끼인각이 같으므로 Side-Angle-Side, 곧 SAS 합동이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "cong.included-angle"
+          ]
+        },
+        {
+          "id": "m1-u08-t07-03",
+          "level": "L",
+          "stem_src": "한 변의 길이가 같고 그 양 끝 두 각이 각각 같다. 어떤 합동 조건인가?",
+          "stem_print": "두 삼각형에서 한 변의 길이가 같고 그 양 끝 두 각이 각각 같음을 알았다. 어떤 합동조건인지 쓰시오.",
+          "answer_atoms": [
+            "ASA"
+          ],
+          "answer_print": "ASA",
+          "answer_accept": [
+            "A S A",
+            "각변각"
+          ],
+          "answer_unit": null,
+          "answer_format": "SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "각 · 변 · 각 의 순서예요.",
+          "solution": "한 변과 그 양 끝 두 각이 같으므로 Angle-Side-Angle, 곧 ASA 합동이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "cong.included-angle"
+          ]
+        },
+        {
+          "id": "m1-u08-t07-04",
+          "level": "M",
+          "stem_src": "AB=DE, BC=EF, ∠B=∠E이다. 두 삼각형이 합동인가? 어느 조건?",
+          "stem_print": "두 삼각형 ABC 와 DEF 에서 선분 AB = 선분 DE, 선분 BC = 선분 EF, ∠B = ∠E 이다. 두 삼각형이 합동인지 판단하고 합동조건을 쓰시오.",
+          "answer_atoms": [
+            "합동, SAS"
+          ],
+          "answer_print": "합동, SAS",
+          "answer_accept": [
+            "합동이고 SAS",
+            "SAS"
+          ],
+          "answer_unit": null,
+          "answer_format": "합동 여부와 조건을 SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "∠B 는 어느 두 변 사이에 있나요? 선분 AB 와 선분 BC 가 만나는 꼭짓점이 B 예요.",
+          "solution": "선분 AB 와 선분 BC 의 끼인각은 ∠B 예요. (꼭짓점 B 에서 만나요)<br>선분 DE 와 선분 EF 의 끼인각은 ∠E 예요.<br>따라서 두 변과 그 끼인각이 각각 같으므로 SAS 합동이에요. ✓",
+          "work_space": "md",
+          "misconceptions": [
+            "cong.included-angle"
+          ]
+        },
+        {
+          "id": "m1-u08-t07-05",
+          "level": "M",
+          "stem_src": "M이 AB의 중점이고 CM ⊥ AB일 때 삼각형 ACM과 BCM이 합동임을 보이시오.",
+          "stem_print": "아래 그림에서 점 M 은 선분 AB 의 중점이고 선분 CM 은 선분 AB 에 수직이다. 삼각형 ACM 과 삼각형 BCM 이 합동임을 보이고 합동조건을 쓰시오.",
+          "answer_atoms": [
+            "SAS 합동"
+          ],
+          "answer_print": "SAS 합동",
+          "answer_accept": [
+            "SAS"
+          ],
+          "answer_unit": null,
+          "answer_format": "합동조건을 SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": "<svg class=\"fig-svg\" viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\">\n<line x1=\"40\" y1=\"160\" x2=\"280\" y2=\"160\" stroke=\"#1d3557\" stroke-width=\"2\"/>\n<line x1=\"160\" y1=\"160\" x2=\"160\" y2=\"40\" stroke=\"#1d3557\" stroke-width=\"2\"/>\n<polygon points=\"40,160 280,160 160,40\" fill=\"none\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n<rect x=\"160\" y=\"146\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"2\"/>\n<circle cx=\"40\" cy=\"160\" r=\"3\" fill=\"#1d3557\"/><text x=\"32\" y=\"180\" font-size=\"13\" font-weight=\"700\">A</text>\n<circle cx=\"280\" cy=\"160\" r=\"3\" fill=\"#1d3557\"/><text x=\"276\" y=\"180\" font-size=\"13\" font-weight=\"700\">B</text>\n<circle cx=\"160\" cy=\"160\" r=\"3\" fill=\"#28a745\"/><text x=\"156\" y=\"180\" font-size=\"13\" font-weight=\"700\" fill=\"#28a745\">M</text>\n<circle cx=\"160\" cy=\"40\" r=\"3\" fill=\"#1d3557\"/><text x=\"156\" y=\"32\" font-size=\"13\" font-weight=\"700\">C</text>\n<line x1=\"95\" y1=\"156\" x2=\"105\" y2=\"164\" stroke=\"#28a745\" stroke-width=\"2\"/>\n<line x1=\"215\" y1=\"156\" x2=\"225\" y2=\"164\" stroke=\"#28a745\" stroke-width=\"2\"/>\n</svg>",
+          "hint": "중점이니까 두 변이 같아요. 수직이니까 두 각이 90° 로 같아요. 공통인 변은 무엇일까요?",
+          "solution": "선분 AM = 선분 BM (M 이 중점)<br>∠AMC = ∠BMC = 90° (수직)<br>선분 CM 은 공통이에요.<br>→ 두 변과 그 끼인각이 같으므로 SAS 합동이에요. ✓<br>∴ 삼각형 ACM ≡ 삼각형 BCM<br>여기서 선분 CA = 선분 CB 도 얻어요. → 이등변삼각형이에요!",
+          "work_space": "md",
+          "misconceptions": [
+            "cong.included-angle",
+            "perp.bisector-property"
+          ]
+        },
+        {
+          "id": "m1-u08-t07-06",
+          "level": "M",
+          "stem_src": "OA=OC, OB=OD일 때 삼각형 OAB와 OCD는 합동인가?",
+          "stem_print": "두 직선 l, m 이 점 O 에서 만난다. 두 직선 위에 선분 OA = 선분 OC, 선분 OB = 선분 OD 가 되도록 점 A, C 와 B, D 를 잡았다. (A·B 는 한쪽, C·D 는 반대쪽) 삼각형 OAB 와 삼각형 OCD 가 합동인지 판단하고 합동조건을 쓰시오.",
+          "answer_atoms": [
+            "합동, SAS"
+          ],
+          "answer_print": "합동, SAS",
+          "answer_accept": [
+            "합동이고 SAS",
+            "SAS"
+          ],
+          "answer_unit": null,
+          "answer_format": "합동 여부와 조건을 SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "∠AOB 와 ∠COD 는 어떤 관계일까요? 맞꼭지각이에요.",
+          "solution": "선분 OA = 선분 OC (가정)<br>선분 OB = 선분 OD (가정)<br>∠AOB = ∠COD (맞꼭지각)<br>→ 두 변과 그 끼인각이 같으므로 SAS 합동이에요. ✓<br>→ 선분 AB = 선분 CD 라는 결론까지 얻어요.",
+          "work_space": "md",
+          "misconceptions": [
+            "cong.included-angle"
+          ]
+        },
+        {
+          "id": "m1-u08-t07-07",
+          "level": "H",
+          "stem_src": "이등변삼각형에서 ∠A의 이등분선이 BC와 만나는 점 D에 대해 삼각형 ABD와 ACD가 합동임을 보이시오.",
+          "stem_print": "이등변삼각형 ABC 에서 선분 AB = 선분 AC 이다. ∠A 의 이등분선이 변 BC 와 만나는 점을 D 라 하자. 삼각형 ABD 와 삼각형 ACD 가 합동임을 보이고, 그 결과로 알 수 있는 결론 두 가지를 쓰시오.",
+          "answer_atoms": [
+            "SAS 합동"
+          ],
+          "answer_print": "SAS 합동",
+          "answer_accept": [
+            "SAS"
+          ],
+          "answer_unit": null,
+          "answer_format": "합동조건을 SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "선분 AB = 선분 AC, ∠BAD = ∠CAD, 선분 AD 는 공통이에요. 어떤 조건이 만들어지나요?",
+          "solution": "선분 AB = 선분 AC (이등변)<br>∠BAD = ∠CAD (각의 이등분선)<br>선분 AD 는 공통이에요.<br>→ 두 변과 그 끼인각이 같으므로 SAS 합동이에요. ✓ ∴ 삼각형 ABD ≡ 삼각형 ACD<br><b>결론 두 가지</b><br>1. 선분 BD = 선분 CD → 선분 AD 가 변 BC 를 이등분해요.<br>2. ∠ADB = ∠ADC = 90° → 선분 AD 가 변 BC 에 수직이에요.<br>→ 꼭지각의 이등분선이 곧 밑변의 수직이등분선이에요. 이등변삼각형의 핵심 성질이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "cong.included-angle",
+            "angbis.distance-property"
+          ]
+        },
+        {
+          "id": "m1-u08-t07-08",
+          "level": "H",
+          "stem_src": "AB=CD, AB∥CD인 사각형에서 삼각형 ABD와 CDB가 합동인지 판단하시오.",
+          "stem_print": "사각형 ABCD 에서 선분 AB = 선분 CD 이고 선분 AB 와 선분 CD 는 서로 평행하다. 대각선 BD 를 그었을 때 삼각형 ABD 와 삼각형 CDB 가 합동인지 판단하고 합동조건을 쓰시오.",
+          "answer_atoms": [
+            "SAS 합동"
+          ],
+          "answer_print": "SAS 합동",
+          "answer_accept": [
+            "SAS"
+          ],
+          "answer_unit": null,
+          "answer_format": "합동조건을 SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "평행하면 엇각이 같아요. 공통인 변은 무엇인가요? 두 변과 한 각이 같을 때 그 각이 끼인각인지 꼭 확인해요.",
+          "solution": "선분 AB = 선분 CD (가정)<br>선분 BD 는 공통이에요.<br>∠ABD = ∠CDB (선분 AB 와 선분 CD 가 평행하므로 엇각)<br>∠ABD 는 변 BA 와 변 BD 사이의 끼인각이고, ∠CDB 는 변 DC 와 변 DB 사이의 끼인각이에요.<br>→ 두 변과 그 끼인각이 같으므로 SAS 합동이에요. ✓ ∴ 삼각형 ABD ≡ 삼각형 CDB<br>(평행사변형 성질의 한 부분이에요. 선분 AD = 선분 CB 도 결과로 얻어요.)",
+          "work_space": "lg",
+          "misconceptions": [
+            "cong.included-angle"
+          ]
+        },
+        {
+          "id": "m1-u08-t07-09",
+          "level": "H",
+          "stem_src": "OA=OB, OC=OD, ∠AOC=∠BOD일 때 삼각형 AOC와 BOD가 합동임을 보이시오.",
+          "stem_print": "선분 OA = 선분 OB, 선분 OC = 선분 OD 이고 ∠AOC = ∠BOD 이다. 삼각형 AOC 와 삼각형 BOD 가 합동임을 보이고, 선분 AC = 선분 BD 인 까닭까지 설명하시오.",
+          "answer_atoms": [
+            "SAS 합동"
+          ],
+          "answer_print": "SAS 합동",
+          "answer_accept": [
+            "SAS"
+          ],
+          "answer_unit": null,
+          "answer_format": "합동조건을 SSS / SAS / ASA 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "두 변과 그 사이의 각이 같아요. 어떤 조건인가요?",
+          "solution": "선분 OA = 선분 OB (가정)<br>선분 OC = 선분 OD (가정)<br>∠AOC = ∠BOD (가정)<br>이 각은 선분 OA 와 선분 OC 사이의 끼인각이면서, 선분 OB 와 선분 OD 사이의 끼인각이에요.<br>→ SAS 합동이에요. ✓ ∴ 삼각형 AOC ≡ 삼각형 BOD<br>대응변이므로 선분 AC = 선분 BD 예요. ✓<br>→ 합동을 보이면 나머지 대응변·대응각이 같다는 결론을 얻어요. 이것이 합동의 가장 큰 쓸모예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "cong.included-angle",
+            "cong.correspondence-order"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 6,
+  "unit_name": "정비례와 반비례",
+  "bank": "math1/u06/practice.json",
+  "misconceptions": "misconceptions/math1_u06.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u06-t2",
+  "kind": "type-set",
+  "title": "정비례 그래프",
+  "subtitle": "유형 2 · 지나는 사분면 · 가파른 정도 · 축에 대한 대칭 · 점 대입",
+  "types": [
+    2
+  ],
+  "time_min": 20
+}

@@ -1,0 +1,23 @@
+{
+  "id": "m2-u01-a",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 1,
+  "unit_name": "유리수와 순환소수",
+  "title": "소수로 바꾸기와 순환마디",
+  "subtitle": "분수를 소수로 · 유한소수·순환소수 판별 · 유한소수가 되는 조건 · 순환마디 찾기",
+  "bank": "math2/u01/practice.json",
+  "misconceptions": "misconceptions/math2_u01.json",
+  "types": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "time_min": 18,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

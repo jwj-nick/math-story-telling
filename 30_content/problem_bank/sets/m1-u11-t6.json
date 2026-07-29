@@ -1,0 +1,20 @@
+{
+  "id": "m1-u11-t6",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 11,
+  "unit_name": "다면체와 회전체",
+  "title": "회전체의 전개도",
+  "subtitle": "원기둥은 직사각형 · 원뿔은 부채꼴 · 길이 대응",
+  "bank": "math1/u11/practice.json",
+  "misconceptions": "misconceptions/math1_u11.json",
+  "types": [
+    6
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,15 @@
+{
+  "id": "m1-u05-t5",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 5,
+  "unit_name": "좌표와 그래프",
+  "title": "좌표로 도형 만들기",
+  "subtitle": "유형 5 · 두 점 사이의 거리 · 도형의 이름 · 넓이 · 네 번째 꼭짓점",
+  "bank": "math1/u05/practice.json",
+  "misconceptions": "misconceptions/math1_u05.json",
+  "types": [5],
+  "time_min": 25,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

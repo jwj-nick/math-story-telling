@@ -1,0 +1,20 @@
+{
+  "id": "m1-u10-t5",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 10,
+  "unit_name": "원과 부채꼴",
+  "title": "부채꼴의 넓이",
+  "subtitle": "유형 5 — 넓이의 두 공식 (중심각의 비율 / ½rl) 골라 쓰기",
+  "bank": "math1/u10/practice.json",
+  "misconceptions": "misconceptions/math1_u10.json",
+  "types": [
+    5
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

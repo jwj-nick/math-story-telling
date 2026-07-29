@@ -1,0 +1,15 @@
+{
+  "id": "m1-u09-t6",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 9,
+  "unit_name": "다각형",
+  "title": "정다각형의 한 내각·한 외각",
+  "subtitle": "유형 6 · 한 외각 360°÷n · 한 내각 · 역산",
+  "bank": "math1/u09/practice.json",
+  "misconceptions": "misconceptions/math1_u09.json",
+  "types": [6],
+  "time_min": 22,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

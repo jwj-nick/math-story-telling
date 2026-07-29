@@ -1,0 +1,15 @@
+{
+  "id": "m1-u09-t1",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 9,
+  "unit_name": "다각형",
+  "title": "다각형의 뜻과 구성 요소",
+  "subtitle": "유형 1 · 다각형의 조건 · 변과 꼭짓점 · 한 꼭짓점에서의 대각선",
+  "bank": "math1/u09/practice.json",
+  "misconceptions": "misconceptions/math1_u09.json",
+  "types": [1],
+  "time_min": 20,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

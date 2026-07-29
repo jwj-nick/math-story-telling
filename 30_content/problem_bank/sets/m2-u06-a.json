@@ -1,0 +1,23 @@
+{
+  "id": "m2-u06-a",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 6,
+  "unit_name": "일차함수와 일차방정식",
+  "title": "직선의 방정식",
+  "subtitle": "y = 꼴로 고치기 · 좌표축에 평행한 직선 · 직선의 방정식 세우기 · 교점 = 연립방정식의 해",
+  "bank": "math2/u06/practice.json",
+  "misconceptions": "misconceptions/math2_u06.json",
+  "types": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "time_min": 18,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

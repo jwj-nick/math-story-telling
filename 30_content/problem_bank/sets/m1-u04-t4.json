@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 4,
+  "unit_name": "일차방정식",
+  "bank": "math1/u04/practice.json",
+  "misconceptions": "misconceptions/math1_u04.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u04-t4",
+  "kind": "type-set",
+  "title": "분수·소수 계수 방정식",
+  "subtitle": "유형 4 · 분모의 최소공배수 곱하기 · 10 의 거듭제곱 곱하기",
+  "types": [
+    4
+  ],
+  "time_min": 25
+}

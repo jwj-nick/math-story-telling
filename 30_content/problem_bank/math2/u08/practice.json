@@ -1,0 +1,488 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 8,
+    "unit_name": "사각형의 성질",
+    "source": "40_grades/middle/math2/app2/p8.html",
+    "generation": "D",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_math2_p.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 script 의 P(...)/pick() 값 그대로. 절대 손으로 고치지 않는다. answer_print 는 원자에서 합성한 지면 정답. 원본 2지선다 5문항(3-3, 4-2, 5-2, 6-1, 6-2)은 지면에서 단답형으로 재작성했다. 원본은 화면 도형에 기대는 문항이 많아, 지면에서는 꼭짓점 이름·교점 이름을 발문에 글로 명시했다."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "사각형 네 각의 합 = 360°",
+      "principle": "사각형의 네 각의 크기의 합은 360° 예요. 대각선을 하나 그으면 삼각형 두 개로 나뉘니까요. 세 각을 알면 360° 에서 세 각의 합을 빼요.",
+      "problems": [
+        {
+          "id": "m2-u08-t01-01",
+          "level": "L",
+          "stem_src": "네 각 중 셋이 90°, 90°, 100°일 때 나머지 각은?",
+          "stem_print": "어떤 사각형의 네 각 중 세 각의 크기가 각각 90°, 90°, 100° 이다. 나머지 한 각의 크기를 구하시오.",
+          "answer_atoms": [
+            "80"
+          ],
+          "answer_print": "80",
+          "answer_accept": [
+            "80도",
+            "80°"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 수로 (단위 도)",
+          "figure": null,
+          "hint": "네 각의 합 360° 에서 주어진 세 각의 합을 빼요.",
+          "solution": "세 각의 합은 90° + 90° + 100° = 280°. 따라서 나머지 한 각은 360° − 280° = 80°.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.angle-sum-180",
+            "quad.subtract-order"
+          ]
+        },
+        {
+          "id": "m2-u08-t01-02",
+          "level": "L",
+          "stem_src": "세 각이 120°, 60°, 90°일 때 나머지 각은?",
+          "stem_print": "어떤 사각형의 네 각 중 세 각의 크기가 각각 120°, 60°, 90° 이다. 나머지 한 각의 크기를 구하시오.",
+          "answer_atoms": [
+            "90"
+          ],
+          "answer_print": "90",
+          "answer_accept": [
+            "90도",
+            "90°"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 수로 (단위 도)",
+          "figure": null,
+          "hint": "먼저 주어진 세 각을 모두 더해 보세요.",
+          "solution": "세 각의 합은 120° + 60° + 90° = 270°. 따라서 나머지 한 각은 360° − 270° = 90°.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.angle-sum-180"
+          ]
+        },
+        {
+          "id": "m2-u08-t01-03",
+          "level": "M",
+          "stem_src": "세 각이 100°, 80°, 70°일 때 나머지 각은?",
+          "stem_print": "어떤 사각형의 네 각 중 세 각의 크기가 각각 100°, 80°, 70° 이다. 나머지 한 각의 크기를 구하시오.",
+          "answer_atoms": [
+            "110"
+          ],
+          "answer_print": "110",
+          "answer_accept": [
+            "110도",
+            "110°"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 수로 (단위 도)",
+          "figure": null,
+          "hint": "세 각을 하나씩 빼도 되고, 세 각을 모두 더한 뒤 한 번에 빼도 결과는 같아요.",
+          "solution": "세 각의 합은 100° + 80° + 70° = 250°. 따라서 나머지 한 각은 360° − 250° = 110°.",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.angle-sum-180",
+            "quad.subtract-order"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "평행사변형의 변과 각",
+      "principle": "평행사변형은 두 쌍의 대변이 각각 평행한 사각형이에요. 그래서 마주 보는 두 변의 길이가 같고, 마주 보는 두 각의 크기도 같아요. 이웃한 두 각의 합은 180° 예요.",
+      "problems": [
+        {
+          "id": "m2-u08-t02-01",
+          "level": "L",
+          "stem_src": "평행사변형에서 AB = 6일 때, 대변 DC는?",
+          "stem_print": "평행사변형 ABCD 에서 AB = 6 cm 이다. 변 AB 와 마주 보는 변 DC 의 길이를 구하시오.",
+          "answer_atoms": [
+            "6"
+          ],
+          "answer_print": "6",
+          "answer_accept": [
+            "6cm",
+            "6 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 수로 (단위 cm)",
+          "figure": null,
+          "hint": "평행사변형에서 마주 보는 두 변을 대변이라 하고, 대변의 길이는 서로 같아요.",
+          "solution": "평행사변형 ABCD 에서 AB 와 DC 는 마주 보는 변이에요. 대변의 길이는 같으므로 DC = 6 cm.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.para-side-neighbor"
+          ]
+        },
+        {
+          "id": "m2-u08-t02-02",
+          "level": "L",
+          "stem_src": "평행사변형의 한 각이 70°일 때, 마주 보는 각은?",
+          "stem_print": "평행사변형 ABCD 에서 ∠A = 70° 이다. ∠A 와 마주 보는 ∠C 의 크기를 구하시오.",
+          "answer_atoms": [
+            "70"
+          ],
+          "answer_print": "70",
+          "answer_accept": [
+            "70도",
+            "70°"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 수로 (단위 도)",
+          "figure": null,
+          "hint": "마주 보는 두 각을 대각이라 하고, 대각의 크기는 서로 같아요.",
+          "solution": "평행사변형에서 두 대각의 크기는 같으므로 ∠C = ∠A = 70°.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.para-angle-opposite-neighbor"
+          ]
+        },
+        {
+          "id": "m2-u08-t02-03",
+          "level": "M",
+          "stem_src": "평행사변형의 한 각이 70°일 때, 이웃한 각은?",
+          "stem_print": "평행사변형 ABCD 에서 ∠A = 70° 이다. ∠A 와 이웃한 ∠B 의 크기를 구하시오.",
+          "answer_atoms": [
+            "110"
+          ],
+          "answer_print": "110",
+          "answer_accept": [
+            "110도",
+            "110°"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 수로 (단위 도)",
+          "figure": null,
+          "hint": "이웃한 두 각은 같은 것이 아니라, 더해서 180° 가 돼요.",
+          "solution": "AD 와 BC 가 평행하므로 ∠A 와 ∠B 는 더해서 180° 예요. 따라서 ∠B = 180° − 70° = 110°.",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.para-angle-opposite-neighbor",
+            "quad.neighbor-angle-equal"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "평행사변형의 대각선",
+      "principle": "평행사변형의 두 대각선은 서로를 이등분해요. 두 대각선의 교점은 각 대각선의 중점이에요. 반대로, 두 대각선이 서로를 이등분하면 그 사각형은 평행사변형이에요.",
+      "problems": [
+        {
+          "id": "m2-u08-t03-01",
+          "level": "L",
+          "stem_src": "대각선 AC = 8, 교점 M일 때 AM은?",
+          "stem_print": "평행사변형 ABCD 에서 두 대각선 AC 와 BD 의 교점을 M 이라 하자. AC = 8 cm 일 때, AM 의 길이를 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "4",
+          "answer_accept": [
+            "4cm",
+            "4 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 수로 (단위 cm)",
+          "figure": null,
+          "hint": "교점 M 은 대각선 AC 의 중점이에요.",
+          "solution": "두 대각선은 서로를 이등분하므로 M 은 AC 의 중점이에요. 따라서 AM = 8 ÷ 2 = 4 cm.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.diag-bisect-vs-equal"
+          ]
+        },
+        {
+          "id": "m2-u08-t03-02",
+          "level": "L",
+          "stem_src": "대각선 BD = 10, 교점 M일 때 BM은?",
+          "stem_print": "평행사변형 ABCD 에서 두 대각선 AC 와 BD 의 교점을 M 이라 하자. BD = 10 cm 일 때, BM 의 길이를 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [
+            "5cm",
+            "5 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 수로 (단위 cm)",
+          "figure": null,
+          "hint": "교점 M 은 대각선 BD 도 반으로 나눠요.",
+          "solution": "두 대각선은 서로를 이등분하므로 M 은 BD 의 중점이에요. 따라서 BM = 10 ÷ 2 = 5 cm.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.diag-bisect-vs-equal"
+          ]
+        },
+        {
+          "id": "m2-u08-t03-03",
+          "level": "M",
+          "stem_src": "평행사변형의 두 대각선은 서로 이등분할까요? (선택: 이등분해요 / 아니에요)",
+          "stem_print": "평행사변형의 두 대각선이 서로에 대해 하는 일을 '서로 ~해요' 형태의 한 문장으로 쓰시오. (길이가 같은지가 아니라, 교점이 각 대각선을 어떻게 나누는지를 쓰세요.)",
+          "answer_atoms": [
+            "이등분해요"
+          ],
+          "answer_print": "서로 이등분해요",
+          "answer_accept": [
+            "서로를 이등분해요",
+            "서로 이등분한다",
+            "서로를 이등분한다",
+            "교점이 각 대각선의 중점이 돼요"
+          ],
+          "answer_unit": null,
+          "answer_format": "'서로 ~해요' 형태의 한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "교점에서 잘린 두 조각의 길이를 비교해 보세요.",
+          "solution": "평행사변형에서 두 대각선의 교점은 각 대각선의 중점이 돼요. 즉 두 대각선은 서로 이등분해요. (길이가 같다는 뜻은 아니에요.)",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.diag-bisect-vs-equal",
+            "quad.para-condition-one"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "직사각형",
+      "principle": "직사각형은 네 각의 크기가 모두 90° 인 평행사변형이에요. 평행사변형의 성질을 그대로 가지면서, 두 대각선의 길이가 같다는 성질이 하나 더 붙어요.",
+      "problems": [
+        {
+          "id": "m2-u08-t04-01",
+          "level": "L",
+          "stem_src": "직사각형에서 대각선 AC = 10일 때, 대각선 BD는?",
+          "stem_print": "직사각형 ABCD 에서 대각선 AC 의 길이가 10 cm 이다. 다른 대각선 BD 의 길이를 구하시오.",
+          "answer_atoms": [
+            "10"
+          ],
+          "answer_print": "10",
+          "answer_accept": [
+            "10cm",
+            "10 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 수로 (단위 cm)",
+          "figure": null,
+          "hint": "직사각형에서 두 대각선의 길이 사이에 어떤 관계가 있는지 떠올려 보세요.",
+          "solution": "직사각형의 두 대각선은 길이가 같아요. 따라서 BD = AC = 10 cm.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.rect-diag-equal",
+            "quad.diag-property-swap"
+          ]
+        },
+        {
+          "id": "m2-u08-t04-02",
+          "level": "M",
+          "stem_src": "직사각형의 두 대각선은 길이가 같을까요? (선택: 같아요 / 달라요)",
+          "stem_print": "직사각형의 두 대각선의 길이를 서로 비교하면 어떠한지, '~해요' 형태의 한 문장으로 쓰시오.",
+          "answer_atoms": [
+            "같아요"
+          ],
+          "answer_print": "두 대각선의 길이는 같아요",
+          "answer_accept": [
+            "길이가 같아요",
+            "서로 같아요",
+            "두 대각선의 길이가 같아요",
+            "두 대각선의 길이는 같다"
+          ],
+          "answer_unit": null,
+          "answer_format": "'~해요' 형태의 한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "직사각형을 그려 놓고 두 대각선을 자로 재 본다고 상상해 보세요.",
+          "solution": "직사각형 ABCD 에서 △ABC ≡ △DCB (SAS 합동) 이므로 대각선 AC 와 대각선 DB 의 길이가 같아요. 즉 두 대각선의 길이는 같아요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.rect-diag-equal",
+            "quad.isosceles-trapezoid"
+          ]
+        },
+        {
+          "id": "m2-u08-t04-03",
+          "level": "M",
+          "stem_src": "직사각형에서 대각선 AC = 12, 교점 M일 때 AM은?",
+          "stem_print": "직사각형 ABCD 에서 두 대각선의 교점을 M 이라 하자. AC = 12 cm 일 때, AM 의 길이를 구하시오.",
+          "answer_atoms": [
+            "6"
+          ],
+          "answer_print": "6",
+          "answer_accept": [
+            "6cm",
+            "6 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 수로 (단위 cm)",
+          "figure": null,
+          "hint": "직사각형도 평행사변형이므로 평행사변형의 성질을 그대로 써도 돼요.",
+          "solution": "직사각형은 평행사변형이므로 두 대각선은 서로를 이등분해요. 따라서 AM = 12 ÷ 2 = 6 cm.",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.rect-is-para",
+            "quad.diag-bisect-vs-equal"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "마름모",
+      "principle": "마름모는 네 변의 길이가 모두 같은 평행사변형이에요. 평행사변형의 성질을 그대로 가지면서, 두 대각선이 서로 수직으로 만난다는 성질이 하나 더 붙어요.",
+      "problems": [
+        {
+          "id": "m2-u08-t05-01",
+          "level": "L",
+          "stem_src": "마름모의 두 대각선은 서로 몇 도로 만날까요?",
+          "stem_print": "마름모의 두 대각선이 만나서 이루는 각의 크기를 구하시오.",
+          "answer_atoms": [
+            "90"
+          ],
+          "answer_print": "90",
+          "answer_accept": [
+            "90도",
+            "90°",
+            "직각"
+          ],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 수로 (단위 도)",
+          "figure": null,
+          "hint": "마름모의 두 대각선은 서로 수직이에요. 수직인 두 직선이 이루는 각은 몇 도일까요?",
+          "solution": "마름모의 두 대각선은 서로 수직이므로 교점에서 이루는 각은 90°.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.rhombus-diag-perp"
+          ]
+        },
+        {
+          "id": "m2-u08-t05-02",
+          "level": "M",
+          "stem_src": "마름모의 두 대각선은 서로 수직이등분할까요? (선택: 수직이등분해요 / 아니에요)",
+          "stem_print": "마름모의 두 대각선이 서로에 대해 하는 일을 '서로 ~해요' 형태의 한 문장으로 쓰시오. (만나는 각과 나누는 방식을 한꺼번에 담아 쓰세요.)",
+          "answer_atoms": [
+            "수직이등분해요"
+          ],
+          "answer_print": "서로 수직이등분해요",
+          "answer_accept": [
+            "서로를 수직이등분해요",
+            "수직이등분해요",
+            "서로 수직이등분한다",
+            "서로 수직으로 만나면서 이등분해요"
+          ],
+          "answer_unit": null,
+          "answer_format": "'서로 ~해요' 형태의 한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "마름모는 평행사변형이기도 하다는 점을 같이 생각해 보세요.",
+          "solution": "마름모는 평행사변형이므로 두 대각선이 서로를 이등분하고, 네 변이 모두 같아서 두 대각선이 수직으로 만나요. 두 성질을 합치면 서로 수직이등분해요.",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.rhombus-diag-perp",
+            "quad.diag-property-swap"
+          ]
+        },
+        {
+          "id": "m2-u08-t05-03",
+          "level": "L",
+          "stem_src": "마름모의 한 변이 5일 때, 다른 한 변은?",
+          "stem_print": "마름모의 한 변의 길이가 5 cm 이다. 이 마름모의 다른 한 변의 길이를 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [
+            "5cm",
+            "5 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 수로 (단위 cm)",
+          "figure": null,
+          "hint": "마름모는 마주 보는 변만이 아니라 네 변이 모두 같아요.",
+          "solution": "마름모는 네 변의 길이가 모두 같으므로 다른 한 변도 5 cm.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.rhombus-side-all-equal",
+            "quad.rect-is-para"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "여러 사각형 구분",
+      "principle": "이 유형은 '어느 성질이 어느 도형의 표시인가' 를 가려내는 문제예요. 주어진 조건이 각에 대한 것인지 변에 대한 것인지, 대각선의 길이에 대한 것인지 대각선이 만나는 각에 대한 것인지 먼저 갈라 보세요. 조건이 하나 더 붙으면 도형은 더 특별해져요.",
+      "problems": [
+        {
+          "id": "m2-u08-t06-01",
+          "level": "M",
+          "stem_src": "네 각이 모두 90°인 평행사변형은 무엇일까요? (선택: 직사각형 / 마름모)",
+          "stem_print": "네 각의 크기가 모두 90° 인 평행사변형을 무엇이라 하는지 이름을 쓰시오.",
+          "answer_atoms": [
+            "직사각형"
+          ],
+          "answer_print": "직사각형",
+          "answer_accept": [
+            "직사각형이에요"
+          ],
+          "answer_unit": null,
+          "answer_format": "'평행사변형 / 직사각형 / 마름모 / 정사각형' 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "주어진 조건이 각에 대한 것인지 변에 대한 것인지 먼저 갈라 보세요.",
+          "solution": "평행사변형에 '네 각이 모두 90°' 라는 각에 대한 조건이 붙으면 직사각형이 돼요. (변의 길이에 대한 조건이 붙으면 마름모예요.)",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.rect-rhombus-swap"
+          ]
+        },
+        {
+          "id": "m2-u08-t06-02",
+          "level": "H",
+          "stem_src": "대각선의 길이가 같고 서로 수직이등분하는 사각형은? (선택: 정사각형 / 직사각형)",
+          "stem_print": "두 대각선의 길이가 같고, 두 대각선이 서로를 수직이등분하는 사각형을 무엇이라 하는지 이름을 쓰시오.",
+          "answer_atoms": [
+            "정사각형"
+          ],
+          "answer_print": "정사각형",
+          "answer_accept": [
+            "정사각형이에요"
+          ],
+          "answer_unit": null,
+          "answer_format": "'평행사변형 / 직사각형 / 마름모 / 정사각형' 중 하나로 (단위 없음)",
+          "figure": null,
+          "hint": "두 조건을 하나씩 떼어 보고, 각각이 어느 사각형의 표시인지 적어 보세요.",
+          "solution": "두 대각선의 길이가 같다는 것은 직사각형의 성질이고, 두 대각선이 서로를 수직이등분한다는 것은 마름모의 성질이에요. 두 성질을 모두 가지는 사각형은 정사각형이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "quad.diag-property-swap",
+            "quad.square-subset"
+          ]
+        },
+        {
+          "id": "m2-u08-t06-03",
+          "level": "L",
+          "stem_src": "정사각형에서 한 대각선이 8일 때, 다른 대각선은?",
+          "stem_print": "정사각형 ABCD 에서 대각선 AC 의 길이가 8 cm 이다. 다른 대각선 BD 의 길이를 구하시오.",
+          "answer_atoms": [
+            "8"
+          ],
+          "answer_print": "8",
+          "answer_accept": [
+            "8cm",
+            "8 cm"
+          ],
+          "answer_unit": "cm",
+          "answer_format": "길이를 수로 (단위 cm)",
+          "figure": null,
+          "hint": "정사각형은 직사각형이기도 해요. 직사각형의 대각선 성질을 그대로 쓰면 돼요.",
+          "solution": "정사각형은 직사각형이므로 두 대각선의 길이가 같아요. 따라서 BD = AC = 8 cm.",
+          "work_space": "sm",
+          "misconceptions": [
+            "quad.square-subset",
+            "quad.rect-diag-equal"
+          ]
+        }
+      ]
+    }
+  ]
+}

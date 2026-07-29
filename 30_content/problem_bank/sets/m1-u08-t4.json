@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 8,
+  "unit_name": "작도와 합동",
+  "bank": "math1/u08/practice.json",
+  "misconceptions": "misconceptions/math1_u08.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u08-t4",
+  "kind": "type-set",
+  "title": "각의 이등분선 작도",
+  "subtitle": "작도 절차 · 두 변에서 같은 거리라는 성질 · 기본 3 · 보통 3 · 도전 3",
+  "types": [
+    4
+  ],
+  "time_min": 20
+}

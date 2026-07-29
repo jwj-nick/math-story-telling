@@ -1,0 +1,15 @@
+{
+  "id": "m1-u05-t3",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 5,
+  "unit_name": "좌표와 그래프",
+  "title": "사분면 판별 (문자 부호 조건)",
+  "subtitle": "유형 3 · 문자의 부호 정하기 · 마이너스가 붙은 좌표 · 곱과 나눗셈의 부호",
+  "bank": "math1/u05/practice.json",
+  "misconceptions": "misconceptions/math1_u05.json",
+  "types": [3],
+  "time_min": 25,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

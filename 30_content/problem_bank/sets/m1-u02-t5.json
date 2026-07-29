@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 2,
+  "unit_name": "정수와 유리수",
+  "bank": "math1/u02/practice.json",
+  "misconceptions": "misconceptions/math1_u02.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u02-t5",
+  "kind": "type-set",
+  "title": "덧셈과 뺄셈",
+  "subtitle": "유형 5 · 부호가 같을 때와 다를 때 · 뺄셈을 덧셈으로 · 분수의 덧뺄셈",
+  "types": [
+    5
+  ],
+  "time_min": 24
+}

@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 8,
+  "unit_name": "작도와 합동",
+  "bank": "math1/u08/practice.json",
+  "misconceptions": "misconceptions/math1_u08.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u08-t5",
+  "kind": "type-set",
+  "title": "삼각형 작도 조건 SSS·SAS·ASA",
+  "subtitle": "삼각형이 하나로 정해지는 조건 · 정해지지 않는 경우 · 기본 3 · 보통 3 · 도전 3",
+  "types": [
+    5
+  ],
+  "time_min": 20
+}

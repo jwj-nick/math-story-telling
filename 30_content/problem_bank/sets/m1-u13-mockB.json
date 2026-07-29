@@ -1,0 +1,32 @@
+{
+  "id": "m1-u13-mockB",
+  "kind": "mock",
+  "grade": "math1",
+  "unit": 13,
+  "unit_name": "자료의 정리와 해석",
+  "title": "단원 13 모의 B",
+  "subtitle": "7유형 전체에서 유형마다 보통·도전 1문항씩 · 14문항",
+  "bank": "math1/u13/practice.json",
+  "misconceptions": "misconceptions/math1_u13.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "M": 1,
+      "H": 1
+    }
+  },
+  "time_min": 30,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

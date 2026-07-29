@@ -1,0 +1,32 @@
+{
+  "id": "m1-u10-mockB",
+  "kind": "mock",
+  "grade": "math1",
+  "unit": 10,
+  "unit_name": "원과 부채꼴",
+  "title": "원과 부채꼴 모의 B",
+  "subtitle": "7유형 전체에서 유형마다 보통·도전 1문항씩 · 14문항",
+  "bank": "math1/u10/practice.json",
+  "misconceptions": "misconceptions/math1_u10.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "M": 1,
+      "H": 1
+    }
+  },
+  "time_min": 30,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

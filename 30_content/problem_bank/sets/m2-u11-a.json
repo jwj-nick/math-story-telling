@@ -1,0 +1,22 @@
+{
+  "id": "m2-u11-a",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 11,
+  "unit_name": "확률",
+  "title": "경우의 수와 확률의 뜻",
+  "subtitle": "곱의 법칙 · 확률의 뜻 · 공과 카드 뽑기",
+  "bank": "math2/u11/practice.json",
+  "misconceptions": "misconceptions/math2_u11.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

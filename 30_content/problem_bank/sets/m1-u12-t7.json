@@ -1,0 +1,20 @@
+{
+  "id": "m1-u12-t7",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 12,
+  "unit_name": "입체도형의 겉넓이와 부피",
+  "title": "복합 입체",
+  "subtitle": "더하기와 빼기 · 맞닿은 면 처리 · 시험 빈도 최고",
+  "bank": "math1/u12/practice.json",
+  "misconceptions": "misconceptions/math1_u12.json",
+  "types": [
+    7
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

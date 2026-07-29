@@ -1,0 +1,657 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 5,
+    "unit_name": "일차함수와 그래프",
+    "generation": "D",
+    "source": "40_grades/middle/math2/app2/p5.html",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_math2_p.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 script 의 P(...)/pick(...) 값 그대로. 절대 손으로 고치지 않는다. 원본 2지선다 6문항(유형 2·6)은 지면에서 단답·서술형으로 재작성했고, 정답 원자(선택지 텍스트)를 answer_print 안에 그대로 품게 했다."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "함숫값 구하기",
+      "principle": "f(x) 의 x 자리에 수를 대입하면 함숫값이 나와요. 음수는 괄호로 감싸서 넣어요.",
+      "problems": [
+        {
+          "id": "m2-u05-t01-01",
+          "level": "L",
+          "stem_src": "f(x) = 2x + 1 일 때 f(3)?",
+          "stem_print": "일차함수 f(x) = 2x + 1 일 때, f(3) 의 값을 구하시오.",
+          "answer_atoms": [
+            "7"
+          ],
+          "answer_print": "7",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "x 자리에 3 을 넣어요.",
+          "solution": "f(3) = 2 × 3 + 1 = 6 + 1 = 7 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "func.value-vs-input"
+          ]
+        },
+        {
+          "id": "m2-u05-t01-02",
+          "level": "L",
+          "stem_src": "f(x) = −x + 5 일 때 f(2)?",
+          "stem_print": "일차함수 f(x) = −x + 5 일 때, f(2) 의 값을 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "−x 는 −1 × x 예요. 부호를 그대로 가져와요.",
+          "solution": "f(2) = −2 + 5 = 3 이에요. −x 의 x 자리에 2 를 넣으면 −2 가 돼요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "func.value-vs-input",
+            "func.negative-input"
+          ]
+        },
+        {
+          "id": "m2-u05-t01-03",
+          "level": "M",
+          "stem_src": "f(x) = 3x − 4 일 때 f(−1)?",
+          "stem_print": "일차함수 f(x) = 3x − 4 일 때, f(−1) 의 값을 구하시오.",
+          "answer_atoms": [
+            "−7"
+          ],
+          "answer_print": "−7",
+          "answer_accept": [
+            "-7"
+          ],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "음수는 괄호로 감싸서 넣어요.",
+          "solution": "f(−1) = 3 × (−1) − 4 = −3 − 4 = −7 이에요. 괄호를 빼먹으면 3 − 1 − 4 가 되어 답이 달라져요.",
+          "work_space": "md",
+          "misconceptions": [
+            "func.negative-input",
+            "func.value-vs-input"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "일차함수인지 판별",
+      "principle": "일차함수는 y = ax + b 꼴이고 a ≠ 0 이어야 해요. 상수함수(y = 7)나 이차식(y = x<sup>2</sup> − 1)은 일차함수가 아니에요.",
+      "problems": [
+        {
+          "id": "m2-u05-t02-01",
+          "level": "L",
+          "stem_src": "y = 3x − 2 는 일차함수일까요? (2지선다: 일차함수예요 / 아니에요)",
+          "stem_print": "y = 3x − 2 가 일차함수인지 판별하고, 그렇게 판단한 까닭을 한 문장으로 쓰시오.",
+          "answer_atoms": [
+            "일차함수예요"
+          ],
+          "answer_print": "일차함수예요 (y = ax + b 꼴이고 x 의 계수 a = 3 이라 0 이 아니에요)",
+          "answer_accept": [
+            "네, 일차함수예요",
+            "일차함수가 맞아요 (x 의 1차식)"
+          ],
+          "answer_unit": null,
+          "answer_format": "'일차함수예요 / 아니에요' 와 까닭을 한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "y = ax + b 꼴인지, 그리고 x 의 계수가 0 이 아닌지 두 가지를 봐요.",
+          "solution": "y = 3x − 2 는 a = 3, b = −2 인 y = ax + b 꼴이에요. a 가 0 이 아니므로 일차함수예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "func.linear-definition"
+          ]
+        },
+        {
+          "id": "m2-u05-t02-02",
+          "level": "M",
+          "stem_src": "y = 7 은 일차함수일까요? (2지선다: 아니에요 / 일차함수예요)",
+          "stem_print": "y = 7 이 일차함수인지 판별하고, 그렇게 판단한 까닭을 한 문장으로 쓰시오.",
+          "answer_atoms": [
+            "아니에요"
+          ],
+          "answer_print": "아니에요 (x 항이 없어 a = 0 이므로 상수함수예요)",
+          "answer_accept": [
+            "일차함수가 아니에요 (상수함수)"
+          ],
+          "answer_unit": null,
+          "answer_format": "'일차함수예요 / 아니에요' 와 까닭을 한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "일차함수는 x 의 계수가 0 이 아니어야 해요.",
+          "solution": "y = 7 에는 x 항이 없어요. 즉 a = 0 이라서 일차함수가 아니고, 그래프가 x축에 평행한 상수함수예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "func.linear-definition"
+          ]
+        },
+        {
+          "id": "m2-u05-t02-03",
+          "level": "M",
+          "stem_src": "y = x² − 1 은 일차함수일까요? (2지선다: 아니에요 / 일차함수예요)",
+          "stem_print": "y = x<sup>2</sup> − 1 이 일차함수인지 판별하고, 그렇게 판단한 까닭을 한 문장으로 쓰시오.",
+          "answer_atoms": [
+            "아니에요"
+          ],
+          "answer_print": "아니에요 (x<sup>2</sup> 이 있어 x 에 대한 이차식이에요)",
+          "answer_accept": [
+            "일차함수가 아니에요 (이차식)"
+          ],
+          "answer_unit": null,
+          "answer_format": "'일차함수예요 / 아니에요' 와 까닭을 한 문장으로 (단위 없음)",
+          "figure": null,
+          "hint": "일차함수의 '일차' 는 x 의 차수가 1 이라는 뜻이에요.",
+          "solution": "x<sup>2</sup> 이 들어 있으므로 x 에 대한 이차식이에요. 일차함수에는 x 의 1차식만 올 수 있어요.",
+          "work_space": "md",
+          "misconceptions": [
+            "func.degree-two"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "평행이동",
+      "principle": "y = ax 를 y축 방향으로 b 만큼 평행이동하면 y = ax + b 가 돼요. 위로 옮기면 더하고, 아래로 옮기면 빼요.",
+      "problems": [
+        {
+          "id": "m2-u05-t03-01",
+          "level": "L",
+          "stem_src": "y = 2x 를 위로 3만큼 옮긴 식의 y절편은?",
+          "stem_print": "일차함수 y = 2x 의 그래프를 위쪽으로 3 만큼 평행이동한 그래프의 y절편을 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "y절편을 수로 (단위 없음)",
+          "figure": null,
+          "hint": "위로 옮긴 만큼 b 가 커져요.",
+          "solution": "y = 2x + 3 이 되므로 y절편은 3 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "shift.direction-sign"
+          ]
+        },
+        {
+          "id": "m2-u05-t03-02",
+          "level": "M",
+          "stem_src": "y = −x 를 아래로 2만큼 옮긴 식의 y절편은?",
+          "stem_print": "일차함수 y = −x 의 그래프를 아래쪽으로 2 만큼 평행이동한 그래프의 y절편을 구하시오.",
+          "answer_atoms": [
+            "−2"
+          ],
+          "answer_print": "−2",
+          "answer_accept": [
+            "-2"
+          ],
+          "answer_unit": null,
+          "answer_format": "y절편을 수로 (단위 없음)",
+          "figure": null,
+          "hint": "아래로 옮기면 b 가 작아져요.",
+          "solution": "아래로 2 만큼 옮기면 y = −x − 2 예요. 따라서 y절편은 −2 이고, 부호까지 함께 써요.",
+          "work_space": "md",
+          "misconceptions": [
+            "shift.direction-sign"
+          ]
+        },
+        {
+          "id": "m2-u05-t03-03",
+          "level": "M",
+          "stem_src": "y = 3x + 1 을 위로 4만큼 옮긴 식의 y절편은?",
+          "stem_print": "일차함수 y = 3x + 1 의 그래프를 위쪽으로 4 만큼 평행이동한 그래프의 y절편을 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "y절편을 수로 (단위 없음)",
+          "figure": null,
+          "hint": "원래 있던 y절편 1 에서 4 만큼 더 올라가요.",
+          "solution": "y = 3x + (1 + 4) = 3x + 5 이므로 y절편은 5 예요. 원래 있던 1 을 지우고 4 로 바꾸면 안 돼요.",
+          "work_space": "md",
+          "misconceptions": [
+            "shift.replace-b",
+            "shift.direction-sign"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "x절편·y절편",
+      "principle": "y절편은 x = 0 을 넣어 얻는 y 의 값이에요. x절편은 y = 0 을 넣어 얻는 x 의 값이에요.",
+      "problems": [
+        {
+          "id": "m2-u05-t04-01",
+          "level": "M",
+          "stem_src": "y = 2x − 6 의 x절편은? (y=0 대입)",
+          "stem_print": "일차함수 y = 2x − 6 의 그래프의 x절편을 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "x절편을 수로 (단위 없음)",
+          "figure": null,
+          "hint": "x절편은 y = 0 을 넣고 x 를 구해요.",
+          "solution": "0 = 2x − 6 이므로 2x = 6, x = 3 이에요. x절편은 3 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "line.intercept-swap"
+          ]
+        },
+        {
+          "id": "m2-u05-t04-02",
+          "level": "L",
+          "stem_src": "y = 2x − 6 의 y절편은? (x=0 대입)",
+          "stem_print": "일차함수 y = 2x − 6 의 그래프의 y절편을 구하시오.",
+          "answer_atoms": [
+            "−6"
+          ],
+          "answer_print": "−6",
+          "answer_accept": [
+            "-6"
+          ],
+          "answer_unit": null,
+          "answer_format": "y절편을 수로 (단위 없음)",
+          "figure": null,
+          "hint": "y절편은 x = 0 을 넣으면 나오는 값이에요.",
+          "solution": "x = 0 을 넣으면 y = 2 × 0 − 6 = −6 이에요. 앞의 − 부호까지 그대로 써요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "line.y-intercept-sign",
+            "line.intercept-swap"
+          ]
+        },
+        {
+          "id": "m2-u05-t04-03",
+          "level": "M",
+          "stem_src": "y = −x + 4 의 x절편은?",
+          "stem_print": "일차함수 y = −x + 4 의 그래프의 x절편을 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "4",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "x절편을 수로 (단위 없음)",
+          "figure": null,
+          "hint": "y = 0 을 넣고 x 에 대해 풀어요.",
+          "solution": "0 = −x + 4 이므로 x = 4 예요. 이 식은 y절편도 4 이지만, 두 값의 뜻은 서로 달라요.",
+          "work_space": "md",
+          "misconceptions": [
+            "line.intercept-swap",
+            "line.y-intercept-sign"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "기울기 구하기",
+      "principle": "기울기 = (y 의 변화량) ÷ (x 의 변화량) 이에요. 오른쪽으로 갈수록 내려가면 기울기는 음수예요.",
+      "problems": [
+        {
+          "id": "m2-u05-t05-01",
+          "level": "L",
+          "stem_src": "두 점 (1, 2), (3, 8) 을 지나는 직선의 기울기는?",
+          "stem_print": "두 점 (1, 2), (3, 8) 을 지나는 직선의 기울기를 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "기울기를 수로 (분수면 기약분수로)",
+          "figure": null,
+          "hint": "(y 의 변화량) ÷ (x 의 변화량) 을 계산해요.",
+          "solution": "x 는 1 에서 3 으로 2 만큼, y 는 2 에서 8 로 6 만큼 변해요. 6 ÷ 2 = 3 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "slope.formula-inverted"
+          ]
+        },
+        {
+          "id": "m2-u05-t05-02",
+          "level": "M",
+          "stem_src": "두 점 (−1, 2), (2, 8) 의 기울기는?",
+          "stem_print": "두 점 (−1, 2), (2, 8) 을 지나는 직선의 기울기를 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "기울기를 수로 (분수면 기약분수로)",
+          "figure": null,
+          "hint": "x 의 변화량은 2 − (−1) 이에요. 괄호를 꼭 써요.",
+          "solution": "y 의 변화량은 8 − 2 = 6, x 의 변화량은 2 − (−1) = 3 이에요. 6 ÷ 3 = 2 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "slope.formula-inverted",
+            "func.negative-input"
+          ]
+        },
+        {
+          "id": "m2-u05-t05-03",
+          "level": "M",
+          "stem_src": "두 점 (0, 5), (5, 0) 의 기울기는?",
+          "stem_print": "두 점 (0, 5), (5, 0) 을 지나는 직선의 기울기를 구하시오.",
+          "answer_atoms": [
+            "−1"
+          ],
+          "answer_print": "−1",
+          "answer_accept": [
+            "-1"
+          ],
+          "answer_unit": null,
+          "answer_format": "기울기를 수로 (분수면 기약분수로)",
+          "figure": null,
+          "hint": "오른쪽으로 갈수록 내려가는 직선이면 기울기의 부호는 어떻게 될까요?",
+          "solution": "y 의 변화량은 0 − 5 = −5, x 의 변화량은 5 − 0 = 5 예요. −5 ÷ 5 = −1 이에요. 내려가는 직선이라 음수가 나와요.",
+          "work_space": "md",
+          "misconceptions": [
+            "slope.sign-negative",
+            "slope.formula-inverted"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "그래프의 모양 (a·b 부호)",
+      "principle": "a &gt; 0 이면 오른쪽 위로 올라가고(증가), a &lt; 0 이면 오른쪽 아래로 내려가요(감소). b 는 그래프가 y축과 만나는 높이예요.",
+      "problems": [
+        {
+          "id": "m2-u05-t06-01",
+          "level": "L",
+          "stem_src": "y = 2x + 3 의 그래프는 오른쪽으로 갈수록? (2지선다: 올라가요 (증가) / 내려가요 (감소))",
+          "stem_print": "일차함수 y = 2x + 3 의 그래프가 오른쪽으로 갈수록 올라가는지 내려가는지 쓰고, 그렇게 판단한 근거가 되는 값을 함께 쓰시오.",
+          "answer_atoms": [
+            "올라가요 (증가)"
+          ],
+          "answer_print": "올라가요 (증가) — 기울기가 2 로 0 보다 크기 때문이에요",
+          "answer_accept": [
+            "증가해요 (기울기가 양수)",
+            "오른쪽 위로 올라가요"
+          ],
+          "answer_unit": null,
+          "answer_format": "'올라가요 / 내려가요' 와 근거가 되는 기울기를 수로",
+          "figure": null,
+          "hint": "기울기 a 의 부호를 봐요.",
+          "solution": "기울기가 2 로 양수예요. a 가 0 보다 크면 그래프는 오른쪽으로 갈수록 올라가요 (증가).",
+          "work_space": "sm",
+          "misconceptions": [
+            "graph.slope-vs-intercept"
+          ]
+        },
+        {
+          "id": "m2-u05-t06-02",
+          "level": "M",
+          "stem_src": "y = −3x + 1 의 그래프는 오른쪽으로 갈수록? (2지선다: 내려가요 (감소) / 올라가요 (증가))",
+          "stem_print": "일차함수 y = −3x + 1 의 그래프가 오른쪽으로 갈수록 올라가는지 내려가는지 쓰고, 그렇게 판단한 근거가 되는 값을 함께 쓰시오.",
+          "answer_atoms": [
+            "내려가요 (감소)"
+          ],
+          "answer_print": "내려가요 (감소) — 기울기가 −3 으로 0 보다 작기 때문이에요",
+          "answer_accept": [
+            "감소해요 (기울기가 음수)",
+            "오른쪽 아래로 내려가요"
+          ],
+          "answer_unit": null,
+          "answer_format": "'올라가요 / 내려가요' 와 근거가 되는 기울기를 수로",
+          "figure": null,
+          "hint": "기울기가 음수이면 그래프는 어느 쪽으로 갈까요?",
+          "solution": "기울기가 −3 으로 음수예요. a 가 0 보다 작으면 그래프는 오른쪽으로 갈수록 내려가요 (감소). y절편 1 은 오르내림과 상관이 없어요.",
+          "work_space": "md",
+          "misconceptions": [
+            "slope.sign-negative",
+            "graph.slope-vs-intercept"
+          ]
+        },
+        {
+          "id": "m2-u05-t06-03",
+          "level": "M",
+          "stem_src": "y = 2x − 5 는 y축과 원점보다 위에서 만날까요, 아래에서 만날까요? (2지선다: 아래 / 위)",
+          "stem_print": "일차함수 y = 2x − 5 의 그래프가 y축과 만나는 점이 원점보다 위쪽인지 아래쪽인지 쓰고, 그 근거가 되는 y절편의 값을 함께 쓰시오.",
+          "answer_atoms": [
+            "아래"
+          ],
+          "answer_print": "아래쪽 — y절편이 −5 이기 때문이에요",
+          "answer_accept": [
+            "아래",
+            "원점보다 아래에서 만나요"
+          ],
+          "answer_unit": null,
+          "answer_format": "'위쪽 / 아래쪽' 과 근거가 되는 y절편을 수로",
+          "figure": null,
+          "hint": "y절편의 부호가 만나는 위치를 정해요.",
+          "solution": "x = 0 을 넣으면 y = −5 예요. y절편이 음수라서 그래프는 y축과 원점보다 아래쪽에서 만나요.",
+          "work_space": "md",
+          "misconceptions": [
+            "graph.slope-vs-intercept",
+            "line.y-intercept-sign"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "식 구하기",
+      "principle": "기울기 a 를 먼저 구하고, 지나는 점을 대입해 b 를 구하면 y = ax + b 가 완성돼요.",
+      "problems": [
+        {
+          "id": "m2-u05-t07-01",
+          "level": "L",
+          "stem_src": "기울기 2, 점 (0, 3) 을 지나는 직선의 y절편은?",
+          "stem_print": "기울기가 2 이고 점 (0, 3) 을 지나는 직선의 y절편을 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "y절편을 수로 (단위 없음)",
+          "figure": null,
+          "hint": "x = 0 일 때의 y 값이 y절편이에요.",
+          "solution": "점 (0, 3) 은 x = 0 일 때 y = 3 이라는 뜻이므로 y절편은 3 이에요. 기울기 2 는 y절편이 아니에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "line.point-as-intercept",
+            "graph.slope-vs-intercept"
+          ]
+        },
+        {
+          "id": "m2-u05-t07-02",
+          "level": "H",
+          "stem_src": "기울기 −1, 점 (1, 4) 를 지나는 직선의 y절편은?",
+          "stem_print": "기울기가 −1 이고 점 (1, 4) 를 지나는 직선의 y절편을 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "y절편을 수로 (단위 없음)",
+          "figure": null,
+          "hint": "y = −x + b 에 점의 좌표를 대입해 b 를 구해요.",
+          "solution": "y = −x + b 에 x = 1, y = 4 를 넣으면 4 = −1 + b 이므로 b = 5 예요. 점 (1, 4) 는 x 가 0 인 점이 아니라서 4 를 그대로 y절편이라고 하면 안 돼요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "line.point-as-intercept"
+          ]
+        },
+        {
+          "id": "m2-u05-t07-03",
+          "level": "M",
+          "stem_src": "두 점 (0, −2), (2, 4) 를 지나는 직선의 기울기는?",
+          "stem_print": "두 점 (0, −2), (2, 4) 를 지나는 직선의 기울기를 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "기울기를 수로 (분수면 기약분수로)",
+          "figure": null,
+          "hint": "y 의 변화량을 x 의 변화량으로 나눠요.",
+          "solution": "y 의 변화량은 4 − (−2) = 6, x 의 변화량은 2 − 0 = 2 예요. 6 ÷ 2 = 3 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "slope.formula-inverted"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "평행·일치",
+      "principle": "기울기가 같으면 두 직선은 평행이에요. 기울기와 y절편이 모두 같으면 두 직선은 일치해요.",
+      "problems": [
+        {
+          "id": "m2-u05-t08-01",
+          "level": "L",
+          "stem_src": "y = 2x + 1 과 평행한 직선의 기울기는?",
+          "stem_print": "일차함수 y = 2x + 1 의 그래프와 평행한 직선의 기울기를 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "기울기를 수로 (분수면 기약분수로)",
+          "figure": null,
+          "hint": "평행한 두 직선의 기울기는 어떤 관계일까요?",
+          "solution": "평행하면 기울기가 같아요. 따라서 기울기는 2 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "parallel.same-slope"
+          ]
+        },
+        {
+          "id": "m2-u05-t08-02",
+          "level": "M",
+          "stem_src": "y = 3x − 2 와 평행하고 점 (0, 4) 를 지나는 직선의 y절편은?",
+          "stem_print": "일차함수 y = 3x − 2 의 그래프와 평행하고 점 (0, 4) 를 지나는 직선의 y절편을 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "4",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "y절편을 수로 (단위 없음)",
+          "figure": null,
+          "hint": "점 (0, 4) 는 x = 0 일 때의 값이에요.",
+          "solution": "평행하므로 기울기는 3 이고, 점 (0, 4) 에서 x = 0 일 때 y = 4 이므로 y절편은 4 예요. 식은 y = 3x + 4 가 돼요.",
+          "work_space": "md",
+          "misconceptions": [
+            "parallel.same-slope",
+            "line.point-as-intercept"
+          ]
+        },
+        {
+          "id": "m2-u05-t08-03",
+          "level": "M",
+          "stem_src": "y = ax + 3 이 y = −2x + 1 과 평행할 때 a는?",
+          "stem_print": "일차함수 y = ax + 3 의 그래프가 y = −2x + 1 의 그래프와 평행할 때, a 의 값을 구하시오.",
+          "answer_atoms": [
+            "−2"
+          ],
+          "answer_print": "−2",
+          "answer_accept": [
+            "-2"
+          ],
+          "answer_unit": null,
+          "answer_format": "a 의 값을 수로 (분수면 기약분수로)",
+          "figure": null,
+          "hint": "평행이면 기울기가 같아요.",
+          "solution": "평행하면 기울기가 같으므로 a = −2 예요. y절편은 3 과 1 로 서로 달라서 두 직선은 겹치지 않고 평행해요.",
+          "work_space": "md",
+          "misconceptions": [
+            "parallel.same-slope"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "활용 (양초·요금·물통)",
+      "principle": "상황을 y = ax + b 로 세워요. b 는 출발값이고, a 는 1 단위마다 변하는 양이에요. 줄어들면 a 가 음수예요.",
+      "problems": [
+        {
+          "id": "m2-u05-t09-01",
+          "level": "L",
+          "stem_src": "20cm 양초가 1시간에 4cm씩 줄어요(y = 20 − 4x). 3시간 뒤 길이는?",
+          "stem_print": "길이가 20 cm 인 양초가 1시간에 4 cm 씩 짧아진다. x 시간 뒤의 길이를 y cm 라 하면 y = 20 − 4x 이다. 3시간 뒤 양초의 길이를 구하시오.",
+          "answer_atoms": [
+            "8"
+          ],
+          "answer_print": "8",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "수로 (단위 cm)",
+          "figure": null,
+          "hint": "x 자리에 3 을 넣어요.",
+          "solution": "y = 20 − 4 × 3 = 20 − 12 = 8 이에요. 양초는 짧아지므로 처음 길이보다 작은 값이 나와요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "apply.rate-sign"
+          ]
+        },
+        {
+          "id": "m2-u05-t09-02",
+          "level": "M",
+          "stem_src": "기본요금 3000원 + 1km당 500원 택시로 10km 가면 요금은?",
+          "stem_print": "기본요금이 3000원이고 1 km 마다 500원씩 더해지는 택시가 있다. 10 km 를 갈 때의 요금을 구하시오.",
+          "answer_atoms": [
+            "8000"
+          ],
+          "answer_print": "8000",
+          "answer_accept": [],
+          "answer_unit": "원",
+          "answer_format": "수로 (단위 원)",
+          "figure": null,
+          "hint": "출발값인 기본요금에 (1 km 요금) × (거리) 를 더해요.",
+          "solution": "y = 3000 + 500x 로 세워요. x = 10 을 넣으면 3000 + 5000 = 8000 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "apply.rate-sign"
+          ]
+        },
+        {
+          "id": "m2-u05-t09-03",
+          "level": "H",
+          "stem_src": "물통에 5L가 있고 1분에 2L씩 채워요(y = 5 + 2x). 25L가 되는 건 몇 분 뒤?",
+          "stem_print": "물통에 물이 5 L 들어 있고 1분에 2 L 씩 채워진다. x 분 뒤의 물의 양을 y L 라 하면 y = 5 + 2x 이다. 물의 양이 25 L 가 되는 것은 몇 분 뒤인지 구하시오.",
+          "answer_atoms": [
+            "10"
+          ],
+          "answer_print": "10",
+          "answer_accept": [],
+          "answer_unit": "분",
+          "answer_format": "수로 (단위 분)",
+          "figure": null,
+          "hint": "25 는 물의 양이므로 y 자리에 넣고 x 를 구해요.",
+          "solution": "5 + 2x = 25 이므로 2x = 20, x = 10 이에요. 25 를 x 자리에 넣으면 시간이 아니라 엉뚱한 값이 나와요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "apply.solve-for-x",
+            "apply.rate-sign"
+          ]
+        }
+      ]
+    }
+  ]
+}

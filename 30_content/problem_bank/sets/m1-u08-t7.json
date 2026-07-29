@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 8,
+  "unit_name": "작도와 합동",
+  "bank": "math1/u08/practice.json",
+  "misconceptions": "misconceptions/math1_u08.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u08-t7",
+  "kind": "type-set",
+  "title": "합동 조건 활용",
+  "subtitle": "합동조건 고르기 · 합동에서 얻어 내는 결론 · 기본 3 · 보통 3 · 도전 3",
+  "types": [
+    7
+  ],
+  "time_min": 20
+}

@@ -1,0 +1,608 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 3,
+    "unit_name": "일차부등식",
+    "generation": "D",
+    "source": "40_grades/middle/math2/app2/p3.html",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_math2_p.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 script 의 P(...)/pick() 값 그대로. 절대 손으로 고치지 않는다. 원본 24문항 중 12문항이 2지선다였고, 전부 단답형으로 재작성했다 (정답 선택지 텍스트 = answer_atoms)."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "부등식으로 나타내기",
+      "principle": "이상 ≥, 이하 ≤ 는 그 수를 포함해요. 초과 &gt;, 미만 &lt; 는 그 수를 포함하지 않아요.",
+      "problems": [
+        {
+          "id": "m2-u03-t01-01",
+          "level": "L",
+          "stem_src": "한 개 700원 사탕 x개의 값이 5000원 이하. 알맞은 식은? (2지선다)",
+          "stem_print": "한 개에 700원인 사탕 x개를 살 때, 그 값이 5000원 이하가 되는 관계를 부등식으로 나타내시오.",
+          "answer_atoms": [
+            "700x ≤ 5000"
+          ],
+          "answer_print": "700x ≤ 5000",
+          "answer_accept": [
+            "5000 ≥ 700x",
+            "700 × x ≤ 5000"
+          ],
+          "answer_unit": null,
+          "answer_format": "부등호를 쓴 식으로",
+          "figure": null,
+          "hint": "사탕 x개의 값은 700 × x 원이에요. '이하'는 그 수까지 포함해요.",
+          "solution": "사탕 한 개가 700원이므로 x개의 값은 700x 원이에요. 이 값이 5000원 이하이므로 700x ≤ 5000 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "ineq.direction-reversed",
+            "ineq.orMore-vs-over"
+          ]
+        },
+        {
+          "id": "m2-u03-t01-02",
+          "level": "L",
+          "stem_src": "\"x는 3보다 크다\"를 식으로? (2지선다)",
+          "stem_print": "“x 는 3보다 크다”를 부등식으로 나타내시오.",
+          "answer_atoms": [
+            "x &gt; 3"
+          ],
+          "answer_print": "x &gt; 3",
+          "answer_accept": [
+            "3 < x"
+          ],
+          "answer_unit": null,
+          "answer_format": "부등호를 쓴 식으로",
+          "figure": null,
+          "hint": "'크다'와 '크거나 같다'는 뜻이 달라요. 3 자신도 들어가나요?",
+          "solution": "'크다'는 3 을 포함하지 않아요. 그래서 x &gt; 3 이에요. (3 까지 포함하려면 x ≥ 3 이라고 써요.)",
+          "work_space": "sm",
+          "misconceptions": [
+            "ineq.orMore-vs-over"
+          ]
+        },
+        {
+          "id": "m2-u03-t01-03",
+          "level": "L",
+          "stem_src": "정원이 30명 이하인 방에 x명. 알맞은 식은? (2지선다)",
+          "stem_print": "정원이 30명 이하인 방에 x명이 들어가 있다. 이 관계를 부등식으로 나타내시오.",
+          "answer_atoms": [
+            "x ≤ 30"
+          ],
+          "answer_print": "x ≤ 30",
+          "answer_accept": [
+            "30 ≥ x"
+          ],
+          "answer_unit": null,
+          "answer_format": "부등호를 쓴 식으로",
+          "figure": null,
+          "hint": "'이하'는 그 수까지 포함해요. 딱 30명이 들어가도 괜찮은가요?",
+          "solution": "정원이 30명 이하이므로 30명까지는 괜찮아요. 그래서 x ≤ 30 이에요. ('미만'이었다면 x &lt; 30 이에요.)",
+          "work_space": "sm",
+          "misconceptions": [
+            "ineq.orMore-vs-over",
+            "ineq.direction-reversed"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "해 확인하기 (대입)",
+      "principle": "주어진 수를 대입해서 부등식이 참이면 해, 거짓이면 해가 아니에요.",
+      "problems": [
+        {
+          "id": "m2-u03-t02-01",
+          "level": "L",
+          "stem_src": "x = 2 는 2x − 1 < 6 의 해일까요? (2지선다)",
+          "stem_print": "x = 2 를 부등식 2x − 1 &lt; 6 에 대입하여, x = 2 가 이 부등식의 해인지 판정하시오.",
+          "answer_atoms": [
+            "해가 맞아요"
+          ],
+          "answer_print": "해가 맞아요",
+          "answer_accept": [
+            "해이다",
+            "해가 맞다",
+            "해예요"
+          ],
+          "answer_unit": null,
+          "answer_format": "'해가 맞아요' 또는 '해가 아니에요' 꼴로",
+          "figure": null,
+          "hint": "x 자리에 2 를 넣어 좌변을 계산해 봐요.",
+          "solution": "2 × 2 − 1 = 3 이고, 3 &lt; 6 은 참이에요. 그러므로 x = 2 는 이 부등식의 해가 맞아요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "ineq.substitute-skip"
+          ]
+        },
+        {
+          "id": "m2-u03-t02-02",
+          "level": "L",
+          "stem_src": "x = 4 는 3x ≥ 15 의 해일까요? (2지선다)",
+          "stem_print": "x = 4 를 부등식 3x ≥ 15 에 대입하여, x = 4 가 이 부등식의 해인지 판정하시오.",
+          "answer_atoms": [
+            "해가 아니에요"
+          ],
+          "answer_print": "해가 아니에요",
+          "answer_accept": [
+            "해가 아니다",
+            "해가 아님"
+          ],
+          "answer_unit": null,
+          "answer_format": "'해가 맞아요' 또는 '해가 아니에요' 꼴로",
+          "figure": null,
+          "hint": "3 × 4 를 먼저 계산하고 15 와 견주어 봐요.",
+          "solution": "3 × 4 = 12 이고, 12 ≥ 15 는 거짓이에요. 그러므로 x = 4 는 이 부등식의 해가 아니에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "ineq.substitute-skip"
+          ]
+        },
+        {
+          "id": "m2-u03-t02-03",
+          "level": "M",
+          "stem_src": "x = −1 은 −2x + 1 ≤ 4 의 해일까요? (2지선다)",
+          "stem_print": "x = −1 을 부등식 −2x + 1 ≤ 4 에 대입하여, x = −1 이 이 부등식의 해인지 판정하시오.",
+          "answer_atoms": [
+            "해가 맞아요"
+          ],
+          "answer_print": "해가 맞아요",
+          "answer_accept": [
+            "해이다",
+            "해가 맞다"
+          ],
+          "answer_unit": null,
+          "answer_format": "'해가 맞아요' 또는 '해가 아니에요' 꼴로",
+          "figure": null,
+          "hint": "음수는 괄호로 감싸서 넣어요. −2 × (−1) 은 얼마인가요?",
+          "solution": "−2 × (−1) + 1 = 2 + 1 = 3 이고, 3 ≤ 4 는 참이에요. 그러므로 x = −1 은 이 부등식의 해가 맞아요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.substitute-sign",
+            "ineq.substitute-skip"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "부등식의 성질",
+      "principle": "양변에 같은 수를 더하거나 빼면 부등호는 그대로예요. 양수를 곱하거나 나누어도 그대로지만, <b>음수를 곱하거나 나누면 부등호가 뒤집혀요</b>.",
+      "problems": [
+        {
+          "id": "m2-u03-t03-01",
+          "level": "L",
+          "stem_src": "a < b 일 때, a + 3 과 b + 3 사이 부등호는? (2지선다)",
+          "stem_print": "a &lt; b 일 때, a + 3 과 b + 3 의 대소 관계를 부등호를 써서 나타내시오.",
+          "answer_atoms": [
+            "a + 3 &lt; b + 3"
+          ],
+          "answer_print": "a + 3 &lt; b + 3",
+          "answer_accept": [
+            "b + 3 > a + 3"
+          ],
+          "answer_unit": null,
+          "answer_format": "양쪽 식을 모두 쓴 부등식으로",
+          "figure": null,
+          "hint": "양변에 같은 수를 더하면 대소 관계는 그대로예요.",
+          "solution": "a &lt; b 의 양변에 3 을 더했어요. 더하기는 부등호를 바꾸지 않으므로 a + 3 &lt; b + 3 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "ineq.addsub-flip"
+          ]
+        },
+        {
+          "id": "m2-u03-t03-02",
+          "level": "M",
+          "stem_src": "a < b 일 때, −2a 와 −2b 사이 부등호는? (2지선다)",
+          "stem_print": "a &lt; b 일 때, −2a 와 −2b 의 대소 관계를 부등호를 써서 나타내시오.",
+          "answer_atoms": [
+            "−2a &gt; −2b"
+          ],
+          "answer_print": "−2a &gt; −2b",
+          "answer_accept": [
+            "−2b < −2a"
+          ],
+          "answer_unit": null,
+          "answer_format": "양쪽 식을 모두 쓴 부등식으로",
+          "figure": null,
+          "hint": "양변에 곱한 −2 는 음수예요. 부등호는 어떻게 될까요?",
+          "solution": "a &lt; b 의 양변에 −2 를 곱했어요. 음수를 곱하면 부등호가 뒤집히므로 −2a &gt; −2b 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.negative-flip"
+          ]
+        },
+        {
+          "id": "m2-u03-t03-03",
+          "level": "M",
+          "stem_src": "a < b 일 때, a − 5 와 b − 5 사이 부등호는? (2지선다)",
+          "stem_print": "a &lt; b 일 때, a − 5 와 b − 5 의 대소 관계를 부등호를 써서 나타내시오.",
+          "answer_atoms": [
+            "a − 5 &lt; b − 5"
+          ],
+          "answer_print": "a − 5 &lt; b − 5",
+          "answer_accept": [
+            "b − 5 > a − 5"
+          ],
+          "answer_unit": null,
+          "answer_format": "양쪽 식을 모두 쓴 부등식으로",
+          "figure": null,
+          "hint": "양변에서 같은 수를 빼는 것은 부등호를 바꾸지 않아요.",
+          "solution": "a &lt; b 의 양변에서 5 를 뺐어요. 빼기는 부등호를 바꾸지 않으므로 a − 5 &lt; b − 5 예요. 부등호가 뒤집히는 것은 음수를 곱하거나 나눌 때뿐이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.addsub-flip"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "일차부등식 풀기",
+      "principle": "방정식처럼 이항해서 x 항만 한쪽에 모으고, 양변을 x 의 계수로 나눠요. 음수로 나눌 때는 부등호를 꼭 뒤집어요.",
+      "problems": [
+        {
+          "id": "m2-u03-t04-01",
+          "level": "L",
+          "stem_src": "2x + 1 < 7 → x < □ 의 □?",
+          "stem_print": "일차부등식 2x + 1 &lt; 7 을 풀어 x 의 값의 범위를 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "x &lt; 3",
+          "answer_accept": [
+            "3 > x"
+          ],
+          "answer_unit": null,
+          "answer_format": "x 만 남긴 부등식으로",
+          "figure": null,
+          "hint": "먼저 +1 을 오른쪽으로 이항해요. 이항하면 부호가 반대로 바뀌어요.",
+          "solution": "2x + 1 &lt; 7 → 2x &lt; 6 → 양변을 2 로 나누면 x &lt; 3 이에요. 2 는 양수라 부등호는 그대로예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "ineq.transpose-sign"
+          ]
+        },
+        {
+          "id": "m2-u03-t04-02",
+          "level": "M",
+          "stem_src": "3x − 2 ≥ 4 → x ≥ □ 의 □?",
+          "stem_print": "일차부등식 3x − 2 ≥ 4 를 풀어 x 의 값의 범위를 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "x ≥ 2",
+          "answer_accept": [
+            "2 ≤ x"
+          ],
+          "answer_unit": null,
+          "answer_format": "x 만 남긴 부등식으로",
+          "figure": null,
+          "hint": "−2 를 오른쪽으로 이항하면 +2 가 돼요.",
+          "solution": "3x − 2 ≥ 4 → 3x ≥ 6 → 양변을 3 으로 나누면 x ≥ 2 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.transpose-sign"
+          ]
+        },
+        {
+          "id": "m2-u03-t04-03",
+          "level": "M",
+          "stem_src": "−x + 5 > 2 → x < □ 의 □? (음수로 나눠요!)",
+          "stem_print": "일차부등식 −x + 5 &gt; 2 를 풀어 x 의 값의 범위를 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "x &lt; 3",
+          "answer_accept": [
+            "3 > x"
+          ],
+          "answer_unit": null,
+          "answer_format": "x 만 남긴 부등식으로",
+          "figure": null,
+          "hint": "x 의 계수가 −1 이에요. 음수로 나누면 부등호는 어떻게 되나요?",
+          "solution": "−x + 5 &gt; 2 → −x &gt; −3 → 양변을 −1 로 나누면 부등호가 뒤집혀서 x &lt; 3 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.negative-flip",
+            "ineq.transpose-sign"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "수직선으로 나타내기",
+      "principle": "포함하면(≥, ≤) 속이 찬 점 ●, 포함하지 않으면(&gt;, &lt;) 빈 점 ○ 을 찍어요. 큰 쪽(&gt;, ≥)은 오른쪽, 작은 쪽(&lt;, ≤)은 왼쪽을 칠해요.",
+      "problems": [
+        {
+          "id": "m2-u03-t05-01",
+          "level": "L",
+          "stem_src": "x ≥ 2 를 나타낼 때, 2에 찍는 점은? (2지선다)",
+          "stem_print": "부등식 x ≥ 2 를 수직선 위에 나타낼 때, 2 에 찍는 점이 어떤 점인지 쓰시오.",
+          "answer_atoms": [
+            "속이 찬 점 ●"
+          ],
+          "answer_print": "속이 찬 점 ●",
+          "answer_accept": [
+            "●",
+            "속이 찬 점",
+            "채운 점"
+          ],
+          "answer_unit": null,
+          "answer_format": "점의 모양을 '속이 찬 점 ●' 또는 '빈 점 ○' 꼴로",
+          "figure": null,
+          "hint": "≥ 는 2 자신도 해에 들어간다는 뜻이에요.",
+          "solution": "x ≥ 2 에는 2 도 포함돼요. 포함하는 경계에는 속이 찬 점 ● 을 찍어요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "ineq.dot-fill"
+          ]
+        },
+        {
+          "id": "m2-u03-t05-02",
+          "level": "L",
+          "stem_src": "x < 5 는 5를 기준으로 어느 쪽을 칠할까요? (2지선다)",
+          "stem_print": "부등식 x &lt; 5 를 수직선 위에 나타낼 때, 5 를 기준으로 어느 쪽을 칠해야 하는지 쓰시오.",
+          "answer_atoms": [
+            "왼쪽"
+          ],
+          "answer_print": "왼쪽",
+          "answer_accept": [
+            "왼쪽 방향",
+            "5보다 작은 쪽"
+          ],
+          "answer_unit": null,
+          "answer_format": "칠하는 방향을 '왼쪽' 또는 '오른쪽' 꼴로",
+          "figure": null,
+          "hint": "수직선에서는 오른쪽으로 갈수록 수가 커져요.",
+          "solution": "x &lt; 5 는 5 보다 작은 수예요. 수직선에서 작은 수는 5 의 왼쪽에 있으므로 왼쪽을 칠해요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "ineq.line-side"
+          ]
+        },
+        {
+          "id": "m2-u03-t05-03",
+          "level": "M",
+          "stem_src": "3에 빈 점, 오른쪽으로 칠했다면 부등식은? (2지선다)",
+          "stem_print": "수직선 위에서 3 에 빈 점 ○ 을 찍고 그 오른쪽을 칠했다. 이 수직선이 나타내는 부등식을 쓰시오.",
+          "answer_atoms": [
+            "x &gt; 3"
+          ],
+          "answer_print": "x &gt; 3",
+          "answer_accept": [
+            "3 < x"
+          ],
+          "answer_unit": null,
+          "answer_format": "부등호를 쓴 식으로",
+          "figure": null,
+          "hint": "빈 점은 그 수를 포함하지 않는다는 뜻이에요.",
+          "solution": "오른쪽을 칠했으니 3 보다 큰 수이고, 빈 점이니 3 자신은 포함하지 않아요. 그러므로 x &gt; 3 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.dot-fill",
+            "ineq.line-side"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "해의 개수·조건",
+      "principle": "범위 안에 든 자연수·정수를 직접 세어요. 경계값이 들어가는지(등호가 있는지) 꼭 확인해요.",
+      "problems": [
+        {
+          "id": "m2-u03-t06-01",
+          "level": "M",
+          "stem_src": "x ≤ 4 를 만족하는 자연수 x는 모두 몇 개?",
+          "stem_print": "부등식 x ≤ 4 를 만족하는 자연수 x 는 모두 몇 개인지 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "4",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "개수를 수로",
+          "figure": null,
+          "hint": "자연수는 1 부터 시작해요. 4 도 들어가나요?",
+          "solution": "4 이하인 자연수는 1, 2, 3, 4 예요. 등호가 있으니 4 도 포함해서 모두 4개예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.count-boundary",
+            "ineq.natural-vs-integer"
+          ]
+        },
+        {
+          "id": "m2-u03-t06-02",
+          "level": "M",
+          "stem_src": "−2 ≤ x < 3 을 만족하는 정수 x는 모두 몇 개?",
+          "stem_print": "부등식 −2 ≤ x &lt; 3 을 만족하는 정수 x 는 모두 몇 개인지 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "개수를 수로",
+          "figure": null,
+          "hint": "정수에는 음수와 0 도 들어가요. 양쪽 끝의 등호를 각각 확인해요.",
+          "solution": "−2 이상 3 미만인 정수는 −2, −1, 0, 1, 2 예요. −2 는 포함하고 3 은 포함하지 않으니 모두 5개예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.count-boundary",
+            "ineq.natural-vs-integer"
+          ]
+        },
+        {
+          "id": "m2-u03-t06-03",
+          "level": "H",
+          "stem_src": "부등식 x > a 의 가장 작은 정수해가 3일 때, 정수 a는?",
+          "stem_print": "부등식 x &gt; a 의 가장 작은 정수해가 3 일 때, 정수 a 의 값을 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "a 자리에 정수를 하나씩 넣어 보면서, 정수해가 어디부터 시작하는지 세어 봐요.",
+          "solution": "x &gt; a 에서는 a 자신이 해가 아니에요. a = 2 이면 정수해가 3, 4, 5, … 가 되어 가장 작은 것이 3 이에요. a 가 2 보다 작으면 3 보다 작은 정수도 해가 되어 버려요. 그러므로 a = 2 예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "ineq.strict-boundary-integer",
+            "ineq.count-boundary"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "괄호·분수·소수 계수",
+      "principle": "괄호는 먼저 전개하고, 분수는 분모의 최소공배수를, 소수는 10 이나 100 을 양변에 곱해 정수로 바꾼 뒤 풀어요.",
+      "problems": [
+        {
+          "id": "m2-u03-t07-01",
+          "level": "M",
+          "stem_src": "2(x − 1) ≤ 6 → x ≤ □ 의 □?",
+          "stem_print": "일차부등식 2(x − 1) ≤ 6 을 풀어 x 의 값의 범위를 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "x ≤ 4",
+          "answer_accept": [
+            "4 ≥ x"
+          ],
+          "answer_unit": null,
+          "answer_format": "x 만 남긴 부등식으로",
+          "figure": null,
+          "hint": "괄호를 먼저 풀어요. 2 를 괄호 안 두 항 모두에 곱해요.",
+          "solution": "2(x − 1) ≤ 6 → 2x − 2 ≤ 6 → 2x ≤ 8 → x ≤ 4 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.clear-partial",
+            "ineq.transpose-sign"
+          ]
+        },
+        {
+          "id": "m2-u03-t07-02",
+          "level": "M",
+          "stem_src": "x/2 + 1 > 3 → x > □ 의 □? (양변 ×2)",
+          "stem_print": "일차부등식 <span class=\"frac\"><b>x</b><i>2</i></span> + 1 &gt; 3 을 풀어 x 의 값의 범위를 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "x &gt; 4",
+          "answer_accept": [
+            "4 < x"
+          ],
+          "answer_unit": null,
+          "answer_format": "x 만 남긴 부등식으로",
+          "figure": null,
+          "hint": "양변에 2 를 곱해 분모를 없애요. 오른쪽의 3 에도 2 를 곱해야 해요.",
+          "solution": "양변에 2 를 곱하면 x + 2 &gt; 6 이 되고, 2 를 이항하면 x &gt; 4 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.clear-partial"
+          ]
+        },
+        {
+          "id": "m2-u03-t07-03",
+          "level": "H",
+          "stem_src": "0.3x − 0.5 ≥ 0.4 → x ≥ □ 의 □? (양변 ×10)",
+          "stem_print": "일차부등식 0.3x − 0.5 ≥ 0.4 를 풀어 x 의 값의 범위를 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "x ≥ 3",
+          "answer_accept": [
+            "3 ≤ x"
+          ],
+          "answer_unit": null,
+          "answer_format": "x 만 남긴 부등식으로",
+          "figure": null,
+          "hint": "양변에 10 을 곱해 소수를 없애요. 모든 항에 빠짐없이 곱해야 해요.",
+          "solution": "양변에 10 을 곱하면 3x − 5 ≥ 4 → 3x ≥ 9 → x ≥ 3 이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "ineq.clear-partial"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "활용 (개수·평균·요금)",
+      "principle": "구하는 것을 x 로 두고 부등식을 세워요. 개수·사람 수·점수는 정수이니 마지막에 올림·내림을 확인해요.",
+      "problems": [
+        {
+          "id": "m2-u03-t08-01",
+          "level": "M",
+          "stem_src": "1500원 아이스크림을 8000원으로 최대 몇 개 살 수 있을까요?",
+          "stem_print": "한 개에 1500원인 아이스크림을 8000원으로 최대 몇 개까지 살 수 있는지 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "최대 개수를 수로",
+          "figure": null,
+          "hint": "아이스크림 x개의 값이 8000원 이하가 되어야 해요.",
+          "solution": "개수를 x 라 하면 1500x ≤ 8000 이고, 양변을 1500 으로 나누면 x ≤ 5.33… 이에요. 개수는 자연수이므로 최대 5개예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.apply-setup",
+            "ineq.apply-round"
+          ]
+        },
+        {
+          "id": "m2-u03-t08-02",
+          "level": "H",
+          "stem_src": "수학 두 번 85점, 90점. 세 번째까지 평균이 88점 이상이려면 세 번째 시험 최소 몇 점?",
+          "stem_print": "수학 시험을 두 번 보아 85점과 90점을 받았다. 세 번째 시험까지의 평균이 88점 이상이 되려면, 세 번째 시험에서 최소 몇 점을 받아야 하는지 구하시오.",
+          "answer_atoms": [
+            "89"
+          ],
+          "answer_print": "89",
+          "answer_accept": [],
+          "answer_unit": "점",
+          "answer_format": "최소 점수를 수로",
+          "figure": null,
+          "hint": "세 번의 점수를 모두 더해 3 으로 나눈 값이 88 이상이어야 해요.",
+          "solution": "세 번째 점수를 x 라 하면 (85 + 90 + x) ÷ 3 ≥ 88 이에요. 양변에 3 을 곱하면 175 + x ≥ 264 → x ≥ 89. 최소 89점을 받아야 해요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "ineq.apply-setup",
+            "ineq.orMore-vs-over"
+          ]
+        },
+        {
+          "id": "m2-u03-t08-03",
+          "level": "M",
+          "stem_src": "기본요금 3000원 + 1km마다 1000원 택시. 15000원으로 최대 몇 km?",
+          "stem_print": "기본요금이 3000원이고 1 km 를 갈 때마다 1000원씩 더 붙는 택시가 있다. 15000원으로 최대 몇 km 까지 갈 수 있는지 구하시오.",
+          "answer_atoms": [
+            "12"
+          ],
+          "answer_print": "12",
+          "answer_accept": [],
+          "answer_unit": "km",
+          "answer_format": "최대 거리를 수로",
+          "figure": null,
+          "hint": "기본요금 3000원은 거리와 상관없이 한 번만 붙어요.",
+          "solution": "간 거리를 x km 라 하면 3000 + 1000x ≤ 15000 이에요. 3000 을 이항하면 1000x ≤ 12000 → x ≤ 12. 최대 12 km 까지 갈 수 있어요.",
+          "work_space": "md",
+          "misconceptions": [
+            "ineq.apply-setup",
+            "ineq.apply-round"
+          ]
+        }
+      ]
+    }
+  ]
+}

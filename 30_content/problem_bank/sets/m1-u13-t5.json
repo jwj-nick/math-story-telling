@@ -1,0 +1,20 @@
+{
+  "id": "m1-u13-t5",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 13,
+  "unit_name": "자료의 정리와 해석",
+  "title": "도수분포다각형",
+  "subtitle": "그리는 법 · 둘러싼 넓이 · 두 집단 겹쳐 보기",
+  "bank": "math1/u13/practice.json",
+  "misconceptions": "misconceptions/math1_u13.json",
+  "types": [
+    5
+  ],
+  "time_min": 22,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,20 @@
+{
+  "id": "m1-u13-t1",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 13,
+  "unit_name": "자료의 정리와 해석",
+  "title": "줄기와 잎 그림",
+  "subtitle": "자료의 개수 · 최댓값 · 두 집단 마주 보기",
+  "bank": "math1/u13/practice.json",
+  "misconceptions": "misconceptions/math1_u13.json",
+  "types": [
+    1
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,15 @@
+{
+  "id": "m1-u09-t3",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 9,
+  "unit_name": "다각형",
+  "title": "삼각형의 내각과 외각",
+  "subtitle": "유형 3 · 세 내각의 합 180° · 외각의 정리",
+  "bank": "math1/u09/practice.json",
+  "misconceptions": "misconceptions/math1_u09.json",
+  "types": [3],
+  "time_min": 22,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

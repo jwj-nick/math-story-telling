@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 7,
+  "unit_name": "기본 도형",
+  "bank": "math1/u07/practice.json",
+  "misconceptions": "misconceptions/math1_u07.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u07-t6",
+  "kind": "type-set",
+  "title": "평면에서 위치 관계",
+  "subtitle": "만남 · 평행 · 일치 세 가지 · 기본 3 · 보통 3 · 도전 3",
+  "types": [
+    6
+  ],
+  "time_min": 20
+}

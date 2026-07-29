@@ -1,0 +1,22 @@
+{
+  "id": "m2-u10-b",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 10,
+  "unit_name": "피타고라스 정리",
+  "title": "피타고라스 정리의 활용",
+  "subtitle": "직사각형의 대각선 · 좌표평면 위 두 점 사이의 거리 · 실생활 활용",
+  "bank": "math2/u10/practice.json",
+  "misconceptions": "misconceptions/math2_u10.json",
+  "types": [
+    4,
+    5,
+    6
+  ],
+  "time_min": 18,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,15 @@
+{
+  "id": "m1-u05-t2",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 5,
+  "unit_name": "좌표와 그래프",
+  "title": "사분면 판별 (수치 좌표)",
+  "subtitle": "유형 2 · 부호 짝으로 칸 찾기 · 축 위의 점 · 원점",
+  "bank": "math1/u05/practice.json",
+  "misconceptions": "misconceptions/math1_u05.json",
+  "types": [2],
+  "time_min": 20,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

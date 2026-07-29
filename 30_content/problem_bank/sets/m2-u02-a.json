@@ -1,0 +1,22 @@
+{
+  "id": "m2-u02-a",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 2,
+  "unit_name": "식의 계산",
+  "title": "지수법칙",
+  "subtitle": "지수의 곱셈 · 거듭제곱의 거듭제곱 · 지수의 나눗셈",
+  "bank": "math2/u02/practice.json",
+  "misconceptions": "misconceptions/math2_u02.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

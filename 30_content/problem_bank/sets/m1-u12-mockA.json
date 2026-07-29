@@ -1,0 +1,32 @@
+{
+  "id": "m1-u12-mockA",
+  "kind": "mock",
+  "grade": "math1",
+  "unit": 12,
+  "unit_name": "입체도형의 겉넓이와 부피",
+  "title": "모의 A · 기본 다지기",
+  "subtitle": "7유형 전체에서 유형마다 기본·보통 1문항씩 · 14문항",
+  "bank": "math1/u12/practice.json",
+  "misconceptions": "misconceptions/math1_u12.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "L": 1,
+      "M": 1
+    }
+  },
+  "time_min": 25,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

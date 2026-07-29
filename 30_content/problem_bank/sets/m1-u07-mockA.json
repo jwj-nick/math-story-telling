@@ -1,0 +1,32 @@
+{
+  "grade": "math1",
+  "unit": 7,
+  "unit_name": "기본 도형",
+  "bank": "math1/u07/practice.json",
+  "misconceptions": "misconceptions/math1_u07.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u07-mockA",
+  "kind": "mock",
+  "title": "단원 7 기본 점검 회차",
+  "subtitle": "7유형 전체에서 유형마다 기본·보통 1문항씩 · 14문항",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "L": 1,
+      "M": 1
+    }
+  },
+  "time_min": 25
+}

@@ -1,0 +1,20 @@
+{
+  "id": "m1-u13-t2",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 13,
+  "unit_name": "자료의 정리와 해석",
+  "title": "도수분포표의 기본",
+  "subtitle": "계급 · 계급의 크기 · 계급값 · 이상과 미만",
+  "bank": "math1/u13/practice.json",
+  "misconceptions": "misconceptions/math1_u13.json",
+  "types": [
+    2
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

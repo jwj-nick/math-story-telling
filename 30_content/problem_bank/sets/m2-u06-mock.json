@@ -1,0 +1,36 @@
+{
+  "id": "m2-u06-mock",
+  "kind": "mock",
+  "grade": "math2",
+  "unit": 6,
+  "unit_name": "일차함수와 일차방정식",
+  "title": "단원 6 시험 대비 회차",
+  "subtitle": "8개 유형을 섞어서 · 쉬운 것부터 어려운 것 순서로",
+  "bank": "math2/u06/practice.json",
+  "misconceptions": "misconceptions/math2_u06.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "pick": {
+    "order": "level",
+    "per_type": 2,
+    "levels": [
+      "L",
+      "M",
+      "H"
+    ]
+  },
+  "time_min": 25,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

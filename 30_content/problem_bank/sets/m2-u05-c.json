@@ -1,0 +1,22 @@
+{
+  "id": "m2-u05-c",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 5,
+  "unit_name": "일차함수와 그래프",
+  "title": "일차함수의 식과 활용",
+  "subtitle": "식 구하기 · 평행·일치 · 활용 (양초·요금·물통)",
+  "bank": "math2/u05/practice.json",
+  "misconceptions": "misconceptions/math2_u05.json",
+  "types": [
+    7,
+    8,
+    9
+  ],
+  "time_min": 18,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

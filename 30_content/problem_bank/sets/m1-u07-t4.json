@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 7,
+  "unit_name": "기본 도형",
+  "bank": "math1/u07/practice.json",
+  "misconceptions": "misconceptions/math1_u07.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u07-t4",
+  "kind": "type-set",
+  "title": "맞꼭지각",
+  "subtitle": "두 직선이 만나 생기는 네 각 · 마주 보는 각과 이웃한 각 · 기본 3 · 보통 3 · 도전 3",
+  "types": [
+    4
+  ],
+  "time_min": 20
+}

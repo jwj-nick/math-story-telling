@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 8,
+  "unit_name": "작도와 합동",
+  "bank": "math1/u08/practice.json",
+  "misconceptions": "misconceptions/math1_u08.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u08-t6",
+  "kind": "type-set",
+  "title": "합동 식별·대응",
+  "subtitle": "합동 표기의 순서가 곧 대응 · 대응변과 대응각 찾기 · 기본 3 · 보통 3 · 도전 3",
+  "types": [
+    6
+  ],
+  "time_min": 20
+}

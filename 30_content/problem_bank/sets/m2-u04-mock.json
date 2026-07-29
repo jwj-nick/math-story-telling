@@ -1,0 +1,37 @@
+{
+  "id": "m2-u04-mock",
+  "kind": "mock",
+  "grade": "math2",
+  "unit": 4,
+  "unit_name": "연립일차방정식",
+  "title": "단원 4 시험 대비 회차",
+  "subtitle": "9개 유형을 섞어서 · 쉬운 것부터 어려운 것 순서로",
+  "bank": "math2/u04/practice.json",
+  "misconceptions": "misconceptions/math2_u04.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "pick": {
+    "order": "level",
+    "per_type": 1,
+    "levels": [
+      "L",
+      "M",
+      "H"
+    ]
+  },
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

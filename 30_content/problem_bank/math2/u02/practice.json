@@ -1,0 +1,693 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 2,
+    "unit_name": "식의 계산",
+    "source": "40_grades/middle/math2/app2/p2.html",
+    "extracted": "2026-07-28",
+    "extractor": "70_tools/print/extract_math2_p.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 script 의 P(...) 값 그대로. 절대 손으로 고치지 않는다. answer_print 는 원자에서 합성한 지면 정답."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "지수의 곱셈",
+      "principle": "같은 밑끼리 곱하면 지수를 더해요.  a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup>",
+      "problems": [
+        {
+          "id": "m2-u02-t01-01",
+          "level": "L",
+          "stem_src": "a³ × a⁴ = a□ 의 지수 □?",
+          "stem_print": "a<sup>3</sup> × a<sup>4</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "7"
+          ],
+          "answer_print": "a<sup>7</sup>",
+          "answer_accept": [
+            "a^7"
+          ],
+          "answer_unit": null,
+          "answer_format": "a의 거듭제곱 꼴로",
+          "figure": null,
+          "hint": "밑이 같으면 지수를 더해요.",
+          "solution": "3 + 4 = 7 이므로 a<sup>7</sup>.",
+          "work_space": "sm",
+          "misconceptions": [
+            "exp.multiply-exponents"
+          ]
+        },
+        {
+          "id": "m2-u02-t01-02",
+          "level": "L",
+          "stem_src": "x² × x × x⁵ = x□ 의 지수 □?",
+          "stem_print": "x<sup>2</sup> × x × x<sup>5</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "8"
+          ],
+          "answer_print": "x<sup>8</sup>",
+          "answer_accept": [
+            "x^8"
+          ],
+          "answer_unit": null,
+          "answer_format": "x의 거듭제곱 꼴로",
+          "figure": null,
+          "hint": "x 는 x<sup>1</sup> 이에요.",
+          "solution": "2 + 1 + 5 = 8 이므로 x<sup>8</sup>.",
+          "work_space": "sm",
+          "misconceptions": [
+            "exp.multiply-exponents",
+            "exp.invisible-one"
+          ]
+        },
+        {
+          "id": "m2-u02-t01-03",
+          "level": "L",
+          "stem_src": "2³ × 2² = 2□ 의 지수 □?",
+          "stem_print": "2<sup>3</sup> × 2<sup>2</sup> 을 2의 거듭제곱 꼴로 나타내시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "2<sup>5</sup>",
+          "answer_accept": [
+            "2^5"
+          ],
+          "answer_unit": null,
+          "answer_format": "2의 거듭제곱 꼴로 (계산한 수 32 아님)",
+          "figure": null,
+          "hint": "밑 2 는 그대로 두고 지수만 더해요.",
+          "solution": "3 + 2 = 5 이므로 2<sup>5</sup>. (밑 2 는 곱하지 않아요.)",
+          "work_space": "sm",
+          "misconceptions": [
+            "exp.base-multiply",
+            "exp.multiply-exponents"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "거듭제곱·괄호의 거듭제곱",
+      "principle": "거듭제곱을 또 제곱하면 지수를 곱해요.  (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup> · 괄호 안의 곱은 각각 제곱돼요.  (ab)<sup>n</sup> = a<sup>n</sup>b<sup>n</sup>",
+      "problems": [
+        {
+          "id": "m2-u02-t02-01",
+          "level": "L",
+          "stem_src": "(a²)³ = a□ 의 지수 □?",
+          "stem_print": "(a<sup>2</sup>)<sup>3</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "6"
+          ],
+          "answer_print": "a<sup>6</sup>",
+          "answer_accept": [
+            "a^6"
+          ],
+          "answer_unit": null,
+          "answer_format": "a의 거듭제곱 꼴로",
+          "figure": null,
+          "hint": "a<sup>2</sup> 을 3번 곱하는 것과 같아요.",
+          "solution": "2 × 3 = 6 이므로 a<sup>6</sup>.",
+          "work_space": "sm",
+          "misconceptions": [
+            "exp.add-in-power"
+          ]
+        },
+        {
+          "id": "m2-u02-t02-02",
+          "level": "L",
+          "stem_src": "(x⁴)² = x□ 의 지수 □?",
+          "stem_print": "(x<sup>4</sup>)<sup>2</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "8"
+          ],
+          "answer_print": "x<sup>8</sup>",
+          "answer_accept": [
+            "x^8"
+          ],
+          "answer_unit": null,
+          "answer_format": "x의 거듭제곱 꼴로",
+          "figure": null,
+          "hint": "지수끼리 곱해요.",
+          "solution": "4 × 2 = 8 이므로 x<sup>8</sup>.",
+          "work_space": "sm",
+          "misconceptions": [
+            "exp.add-in-power"
+          ]
+        },
+        {
+          "id": "m2-u02-t02-03",
+          "level": "M",
+          "stem_src": "(2a)³ = □a□ 의 계수와 지수?",
+          "stem_print": "(2a)<sup>3</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "8",
+            "3"
+          ],
+          "answer_print": "8a<sup>3</sup>",
+          "answer_accept": [
+            "8a^3",
+            "8×a^3"
+          ],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 식으로 (계수까지 계산)",
+          "figure": null,
+          "hint": "괄호 안의 2 도 세제곱돼요.",
+          "solution": "(2a)<sup>3</sup> = 2<sup>3</sup> × a<sup>3</sup> = 8a<sup>3</sup>. 2 도, a 도 각각 세제곱돼요.",
+          "work_space": "md",
+          "misconceptions": [
+            "exp.coeff-not-powered"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "지수의 나눗셈",
+      "principle": "같은 밑끼리 나누면 지수를 빼요.  a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup>  (m > n)",
+      "problems": [
+        {
+          "id": "m2-u02-t03-01",
+          "level": "L",
+          "stem_src": "a⁷ ÷ a³ = a□ 의 지수 □?",
+          "stem_print": "a<sup>7</sup> ÷ a<sup>3</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "a<sup>4</sup>",
+          "answer_accept": [
+            "a^4"
+          ],
+          "answer_unit": null,
+          "answer_format": "a의 거듭제곱 꼴로",
+          "figure": null,
+          "hint": "나눗셈이면 지수를 빼요.",
+          "solution": "7 − 3 = 4 이므로 a<sup>4</sup>.",
+          "work_space": "sm",
+          "misconceptions": [
+            "exp.divide-exponents"
+          ]
+        },
+        {
+          "id": "m2-u02-t03-02",
+          "level": "L",
+          "stem_src": "x⁶ ÷ x = x□ 의 지수 □?",
+          "stem_print": "x<sup>6</sup> ÷ x 을 간단히 하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "x<sup>5</sup>",
+          "answer_accept": [
+            "x^5"
+          ],
+          "answer_unit": null,
+          "answer_format": "x의 거듭제곱 꼴로",
+          "figure": null,
+          "hint": "x 는 x<sup>1</sup> 이에요.",
+          "solution": "6 − 1 = 5 이므로 x<sup>5</sup>.",
+          "work_space": "sm",
+          "misconceptions": [
+            "exp.invisible-one",
+            "exp.divide-exponents"
+          ]
+        },
+        {
+          "id": "m2-u02-t03-03",
+          "level": "L",
+          "stem_src": "5⁸ ÷ 5⁵ = 5□ 의 지수 □?",
+          "stem_print": "5<sup>8</sup> ÷ 5<sup>5</sup> 을 5의 거듭제곱 꼴로 나타내시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "5<sup>3</sup>",
+          "answer_accept": [
+            "5^3"
+          ],
+          "answer_unit": null,
+          "answer_format": "5의 거듭제곱 꼴로 (계산한 수 125 아님)",
+          "figure": null,
+          "hint": "밑 5 는 그대로, 지수만 빼요.",
+          "solution": "8 − 5 = 3 이므로 5<sup>3</sup>.",
+          "work_space": "sm",
+          "misconceptions": [
+            "exp.base-multiply",
+            "exp.divide-exponents"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "단항식의 곱셈",
+      "principle": "계수는 계수끼리 곱하고, 같은 문자는 지수를 더해요.",
+      "problems": [
+        {
+          "id": "m2-u02-t04-01",
+          "level": "L",
+          "stem_src": "2a × 3a² = □a□",
+          "stem_print": "2a × 3a<sup>2</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "6",
+            "3"
+          ],
+          "answer_print": "6a<sup>3</sup>",
+          "answer_accept": [
+            "6a^3"
+          ],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 식으로",
+          "figure": null,
+          "hint": "계수 2 × 3, 문자 a × a<sup>2</sup> 을 따로 계산해요.",
+          "solution": "계수 2 × 3 = 6, 문자 a × a<sup>2</sup> = a<sup>3</sup> → 6a<sup>3</sup>.",
+          "work_space": "sm",
+          "misconceptions": [
+            "exp.coeff-vs-exponent"
+          ]
+        },
+        {
+          "id": "m2-u02-t04-02",
+          "level": "M",
+          "stem_src": "4x³ × 2x² = □x□",
+          "stem_print": "4x<sup>3</sup> × 2x<sup>2</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "8",
+            "5"
+          ],
+          "answer_print": "8x<sup>5</sup>",
+          "answer_accept": [
+            "8x^5"
+          ],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 식으로",
+          "figure": null,
+          "hint": "계수는 곱하고, 지수는 더해요.",
+          "solution": "계수 4 × 2 = 8, 지수 3 + 2 = 5 → 8x<sup>5</sup>.",
+          "work_space": "md",
+          "misconceptions": [
+            "exp.coeff-vs-exponent",
+            "exp.multiply-exponents"
+          ]
+        },
+        {
+          "id": "m2-u02-t04-03",
+          "level": "M",
+          "stem_src": "3a²b × 2ab³ = □a□b□",
+          "stem_print": "3a<sup>2</sup>b × 2ab<sup>3</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "6",
+            "3",
+            "4"
+          ],
+          "answer_print": "6a<sup>3</sup>b<sup>4</sup>",
+          "answer_accept": [
+            "6a^3b^4"
+          ],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 식으로 (문자는 a, b 순서로)",
+          "figure": null,
+          "hint": "문자마다 따로 지수를 더해요.",
+          "solution": "계수 3 × 2 = 6, a<sup>2</sup> × a = a<sup>3</sup>, b × b<sup>3</sup> = b<sup>4</sup> → 6a<sup>3</sup>b<sup>4</sup>.",
+          "work_space": "md",
+          "misconceptions": [
+            "exp.coeff-vs-exponent",
+            "exp.invisible-one"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "단항식의 나눗셈",
+      "principle": "계수는 계수끼리 나누고, 같은 문자는 지수를 빼요. 지수가 같으면 그 문자는 사라져요(= 1).",
+      "problems": [
+        {
+          "id": "m2-u02-t05-01",
+          "level": "L",
+          "stem_src": "6a⁵ ÷ 2a² = □a□",
+          "stem_print": "6a<sup>5</sup> ÷ 2a<sup>2</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "3",
+            "3"
+          ],
+          "answer_print": "3a<sup>3</sup>",
+          "answer_accept": [
+            "3a^3"
+          ],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 식으로",
+          "figure": null,
+          "hint": "계수는 나누고, 지수는 빼요.",
+          "solution": "계수 6 ÷ 2 = 3, 지수 5 − 2 = 3 → 3a<sup>3</sup>.",
+          "work_space": "sm",
+          "misconceptions": [
+            "exp.divide-exponents",
+            "exp.coeff-vs-exponent"
+          ]
+        },
+        {
+          "id": "m2-u02-t05-02",
+          "level": "M",
+          "stem_src": "12x⁴ ÷ 3x⁴ = □ (문자가 사라져요!)",
+          "stem_print": "12x<sup>4</sup> ÷ 3x<sup>4</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "4",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 식으로 (문자가 남지 않을 수도 있어요)",
+          "figure": null,
+          "hint": "x<sup>4</sup> ÷ x<sup>4</sup> 은 얼마인가요?",
+          "solution": "12 ÷ 3 = 4, x<sup>4</sup> ÷ x<sup>4</sup> = x<sup>0</sup> = 1 → 남는 것은 4 뿐.",
+          "work_space": "md",
+          "misconceptions": [
+            "exp.zero-exponent"
+          ]
+        },
+        {
+          "id": "m2-u02-t05-03",
+          "level": "M",
+          "stem_src": "15a³b² ÷ 5ab = □a□b□",
+          "stem_print": "15a<sup>3</sup>b<sup>2</sup> ÷ 5ab 을 간단히 하시오.",
+          "answer_atoms": [
+            "3",
+            "2",
+            "1"
+          ],
+          "answer_print": "3a<sup>2</sup>b",
+          "answer_accept": [
+            "3a^2b",
+            "3a^2b^1"
+          ],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 식으로 (지수 1 은 쓰지 않아요)",
+          "figure": null,
+          "hint": "a 와 b 를 각각 따로 계산해요.",
+          "solution": "계수 15 ÷ 5 = 3, a<sup>3</sup> ÷ a = a<sup>2</sup>, b<sup>2</sup> ÷ b = b<sup>1</sup> = b → 3a<sup>2</sup>b.",
+          "work_space": "md",
+          "misconceptions": [
+            "exp.invisible-one",
+            "exp.divide-exponents"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "곱셈·나눗셈 혼합",
+      "principle": "앞에서부터 차례로 계산해요. 계수는 계수끼리, 문자는 지수를 더하고 빼요.",
+      "problems": [
+        {
+          "id": "m2-u02-t06-01",
+          "level": "M",
+          "stem_src": "2a² × 3a ÷ a² = □a□",
+          "stem_print": "2a<sup>2</sup> × 3a ÷ a<sup>2</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "6",
+            "1"
+          ],
+          "answer_print": "6a",
+          "answer_accept": [
+            "6a^1"
+          ],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 식으로 (지수 1 은 쓰지 않아요)",
+          "figure": null,
+          "hint": "앞의 곱셈을 먼저 하고, 그다음 나눠요.",
+          "solution": "2a<sup>2</sup> × 3a = 6a<sup>3</sup>, 이어서 ÷ a<sup>2</sup> → 6a<sup>1</sup> = 6a.",
+          "work_space": "md",
+          "misconceptions": [
+            "exp.invisible-one",
+            "order.left-to-right"
+          ]
+        },
+        {
+          "id": "m2-u02-t06-02",
+          "level": "H",
+          "stem_src": "(2a²)³ ÷ 4a² = □a□",
+          "stem_print": "(2a<sup>2</sup>)<sup>3</sup> ÷ 4a<sup>2</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "2",
+            "4"
+          ],
+          "answer_print": "2a<sup>4</sup>",
+          "answer_accept": [
+            "2a^4"
+          ],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 식으로",
+          "figure": null,
+          "hint": "괄호의 거듭제곱을 먼저 풀어요. 2 도 세제곱돼요.",
+          "solution": "(2a<sup>2</sup>)<sup>3</sup> = 8a<sup>6</sup>. 이어서 ÷ 4a<sup>2</sup> → 계수 8 ÷ 4 = 2, 지수 6 − 2 = 4 → 2a<sup>4</sup>.",
+          "work_space": "lg",
+          "misconceptions": [
+            "exp.coeff-not-powered",
+            "order.left-to-right"
+          ]
+        },
+        {
+          "id": "m2-u02-t06-03",
+          "level": "L",
+          "stem_src": "a³ × a⁴ ÷ a² = a□ 의 지수 □?",
+          "stem_print": "a<sup>3</sup> × a<sup>4</sup> ÷ a<sup>2</sup> 을 간단히 하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "a<sup>5</sup>",
+          "answer_accept": [
+            "a^5"
+          ],
+          "answer_unit": null,
+          "answer_format": "a의 거듭제곱 꼴로",
+          "figure": null,
+          "hint": "더할 것은 더하고, 뺄 것은 빼요.",
+          "solution": "3 + 4 − 2 = 5 이므로 a<sup>5</sup>.",
+          "work_space": "sm",
+          "misconceptions": [
+            "order.left-to-right"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "다항식의 덧셈·뺄셈",
+      "principle": "동류항(같은 문자·같은 차수)끼리 계수를 더하고 빼요. 빼기는 괄호 안 부호가 모두 바뀌어요.",
+      "problems": [
+        {
+          "id": "m2-u02-t07-01",
+          "level": "L",
+          "stem_src": "(3x + 2) + (5x − 7) = □x + □",
+          "stem_print": "(3x + 2) + (5x − 7) 을 간단히 하시오.",
+          "answer_atoms": [
+            "8",
+            "−5"
+          ],
+          "answer_print": "8x − 5",
+          "answer_accept": [
+            "8x+(−5)"
+          ],
+          "answer_unit": null,
+          "answer_format": "동류항을 정리한 식으로",
+          "figure": null,
+          "hint": "x 끼리, 숫자끼리 모아요.",
+          "solution": "3x + 5x = 8x, 2 − 7 = −5 → 8x − 5.",
+          "work_space": "md",
+          "misconceptions": [
+            "poly.combine-unlike"
+          ]
+        },
+        {
+          "id": "m2-u02-t07-02",
+          "level": "M",
+          "stem_src": "(4a − 3b) − (a − 5b) = □a + □b",
+          "stem_print": "(4a − 3b) − (a − 5b) 을 간단히 하시오.",
+          "answer_atoms": [
+            "3",
+            "2"
+          ],
+          "answer_print": "3a + 2b",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "동류항을 정리한 식으로 (문자는 a, b 순서로)",
+          "figure": null,
+          "hint": "빼기니까 뒤 괄호 안의 부호가 모두 바뀌어요.",
+          "solution": "4a − 3b − a + 5b → a 끼리 4a − a = 3a, b 끼리 −3b + 5b = 2b → 3a + 2b.",
+          "work_space": "md",
+          "misconceptions": [
+            "poly.sign-after-minus"
+          ]
+        },
+        {
+          "id": "m2-u02-t07-03",
+          "level": "M",
+          "stem_src": "(2x² + 3x) − (x² − x) = □x² + □x",
+          "stem_print": "(2x<sup>2</sup> + 3x) − (x<sup>2</sup> − x) 을 간단히 하시오.",
+          "answer_atoms": [
+            "1",
+            "4"
+          ],
+          "answer_print": "x<sup>2</sup> + 4x",
+          "answer_accept": [
+            "1x^2+4x",
+            "x^2+4x"
+          ],
+          "answer_unit": null,
+          "answer_format": "동류항을 정리한 식으로 (계수 1 은 쓰지 않아요)",
+          "figure": null,
+          "hint": "x<sup>2</sup> 과 x 는 동류항이 아니에요.",
+          "solution": "2x<sup>2</sup> + 3x − x<sup>2</sup> + x → x<sup>2</sup> 끼리 2x<sup>2</sup> − x<sup>2</sup> = x<sup>2</sup>, x 끼리 3x + x = 4x → x<sup>2</sup> + 4x.",
+          "work_space": "md",
+          "misconceptions": [
+            "poly.sign-after-minus",
+            "poly.combine-unlike"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "(다항식) × ÷ (단항식)",
+      "principle": "단항식을 괄호 안 각 항에 곱하거나 나눠요 (분배법칙).",
+      "problems": [
+        {
+          "id": "m2-u02-t08-01",
+          "level": "L",
+          "stem_src": "2(3x + 4) = □x + □",
+          "stem_print": "2(3x + 4) 의 괄호를 풀어 간단히 하시오.",
+          "answer_atoms": [
+            "6",
+            "8"
+          ],
+          "answer_print": "6x + 8",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "괄호 없는 식으로",
+          "figure": null,
+          "hint": "2 를 두 항 모두에 곱해요.",
+          "solution": "2 × 3x = 6x, 2 × 4 = 8 → 6x + 8.",
+          "work_space": "sm",
+          "misconceptions": [
+            "poly.distribute-partial"
+          ]
+        },
+        {
+          "id": "m2-u02-t08-02",
+          "level": "M",
+          "stem_src": "3a(2a − 5) = □a² + □a",
+          "stem_print": "3a(2a − 5) 의 괄호를 풀어 간단히 하시오.",
+          "answer_atoms": [
+            "6",
+            "−15"
+          ],
+          "answer_print": "6a<sup>2</sup> − 15a",
+          "answer_accept": [
+            "6a^2-15a",
+            "6a^2+(−15)a"
+          ],
+          "answer_unit": null,
+          "answer_format": "괄호 없는 식으로",
+          "figure": null,
+          "hint": "뒤 항의 부호 −5 도 함께 곱해요.",
+          "solution": "3a × 2a = 6a<sup>2</sup>, 3a × (−5) = −15a → 6a<sup>2</sup> − 15a.",
+          "work_space": "md",
+          "misconceptions": [
+            "poly.distribute-partial",
+            "poly.sign-after-minus"
+          ]
+        },
+        {
+          "id": "m2-u02-t08-03",
+          "level": "M",
+          "stem_src": "(6x² + 9x) ÷ 3x = □x + □",
+          "stem_print": "(6x<sup>2</sup> + 9x) ÷ 3x 을 간단히 하시오.",
+          "answer_atoms": [
+            "2",
+            "3"
+          ],
+          "answer_print": "2x + 3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "괄호 없는 식으로",
+          "figure": null,
+          "hint": "각 항을 따로따로 3x 로 나눠요.",
+          "solution": "6x<sup>2</sup> ÷ 3x = 2x, 9x ÷ 3x = 3 → 2x + 3.",
+          "work_space": "md",
+          "misconceptions": [
+            "poly.distribute-partial",
+            "exp.zero-exponent"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "식의 값 (대입)",
+      "principle": "문자 자리에 수를 그대로 넣어(대입) 계산해요. 음수는 괄호로 감싸서 넣어요.",
+      "problems": [
+        {
+          "id": "m2-u02-t09-01",
+          "level": "L",
+          "stem_src": "a = 2, b = 3 일 때 2a + b 의 값은?",
+          "stem_print": "a = 2, b = 3 일 때 2a + b 의 값을 구하시오.",
+          "answer_atoms": [
+            "7"
+          ],
+          "answer_print": "7",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "a 자리에 2, b 자리에 3 을 넣어요.",
+          "solution": "2 × 2 + 3 = 4 + 3 = 7.",
+          "work_space": "sm",
+          "misconceptions": [
+            "sub.coefficient-ignored"
+          ]
+        },
+        {
+          "id": "m2-u02-t09-02",
+          "level": "M",
+          "stem_src": "x = −1 일 때 x² + 3x 의 값은?",
+          "stem_print": "x = −1 일 때 x<sup>2</sup> + 3x 의 값을 구하시오.",
+          "answer_atoms": [
+            "−2"
+          ],
+          "answer_print": "−2",
+          "answer_accept": [
+            "-2"
+          ],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "음수는 괄호로 감싸서 넣어요. (−1)<sup>2</sup> 은 얼마인가요?",
+          "solution": "(−1)<sup>2</sup> + 3 × (−1) = 1 − 3 = −2.",
+          "work_space": "md",
+          "misconceptions": [
+            "sub.negative-square"
+          ]
+        },
+        {
+          "id": "m2-u02-t09-03",
+          "level": "M",
+          "stem_src": "x = 2, y = 3 일 때 xy² 의 값은?",
+          "stem_print": "x = 2, y = 3 일 때 xy<sup>2</sup> 의 값을 구하시오.",
+          "answer_atoms": [
+            "18"
+          ],
+          "answer_print": "18",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "지수 2 는 y 에만 붙어 있어요.",
+          "solution": "2 × 3<sup>2</sup> = 2 × 9 = 18. (x 까지 제곱하지 않아요.)",
+          "work_space": "md",
+          "misconceptions": [
+            "sub.exponent-scope"
+          ]
+        }
+      ]
+    }
+  ]
+}

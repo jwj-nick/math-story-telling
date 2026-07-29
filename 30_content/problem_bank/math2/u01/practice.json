@@ -1,0 +1,492 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 1,
+    "unit_name": "유리수와 순환소수",
+    "source": "40_grades/middle/math2/app2/p1.html",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_math2_p.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 script 의 P(...)/pick(...) 값 그대로. 절대 손으로 고치지 않는다. 원본 20문항 중 6문항이 2지선다(유형2·유형7)라 단답형으로 재작성했다."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "분수를 소수로 바꾸기",
+      "principle": "분수는 나눗셈이에요.  분자 ÷ 분모 를 나머지가 0 이 될 때까지 계산하면 소수가 나와요.",
+      "problems": [
+        {
+          "id": "m2-u01-t01-01",
+          "level": "L",
+          "stem_src": "3/4 를 소수로 쓰면?",
+          "stem_print": "<span class=\"frac\"><b>3</b><i>4</i></span> 를 소수로 나타내시오.",
+          "answer_atoms": [
+            "0.75"
+          ],
+          "answer_print": "0.75",
+          "answer_accept": [
+            "0.750"
+          ],
+          "answer_unit": null,
+          "answer_format": "소수로 (나머지가 0 이 될 때까지 계산해서)",
+          "figure": null,
+          "hint": "분수는 분자 ÷ 분모 예요. 3 ÷ 4 를 계산해요.",
+          "solution": "3 ÷ 4 = 0.75. 분모 4 = 2<sup>2</sup> 이라 딱 떨어져요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "dec.frac-as-division"
+          ]
+        },
+        {
+          "id": "m2-u01-t01-02",
+          "level": "L",
+          "stem_src": "7/8 를 소수로 쓰면?",
+          "stem_print": "<span class=\"frac\"><b>7</b><i>8</i></span> 을 소수로 나타내시오.",
+          "answer_atoms": [
+            "0.875"
+          ],
+          "answer_print": "0.875",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "소수로 (나머지가 0 이 될 때까지 계산해서)",
+          "figure": null,
+          "hint": "7 ÷ 8 을 도중에 멈추지 말고 끝까지 내려가요.",
+          "solution": "7 ÷ 8 = 0.875. 세 자리까지 내려가야 나머지가 0 이 돼요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "dec.frac-as-division",
+            "dec.division-stop-early"
+          ]
+        },
+        {
+          "id": "m2-u01-t01-03",
+          "level": "L",
+          "stem_src": "3/5 를 소수로 쓰면?",
+          "stem_print": "<span class=\"frac\"><b>3</b><i>5</i></span> 를 소수로 나타내시오.",
+          "answer_atoms": [
+            "0.6"
+          ],
+          "answer_print": "0.6",
+          "answer_accept": [
+            "0.60"
+          ],
+          "answer_unit": null,
+          "answer_format": "소수로 (나머지가 0 이 될 때까지 계산해서)",
+          "figure": null,
+          "hint": "분모 5 에 2 를 곱하면 10 이 돼요. 분자에도 똑같이 곱해 볼까요?",
+          "solution": "3 ÷ 5 = 0.6. 분모·분자에 2 를 곱해 6/10 으로 고쳐도 같은 답이 나와요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "dec.frac-as-division"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "유한소수·순환소수 판별",
+      "principle": "먼저 기약분수로 약분한 뒤 분모만 봐요. 분모의 소인수가 2 와 5 뿐이면 유한소수, 다른 소인수(3·7…)가 섞이면 순환소수예요.",
+      "problems": [
+        {
+          "id": "m2-u01-t02-01",
+          "level": "L",
+          "stem_src": "3/20 은 유한소수일까요, 순환소수일까요? (2지선다)",
+          "stem_print": "<span class=\"frac\"><b>3</b><i>20</i></span> 을 소수로 나타내면 유한소수인지 순환소수인지 판별하시오.",
+          "answer_atoms": [
+            "유한소수"
+          ],
+          "answer_print": "유한소수",
+          "answer_accept": [
+            "유한"
+          ],
+          "answer_unit": null,
+          "answer_format": "유한소수 · 순환소수 중 하나를 낱말로 (소수로 고쳐 쓰지 않아요)",
+          "figure": null,
+          "hint": "20 을 소인수분해하면 어떤 소인수가 나오나요?",
+          "solution": "3/20 은 이미 기약분수예요. 20 = 2<sup>2</sup> × 5 라 소인수가 2 와 5 뿐 → 유한소수. (실제로 0.15)",
+          "work_space": "sm",
+          "misconceptions": [
+            "dec.denominator-factor",
+            "dec.numerator-decides"
+          ]
+        },
+        {
+          "id": "m2-u01-t02-02",
+          "level": "L",
+          "stem_src": "7/15 는? (2지선다)",
+          "stem_print": "<span class=\"frac\"><b>7</b><i>15</i></span> 을 소수로 나타내면 유한소수인지 순환소수인지 판별하시오.",
+          "answer_atoms": [
+            "순환소수"
+          ],
+          "answer_print": "순환소수",
+          "answer_accept": [
+            "순환",
+            "무한소수"
+          ],
+          "answer_unit": null,
+          "answer_format": "유한소수 · 순환소수 중 하나를 낱말로 (소수로 고쳐 쓰지 않아요)",
+          "figure": null,
+          "hint": "15 를 소인수분해하면 2 와 5 말고 무엇이 더 있나요?",
+          "solution": "7/15 는 이미 기약분수예요. 15 = 3 × 5 라 소인수 3 이 남아 있어요 → 순환소수. (실제로 0.4666…)",
+          "work_space": "sm",
+          "misconceptions": [
+            "dec.denominator-factor",
+            "dec.numerator-decides"
+          ]
+        },
+        {
+          "id": "m2-u01-t02-03",
+          "level": "M",
+          "stem_src": "9/24 는? (약분부터!) (2지선다)",
+          "stem_print": "<span class=\"frac\"><b>9</b><i>24</i></span> 를 소수로 나타내면 유한소수인지 순환소수인지 판별하시오.",
+          "answer_atoms": [
+            "유한소수"
+          ],
+          "answer_print": "유한소수",
+          "answer_accept": [
+            "유한"
+          ],
+          "answer_unit": null,
+          "answer_format": "유한소수 · 순환소수 중 하나를 낱말로 (소수로 고쳐 쓰지 않아요)",
+          "figure": null,
+          "hint": "분모를 보기 전에 약분부터 해요. 9 와 24 의 공약수가 있어요.",
+          "solution": "9/24 를 3 으로 약분하면 3/8. 8 = 2<sup>3</sup> 이라 소인수가 2 뿐 → 유한소수. (실제로 0.375) 약분하지 않고 24 = 2<sup>3</sup> × 3 만 보면 3 때문에 잘못 판단하게 돼요.",
+          "work_space": "md",
+          "misconceptions": [
+            "dec.denom-before-reduce",
+            "dec.denominator-factor"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "유한소수가 되는 조건 찾기",
+      "principle": "분모에 2·5 가 아닌 소인수가 남아 있으면 유한소수가 될 수 없어요. 그 소인수를 분자에 곱해서 약분으로 지워 주면 돼요.",
+      "problems": [
+        {
+          "id": "m2-u01-t03-01",
+          "level": "M",
+          "stem_src": "a/30 이 유한소수가 되게 하는 가장 작은 자연수 a는? (30 = 2·3·5)",
+          "stem_print": "<span class=\"frac\"><b>a</b><i>30</i></span> 이 유한소수가 되게 하는 가장 작은 자연수 a 를 구하시오. (30 = 2 × 3 × 5)",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "분모 30 의 소인수 중 말썽을 부리는 것은 무엇인가요?",
+          "solution": "30 = 2 × 3 × 5 에서 2·5 가 아닌 소인수는 3 이에요. a 를 3 으로 두면 3/30 = 1/10 이 되어 유한소수예요. 그래서 가장 작은 a 는 3.",
+          "work_space": "md",
+          "misconceptions": [
+            "dec.make-finite-multiply",
+            "dec.denominator-factor"
+          ]
+        },
+        {
+          "id": "m2-u01-t03-02",
+          "level": "H",
+          "stem_src": "7/60 을 유한소수로 만들려면 분자에 곱할 가장 작은 자연수는? (60 = 2²·3·5)",
+          "stem_print": "<span class=\"frac\"><b>7</b><i>60</i></span> 이 유한소수가 되도록 분자에 곱할 가장 작은 자연수를 구하시오. (60 = 2<sup>2</sup> × 3 × 5)",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "분모에서 지워야 할 소인수를 분자에 그대로 곱해 주면 약분으로 사라져요.",
+          "solution": "60 = 2<sup>2</sup> × 3 × 5 에서 지워야 할 소인수는 3 이에요. 분자에 3 을 곱하면 21/60 = 7/20 → 유한소수. 그래서 가장 작은 수는 3.",
+          "work_space": "lg",
+          "misconceptions": [
+            "dec.make-finite-multiply"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "순환마디 찾기·표기",
+      "principle": "되풀이되는 숫자 묶음이 순환마디예요. 짧게 쓸 때는 순환마디의 첫 숫자와 마지막 숫자 위에 점을 찍어요. (예: 0.<span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">7<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> = 0.2727…)",
+      "problems": [
+        {
+          "id": "m2-u01-t04-01",
+          "level": "L",
+          "stem_src": "0.363636… 의 순환마디는? (반복되는 수)",
+          "stem_print": "순환소수 0.363636… 의 순환마디를 구하시오.",
+          "answer_atoms": [
+            "36"
+          ],
+          "answer_print": "36",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "순환마디를 이루는 수로 (점은 찍지 않아요)",
+          "figure": null,
+          "hint": "어디부터 어디까지가 통째로 되풀이되는지 손으로 끊어 봐요.",
+          "solution": "0.36 | 36 | 36 | … 처럼 36 이 통째로 되풀이돼요. 그래서 순환마디는 36 이고, 짧게 쓰면 0.<span style=\"position:relative\">3<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">6<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "dec.repetend-include-head",
+            "dec.repetend-dot-place"
+          ]
+        },
+        {
+          "id": "m2-u01-t04-02",
+          "level": "M",
+          "stem_src": "0.5222… 의 순환마디는? (끝의 2만 반복돼요)",
+          "stem_print": "순환소수 0.5222… 의 순환마디를 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "순환마디를 이루는 수로 (점은 찍지 않아요)",
+          "figure": null,
+          "hint": "앞의 5 도 다시 나타나는지 확인해 봐요.",
+          "solution": "0.5 뒤에서 2 만 계속 되풀이돼요. 5 는 한 번밖에 나오지 않으니 순환마디에 넣지 않아요. 짧게 쓰면 0.5<span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "dec.repetend-include-head"
+          ]
+        },
+        {
+          "id": "m2-u01-t04-03",
+          "level": "L",
+          "stem_src": "1.234234234… 의 순환마디는?",
+          "stem_print": "순환소수 1.234234234… 의 순환마디를 구하시오.",
+          "answer_atoms": [
+            "234"
+          ],
+          "answer_print": "234",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "순환마디를 이루는 수로 (점은 찍지 않아요)",
+          "figure": null,
+          "hint": "소수점 아래를 세 자리씩 끊어서 읽어 봐요.",
+          "solution": "1.234 | 234 | 234 | … 처럼 세 자리 묶음 234 가 되풀이돼요. 짧게 쓰면 1.<span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span>3<span style=\"position:relative\">4<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "dec.repetend-include-head",
+            "dec.repetend-dot-place"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "소수점 아래 n번째 자리",
+      "principle": "순환마디가 k 자리이면, 자리 번호를 k 로 나눈 나머지가 마디 안에서 몇 번째인지 알려 줘요. 나머지가 0 이면 마디의 마지막 숫자예요.",
+      "problems": [
+        {
+          "id": "m2-u01-t05-01",
+          "level": "M",
+          "stem_src": "3/11 = 0.272727… 의 소수점 아래 10번째 자리 숫자는?",
+          "stem_print": "<span class=\"frac\"><b>3</b><i>11</i></span> = 0.272727… 일 때, 소수점 아래 10번째 자리의 숫자를 구하시오.",
+          "answer_atoms": [
+            "7"
+          ],
+          "answer_print": "7",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "숫자 한 자리 수로 (0 ~ 9 중 하나)",
+          "figure": null,
+          "hint": "순환마디 27 은 두 자리예요. 10 을 2 로 나누면 나머지가 얼마인가요?",
+          "solution": "순환마디는 27 (2자리). 10 ÷ 2 = 5 나머지 0 이므로 마디의 마지막 자리, 즉 7 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "dec.position-remainder"
+          ]
+        },
+        {
+          "id": "m2-u01-t05-02",
+          "level": "H",
+          "stem_src": "2/7 = 0.285714285714… 의 소수점 아래 25번째 자리 숫자는?",
+          "stem_print": "<span class=\"frac\"><b>2</b><i>7</i></span> = 0.285714285714… 일 때, 소수점 아래 25번째 자리의 숫자를 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "숫자 한 자리 수로 (0 ~ 9 중 하나)",
+          "figure": null,
+          "hint": "순환마디 285714 는 여섯 자리예요. 25 를 6 으로 나눠 봐요.",
+          "solution": "순환마디는 285714 (6자리). 25 = 6 × 4 + 1 이므로 마디의 1번째 숫자, 즉 2 예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "dec.position-remainder"
+          ]
+        },
+        {
+          "id": "m2-u01-t05-03",
+          "level": "M",
+          "stem_src": "1/6 = 0.1666… 의 소수점 아래 100번째 자리 숫자는?",
+          "stem_print": "<span class=\"frac\"><b>1</b><i>6</i></span> = 0.1666… 일 때, 소수점 아래 100번째 자리의 숫자를 구하시오.",
+          "answer_atoms": [
+            "6"
+          ],
+          "answer_print": "6",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "숫자 한 자리 수로 (0 ~ 9 중 하나)",
+          "figure": null,
+          "hint": "되풀이되는 부분이 몇 번째 자리부터 시작하는지 먼저 봐요.",
+          "solution": "첫째 자리만 1 이고, 둘째 자리부터는 계속 6 이에요. 100번째는 첫째 자리가 아니니까 6 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "dec.nonrepeating-head-offset",
+            "dec.position-remainder"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "순환소수를 분수로",
+      "principle": "순환마디가 1 자리면 분모는 9, 2 자리면 99 예요. 소수점 뒤에 돌지 않는 부분이 있으면 그 자리 수만큼 분모 뒤에 0 을 더 붙이고, 분자에서는 돌지 않는 부분을 한 번 빼요.",
+      "problems": [
+        {
+          "id": "m2-u01-t06-01",
+          "level": "L",
+          "stem_src": "0.4̇ = 0.444… = □/9 에서 □는?",
+          "stem_print": "순환소수 0.<span style=\"position:relative\">4<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> = 0.444… 를 분모가 9 인 분수로 나타낼 때, 그 분자를 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "4",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (분자만, 단위 없음)",
+          "figure": null,
+          "hint": "순환마디가 한 자리일 때 분자에는 순환마디를 그대로 써요.",
+          "solution": "순환마디가 4 (1자리)이므로 0.<span style=\"position:relative\">4<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> = 4/9. 분자는 4 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "dec.to-frac-denominator"
+          ]
+        },
+        {
+          "id": "m2-u01-t06-02",
+          "level": "M",
+          "stem_src": "0.2̇7̇ = 0.2727… 를 기약분수로 나타내면 분모는? (27/99 을 약분)",
+          "stem_print": "순환소수 0.<span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">7<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> = 0.2727… 을 기약분수로 나타낼 때, 그 분모를 구하시오.",
+          "answer_atoms": [
+            "11"
+          ],
+          "answer_print": "11",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (분모만, 단위 없음)",
+          "figure": null,
+          "hint": "먼저 분모 99 인 분수로 고친 다음, 약분이 되는지 확인해요.",
+          "solution": "순환마디가 27 (2자리)이므로 0.<span style=\"position:relative\">2<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span><span style=\"position:relative\">7<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> = 27/99. 분자·분모를 9 로 약분하면 3/11 이에요. 분모는 11.",
+          "work_space": "md",
+          "misconceptions": [
+            "dec.to-frac-denominator",
+            "dec.to-frac-reduce"
+          ]
+        },
+        {
+          "id": "m2-u01-t06-03",
+          "level": "H",
+          "stem_src": "0.16̇ = 0.1666… 를 기약분수 1/□ 로 쓰면 □는?",
+          "stem_print": "순환소수 0.1<span style=\"position:relative\">6<span style=\"position:absolute;left:0;right:0;top:-0.62em;font-size:0.5em;line-height:1;text-align:center\">●</span></span> = 0.1666… 을 기약분수로 나타내면 분자가 1 이 됩니다. 이때 분모를 구하시오.",
+          "answer_atoms": [
+            "6"
+          ],
+          "answer_print": "6",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (분모만, 단위 없음)",
+          "figure": null,
+          "hint": "소수점 뒤에 돌지 않는 자리가 하나 있어요. 분모에 0 이 하나 더 붙어요.",
+          "solution": "돌지 않는 부분이 한 자리라서 분모는 90. 분자는 (돌지 않는 부분까지 읽은 수) − (돌지 않는 부분) = 16 − 1 = 15. 즉 15/90 = 1/6 이므로 분모는 6 이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "dec.to-frac-head-subtract",
+            "dec.to-frac-reduce"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "유리수·소수 관계 (참·거짓)",
+      "principle": "분수로 쓸 수 있으면 유리수예요. 정수·유한소수·순환소수는 모두 유리수예요. 규칙 없이 끝나지 않는 소수(예 π)는 유리수가 아니에요.",
+      "problems": [
+        {
+          "id": "m2-u01-t07-01",
+          "level": "L",
+          "stem_src": "\"모든 유한소수는 유리수다.\" (2지선다 참/거짓)",
+          "stem_print": "다음 설명이 옳은지 판별하시오. — “모든 유한소수는 유리수이다.”",
+          "answer_atoms": [
+            "참"
+          ],
+          "answer_print": "참",
+          "answer_accept": [
+            "옳다"
+          ],
+          "answer_unit": null,
+          "answer_format": "‘참’ 또는 ‘거짓’ 중 하나를 낱말로 (기호나 수로 답하지 않아요)",
+          "figure": null,
+          "hint": "0.7 을 분수로 바꿔 볼까요?",
+          "solution": "0.7 = 7/10 처럼 끝이 있는 소수는 언제나 분수로 바꿀 수 있어요. 그래서 참이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "num.rational-definition"
+          ]
+        },
+        {
+          "id": "m2-u01-t07-02",
+          "level": "M",
+          "stem_src": "\"모든 무한소수는 유리수다.\" (2지선다 참/거짓)",
+          "stem_print": "다음 설명이 옳은지 판별하시오. — “모든 무한소수는 유리수이다.”",
+          "answer_atoms": [
+            "거짓"
+          ],
+          "answer_print": "거짓",
+          "answer_accept": [
+            "틀리다"
+          ],
+          "answer_unit": null,
+          "answer_format": "‘참’ 또는 ‘거짓’ 중 하나를 낱말로 (기호나 수로 답하지 않아요)",
+          "figure": null,
+          "hint": "π = 3.141592… 를 분수로 쓸 수 있는지 생각해 봐요.",
+          "solution": "무한소수에는 두 종류가 있어요. 순환하는 무한소수는 분수로 바꿀 수 있지만, π 처럼 순환하지 않는 무한소수는 분수로 바꿀 수 없어요. 그래서 ‘모든’ 이라는 말 때문에 거짓이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "num.infinite-vs-repeating"
+          ]
+        },
+        {
+          "id": "m2-u01-t07-03",
+          "level": "L",
+          "stem_src": "\"모든 순환소수는 유리수다.\" (2지선다 참/거짓)",
+          "stem_print": "다음 설명이 옳은지 판별하시오. — “모든 순환소수는 유리수이다.”",
+          "answer_atoms": [
+            "참"
+          ],
+          "answer_print": "참",
+          "answer_accept": [
+            "옳다"
+          ],
+          "answer_unit": null,
+          "answer_format": "‘참’ 또는 ‘거짓’ 중 하나를 낱말로 (기호나 수로 답하지 않아요)",
+          "figure": null,
+          "hint": "유형 6 에서 순환소수를 무엇으로 바꿨는지 떠올려 봐요.",
+          "solution": "순환소수는 분모가 9, 99, 90 … 인 분수로 언제나 바꿀 수 있어요. 분수로 쓸 수 있으니 유리수예요. 그래서 참이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "num.rational-definition",
+            "num.infinite-vs-repeating"
+          ]
+        }
+      ]
+    }
+  ]
+}

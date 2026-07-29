@@ -1,0 +1,598 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 6,
+    "unit_name": "일차함수와 일차방정식",
+    "generation": "D",
+    "source": "40_grades/middle/math2/app2/p6.html",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_math2_p.py",
+    "review": "draft",
+    "notation": "html-sup",
+    "note": "answer_atoms 는 원본 script 의 P(...)/pick 선택지 값 그대로. 절대 손으로 고치지 않는다. 원본 2지선다 7문항(유형2-3, 유형4 전체, 유형6 전체)은 지면에서 단답형으로 재작성했다."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "일차방정식의 그래프 (y = 꼴로)",
+      "principle": "ax + by + c = 0 꼴도 y 만 남도록 이항하면 y = (기울기)x + (y절편) 이 돼요.",
+      "problems": [
+        {
+          "id": "m2-u06-t01-01",
+          "level": "L",
+          "stem_src": "2x + y − 5 = 0 을 y = □x + □ 로 고쳤을 때 기울기는?",
+          "stem_print": "일차방정식 2x + y − 5 = 0 을 y = (기울기)x + (y절편) 꼴로 고쳤을 때, 기울기를 구하시오.",
+          "answer_atoms": [
+            "−2"
+          ],
+          "answer_print": "−2",
+          "answer_accept": [
+            "-2"
+          ],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "y 만 왼쪽에 남기고 나머지를 오른쪽으로 옮겨 보아요.",
+          "solution": "2x + y − 5 = 0 에서 y 만 남기면 y = −2x + 5 예요. x 앞의 수가 기울기이므로 −2 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "eq.transpose-sign",
+            "line.slope-yint-swap"
+          ]
+        },
+        {
+          "id": "m2-u06-t01-02",
+          "level": "L",
+          "stem_src": "같은 식 2x + y − 5 = 0 의 y절편은?",
+          "stem_print": "일차방정식 2x + y − 5 = 0 의 그래프의 y절편을 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "y = 꼴로 고친 뒤 혼자 남은 상수를 보아요.",
+          "solution": "y = −2x + 5 이므로 y절편은 5 예요. 식에 x = 0 을 넣어도 y = 5 가 나와요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "line.slope-yint-swap",
+            "eq.transpose-sign"
+          ]
+        },
+        {
+          "id": "m2-u06-t01-03",
+          "level": "M",
+          "stem_src": "x − y + 3 = 0 을 y = □x + □ 로 고쳤을 때 기울기는?",
+          "stem_print": "일차방정식 x − y + 3 = 0 을 y = (기울기)x + (y절편) 꼴로 고쳤을 때, 기울기를 구하시오.",
+          "answer_atoms": [
+            "1"
+          ],
+          "answer_print": "1",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "y 앞에 −1 이 붙어 있어요. 양변을 −1 로 나누면 어떻게 될까요?",
+          "solution": "x − y + 3 = 0 → −y = −x − 3 → 양변을 −1 로 나누면 y = x + 3 이에요. 기울기는 1 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "eq.transpose-sign"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "좌표축에 평행한 직선 (x = k, y = k)",
+      "principle": "y = k 는 x축에 평행한 가로선이고, x = k 는 y축에 평행한 세로선이에요.",
+      "problems": [
+        {
+          "id": "m2-u06-t02-01",
+          "level": "L",
+          "stem_src": "x축에 평행하고 점 (2, 5) 를 지나는 직선 y = □ 의 □?",
+          "stem_print": "x축에 평행하고 점 (2, 5) 를 지나는 직선의 방정식을 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "y = 5",
+          "answer_accept": [
+            "y=5"
+          ],
+          "answer_unit": null,
+          "answer_format": "y = k 또는 x = k 꼴로",
+          "figure": null,
+          "hint": "가로선 위에 있는 점들은 y 좌표가 모두 같아요.",
+          "solution": "x축에 평행한 가로선이므로 지나는 점의 y 좌표가 항상 같아요. (2, 5) 를 지나니 y = 5 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "line.axis-parallel-swap",
+            "coord.xy-order"
+          ]
+        },
+        {
+          "id": "m2-u06-t02-02",
+          "level": "M",
+          "stem_src": "y축에 평행하고 점 (3, −1) 을 지나는 직선 x = □ 의 □?",
+          "stem_print": "y축에 평행하고 점 (3, −1) 을 지나는 직선의 방정식을 구하시오.",
+          "answer_atoms": [
+            "3"
+          ],
+          "answer_print": "x = 3",
+          "answer_accept": [
+            "x=3"
+          ],
+          "answer_unit": null,
+          "answer_format": "y = k 또는 x = k 꼴로",
+          "figure": null,
+          "hint": "세로선 위에 있는 점들은 x 좌표가 모두 같아요.",
+          "solution": "y축에 평행한 세로선이므로 지나는 점의 x 좌표가 항상 같아요. (3, −1) 을 지나니 x = 3 이에요. y 좌표 −1 은 답에 쓰지 않아요.",
+          "work_space": "md",
+          "misconceptions": [
+            "line.axis-parallel-swap",
+            "coord.xy-order"
+          ]
+        },
+        {
+          "id": "m2-u06-t02-03",
+          "level": "M",
+          "stem_src": "[2지선다] x = −2 는 어떤 직선일까요?  (세로선 (y축에 평행) / 가로선 (x축에 평행))",
+          "stem_print": "직선 x = −2 가 가로선인지 세로선인지 쓰고, 어느 좌표축에 평행한지도 함께 쓰시오.",
+          "answer_atoms": [
+            "세로선 (y축에 평행)"
+          ],
+          "answer_print": "세로선 (y축에 평행)",
+          "answer_accept": [
+            "세로선",
+            "y축에 평행한 세로선",
+            "y축에 평행"
+          ],
+          "answer_unit": null,
+          "answer_format": "‘세로선 (y축에 평행)’ 처럼 선의 방향과 평행한 축을 함께 쓰는 꼴로",
+          "figure": null,
+          "hint": "x = −2 는 x 좌표가 항상 −2 라는 뜻이에요. 그런 점들을 모으면 어떤 모양이 될까요?",
+          "solution": "x = −2 위의 점은 (−2, 0), (−2, 1), (−2, 4) … 처럼 x 좌표가 모두 −2 예요. 위아래로 길게 늘어서므로 세로선이고, y축에 평행해요.",
+          "work_space": "md",
+          "misconceptions": [
+            "line.axis-parallel-swap"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "직선의 방정식 세우기",
+      "principle": "기울기와 지나는 점(또는 두 점)을 알면 y = ax + b 의 a 와 b 를 정할 수 있어요.",
+      "problems": [
+        {
+          "id": "m2-u06-t03-01",
+          "level": "L",
+          "stem_src": "기울기 −1, 점 (0, 4) 를 지나는 직선의 y절편은?",
+          "stem_print": "기울기가 −1 이고 점 (0, 4) 를 지나는 직선의 y절편을 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "4",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "x 좌표가 0 인 점은 y축 위에 있는 점이에요.",
+          "solution": "y = −x + b 에 (0, 4) 를 대입하면 4 = 0 + b 이므로 b = 4 예요. x 좌표가 0 인 점의 y 좌표가 곧 y절편이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "line.slope-yint-swap",
+            "line.substitute-point"
+          ]
+        },
+        {
+          "id": "m2-u06-t03-02",
+          "level": "M",
+          "stem_src": "두 점 (1, 3), (3, 7) 을 지나는 직선의 기울기는?",
+          "stem_print": "두 점 (1, 3), (3, 7) 을 지나는 직선의 기울기를 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "기울기는 (y 값의 변화량) ÷ (x 값의 변화량) 이에요.",
+          "solution": "y 는 3 에서 7 로 4 만큼, x 는 1 에서 3 으로 2 만큼 변했어요. 4 ÷ 2 = 2 이므로 기울기는 2 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "line.slope-fraction-flip",
+            "coord.xy-order"
+          ]
+        },
+        {
+          "id": "m2-u06-t03-03",
+          "level": "M",
+          "stem_src": "두 점 (1, 3), (3, 7) 을 지나는 직선의 y절편은?",
+          "stem_print": "두 점 (1, 3), (3, 7) 을 지나는 직선의 y절편을 구하시오.",
+          "answer_atoms": [
+            "1"
+          ],
+          "answer_print": "1",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "먼저 기울기를 구하고, 지나는 점 하나를 식에 넣어 보아요.",
+          "solution": "기울기가 2 이므로 y = 2x + b 예요. (1, 3) 을 대입하면 3 = 2 + b 이므로 b = 1 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "line.substitute-point",
+            "line.slope-yint-swap"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "교점 = 연립방정식의 해",
+      "principle": "두 직선의 교점은 두 식을 동시에 만족하는 점이에요. 그래서 교점의 좌표가 곧 연립방정식의 해예요.",
+      "problems": [
+        {
+          "id": "m2-u06-t04-01",
+          "level": "M",
+          "stem_src": "[2지선다] 점 (2, 3) 은 y = x + 1 과 y = −x + 5 의 교점일까요?  (교점이 맞아요 / 아니에요)",
+          "stem_print": "점 (2, 3) 이 두 직선 y = x + 1 과 y = −x + 5 의 교점인지 아닌지 판정하여 쓰시오.",
+          "answer_atoms": [
+            "교점이 맞아요"
+          ],
+          "answer_print": "교점이 맞아요",
+          "answer_accept": [
+            "맞아요",
+            "교점이다",
+            "예"
+          ],
+          "answer_unit": null,
+          "answer_format": "‘교점이 맞아요’ 또는 ‘교점이 아니에요’ 꼴로",
+          "figure": null,
+          "hint": "x = 2, y = 3 을 두 식에 각각 넣어 보아요. 두 식 모두 성립해야 해요.",
+          "solution": "y = x + 1 에 넣으면 3 = 2 + 1 로 성립해요. y = −x + 5 에 넣으면 3 = −2 + 5 로 성립해요. 두 식을 동시에 만족하므로 두 직선의 교점이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "inter.solution-meaning",
+            "coord.xy-order"
+          ]
+        },
+        {
+          "id": "m2-u06-t04-02",
+          "level": "L",
+          "stem_src": "[2지선다] \"두 직선의 교점 좌표는 그 연립방정식의 해와 같다.\" 참일까요?  (참 / 거짓)",
+          "stem_print": "‘두 직선의 교점의 좌표는 그 두 식을 연립한 연립방정식의 해와 같다.’ 이 설명이 참인지 거짓인지 쓰시오.",
+          "answer_atoms": [
+            "참"
+          ],
+          "answer_print": "참",
+          "answer_accept": [
+            "맞아요",
+            "옳아요"
+          ],
+          "answer_unit": null,
+          "answer_format": "‘참’ 또는 ‘거짓’ 꼴로",
+          "figure": null,
+          "hint": "교점은 두 직선 위에 동시에 올라와 있는 점이에요.",
+          "solution": "교점은 두 식을 동시에 만족하는 점이고, 연립방정식의 해도 두 식을 동시에 만족하는 x, y 예요. 같은 것을 말하고 있으므로 참이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "inter.solution-meaning"
+          ]
+        },
+        {
+          "id": "m2-u06-t04-03",
+          "level": "M",
+          "stem_src": "[2지선다] 두 직선이 평행하면, 그 연립방정식의 해는?  (해가 없어요 / 해가 하나예요)",
+          "stem_print": "두 직선이 서로 평행할 때, 그 두 식을 연립한 연립방정식의 해가 몇 개인지 쓰시오.",
+          "answer_atoms": [
+            "해가 없어요"
+          ],
+          "answer_print": "해가 없어요",
+          "answer_accept": [
+            "없어요",
+            "0개",
+            "해가 없다"
+          ],
+          "answer_unit": null,
+          "answer_format": "‘해가 없어요 / 해가 하나예요 / 해가 무수히 많아요’ 중 하나를 고르는 말 꼴로",
+          "figure": null,
+          "hint": "평행한 두 직선은 아무리 길게 늘여도 서로 만나지 않아요.",
+          "solution": "평행한 두 직선은 만나지 않으므로 교점이 없어요. 교점의 좌표가 곧 연립방정식의 해이므로, 해도 하나도 없어요.",
+          "work_space": "md",
+          "misconceptions": [
+            "inter.parallel-no-solution",
+            "inter.same-line-infinite"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "교점의 좌표 구하기",
+      "principle": "교점에서는 두 y 값이 같아요. 두 식을 같다고 놓아 x 를 구하고, 그 x 를 다시 넣어 y 를 구해요.",
+      "problems": [
+        {
+          "id": "m2-u06-t05-01",
+          "level": "M",
+          "stem_src": "y = x + 1 과 y = −x + 5 의 교점 (x, y)?",
+          "stem_print": "두 직선 y = x + 1 과 y = −x + 5 의 교점의 좌표를 구하시오.",
+          "answer_atoms": [
+            "2",
+            "3"
+          ],
+          "answer_print": "(2, 3)",
+          "answer_accept": [
+            "x = 2, y = 3"
+          ],
+          "answer_unit": null,
+          "answer_format": "교점의 좌표를 (a, b) 꼴로",
+          "figure": null,
+          "hint": "교점에서는 두 식의 y 가 같아요. 두 식을 등호로 이어 보아요.",
+          "solution": "x + 1 = −x + 5 → 2x = 4 → x = 2 예요. 이 x 를 y = x + 1 에 넣으면 y = 3 이에요. 그러므로 교점의 좌표는 (2, 3) 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "inter.x-only-stop",
+            "coord.xy-order"
+          ]
+        },
+        {
+          "id": "m2-u06-t05-02",
+          "level": "M",
+          "stem_src": "y = 2x 와 y = x + 3 의 교점 (x, y)?",
+          "stem_print": "두 직선 y = 2x 와 y = x + 3 의 교점의 좌표를 구하시오.",
+          "answer_atoms": [
+            "3",
+            "6"
+          ],
+          "answer_print": "(3, 6)",
+          "answer_accept": [
+            "x = 3, y = 6"
+          ],
+          "answer_unit": null,
+          "answer_format": "교점의 좌표를 (a, b) 꼴로",
+          "figure": null,
+          "hint": "두 식을 같다고 놓아 x 를 먼저 구해요.",
+          "solution": "2x = x + 3 → x = 3 이에요. y = 2x 에 넣으면 y = 6 이에요. 그러므로 교점의 좌표는 (3, 6) 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "inter.x-only-stop",
+            "eq.transpose-sign"
+          ]
+        },
+        {
+          "id": "m2-u06-t05-03",
+          "level": "H",
+          "stem_src": "y = −x + 4 와 y = 2x − 2 의 교점 (x, y)?",
+          "stem_print": "두 직선 y = −x + 4 와 y = 2x − 2 의 교점의 좌표를 구하시오.",
+          "answer_atoms": [
+            "2",
+            "2"
+          ],
+          "answer_print": "(2, 2)",
+          "answer_accept": [
+            "x = 2, y = 2"
+          ],
+          "answer_unit": null,
+          "answer_format": "교점의 좌표를 (a, b) 꼴로",
+          "figure": null,
+          "hint": "구한 x 를 두 식 중 어느 쪽에 넣어도 y 는 같아야 해요.",
+          "solution": "−x + 4 = 2x − 2 → 4 + 2 = 2x + x → 6 = 3x → x = 2 예요. y = −x + 4 에 넣으면 y = 2 이고, y = 2x − 2 에 넣어도 y = 2 로 같아요. 그러므로 교점의 좌표는 (2, 2) 예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "eq.transpose-sign",
+            "inter.x-only-stop"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "두 직선의 위치 관계",
+      "principle": "기울기가 다르면 한 점에서 만나요. 기울기가 같고 y절편이 다르면 평행하고, 기울기와 y절편이 둘 다 같으면 일치해요.",
+      "problems": [
+        {
+          "id": "m2-u06-t06-01",
+          "level": "L",
+          "stem_src": "[2지선다] y = 2x + 1 과 y = 2x − 3 의 관계는?  (평행 (안 만남) / 한 점에서 만남)",
+          "stem_print": "두 직선 y = 2x + 1 과 y = 2x − 3 의 위치 관계를 쓰시오.",
+          "answer_atoms": [
+            "평행 (안 만남)"
+          ],
+          "answer_print": "평행 (안 만남)",
+          "answer_accept": [
+            "평행",
+            "평행하다",
+            "만나지 않아요"
+          ],
+          "answer_unit": null,
+          "answer_format": "‘한 점에서 만남 / 평행 / 일치’ 중 하나를 고르는 말 꼴로",
+          "figure": null,
+          "hint": "두 식의 기울기와 y절편을 각각 비교해 보아요.",
+          "solution": "기울기가 둘 다 2 로 같고 y절편은 1 과 −3 으로 달라요. 나란히 가면서 만나지 않으므로 평행이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "rel.parallel-vs-identical",
+            "inter.parallel-no-solution"
+          ]
+        },
+        {
+          "id": "m2-u06-t06-02",
+          "level": "L",
+          "stem_src": "[2지선다] y = 3x + 2 와 y = −x + 2 의 관계는?  (한 점에서 만남 / 평행)",
+          "stem_print": "두 직선 y = 3x + 2 와 y = −x + 2 의 위치 관계를 쓰시오.",
+          "answer_atoms": [
+            "한 점에서 만남"
+          ],
+          "answer_print": "한 점에서 만남",
+          "answer_accept": [
+            "한 점에서 만나요",
+            "만난다",
+            "교점이 하나"
+          ],
+          "answer_unit": null,
+          "answer_format": "‘한 점에서 만남 / 평행 / 일치’ 중 하나를 고르는 말 꼴로",
+          "figure": null,
+          "hint": "기울기가 서로 다르면 두 직선은 언젠가 만나요.",
+          "solution": "기울기가 3 과 −1 로 서로 달라요. 기울기가 다르면 두 직선은 반드시 한 점에서 만나요. (y절편이 둘 다 2 이므로 만나는 자리는 y축 위의 점이에요.)",
+          "work_space": "sm",
+          "misconceptions": [
+            "rel.parallel-vs-identical",
+            "line.slope-yint-swap"
+          ]
+        },
+        {
+          "id": "m2-u06-t06-03",
+          "level": "M",
+          "stem_src": "[2지선다] y = x + 5 와 2y = 2x + 10 의 관계는?  (일치 (같은 직선) / 평행)",
+          "stem_print": "두 직선 y = x + 5 와 2y = 2x + 10 의 위치 관계를 쓰시오.",
+          "answer_atoms": [
+            "일치 (같은 직선)"
+          ],
+          "answer_print": "일치 (같은 직선)",
+          "answer_accept": [
+            "일치",
+            "같은 직선",
+            "일치해요"
+          ],
+          "answer_unit": null,
+          "answer_format": "‘한 점에서 만남 / 평행 / 일치’ 중 하나를 고르는 말 꼴로",
+          "figure": null,
+          "hint": "두 번째 식을 y = 꼴로 고쳐서 첫 번째 식과 나란히 놓고 비교해 보아요.",
+          "solution": "2y = 2x + 10 의 양변을 2 로 나누면 y = x + 5 예요. 첫 번째 식과 완전히 같으므로 두 직선은 일치해요. 이때 연립방정식의 해는 무수히 많아요.",
+          "work_space": "md",
+          "misconceptions": [
+            "rel.parallel-vs-identical",
+            "inter.same-line-infinite"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "세 직선이 한 점에서 만나기",
+      "principle": "먼저 계수를 모두 아는 두 직선의 교점을 구하고, 그 점을 나머지 직선이 지나도록 상수를 정해요.",
+      "problems": [
+        {
+          "id": "m2-u06-t07-01",
+          "level": "H",
+          "stem_src": "세 직선 y = 2x − 1, y = −x + 5, y = x + a 가 한 점에서 만날 때 a?",
+          "stem_print": "세 직선 y = 2x − 1, y = −x + 5, y = x + a 가 한 점에서 만날 때, 상수 a 의 값을 구하시오.",
+          "answer_atoms": [
+            "1"
+          ],
+          "answer_print": "1",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "a 가 들어 있지 않은 두 직선의 교점부터 구해 보아요.",
+          "solution": "2x − 1 = −x + 5 → 3x = 6 → x = 2, y = 3 이므로 앞 두 직선의 교점은 (2, 3) 이에요. 세 직선이 한 점에서 만나므로 y = x + a 도 이 점을 지나요. 3 = 2 + a → a = 1 이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "three.pick-wrong-pair",
+            "line.substitute-point"
+          ]
+        },
+        {
+          "id": "m2-u06-t07-02",
+          "level": "H",
+          "stem_src": "세 직선 y = x + 2, y = −2x + 8, y = ax 가 한 점에서 만날 때 a?",
+          "stem_print": "세 직선 y = x + 2, y = −2x + 8, y = ax 가 한 점에서 만날 때, 상수 a 의 값을 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "상수가 모두 정해진 두 직선을 먼저 만나게 해 보아요.",
+          "solution": "x + 2 = −2x + 8 → 3x = 6 → x = 2, y = 4 이므로 앞 두 직선의 교점은 (2, 4) 예요. y = ax 가 이 점을 지나므로 4 = 2a → a = 2 예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "three.pick-wrong-pair",
+            "line.substitute-point"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "활용 (손익분기 · 온도 · 넓이)",
+      "principle": "두 상황이 같아지는 순간이 두 직선의 교점이에요. x축과 만나는 순간은 x절편이고, y 에 0 을 넣어 구해요.",
+      "problems": [
+        {
+          "id": "m2-u06-t08-01",
+          "level": "M",
+          "stem_src": "비용 y = 2000x + 30000, 수입 y = 5000x. 몇 개 팔면 본전(손익분기)?",
+          "stem_print": "물건 x 개를 만들어 팔 때 비용이 y = 2000x + 30000 (원), 수입이 y = 5000x (원) 일 때, 비용과 수입이 같아지는 판매 개수를 구하시오.",
+          "answer_atoms": [
+            "10"
+          ],
+          "answer_print": "10",
+          "answer_accept": [
+            "10개"
+          ],
+          "answer_unit": "개",
+          "answer_format": "수로 (단위 개)",
+          "figure": null,
+          "hint": "‘같아진다’ 는 두 식의 y 가 서로 같다는 뜻이에요.",
+          "solution": "5000x = 2000x + 30000 → 3000x = 30000 → x = 10 이에요. 10개를 팔면 비용과 수입이 같아져요. 이 자리가 두 직선의 교점이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "app.equal-means-intersect",
+            "inter.x-only-stop"
+          ]
+        },
+        {
+          "id": "m2-u06-t08-02",
+          "level": "M",
+          "stem_src": "기온 24℃가 1시간에 3℃씩 내려요(y = 24 − 3x). 0℃가 되는 건 몇 시간 뒤?",
+          "stem_print": "기온이 24℃ 에서 1시간에 3℃ 씩 내려가서 x 시간 뒤의 기온이 y = 24 − 3x (℃) 일 때, 기온이 0℃ 가 되는 것은 몇 시간 뒤인지 구하시오.",
+          "answer_atoms": [
+            "8"
+          ],
+          "answer_print": "8",
+          "answer_accept": [
+            "8시간"
+          ],
+          "answer_unit": "시간",
+          "answer_format": "수로 (단위 시간)",
+          "figure": null,
+          "hint": "기온이 0℃ 가 되는 순간은 y 자리에 0 을 넣은 때예요.",
+          "solution": "24 − 3x = 0 → 3x = 24 → x = 8 이에요. 8시간 뒤에 0℃ 가 돼요. 이 값은 그래프가 x축과 만나는 x절편이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "app.intercept-mixup",
+            "eq.transpose-sign"
+          ]
+        },
+        {
+          "id": "m2-u06-t08-03",
+          "level": "H",
+          "stem_src": "직선 y = −2x + 6 과 x축, y축으로 둘러싸인 삼각형의 넓이는?",
+          "stem_print": "직선 y = −2x + 6 과 x축, y축으로 둘러싸인 삼각형의 넓이를 구하시오.",
+          "answer_atoms": [
+            "9"
+          ],
+          "answer_print": "9",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "그래프가 x축과 만나는 점, y축과 만나는 점을 먼저 찾아 보아요.",
+          "solution": "y 에 0 을 넣으면 −2x + 6 = 0 → x = 3 이므로 x절편은 3 이에요. x 에 0 을 넣으면 y = 6 이므로 y절편은 6 이에요. 원점과 두 절편이 만드는 직각삼각형이므로 넓이는 ½ × 3 × 6 = 9 예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "app.intercept-mixup",
+            "app.triangle-half"
+          ]
+        }
+      ]
+    }
+  ]
+}

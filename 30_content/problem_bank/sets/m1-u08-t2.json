@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 8,
+  "unit_name": "작도와 합동",
+  "bank": "math1/u08/practice.json",
+  "misconceptions": "misconceptions/math1_u08.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u08-t2",
+  "kind": "type-set",
+  "title": "길이·각 옮기기",
+  "subtitle": "컴퍼스 벌림으로 같은 길이 옮기기 · 같은 각 옮기기 · 기본 3 · 보통 3 · 도전 3",
+  "types": [
+    2
+  ],
+  "time_min": 20
+}

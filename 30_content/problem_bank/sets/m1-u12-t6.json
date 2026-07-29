@@ -1,0 +1,20 @@
+{
+  "id": "m1-u12-t6",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 12,
+  "unit_name": "입체도형의 겉넓이와 부피",
+  "title": "회전체의 부피",
+  "subtitle": "축에 붙은 변은 높이, 축에서 떨어진 거리는 반지름",
+  "bank": "math1/u12/practice.json",
+  "misconceptions": "misconceptions/math1_u12.json",
+  "types": [
+    6
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

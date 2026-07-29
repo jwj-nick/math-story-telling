@@ -1,0 +1,20 @@
+{
+  "id": "m1-u01-t5",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 1,
+  "unit_name": "소인수분해",
+  "title": "최대공약수",
+  "subtitle": "유형 5 · 최대공약수 구하기 · 공약수 · 서로소 · 실생활 활용 · 9문항",
+  "bank": "math1/u01/practice.json",
+  "misconceptions": "misconceptions/math1_u01.json",
+  "types": [
+    5
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

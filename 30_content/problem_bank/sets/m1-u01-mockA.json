@@ -1,0 +1,32 @@
+{
+  "id": "m1-u01-mockA",
+  "kind": "mock",
+  "grade": "math1",
+  "unit": 1,
+  "unit_name": "소인수분해",
+  "title": "소인수분해 모의 A",
+  "subtitle": "7유형 전체에서 유형마다 기본·보통 1문항씩 · 14문항",
+  "bank": "math1/u01/practice.json",
+  "misconceptions": "misconceptions/math1_u01.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "time_min": 25,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "pick": {
+    "quota": {
+      "L": 1,
+      "M": 1
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "m1-u01-t1",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 1,
+  "unit_name": "소인수분해",
+  "title": "소수와 합성수",
+  "subtitle": "유형 1 · 소수의 뜻 · 합성수 판별 · 에라토스테네스의 체 · 9문항",
+  "bank": "math1/u01/practice.json",
+  "misconceptions": "misconceptions/math1_u01.json",
+  "types": [
+    1
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

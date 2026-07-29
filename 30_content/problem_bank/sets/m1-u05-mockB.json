@@ -1,0 +1,16 @@
+{
+  "id": "m1-u05-mockB",
+  "kind": "mock",
+  "grade": "math1",
+  "unit": 5,
+  "unit_name": "좌표와 그래프",
+  "title": "좌표와 그래프 모의 B",
+  "subtitle": "유형 1~7 · 시험 대비 (보통 + 도전)",
+  "bank": "math1/u05/practice.json",
+  "misconceptions": "misconceptions/math1_u05.json",
+  "types": [1, 2, 3, 4, 5, 6, 7],
+  "pick": {"quota": {"M": 1, "H": 1}},
+  "time_min": 35,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

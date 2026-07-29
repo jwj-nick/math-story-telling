@@ -1,0 +1,22 @@
+{
+  "id": "m2-u04-a",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 4,
+  "unit_name": "연립일차방정식",
+  "title": "연립방정식의 뜻과 가감법",
+  "subtitle": "미지수가 2개인 일차방정식의 해 · 연립방정식과 그 해 · 가감법",
+  "bank": "math2/u04/practice.json",
+  "misconceptions": "misconceptions/math2_u04.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

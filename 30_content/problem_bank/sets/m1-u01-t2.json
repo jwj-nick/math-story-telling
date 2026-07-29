@@ -1,0 +1,20 @@
+{
+  "id": "m1-u01-t2",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 1,
+  "unit_name": "소인수분해",
+  "title": "거듭제곱 표기와 계산",
+  "subtitle": "유형 2 · 밑과 지수 · 거듭제곱으로 나타내기 · 크기 비교 · 9문항",
+  "bank": "math1/u01/practice.json",
+  "misconceptions": "misconceptions/math1_u01.json",
+  "types": [
+    2
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

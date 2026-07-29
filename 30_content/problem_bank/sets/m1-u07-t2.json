@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 7,
+  "unit_name": "기본 도형",
+  "bank": "math1/u07/practice.json",
+  "misconceptions": "misconceptions/math1_u07.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u07-t2",
+  "kind": "type-set",
+  "title": "선분 길이의 합·중점",
+  "subtitle": "중점으로 반 나누기 · 점의 순서 보고 더하고 빼기 · 기본 3 · 보통 3 · 도전 3",
+  "types": [
+    2
+  ],
+  "time_min": 20
+}

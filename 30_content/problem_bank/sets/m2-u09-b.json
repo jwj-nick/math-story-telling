@@ -1,0 +1,22 @@
+{
+  "id": "m2-u09-b",
+  "kind": "type-set",
+  "grade": "math2",
+  "unit": 9,
+  "unit_name": "도형의 닮음",
+  "title": "평행선 · 무게중심 · 넓이비",
+  "subtitle": "평행선과 선분의 비 · 삼각형의 무게중심 · 닮음비와 넓이비",
+  "bank": "math2/u09/practice.json",
+  "misconceptions": "misconceptions/math2_u09.json",
+  "types": [
+    4,
+    5,
+    6
+  ],
+  "time_min": 18,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

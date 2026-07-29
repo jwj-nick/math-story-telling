@@ -1,0 +1,15 @@
+{
+  "id": "m1-u05-t4",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 5,
+  "unit_name": "좌표와 그래프",
+  "title": "대칭점·평행이동",
+  "subtitle": "유형 4 · x축·y축·원점 대칭 · 평행이동 · 거꾸로 되돌리기",
+  "bank": "math1/u05/practice.json",
+  "misconceptions": "misconceptions/math1_u05.json",
+  "types": [4],
+  "time_min": 25,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

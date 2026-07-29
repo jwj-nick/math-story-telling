@@ -1,0 +1,20 @@
+{
+  "id": "m1-u10-t6",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 10,
+  "unit_name": "원과 부채꼴",
+  "title": "호·현·중심각의 관계",
+  "subtitle": "유형 6 — ★ 호·넓이는 정비례, 현은 정비례하지 않는다",
+  "bank": "math1/u10/practice.json",
+  "misconceptions": "misconceptions/math1_u10.json",
+  "types": [
+    6
+  ],
+  "time_min": 18,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,20 @@
+{
+  "grade": "math1",
+  "unit": 3,
+  "unit_name": "문자와 식",
+  "bank": "math1/u03/practice.json",
+  "misconceptions": "misconceptions/math1_u03.json",
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2,
+  "id": "m1-u03-t3",
+  "kind": "type-set",
+  "title": "식의 값",
+  "subtitle": "유형 3 · 문자 자리에 수 대입하기 · 음수와 분수의 대입 · 괄호와 거듭제곱의 밑",
+  "types": [
+    3
+  ],
+  "time_min": 22
+}

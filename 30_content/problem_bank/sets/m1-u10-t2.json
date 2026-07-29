@@ -1,0 +1,20 @@
+{
+  "id": "m1-u10-t2",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 10,
+  "unit_name": "원과 부채꼴",
+  "title": "원의 둘레와 넓이",
+  "subtitle": "유형 2 — 2πr 과 πr² 적용·거꾸로 구하기·반원·도넛",
+  "bank": "math1/u10/practice.json",
+  "misconceptions": "misconceptions/math1_u10.json",
+  "types": [
+    2
+  ],
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

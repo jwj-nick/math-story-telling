@@ -1,0 +1,1447 @@
+{
+  "meta": {
+    "grade": "math1",
+    "unit": 13,
+    "unit_name": "자료의 정리와 해석",
+    "generation": "C",
+    "source": "40_grades/middle/math1/13_자료의정리와해석/problems",
+    "extracted": "2026-07-29",
+    "extractor": "70_tools/print/extract_gen_ac.py",
+    "review": "draft",
+    "notation": "html-table+sup",
+    "note": "answer_atoms 는 원본 .panel .ans 값 그대로. 절대 손으로 고치지 않는다. 원본의 줄기와 잎 그림·도수분포표는 공백 줄맞춤(div.stemleaf)이라 2단 지면에서 깨지므로 stem_print 안에서 HTML <table>(thead 포함)로 다시 짰다. 한 자료를 여러 문항이 쓰는 경우 각 문항이 자립하도록 표·자료·그림을 반복해서 실었다."
+  },
+  "types": [
+    {
+      "no": 1,
+      "title": "줄기와 잎 그림",
+      "principle": "잎을 <b>모두 센 개수</b>가 자료의 개수예요. 줄기는 앞자리, 잎은 남은 한 자리를 나타내고, 같은 값이 여러 번 나오면 잎도 그만큼 여러 번 적어요.",
+      "problems": [
+        {
+          "id": "m1-u13-t01-01",
+          "level": "L",
+          "stem_src": "줄기 │ 잎 ─────┼──────── 2 │ 1 4 7 3 │ 0 2 5 8 9 4 │ 1 3 전체 자료의 개수는?",
+          "stem_print": "다음은 어느 모둠 학생들의 기록을 나타낸 줄기와 잎 그림이다.<table><thead><tr><th class=\"c\" style=\"width:26%\">줄기</th><th>잎</th></tr></thead><tbody><tr><td class=\"c\">2</td><td>1 &nbsp;4 &nbsp;7</td></tr><tr><td class=\"c\">3</td><td>0 &nbsp;2 &nbsp;5 &nbsp;8 &nbsp;9</td></tr><tr><td class=\"c\">4</td><td>1 &nbsp;3</td></tr></tbody></table><div style=\"font-size:8.6pt;color:#666;margin:2px 0 4px\">(줄기 2, 잎 1 은 21 을 나타내요)</div>전체 자료의 개수를 구하시오.",
+          "answer_atoms": [
+            "10개"
+          ],
+          "answer_print": "10개",
+          "answer_accept": [
+            "10"
+          ],
+          "answer_unit": null,
+          "answer_format": "자료의 개수를 수로 (단위 개까지 붙여서)",
+          "figure": null,
+          "hint": "줄기의 수가 아니라 <b>잎</b>을 모두 세어 보아요.",
+          "solution": "줄기 2 의 잎 3개, 줄기 3 의 잎 5개, 줄기 4 의 잎 2개 → 3 + 5 + 2 = 10개예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.leaf-count"
+          ]
+        },
+        {
+          "id": "m1-u13-t01-02",
+          "level": "L",
+          "stem_src": "L1의 자료에서 가장 큰 값 은?",
+          "stem_print": "다음 줄기와 잎 그림에서 <b>가장 큰 값</b>을 구하시오.<table><thead><tr><th class=\"c\" style=\"width:26%\">줄기</th><th>잎</th></tr></thead><tbody><tr><td class=\"c\">2</td><td>1 &nbsp;4 &nbsp;7</td></tr><tr><td class=\"c\">3</td><td>0 &nbsp;2 &nbsp;5 &nbsp;8 &nbsp;9</td></tr><tr><td class=\"c\">4</td><td>1 &nbsp;3</td></tr></tbody></table><div style=\"font-size:8.6pt;color:#666;margin:2px 0 4px\">(줄기 2, 잎 1 은 21 을 나타내요)</div>",
+          "answer_atoms": [
+            "43"
+          ],
+          "answer_print": "43",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "줄기가 가장 큰 줄로 간 다음, 그 줄에서 가장 큰 잎을 찾아 줄기와 붙여 읽어요.",
+          "solution": "줄기 4 의 잎 중 가장 큰 것은 3 이에요. 줄기 4 와 잎 3 을 붙여 읽으면 43 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.stem-leaf-read"
+          ]
+        },
+        {
+          "id": "m1-u13-t01-03",
+          "level": "L",
+          "stem_src": "다음 자료를 줄기와 잎 그림으로 나타낼 때, 줄기 5 의 잎의 개수는? 자료: 51, 53, 58, 47, 49, 50, 55, 62, 47, 56",
+          "stem_print": "다음 자료를 줄기와 잎 그림으로 나타낼 때, <b>줄기 5</b> 에 놓이는 잎의 개수를 구하시오.<div style=\"background:#f7f8fa;border:1px solid #e2e5ec;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10pt\">51, 53, 58, 47, 49, 50, 55, 62, 47, 56</div>",
+          "answer_atoms": [
+            "6개"
+          ],
+          "answer_print": "6개",
+          "answer_accept": [
+            "6"
+          ],
+          "answer_unit": null,
+          "answer_format": "잎의 개수를 수로 (단위 개까지 붙여서)",
+          "figure": null,
+          "hint": "줄기 5 는 50 이상 60 미만인 값이에요. 50 번대 값을 모두 찾아 보아요.",
+          "solution": "50 이상 60 미만인 값은 51, 53, 58, 50, 55, 56 이에요. 모두 6개예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.stem-leaf-read"
+          ]
+        },
+        {
+          "id": "m1-u13-t01-04",
+          "level": "M",
+          "stem_src": "줄기 │ 잎 ─────┼───────── 5 │ 2 5 8 6 │ 0 1 4 7 9 7 │ 3 5 6 8 8 │ 0 2 70 이상 80 미만 인 자료는 몇 개인가?",
+          "stem_print": "다음은 어느 반 학생들의 점수를 나타낸 줄기와 잎 그림이다.<table><thead><tr><th class=\"c\" style=\"width:26%\">줄기</th><th>잎</th></tr></thead><tbody><tr><td class=\"c\">5</td><td>2 &nbsp;5 &nbsp;8</td></tr><tr><td class=\"c\">6</td><td>0 &nbsp;1 &nbsp;4 &nbsp;7 &nbsp;9</td></tr><tr><td class=\"c\">7</td><td>3 &nbsp;5 &nbsp;6 &nbsp;8</td></tr><tr><td class=\"c\">8</td><td>0 &nbsp;2</td></tr></tbody></table><div style=\"font-size:8.6pt;color:#666;margin:2px 0 4px\">(줄기 5, 잎 2 는 52 를 나타내요)</div>점수가 <b>70점 이상 80점 미만</b>인 학생은 몇 명인지 구하시오.",
+          "answer_atoms": [
+            "4개"
+          ],
+          "answer_print": "4개",
+          "answer_accept": [
+            "4",
+            "4명"
+          ],
+          "answer_unit": null,
+          "answer_format": "자료의 개수를 수로 (단위 개까지 붙여서)",
+          "figure": null,
+          "hint": "70점 이상 80점 미만은 줄기 7 인 줄이에요. 그 줄의 잎을 세어 보아요.",
+          "solution": "줄기 7 의 잎은 3, 5, 6, 8 이에요. 73, 75, 76, 78 → 4개예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.leaf-count",
+            "stat.boundary-inclusive"
+          ]
+        },
+        {
+          "id": "m1-u13-t01-05",
+          "level": "M",
+          "stem_src": "M1의 자료에서 중앙값 (작은 순으로 정렬한 가운데 값)은? (자료 개수가 짝수일 때는 가운데 두 값의 평균)",
+          "stem_print": "다음 줄기와 잎 그림의 자료를 작은 값부터 크기순으로 늘어놓았을 때 <b>한가운데 있는 값</b>을 구하시오. (자료의 개수가 짝수이면 가운데 두 값의 평균으로 한다.)<table><thead><tr><th class=\"c\" style=\"width:26%\">줄기</th><th>잎</th></tr></thead><tbody><tr><td class=\"c\">5</td><td>2 &nbsp;5 &nbsp;8</td></tr><tr><td class=\"c\">6</td><td>0 &nbsp;1 &nbsp;4 &nbsp;7 &nbsp;9</td></tr><tr><td class=\"c\">7</td><td>3 &nbsp;5 &nbsp;6 &nbsp;8</td></tr><tr><td class=\"c\">8</td><td>0 &nbsp;2</td></tr></tbody></table><div style=\"font-size:8.6pt;color:#666;margin:2px 0 4px\">(줄기 5, 잎 2 는 52 를 나타내요)</div>",
+          "answer_atoms": [
+            "68"
+          ],
+          "answer_print": "68",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "전체 개수는 3 + 5 + 4 + 2 = 14개예요. 14개의 한가운데는 7번째와 8번째 값이에요.",
+          "solution": "크기순으로 늘어놓으면 52, 55, 58, 60, 61, 64, 67, 69, 73, 75, 76, 78, 80, 82 예요.<br>7번째는 67, 8번째는 69 이므로 (67 + 69) ÷ 2 = 68 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.stem-leaf-read",
+            "stat.leaf-count"
+          ]
+        },
+        {
+          "id": "m1-u13-t01-06",
+          "level": "M",
+          "stem_src": "다음 자료를 줄기와 잎 그림으로 나타낼 때, 가장 도수가 많은 줄기 는? 자료: 23, 32, 35, 28, 41, 36, 33, 27, 45, 38, 31, 29, 34, 39",
+          "stem_print": "다음 자료를 줄기와 잎 그림으로 나타낼 때, <b>잎이 가장 많은 줄기</b>를 구하시오.<div style=\"background:#f7f8fa;border:1px solid #e2e5ec;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10pt\">23, 32, 35, 28, 41, 36, 33, 27, 45, 38, 31, 29, 34, 39</div>",
+          "answer_atoms": [
+            "줄기 3"
+          ],
+          "answer_print": "줄기 3",
+          "answer_accept": [
+            "3"
+          ],
+          "answer_unit": null,
+          "answer_format": "줄기의 숫자를 '줄기 3' 과 같은 꼴로",
+          "figure": null,
+          "hint": "20번대, 30번대, 40번대가 각각 몇 개인지 세어 보아요.",
+          "solution": "20번대: 23, 28, 27, 29 → 4개<br>30번대: 32, 35, 36, 33, 38, 31, 34, 39 → 8개<br>40번대: 41, 45 → 2개<br>잎이 가장 많은 줄기는 줄기 3 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.leaf-count"
+          ]
+        },
+        {
+          "id": "m1-u13-t01-07",
+          "level": "H",
+          "stem_src": "두 반 A, B의 점수를 등-줄기 잎 그림으로 나타냈다. A반 │ 줄기 │ B반 8 5 2 │ 6 │ 1 4 7 6 4 1 │ 7 │ 0 3 5 8 5 2 │ 8 │ 2 4 6 9 3 │ 9 │ 1 5 A반의 자료 개수와 B반의 자료 개수의 합은?",
+          "stem_print": "다음은 두 반 A, B 의 점수를 하나의 줄기에 마주 보게 나타낸 그림이다.<table><thead><tr><th style=\"text-align:right\">A반 (잎)</th><th class=\"c\" style=\"width:22%\">줄기</th><th>B반 (잎)</th></tr></thead><tbody><tr><td style=\"text-align:right\">8 &nbsp;5 &nbsp;2</td><td class=\"c\">6</td><td>1 &nbsp;4</td></tr><tr><td style=\"text-align:right\">7 &nbsp;6 &nbsp;4 &nbsp;1</td><td class=\"c\">7</td><td>0 &nbsp;3 &nbsp;5 &nbsp;8</td></tr><tr><td style=\"text-align:right\">5 &nbsp;2</td><td class=\"c\">8</td><td>2 &nbsp;4 &nbsp;6 &nbsp;9</td></tr><tr><td style=\"text-align:right\">3</td><td class=\"c\">9</td><td>1 &nbsp;5</td></tr></tbody></table><div style=\"font-size:8.6pt;color:#666;margin:2px 0 4px\">(줄기에서 바깥쪽으로 읽어요. A반 줄기 6 의 잎 2 는 62점, B반 줄기 6 의 잎 1 은 61점)</div>A반의 자료 개수와 B반의 자료 개수의 <b>합</b>을 구하시오.",
+          "answer_atoms": [
+            "22명"
+          ],
+          "answer_print": "22명",
+          "answer_accept": [
+            "22"
+          ],
+          "answer_unit": null,
+          "answer_format": "학생 수를 수로 (단위 명까지 붙여서)",
+          "figure": null,
+          "hint": "A반의 잎과 B반의 잎을 각각 따로 모두 세어요.",
+          "solution": "A반: 3 + 4 + 2 + 1 = 10명<br>B반: 2 + 4 + 4 + 2 = 12명<br>합은 10 + 12 = 22명이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.leaf-count"
+          ]
+        },
+        {
+          "id": "m1-u13-t01-08",
+          "level": "H",
+          "stem_src": "H1의 등-줄기 잎 그림에서 점수가 80점 이상 인 학생은 A반과 B반에서 각각 몇 명인가?",
+          "stem_print": "다음 그림에서 <b>점수가 80점 이상</b>인 학생은 A반과 B반에서 각각 몇 명인지 구하시오.<table><thead><tr><th style=\"text-align:right\">A반 (잎)</th><th class=\"c\" style=\"width:22%\">줄기</th><th>B반 (잎)</th></tr></thead><tbody><tr><td style=\"text-align:right\">8 &nbsp;5 &nbsp;2</td><td class=\"c\">6</td><td>1 &nbsp;4</td></tr><tr><td style=\"text-align:right\">7 &nbsp;6 &nbsp;4 &nbsp;1</td><td class=\"c\">7</td><td>0 &nbsp;3 &nbsp;5 &nbsp;8</td></tr><tr><td style=\"text-align:right\">5 &nbsp;2</td><td class=\"c\">8</td><td>2 &nbsp;4 &nbsp;6 &nbsp;9</td></tr><tr><td style=\"text-align:right\">3</td><td class=\"c\">9</td><td>1 &nbsp;5</td></tr></tbody></table><div style=\"font-size:8.6pt;color:#666;margin:2px 0 4px\">(줄기에서 바깥쪽으로 읽어요. A반 줄기 6 의 잎 2 는 62점, B반 줄기 6 의 잎 1 은 61점)</div>",
+          "answer_atoms": [
+            "A반 3명, B반 6명"
+          ],
+          "answer_print": "A반 3명, B반 6명",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "'A반 ○명, B반 ○명' 꼴로",
+          "figure": null,
+          "hint": "80점 이상이면 줄기 8 뿐 아니라 줄기 9 도 함께 세어야 해요.",
+          "solution": "A반은 줄기 8 에 2명(85, 82), 줄기 9 에 1명(93) → 3명이에요.<br>B반은 줄기 8 에 4명(82, 84, 86, 89), 줄기 9 에 2명(91, 95) → 6명이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.cumulative-band",
+            "stat.stem-leaf-read"
+          ]
+        },
+        {
+          "id": "m1-u13-t01-09",
+          "level": "H",
+          "stem_src": "H1에서 두 반 중 어느 반의 점수가 전체적으로 더 높다고 볼 수 있는가? 이유와 함께 설명하시오.",
+          "stem_print": "다음 그림에서 두 반 중 <b>어느 반의 점수가 전체적으로 더 높다고 볼 수 있는지</b> 쓰고, 그렇게 판단한 까닭을 한 문장으로 쓰시오.<table><thead><tr><th style=\"text-align:right\">A반 (잎)</th><th class=\"c\" style=\"width:22%\">줄기</th><th>B반 (잎)</th></tr></thead><tbody><tr><td style=\"text-align:right\">8 &nbsp;5 &nbsp;2</td><td class=\"c\">6</td><td>1 &nbsp;4</td></tr><tr><td style=\"text-align:right\">7 &nbsp;6 &nbsp;4 &nbsp;1</td><td class=\"c\">7</td><td>0 &nbsp;3 &nbsp;5 &nbsp;8</td></tr><tr><td style=\"text-align:right\">5 &nbsp;2</td><td class=\"c\">8</td><td>2 &nbsp;4 &nbsp;6 &nbsp;9</td></tr><tr><td style=\"text-align:right\">3</td><td class=\"c\">9</td><td>1 &nbsp;5</td></tr></tbody></table><div style=\"font-size:8.6pt;color:#666;margin:2px 0 4px\">(줄기에서 바깥쪽으로 읽어요. A반 줄기 6 의 잎 2 는 62점, B반 줄기 6 의 잎 1 은 61점)</div>",
+          "answer_atoms": [
+            "B반"
+          ],
+          "answer_print": "B반",
+          "answer_accept": [
+            "B반 (80점 이상인 학생의 비율이 더 높아요)",
+            "B반 (줄기 8, 9 쪽에 잎이 더 많이 모여 있어요)"
+          ],
+          "answer_unit": null,
+          "answer_format": "반 이름을 'B반' 과 같은 꼴로 쓰고, 까닭을 한 문장으로",
+          "figure": null,
+          "hint": "잎이 어느 쪽 줄기에 몰려 있는지, 그리고 80점 이상인 학생의 <b>비율</b>이 어느 쪽이 큰지 보아요.",
+          "solution": "A반은 줄기 6, 7 에 잎이 몰려 있고, B반은 줄기 7, 8, 9 에 고르게 퍼져 있어요.<br>80점 이상인 학생의 비율은 A반 3 ÷ 10 = 0.3, B반 6 ÷ 12 = 0.5 예요. 그래서 B반이 더 높아요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.compare-raw-freq"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "도수분포표의 기본",
+      "principle": "(계급의 크기) = 두 끝값의 차이, (계급값) = <span class=\"frac\"><b>두 끝값의 합</b><i>2</i></span> 이에요. '이상'은 그 값을 포함하고 '미만'은 포함하지 않아요.",
+      "problems": [
+        {
+          "id": "m1-u13-t02-01",
+          "level": "L",
+          "stem_src": "\"40 이상 50 미만\" 계급의 계급값 은?",
+          "stem_print": "어느 반 학생들의 점수를 정리한 도수분포표에서 '40점 이상 50점 미만' 계급의 <b>계급값</b>을 구하시오.",
+          "answer_atoms": [
+            "45"
+          ],
+          "answer_print": "45",
+          "answer_accept": [],
+          "answer_unit": "점",
+          "answer_format": "계급값을 수로 (단위 점)",
+          "figure": null,
+          "hint": "계급값은 계급의 두 끝값의 한가운데 값이에요.",
+          "solution": "(40 + 50) ÷ 2 = 45 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.classvalue-endpoint"
+          ]
+        },
+        {
+          "id": "m1-u13-t02-02",
+          "level": "L",
+          "stem_src": "도수분포표의 모든 계급은 크기가 같게 설정한다. 다음 중 계급의 크기가 $20$인 것은? ① 0이상 10미만 ② 0이상 20미만 ③ 10이상 25미만 ④ 30이상 45미만",
+          "stem_print": "도수분포표의 계급은 모두 크기가 같게 정한다. 다음 ①~④ 중 <b>계급의 크기가 20</b> 인 것을 골라 번호를 쓰시오.<br>① 0 이상 10 미만 &nbsp;&nbsp; ② 0 이상 20 미만 &nbsp;&nbsp; ③ 10 이상 25 미만 &nbsp;&nbsp; ④ 30 이상 45 미만",
+          "answer_atoms": [
+            "②"
+          ],
+          "answer_print": "②",
+          "answer_accept": [
+            "2"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호를 ①~④ 중 하나의 꼴로",
+          "figure": null,
+          "hint": "계급의 크기는 (위 끝값) − (아래 끝값) 이에요.",
+          "solution": "① 10 − 0 = 10, ② 20 − 0 = 20, ③ 25 − 10 = 15, ④ 45 − 30 = 15 예요. 크기가 20 인 것은 ② 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.class-words"
+          ]
+        },
+        {
+          "id": "m1-u13-t02-03",
+          "level": "L",
+          "stem_src": "계급(점) 도수 50~60 3 60~70 8 70~80 10 80~90 ? 90~100 4 합계 30 빈칸의 도수는?",
+          "stem_print": "다음 도수분포표에서 <b>물음표에 알맞은 도수</b>를 구하시오.<table><thead><tr><th>계급 (점)</th><th class=\"c\" style=\"width:30%\">도수 (명)</th></tr></thead><tbody><tr><td>50 이상 ~ 60 미만</td><td class=\"c\">3</td></tr><tr><td>60 이상 ~ 70 미만</td><td class=\"c\">8</td></tr><tr><td>70 이상 ~ 80 미만</td><td class=\"c\">10</td></tr><tr><td>80 이상 ~ 90 미만</td><td class=\"c\">?</td></tr><tr><td>90 이상 ~ 100 미만</td><td class=\"c\">4</td></tr><tr><td><b>합계</b></td><td class=\"c\"><b>30</b></td></tr></tbody></table>",
+          "answer_atoms": [
+            "5명"
+          ],
+          "answer_print": "5명",
+          "answer_accept": [
+            "5"
+          ],
+          "answer_unit": null,
+          "answer_format": "도수를 수로 (단위 명까지 붙여서)",
+          "figure": null,
+          "hint": "도수를 모두 더하면 합계가 되어요. 합계에서 나머지 도수를 빼 보아요.",
+          "solution": "30 − (3 + 8 + 10 + 4) = 30 − 25 = 5명이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.freq-sum"
+          ]
+        },
+        {
+          "id": "m1-u13-t02-04",
+          "level": "M",
+          "stem_src": "점수가 정확히 80점 인 학생은 다음 두 계급 중 어느 쪽에 속하는가? ① 70 이상 80 미만 &nbsp; ② 80 이상 90 미만",
+          "stem_print": "점수가 정확히 <b>80점</b>인 학생은 다음 두 계급 중 어느 쪽에 속하는지 번호를 쓰고, 그 까닭을 '이상', '미만' 이라는 말을 넣어 한 문장으로 쓰시오.<br>① 70 이상 80 미만 &nbsp;&nbsp; ② 80 이상 90 미만",
+          "answer_atoms": [
+            "②"
+          ],
+          "answer_print": "② (80 이상 90 미만)",
+          "answer_accept": [
+            "②",
+            "2"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호를 ① 또는 ② 의 꼴로 쓰고, 까닭을 한 문장으로",
+          "figure": null,
+          "hint": "'미만'은 그 값을 포함하지 않고, '이상'은 그 값을 포함해요.",
+          "solution": "① 은 '80 미만' 이므로 80 은 들어가지 않아요. ② 는 '80 이상' 이므로 80 이 들어가요. 그래서 80점은 ② 에 속해요. 시험에 자주 나오는 자리예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.boundary-inclusive"
+          ]
+        },
+        {
+          "id": "m1-u13-t02-05",
+          "level": "M",
+          "stem_src": "계급(점) 도수 50~60 3 60~70 8 70~80 12 80~90 5 90~100 2 합계 30 점수가 70점 이상 인 학생은 몇 명인가?",
+          "stem_print": "다음 도수분포표에서 <b>점수가 70점 이상</b>인 학생은 몇 명인지 구하시오.<table><thead><tr><th>계급 (점)</th><th class=\"c\" style=\"width:30%\">도수 (명)</th></tr></thead><tbody><tr><td>50 이상 ~ 60 미만</td><td class=\"c\">3</td></tr><tr><td>60 이상 ~ 70 미만</td><td class=\"c\">8</td></tr><tr><td>70 이상 ~ 80 미만</td><td class=\"c\">12</td></tr><tr><td>80 이상 ~ 90 미만</td><td class=\"c\">5</td></tr><tr><td>90 이상 ~ 100 미만</td><td class=\"c\">2</td></tr><tr><td><b>합계</b></td><td class=\"c\"><b>30</b></td></tr></tbody></table>",
+          "answer_atoms": [
+            "19명"
+          ],
+          "answer_print": "19명",
+          "answer_accept": [
+            "19"
+          ],
+          "answer_unit": null,
+          "answer_format": "학생 수를 수로 (단위 명까지 붙여서)",
+          "figure": null,
+          "hint": "'70점 이상' 은 70점보다 위에 있는 계급을 <b>모두</b> 포함해요.",
+          "solution": "12 + 5 + 2 = 19명이에요. 한 계급만 세지 않도록 조심해요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.cumulative-band",
+            "stat.boundary-inclusive"
+          ]
+        },
+        {
+          "id": "m1-u13-t02-06",
+          "level": "M",
+          "stem_src": "M2의 표에서 도수가 가장 큰 계급의 계급값 은?",
+          "stem_print": "다음 도수분포표에서 <b>도수가 가장 큰 계급의 계급값</b>을 구하시오.<table><thead><tr><th>계급 (점)</th><th class=\"c\" style=\"width:30%\">도수 (명)</th></tr></thead><tbody><tr><td>50 이상 ~ 60 미만</td><td class=\"c\">3</td></tr><tr><td>60 이상 ~ 70 미만</td><td class=\"c\">8</td></tr><tr><td>70 이상 ~ 80 미만</td><td class=\"c\">12</td></tr><tr><td>80 이상 ~ 90 미만</td><td class=\"c\">5</td></tr><tr><td>90 이상 ~ 100 미만</td><td class=\"c\">2</td></tr><tr><td><b>합계</b></td><td class=\"c\"><b>30</b></td></tr></tbody></table>",
+          "answer_atoms": [
+            "75"
+          ],
+          "answer_print": "75",
+          "answer_accept": [],
+          "answer_unit": "점",
+          "answer_format": "계급값을 수로 (단위 점)",
+          "figure": null,
+          "hint": "먼저 도수가 가장 큰 계급을 찾고, 그 계급의 계급값을 구해요. 도수를 답으로 쓰지 않도록 조심해요.",
+          "solution": "도수가 가장 큰 계급은 도수 12 인 70 이상 80 미만이에요. 계급값은 (70 + 80) ÷ 2 = 75 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.classvalue-endpoint",
+            "stat.class-words"
+          ]
+        },
+        {
+          "id": "m1-u13-t02-07",
+          "level": "H",
+          "stem_src": "계급 도수 10~14 2 14~18 ? 18~22 9 22~26 3 합계 ? \"14 이상 18 미만\" 계급의 도수가 전체의 30% 일 때, 그 도수와 전체 도수를 각각 구하시오.",
+          "stem_print": "다음 도수분포표에서 '14 이상 18 미만' 계급의 도수가 전체 도수의 <b>30 %</b> 일 때, 전체 도수와 <b>빈칸의 도수</b>를 각각 구하시오.<table><thead><tr><th>계급 (회)</th><th class=\"c\" style=\"width:30%\">도수 (명)</th></tr></thead><tbody><tr><td>10 이상 ~ 14 미만</td><td class=\"c\">2</td></tr><tr><td>14 이상 ~ 18 미만</td><td class=\"c\">?</td></tr><tr><td>18 이상 ~ 22 미만</td><td class=\"c\">9</td></tr><tr><td>22 이상 ~ 26 미만</td><td class=\"c\">3</td></tr><tr><td><b>합계</b></td><td class=\"c\"><b>?</b></td></tr></tbody></table>",
+          "answer_atoms": [
+            "전체 20명, 빈칸 도수 6명"
+          ],
+          "answer_print": "전체 20명, 빈칸 도수 6명",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "'전체 ○명, 빈칸 도수 ○명' 꼴로",
+          "figure": null,
+          "hint": "전체 도수를 <i>N</i> 이라 하면 빈칸의 도수는 0.3 × <i>N</i> 이에요. 도수를 모두 더하면 <i>N</i> 이 되어요.",
+          "solution": "2 + 0.3<i>N</i> + 9 + 3 = <i>N</i> → 14 + 0.3<i>N</i> = <i>N</i> → 14 = 0.7<i>N</i> → <i>N</i> = 20 이에요.<br>빈칸의 도수는 0.3 × 20 = 6 이에요. 검산하면 2 + 6 + 9 + 3 = 20 으로 맞아요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.freq-sum",
+            "stat.rel-as-percent"
+          ]
+        },
+        {
+          "id": "m1-u13-t02-08",
+          "level": "H",
+          "stem_src": "어떤 도수분포표에서 도수가 가장 큰 계급의 도수가 15 , 도수가 가장 작은 계급의 도수가 3 이다. 두 계급의 도수의 비를 가장 간단한 자연수의 비로 나타내시오.",
+          "stem_print": "어떤 도수분포표에서 도수가 가장 큰 계급의 도수는 15, 도수가 가장 작은 계급의 도수는 3 이다. 두 계급의 도수의 비를 가장 간단한 자연수의 비로 나타내시오.",
+          "answer_atoms": [
+            "$5 : 1$"
+          ],
+          "answer_print": "5 : 1",
+          "answer_accept": [
+            "5:1"
+          ],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 자연수의 비를 'a : b' 꼴로",
+          "figure": null,
+          "hint": "두 수를 최대공약수로 나누어 보아요.",
+          "solution": "15 와 3 의 최대공약수는 3 이에요. 15 ÷ 3 = 5, 3 ÷ 3 = 1 이므로 5 : 1 이에요.",
+          "work_space": "lg",
+          "misconceptions": []
+        },
+        {
+          "id": "m1-u13-t02-09",
+          "level": "H",
+          "stem_src": "계급(분) 도수 0~10 4 10~20 $a$ 20~30 $b$ 30~40 3 합계 25 \"10 이상 20 미만\"의 도수가 \"20 이상 30 미만\"의 도수의 2배일 때 $a, b$를 구하시오.",
+          "stem_print": "다음 도수분포표에서 '10 이상 20 미만' 의 도수가 '20 이상 30 미만' 의 도수의 <b>2배</b>일 때, <i>a</i>, <i>b</i> 의 값을 각각 구하시오.<table><thead><tr><th>계급 (분)</th><th class=\"c\" style=\"width:30%\">도수 (명)</th></tr></thead><tbody><tr><td>0 이상 ~ 10 미만</td><td class=\"c\">4</td></tr><tr><td>10 이상 ~ 20 미만</td><td class=\"c\"><i>a</i></td></tr><tr><td>20 이상 ~ 30 미만</td><td class=\"c\"><i>b</i></td></tr><tr><td>30 이상 ~ 40 미만</td><td class=\"c\">3</td></tr><tr><td><b>합계</b></td><td class=\"c\"><b>25</b></td></tr></tbody></table>",
+          "answer_atoms": [
+            "$a = 12, b = 6$"
+          ],
+          "answer_print": "a = 12, b = 6",
+          "answer_accept": [
+            "a=12, b=6"
+          ],
+          "answer_unit": null,
+          "answer_format": "'a = ○, b = ○' 꼴로 (단위 없음)",
+          "figure": null,
+          "hint": "<i>a</i> = 2<i>b</i> 이고, 도수를 모두 더하면 25 가 되어요.",
+          "solution": "4 + <i>a</i> + <i>b</i> + 3 = 25 이므로 <i>a</i> + <i>b</i> = 18 이에요.<br><i>a</i> = 2<i>b</i> 이므로 3<i>b</i> = 18 → <i>b</i> = 6, <i>a</i> = 12 예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.freq-sum"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "도수분포표 만들기",
+      "principle": "계급은 <b>크기를 모두 같게</b> 하고, 자료의 최솟값과 최댓값이 모두 들어가도록 잡아요. 다 세고 나면 <b>도수의 합 = 자료의 개수</b> 인지 꼭 검산해요.",
+      "problems": [
+        {
+          "id": "m1-u13-t03-01",
+          "level": "L",
+          "stem_src": "자료: 12, 15, 18, 22, 25, 27, 31, 34, 36, 39 계급의 크기 10으로 도수분포표를 만들 때, \"10 이상 20 미만\"의 도수는?",
+          "stem_print": "다음 자료를 계급의 크기를 10 으로 하여 도수분포표로 만들 때, '10 이상 20 미만' 계급의 도수를 구하시오.<div style=\"background:#f7f8fa;border:1px solid #e2e5ec;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10pt\">12, 15, 18, 22, 25, 27, 31, 34, 36, 39</div>",
+          "answer_atoms": [
+            "3개"
+          ],
+          "answer_print": "3개",
+          "answer_accept": [
+            "3"
+          ],
+          "answer_unit": null,
+          "answer_format": "도수를 수로 (단위 개까지 붙여서)",
+          "figure": null,
+          "hint": "10 이상 20 미만이므로 10, 11, …, 19 사이의 값을 찾아요.",
+          "solution": "12, 15, 18 → 3개예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.boundary-inclusive"
+          ]
+        },
+        {
+          "id": "m1-u13-t03-02",
+          "level": "L",
+          "stem_src": "L1 자료에서 \"20 이상 30 미만\"의 도수는?",
+          "stem_print": "다음 자료에서 '20 이상 30 미만' 계급의 도수를 구하시오.<div style=\"background:#f7f8fa;border:1px solid #e2e5ec;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10pt\">12, 15, 18, 22, 25, 27, 31, 34, 36, 39</div>",
+          "answer_atoms": [
+            "3개"
+          ],
+          "answer_print": "3개",
+          "answer_accept": [
+            "3"
+          ],
+          "answer_unit": null,
+          "answer_format": "도수를 수로 (단위 개까지 붙여서)",
+          "figure": null,
+          "hint": "20 번대 값을 찾아요. 30 은 이 계급에 들어가지 않아요.",
+          "solution": "22, 25, 27 → 3개예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.boundary-inclusive"
+          ]
+        },
+        {
+          "id": "m1-u13-t03-03",
+          "level": "L",
+          "stem_src": "L1 자료에서 \"30 이상 40 미만\"의 도수는?",
+          "stem_print": "다음 자료에서 '30 이상 40 미만' 계급의 도수를 구하시오.<div style=\"background:#f7f8fa;border:1px solid #e2e5ec;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10pt\">12, 15, 18, 22, 25, 27, 31, 34, 36, 39</div>",
+          "answer_atoms": [
+            "4개"
+          ],
+          "answer_print": "4개",
+          "answer_accept": [
+            "4"
+          ],
+          "answer_unit": null,
+          "answer_format": "도수를 수로 (단위 개까지 붙여서)",
+          "figure": null,
+          "hint": "30 번대 값을 찾은 뒤, 앞의 두 계급과 더해서 자료의 개수와 같은지 검산해 보아요.",
+          "solution": "31, 34, 36, 39 → 4개예요. 검산하면 3 + 3 + 4 = 10 으로 자료의 개수와 같아요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.freq-sum"
+          ]
+        },
+        {
+          "id": "m1-u13-t03-04",
+          "level": "M",
+          "stem_src": "학생 15명의 통학 시간(분): 15, 22, 30, 18, 25, 35, 12, 40, 28, 17, 33, 26, 20, 38, 14 계급 크기 10으로 도수분포표를 만들 때, \"10이상 20미만\"의 도수는?",
+          "stem_print": "다음은 학생 15명의 통학 시간(분)이다.<div style=\"background:#f7f8fa;border:1px solid #e2e5ec;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10pt\">15, 22, 30, 18, 25, 35, 12, 40, 28, 17, 33, 26, 20, 38, 14</div>계급의 크기를 10분으로 하여 도수분포표를 만들 때, <b>필요한 계급은 모두 몇 개</b>인지 구하시오.",
+          "answer_atoms": [
+            "4개"
+          ],
+          "answer_print": "4개",
+          "answer_accept": [
+            "4"
+          ],
+          "answer_unit": null,
+          "answer_format": "계급의 개수를 수로 (단위 개까지 붙여서)",
+          "figure": null,
+          "hint": "가장 작은 값과 가장 큰 값이 각각 어느 계급에 들어가는지 먼저 찾아 보아요.",
+          "solution": "가장 작은 값은 12, 가장 큰 값은 40 이에요. 12 는 10 이상 20 미만에, 40 은 40 이상 50 미만에 들어가요.<br>10~20, 20~30, 30~40, 40~50 → 계급은 모두 4개예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.class-words",
+            "stat.boundary-inclusive"
+          ],
+          "note": "원본 M1 은 같은 자료에서 \"10 이상 20 미만\" 의 도수를 물으면서 정답을 4개로 적어 두었으나 실제 도수는 5개(15, 18, 12, 17, 14). answer_atoms 는 고칠 수 없으므로 같은 자료에서 답이 4개가 되는 요구(계급의 개수)로 발문을 바꿨다. 원본 앱 수정 권고."
+        },
+        {
+          "id": "m1-u13-t03-05",
+          "level": "M",
+          "stem_src": "M1 자료에서 \"30이상 40미만\"의 도수는?",
+          "stem_print": "다음 학생 15명의 통학 시간(분) 자료에서 '30 이상 40 미만' 계급의 도수를 구하시오.<div style=\"background:#f7f8fa;border:1px solid #e2e5ec;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10pt\">15, 22, 30, 18, 25, 35, 12, 40, 28, 17, 33, 26, 20, 38, 14</div>",
+          "answer_atoms": [
+            "4개"
+          ],
+          "answer_print": "4개",
+          "answer_accept": [
+            "4"
+          ],
+          "answer_unit": null,
+          "answer_format": "도수를 수로 (단위 개까지 붙여서)",
+          "figure": null,
+          "hint": "30 번대 값을 찾아요. 40 은 이 계급에 들어가지 않아요.",
+          "solution": "30, 35, 33, 38 → 4개예요. 40 은 40 이상 50 미만 계급으로 가요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.boundary-inclusive"
+          ]
+        },
+        {
+          "id": "m1-u13-t03-06",
+          "level": "M",
+          "stem_src": "M1 자료로 도수분포표를 완성했을 때 합계 는?",
+          "stem_print": "다음 학생 15명의 통학 시간(분) 자료로 도수분포표를 완성했을 때, <b>도수의 합계</b>를 구하시오.<div style=\"background:#f7f8fa;border:1px solid #e2e5ec;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10pt\">15, 22, 30, 18, 25, 35, 12, 40, 28, 17, 33, 26, 20, 38, 14</div>",
+          "answer_atoms": [
+            "15명"
+          ],
+          "answer_print": "15명",
+          "answer_accept": [
+            "15"
+          ],
+          "answer_unit": null,
+          "answer_format": "합계를 수로 (단위 명까지 붙여서)",
+          "figure": null,
+          "hint": "도수를 다 세지 않아도 알 수 있어요. 자료가 몇 개인지 보아요.",
+          "solution": "도수의 합은 언제나 자료의 개수와 같아요. 자료가 15개이므로 합계는 15명이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.freq-sum"
+          ]
+        },
+        {
+          "id": "m1-u13-t03-07",
+          "level": "H",
+          "stem_src": "다음 자료(15개)를 계급 크기 5로 도수분포표를 만들 때, 도수가 가장 큰 계급은? 12, 18, 25, 13, 27, 19, 22, 14, 17, 24, 16, 21, 18, 26, 15",
+          "stem_print": "다음 자료 15개를 계급의 크기 5 로 도수분포표를 만들 때, <b>도수가 가장 큰 계급</b>을 구하시오.<div style=\"background:#f7f8fa;border:1px solid #e2e5ec;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10pt\">12, 18, 25, 13, 27, 19, 22, 14, 17, 24, 16, 21, 18, 26, 15</div>",
+          "answer_atoms": [
+            "15 이상 20 미만"
+          ],
+          "answer_print": "15 이상 20 미만",
+          "answer_accept": [
+            "15~20"
+          ],
+          "answer_unit": null,
+          "answer_format": "계급을 '○ 이상 △ 미만' 꼴로",
+          "figure": null,
+          "hint": "계급을 10~15, 15~20, 20~25, 25~30 으로 잡고 하나씩 세어요. 경계값은 위 계급으로 가요.",
+          "solution": "10 이상 15 미만: 12, 13, 14 → 3개<br>15 이상 20 미만: 18, 19, 17, 16, 18, 15 → 6개<br>20 이상 25 미만: 22, 24, 21 → 3개<br>25 이상 30 미만: 25, 27, 26 → 3개<br>검산하면 3 + 6 + 3 + 3 = 15 로 맞아요. 도수가 가장 큰 계급은 15 이상 20 미만이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.freq-sum",
+            "stat.boundary-inclusive"
+          ]
+        },
+        {
+          "id": "m1-u13-t03-08",
+          "level": "H",
+          "stem_src": "어떤 변량의 최댓값이 89, 최솟값이 12이다. 계급의 크기를 10으로 정하면 최소 몇 개의 계급 이 필요한가?",
+          "stem_print": "어떤 자료의 최댓값이 89, 최솟값이 12 이다. 계급의 크기를 10 으로 정할 때 <b>최소 몇 개의 계급</b>이 필요한지 구하시오.",
+          "answer_atoms": [
+            "8개"
+          ],
+          "answer_print": "8개",
+          "answer_accept": [
+            "8"
+          ],
+          "answer_unit": null,
+          "answer_format": "계급의 개수를 수로 (단위 개까지 붙여서)",
+          "figure": null,
+          "hint": "최솟값이 들어가는 계급부터 최댓값이 들어가는 계급까지 세어 보아요.",
+          "solution": "12 는 10 이상 20 미만에, 89 는 80 이상 90 미만에 들어가요.<br>10~20, 20~30, 30~40, 40~50, 50~60, 60~70, 70~80, 80~90 → 8개예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.class-words"
+          ]
+        },
+        {
+          "id": "m1-u13-t03-09",
+          "level": "H",
+          "stem_src": "도수분포표를 만들 때 다음 중 잘못된 것은? ① 계급의 크기는 모두 같게 한다. ② 자료의 최댓값과 최솟값이 모두 포함되도록 한다. ③ 계급의 개수가 너무 많으면 분포가 잘 안 보이므로 보통 5~15개로 한다. ④ 계급의 경계는 자료의 변량과 같아도 된다 (예: 자료에 80이 있으면 \"70~80\" 경계 사용 무방). ⑤ 도수의 합은 전체 자료의 개수와 같다.",
+          "stem_print": "도수분포표를 만드는 방법에 대한 다음 설명 ①~⑤ 중 <b>옳지 않은 것</b>을 골라 번호를 쓰시오. 옳지 않은 것이 없으면 '모두 옳음' 이라고 쓰시오.<br>① 계급의 크기는 모두 같게 한다.<br>② 자료의 최댓값과 최솟값이 모두 포함되도록 한다.<br>③ 계급의 개수는 보통 5~15 개로 한다.<br>④ 계급의 경계가 자료의 값과 같아도 된다. (예: 자료에 80 이 있어도 '70 이상 80 미만' 을 쓸 수 있다.)<br>⑤ 도수의 합은 전체 자료의 개수와 같다.",
+          "answer_atoms": [
+            "모두 옳음 (실제로는 ④는 권장 안 함)"
+          ],
+          "answer_print": "모두 옳음 (실제로는 ④는 권장 안 함)",
+          "answer_accept": [
+            "모두 옳음",
+            "없음"
+          ],
+          "answer_unit": null,
+          "answer_format": "'모두 옳음' 또는 번호를 ①~⑤ 중 하나의 꼴로",
+          "figure": null,
+          "hint": "④ 는 경계에 놓인 값을 어느 계급으로 보내야 하는지 약속이 있는지 생각해 보아요.",
+          "solution": "①②③⑤ 는 도수분포표의 기본 원칙이에요.<br>④ 도 '이상·미만' 약속을 지키면 80 은 80 이상 90 미만으로 가므로 틀린 말은 아니에요. 다만 실제로는 계급의 경계가 자료의 값과 겹치지 않게 잡는 편을 권해요.<br>그래서 중1 표준 답은 '모두 옳음' 이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.boundary-inclusive"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "히스토그램",
+      "principle": "히스토그램은 가로축에 <b>계급</b>, 세로축에 <b>도수</b>를 나타낸 그래프예요. 막대 하나의 넓이는 (계급의 크기) × (그 계급의 도수) 이고, 전체 넓이는 (계급의 크기) × (도수의 총합) 이에요.",
+      "problems": [
+        {
+          "id": "m1-u13-t04-01",
+          "level": "L",
+          "stem_src": "다음 히스토그램은 학생 20명의 점수 분포다. 도수가 가장 큰 계급 은? 50 60 70 80 90 100 0 2 5 8 4 1 점수",
+          "stem_print": "다음 히스토그램은 학생 20명의 점수 분포를 나타낸 것이다. <b>도수가 가장 큰 계급</b>을 구하시오.",
+          "answer_atoms": [
+            "70 이상 80 미만"
+          ],
+          "answer_print": "70 이상 80 미만",
+          "answer_accept": [
+            "70~80"
+          ],
+          "answer_unit": null,
+          "answer_format": "계급을 '○ 이상 △ 미만' 꼴로",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <rect x=\"50\" y=\"160\" width=\"60\" height=\"20\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"110\" y=\"130\" width=\"60\" height=\"50\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"170\" y=\"100\" width=\"60\" height=\"80\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"230\" y=\"150\" width=\"60\" height=\"30\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"290\" y=\"170\" width=\"60\" height=\"10\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <text x=\"50\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">50</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">60</text>\n        <text x=\"170\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">70</text>\n        <text x=\"230\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">80</text>\n        <text x=\"290\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">90</text>\n        <text x=\"350\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">100</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"42\" y=\"153\" font-size=\"10\" text-anchor=\"end\">4</text>\n        <text x=\"42\" y=\"173\" font-size=\"10\" text-anchor=\"end\">1</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">점수</text>\n      </svg>",
+          "hint": "막대가 가장 높은 곳을 찾은 뒤, 그 막대의 <b>가로 구간</b>을 답으로 써요.",
+          "solution": "도수가 8 로 가장 큰 막대는 70 부터 80 까지예요. 계급은 70 이상 80 미만이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.class-words"
+          ]
+        },
+        {
+          "id": "m1-u13-t04-02",
+          "level": "L",
+          "stem_src": "L1 히스토그램에서 전체 학생 수 는?",
+          "stem_print": "다음 히스토그램에서 <b>전체 학생 수</b>를 구하시오.",
+          "answer_atoms": [
+            "20명"
+          ],
+          "answer_print": "20명",
+          "answer_accept": [
+            "20"
+          ],
+          "answer_unit": null,
+          "answer_format": "학생 수를 수로 (단위 명까지 붙여서)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <rect x=\"50\" y=\"160\" width=\"60\" height=\"20\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"110\" y=\"130\" width=\"60\" height=\"50\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"170\" y=\"100\" width=\"60\" height=\"80\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"230\" y=\"150\" width=\"60\" height=\"30\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"290\" y=\"170\" width=\"60\" height=\"10\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <text x=\"50\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">50</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">60</text>\n        <text x=\"170\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">70</text>\n        <text x=\"230\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">80</text>\n        <text x=\"290\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">90</text>\n        <text x=\"350\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">100</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"42\" y=\"153\" font-size=\"10\" text-anchor=\"end\">4</text>\n        <text x=\"42\" y=\"173\" font-size=\"10\" text-anchor=\"end\">1</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">점수</text>\n      </svg>",
+          "hint": "모든 막대의 도수를 더해요. 도수의 합이 전체 자료의 개수예요.",
+          "solution": "2 + 5 + 8 + 4 + 1 = 20명이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.freq-sum"
+          ]
+        },
+        {
+          "id": "m1-u13-t04-03",
+          "level": "L",
+          "stem_src": "L1 히스토그램의 계급의 크기 는?",
+          "stem_print": "다음 히스토그램의 <b>계급의 크기</b>를 구하시오.",
+          "answer_atoms": [
+            "10"
+          ],
+          "answer_print": "10",
+          "answer_accept": [],
+          "answer_unit": "점",
+          "answer_format": "계급의 크기를 수로 (단위 점)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <rect x=\"50\" y=\"160\" width=\"60\" height=\"20\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"110\" y=\"130\" width=\"60\" height=\"50\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"170\" y=\"100\" width=\"60\" height=\"80\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"230\" y=\"150\" width=\"60\" height=\"30\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"290\" y=\"170\" width=\"60\" height=\"10\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <text x=\"50\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">50</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">60</text>\n        <text x=\"170\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">70</text>\n        <text x=\"230\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">80</text>\n        <text x=\"290\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">90</text>\n        <text x=\"350\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">100</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"42\" y=\"153\" font-size=\"10\" text-anchor=\"end\">4</text>\n        <text x=\"42\" y=\"173\" font-size=\"10\" text-anchor=\"end\">1</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">점수</text>\n      </svg>",
+          "hint": "막대 하나의 가로 폭이 계급의 크기예요.",
+          "solution": "50 에서 60, 60 에서 70, … 모두 가로 폭이 10 이에요. 계급의 크기는 10 점이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.class-words"
+          ]
+        },
+        {
+          "id": "m1-u13-t04-04",
+          "level": "M",
+          "stem_src": "L1 히스토그램에서 점수가 70점 미만인 학생 은 몇 명?",
+          "stem_print": "다음 히스토그램에서 <b>점수가 70점 미만</b>인 학생은 몇 명인지 구하시오.",
+          "answer_atoms": [
+            "7명"
+          ],
+          "answer_print": "7명",
+          "answer_accept": [
+            "7"
+          ],
+          "answer_unit": null,
+          "answer_format": "학생 수를 수로 (단위 명까지 붙여서)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <rect x=\"50\" y=\"160\" width=\"60\" height=\"20\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"110\" y=\"130\" width=\"60\" height=\"50\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"170\" y=\"100\" width=\"60\" height=\"80\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"230\" y=\"150\" width=\"60\" height=\"30\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"290\" y=\"170\" width=\"60\" height=\"10\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <text x=\"50\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">50</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">60</text>\n        <text x=\"170\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">70</text>\n        <text x=\"230\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">80</text>\n        <text x=\"290\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">90</text>\n        <text x=\"350\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">100</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"42\" y=\"153\" font-size=\"10\" text-anchor=\"end\">4</text>\n        <text x=\"42\" y=\"173\" font-size=\"10\" text-anchor=\"end\">1</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">점수</text>\n      </svg>",
+          "hint": "70점 미만이면 70 보다 왼쪽에 있는 막대를 모두 더해요.",
+          "solution": "50 이상 60 미만 2명, 60 이상 70 미만 5명 → 2 + 5 = 7명이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.cumulative-band",
+            "stat.boundary-inclusive"
+          ]
+        },
+        {
+          "id": "m1-u13-t04-05",
+          "level": "M",
+          "stem_src": "L1 히스토그램에서 모든 막대의 넓이의 합 은?",
+          "stem_print": "다음 히스토그램에서 <b>모든 막대의 넓이의 합</b>을 구하시오.",
+          "answer_atoms": [
+            "200"
+          ],
+          "answer_print": "200",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "넓이를 수로 (단위 없음)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <rect x=\"50\" y=\"160\" width=\"60\" height=\"20\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"110\" y=\"130\" width=\"60\" height=\"50\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"170\" y=\"100\" width=\"60\" height=\"80\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"230\" y=\"150\" width=\"60\" height=\"30\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"290\" y=\"170\" width=\"60\" height=\"10\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <text x=\"50\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">50</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">60</text>\n        <text x=\"170\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">70</text>\n        <text x=\"230\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">80</text>\n        <text x=\"290\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">90</text>\n        <text x=\"350\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">100</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"42\" y=\"153\" font-size=\"10\" text-anchor=\"end\">4</text>\n        <text x=\"42\" y=\"173\" font-size=\"10\" text-anchor=\"end\">1</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">점수</text>\n      </svg>",
+          "hint": "막대의 가로는 모두 계급의 크기로 같아요. (계급의 크기) × (도수의 총합) 으로 한 번에 구해 보아요.",
+          "solution": "계급의 크기는 10, 도수의 총합은 20 이므로 10 × 20 = 200 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.hist-area"
+          ]
+        },
+        {
+          "id": "m1-u13-t04-06",
+          "level": "M",
+          "stem_src": "L1에서 도수가 가장 작은 계급의 계급값 은?",
+          "stem_print": "다음 히스토그램에서 <b>도수가 가장 작은 계급의 계급값</b>을 구하시오.",
+          "answer_atoms": [
+            "95"
+          ],
+          "answer_print": "95",
+          "answer_accept": [],
+          "answer_unit": "점",
+          "answer_format": "계급값을 수로 (단위 점)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <rect x=\"50\" y=\"160\" width=\"60\" height=\"20\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"110\" y=\"130\" width=\"60\" height=\"50\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"170\" y=\"100\" width=\"60\" height=\"80\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"230\" y=\"150\" width=\"60\" height=\"30\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"290\" y=\"170\" width=\"60\" height=\"10\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <text x=\"50\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">50</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">60</text>\n        <text x=\"170\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">70</text>\n        <text x=\"230\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">80</text>\n        <text x=\"290\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">90</text>\n        <text x=\"350\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">100</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"42\" y=\"153\" font-size=\"10\" text-anchor=\"end\">4</text>\n        <text x=\"42\" y=\"173\" font-size=\"10\" text-anchor=\"end\">1</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">점수</text>\n      </svg>",
+          "hint": "가장 낮은 막대를 찾은 뒤, 그 계급의 두 끝값의 한가운데 값을 구해요.",
+          "solution": "가장 낮은 막대는 도수 1 인 90 이상 100 미만이에요. 계급값은 (90 + 100) ÷ 2 = 95 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.classvalue-endpoint",
+            "stat.class-words"
+          ]
+        },
+        {
+          "id": "m1-u13-t04-07",
+          "level": "H",
+          "stem_src": "L1에서 점수가 60점 이상 90점 미만 인 학생이 전체에서 차지하는 비율 은 몇 %인가?",
+          "stem_print": "다음 히스토그램에서 <b>점수가 60점 이상 90점 미만</b>인 학생이 전체에서 차지하는 비율은 몇 % 인지 구하시오.",
+          "answer_atoms": [
+            "85%"
+          ],
+          "answer_print": "85%",
+          "answer_accept": [
+            "85 %",
+            "0.85"
+          ],
+          "answer_unit": null,
+          "answer_format": "백분율을 수로 (단위 % 까지 붙여서)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <rect x=\"50\" y=\"160\" width=\"60\" height=\"20\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"110\" y=\"130\" width=\"60\" height=\"50\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"170\" y=\"100\" width=\"60\" height=\"80\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"230\" y=\"150\" width=\"60\" height=\"30\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"290\" y=\"170\" width=\"60\" height=\"10\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <text x=\"50\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">50</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">60</text>\n        <text x=\"170\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">70</text>\n        <text x=\"230\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">80</text>\n        <text x=\"290\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">90</text>\n        <text x=\"350\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">100</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"42\" y=\"153\" font-size=\"10\" text-anchor=\"end\">4</text>\n        <text x=\"42\" y=\"173\" font-size=\"10\" text-anchor=\"end\">1</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">점수</text>\n      </svg>",
+          "hint": "해당 계급의 도수를 모두 더한 뒤 전체 도수로 나누고, 100 을 곱해요.",
+          "solution": "5 + 8 + 4 = 17명이에요. 17 ÷ 20 = 0.85 이고, 100 을 곱하면 85 % 예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.rel-as-percent",
+            "stat.cumulative-band"
+          ]
+        },
+        {
+          "id": "m1-u13-t04-08",
+          "level": "H",
+          "stem_src": "L1에서 도수가 가장 큰 계급의 학생들이 차지하는 막대 넓이 는?",
+          "stem_print": "다음 히스토그램에서 <b>도수가 가장 큰 계급의 막대의 넓이</b>를 구하시오.",
+          "answer_atoms": [
+            "80"
+          ],
+          "answer_print": "80",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "넓이를 수로 (단위 없음)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <rect x=\"50\" y=\"160\" width=\"60\" height=\"20\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"110\" y=\"130\" width=\"60\" height=\"50\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"170\" y=\"100\" width=\"60\" height=\"80\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"230\" y=\"150\" width=\"60\" height=\"30\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <rect x=\"290\" y=\"170\" width=\"60\" height=\"10\" fill=\"#4361EE\" opacity=\"0.85\" stroke=\"white\"/>\n        <text x=\"50\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">50</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">60</text>\n        <text x=\"170\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">70</text>\n        <text x=\"230\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">80</text>\n        <text x=\"290\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">90</text>\n        <text x=\"350\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">100</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"42\" y=\"153\" font-size=\"10\" text-anchor=\"end\">4</text>\n        <text x=\"42\" y=\"173\" font-size=\"10\" text-anchor=\"end\">1</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">점수</text>\n      </svg>",
+          "hint": "막대 하나의 넓이는 (계급의 크기) × (그 계급의 도수) 예요.",
+          "solution": "도수가 가장 큰 계급의 도수는 8 이고 계급의 크기는 10 이므로 10 × 8 = 80 이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.hist-area"
+          ]
+        },
+        {
+          "id": "m1-u13-t04-09",
+          "level": "H",
+          "stem_src": "어떤 히스토그램의 계급의 크기가 $5$, 도수의 합이 $40$이다. 모든 막대의 넓이의 합이 가능한 값은? ① 200 ② 80 ③ 240 ④ 100",
+          "stem_print": "어떤 히스토그램의 계급의 크기가 5, 도수의 합이 40 이다. 모든 막대의 넓이의 합으로 알맞은 것을 ①~④ 중 골라 번호와 값을 함께 쓰시오.<br>① 200 &nbsp;&nbsp; ② 80 &nbsp;&nbsp; ③ 240 &nbsp;&nbsp; ④ 100",
+          "answer_atoms": [
+            "① 200"
+          ],
+          "answer_print": "① 200",
+          "answer_accept": [
+            "200"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호와 값을 '① ○' 꼴로",
+          "figure": null,
+          "hint": "(계급의 크기) × (도수의 합) 을 계산해요.",
+          "solution": "5 × 40 = 200 이에요. 그래서 ① 이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.hist-area"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "도수분포다각형",
+      "principle": "도수분포다각형은 히스토그램에서 각 막대 <b>윗변의 중점</b>을 이은 그래프예요. 양 끝은 도수가 0 인 계급까지 늘여 가로축에 닿게 그리고, 가로축은 계급값, 세로축은 도수를 나타내요. 가로축과 둘러싸인 넓이는 히스토그램의 넓이와 같아요.",
+      "problems": [
+        {
+          "id": "m1-u13-t05-01",
+          "level": "L",
+          "stem_src": "다음 도수분포다각형은 학생 20명의 점수 분포다. 계급값이 75 인 계급의 도수는? 45 55 65 75 85 95 105 0 2 5 8 계급값",
+          "stem_print": "다음 도수분포다각형은 학생 20명의 점수 분포를 나타낸 것이다. <b>계급값이 75</b> 인 계급의 도수를 구하시오.",
+          "answer_atoms": [
+            "8명"
+          ],
+          "answer_print": "8명",
+          "answer_accept": [
+            "8"
+          ],
+          "answer_unit": null,
+          "answer_format": "도수를 수로 (단위 명까지 붙여서)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <polyline points=\"60,180 110,160 160,130 210,100 260,150 310,170 340,180\"\n          fill=\"rgba(67,97,238,0.15)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n        <circle cx=\"60\" cy=\"180\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"110\" cy=\"160\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"160\" cy=\"130\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"210\" cy=\"100\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"260\" cy=\"150\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"310\" cy=\"170\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"340\" cy=\"180\" r=\"3\" fill=\"#4361EE\"/>\n        <text x=\"60\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">45</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">55</text>\n        <text x=\"160\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">65</text>\n        <text x=\"210\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">75</text>\n        <text x=\"260\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">85</text>\n        <text x=\"310\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">95</text>\n        <text x=\"340\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">105</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">계급값</text>\n      </svg>",
+          "hint": "가로축에서 75 를 찾은 뒤, 그 위에 있는 점의 높이를 세로축에서 읽어요.",
+          "solution": "계급값 75 인 점의 높이는 8 이에요. 도수는 8명이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.poly-axis"
+          ]
+        },
+        {
+          "id": "m1-u13-t05-02",
+          "level": "L",
+          "stem_src": "L1에서 점의 개수 는 몇 개인가? (양 끝 0 포함)",
+          "stem_print": "다음 도수분포다각형에서 <b>찍힌 점의 개수</b>를 구하시오. (양 끝의 도수가 0 인 점도 센다.)",
+          "answer_atoms": [
+            "7개"
+          ],
+          "answer_print": "7개",
+          "answer_accept": [
+            "7"
+          ],
+          "answer_unit": null,
+          "answer_format": "점의 개수를 수로 (단위 개까지 붙여서)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <polyline points=\"60,180 110,160 160,130 210,100 260,150 310,170 340,180\"\n          fill=\"rgba(67,97,238,0.15)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n        <circle cx=\"60\" cy=\"180\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"110\" cy=\"160\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"160\" cy=\"130\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"210\" cy=\"100\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"260\" cy=\"150\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"310\" cy=\"170\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"340\" cy=\"180\" r=\"3\" fill=\"#4361EE\"/>\n        <text x=\"60\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">45</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">55</text>\n        <text x=\"160\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">65</text>\n        <text x=\"210\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">75</text>\n        <text x=\"260\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">85</text>\n        <text x=\"310\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">95</text>\n        <text x=\"340\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">105</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">계급값</text>\n      </svg>",
+          "hint": "계급값 위의 점들에 양 끝의 두 점을 더해요.",
+          "solution": "45, 55, 65, 75, 85, 95, 105 위에 점이 있어요. 계급값 5개에 양 끝 2개를 더해 7개예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.poly-ends"
+          ]
+        },
+        {
+          "id": "m1-u13-t05-03",
+          "level": "L",
+          "stem_src": "L1에서 전체 학생 수 는?",
+          "stem_print": "다음 도수분포다각형에서 <b>전체 학생 수</b>를 구하시오.",
+          "answer_atoms": [
+            "20명"
+          ],
+          "answer_print": "20명",
+          "answer_accept": [
+            "20"
+          ],
+          "answer_unit": null,
+          "answer_format": "학생 수를 수로 (단위 명까지 붙여서)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <polyline points=\"60,180 110,160 160,130 210,100 260,150 310,170 340,180\"\n          fill=\"rgba(67,97,238,0.15)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n        <circle cx=\"60\" cy=\"180\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"110\" cy=\"160\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"160\" cy=\"130\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"210\" cy=\"100\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"260\" cy=\"150\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"310\" cy=\"170\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"340\" cy=\"180\" r=\"3\" fill=\"#4361EE\"/>\n        <text x=\"60\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">45</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">55</text>\n        <text x=\"160\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">65</text>\n        <text x=\"210\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">75</text>\n        <text x=\"260\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">85</text>\n        <text x=\"310\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">95</text>\n        <text x=\"340\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">105</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">계급값</text>\n      </svg>",
+          "hint": "각 점의 높이(도수)를 모두 더해요. 양 끝의 0 은 더해도 변하지 않아요.",
+          "solution": "2 + 5 + 8 + 4 + 1 = 20명이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.freq-sum"
+          ]
+        },
+        {
+          "id": "m1-u13-t05-04",
+          "level": "M",
+          "stem_src": "L1의 도수분포다각형과 가로축으로 둘러싸인 도형의 넓이 는?",
+          "stem_print": "다음 도수분포다각형과 가로축으로 둘러싸인 도형의 <b>넓이</b>를 구하시오.",
+          "answer_atoms": [
+            "200"
+          ],
+          "answer_print": "200",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "넓이를 수로 (단위 없음)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <polyline points=\"60,180 110,160 160,130 210,100 260,150 310,170 340,180\"\n          fill=\"rgba(67,97,238,0.15)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n        <circle cx=\"60\" cy=\"180\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"110\" cy=\"160\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"160\" cy=\"130\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"210\" cy=\"100\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"260\" cy=\"150\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"310\" cy=\"170\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"340\" cy=\"180\" r=\"3\" fill=\"#4361EE\"/>\n        <text x=\"60\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">45</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">55</text>\n        <text x=\"160\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">65</text>\n        <text x=\"210\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">75</text>\n        <text x=\"260\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">85</text>\n        <text x=\"310\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">95</text>\n        <text x=\"340\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">105</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">계급값</text>\n      </svg>",
+          "hint": "도수분포다각형이 가로축과 둘러싼 넓이는 히스토그램의 전체 넓이와 같아요.",
+          "solution": "계급의 크기는 10, 도수의 총합은 20 이므로 10 × 20 = 200 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.hist-area"
+          ]
+        },
+        {
+          "id": "m1-u13-t05-05",
+          "level": "M",
+          "stem_src": "L1에서 점수가 70점 이상 90점 미만 인 학생은 몇 명?",
+          "stem_print": "다음 도수분포다각형에서 <b>점수가 70점 이상 90점 미만</b>인 학생은 몇 명인지 구하시오.",
+          "answer_atoms": [
+            "12명"
+          ],
+          "answer_print": "12명",
+          "answer_accept": [
+            "12"
+          ],
+          "answer_unit": null,
+          "answer_format": "학생 수를 수로 (단위 명까지 붙여서)",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <polyline points=\"60,180 110,160 160,130 210,100 260,150 310,170 340,180\"\n          fill=\"rgba(67,97,238,0.15)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n        <circle cx=\"60\" cy=\"180\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"110\" cy=\"160\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"160\" cy=\"130\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"210\" cy=\"100\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"260\" cy=\"150\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"310\" cy=\"170\" r=\"3\" fill=\"#4361EE\"/>\n        <circle cx=\"340\" cy=\"180\" r=\"3\" fill=\"#4361EE\"/>\n        <text x=\"60\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">45</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">55</text>\n        <text x=\"160\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">65</text>\n        <text x=\"210\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">75</text>\n        <text x=\"260\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">85</text>\n        <text x=\"310\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">95</text>\n        <text x=\"340\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">105</text>\n        <text x=\"42\" y=\"183\" font-size=\"10\" text-anchor=\"end\">0</text>\n        <text x=\"42\" y=\"163\" font-size=\"10\" text-anchor=\"end\">2</text>\n        <text x=\"42\" y=\"133\" font-size=\"10\" text-anchor=\"end\">5</text>\n        <text x=\"42\" y=\"103\" font-size=\"10\" text-anchor=\"end\">8</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">계급값</text>\n      </svg>",
+          "hint": "70 이상 90 미만에 들어가는 계급은 계급값이 75 인 계급과 85 인 계급이에요.",
+          "solution": "계급값 75 의 도수 8, 계급값 85 의 도수 4 → 8 + 4 = 12명이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.cumulative-band"
+          ]
+        },
+        {
+          "id": "m1-u13-t05-06",
+          "level": "M",
+          "stem_src": "도수분포다각형을 그릴 때 양 끝 은 어떻게 처리하는가?",
+          "stem_print": "도수분포다각형을 그릴 때 그래프의 <b>양 끝</b>을 어떻게 처리하는지 한 문장으로 쓰시오.",
+          "answer_atoms": [
+            "도수 0인 계급(가장 작은 계급 앞, 가장 큰 계급 뒤)까지 연장하여 가로축에 닿게 만든다"
+          ],
+          "answer_print": "도수 0인 계급(가장 작은 계급 앞, 가장 큰 계급 뒤)까지 연장하여 가로축에 닿게 만든다",
+          "answer_accept": [
+            "양 끝에 도수가 0 인 계급을 하나씩 더 잡아 가로축에 닿게 선을 늘인다"
+          ],
+          "answer_unit": null,
+          "answer_format": "한 문장으로 서술 ('도수 0 인 계급' 과 '가로축' 두 낱말을 넣은 꼴로)",
+          "figure": null,
+          "hint": "그래프가 가로축과 함께 <b>닫힌 도형</b>이 되어야 넓이를 말할 수 있어요.",
+          "solution": "가장 작은 계급의 앞과 가장 큰 계급의 뒤에 도수가 0 인 계급을 하나씩 더 잡고, 그 점까지 선을 늘여 가로축에 닿게 그려요.<br>예를 들어 계급값이 55 부터 95 까지라면 왼쪽으로 45, 오른쪽으로 105 까지 늘여요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.poly-ends"
+          ]
+        },
+        {
+          "id": "m1-u13-t05-07",
+          "level": "H",
+          "stem_src": "도수분포다각형 두 개를 같은 그래프에 겹쳐 그린 모습이다. 두 집단 중 어느 쪽이 더 점수가 높은 편인가? 45 55 65 75 85 95 계급값 파랑: A반 빨강: B반",
+          "stem_print": "다음은 두 반 A, B 의 점수 분포를 한 그래프에 겹쳐 그린 도수분포다각형이다. <b>어느 반의 점수가 더 높은 편인지</b> 쓰고, 그 까닭을 한 문장으로 쓰시오.",
+          "answer_atoms": [
+            "B반(빨강)"
+          ],
+          "answer_print": "B반(빨강)",
+          "answer_accept": [
+            "B반",
+            "B반 (봉우리가 오른쪽에 있어요)"
+          ],
+          "answer_unit": null,
+          "answer_format": "반 이름을 'B반(빨강)' 과 같은 꼴로 쓰고, 까닭을 한 문장으로",
+          "figure": "<svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\">\n        <line x1=\"50\" y1=\"180\" x2=\"350\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/>\n        <!-- 파랑: 왼쪽 치우침 (점수 낮음) heights 2,7,5,3,1 -->\n        <polyline points=\"60,180 110,160 160,110 210,130 260,150 310,170 340,180\" fill=\"none\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n        <!-- 빨강: 오른쪽 치우침 (점수 높음) heights 1,3,5,7,2 -->\n        <polyline points=\"60,180 110,170 160,150 210,130 260,110 310,160 340,180\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n        <text x=\"60\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">45</text>\n        <text x=\"110\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">55</text>\n        <text x=\"160\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">65</text>\n        <text x=\"210\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">75</text>\n        <text x=\"260\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">85</text>\n        <text x=\"310\" y=\"195\" font-size=\"10\" text-anchor=\"middle\">95</text>\n        <text x=\"200\" y=\"215\" font-size=\"10\" text-anchor=\"middle\" fill=\"#666\">계급값</text>\n        <text x=\"270\" y=\"35\" font-size=\"11\" fill=\"#4361EE\">파랑: A반</text>\n        <text x=\"270\" y=\"50\" font-size=\"11\" fill=\"#dc2626\">빨강: B반</text>\n      </svg>",
+          "hint": "두 그래프의 <b>봉우리</b>가 가로축의 어느 쪽에 있는지 보아요.",
+          "solution": "파랑(A반)은 봉우리가 계급값 65 부근에 있고, 빨강(B반)은 봉우리가 계급값 85 부근에 있어요.<br>빨강 쪽 분포가 오른쪽(높은 점수)으로 치우쳐 있으므로 B반의 점수가 더 높은 편이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.compare-raw-freq"
+          ]
+        },
+        {
+          "id": "m1-u13-t05-08",
+          "level": "H",
+          "stem_src": "어떤 자료의 도수분포다각형의 넓이가 $400$, 계급의 크기가 $20$이다. 전체 도수는?",
+          "stem_print": "어떤 자료의 도수분포다각형과 가로축으로 둘러싸인 넓이가 400 이고 계급의 크기가 20 이다. 이 자료의 <b>전체 도수</b>를 구하시오.",
+          "answer_atoms": [
+            "20"
+          ],
+          "answer_print": "20",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "전체 도수를 수로 (단위 없음)",
+          "figure": null,
+          "hint": "(넓이) = (계급의 크기) × (도수의 총합) 이에요. 거꾸로 되돌려 보아요.",
+          "solution": "400 ÷ 20 = 20 이에요. 전체 도수는 20 이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.hist-area"
+          ]
+        },
+        {
+          "id": "m1-u13-t05-09",
+          "level": "H",
+          "stem_src": "도수분포다각형의 특징 중 옳은 것을 모두 고르시오. ① 양 끝은 도수가 0인 계급까지 연장한다. ② 두 집단을 비교할 때 히스토그램보다 편리하다. ③ 다각형과 가로축으로 둘러싸인 넓이는 히스토그램의 넓이와 같다. ④ 가로축은 도수를, 세로축은 계급값을 나타낸다.",
+          "stem_print": "도수분포다각형의 특징으로 <b>옳은 것</b>을 ①~④ 중 모두 골라 번호를 쓰시오.<br>① 양 끝은 도수가 0 인 계급까지 연장한다.<br>② 두 집단을 비교할 때 히스토그램보다 편리하다.<br>③ 다각형과 가로축으로 둘러싸인 넓이는 히스토그램의 넓이와 같다.<br>④ 가로축은 도수를, 세로축은 계급값을 나타낸다.",
+          "answer_atoms": [
+            "① ② ③"
+          ],
+          "answer_print": "① ② ③",
+          "answer_accept": [
+            "①②③",
+            "1, 2, 3"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호를 모두 '① ② ③' 과 같은 꼴로",
+          "figure": null,
+          "hint": "④ 의 두 축이 서로 바뀌지 않았는지 다시 보아요.",
+          "solution": "①②③ 은 모두 맞아요. ④ 는 틀려요. 가로축은 계급값, 세로축은 도수를 나타내요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.poly-axis",
+            "stat.poly-ends",
+            "stat.hist-area"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "상대도수",
+      "principle": "(어떤 계급의 상대도수) = <span class=\"frac\"><b>그 계급의 도수</b><i>도수의 총합</i></span> 이에요. 되돌리면 (도수) = (도수의 총합) × (상대도수), (도수의 총합) = (도수) ÷ (상대도수) 이고, 상대도수를 모두 더하면 언제나 1 이 되어요.",
+      "problems": [
+        {
+          "id": "m1-u13-t06-01",
+          "level": "L",
+          "stem_src": "전체 25명, 어떤 계급의 도수가 5명. 이 계급의 상대도수는?",
+          "stem_print": "전체 학생이 25명인 자료에서 어떤 계급의 도수가 5명이다. 이 계급의 <b>상대도수</b>를 구하시오.",
+          "answer_atoms": [
+            "0.2"
+          ],
+          "answer_print": "0.2",
+          "answer_accept": [
+            "0.20"
+          ],
+          "answer_unit": null,
+          "answer_format": "상대도수를 소수로 (필요하면 소수 둘째 자리까지)",
+          "figure": null,
+          "hint": "그 계급의 도수를 전체 도수로 나누어요.",
+          "solution": "5 ÷ 25 = 0.2 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.rel-formula"
+          ]
+        },
+        {
+          "id": "m1-u13-t06-02",
+          "level": "L",
+          "stem_src": "전체 40명, 어떤 계급의 도수가 12명. 상대도수는?",
+          "stem_print": "전체 학생이 40명인 자료에서 어떤 계급의 도수가 12명이다. 이 계급의 <b>상대도수</b>를 구하시오.",
+          "answer_atoms": [
+            "0.3"
+          ],
+          "answer_print": "0.3",
+          "answer_accept": [
+            "0.30"
+          ],
+          "answer_unit": null,
+          "answer_format": "상대도수를 소수로 (필요하면 소수 둘째 자리까지)",
+          "figure": null,
+          "hint": "12 를 40 으로 나누어요. 분수로 먼저 약분해도 좋아요.",
+          "solution": "12 ÷ 40 = 0.3 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.rel-formula"
+          ]
+        },
+        {
+          "id": "m1-u13-t06-03",
+          "level": "L",
+          "stem_src": "네 계급의 상대도수가 0.1, 0.3, 0.2, ?. 빈칸은?",
+          "stem_print": "계급이 네 개인 어떤 자료에서 세 계급의 상대도수가 0.1, 0.3, 0.2 이다. <b>나머지 한 계급의 상대도수</b>를 구하시오.",
+          "answer_atoms": [
+            "0.4"
+          ],
+          "answer_print": "0.4",
+          "answer_accept": [
+            "0.40"
+          ],
+          "answer_unit": null,
+          "answer_format": "상대도수를 소수로 (필요하면 소수 둘째 자리까지)",
+          "figure": null,
+          "hint": "상대도수를 모두 더하면 얼마가 되는지 떠올려 보아요.",
+          "solution": "1 − (0.1 + 0.3 + 0.2) = 1 − 0.6 = 0.4 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.rel-sum-one"
+          ]
+        },
+        {
+          "id": "m1-u13-t06-04",
+          "level": "M",
+          "stem_src": "상대도수가 0.3, 도수가 9명. 전체 도수는?",
+          "stem_print": "어떤 계급의 상대도수가 0.3 이고 그 계급의 도수가 9명이다. <b>전체 도수</b>를 구하시오.",
+          "answer_atoms": [
+            "30명"
+          ],
+          "answer_print": "30명",
+          "answer_accept": [
+            "30"
+          ],
+          "answer_unit": null,
+          "answer_format": "전체 도수를 수로 (단위 명까지 붙여서)",
+          "figure": null,
+          "hint": "(전체 도수) = (도수) ÷ (상대도수) 예요.",
+          "solution": "9 ÷ 0.3 = 30 이므로 전체 도수는 30명이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.rel-formula"
+          ]
+        },
+        {
+          "id": "m1-u13-t06-05",
+          "level": "M",
+          "stem_src": "전체 50명일 때, 상대도수가 0.16인 계급의 도수는?",
+          "stem_print": "전체 학생이 50명인 자료에서 상대도수가 0.16 인 계급의 <b>도수</b>를 구하시오.",
+          "answer_atoms": [
+            "8명"
+          ],
+          "answer_print": "8명",
+          "answer_accept": [
+            "8"
+          ],
+          "answer_unit": null,
+          "answer_format": "도수를 수로 (단위 명까지 붙여서)",
+          "figure": null,
+          "hint": "(도수) = (전체 도수) × (상대도수) 예요.",
+          "solution": "50 × 0.16 = 8 이므로 도수는 8명이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.rel-formula"
+          ]
+        },
+        {
+          "id": "m1-u13-t06-06",
+          "level": "M",
+          "stem_src": "계급 도수 상대도수 0~10 3 $a$ 10~20 $b$ 0.40 20~30 12 $c$ 30~40 3 0.10 합계 $N$ 1 $a, b, c, N$을 구하시오.",
+          "stem_print": "다음 도수분포표에서 <i>a</i>, <i>b</i>, <i>c</i>, <i>N</i> 의 값을 각각 구하시오.<table><thead><tr><th>계급</th><th class=\"c\">도수</th><th class=\"c\">상대도수</th></tr></thead><tbody><tr><td>0 이상 ~ 10 미만</td><td class=\"c\">3</td><td class=\"c\"><i>a</i></td></tr><tr><td>10 이상 ~ 20 미만</td><td class=\"c\"><i>b</i></td><td class=\"c\">0.40</td></tr><tr><td>20 이상 ~ 30 미만</td><td class=\"c\">12</td><td class=\"c\"><i>c</i></td></tr><tr><td>30 이상 ~ 40 미만</td><td class=\"c\">3</td><td class=\"c\">0.10</td></tr><tr><td><b>합계</b></td><td class=\"c\"><b><i>N</i></b></td><td class=\"c\"><b>1</b></td></tr></tbody></table>",
+          "answer_atoms": [
+            "$N=30, a=0.10, b=12, c=0.40$"
+          ],
+          "answer_print": "N = 30, a = 0.10, b = 12, c = 0.40",
+          "answer_accept": [
+            "N=30, a=0.1, b=12, c=0.4"
+          ],
+          "answer_unit": null,
+          "answer_format": "'N = ○, a = ○, b = ○, c = ○' 꼴로 (상대도수는 소수 둘째 자리까지)",
+          "figure": null,
+          "hint": "도수와 상대도수가 <b>둘 다</b> 주어진 줄을 먼저 찾아요. 거기서 전체 도수를 구할 수 있어요.",
+          "solution": "30 이상 40 미만 줄에서 도수 3, 상대도수 0.10 이므로 <i>N</i> = 3 ÷ 0.10 = 30 이에요.<br><i>a</i> = 3 ÷ 30 = 0.10, <i>b</i> = 30 × 0.40 = 12, <i>c</i> = 12 ÷ 30 = 0.40 이에요.<br>검산: 도수 3 + 12 + 12 + 3 = 30, 상대도수 0.10 + 0.40 + 0.40 + 0.10 = 1 로 맞아요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.rel-formula",
+            "stat.rel-sum-one"
+          ]
+        },
+        {
+          "id": "m1-u13-t06-07",
+          "level": "H",
+          "stem_src": "A반 30명 중 90점 이상 9명, B반 40명 중 90점 이상 10명. 어느 반의 90점 이상 비율이 더 높은가?",
+          "stem_print": "A반은 30명 중 9명이, B반은 40명 중 10명이 90점 이상을 받았다. <b>어느 반의 90점 이상 비율이 더 높은지</b> 쓰고, 그 까닭을 한 문장으로 쓰시오.",
+          "answer_atoms": [
+            "A반"
+          ],
+          "answer_print": "A반",
+          "answer_accept": [
+            "A반 (0.3 으로 B반의 0.25 보다 커요)"
+          ],
+          "answer_unit": null,
+          "answer_format": "반 이름을 'A반' 과 같은 꼴로 쓰고, 까닭을 한 문장으로",
+          "figure": null,
+          "hint": "전체 인원이 다르므로 사람 수만 견주면 안 되어요. 각 반의 상대도수를 구해 보아요.",
+          "solution": "A반은 9 ÷ 30 = 0.3, B반은 10 ÷ 40 = 0.25 예요.<br>사람 수는 B반이 더 많지만 비율은 A반이 더 높아요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.compare-raw-freq"
+          ]
+        },
+        {
+          "id": "m1-u13-t06-08",
+          "level": "H",
+          "stem_src": "어떤 계급의 도수가 6명, 같은 자료에서 다른 계급의 상대도수가 0.25였다. 전체 도수가 24명이라면 이 첫 계급의 상대도수는?",
+          "stem_print": "전체 도수가 24명인 어떤 자료에서 한 계급의 도수는 6명이고, <b>다른</b> 계급의 상대도수는 0.25 이다. 도수가 6명인 계급의 <b>상대도수</b>를 구하시오.",
+          "answer_atoms": [
+            "0.25"
+          ],
+          "answer_print": "0.25",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "상대도수를 소수로 (소수 둘째 자리까지)",
+          "figure": null,
+          "hint": "구하려는 계급의 도수와 전체 도수만 있으면 되어요. 다른 계급의 상대도수는 쓰지 않아도 되어요.",
+          "solution": "6 ÷ 24 = 0.25 예요. 다른 계급의 상대도수는 답을 구하는 데 쓰이지 않는 정보예요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.rel-formula"
+          ]
+        },
+        {
+          "id": "m1-u13-t06-09",
+          "level": "H",
+          "stem_src": "어떤 도수분포표에서 한 계급의 도수가 다른 계급의 도수의 3배 일 때, 두 계급의 상대도수의 비를 가장 간단한 자연수의 비로 나타내시오.",
+          "stem_print": "어떤 도수분포표에서 한 계급의 도수가 다른 계급의 도수의 <b>3배</b>이다. 두 계급의 상대도수의 비를 가장 간단한 자연수의 비로 나타내시오.",
+          "answer_atoms": [
+            "$3 : 1$"
+          ],
+          "answer_print": "3 : 1",
+          "answer_accept": [
+            "3:1"
+          ],
+          "answer_unit": null,
+          "answer_format": "가장 간단한 자연수의 비를 'a : b' 꼴로",
+          "figure": null,
+          "hint": "두 계급 모두 <b>같은 전체 도수</b>로 나누어요. 그러면 비가 어떻게 될까요?",
+          "solution": "도수를 3<i>k</i> 와 <i>k</i> 라 하면 상대도수는 3<i>k</i> ÷ <i>N</i> 과 <i>k</i> ÷ <i>N</i> 이에요.<br>같은 수로 나누었으므로 비는 그대로 3 : 1 이에요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.rel-formula"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "자료 종합·해석",
+      "principle": "<b>도수 · 상대도수 · 전체 도수</b> 셋 중 둘을 알면 나머지 하나를 구할 수 있어요. 전체 도수가 서로 다른 두 집단은 반드시 <b>상대도수</b>를 구해서 견주고, 도수분포표에서 평균은 (계급값 × 도수)를 모두 더해 전체 도수로 나누어 어림해요.",
+      "problems": [
+        {
+          "id": "m1-u13-t07-01",
+          "level": "L",
+          "stem_src": "도수분포표에서 도수의 합이 25이고, 어떤 계급의 상대도수가 0.2이다. 이 계급의 도수는?",
+          "stem_print": "어떤 도수분포표에서 도수의 합이 25 이고 한 계급의 상대도수가 0.2 이다. 이 계급의 <b>도수</b>를 구하시오.",
+          "answer_atoms": [
+            "5명"
+          ],
+          "answer_print": "5명",
+          "answer_accept": [
+            "5"
+          ],
+          "answer_unit": null,
+          "answer_format": "도수를 수로 (단위 명까지 붙여서)",
+          "figure": null,
+          "hint": "(도수) = (전체 도수) × (상대도수) 예요.",
+          "solution": "25 × 0.2 = 5 이므로 도수는 5명이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.rel-formula"
+          ]
+        },
+        {
+          "id": "m1-u13-t07-02",
+          "level": "L",
+          "stem_src": "다음 중 자료를 정리하는 도구가 아닌 것은? ① 줄기와 잎 그림 ② 도수분포표 ③ 히스토그램 ④ 도수분포다각형 ⑤ 비례식",
+          "stem_print": "다음 ①~⑤ 중 자료를 정리하는 도구가 <b>아닌</b> 것을 골라 번호와 이름을 함께 쓰시오.<br>① 줄기와 잎 그림 &nbsp;&nbsp; ② 도수분포표 &nbsp;&nbsp; ③ 히스토그램 &nbsp;&nbsp; ④ 도수분포다각형 &nbsp;&nbsp; ⑤ 비례식",
+          "answer_atoms": [
+            "⑤ 비례식"
+          ],
+          "answer_print": "⑤ 비례식",
+          "answer_accept": [
+            "⑤",
+            "비례식"
+          ],
+          "answer_unit": null,
+          "answer_format": "번호와 이름을 '⑤ ○○' 꼴로",
+          "figure": null,
+          "hint": "자료를 모아 정리하고 그림으로 보여 주는 것이 아닌 것을 찾아요.",
+          "solution": "①~④ 는 모두 자료를 정리하거나 그림으로 나타내는 방법이에요. 비례식은 두 비가 같음을 나타내는 식이라 자료 정리 도구가 아니에요.",
+          "work_space": "sm",
+          "misconceptions": []
+        },
+        {
+          "id": "m1-u13-t07-03",
+          "level": "L",
+          "stem_src": "두 자료의 분포를 비교할 때 전체 수가 다른 경우 , 가장 적절한 비교 방법은?",
+          "stem_print": "두 자료의 분포를 비교할 때 <b>전체 도수가 서로 다른 경우</b> 가장 알맞은 비교 방법을 쓰시오.",
+          "answer_atoms": [
+            "상대도수로 비교"
+          ],
+          "answer_print": "상대도수로 비교",
+          "answer_accept": [
+            "상대도수를 구해서 견준다",
+            "비율로 비교"
+          ],
+          "answer_unit": null,
+          "answer_format": "방법을 '○○○○로 비교' 꼴로",
+          "figure": null,
+          "hint": "사람 수를 그대로 견주어도 될까요? 전체를 1 로 맞추는 방법이 있어요.",
+          "solution": "전체 도수가 다르면 도수만으로는 견줄 수 없어요. 각 집단에서 상대도수를 구하면 전체가 1 로 맞추어져서 공평하게 견줄 수 있어요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "stat.compare-raw-freq"
+          ]
+        },
+        {
+          "id": "m1-u13-t07-04",
+          "level": "M",
+          "stem_src": "다음 도수분포표에서 평균값을 계급값을 이용해 추정하시오. (각 계급의 모든 학생이 계급값과 같다고 가정) 계급 계급값 도수 0~10 5 2 10~20 15 4 20~30 25 3 30~40 35 1 합계 — 10",
+          "stem_print": "다음 도수분포표에서 평균을 계급값을 이용하여 어림하시오. (각 계급의 자료가 모두 계급값과 같다고 본다.)<table><thead><tr><th>계급</th><th class=\"c\">계급값</th><th class=\"c\">도수</th></tr></thead><tbody><tr><td>0 이상 ~ 10 미만</td><td class=\"c\">5</td><td class=\"c\">2</td></tr><tr><td>10 이상 ~ 20 미만</td><td class=\"c\">15</td><td class=\"c\">4</td></tr><tr><td>20 이상 ~ 30 미만</td><td class=\"c\">25</td><td class=\"c\">3</td></tr><tr><td>30 이상 ~ 40 미만</td><td class=\"c\">35</td><td class=\"c\">1</td></tr><tr><td><b>합계</b></td><td class=\"c\">—</td><td class=\"c\"><b>10</b></td></tr></tbody></table>",
+          "answer_atoms": [
+            "18"
+          ],
+          "answer_print": "18",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "평균을 수로 (단위 없음)",
+          "figure": null,
+          "hint": "(계급값 × 도수) 를 계급마다 구해 모두 더한 뒤, 전체 도수로 나누어요.",
+          "solution": "5 × 2 + 15 × 4 + 25 × 3 + 35 × 1 = 10 + 60 + 75 + 35 = 180 이에요.<br>180 ÷ 10 = 18 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.mean-by-freq"
+          ]
+        },
+        {
+          "id": "m1-u13-t07-05",
+          "level": "M",
+          "stem_src": "한 자료의 도수분포표에서 두 계급의 상대도수가 0.30과 0.45이고 나머지 모든 계급의 상대도수의 합이 0.25이다. 자료의 상대도수 합은?",
+          "stem_print": "어떤 자료의 도수분포표에서 두 계급의 상대도수가 0.30 과 0.45 이고, 나머지 모든 계급의 상대도수의 합이 0.25 이다. 이 자료의 <b>상대도수의 합</b>을 구하시오.",
+          "answer_atoms": [
+            "1"
+          ],
+          "answer_print": "1",
+          "answer_accept": [
+            "1.00"
+          ],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "계산해 보아도 좋지만, 상대도수의 합에는 언제나 정해진 값이 있어요.",
+          "solution": "0.30 + 0.45 + 0.25 = 1 이에요. 어떤 자료든 상대도수의 합은 언제나 1 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.rel-sum-one"
+          ]
+        },
+        {
+          "id": "m1-u13-t07-06",
+          "level": "M",
+          "stem_src": "도수가 12, 상대도수가 0.24인 계급이 있다. 또 다른 계급의 상대도수가 0.16일 때, 그 계급의 도수는?",
+          "stem_print": "어떤 자료에서 도수가 12 인 계급의 상대도수가 0.24 이다. 같은 자료에서 상대도수가 0.16 인 계급의 <b>도수</b>를 구하시오.",
+          "answer_atoms": [
+            "8명"
+          ],
+          "answer_print": "8명",
+          "answer_accept": [
+            "8"
+          ],
+          "answer_unit": null,
+          "answer_format": "도수를 수로 (단위 명까지 붙여서)",
+          "figure": null,
+          "hint": "먼저 전체 도수를 구하고, 그 다음에 도수를 구해요.",
+          "solution": "전체 도수는 12 ÷ 0.24 = 50 이에요.<br>50 × 0.16 = 8 이므로 도수는 8명이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "stat.rel-formula"
+          ]
+        },
+        {
+          "id": "m1-u13-t07-07",
+          "level": "H",
+          "stem_src": "A반(30명)과 B반(40명)의 점수 도수분포다. 계급 A반 도수 B반 도수 60~70 3 4 70~80 9 12 80~90 12 16 90~100 6 8 80점 이상의 비율을 비교하여 어느 반의 점수가 더 높은 편인가?",
+          "stem_print": "다음은 A반(30명)과 B반(40명)의 점수 분포이다. <b>80점 이상인 학생의 비율</b>을 견주어 어느 반의 점수가 더 높은 편인지 쓰시오.<table><thead><tr><th>계급 (점)</th><th class=\"c\">A반 도수 (명)</th><th class=\"c\">B반 도수 (명)</th></tr></thead><tbody><tr><td>60 이상 ~ 70 미만</td><td class=\"c\">3</td><td class=\"c\">4</td></tr><tr><td>70 이상 ~ 80 미만</td><td class=\"c\">9</td><td class=\"c\">12</td></tr><tr><td>80 이상 ~ 90 미만</td><td class=\"c\">12</td><td class=\"c\">16</td></tr><tr><td>90 이상 ~ 100 미만</td><td class=\"c\">6</td><td class=\"c\">8</td></tr><tr><td><b>합계</b></td><td class=\"c\"><b>30</b></td><td class=\"c\"><b>40</b></td></tr></tbody></table>",
+          "answer_atoms": [
+            "둘 다 같음 (0.60)"
+          ],
+          "answer_print": "둘 다 같음 (0.60)",
+          "answer_accept": [
+            "같다",
+            "둘 다 0.6 으로 같다"
+          ],
+          "answer_unit": null,
+          "answer_format": "'둘 다 같음' 또는 반 이름을 쓰고, 두 반의 상대도수를 소수로 함께",
+          "figure": null,
+          "hint": "두 반의 전체 인원이 다르므로 80점 이상인 학생 수를 각 반의 전체로 나누어요.",
+          "solution": "A반의 80점 이상은 12 + 6 = 18명이고, 18 ÷ 30 = 0.60 이에요.<br>B반의 80점 이상은 16 + 8 = 24명이고, 24 ÷ 40 = 0.60 이에요.<br>사람 수는 B반이 더 많지만 비율은 두 반이 똑같아요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.compare-raw-freq"
+          ]
+        },
+        {
+          "id": "m1-u13-t07-08",
+          "level": "H",
+          "stem_src": "나이팅게일 시대 야전병원의 사망자 수를 정리한 (가상) 도수분포다. 1월의 전체 사망자 중 병으로 인한 사망의 상대도수 는? 월 부상 병 기타 1월 30 270 20 2월 40 240 15",
+          "stem_print": "다음은 나이팅게일이 일했던 야전병원의 사망자 수를 정리한 (가상의) 자료이다. <b>1월의 전체 사망자 중 병으로 인한 사망의 상대도수</b>를 구하시오.<table><thead><tr><th>달</th><th class=\"c\">부상 (명)</th><th class=\"c\">병 (명)</th><th class=\"c\">기타 (명)</th></tr></thead><tbody><tr><td class=\"c\">1월</td><td class=\"c\">30</td><td class=\"c\">270</td><td class=\"c\">20</td></tr><tr><td class=\"c\">2월</td><td class=\"c\">40</td><td class=\"c\">240</td><td class=\"c\">15</td></tr></tbody></table>",
+          "answer_atoms": [
+            "0.84375 (약 0.84 또는 84%)"
+          ],
+          "answer_print": "0.84375 (약 0.84 또는 84%)",
+          "answer_accept": [
+            "0.84",
+            "84%"
+          ],
+          "answer_unit": null,
+          "answer_format": "상대도수를 소수로 (반올림하면 소수 둘째 자리까지)",
+          "figure": null,
+          "hint": "1월의 전체 사망자 수를 먼저 구한 뒤, 병으로 인한 사망자 수를 그 값으로 나누어요.",
+          "solution": "1월의 전체 사망자는 30 + 270 + 20 = 320명이에요.<br>270 ÷ 320 = 0.84375 이고, 반올림하면 약 0.84 (84 %) 예요.<br>나이팅게일은 바로 이 비율을 그림으로 보여 주어 병원을 바꾸었어요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.rel-formula",
+            "stat.rel-as-percent"
+          ]
+        },
+        {
+          "id": "m1-u13-t07-09",
+          "level": "H",
+          "stem_src": "다음 도수분포표에서 빈칸 $x, y$를 구하시오. 계급 도수 상대도수 0~5 $x$ 0.20 5~10 14 0.35 10~15 10 $y$ 15~20 8 0.20 합계 — 1",
+          "stem_print": "다음 도수분포표에서 <i>x</i>, <i>y</i> 의 값을 각각 구하시오.<table><thead><tr><th>계급</th><th class=\"c\">도수</th><th class=\"c\">상대도수</th></tr></thead><tbody><tr><td>0 이상 ~ 5 미만</td><td class=\"c\"><i>x</i></td><td class=\"c\">0.20</td></tr><tr><td>5 이상 ~ 10 미만</td><td class=\"c\">14</td><td class=\"c\">0.35</td></tr><tr><td>10 이상 ~ 15 미만</td><td class=\"c\">10</td><td class=\"c\"><i>y</i></td></tr><tr><td>15 이상 ~ 20 미만</td><td class=\"c\">8</td><td class=\"c\">0.20</td></tr><tr><td><b>합계</b></td><td class=\"c\">—</td><td class=\"c\"><b>1</b></td></tr></tbody></table>",
+          "answer_atoms": [
+            "$x=8, y=0.25$"
+          ],
+          "answer_print": "x = 8, y = 0.25",
+          "answer_accept": [
+            "x=8, y=0.25"
+          ],
+          "answer_unit": null,
+          "answer_format": "'x = ○, y = ○' 꼴로 (상대도수는 소수 둘째 자리까지)",
+          "figure": null,
+          "hint": "도수와 상대도수가 <b>둘 다</b> 주어진 줄에서 전체 도수를 먼저 구해요.",
+          "solution": "15 이상 20 미만 줄에서 도수 8, 상대도수 0.20 이므로 전체 도수는 8 ÷ 0.20 = 40 이에요.<br><i>x</i> = 40 × 0.20 = 8, <i>y</i> = 10 ÷ 40 = 0.25 예요.<br>검산: 도수 8 + 14 + 10 + 8 = 40, 상대도수 0.20 + 0.35 + 0.25 + 0.20 = 1 로 맞아요.",
+          "work_space": "lg",
+          "misconceptions": [
+            "stat.rel-formula",
+            "stat.rel-sum-one"
+          ]
+        }
+      ]
+    }
+  ]
+}
