@@ -1,0 +1,20 @@
+{
+  "id": "m1-u07-c",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 7,
+  "unit_name": "기본도형",
+  "title": "공간에서 위치 관계",
+  "subtitle": "꼬인 위치 · 직육면체의 모서리 관계",
+  "bank": "math1/u07/practice.json",
+  "misconceptions": "misconceptions/math1_u07.json",
+  "types": [
+    7
+  ],
+  "time_min": 8,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

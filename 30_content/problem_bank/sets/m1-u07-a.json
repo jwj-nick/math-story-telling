@@ -1,0 +1,22 @@
+{
+  "id": "m1-u07-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 7,
+  "unit_name": "기본도형",
+  "title": "표기와 길이·각도 기초",
+  "subtitle": "직선·반직선·선분 · 선분의 중점 · 각의 종류",
+  "bank": "math1/u07/practice.json",
+  "misconceptions": "misconceptions/math1_u07.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

@@ -1,0 +1,22 @@
+{
+  "id": "m1-u07-b",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 7,
+  "unit_name": "기본도형",
+  "title": "맞꼭지각과 평행선",
+  "subtitle": "맞꼭지각 · 동위각·엇각 · 평면에서 두 직선의 위치 관계",
+  "bank": "math1/u07/practice.json",
+  "misconceptions": "misconceptions/math1_u07.json",
+  "types": [
+    4,
+    5,
+    6
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}
