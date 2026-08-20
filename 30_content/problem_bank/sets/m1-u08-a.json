@@ -1,0 +1,22 @@
+{
+  "id": "m1-u08-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 8,
+  "unit_name": "작도와 합동",
+  "title": "작도 도구와 기본 작도",
+  "subtitle": "도구의 역할 · 길이·각 옮기기 · 수직이등분선 작도",
+  "bank": "math1/u08/practice.json",
+  "misconceptions": "misconceptions/math1_u08.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

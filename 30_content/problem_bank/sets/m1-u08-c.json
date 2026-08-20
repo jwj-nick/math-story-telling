@@ -1,0 +1,21 @@
+{
+  "id": "m1-u08-c",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 8,
+  "unit_name": "작도와 합동",
+  "title": "합동 식별과 활용",
+  "subtitle": "합동 표기와 대응 · 합동 조건 활용",
+  "bank": "math1/u08/practice.json",
+  "misconceptions": "misconceptions/math1_u08.json",
+  "types": [
+    6,
+    7
+  ],
+  "time_min": 12,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}
