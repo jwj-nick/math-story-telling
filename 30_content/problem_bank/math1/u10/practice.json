@@ -3,1486 +3,397 @@
     "grade": "math1",
     "unit": 10,
     "unit_name": "원과 부채꼴",
-    "generation": "A",
-    "source": "40_grades/middle/math1/10_원과부채꼴/problems",
-    "extracted": "2026-07-29",
-    "extractor": "70_tools/print/extract_gen_ac.py",
+    "source": "40_grades/middle/math1/app1/p10.html",
+    "generation": "D",
+    "extracted": "2026-08-21",
+    "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "answer_atoms 는 원본 .sol-panel 의 첫 strong 값 그대로. 절대 손으로 고치지 않는다. stem_print / answer_print / hint / solution 은 KaTeX 를 HTML(sup·유니코드·.frac)로 바꿔 다시 썼다. figure 는 원본 인라인 SVG 에 인쇄 폭(style=width)만 지정했다 (viewBox 폭 x 0.22mm).",
-    "figure_fix": "원본 SVG 의 호 sweep-flag 오류 2건(m1-u10-t07-05 반원, m1-u10-t07-09 사분원 4개)을 지면용 figure 에서만 바로잡았다. 원본 앱(type_07_app.html)에는 같은 오류가 남아 있다."
+    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. 2지선다 2문항을 단답형으로 재작성. π가 들어간 답은 앱과 마찬가지로 계수만 물은 문항이 대부분이며, 종합 유형 2문항은 원본 앱이 이미 완성식 텍스트(예: 100 − 25π)로 채점하므로 그대로 사용. 전부 기초~보통 수준(L/M)만 포함 — 심화(H)는 Nick 요청으로 이번 회차에서 제외."
   },
   "types": [
     {
       "no": 1,
       "title": "원의 구성요소",
-      "principle": "원은 중심에서 같은 거리에 있는 점들의 모임이에요. 호는 원 위의 휜 부분, 현은 두 점을 곧게 이은 선분, 접선은 원과 한 점에서 만나는 직선이에요.",
+      "principle": "중심에서 원까지 거리가 반지름, 그 2배가 지름이에요. 호는 곡선, 현은 선분, 할선은 두 점, 접선은 한 점에서 만나요.",
       "problems": [
         {
           "id": "m1-u10-t01-01",
           "level": "L",
-          "stem_src": "다음 빈칸에 들어갈 말은? \"원은 한 점에서 일정한 ___ 에 있는 점들의 집합이다.\" ① 거리 &nbsp; ② 방향 &nbsp; ③ 시간 &nbsp; ④ 색깔",
-          "stem_print": "\"원은 한 점에서 일정한 ___ 에 있는 점들의 모임이다.\" 빈칸에 알맞은 것을 골라 번호와 낱말을 쓰시오.<br>① 거리 &nbsp; ② 방향 &nbsp; ③ 시간 &nbsp; ④ 색깔",
-          "answer_atoms": [
-            "① 거리"
-          ],
-          "answer_print": "① 거리",
-          "answer_accept": [
-            "거리",
-            "1"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호와 낱말을 함께 쓰는 꼴로",
+          "stem_src": "지름이 18cm인 원의 반지름은?",
+          "stem_print": "지름이 18cm인 원의 반지름을 구하시오.",
+          "answer_atoms": ["9"],
+          "answer_print": "9",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "수로 (단위: cm)",
           "figure": null,
-          "hint": "반지름이 무엇이었는지 떠올려 봐요.",
-          "solution": "원은 중심에서 같은 <strong>거리</strong>에 있는 점들의 모임이에요. 그 거리가 바로 반지름이에요.",
+          "hint": "지름은 반지름의 2배예요.",
+          "solution": "지름이 18cm이므로 반지름은 18÷2=9cm예요.",
           "work_space": "sm",
-          "misconceptions": [
-            "circle.diameter-radius"
-          ]
+          "misconceptions": ["circle.diameter-radius"]
         },
         {
           "id": "m1-u10-t01-02",
           "level": "L",
-          "stem_src": "\"원과 한 점에서 만나는 직선\"을 무엇이라고 하나요? ① 현 &nbsp; ② 호 &nbsp; ③ 할선 &nbsp; ④ 접선",
-          "stem_print": "원과 한 점에서만 만나는 직선을 무엇이라고 하는지 골라 번호와 이름을 쓰시오.<br>① 현 &nbsp; ② 호 &nbsp; ③ 할선 &nbsp; ④ 접선",
-          "answer_atoms": [
-            "④ 접선"
-          ],
-          "answer_print": "④ 접선",
-          "answer_accept": [
-            "접선",
-            "4"
-          ],
+          "stem_src": "원 위의 두 점을 곧게 이은 선분의 이름은?",
+          "stem_print": "원 위의 두 점을 곧게 이은 선분의 이름을 쓰시오.",
+          "answer_atoms": ["현"],
+          "answer_print": "현",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "번호와 이름을 함께 쓰는 꼴로",
+          "answer_format": "낱말로 (단위 없음)",
           "figure": null,
-          "hint": "만나는 점이 한 개인지 두 개인지, 직선인지 선분인지를 나누어 봐요.",
-          "solution": "접선은 원과 한 점에서 만나는 직선이에요. 두 점에서 만나면 할선, 현은 선분, 호는 곡선이에요.",
+          "hint": "휜 쪽은 호, 곧은 쪽은 이것이에요.",
+          "solution": "원 위의 두 점을 곧게 이은 선분은 현이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "circle.tangent-secant"
-          ]
+          "misconceptions": ["circle.chord-vs-arc"]
         },
         {
           "id": "m1-u10-t01-03",
           "level": "L",
-          "stem_src": "호와 현의 차이를 가장 잘 설명한 것은? ① 호는 곡선, 현은 선분 ② 호는 선분, 현은 곡선 ③ 호는 길이, 현은 넓이 ④ 둘 다 같은 것",
-          "stem_print": "호와 현의 차이를 가장 잘 설명한 것을 골라 번호와 설명을 쓰시오.<br>① 호는 곡선, 현은 선분 &nbsp; ② 호는 선분, 현은 곡선<br>③ 호는 길이, 현은 넓이 &nbsp; ④ 둘은 같은 것",
-          "answer_atoms": [
-            "① 호는 곡선, 현은 선분"
-          ],
-          "answer_print": "① 호는 곡선, 현은 선분",
-          "answer_accept": [
-            "1"
-          ],
+          "stem_src": "원과 두 점에서 만나는 직선의 이름은?",
+          "stem_print": "원과 두 점에서 만나는 직선의 이름을 쓰시오.",
+          "answer_atoms": ["할선"],
+          "answer_print": "할선",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "번호와 설명을 함께 쓰는 꼴로",
+          "answer_format": "낱말로 (단위 없음)",
           "figure": null,
-          "hint": "활처럼 휜 것이 호, 현악기의 줄처럼 곧은 것이 현이에요.",
-          "solution": "같은 두 점 A, B에 대해 호 AB는 원을 따라 휘어 가는 길이고, 현 AB는 곧게 질러가는 선분이에요.",
+          "hint": "한 점에서만 만나는 직선은 접선이에요.",
+          "solution": "원과 두 점에서 만나는 직선은 할선이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "circle.chord-vs-arc"
-          ]
-        },
-        {
-          "id": "m1-u10-t01-04",
-          "level": "M",
-          "stem_src": "아래 그림에서 표시된 직선·선분의 이름이 잘못 짝지어진 것은?",
-          "stem_print": "아래 그림에서 직선·선분과 그 이름이 <strong>잘못</strong> 짝지어진 것을 골라 번호와 바른 이름을 쓰시오.<br>① ㄱ — 지름 &nbsp; ② ㄴ — 현 &nbsp; ③ ㄷ — 할선 &nbsp; ④ ㄹ — 할선",
-          "answer_atoms": [
-            "③ 잘못"
-          ],
-          "answer_print": "③ 잘못 짝지어진 것 — ㄷ 은 할선이 아니라 접선이에요",
-          "answer_accept": [
-            "3",
-            "ㄷ 은 접선"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호와 바른 이름을 함께 쓰는 꼴로",
-          "figure": "<svg class=\"fig-svg\" style=\"width:48.4mm\" viewBox=\"-110 -110 220 220\">\n  <circle cx=\"0\" cy=\"0\" r=\"80\" fill=\"none\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <circle cx=\"0\" cy=\"0\" r=\"3\" fill=\"#1d3557\"/>\n  <text x=\"-12\" y=\"4\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d3557\">O</text>\n  <!-- ㄱ: 지름 -->\n  <line x1=\"-80\" y1=\"0\" x2=\"80\" y2=\"0\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <text x=\"-100\" y=\"4\" font-size=\"11\" fill=\"#ef4444\">ㄱ</text>\n  <!-- ㄴ: 현 -->\n  <line x1=\"-65\" y1=\"-46\" x2=\"65\" y2=\"-46\" stroke=\"#7b2ff7\" stroke-width=\"2\"/>\n  <text x=\"-78\" y=\"-42\" font-size=\"11\" fill=\"#7b2ff7\">ㄴ</text>\n  <!-- ㄷ: 접선 -->\n  <line x1=\"-50\" y1=\"80\" x2=\"50\" y2=\"80\" stroke=\"#06b6d4\" stroke-width=\"2\"/>\n  <text x=\"-62\" y=\"86\" font-size=\"11\" fill=\"#06b6d4\">ㄷ</text>\n  <!-- ㄹ: 할선 -->\n  <line x1=\"-95\" y1=\"60\" x2=\"95\" y2=\"20\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"-105\" y=\"68\" font-size=\"11\" fill=\"#f59e0b\">ㄹ</text>\n</svg>",
-          "hint": "ㄷ 은 원과 몇 개의 점에서 만나는지 세어 봐요.",
-          "solution": "ㄷ 은 원과 <strong>한 점</strong>에서만 만나므로 접선이에요. 할선은 원과 두 점에서 만나는 ㄹ 이에요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "circle.tangent-secant"
-          ]
-        },
-        {
-          "id": "m1-u10-t01-05",
-          "level": "M",
-          "stem_src": "반지름의 길이가 $5$ cm 인 원에서, 다음 중 반드시 옳은 것은? ① 모든 현의 길이는 $5$ cm 다. ② 모든 현의 길이는 $10$ cm 다. ③ 가장 긴 현의 길이는 $10$ cm 다. ④ 모든 호의 길이는 같다.",
-          "stem_print": "반지름의 길이가 5 cm 인 원에서 <strong>반드시 옳은</strong> 것을 골라 번호와 내용을 쓰시오.<br>① 모든 현의 길이는 5 cm 이다. &nbsp; ② 모든 현의 길이는 10 cm 이다.<br>③ 가장 긴 현의 길이는 10 cm 이다. &nbsp; ④ 모든 호의 길이는 같다.",
-          "answer_atoms": [
-            "③ 가장 긴 현 = 지름 = 10 cm"
-          ],
-          "answer_print": "③ 가장 긴 현 = 지름 = 10 cm",
-          "answer_accept": [
-            "3"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호와 길이를 함께 쓰는 꼴로",
-          "figure": null,
-          "hint": "가장 긴 현은 지름이에요. 지름은 반지름의 2배예요.",
-          "solution": "현의 길이는 여러 가지예요. 그중 가장 긴 현이 지름이고, 지름 = 2 × 5 = 10 cm 예요. 호의 길이도 여러 가지라서 ④ 는 옳지 않아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "circle.diameter-radius",
-            "circle.chord-vs-arc"
-          ]
-        },
-        {
-          "id": "m1-u10-t01-06",
-          "level": "M",
-          "stem_src": "원 O에서 호 AB와 현 AB가 모두 정해질 때, 이들이 만드는 도형 중 활꼴 은? ① 호 AB만 &nbsp; ② 현 AB만 &nbsp; ③ 호 AB + 현 AB로 둘러싸인 영역 &nbsp; ④ 호 AB + 두 반지름",
-          "stem_print": "원 O에서 호 AB와 현 AB가 정해질 때, <strong>활꼴</strong>에 해당하는 것을 골라 번호와 설명을 쓰시오.<br>① 호 AB만 &nbsp; ② 현 AB만<br>③ 호 AB와 현 AB로 둘러싸인 영역 &nbsp; ④ 호 AB와 두 반지름으로 둘러싸인 영역",
-          "answer_atoms": [
-            "③ 호 + 현으로 둘러싸인 영역"
-          ],
-          "answer_print": "③ 호 + 현으로 둘러싸인 영역",
-          "answer_accept": [
-            "3"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호와 설명을 함께 쓰는 꼴로",
-          "figure": null,
-          "hint": "활꼴은 한 현과 호로, 부채꼴은 두 반지름과 호로 둘러싸여요.",
-          "solution": "활꼴은 한 <strong>현</strong>과 그 호로 둘러싸인 영역이에요. ④ 는 <strong>부채꼴</strong>의 뜻이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "sector.segment-confusion"
-          ]
-        },
-        {
-          "id": "m1-u10-t01-07",
-          "level": "H",
-          "stem_src": "원의 중심 O에서 현 AB에 내린 수선의 발이 M이라고 해요. 다음 중 항상 옳은 것은? ① $\\overline{OM} = \\overline{AM}$ ② $\\overline{AM} = \\overline{MB}$ ③ $\\overline{OA} = \\overline{OM}$ ④ M은 원 위의 점이다.",
-          "stem_print": "원의 중심 O에서 현 AB에 내린 수선의 발을 M이라고 할 때, 항상 옳은 것을 골라 번호와 식을 쓰시오.<br>① 선분 OM = 선분 AM &nbsp; ② 선분 AM = 선분 MB<br>③ 선분 OA = 선분 OM &nbsp; ④ 점 M은 원 위의 점이다.",
-          "answer_atoms": [
-            "② $\\overline{AM} = \\overline{MB}$"
-          ],
-          "answer_print": "② 선분 AM = 선분 MB",
-          "answer_accept": [
-            "2",
-            "AM = MB"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호와 식을 함께 쓰는 꼴로",
-          "figure": null,
-          "hint": "중심에서 현에 내린 수선은 그 현을 이등분해요.",
-          "solution": "삼각형 OAM 과 삼각형 OBM 은 합동이에요 (OA = OB = 반지름, OM 은 공통, ∠OMA = ∠OMB = 90°). 그래서 대응하는 변인 AM 과 MB 의 길이가 같아요. 즉 중심에서 현에 내린 수선은 그 현을 이등분해요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "circle.chord-perp-bisect"
-          ]
-        },
-        {
-          "id": "m1-u10-t01-08",
-          "level": "H",
-          "stem_src": "원에 다음 5개 직선·선분이 있어요: 지름·반지름·현·접선·할선. 이 중 원과 만나는 점의 개수가 한 개 인 것은 몇 개인가요?",
-          "stem_print": "원에 대하여 지름, 반지름, 현, 접선, 할선 이 다섯 가지가 있다. 이 중 <strong>원과 만나는 점이 한 개</strong>인 것은 모두 몇 개인지 구하시오.",
-          "answer_atoms": [
-            "2개 (반지름·접선)"
-          ],
-          "answer_print": "2개 (반지름·접선)",
-          "answer_accept": [
-            "2개"
-          ],
-          "answer_unit": null,
-          "answer_format": "몇 개인지 개수로 쓰는 꼴로",
-          "figure": null,
-          "hint": "각각이 원과 어디에서 만나는지 세어 봐요. 반지름은 한 끝이 중심이에요.",
-          "solution": "지름은 두 점, <strong>반지름</strong>은 한 점, 현은 두 점, <strong>접선</strong>은 한 점(접점), 할선은 두 점에서 만나요. 그래서 한 점인 것은 반지름과 접선, 모두 2개예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "circle.tangent-secant",
-            "circle.diameter-radius"
-          ]
-        },
-        {
-          "id": "m1-u10-t01-09",
-          "level": "H",
-          "stem_src": "반지름 $10$ cm 인 원에서, 중심으로부터 $6$ cm 떨어진 곳에 그어진 현의 길이를 구하세요. (피타고라스 정리: $a^2+b^2=c^2$ 활용 — 직각삼각형)",
-          "stem_print": "반지름이 10 cm 인 원에서 중심으로부터 6 cm 떨어진 곳에 그어진 현의 길이를 구하시오. (피타고라스 정리 a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> 을 이용한다.)",
-          "answer_atoms": [
-            "$16$ cm"
-          ],
-          "answer_print": "16",
-          "answer_accept": [
-            "16 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "cm 단위의 수로",
-          "figure": "<svg class=\"fig-svg\" style=\"width:48.4mm\" viewBox=\"-110 -110 220 220\">\n  <circle cx=\"0\" cy=\"0\" r=\"80\" fill=\"none\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <line x1=\"-64\" y1=\"-48\" x2=\"64\" y2=\"-48\" stroke=\"#7b2ff7\" stroke-width=\"2\"/>\n  <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"-48\" stroke=\"#10b981\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n  <line x1=\"0\" y1=\"0\" x2=\"64\" y2=\"-48\" stroke=\"#10b981\" stroke-width=\"1.5\"/>\n  <circle cx=\"0\" cy=\"0\" r=\"3\" fill=\"#1d3557\"/>\n  <text x=\"-12\" y=\"4\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d3557\">O</text>\n  <text x=\"-78\" y=\"-50\" font-size=\"11\" font-weight=\"bold\" fill=\"#7b2ff7\">A</text>\n  <text x=\"68\" y=\"-50\" font-size=\"11\" font-weight=\"bold\" fill=\"#7b2ff7\">B</text>\n  <text x=\"-3\" y=\"-30\" font-size=\"11\" fill=\"#10b981\">6</text>\n  <text x=\"34\" y=\"-22\" font-size=\"11\" fill=\"#10b981\">10</text>\n  <rect x=\"-7\" y=\"-55\" width=\"7\" height=\"7\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"1\"/>\n</svg>",
-          "hint": "중심에서 현에 내린 수선은 현을 이등분해요. 중심·수선의 발·현의 끝점이 직각삼각형을 이뤄요.",
-          "solution": "중심 O에서 현 AB에 내린 수선의 발을 M이라 하면 OM = 6, OA = 10 (반지름)이에요.<br>직각삼각형 OAM 에서 AM<sup>2</sup> + 6<sup>2</sup> = 10<sup>2</sup> 이므로 AM<sup>2</sup> = 100 − 36 = 64, AM = 8 이에요.<br>수선이 현을 이등분하므로 AB = 2 × 8 = 16 cm 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "circle.chord-perp-bisect",
-            "circle.diameter-radius"
-          ]
+          "misconceptions": ["circle.tangent-secant"]
         }
       ]
     },
     {
       "no": 2,
       "title": "원의 둘레와 넓이",
-      "principle": "원의 둘레는 C = 2πr = πd, 원의 넓이는 A = πr<sup>2</sup> 로 구해요. 답에는 π 를 그대로 남겨요.",
+      "principle": "둘레 C = 2πr. 넓이 A = πr².",
       "problems": [
         {
           "id": "m1-u10-t02-01",
           "level": "L",
-          "stem_src": "반지름 $7$ cm 인 원의 둘레는?",
-          "stem_print": "반지름이 7 cm 인 원의 둘레의 길이를 구하시오.",
-          "answer_atoms": [
-            "$14\\pi$ cm"
-          ],
+          "stem_src": "반지름이 7cm인 원의 둘레는? (계수만, 예: 4π는 4)",
+          "stem_print": "반지름이 7cm인 원의 둘레를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["14"],
           "answer_print": "14π",
-          "answer_accept": [
-            "14π cm",
-            "2π×7"
-          ],
+          "answer_accept": [],
           "answer_unit": "cm",
-          "answer_format": "π 를 남긴 꼴로 (3.14 로 계산하지 않아요)",
+          "answer_format": "OOπ 꼴로 (단위: cm)",
           "figure": null,
-          "hint": "원의 둘레는 2πr 이에요.",
-          "solution": "C = 2π × 7 = 14π cm 예요.",
+          "hint": "C = 2πr.",
+          "solution": "C = 2π×7 = 14π cm.",
           "work_space": "sm",
-          "misconceptions": [
-            "circle.circumference-vs-area",
-            "circle.pi-decimal"
-          ]
+          "misconceptions": ["circle.circumference-vs-area"]
         },
         {
           "id": "m1-u10-t02-02",
-          "level": "L",
-          "stem_src": "지름 $12$ cm 인 원의 넓이는?",
-          "stem_print": "지름이 12 cm 인 원의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$36\\pi$ cm²"
-          ],
+          "level": "M",
+          "stem_src": "지름이 12cm인 원의 넓이는? (계수만)",
+          "stem_print": "지름이 12cm인 원의 넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["36"],
           "answer_print": "36π",
-          "answer_accept": [
-            "36π cm²"
-          ],
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
           "figure": null,
-          "hint": "먼저 반지름을 구해요. 반지름은 지름의 절반이에요.",
-          "solution": "d = 12 이므로 r = 6 이에요.<br>A = πr<sup>2</sup> = π × 36 = 36π cm² 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "circle.diameter-radius",
-            "circle.circumference-vs-area"
-          ]
+          "hint": "지름 12 → 반지름 6.",
+          "solution": "지름 12 → 반지름 6, A = π×6² = 36π cm².",
+          "work_space": "md",
+          "misconceptions": ["circle.diameter-radius"]
         },
         {
           "id": "m1-u10-t02-03",
-          "level": "L",
-          "stem_src": "반지름 $3$ cm 인 원의 둘레와 넓이를 각각 구하세요.",
-          "stem_print": "반지름이 3 cm 인 원의 둘레의 길이와 넓이를 각각 구하시오.",
-          "answer_atoms": [
-            "둘레 $6\\pi$ cm, 넓이 $9\\pi$ cm²"
-          ],
-          "answer_print": "둘레 6π cm, 넓이 9π cm²",
-          "answer_accept": [
-            "6π cm / 9π cm²"
-          ],
-          "answer_unit": null,
-          "answer_format": "둘레와 넓이를 각각, π 를 남긴 꼴로 (단위도 함께)",
-          "figure": null,
-          "hint": "둘레와 넓이는 공식도 단위도 달라요.",
-          "solution": "C = 2π × 3 = 6π cm 이고, A = π × 3<sup>2</sup> = 9π cm² 예요.<br>둘레는 cm, 넓이는 cm² 로 단위가 달라요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "circle.circumference-vs-area",
-            "circle.unit-length-area"
-          ]
-        },
-        {
-          "id": "m1-u10-t02-04",
           "level": "M",
-          "stem_src": "둘레가 $20\\pi$ cm 인 원의 반지름은?",
-          "stem_print": "둘레의 길이가 20π cm 인 원의 반지름의 길이를 구하시오.",
-          "answer_atoms": [
-            "$10$ cm"
-          ],
-          "answer_print": "10",
-          "answer_accept": [
-            "10 cm"
-          ],
+          "stem_src": "넓이가 49π cm²인 원의 반지름은?",
+          "stem_print": "넓이가 49π cm²인 원의 반지름을 구하시오.",
+          "answer_atoms": ["7"],
+          "answer_print": "7",
+          "answer_accept": [],
           "answer_unit": "cm",
-          "answer_format": "cm 단위의 수로",
+          "answer_format": "수로 (단위: cm)",
           "figure": null,
-          "hint": "2πr 이 20π 와 같다고 놓고 r 을 구해요.",
-          "solution": "2πr = 20π 이므로 r = 10 cm 예요.",
+          "hint": "πr²=49π에서 r²=49예요.",
+          "solution": "πr²=49π → r²=49 → r=7cm (반지름은 양수).",
           "work_space": "md",
-          "misconceptions": [
-            "circle.circumference-vs-area",
-            "circle.diameter-radius"
-          ]
-        },
-        {
-          "id": "m1-u10-t02-05",
-          "level": "M",
-          "stem_src": "넓이가 $49\\pi$ cm² 인 원의 반지름과 둘레를 각각 구하세요.",
-          "stem_print": "넓이가 49π cm² 인 원의 반지름의 길이와 둘레의 길이를 각각 구하시오.",
-          "answer_atoms": [
-            "$r = 7$ cm, $C = 14\\pi$ cm"
-          ],
-          "answer_print": "r = 7 cm, C = 14π cm",
-          "answer_accept": [
-            "7 cm / 14π cm"
-          ],
-          "answer_unit": null,
-          "answer_format": "반지름과 둘레를 각각, π 를 남긴 꼴로 (단위도 함께)",
-          "figure": null,
-          "hint": "πr<sup>2</sup> = 49π 에서 r<sup>2</sup> 을 먼저 구해요.",
-          "solution": "πr<sup>2</sup> = 49π 이므로 r<sup>2</sup> = 49, r = 7 cm 예요 (반지름은 양수).<br>C = 2π × 7 = 14π cm 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "circle.circumference-vs-area"
-          ]
-        },
-        {
-          "id": "m1-u10-t02-06",
-          "level": "M",
-          "stem_src": "반지름 $5$ cm 인 반원 의 넓이는?",
-          "stem_print": "반지름이 5 cm 인 <strong>반원</strong>의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$\\dfrac{25\\pi}{2}$ cm² (또는 $12.5\\pi$ cm²)"
-          ],
-          "answer_print": "<span class=\"frac\"><b>25π</b><i>2</i></span>",
-          "answer_accept": [
-            "12.5π cm²",
-            "25π/2 cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (분수 또는 소수)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:39.6mm\" viewBox=\"-90 -50 180 100\">\n  <path d=\"M -70 30 A 70 70 0 0 1 70 30 Z\" fill=\"rgba(67,97,238,0.2)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <text x=\"0\" y=\"-10\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4361EE\">반원</text>\n  <text x=\"0\" y=\"48\" text-anchor=\"middle\" font-size=\"11\" fill=\"#10b981\">r = 5</text>\n</svg>",
-          "hint": "반원은 원의 절반이에요.",
-          "solution": "원의 넓이는 π × 5<sup>2</sup> = 25π cm² 이고, 반원은 그 절반이므로 <span class=\"frac\"><b>25π</b><i>2</i></span> cm² 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "circle.circumference-vs-area",
-            "area.shaded-subtract"
-          ]
-        },
-        {
-          "id": "m1-u10-t02-07",
-          "level": "H",
-          "stem_src": "아래 그림은 반지름 $6$ cm 인 큰 원 안에 반지름 $4$ cm 인 작은 원이 있는 도넛 모양이에요. 색칠한 부분의 넓이는?",
-          "stem_print": "아래 그림은 반지름이 6 cm 인 큰 원 안에 반지름이 4 cm 인 작은 원이 들어 있는 도넛 모양이다. 색칠한 부분의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$20\\pi$ cm²"
-          ],
-          "answer_print": "20π",
-          "answer_accept": [
-            "20π cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:44.0mm\" viewBox=\"-100 -100 200 200\">\n  <circle cx=\"0\" cy=\"0\" r=\"80\" fill=\"rgba(67,97,238,0.25)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <circle cx=\"0\" cy=\"0\" r=\"53\" fill=\"#fff\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <text x=\"0\" y=\"-86\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4361EE\">$R = 6$</text>\n  <text x=\"0\" y=\"0\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1d3557\">$r = 4$</text>\n</svg>",
-          "hint": "큰 원의 넓이에서 작은 원의 넓이를 빼요.",
-          "solution": "π × 6<sup>2</sup> − π × 4<sup>2</sup> = 36π − 16π = 20π cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "area.shaded-subtract",
-            "circle.circumference-vs-area"
-          ]
-        },
-        {
-          "id": "m1-u10-t02-08",
-          "level": "H",
-          "stem_src": "반원의 둘레가 $10\\pi + 20$ cm 일 때, 반원의 반지름은?",
-          "stem_print": "반원의 둘레의 길이가 (10π + 20) cm 일 때, 이 반원의 반지름의 길이를 구하시오.",
-          "answer_atoms": [
-            "$10$ cm"
-          ],
-          "answer_print": "10",
-          "answer_accept": [
-            "10 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "cm 단위의 수로",
-          "figure": null,
-          "hint": "반원의 둘레는 둥근 부분만이 아니에요. 곧은 지름도 함께 세어요.",
-          "solution": "반원의 둘레 = (반원의 호) + (지름) = πr + 2r 이에요.<br>πr + 2r = 10π + 20 → r(π + 2) = 10(π + 2) → r = 10 cm 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "semicircle.perimeter-missing-diameter"
-          ]
-        },
-        {
-          "id": "m1-u10-t02-09",
-          "level": "H",
-          "stem_src": "한 변이 $10$ cm 인 정사각형 종이 위에, 종이 정중앙에 반지름 $5$ cm 인 원을 그렸어요. 정사각형 안에서 원 바깥의 부분의 넓이는?",
-          "stem_print": "한 변의 길이가 10 cm 인 정사각형 종이 한가운데에 반지름이 5 cm 인 원을 그렸다. 정사각형 안에서 원의 바깥쪽 부분의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$(100 - 25\\pi)$ cm²"
-          ],
-          "answer_print": "100 − 25π",
-          "answer_accept": [
-            "(100 − 25π) cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (소수로 계산하지 않아요)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:48.4mm\" viewBox=\"-110 -110 220 220\">\n  <rect x=\"-100\" y=\"-100\" width=\"200\" height=\"200\" fill=\"rgba(67,97,238,0.2)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <circle cx=\"0\" cy=\"0\" r=\"100\" fill=\"white\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <text x=\"-90\" y=\"-104\" font-size=\"11\" fill=\"#4361EE\">10</text>\n  <text x=\"0\" y=\"6\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1d3557\">$r=5$</text>\n</svg>",
-          "hint": "정사각형의 넓이에서 원의 넓이를 빼요.",
-          "solution": "정사각형의 넓이 = 10 × 10 = 100 cm² 이고, 원의 넓이 = π × 5<sup>2</sup> = 25π cm² 예요.<br>색칠한 부분 = 100 − 25π cm² 예요. π 를 그대로 두는 것이 표준이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "area.shaded-subtract",
-            "circle.pi-decimal"
-          ]
+          "misconceptions": ["circle.circumference-vs-area"]
         }
       ]
     },
     {
       "no": 3,
-      "title": "부채꼴과 활꼴",
-      "principle": "두 반지름과 호로 둘러싸이면 부채꼴, 한 현과 호로 둘러싸이면 활꼴이에요. 활꼴의 넓이는 (부채꼴) − (삼각형) 으로 구해요.",
+      "title": "부채꼴과 활꼴 구분",
+      "principle": "부채꼴 = 두 반지름 + 호. 활꼴 = 한 현 + 호.",
       "problems": [
         {
           "id": "m1-u10-t03-01",
           "level": "L",
-          "stem_src": "\"두 반지름과 그 사이의 호로 둘러싸인 도형\"의 이름은? ① 부채꼴 &nbsp; ② 활꼴 &nbsp; ③ 반원 &nbsp; ④ 도넛",
-          "stem_print": "\"두 반지름과 그 사이의 호로 둘러싸인 도형\"의 이름을 골라 번호와 이름을 쓰시오.<br>① 부채꼴 &nbsp; ② 활꼴 &nbsp; ③ 반원 &nbsp; ④ 도넛",
-          "answer_atoms": [
-            "① 부채꼴"
-          ],
-          "answer_print": "① 부채꼴",
-          "answer_accept": [
-            "1"
-          ],
+          "stem_src": "두 반지름과 호로 둘러싸인 도형의 이름은?",
+          "stem_print": "두 반지름과 호로 둘러싸인 도형의 이름을 쓰시오.",
+          "answer_atoms": ["부채꼴"],
+          "answer_print": "부채꼴",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "번호와 이름을 함께 쓰는 꼴로",
+          "answer_format": "낱말로 (단위 없음)",
           "figure": null,
-          "hint": "두 반지름이 열쇠말이에요.",
-          "solution": "두 반지름과 그 사이의 호로 둘러싸인 도형이 부채꼴이에요. 피자 한 조각 모양이에요.",
+          "hint": "곧은 부분이 두 개예요.",
+          "solution": "두 반지름과 호로 둘러싸인 도형은 부채꼴이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "sector.segment-confusion"
-          ]
+          "misconceptions": ["sector.segment-confusion"]
         },
         {
           "id": "m1-u10-t03-02",
           "level": "L",
-          "stem_src": "아래 그림에서 색칠한 부분의 이름은?",
-          "stem_print": "아래 그림에서 색칠한 부분의 이름을 골라 번호와 이름을 쓰시오.<br>① 부채꼴 &nbsp; ② 활꼴 &nbsp; ③ 반원 &nbsp; ④ 도넛",
-          "answer_atoms": [
-            "② 활꼴"
-          ],
-          "answer_print": "② 활꼴",
-          "answer_accept": [
-            "2"
-          ],
+          "stem_src": "한 현과 그 호로 둘러싸인 도형의 이름은?",
+          "stem_print": "한 현과 그 호로 둘러싸인 도형의 이름을 쓰시오.",
+          "answer_atoms": ["활꼴"],
+          "answer_print": "활꼴",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "번호와 이름을 함께 쓰는 꼴로",
-          "figure": "<svg class=\"fig-svg\" style=\"width:44.0mm\" viewBox=\"-100 -100 200 200\">\n  <!-- 활꼴 -->\n  <circle cx=\"0\" cy=\"0\" r=\"80\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n  <path d=\"M -68 -40 A 80 80 0 0 1 68 -40 Z\" fill=\"rgba(67,97,238,0.3)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <line x1=\"-68\" y1=\"-40\" x2=\"68\" y2=\"-40\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <circle cx=\"0\" cy=\"0\" r=\"3\" fill=\"#1d3557\"/>\n  <text x=\"-12\" y=\"4\" font-size=\"11\" fill=\"#1d3557\">O</text>\n  <text x=\"-78\" y=\"-44\" font-size=\"11\" fill=\"#4361EE\">A</text>\n  <text x=\"72\" y=\"-44\" font-size=\"11\" fill=\"#4361EE\">B</text>\n</svg>",
-          "hint": "경계가 한 현과 호로 이루어졌는지 살펴봐요. 중심 O가 그 안에 들어 있나요?",
-          "solution": "경계가 현 AB와 호 AB로 이루어진 도형이에요. 중심 O는 이 영역 밖에 있어요.",
+          "answer_format": "낱말로 (단위 없음)",
+          "figure": null,
+          "hint": "곧은 부분이 한 개예요.",
+          "solution": "한 현과 그 호로 둘러싸인 도형은 활꼴이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "sector.segment-confusion"
-          ]
+          "misconceptions": ["sector.segment-confusion"]
         },
         {
           "id": "m1-u10-t03-03",
           "level": "L",
-          "stem_src": "중심각이 $180°$인 부채꼴은 어떤 도형과 같은가요? ① 정사각형 &nbsp; ② 반원 &nbsp; ③ 정삼각형 &nbsp; ④ 사분원",
-          "stem_print": "중심각이 180° 인 부채꼴과 같은 도형을 골라 번호와 이름을 쓰시오.<br>① 정사각형 &nbsp; ② 반원 &nbsp; ③ 정삼각형 &nbsp; ④ 사분원",
-          "answer_atoms": [
-            "② 반원"
-          ],
-          "answer_print": "② 반원",
-          "answer_accept": [
-            "2"
-          ],
+          "stem_src": "중심각이 180°인 부채꼴은 무엇이 되나요?",
+          "stem_print": "중심각이 180°인 부채꼴은 무엇이 되는지 쓰시오.",
+          "answer_atoms": ["반원"],
+          "answer_print": "반원",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "번호와 이름을 함께 쓰는 꼴로",
+          "answer_format": "낱말로 (단위 없음)",
           "figure": null,
-          "hint": "180° 는 평각이에요. 두 반지름이 일직선이 되면 무엇이 될까요?",
-          "solution": "중심각이 180° 이면 두 반지름이 일직선이 되어 지름이 돼요. 그래서 부채꼴이 곧 반원이고, 이때만 활꼴과도 같아져요.",
+          "hint": "지름이 곧 현이 되는 특수한 경우예요.",
+          "solution": "중심각이 180°이면 부채꼴은 반원이 돼요(이때만 부채꼴=활꼴).",
           "work_space": "sm",
-          "misconceptions": [
-            "sector.segment-confusion"
-          ]
-        },
-        {
-          "id": "m1-u10-t03-04",
-          "level": "M",
-          "stem_src": "아래 그림에서 호 AB와 현 AB가 만드는 도형 두 가지 (가, 나)에 대한 설명으로 옳은 것은?",
-          "stem_print": "아래 그림에서 호 AB와 현 AB가 만드는 두 도형 (가), (나)에 대한 설명으로 옳은 것을 골라 번호와 설명을 쓰시오.<br>① (가)는 활꼴, (나)는 부채꼴 &nbsp; ② (가)는 부채꼴, (나)는 활꼴<br>③ 둘 다 부채꼴 &nbsp; ④ 둘 다 활꼴",
-          "answer_atoms": [
-            "② (가)는 부채꼴, (나)는 활꼴"
-          ],
-          "answer_print": "② (가)는 부채꼴, (나)는 활꼴",
-          "answer_accept": [
-            "2"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호와 설명을 함께 쓰는 꼴로",
-          "figure": "<svg class=\"fig-svg\" style=\"width:44.0mm\" viewBox=\"-100 -100 200 200\">\n  <circle cx=\"0\" cy=\"0\" r=\"80\" fill=\"none\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <!-- 부채꼴 (가) -->\n  <path d=\"M 0 0 L 80 0 A 80 80 0 0 0 -40 -69.3 Z\" fill=\"rgba(67,97,238,0.25)\" stroke=\"#4361EE\" stroke-width=\"1.5\"/>\n  <!-- 활꼴 (나) -->\n  <path d=\"M 80 0 A 80 80 0 0 0 -40 -69.3 L 80 0 Z\" fill=\"rgba(247,127,36,0.25)\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <circle cx=\"0\" cy=\"0\" r=\"3\" fill=\"#1d3557\"/>\n  <text x=\"-10\" y=\"14\" font-size=\"11\" fill=\"#1d3557\">O</text>\n  <text x=\"84\" y=\"2\" font-size=\"11\" fill=\"#4361EE\">A</text>\n  <text x=\"-50\" y=\"-72\" font-size=\"11\" fill=\"#4361EE\">B</text>\n  <text x=\"20\" y=\"-25\" font-size=\"11\" font-weight=\"bold\" fill=\"#4361EE\">(가)</text>\n  <text x=\"35\" y=\"-50\" font-size=\"11\" font-weight=\"bold\" fill=\"#f59e0b\">(나)</text>\n</svg>",
-          "hint": "중심 O를 품고 있는 쪽이 어느 쪽인지 봐요.",
-          "solution": "(가)는 두 반지름 OA, OB와 호 AB로 둘러싸여 있으니 부채꼴이에요. (나)는 현 AB와 호 AB로 둘러싸여 있으니 활꼴이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "sector.segment-confusion"
-          ]
-        },
-        {
-          "id": "m1-u10-t03-05",
-          "level": "M",
-          "stem_src": "한 원에서 부채꼴과 활꼴이 항상 같은 도형이 되는 경우는? ① 중심각이 $90°$일 때 &nbsp; ② 중심각이 $180°$일 때 &nbsp; ③ 중심각이 $360°$일 때 &nbsp; ④ 한 번도 같지 않음",
-          "stem_print": "한 원에서 부채꼴과 활꼴이 같은 도형이 되는 경우를 골라 번호와 내용을 쓰시오.<br>① 중심각이 90° 일 때 &nbsp; ② 중심각이 180° 일 때<br>③ 중심각이 360° 일 때 &nbsp; ④ 한 번도 같지 않다",
-          "answer_atoms": [
-            "② 중심각이 $180°$일 때 (반원)"
-          ],
-          "answer_print": "② 중심각이 180° 일 때 (반원)",
-          "answer_accept": [
-            "2"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호와 각의 크기를 함께 쓰는 꼴로",
-          "figure": null,
-          "hint": "두 반지름이 한 직선이 될 때를 생각해 봐요.",
-          "solution": "중심각이 180° 이면 두 반지름이 일직선이 되어 지름이 곧 현이 돼요. 그러면 \"두 반지름 + 호\" 와 \"한 현 + 호\" 가 같아져서 부채꼴 = 활꼴 = 반원 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "sector.segment-confusion"
-          ]
-        },
-        {
-          "id": "m1-u10-t03-06",
-          "level": "M",
-          "stem_src": "반지름 $4$ cm, 중심각 $90°$ 인 부채꼴 OAB가 있어요. 이 부채꼴 안에 그어진 현 AB로 만들어지는 활꼴의 넓이는? (사분원에서 직각이등변삼각형 빼기)",
-          "stem_print": "반지름이 4 cm, 중심각이 90° 인 부채꼴 OAB가 있다. 현 AB로 만들어지는 활꼴의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$(4\\pi - 8)$ cm²"
-          ],
-          "answer_print": "4π − 8",
-          "answer_accept": [
-            "(4π − 8) cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:44.0mm\" viewBox=\"-30 -110 200 140\">\n  <path d=\"M 0 0 L 100 0 A 100 100 0 0 0 0 -100 Z\" fill=\"rgba(67,97,238,0.18)\" stroke=\"#4361EE\" stroke-width=\"1.5\"/>\n  <path d=\"M 100 0 A 100 100 0 0 0 0 -100 L 100 0 Z\" fill=\"rgba(247,127,36,0.4)\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <circle cx=\"0\" cy=\"0\" r=\"3\" fill=\"#1d3557\"/>\n  <text x=\"-13\" y=\"3\" font-size=\"11\" fill=\"#1d3557\">O</text>\n  <text x=\"106\" y=\"3\" font-size=\"11\" fill=\"#4361EE\">A</text>\n  <text x=\"-12\" y=\"-104\" font-size=\"11\" fill=\"#4361EE\">B</text>\n  <text x=\"55\" y=\"-50\" font-size=\"11\" font-weight=\"bold\" fill=\"#f59e0b\">활꼴</text>\n</svg>",
-          "hint": "활꼴 = (부채꼴) − (삼각형 OAB) 예요. 삼각형은 두 변이 반지름인 직각이등변삼각형이에요.",
-          "solution": "부채꼴(사분원)의 넓이 = π × 4<sup>2</sup> × <span class=\"frac\"><b>1</b><i>4</i></span> = 4π cm²<br>삼각형 OAB의 넓이 = <span class=\"frac\"><b>1</b><i>2</i></span> × 4 × 4 = 8 cm²<br>활꼴의 넓이 = 4π − 8 cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sector.segment-confusion",
-            "area.shaded-subtract",
-            "sector.arc-vs-area-formula"
-          ]
-        },
-        {
-          "id": "m1-u10-t03-07",
-          "level": "H",
-          "stem_src": "아래 그림에서 색칠한 두 부분(잎사귀 모양)의 넓이는? 정사각형 한 변 = $4$ cm, 두 사분원이 마주 보는 모양.",
-          "stem_print": "아래 그림은 한 변의 길이가 4 cm 인 정사각형에서 마주 보는 두 꼭짓점을 중심으로 하는 두 사분원을 그린 것이다. 색칠한 잎사귀 모양의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$(8\\pi - 16)$ cm²"
-          ],
-          "answer_print": "8π − 16",
-          "answer_accept": [
-            "(8π − 16) cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:52.8mm\" viewBox=\"-20 -20 240 240\">\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"200\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <!-- 두 사분원 교집합 (잎) -->\n  <path d=\"M 200 0 A 200 200 0 0 0 0 200 A 200 200 0 0 0 200 0 Z\" fill=\"rgba(247,127,36,0.4)\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"100\" y=\"-6\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1d3557\">한 변 4</text>\n  <text x=\"100\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#f59e0b\">잎사귀</text>\n</svg>",
-          "hint": "잎사귀 = (활꼴) × 2 로 볼 수도 있고, (두 사분원의 합) − (정사각형) 으로 볼 수도 있어요.",
-          "solution": "방법 1 — 사분원 한 개 = π × 4<sup>2</sup> × <span class=\"frac\"><b>1</b><i>4</i></span> = 4π, 삼각형 한 개 = <span class=\"frac\"><b>1</b><i>2</i></span> × 4 × 4 = 8 이므로 활꼴 한 개 = 4π − 8 이에요.<br>잎사귀 = (4π − 8) × 2 = 8π − 16 cm²<br><br>방법 2 — 두 사분원의 넓이의 합 = 8π, 두 사분원이 덮은 전체(정사각형) = 16 이므로 겹친 잎사귀 = 8π − 16 cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "area.shaded-subtract",
-            "sector.segment-confusion"
-          ]
-        },
-        {
-          "id": "m1-u10-t03-08",
-          "level": "H",
-          "stem_src": "한 부채꼴의 중심각이 $60°$, 반지름이 $6$ cm 일 때, 이 부채꼴의 호와 현으로 만든 활꼴의 넓이는? (정삼각형 넓이 공식 $\\dfrac{\\sqrt{3}}{4}a^2$ 활용)",
-          "stem_print": "중심각이 60°, 반지름이 6 cm 인 부채꼴에서 호와 현으로 만들어지는 활꼴의 넓이를 구하시오. (한 변의 길이가 a 인 정삼각형의 넓이는 <span class=\"frac\"><b>√3</b><i>4</i></span> a<sup>2</sup> 이다.)",
-          "answer_atoms": [
-            "$(6\\pi - 9\\sqrt{3})$ cm²"
-          ],
-          "answer_print": "6π − 9√3",
-          "answer_accept": [
-            "(6π − 9√3) cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 와 √3 을 남긴 꼴로 (넓이 단위는 cm²)",
-          "figure": null,
-          "hint": "중심각이 60° 이고 두 반지름의 길이가 같으면 정삼각형이 돼요.",
-          "solution": "부채꼴의 넓이 = π × 6<sup>2</sup> × <span class=\"frac\"><b>1</b><i>6</i></span> = 6π cm²<br>두 반지름과 현이 만드는 삼각형은 한 변이 6 인 <strong>정삼각형</strong>이므로 넓이는 <span class=\"frac\"><b>√3</b><i>4</i></span> × 6<sup>2</sup> = 9√3 cm²<br>활꼴의 넓이 = 6π − 9√3 cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "area.shaded-subtract",
-            "sector.arc-vs-area-formula"
-          ]
-        },
-        {
-          "id": "m1-u10-t03-09",
-          "level": "H",
-          "stem_src": "반지름 $r$ 인 원에서, 중심각 $\\theta°$ 인 부채꼴에서 활꼴 넓이를 표현하는 일반식은? (부채꼴 넓이 - 삼각형 넓이의 형태)",
-          "stem_print": "반지름이 r, 중심각이 θ° 인 부채꼴에서 활꼴의 넓이를 나타내는 식을 (부채꼴의 넓이) − (삼각형의 넓이) 의 꼴로 나타내시오.",
-          "answer_atoms": [
-            "$\\pi r^2 \\cdot \\dfrac{\\theta}{360} - \\dfrac{1}{2}r^2 \\sin\\theta$"
-          ],
-          "answer_print": "πr<sup>2</sup> × <span class=\"frac\"><b>θ</b><i>360</i></span> − <span class=\"frac\"><b>1</b><i>2</i></span> r<sup>2</sup> sin θ",
-          "answer_accept": [
-            "πr²θ/360 − (1/2)r²sinθ"
-          ],
-          "answer_unit": null,
-          "answer_format": "r 과 θ 로 나타낸 식으로",
-          "figure": null,
-          "hint": "삼각형의 넓이는 두 변과 그 사이 각으로 나타낼 수 있어요. sin 은 중학교 3학년에서 배우니 지금은 식의 꼴만 익혀 둬요.",
-          "solution": "부채꼴의 넓이 = πr<sup>2</sup> × <span class=\"frac\"><b>θ</b><i>360</i></span> 이고, 두 반지름이 만드는 삼각형의 넓이 = <span class=\"frac\"><b>1</b><i>2</i></span> r<sup>2</sup> sin θ 예요.<br>활꼴 = (부채꼴) − (삼각형) 이므로 두 식을 빼면 돼요.<br>중학교 1학년에서는 θ 가 60°, 90° 같은 특별한 각으로만 나와서, 앞 문제처럼 정삼각형이나 직각이등변삼각형의 넓이로 바꿔 풀어요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sector.arc-vs-area-formula",
-            "area.shaded-subtract"
-          ]
+          "misconceptions": []
         }
       ]
     },
     {
       "no": 4,
       "title": "호의 길이",
-      "principle": "부채꼴의 호의 길이는 원의 둘레에 중심각의 비율을 곱해요.  l = 2πr × <span class=\"frac\"><b>θ</b><i>360</i></span>",
+      "principle": "l = 2πr × (θ／360).",
       "problems": [
         {
           "id": "m1-u10-t04-01",
           "level": "L",
-          "stem_src": "반지름 $6$ cm, 중심각 $60°$ 인 부채꼴의 호의 길이는?",
-          "stem_print": "반지름이 6 cm, 중심각이 60° 인 부채꼴의 호의 길이를 구하시오.",
-          "answer_atoms": [
-            "$2\\pi$ cm"
-          ],
-          "answer_print": "2π",
-          "answer_accept": [
-            "2π cm"
-          ],
+          "stem_src": "반지름 6cm, 중심각 120°인 부채꼴의 호의 길이는? (계수만)",
+          "stem_print": "반지름 6cm, 중심각 120°인 부채꼴의 호의 길이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["4"],
+          "answer_print": "4π",
+          "answer_accept": [],
           "answer_unit": "cm",
-          "answer_format": "π 를 남긴 꼴로 (길이 단위는 cm)",
+          "answer_format": "OOπ 꼴로 (단위: cm)",
           "figure": null,
-          "hint": "원의 둘레에 중심각의 비율을 곱해요.",
-          "solution": "l = 2π × 6 × <span class=\"frac\"><b>1</b><i>6</i></span> = 2π cm 예요.",
+          "hint": "l = 2πr × (θ／360).",
+          "solution": "l = 2π×6×(120／360) = 4π cm.",
           "work_space": "sm",
-          "misconceptions": [
-            "sector.ratio-360",
-            "sector.arc-vs-area-formula"
-          ]
+          "misconceptions": ["sector.ratio-360"]
         },
         {
           "id": "m1-u10-t04-02",
           "level": "L",
-          "stem_src": "반지름 $10$ cm, 중심각 $90°$ 인 사분원의 호의 길이는?",
-          "stem_print": "반지름이 10 cm, 중심각이 90° 인 사분원의 호의 길이를 구하시오.",
-          "answer_atoms": [
-            "$5\\pi$ cm"
-          ],
-          "answer_print": "5π",
-          "answer_accept": [
-            "5π cm"
-          ],
+          "stem_src": "반지름 9cm, 중심각 40°인 부채꼴의 호의 길이는? (계수만)",
+          "stem_print": "반지름 9cm, 중심각 40°인 부채꼴의 호의 길이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["2"],
+          "answer_print": "2π",
+          "answer_accept": [],
           "answer_unit": "cm",
-          "answer_format": "π 를 남긴 꼴로 (길이 단위는 cm)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:28.6mm\" viewBox=\"-20 -110 130 130\">\n  <path d=\"M 0 0 L 100 0 A 100 100 0 0 0 0 -100 Z\" fill=\"rgba(67,97,238,0.2)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <path d=\"M 100 0 A 100 100 0 0 0 0 -100\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/>\n  <text x=\"55\" y=\"-50\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4361EE\">90°, $r=10$</text>\n</svg>",
-          "hint": "사분원은 원의 4분의 1이에요. 호도 원의 둘레의 4분의 1이에요.",
-          "solution": "l = 2π × 10 × <span class=\"frac\"><b>1</b><i>4</i></span> = 5π cm 예요.",
+          "answer_format": "OOπ 꼴로 (단위: cm)",
+          "figure": null,
+          "hint": "l = 2πr × (θ／360).",
+          "solution": "l = 2π×9×(40／360) = 2π cm.",
           "work_space": "sm",
-          "misconceptions": [
-            "sector.ratio-360"
-          ]
+          "misconceptions": ["sector.ratio-360"]
         },
         {
           "id": "m1-u10-t04-03",
-          "level": "L",
-          "stem_src": "반지름 $12$ cm 인 원에서, 중심각이 $30°$인 호의 길이는?",
-          "stem_print": "반지름이 12 cm 인 원에서 중심각이 30° 인 호의 길이를 구하시오.",
-          "answer_atoms": [
-            "$2\\pi$ cm"
-          ],
-          "answer_print": "2π",
-          "answer_accept": [
-            "2π cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "π 를 남긴 꼴로 (길이 단위는 cm)",
-          "figure": null,
-          "hint": "30° 는 한 바퀴의 12분의 1이에요.",
-          "solution": "l = 2π × 12 × <span class=\"frac\"><b>1</b><i>12</i></span> = 2π cm 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "sector.ratio-360"
-          ]
-        },
-        {
-          "id": "m1-u10-t04-04",
           "level": "M",
-          "stem_src": "반지름 $9$ cm 인 원에서 호의 길이가 $3\\pi$ cm 인 부채꼴의 중심각의 크기는?",
-          "stem_print": "반지름이 9 cm 인 원에서 호의 길이가 3π cm 인 부채꼴의 중심각의 크기를 구하시오.",
-          "answer_atoms": [
-            "$60°$"
-          ],
-          "answer_print": "60°",
-          "answer_accept": [
-            "60도"
-          ],
-          "answer_unit": null,
-          "answer_format": "도(°) 단위의 각도로",
+          "stem_src": "호의 길이가 6π cm, 중심각이 90°인 부채꼴의 반지름은?",
+          "stem_print": "호의 길이가 6π cm, 중심각이 90°인 부채꼴의 반지름을 구하시오.",
+          "answer_atoms": ["12"],
+          "answer_print": "12",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "수로 (단위: cm)",
           "figure": null,
-          "hint": "호의 길이 공식에 값을 넣고 중심각에 대해 풀어요.",
-          "solution": "3π = 2π × 9 × <span class=\"frac\"><b>θ</b><i>360</i></span> 에서 <span class=\"frac\"><b>3</b><i>18</i></span> = <span class=\"frac\"><b>θ</b><i>360</i></span> 이므로 θ = 60° 예요.",
+          "hint": "2πr × (90／360) = 6π에서 r을 구해요.",
+          "solution": "2πr×(90／360)=6π → r／2=6 → r=12cm.",
           "work_space": "md",
-          "misconceptions": [
-            "sector.ratio-360"
-          ]
-        },
-        {
-          "id": "m1-u10-t04-05",
-          "level": "M",
-          "stem_src": "중심각 $120°$, 호의 길이 $4\\pi$ cm 인 부채꼴의 반지름은?",
-          "stem_print": "중심각이 120°, 호의 길이가 4π cm 인 부채꼴의 반지름의 길이를 구하시오.",
-          "answer_atoms": [
-            "$6$ cm"
-          ],
-          "answer_print": "6",
-          "answer_accept": [
-            "6 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "cm 단위의 수로",
-          "figure": null,
-          "hint": "호의 길이 공식에 값을 넣고 반지름에 대해 풀어요.",
-          "solution": "4π = 2πr × <span class=\"frac\"><b>1</b><i>3</i></span> 이므로 4π = <span class=\"frac\"><b>2πr</b><i>3</i></span>, r = 6 cm 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "sector.ratio-360"
-          ]
-        },
-        {
-          "id": "m1-u10-t04-06",
-          "level": "M",
-          "stem_src": "반지름 $5$ cm, 중심각 $72°$ 인 부채꼴의 둘레 는?",
-          "stem_print": "반지름이 5 cm, 중심각이 72° 인 부채꼴의 <strong>둘레</strong>의 길이를 구하시오.",
-          "answer_atoms": [
-            "$(2\\pi + 10)$ cm"
-          ],
-          "answer_print": "2π + 10",
-          "answer_accept": [
-            "(2π + 10) cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "π 를 남긴 꼴로 (길이 단위는 cm)",
-          "figure": null,
-          "hint": "부채꼴의 둘레는 호의 길이에 반지름 두 개를 더해요.",
-          "solution": "호의 길이 l = 2π × 5 × <span class=\"frac\"><b>1</b><i>5</i></span> = 2π cm 예요.<br>둘레 = (호) + (반지름) × 2 = 2π + 10 cm 예요. 반지름 두 개를 빠뜨리지 않게 조심해요.",
-          "work_space": "md",
-          "misconceptions": [
-            "sector.perimeter-missing-radii"
-          ]
-        },
-        {
-          "id": "m1-u10-t04-07",
-          "level": "H",
-          "stem_src": "아래 그림은 반지름 $4$ cm 와 $6$ cm 인 동심원에서 중심각 $90°$ 만큼 잘라낸 띠 모양이에요. 이 띠 모양의 둘레 의 길이는?",
-          "stem_print": "아래 그림은 반지름이 4 cm 와 6 cm 인 두 동심원에서 중심각 90° 만큼 잘라 낸 띠 모양이다. 이 도형의 <strong>둘레</strong>의 길이를 구하시오.",
-          "answer_atoms": [
-            "$(5\\pi + 4)$ cm"
-          ],
-          "answer_print": "5π + 4",
-          "answer_accept": [
-            "(5π + 4) cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "π 를 남긴 꼴로 (길이 단위는 cm)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:44.0mm\" viewBox=\"-30 -130 200 150\">\n  <path d=\"M 0 0 L 100 0 A 100 100 0 0 0 0 -100 L 0 -67 A 67 67 0 0 1 67 0 Z\" fill=\"rgba(67,97,238,0.3)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <text x=\"55\" y=\"-50\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4361EE\">90°</text>\n  <text x=\"105\" y=\"6\" font-size=\"10\" fill=\"#10b981\">6</text>\n  <text x=\"73\" y=\"6\" font-size=\"10\" fill=\"#10b981\">4</text>\n</svg>",
-          "hint": "둘레는 바깥 호 + 안쪽 호 + 곧은 두 변이에요.",
-          "solution": "바깥 호 = 2π × 6 × <span class=\"frac\"><b>1</b><i>4</i></span> = 3π<br>안쪽 호 = 2π × 4 × <span class=\"frac\"><b>1</b><i>4</i></span> = 2π<br>곧은 두 변 = (6 − 4) × 2 = 4<br>둘레 = 3π + 2π + 4 = 5π + 4 cm 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sector.perimeter-missing-radii",
-            "area.shaded-subtract"
-          ]
-        },
-        {
-          "id": "m1-u10-t04-08",
-          "level": "H",
-          "stem_src": "반지름 $r$, 호 길이 $l$ 인 부채꼴의 둘레가 $20$ cm 이다. 이 부채꼴의 호의 길이가 $8$ cm 일 때, 반지름은?",
-          "stem_print": "반지름이 r, 호의 길이가 l 인 부채꼴의 둘레의 길이가 20 cm 이다. 호의 길이가 8 cm 일 때 반지름의 길이를 구하시오.",
-          "answer_atoms": [
-            "$6$ cm"
-          ],
-          "answer_print": "6",
-          "answer_accept": [
-            "6 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "cm 단위의 수로",
-          "figure": null,
-          "hint": "부채꼴의 둘레는 l + 2r 이에요.",
-          "solution": "l + 2r = 20 에 l = 8 을 넣으면 8 + 2r = 20, 2r = 12, r = 6 cm 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sector.perimeter-missing-radii"
-          ]
-        },
-        {
-          "id": "m1-u10-t04-09",
-          "level": "H",
-          "stem_src": "아래 그림에서 굵은 선의 길이는? (정사각형 한 변 = $4$ cm, 4개의 사분원이 정사각형 각 꼭짓점에서 그려짐)",
-          "stem_print": "아래 그림에서 굵은 선의 길이를 구하시오. (한 변의 길이가 4 cm 인 정사각형의 네 꼭짓점을 중심으로 사분원을 그렸다.)",
-          "answer_atoms": [
-            "$4\\pi$ cm"
-          ],
-          "answer_print": "4π",
-          "answer_accept": [
-            "4π cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "π 를 남긴 꼴로 (길이 단위는 cm)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:52.8mm\" viewBox=\"-20 -20 240 240\">\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"200\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n  <!-- 4 quarter arcs in each corner -->\n  <path d=\"M 0 100 A 100 100 0 0 1 100 0\" fill=\"none\" stroke=\"#4361EE\" stroke-width=\"3\"/>\n  <path d=\"M 100 0 A 100 100 0 0 1 200 100\" fill=\"none\" stroke=\"#4361EE\" stroke-width=\"3\"/>\n  <path d=\"M 200 100 A 100 100 0 0 1 100 200\" fill=\"none\" stroke=\"#4361EE\" stroke-width=\"3\"/>\n  <path d=\"M 100 200 A 100 100 0 0 1 0 100\" fill=\"none\" stroke=\"#4361EE\" stroke-width=\"3\"/>\n  <text x=\"100\" y=\"-6\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1d3557\">한 변 4 (반지름 2)</text>\n</svg>",
-          "hint": "사분원의 반지름은 한 변의 절반이에요. 사분원의 호 4개를 모으면 무엇이 될까요?",
-          "solution": "각 사분원의 반지름은 2 cm 예요.<br>사분원의 호 한 개 = 2π × 2 × <span class=\"frac\"><b>1</b><i>4</i></span> = π cm<br>4개를 더하면 4π cm 예요. 사분원의 호 4개가 원 한 바퀴와 같다는 것을 보면 훨씬 빨라요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sector.ratio-360",
-            "area.shaded-subtract"
-          ]
+          "misconceptions": []
         }
       ]
     },
     {
       "no": 5,
       "title": "부채꼴의 넓이",
-      "principle": "부채꼴의 넓이는 두 가지로 구해요.  S = πr<sup>2</sup> × <span class=\"frac\"><b>θ</b><i>360</i></span> 이고, 호의 길이 l 을 알면 S = <span class=\"frac\"><b>1</b><i>2</i></span> rl 이에요.",
+      "principle": "S = πr² × (θ／360) = (1／2)rl.",
       "problems": [
         {
           "id": "m1-u10-t05-01",
           "level": "L",
-          "stem_src": "반지름 $6$ cm, 중심각 $90°$ 인 부채꼴 (사분원)의 넓이는?",
-          "stem_print": "반지름이 6 cm, 중심각이 90° 인 부채꼴(사분원)의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$9\\pi$ cm²"
-          ],
-          "answer_print": "9π",
-          "answer_accept": [
-            "9π cm²"
-          ],
+          "stem_src": "반지름 6cm, 중심각 120°인 부채꼴의 넓이는? (계수만)",
+          "stem_print": "반지름 6cm, 중심각 120°인 부채꼴의 넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["12"],
+          "answer_print": "12π",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
           "figure": null,
-          "hint": "원의 넓이에 중심각의 비율을 곱해요.",
-          "solution": "S = π × 6<sup>2</sup> × <span class=\"frac\"><b>1</b><i>4</i></span> = 9π cm² 예요.",
+          "hint": "S = πr² × (θ／360).",
+          "solution": "S = π×6²×(120／360) = 12π cm².",
           "work_space": "sm",
-          "misconceptions": [
-            "sector.arc-vs-area-formula",
-            "sector.ratio-360"
-          ]
+          "misconceptions": ["sector.arc-vs-area-formula"]
         },
         {
           "id": "m1-u10-t05-02",
-          "level": "L",
-          "stem_src": "반지름 $4$ cm, 중심각 $60°$ 인 부채꼴의 넓이는?",
-          "stem_print": "반지름이 4 cm, 중심각이 60° 인 부채꼴의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$\\dfrac{8\\pi}{3}$ cm²"
-          ],
-          "answer_print": "<span class=\"frac\"><b>8π</b><i>3</i></span>",
-          "answer_accept": [
-            "8π/3 cm²"
-          ],
+          "level": "M",
+          "stem_src": "반지름 5cm, 호의 길이 4π cm인 부채꼴의 넓이는? (계수만)",
+          "stem_print": "반지름 5cm, 호의 길이 4π cm인 부채꼴의 넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["10"],
+          "answer_print": "10π",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 기약분수 꼴로 (넓이 단위는 cm²)",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
           "figure": null,
-          "hint": "60° 는 한 바퀴의 6분의 1이에요.",
-          "solution": "S = π × 4<sup>2</sup> × <span class=\"frac\"><b>1</b><i>6</i></span> = <span class=\"frac\"><b>16π</b><i>6</i></span> = <span class=\"frac\"><b>8π</b><i>3</i></span> cm² 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "sector.arc-vs-area-formula"
-          ]
+          "hint": "S = (1／2)rl.",
+          "solution": "S = (1／2)×5×4π = 10π cm².",
+          "work_space": "md",
+          "misconceptions": ["sector.half-rl-misuse"]
         },
         {
           "id": "m1-u10-t05-03",
-          "level": "L",
-          "stem_src": "반지름 $5$ cm, 호의 길이 $4\\pi$ cm 인 부채꼴의 넓이는? ($\\frac{1}{2}rl$ 공식 활용)",
-          "stem_print": "반지름이 5 cm, 호의 길이가 4π cm 인 부채꼴의 넓이를 구하시오. (S = <span class=\"frac\"><b>1</b><i>2</i></span> rl 을 이용한다.)",
-          "answer_atoms": [
-            "$10\\pi$ cm²"
-          ],
-          "answer_print": "10π",
-          "answer_accept": [
-            "10π cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
-          "figure": null,
-          "hint": "중심각을 몰라도 반지름과 호의 길이만 알면 넓이를 구할 수 있어요.",
-          "solution": "S = <span class=\"frac\"><b>1</b><i>2</i></span> × 5 × 4π = 10π cm² 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "sector.half-rl-misuse"
-          ]
-        },
-        {
-          "id": "m1-u10-t05-04",
           "level": "M",
-          "stem_src": "반지름 $9$ cm, 호의 길이 $6\\pi$ cm 인 부채꼴의 넓이를 두 가지 공식으로 각각 계산해 같음을 확인하세요.",
-          "stem_print": "반지름이 9 cm, 호의 길이가 6π cm 인 부채꼴의 넓이를 두 가지 공식으로 각각 구하여 두 값이 같음을 확인하시오.",
-          "answer_atoms": [
-            "$27\\pi$ cm²"
-          ],
-          "answer_print": "27π",
-          "answer_accept": [
-            "27π cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
+          "stem_src": "넓이가 15π cm², 반지름이 5cm인 부채꼴의 중심각은?",
+          "stem_print": "넓이가 15π cm², 반지름이 5cm인 부채꼴의 중심각을 구하시오.",
+          "answer_atoms": ["216"],
+          "answer_print": "216",
+          "answer_accept": [],
+          "answer_unit": "°",
+          "answer_format": "수로 (단위: °)",
           "figure": null,
-          "hint": "먼저 반쪽 공식으로 구하고, 그다음 중심각을 구해서 다른 공식으로도 구해요.",
-          "solution": "방법 1 — S = <span class=\"frac\"><b>1</b><i>2</i></span> × 9 × 6π = 27π cm²<br>방법 2 — 6π = 2π × 9 × <span class=\"frac\"><b>θ</b><i>360</i></span> 에서 θ = 120° 이므로 S = π × 9<sup>2</sup> × <span class=\"frac\"><b>1</b><i>3</i></span> = 27π cm²<br>두 공식이 같은 값을 줘요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sector.half-rl-misuse",
-            "sector.ratio-360"
-          ]
-        },
-        {
-          "id": "m1-u10-t05-05",
-          "level": "M",
-          "stem_src": "넓이가 $6\\pi$ cm², 반지름 $3$ cm 인 부채꼴의 중심각의 크기는?",
-          "stem_print": "넓이가 6π cm², 반지름이 3 cm 인 부채꼴의 중심각의 크기를 구하시오.",
-          "answer_atoms": [
-            "$240°$"
-          ],
-          "answer_print": "240°",
-          "answer_accept": [
-            "240도"
-          ],
-          "answer_unit": null,
-          "answer_format": "도(°) 단위의 각도로",
-          "figure": null,
-          "hint": "부채꼴의 넓이 공식에 값을 넣고 중심각에 대해 풀어요.",
-          "solution": "6π = π × 3<sup>2</sup> × <span class=\"frac\"><b>θ</b><i>360</i></span> 에서 <span class=\"frac\"><b>θ</b><i>360</i></span> = <span class=\"frac\"><b>2</b><i>3</i></span> 이므로 θ = 240° 예요.<br>부채꼴의 중심각은 0° 와 360° 사이라서 240° 도 가능해요.",
+          "hint": "π×5²×(θ／360)=15π에서 θ를 구해요.",
+          "solution": "25π×(θ／360)=15π → θ／360=15／25 → θ=216°.",
           "work_space": "md",
-          "misconceptions": [
-            "sector.ratio-360",
-            "sector.arc-vs-area-formula"
-          ]
-        },
-        {
-          "id": "m1-u10-t05-06",
-          "level": "M",
-          "stem_src": "중심각 $45°$, 넓이 $2\\pi$ cm² 인 부채꼴의 반지름은?",
-          "stem_print": "중심각이 45°, 넓이가 2π cm² 인 부채꼴의 반지름의 길이를 구하시오.",
-          "answer_atoms": [
-            "$4$ cm"
-          ],
-          "answer_print": "4",
-          "answer_accept": [
-            "4 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "cm 단위의 수로",
-          "figure": null,
-          "hint": "45° 는 한 바퀴의 8분의 1이에요. r<sup>2</sup> 을 먼저 구해요.",
-          "solution": "πr<sup>2</sup> × <span class=\"frac\"><b>1</b><i>8</i></span> = 2π 이므로 r<sup>2</sup> = 16, r = 4 cm 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "sector.ratio-360"
-          ]
-        },
-        {
-          "id": "m1-u10-t05-07",
-          "level": "H",
-          "stem_src": "반지름 $r$ cm, 호 길이 $l$ cm, 넓이 $S$ cm² 인 부채꼴이 있다. $r = 8$, $l = 6\\pi$ 일 때, 이 부채꼴의 둘레와 넓이를 모두 구하세요.",
-          "stem_print": "반지름이 8 cm, 호의 길이가 6π cm 인 부채꼴의 둘레의 길이와 넓이를 각각 구하시오.",
-          "answer_atoms": [
-            "둘레 $= (6\\pi + 16)$ cm, 넓이 $= 24\\pi$ cm²"
-          ],
-          "answer_print": "둘레 6π + 16 cm, 넓이 24π cm²",
-          "answer_accept": [
-            "(6π+16) cm / 24π cm²"
-          ],
-          "answer_unit": null,
-          "answer_format": "둘레와 넓이를 각각, π 를 남긴 꼴로 (단위도 함께)",
-          "figure": null,
-          "hint": "둘레는 l + 2r, 넓이는 <span class=\"frac\"><b>1</b><i>2</i></span> rl 이에요.",
-          "solution": "둘레 = 6π + 2 × 8 = 6π + 16 cm<br>넓이 = <span class=\"frac\"><b>1</b><i>2</i></span> × 8 × 6π = 24π cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sector.perimeter-missing-radii",
-            "sector.half-rl-misuse"
-          ]
-        },
-        {
-          "id": "m1-u10-t05-08",
-          "level": "H",
-          "stem_src": "중심각 $135°$, 호의 길이 $3\\pi$ cm 인 부채꼴의 반지름과 넓이를 각각 구하세요.",
-          "stem_print": "중심각이 135°, 호의 길이가 3π cm 인 부채꼴의 반지름의 길이와 넓이를 각각 구하시오.",
-          "answer_atoms": [
-            "$r = 4$ cm, $S = 6\\pi$ cm²"
-          ],
-          "answer_print": "r = 4 cm, S = 6π cm²",
-          "answer_accept": [
-            "4 cm / 6π cm²"
-          ],
-          "answer_unit": null,
-          "answer_format": "반지름과 넓이를 각각, π 를 남긴 꼴로 (단위도 함께)",
-          "figure": null,
-          "hint": "먼저 호의 길이 공식으로 반지름을 구하고, 그다음 편한 공식으로 넓이를 구해요.",
-          "solution": "3π = 2πr × <span class=\"frac\"><b>3</b><i>8</i></span> 이므로 r = 4 cm 예요.<br>S = <span class=\"frac\"><b>1</b><i>2</i></span> × 4 × 3π = 6π cm²<br>검산: π × 4<sup>2</sup> × <span class=\"frac\"><b>3</b><i>8</i></span> = 6π 로 같아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sector.ratio-360",
-            "sector.half-rl-misuse"
-          ]
-        },
-        {
-          "id": "m1-u10-t05-09",
-          "level": "H",
-          "stem_src": "반지름 $r$, 호 길이 $l$ 인 부채꼴이 둘레가 $20$ cm, 넓이가 $24$ cm² 일 때, $r$ 의 값으로 가능한 것을 모두 구하세요.",
-          "stem_print": "반지름이 r, 호의 길이가 l 인 부채꼴의 둘레의 길이가 20 cm, 넓이가 24 cm² 이다. r 의 값이 될 수 있는 것을 모두 구하시오.",
-          "answer_atoms": [
-            "$r = 4$ 또는 $r = 6$"
-          ],
-          "answer_print": "r = 4 또는 r = 6",
-          "answer_accept": [
-            "4, 6"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "cm 단위의 수로 (두 값 모두)",
-          "figure": null,
-          "hint": "둘레 = l + 2r, 넓이 = <span class=\"frac\"><b>1</b><i>2</i></span> rl 두 식을 연립해요.",
-          "solution": "l + 2r = 20 에서 l = 20 − 2r 이에요.<br><span class=\"frac\"><b>1</b><i>2</i></span> r(20 − 2r) = 24 → 20r − 2r<sup>2</sup> = 48 → r<sup>2</sup> − 10r + 24 = 0 → (r − 4)(r − 6) = 0<br>r = 4 또는 r = 6 이에요. 두 값 모두 조건을 만족해요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sector.perimeter-missing-radii",
-            "sector.half-rl-misuse"
-          ]
+          "misconceptions": ["sector.ratio-360"]
         }
       ]
     },
     {
       "no": 6,
       "title": "호·현·중심각의 관계",
-      "principle": "한 원에서 호의 길이와 부채꼴의 넓이는 중심각에 정비례해요. 하지만 <strong>현의 길이는 중심각에 정비례하지 않아요.</strong>",
+      "principle": "호와 부채꼴의 넓이는 중심각에 정비례해요. 현은 정비례하지 않아요.",
       "problems": [
         {
           "id": "m1-u10-t06-01",
           "level": "L",
-          "stem_src": "같은 원에서 중심각 $30°$ 인 호의 길이가 $\\pi$ cm 일 때, 같은 원에서 중심각 $90°$ 인 호의 길이는?",
-          "stem_print": "한 원에서 중심각이 30° 인 호의 길이가 π cm 일 때, 같은 원에서 중심각이 90° 인 호의 길이를 구하시오.",
-          "answer_atoms": [
-            "$3\\pi$ cm"
-          ],
-          "answer_print": "3π",
-          "answer_accept": [
-            "3π cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "π 를 남긴 꼴로 (길이 단위는 cm)",
+          "stem_src": "한 원에서 중심각이 2배가 되면 호의 길이도 2배가 되나요? (2지선다 → 단답 재작성)",
+          "stem_print": "한 원에서 중심각이 2배가 되면 호의 길이도 2배가 되는지 쓰시오.",
+          "answer_atoms": ["맞아요"],
+          "answer_print": "맞아요",
+          "answer_accept": ["그렇다", "네"],
+          "answer_unit": null,
+          "answer_format": "예/아니요로",
           "figure": null,
-          "hint": "호의 길이는 중심각에 정비례해요. 중심각이 몇 배가 되었나요?",
-          "solution": "90° 는 30° 의 3배이고, 호의 길이는 중심각에 정비례하므로 호도 3배가 되어 3π cm 예요.",
+          "hint": "호는 중심각에 정비례해요.",
+          "solution": "호의 길이는 중심각에 정확히 정비례해요.",
           "work_space": "sm",
-          "misconceptions": [
-            "arc.chord-proportional"
-          ]
+          "misconceptions": ["arc.chord-proportional"]
         },
         {
           "id": "m1-u10-t06-02",
-          "level": "L",
-          "stem_src": "한 원에서 중심각 $45°$ 인 부채꼴의 넓이가 $5\\pi$ cm² 일 때, 중심각 $135°$ 인 부채꼴의 넓이는?",
-          "stem_print": "한 원에서 중심각이 45° 인 부채꼴의 넓이가 5π cm² 일 때, 중심각이 135° 인 부채꼴의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$15\\pi$ cm²"
-          ],
-          "answer_print": "15π",
-          "answer_accept": [
-            "15π cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
+          "level": "M",
+          "stem_src": "한 원에서 중심각이 2배가 되면 현의 길이도 2배가 되나요? (2지선다 → 단답 재작성)",
+          "stem_print": "한 원에서 중심각이 2배가 되면 현의 길이도 2배가 되는지 쓰시오.",
+          "answer_atoms": ["아니에요"],
+          "answer_print": "아니요",
+          "answer_accept": ["아니에요", "아니오"],
+          "answer_unit": null,
+          "answer_format": "예/아니요로",
           "figure": null,
-          "hint": "부채꼴의 넓이도 중심각에 정비례해요.",
-          "solution": "135 ÷ 45 = 3 이므로 넓이도 3배가 되어 5π × 3 = 15π cm² 예요.",
+          "hint": "현은 정비례하지 않는 유일한 예외예요.",
+          "solution": "현의 길이는 중심각에 정비례하지 않아요 — 시험 단골 함정이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "arc.chord-proportional",
-            "sector.arc-vs-area-formula"
-          ]
+          "misconceptions": ["arc.chord-proportional"]
         },
         {
           "id": "m1-u10-t06-03",
-          "level": "L",
-          "stem_src": "한 원에서 호의 길이가 같은 두 부채꼴이 있을 때, 두 부채꼴의 중심각은? ① 같다 &nbsp; ② 다르다 &nbsp; ③ 알 수 없다",
-          "stem_print": "한 원에서 호의 길이가 같은 두 부채꼴의 중심각에 대한 설명을 골라 번호와 내용을 쓰시오.<br>① 같다 &nbsp; ② 다르다 &nbsp; ③ 알 수 없다",
-          "answer_atoms": [
-            "① 같다"
-          ],
-          "answer_print": "① 같다",
-          "answer_accept": [
-            "1"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호와 내용을 함께 쓰는 꼴로",
-          "figure": null,
-          "hint": "호의 길이와 중심각은 정비례해요. 호가 같으면 어떻게 될까요?",
-          "solution": "한 원에서 호의 길이는 중심각에 정비례하므로, 호의 길이가 같으면 중심각도 같아요. 거꾸로도 성립해요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "arc.chord-proportional"
-          ]
-        },
-        {
-          "id": "m1-u10-t06-04",
           "level": "M",
-          "stem_src": "한 원에서 다음 중 옳은 설명을 모두 고르면? (중심각이 $60°$ → $120°$로 두 배가 될 때) ① 호의 길이가 두 배가 된다. ② 부채꼴의 넓이가 두 배가 된다. ③ 현의 길이가 두 배가 된다. ④ 반지름이 두 배가 된다.",
-          "stem_print": "한 원에서 중심각이 60° 에서 120° 로 두 배가 될 때 옳은 설명을 <strong>모두</strong> 골라 번호를 쓰시오.<br>① 호의 길이가 두 배가 된다. &nbsp; ② 부채꼴의 넓이가 두 배가 된다.<br>③ 현의 길이가 두 배가 된다. &nbsp; ④ 반지름이 두 배가 된다.",
-          "answer_atoms": [
-            "① 과 ②"
-          ],
-          "answer_print": "① 과 ②",
-          "answer_accept": [
-            "1, 2"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호를 모두 쓰는 꼴로",
-          "figure": null,
-          "hint": "정비례하는 것과 그렇지 않은 것을 나누어 봐요. 같은 원이면 반지름은 변하지 않아요.",
-          "solution": "한 원에서 중심각이 두 배가 되면 호의 길이와 부채꼴의 넓이는 정확히 두 배가 돼요. 하지만 현의 길이는 두 배가 되지 않고, 반지름은 아예 변하지 않아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "arc.chord-proportional"
-          ]
-        },
-        {
-          "id": "m1-u10-t06-05",
-          "level": "M",
-          "stem_src": "한 원에서 중심각이 $\\angle AOB = 40°$, $\\angle COD = 120°$ 일 때, $\\overset{\\frown}{CD}$ 의 길이는 $\\overset{\\frown}{AB}$ 의 길이의 몇 배인가요?",
-          "stem_print": "한 원에서 ∠AOB = 40°, ∠COD = 120° 일 때, 호 CD의 길이는 호 AB의 길이의 몇 배인지 구하시오.",
-          "answer_atoms": [
-            "$3$배"
-          ],
-          "answer_print": "3",
-          "answer_accept": [
-            "3배"
-          ],
-          "answer_unit": "배",
-          "answer_format": "몇 배인지 수로",
-          "figure": null,
-          "hint": "호의 길이는 중심각에 정비례해요.",
-          "solution": "120 ÷ 40 = 3 이므로 호의 길이도 정확히 3배예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "arc.chord-proportional"
-          ]
-        },
-        {
-          "id": "m1-u10-t06-06",
-          "level": "M",
-          "stem_src": "한 원에서 다음을 만족하지 않는 것은? ① 호의 길이는 중심각의 크기에 정비례한다. ② 부채꼴의 넓이는 중심각의 크기에 정비례한다. ③ 호의 길이는 부채꼴 넓이에 정비례한다 (같은 원). ④ 현의 길이는 중심각의 크기에 정비례한다.",
-          "stem_print": "한 원에 대한 설명 중 옳지 <strong>않은</strong> 것을 골라 번호를 쓰시오.<br>① 호의 길이는 중심각의 크기에 정비례한다. &nbsp; ② 부채꼴의 넓이는 중심각의 크기에 정비례한다.<br>③ 호의 길이는 부채꼴의 넓이에 정비례한다. &nbsp; ④ 현의 길이는 중심각의 크기에 정비례한다.",
-          "answer_atoms": [
-            "④"
-          ],
-          "answer_print": "④ (현의 길이는 중심각에 정비례하지 않아요)",
-          "answer_accept": [
-            "4"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호를 쓰는 꼴로",
-          "figure": null,
-          "hint": "정비례하는 세 가지는 호·중심각·부채꼴의 넓이예요. 그렇지 않은 하나는 무엇일까요?",
-          "solution": "한 원에서 호의 길이·중심각·부채꼴의 넓이는 서로 정비례해요. 하지만 현의 길이는 정비례하지 않아요. 중심각이 두 배가 되어도 현은 두 배가 되지 않아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "arc.chord-proportional"
-          ]
-        },
-        {
-          "id": "m1-u10-t06-07",
-          "level": "H",
-          "stem_src": "반지름 $r$, 중심각 $\\theta$ 인 부채꼴 A의 호 길이가 $a$ 이고 넓이가 $S_A$ 이다. 반지름 $r$, 중심각 $2\\theta$ 인 부채꼴 B의 호 길이와 넓이를 $a$, $S_A$ 로 표현하세요. (단, $2\\theta < 360°$)",
-          "stem_print": "반지름이 r, 중심각이 θ 인 부채꼴 A의 호의 길이가 a, 넓이가 S 이다. 반지름이 r, 중심각이 2θ 인 부채꼴 B의 호의 길이와 넓이를 a 와 S 로 나타내시오. (단, 2θ &lt; 360°)",
-          "answer_atoms": [
-            "호 = $2a$, 넓이 = $2S_A$"
-          ],
-          "answer_print": "호 = 2a, 넓이 = 2S",
-          "answer_accept": [
-            "2a / 2S"
-          ],
-          "answer_unit": null,
-          "answer_format": "a 와 S 로 나타낸 식으로",
-          "figure": null,
-          "hint": "같은 원에서 중심각이 두 배가 되면 호와 넓이는 어떻게 될까요?",
-          "solution": "반지름이 같은 원에서 중심각이 두 배가 되면 호의 길이도 두 배, 부채꼴의 넓이도 두 배가 돼요.<br>그래서 호 = 2a, 넓이 = 2S 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "arc.chord-proportional"
-          ]
-        },
-        {
-          "id": "m1-u10-t06-08",
-          "level": "H",
-          "stem_src": "한 원에서 두 부채꼴 A, B 가 있다. A의 중심각 $= 60°$, B의 중심각 $= 80°$ 일 때, 두 부채꼴의 호 길이의 차가 $\\dfrac{\\pi}{3}$ cm 이다. 이 원의 반지름을 구하세요.",
-          "stem_print": "한 원에서 중심각이 60° 인 부채꼴 A와 중심각이 80° 인 부채꼴 B가 있다. 두 부채꼴의 호의 길이의 차가 <span class=\"frac\"><b>π</b><i>3</i></span> cm 일 때, 이 원의 반지름의 길이를 구하시오.",
-          "answer_atoms": [
-            "$r = 3$ cm"
-          ],
-          "answer_print": "3",
-          "answer_accept": [
-            "3 cm"
-          ],
+          "stem_src": "반지름 4cm인 원에서 중심각 60°인 부채꼴의 호가 2π cm일 때, 같은 원에서 중심각 120°인 부채꼴의 호의 길이는? (계수만)",
+          "stem_print": "반지름 4cm인 원에서 중심각 60°인 부채꼴의 호가 2π cm일 때, 같은 원에서 중심각 120°인 부채꼴의 호의 길이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["4"],
+          "answer_print": "4π",
+          "answer_accept": [],
           "answer_unit": "cm",
-          "answer_format": "cm 단위의 수로",
+          "answer_format": "OOπ 꼴로 (단위: cm)",
           "figure": null,
-          "hint": "호의 길이의 차도 중심각의 차에 정비례해요.",
-          "solution": "호의 길이의 차 = 2πr × <span class=\"frac\"><b>80 − 60</b><i>360</i></span> = <span class=\"frac\"><b>πr</b><i>9</i></span> 이에요.<br><span class=\"frac\"><b>πr</b><i>9</i></span> = <span class=\"frac\"><b>π</b><i>3</i></span> 이므로 r = 3 cm 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "arc.chord-proportional",
-            "sector.ratio-360"
-          ]
-        },
-        {
-          "id": "m1-u10-t06-09",
-          "level": "H",
-          "stem_src": "한 원에서 중심각 $60°$, $90°$, $120°$ 인 부채꼴 A, B, C 의 현의 길이를 각각 $a$, $b$, $c$ 라고 할 때, $a : b : c$ 는? ① $2 : 3 : 4$ &nbsp; ② $1 : \\sqrt{2} : \\sqrt{3}$ &nbsp; ③ $1 : \\sqrt{3} : 2$ &nbsp; ④ $1 : 1.5 : 2$ &nbsp; ⑤ $\\sqrt{2} : 2 : \\sqrt{6}$ ($r=1$ 로 두고 각 현을 직접 계산해 보세요.)",
-          "stem_print": "한 원에서 중심각이 60°, 90°, 120° 인 부채꼴 A, B, C의 현의 길이를 각각 a, b, c 라 할 때, a : b : c 를 골라 번호와 비를 쓰시오.<br>① 2 : 3 : 4 &nbsp; ② 1 : √2 : √3 &nbsp; ③ 1 : √3 : 2<br>④ 1 : 1.5 : 2 &nbsp; ⑤ √2 : 2 : √6",
-          "answer_atoms": [
-            "② $1 : \\sqrt{2} : \\sqrt{3}$"
-          ],
-          "answer_print": "② 1 : √2 : √3",
-          "answer_accept": [
-            "2"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호와 비를 함께 쓰는 꼴로",
-          "figure": null,
-          "hint": "반지름을 1 로 두고 각 현의 길이를 직접 구해 봐요. 중심에서 현에 내린 수선이 현을 이등분해요.",
-          "solution": "반지름을 1 로 두면<br>• 60° — 두 변이 1 이고 끼인각이 60° 이면 정삼각형이므로 a = 1<br>• 90° — 직각이등변삼각형의 빗변이므로 b = √2<br>• 120° — 중심에서 현에 수선을 내리면 현의 절반이 <span class=\"frac\"><b>√3</b><i>2</i></span> 이므로 c = √3<br>따라서 a : b : c = 1 : √2 : √3 이에요. 중심각의 비 60 : 90 : 120 = 2 : 3 : 4 와 전혀 다르죠. <strong>현은 중심각에 정비례하지 않아요.</strong>",
-          "work_space": "lg",
-          "misconceptions": [
-            "arc.chord-proportional",
-            "circle.chord-perp-bisect"
-          ]
+          "hint": "호는 중심각에 정비례해요 — 각이 2배면 호도 2배예요.",
+          "solution": "중심각이 60°→120°로 2배가 되므로 호도 2π×2=4π cm.",
+          "work_space": "md",
+          "misconceptions": ["arc.chord-proportional"]
         }
       ]
     },
     {
       "no": 7,
       "title": "색칠한 부분의 넓이",
-      "principle": "색칠한 부분은 아는 도형의 합과 차로 나누어 구해요. 옮겨서 합치면 훨씬 쉬워지는 그림도 많아요.",
+      "principle": "복잡한 모양은 아는 도형의 합·차로 나눠 봐요.",
       "problems": [
         {
           "id": "m1-u10-t07-01",
-          "level": "L",
-          "stem_src": "한 변이 $4$ cm 인 정사각형 안에, 한 꼭짓점을 중심으로 하는 사분원이 그려져 있어요. 색칠한 부분 (정사각형에서 사분원을 뺀 부분)의 넓이는?",
-          "stem_print": "한 변의 길이가 4 cm 인 정사각형 안에 한 꼭짓점을 중심으로 하는 사분원을 그렸다. 색칠한 부분(정사각형에서 사분원을 뺀 부분)의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$(16 - 4\\pi)$ cm²"
-          ],
-          "answer_print": "16 − 4π",
-          "answer_accept": [
-            "(16 − 4π) cm²"
-          ],
+          "level": "M",
+          "stem_src": "한 변 10cm인 정사각형 안에 반지름 5cm인 원이 꼭 맞게 들어있을 때, 원 바깥 부분의 넓이는? (예: 100 − 25π 꼴로 입력)",
+          "stem_print": "한 변이 10cm인 정사각형 안에 반지름 5cm인 원이 꼭 맞게 들어있을 때, 원 바깥 부분의 넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["100 − 25π"],
+          "answer_print": "100 − 25π",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:50.6mm\" viewBox=\"-15 -15 230 230\">\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"200\" fill=\"rgba(67,97,238,0.25)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <path d=\"M 0 0 L 200 0 A 200 200 0 0 0 0 200 Z\" fill=\"white\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <text x=\"100\" y=\"-4\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1d3557\">한 변 4</text>\n</svg>",
-          "hint": "정사각형의 넓이에서 사분원의 넓이를 빼요. 사분원의 반지름은 정사각형의 한 변과 같아요.",
-          "solution": "정사각형의 넓이 = 4 × 4 = 16 cm²<br>사분원의 넓이 = π × 4<sup>2</sup> × <span class=\"frac\"><b>1</b><i>4</i></span> = 4π cm²<br>색칠한 부분 = 16 − 4π cm² 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "area.shaded-subtract",
-            "circle.pi-decimal"
-          ]
+          "answer_format": "식으로 (단위: cm²)",
+          "figure": null,
+          "hint": "정사각형의 넓이에서 원의 넓이를 빼요.",
+          "solution": "정사각형 넓이 10×10=100, 원 넓이 π×5²=25π, 바깥 부분 = 100 − 25π cm².",
+          "work_space": "lg",
+          "misconceptions": ["area.shaded-subtract"]
         },
         {
           "id": "m1-u10-t07-02",
           "level": "L",
-          "stem_src": "반지름 $5$ cm 인 큰 원과 반지름 $3$ cm 인 작은 원의 중심이 같다. 큰 원과 작은 원 사이의 색칠한 부분 (도넛 모양)의 넓이는?",
-          "stem_print": "중심이 같은 두 원의 반지름이 각각 5 cm, 3 cm 이다. 두 원 사이의 색칠한 부분(도넛 모양)의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$16\\pi$ cm²"
-          ],
-          "answer_print": "16π",
-          "answer_accept": [
-            "16π cm²"
-          ],
+          "stem_src": "반지름 6cm인 큰 원에서 반지름 4cm인 작은 원을 오려낸 도넛 모양의 넓이는? (계수만)",
+          "stem_print": "반지름 6cm인 큰 원에서 반지름 4cm인 작은 원을 오려낸 도넛 모양의 넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["20"],
+          "answer_print": "20π",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
           "figure": null,
           "hint": "큰 원의 넓이에서 작은 원의 넓이를 빼요.",
-          "solution": "π × 5<sup>2</sup> − π × 3<sup>2</sup> = 25π − 9π = 16π cm² 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "area.shaded-subtract"
-          ]
+          "solution": "36π − 16π = 20π cm².",
+          "work_space": "md",
+          "misconceptions": ["area.shaded-subtract"]
         },
         {
           "id": "m1-u10-t07-03",
-          "level": "L",
-          "stem_src": "반지름 $6$ cm 인 반원의 넓이는?",
-          "stem_print": "반지름이 6 cm 인 반원의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$18\\pi$ cm²"
-          ],
-          "answer_print": "18π",
-          "answer_accept": [
-            "18π cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
+          "level": "M",
+          "stem_src": "반지름 5cm인 반원의 둘레는? (예: 5π + 10 꼴로 입력)",
+          "stem_print": "반지름 5cm인 반원의 둘레를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["5π + 10"],
+          "answer_print": "5π + 10",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "식으로 (단위: cm)",
           "figure": null,
-          "hint": "반원은 원의 절반이에요.",
-          "solution": "<span class=\"frac\"><b>1</b><i>2</i></span> × π × 6<sup>2</sup> = 18π cm² 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "area.shaded-subtract",
-            "circle.circumference-vs-area"
-          ]
-        },
-        {
-          "id": "m1-u10-t07-04",
-          "level": "M",
-          "stem_src": "한 변이 $4$ cm 인 정사각형의 두 마주 보는 꼭짓점을 중심으로 하는 사분원 두 개가 그려져 있다. 그 두 사분원이 만드는 잎사귀 모양의 넓이는?",
-          "stem_print": "한 변의 길이가 4 cm 인 정사각형에서 마주 보는 두 꼭짓점을 중심으로 하는 두 사분원을 그렸다. 두 사분원이 겹쳐서 만드는 잎사귀 모양의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$(8\\pi - 16)$ cm²"
-          ],
-          "answer_print": "8π − 16",
-          "answer_accept": [
-            "(8π − 16) cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:50.6mm\" viewBox=\"-15 -15 230 230\">\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"200\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <!-- two quarter circles overlap -->\n  <path d=\"M 200 0 A 200 200 0 0 0 0 200 A 200 200 0 0 0 200 0 Z\" fill=\"rgba(247,127,36,0.4)\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"100\" y=\"-4\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1d3557\">한 변 4</text>\n</svg>",
-          "hint": "두 사분원의 넓이를 더한 값에서 정사각형의 넓이를 빼면 겹친 부분이 남아요.",
-          "solution": "사분원 한 개 = π × 4<sup>2</sup> × <span class=\"frac\"><b>1</b><i>4</i></span> = 4π 이므로 두 개의 합은 8π 예요.<br>두 사분원이 덮은 전체는 정사각형이고 그 넓이는 16 이에요.<br>겹친 잎사귀 = 8π − 16 cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "area.shaded-subtract"
-          ]
-        },
-        {
-          "id": "m1-u10-t07-05",
-          "level": "M",
-          "stem_src": "아래 그림처럼 한 변이 $6$ cm 인 정사각형 안에, 정사각형의 두 변에 닿는 반원과 사분원이 있다. 색칠한 부분의 넓이는? (정사각형에서 반원과 사분원을 뺀 부분)",
-          "stem_print": "아래 그림과 같이 한 변의 길이가 6 cm 인 정사각형 안에 반원과 사분원이 그려져 있다. 색칠한 부분(정사각형에서 반원과 사분원을 뺀 부분)의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$(36 - \\dfrac{9\\pi}{2} - \\dfrac{9\\pi}{4}) = (36 - \\dfrac{27\\pi}{4})$ cm²"
-          ],
-          "answer_print": "36 − <span class=\"frac\"><b>27π</b><i>4</i></span>",
-          "answer_accept": [
-            "36 − 27π/4 cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (분수는 기약분수로)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:50.6mm\" viewBox=\"-15 -15 230 230\">\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"200\" fill=\"rgba(67,97,238,0.25)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <!-- 반원: 윗변 (반지름 100) -->\n  <path d=\"M 0 0 A 100 100 0 0 0 200 0 Z\" fill=\"white\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <!-- 사분원: 오른쪽 아래 꼭짓점 (반지름 200) — 사분원이 정사각형 안에 다 들어가지 않으니 변경 -->\n  <!-- 다른 구성: 윗변 반원 + 왼쪽아래 꼭짓점 사분원 (반지름 100, 정사각형 절반) -->\n  <path d=\"M 0 200 L 100 200 A 100 100 0 0 0 0 100 Z\" fill=\"white\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <text x=\"100\" y=\"-4\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1d3557\">한 변 6</text>\n</svg>",
-          "hint": "색칠한 부분 = 정사각형 − 반원 − 사분원 이에요. 두 도형이 겹치지 않는지 먼저 확인해요.",
-          "solution": "정사각형 = 6<sup>2</sup> = 36<br>반원(반지름 3) = <span class=\"frac\"><b>1</b><i>2</i></span> × π × 3<sup>2</sup> = <span class=\"frac\"><b>9π</b><i>2</i></span><br>사분원(반지름 3) = <span class=\"frac\"><b>1</b><i>4</i></span> × π × 3<sup>2</sup> = <span class=\"frac\"><b>9π</b><i>4</i></span><br>색칠한 부분 = 36 − <span class=\"frac\"><b>9π</b><i>2</i></span> − <span class=\"frac\"><b>9π</b><i>4</i></span> = 36 − <span class=\"frac\"><b>27π</b><i>4</i></span> cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "area.shaded-subtract",
-            "circle.circumference-vs-area"
-          ]
-        },
-        {
-          "id": "m1-u10-t07-06",
-          "level": "M",
-          "stem_src": "중심이 같은 두 사분원(중심각 $90°$)이 있다. 큰 사분원의 반지름은 $6$ cm, 작은 사분원의 반지름은 $3$ cm 이다. 색칠한 부분(큰 사분원 — 작은 사분원, 즉 사분원 모양 띠)의 넓이는?",
-          "stem_print": "중심이 같은 두 사분원의 반지름이 각각 6 cm, 3 cm 이다. 색칠한 부분(큰 사분원에서 작은 사분원을 뺀 띠 모양)의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$\\dfrac{27\\pi}{4}$ cm²"
-          ],
-          "answer_print": "<span class=\"frac\"><b>27π</b><i>4</i></span>",
-          "answer_accept": [
-            "27π/4 cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 기약분수 꼴로 (넓이 단위는 cm²)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:50.6mm\" viewBox=\"-15 -130 230 150\">\n  <path d=\"M 0 0 L 200 0 A 200 200 0 0 0 0 -200 Z\" fill=\"rgba(67,97,238,0.3)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <path d=\"M 0 0 L 100 0 A 100 100 0 0 0 0 -100 Z\" fill=\"white\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <text x=\"100\" y=\"-110\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4361EE\">큰 사분원 R=6, 작은 R=3</text>\n</svg>",
-          "hint": "큰 사분원의 넓이에서 작은 사분원의 넓이를 빼요.",
-          "solution": "큰 사분원 = π × 6<sup>2</sup> × <span class=\"frac\"><b>1</b><i>4</i></span> = 9π<br>작은 사분원 = π × 3<sup>2</sup> × <span class=\"frac\"><b>1</b><i>4</i></span> = <span class=\"frac\"><b>9π</b><i>4</i></span><br>띠 모양 = 9π − <span class=\"frac\"><b>9π</b><i>4</i></span> = <span class=\"frac\"><b>27π</b><i>4</i></span> cm² 예요.",
+          "hint": "반원의 둘레에는 곧은 지름도 들어가요.",
+          "solution": "호의 길이 π×5=5π, 지름 10을 더해 5π + 10 cm.",
           "work_space": "md",
-          "misconceptions": [
-            "area.shaded-subtract",
-            "sector.arc-vs-area-formula"
-          ]
-        },
-        {
-          "id": "m1-u10-t07-07",
-          "level": "H",
-          "stem_src": "아래 그림에서 색칠한 부분의 넓이는? (한 변 $10$ cm 인 정사각형, 두 사분원은 마주 보는 두 꼭짓점을 중심으로 그려져 있고 반지름은 $10$ cm)",
-          "stem_print": "아래 그림에서 색칠한 부분의 넓이를 구하시오. (한 변의 길이가 10 cm 인 정사각형에서 마주 보는 두 꼭짓점을 중심으로 반지름이 10 cm 인 두 사분원을 그렸다.)",
-          "answer_atoms": [
-            "$(50\\pi - 100)$ cm²"
-          ],
-          "answer_print": "50π − 100",
-          "answer_accept": [
-            "(50π − 100) cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:50.6mm\" viewBox=\"-15 -15 230 230\">\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"200\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <path d=\"M 200 0 A 200 200 0 0 0 0 200 A 200 200 0 0 0 200 0 Z\" fill=\"rgba(247,127,36,0.4)\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"100\" y=\"-4\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1d3557\">한 변 10</text>\n</svg>",
-          "hint": "잎사귀 모양은 두 사분원이 겹친 부분이에요. (두 사분원의 합) − (정사각형) 으로 구해요.",
-          "solution": "사분원 한 개 = π × 10<sup>2</sup> × <span class=\"frac\"><b>1</b><i>4</i></span> = 25π 이므로 두 개의 합은 50π 예요.<br>두 사분원이 덮은 전체는 정사각형이고 그 넓이는 100 이에요.<br>겹친 잎사귀 = 50π − 100 cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "area.shaded-subtract"
-          ]
-        },
-        {
-          "id": "m1-u10-t07-08",
-          "level": "H",
-          "stem_src": "반지름 $4$ cm 인 원이 있다. 중심을 지나는 두 직선이 직각으로 만나서 원을 4개의 사분원 영역으로 나눈다. 한 사분원 영역에서 두 반지름을 두 변으로 하는 직각이등변삼각형을 그렸을 때, 사분원과 그 삼각형 사이의 활꼴 부분의 넓이는?",
-          "stem_print": "반지름이 4 cm 인 원의 중심을 지나는 두 직선이 직각으로 만나 원을 네 개의 사분원으로 나눈다. 한 사분원에서 두 반지름을 두 변으로 하는 직각이등변삼각형을 그렸을 때, 사분원과 그 삼각형 사이에 있는 활꼴의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$(4\\pi - 8)$ cm²"
-          ],
-          "answer_print": "4π − 8",
-          "answer_accept": [
-            "(4π − 8) cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
-          "figure": null,
-          "hint": "활꼴 = (사분원) − (직각이등변삼각형) 이에요.",
-          "solution": "사분원 = π × 4<sup>2</sup> × <span class=\"frac\"><b>1</b><i>4</i></span> = 4π cm²<br>직각이등변삼각형 = <span class=\"frac\"><b>1</b><i>2</i></span> × 4 × 4 = 8 cm²<br>활꼴 = 4π − 8 cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "area.shaded-subtract",
-            "sector.segment-confusion"
-          ]
-        },
-        {
-          "id": "m1-u10-t07-09",
-          "level": "H",
-          "stem_src": "한 변이 $4$ cm 인 정사각형의 네 꼭짓점을 중심으로 하는 반지름 $2$ cm 인 사분원이 4개 그려져 있다. 정사각형 안에서 사분원에 덮이지 않은 부분의 넓이는?",
-          "stem_print": "한 변의 길이가 4 cm 인 정사각형의 네 꼭짓점을 중심으로 반지름이 2 cm 인 사분원을 각각 그렸다. 정사각형 안에서 사분원에 덮이지 않은 부분의 넓이를 구하시오.",
-          "answer_atoms": [
-            "$(16 - 4\\pi)$ cm²"
-          ],
-          "answer_print": "16 − 4π",
-          "answer_accept": [
-            "(16 − 4π) cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (넓이 단위는 cm²)",
-          "figure": "<svg class=\"fig-svg\" style=\"width:50.6mm\" viewBox=\"-15 -15 230 230\">\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"200\" fill=\"rgba(67,97,238,0.25)\" stroke=\"#4361EE\" stroke-width=\"2\"/>\n  <!-- 4 quarter circles, radius 100 (= half of 200 = 4cm/2 * 50 scale? no, 2cm radius in 4cm square: half) -->\n  <!-- We need radius=100 (half of 200) -->\n  <path d=\"M 0 0 L 100 0 A 100 100 0 0 1 0 100 Z\" fill=\"white\" stroke=\"#4361EE\" stroke-width=\"1.5\"/>\n  <path d=\"M 200 0 L 100 0 A 100 100 0 0 0 200 100 Z\" fill=\"white\" stroke=\"#4361EE\" stroke-width=\"1.5\"/>\n  <path d=\"M 200 200 L 200 100 A 100 100 0 0 0 100 200 Z\" fill=\"white\" stroke=\"#4361EE\" stroke-width=\"1.5\"/>\n  <path d=\"M 0 200 L 0 100 A 100 100 0 0 1 100 200 Z\" fill=\"white\" stroke=\"#4361EE\" stroke-width=\"1.5\"/>\n  <text x=\"100\" y=\"-4\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1d3557\">한 변 4 (사분원 반지름 2)</text>\n</svg>",
-          "hint": "사분원 네 개는 서로 겹치지 않아요. 네 개를 모으면 무엇이 될까요?",
-          "solution": "정사각형 = 4 × 4 = 16<br>사분원 한 개(반지름 2) = π × 2<sup>2</sup> × <span class=\"frac\"><b>1</b><i>4</i></span> = π 이므로 네 개의 합은 4π 예요. (반지름 2 가 한 변의 절반이라 서로 겹치지 않아요.)<br>색칠한 부분 = 16 − 4π cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "area.shaded-subtract"
-          ]
+          "misconceptions": ["semicircle.perimeter-missing-diameter"]
         }
       ]
     }

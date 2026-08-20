@@ -1,0 +1,22 @@
+{
+  "id": "m1-u10-b",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 10,
+  "unit_name": "원과 부채꼴",
+  "title": "부채꼴의 호·넓이와 호·현의 관계",
+  "subtitle": "호의 길이 · 부채꼴의 넓이 · 호·현·중심각의 관계(★ 함정)",
+  "bank": "math1/u10/practice.json",
+  "misconceptions": "misconceptions/math1_u10.json",
+  "types": [
+    4,
+    5,
+    6
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

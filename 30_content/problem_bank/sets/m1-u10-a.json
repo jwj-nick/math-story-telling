@@ -1,0 +1,22 @@
+{
+  "id": "m1-u10-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 10,
+  "unit_name": "원과 부채꼴",
+  "title": "원의 구성요소와 둘레·넓이",
+  "subtitle": "중심·반지름·호·현·할선·접선 · 원의 둘레와 넓이 · 부채꼴과 활꼴 구분",
+  "bank": "math1/u10/practice.json",
+  "misconceptions": "misconceptions/math1_u10.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}
