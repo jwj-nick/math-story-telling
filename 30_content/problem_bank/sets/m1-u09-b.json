@@ -1,0 +1,22 @@
+{
+  "id": "m1-u09-b",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 9,
+  "unit_name": "다각형",
+  "title": "다각형의 내각과 외각",
+  "subtitle": "n각형 내각의 합 · 외각의 합 · 정다각형의 한 내각·한 외각",
+  "bank": "math1/u09/practice.json",
+  "misconceptions": "misconceptions/math1_u09.json",
+  "types": [
+    4,
+    5,
+    6
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

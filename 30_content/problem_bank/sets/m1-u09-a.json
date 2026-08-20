@@ -1,0 +1,22 @@
+{
+  "id": "m1-u09-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 9,
+  "unit_name": "다각형",
+  "title": "다각형 기초와 대각선",
+  "subtitle": "정의·이름·구성요소 · 대각선의 수 · 삼각형의 내각·외각",
+  "bank": "math1/u09/practice.json",
+  "misconceptions": "misconceptions/math1_u09.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

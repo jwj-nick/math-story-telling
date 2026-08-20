@@ -1,0 +1,20 @@
+{
+  "id": "m1-u09-c",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 9,
+  "unit_name": "다각형",
+  "title": "다각형 종합",
+  "subtitle": "별 모양의 끝각 · 비로 주어진 각 · 오각형 내각의 합 복습",
+  "bank": "math1/u09/practice.json",
+  "misconceptions": "misconceptions/math1_u09.json",
+  "types": [
+    7
+  ],
+  "time_min": 8,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}
