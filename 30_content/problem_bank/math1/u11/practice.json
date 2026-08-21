@@ -3,1475 +3,397 @@
     "grade": "math1",
     "unit": 11,
     "unit_name": "다면체와 회전체",
-    "generation": "A",
-    "source": "40_grades/middle/math1/11_다면체와회전체/problems",
-    "extracted": "2026-07-29",
-    "extractor": "70_tools/print/extract_gen_ac.py",
+    "source": "40_grades/middle/math1/app1/p11.html",
+    "generation": "D",
+    "extracted": "2026-08-21",
+    "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "answer_atoms 는 원본 앱의 정답 표시 그대로(선택지 번호·KaTeX 포함). 지면은 단답형으로 재작성했으므로 answer_print 는 번호를 떼고 HTML 로 옮긴 형태예요."
+    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. 2지선다 2문항을 단답형으로 재작성. π가 든 답은 계수만 물었으므로 OOπ 꼴로 합성. 전부 기초~보통 수준(L/M)만 포함 — 심화(H)는 Nick 요청으로 이번 회차에서 제외."
   },
   "types": [
     {
       "no": 1,
-      "title": "다면체 분류와 구성 요소",
-      "principle": "다면체는 평면인 다각형으로만 둘러싸인 입체예요. 곡면이 하나라도 있으면 회전체예요. 면·모서리·꼭짓점의 수는 오일러 공식 v − e + f = 2 로 검산할 수 있어요.",
+      "title": "다면체 분류와 구성요소",
+      "principle": "다면체는 다각형인 평평한 면들로만 둘러싸인 입체예요. 곡면이 있으면 회전체예요.",
       "problems": [
         {
           "id": "m1-u11-t01-01",
           "level": "L",
-          "stem_src": "다음 입체도형 중 다면체 가 아닌 것은? ① 정육면체 &nbsp; ② 삼각기둥 &nbsp; ③ 원기둥 &nbsp; ④ 사각뿔",
-          "stem_print": "정육면체, 삼각기둥, 원기둥, 사각뿔 중에서 다면체가 <b>아닌</b> 것을 찾아 그 이름을 쓰시오.",
-          "answer_atoms": [
-            "③ 원기둥"
-          ],
-          "answer_print": "원기둥",
-          "answer_accept": [
-            "원기둥(회전체)"
-          ],
+          "stem_src": "원뿔은 다면체인가요, 회전체인가요?",
+          "stem_print": "원뿔은 다면체인지 회전체인지 쓰시오.",
+          "answer_atoms": ["회전체"],
+          "answer_print": "회전체",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
+          "answer_format": "낱말로 (단위 없음)",
           "figure": null,
-          "hint": "다면체는 모든 면이 평면인 다각형이에요. 곡면이 있으면 회전체예요.",
-          "solution": "원기둥은 옆면이 곡면이라 <b>회전체</b>예요. 나머지 셋은 면이 모두 평면 다각형이라 다면체예요.",
+          "hint": "원뿔의 옆면은 곡면이에요.",
+          "solution": "면이 하나라도 평평하지 않으면 다면체가 아니에요. 원뿔은 회전체예요.",
           "work_space": "sm",
-          "misconceptions": [
-            "solid.curved-is-polyhedron"
-          ]
+          "misconceptions": ["solid.curved-is-polyhedron"]
         },
         {
           "id": "m1-u11-t01-02",
           "level": "L",
-          "stem_src": "정육면체에서 면, 모서리, 꼭짓점의 수를 차례대로 쓰세요. ① $6, 8, 12$ &nbsp; ② $6, 12, 8$ &nbsp; ③ $8, 12, 6$ &nbsp; ④ $4, 6, 4$",
-          "stem_print": "정육면체의 면의 수, 모서리의 수, 꼭짓점의 수를 차례대로 구하시오.",
-          "answer_atoms": [
-            "② 면 6, 모서리 12, 꼭짓점 8"
-          ],
-          "answer_print": "면 6개, 모서리 12개, 꼭짓점 8개",
-          "answer_accept": [
-            "6, 12, 8"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘면 ○개, 모서리 ○개, 꼭짓점 ○개’ 꼴로",
+          "stem_src": "삼각기둥의 꼭짓점은 몇 개?",
+          "stem_print": "삼각기둥의 꼭짓점의 수를 구하시오.",
+          "answer_atoms": ["6"],
+          "answer_print": "6",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "수로 (단위: 개)",
           "figure": null,
-          "hint": "주사위를 떠올려 봐요. 눈이 그려진 면이 몇 개인가요?",
-          "solution": "주사위처럼 위·아래·앞·뒤·왼·오른쪽으로 면이 6개예요.<br>각 면에 변이 4개씩이니 4 × 6 = 24 이고, 모서리 하나를 두 면이 함께 쓰므로 24 ÷ 2 = 12개.<br>꼭짓점은 위 4개 + 아래 4개 = 8개.<br>검산: v − e + f = 8 − 12 + 6 = 2 ✓",
+          "hint": "밑면 두 개에 꼭짓점이 3개씩이에요.",
+          "solution": "삼각기둥은 밑면이 2개, 각 밑면에 꼭짓점이 3개씩이라 6개예요.",
           "work_space": "sm",
-          "misconceptions": [
-            "poly.count-swap",
-            "euler.sign"
-          ]
+          "misconceptions": ["poly.count-swap"]
         },
         {
           "id": "m1-u11-t01-03",
           "level": "L",
-          "stem_src": "아래 입체도형의 면의 수 는?",
-          "stem_print": "아래 그림은 <b>삼각기둥</b>이에요. 이 삼각기둥의 면의 수를 구하시오.",
-          "answer_atoms": [
-            "③ 5"
-          ],
-          "answer_print": "5",
-          "answer_accept": [
-            "5개",
-            "오면체"
-          ],
+          "stem_src": "정육면체의 모서리는 몇 개?",
+          "stem_print": "정육면체의 모서리의 수를 구하시오.",
+          "answer_atoms": ["12"],
+          "answer_print": "12",
+          "answer_accept": [],
           "answer_unit": "개",
-          "answer_format": "수로 (개수)",
-          "figure": "<svg class=\"fig-svg\" viewBox=\"0 0 240 180\">\n  <!-- 삼각기둥 -->\n  <polygon points=\"50,40 90,30 110,90\" fill=\"rgba(67,97,238,0.15)\" stroke=\"#1d3557\" stroke-width=\"1.5\"/>\n  <polygon points=\"50,140 90,130 110,160\" fill=\"rgba(67,97,238,0.20)\" stroke=\"#1d3557\" stroke-width=\"1.5\"/>\n  <line x1=\"50\" y1=\"40\" x2=\"50\" y2=\"140\" stroke=\"#1d3557\" stroke-width=\"1.5\"/>\n  <line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"130\" stroke=\"#1d3557\" stroke-width=\"1.5\"/>\n  <line x1=\"110\" y1=\"90\" x2=\"110\" y2=\"160\" stroke=\"#1d3557\" stroke-width=\"1.5\"/>\n  <text x=\"80\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" fill=\"#666\">삼각기둥</text>\n</svg>",
-          "hint": "밑면이 2개이고, 옆면은 밑면 삼각형의 변마다 하나씩 생겨요.",
-          "solution": "삼각기둥 = 삼각형 밑면 2개 + 직사각형 옆면 3개 = 5개 (오면체).<br>n각기둥의 면의 수는 n + 2 예요.",
+          "answer_format": "수로 (단위: 개)",
+          "figure": null,
+          "hint": "한 면에 모서리 4개, 겹치는 걸 생각하며 세어봐요.",
+          "solution": "정육면체(정사각기둥)는 V=8, E=12, F=6이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "prism-pyramid.formula"
-          ]
-        },
-        {
-          "id": "m1-u11-t01-04",
-          "level": "M",
-          "stem_src": "다음 입체 중 다면체인 것을 모두 고르면? ㄱ. 사각뿔 &nbsp; ㄴ. 원뿔 &nbsp; ㄷ. 정십이면체 &nbsp; ㄹ. 구 &nbsp; ㅁ. 오각기둥 ① ㄱ, ㄴ &nbsp; ② ㄱ, ㄷ, ㅁ &nbsp; ③ ㄱ, ㄷ, ㄹ &nbsp; ④ ㄴ, ㄹ, ㅁ",
-          "stem_print": "다음 다섯 입체 중에서 다면체인 것을 모두 찾아 이름을 쓰시오.<br>사각뿔 · 원뿔 · 정십이면체 · 구 · 오각기둥",
-          "answer_atoms": [
-            "② ㄱ, ㄷ, ㅁ"
-          ],
-          "answer_print": "사각뿔, 정십이면체, 오각기둥",
-          "answer_accept": [
-            "사각뿔 / 정십이면체 / 오각기둥"
-          ],
-          "answer_unit": null,
-          "answer_format": "이름을 모두, 쉼표로 나누어 (단위 없음)",
-          "figure": null,
-          "hint": "곡면이 있는 것을 빼면 남는 것이 다면체예요.",
-          "solution": "다면체 — 사각뿔(평면 5면), 정십이면체(평면 12면), 오각기둥(평면 7면).<br>회전체 — 원뿔(옆면이 곡면), 구(전체가 곡면).",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.curved-is-polyhedron"
-          ]
-        },
-        {
-          "id": "m1-u11-t01-05",
-          "level": "M",
-          "stem_src": "면이 5개인 다면체를 무엇이라고 부르나요? ① 오면체 &nbsp; ② 다섯각형 &nbsp; ③ 정오면체 &nbsp; ④ 오각형",
-          "stem_print": "면이 5개인 다면체를 무엇이라고 부르는지 쓰시오.",
-          "answer_atoms": [
-            "① 오면체"
-          ],
-          "answer_print": "오면체",
-          "answer_accept": [
-            "5면체"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘○면체’ 꼴로",
-          "figure": null,
-          "hint": "면의 수를 세어 이름을 붙여요. 면이 4개면 사면체예요.",
-          "solution": "면의 수에 따라 사면체·오면체·육면체 … 라고 불러요.<br>오각형은 변이 5개인 평면도형이고, 오면체는 면이 5개인 입체예요.<br>‘정오면체’라는 것은 없어요 — 정다면체는 정사·정육·정팔·정십이·정이십면체 5가지뿐이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "platonic.naming"
-          ]
-        },
-        {
-          "id": "m1-u11-t01-06",
-          "level": "M",
-          "stem_src": "정팔면체에서 한 꼭짓점에 모이는 면의 수는? ① 3 &nbsp; ② 4 &nbsp; ③ 5 &nbsp; ④ 6",
-          "stem_print": "정팔면체의 한 꼭짓점에 모이는 면의 수를 구하시오.",
-          "answer_atoms": [
-            "② 4"
-          ],
-          "answer_print": "4",
-          "answer_accept": [
-            "4개"
-          ],
-          "answer_unit": "개",
-          "answer_format": "수로 (개수)",
-          "figure": null,
-          "hint": "정팔면체는 정삼각형 8개로 둘러싸여 있어요. 한 꼭짓점에 정삼각형이 몇 개 모일까요?",
-          "solution": "정팔면체는 모든 꼭짓점에서 정삼각형이 4개씩 모여요.<br>그 꼭짓점에 모인 각의 합 = 4 × 60° = 240° 로 360° 보다 작아서 입체가 만들어져요.",
-          "work_space": "md",
-          "misconceptions": [
-            "platonic.angle-sum"
-          ]
-        },
-        {
-          "id": "m1-u11-t01-07",
-          "level": "H",
-          "stem_src": "어떤 다면체의 꼭짓점이 $10$, 모서리가 $15$ 일 때, 이 다면체의 면의 수는? (오일러 공식: $V - E + F = 2$)",
-          "stem_print": "어떤 다면체의 꼭짓점이 10개, 모서리가 15개예요. 오일러 공식 v − e + f = 2 를 이용하여 이 다면체의 면의 수를 구하시오.",
-          "answer_atoms": [
-            "면 7개 (칠면체)"
-          ],
-          "answer_print": "면 7개 (칠면체)",
-          "answer_accept": [
-            "7",
-            "7개",
-            "칠면체"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘면 ○개’ 꼴로",
-          "figure": null,
-          "hint": "f = 2 − v + e 로 바꿔 쓸 수 있어요.",
-          "solution": "v − e + f = 2 에 v = 10, e = 15 를 넣어요.<br>10 − 15 + f = 2<br>f = 2 + 15 − 10 = 7<br>예를 들어 오각기둥이 v = 10, e = 15, f = 7 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "euler.sign"
-          ]
-        },
-        {
-          "id": "m1-u11-t01-08",
-          "level": "H",
-          "stem_src": "사각기둥 위에 사각뿔을 (사각뿔의 밑면이 사각기둥의 윗면과 정확히 일치하도록) 얹어서 만든 입체의 꼭짓점·모서리·면 수는? ① $V=8, E=12, F=6$ &nbsp; ② $V=9, E=16, F=9$ &nbsp; ③ $V=9, E=12, F=5$ &nbsp; ④ $V=10, E=20, F=12$",
-          "stem_print": "사각기둥의 윗면에 사각뿔의 밑면이 꼭 맞게 포개지도록 사각뿔을 얹어 하나의 입체를 만들었어요. 이 입체의 꼭짓점의 수, 모서리의 수, 면의 수를 차례대로 구하시오.",
-          "answer_atoms": [
-            "② $V=9, E=16, F=9$"
-          ],
-          "answer_print": "꼭짓점 9개, 모서리 16개, 면 9개",
-          "answer_accept": [
-            "9, 16, 9",
-            "v = 9, e = 16, f = 9"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘꼭짓점 ○개, 모서리 ○개, 면 ○개’ 꼴로",
-          "figure": null,
-          "hint": "두 입체가 맞닿은 사각형 면은 안쪽으로 숨어 사라져요. 그 면의 꼭짓점과 모서리는 두 입체가 함께 써요.",
-          "solution": "사각기둥만 보면 v = 8, e = 12, f = 6 이고, 사각뿔만 보면 v = 5, e = 8, f = 5 예요.<br>겹치는 꼭짓점 4개, 겹치는 모서리 4개, 맞닿은 사각형 면은 양쪽에서 1개씩 모두 사라져요.<br>v = 8 + 5 − 4 = 9<br>e = 12 + 8 − 4 = 16<br>f = 6 + 5 − 2 = 9<br>검산: 9 − 16 + 9 = 2 ✓",
-          "work_space": "lg",
-          "misconceptions": [
-            "combine.shared-face",
-            "euler.sign"
-          ]
-        },
-        {
-          "id": "m1-u11-t01-09",
-          "level": "H",
-          "stem_src": "정육면체의 한 꼭짓점을 잘라내서 새 입체를 만들었어요. 새 입체의 $V$ (꼭짓점 수), $E$ (모서리 수), $F$ (면 수) 는 각각 얼마나 변하나요? ① $V$ +2, $E$ +3, $F$ +1 &nbsp; ② $V$ −1, $E$ 0, $F$ +1 &nbsp; ③ $V$ +2, $E$ +3, $F$ +0 &nbsp; ④ $V$ +1, $E$ +1, $F$ +1",
-          "stem_print": "정육면체의 한 꼭짓점을 평면으로 잘라내어 새로운 입체를 만들었어요. 꼭짓점의 수, 모서리의 수, 면의 수가 각각 몇 개씩 늘거나 주는지 차례대로 구하시오. (늘면 +, 줄면 − 를 붙여 쓰시오.)",
-          "answer_atoms": [
-            "① $V$ +2, $E$ +3, $F$ +1"
-          ],
-          "answer_print": "꼭짓점 +2, 모서리 +3, 면 +1",
-          "answer_accept": [
-            "+2, +3, +1",
-            "v +2, e +3, f +1"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘꼭짓점 +○, 모서리 +○, 면 +○’ 꼴로",
-          "figure": null,
-          "hint": "자르면 원래 꼭짓점 1개가 사라지고, 잘린 자리에 삼각형 면 1개와 새 꼭짓점 3개, 새 모서리 3개가 생겨요.",
-          "solution": "꼭짓점 — 1개가 사라지고 3개가 새로 생기므로 −1 + 3 = +2<br>모서리 — 잘린 자리 삼각형의 변 3개가 새로 생기므로 +3<br>면 — 잘린 자리에 삼각형 면 1개가 새로 생기므로 +1<br>검산: 새 입체는 v = 10, e = 15, f = 7 이고 10 − 15 + 7 = 2 ✓",
-          "work_space": "lg",
-          "misconceptions": [
-            "combine.shared-face"
-          ]
+          "misconceptions": ["poly.count-swap"]
         }
       ]
     },
     {
       "no": 2,
-      "title": "각기둥·각뿔·각뿔대",
-      "principle": "n각기둥과 n각뿔대는 v = 2n, e = 3n, f = n + 2 로 서로 같아요. n각뿔은 v = n + 1, e = 2n, f = n + 1 이에요. 옆면은 각기둥이 직사각형, 각뿔이 삼각형, 각뿔대가 사다리꼴이에요.",
+      "title": "각기둥·각뿔·각뿔대의 V,E,F",
+      "principle": "각기둥 V=2n,E=3n,F=n+2. 각뿔 V=n+1,E=2n,F=n+1.",
       "problems": [
         {
           "id": "m1-u11-t02-01",
           "level": "L",
-          "stem_src": "사각기둥의 면, 모서리, 꼭짓점 수를 차례로 쓰세요. ① $4, 8, 8$ &nbsp; ② $6, 12, 8$ &nbsp; ③ $5, 8, 5$ &nbsp; ④ $6, 8, 8$",
-          "stem_print": "사각기둥의 면의 수, 모서리의 수, 꼭짓점의 수를 차례대로 구하시오.",
-          "answer_atoms": [
-            "② 면 6, 모서리 12, 꼭짓점 8"
-          ],
-          "answer_print": "면 6개, 모서리 12개, 꼭짓점 8개",
-          "answer_accept": [
-            "6, 12, 8"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘면 ○개, 모서리 ○개, 꼭짓점 ○개’ 꼴로",
+          "stem_src": "칠각뿔의 면의 수는?",
+          "stem_print": "칠각뿔의 면의 수를 구하시오.",
+          "answer_atoms": ["8"],
+          "answer_print": "8",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "수로 (단위: 개)",
           "figure": null,
-          "hint": "n각기둥은 f = n + 2, e = 3n, v = 2n 이에요. 사각기둥은 n = 4 예요.",
-          "solution": "n = 4 를 넣으면 f = 4 + 2 = 6, e = 3 × 4 = 12, v = 2 × 4 = 8 이에요.",
+          "hint": "각뿔의 면 수 = n+1 (밑면 1개 + 옆면 n개).",
+          "solution": "F=n+1=7+1=8개.",
           "work_space": "sm",
-          "misconceptions": [
-            "poly.count-swap",
-            "prism-pyramid.formula"
-          ]
+          "misconceptions": ["prism-pyramid.formula"]
         },
         {
           "id": "m1-u11-t02-02",
           "level": "L",
-          "stem_src": "육각뿔의 면 수는? ① 5 &nbsp; ② 6 &nbsp; ③ 7 &nbsp; ④ 8",
-          "stem_print": "육각뿔의 면의 수를 구하시오.",
-          "answer_atoms": [
-            "③ 7"
-          ],
-          "answer_print": "7",
-          "answer_accept": [
-            "7개",
-            "칠면체"
-          ],
+          "stem_src": "육각뿔대의 꼭짓점은 몇 개?",
+          "stem_print": "육각뿔대의 꼭짓점의 수를 구하시오.",
+          "answer_atoms": ["12"],
+          "answer_print": "12",
+          "answer_accept": [],
           "answer_unit": "개",
-          "answer_format": "수로 (개수)",
+          "answer_format": "수로 (단위: 개)",
           "figure": null,
-          "hint": "n각뿔의 면은 밑면 1개와 옆면 n개예요.",
-          "solution": "육각뿔은 n = 6 이므로 면의 수 = n + 1 = 7개예요. (밑면 1개 + 옆면 6개)<br>면의 수를 n = 6 으로 답하지 않도록 조심해요.",
+          "hint": "각뿔대는 밑면이 2개, 각기둥과 V,E,F가 같아요.",
+          "solution": "각뿔대의 V=2n=2×6=12개.",
           "work_space": "sm",
-          "misconceptions": [
-            "prism-pyramid.formula"
-          ]
+          "misconceptions": ["frustum.same-as-prism"]
         },
         {
           "id": "m1-u11-t02-03",
-          "level": "L",
-          "stem_src": "오각뿔대의 모서리 수는? ① 5 &nbsp; ② 10 &nbsp; ③ 15 &nbsp; ④ 20",
-          "stem_print": "오각뿔대의 모서리의 수를 구하시오.",
-          "answer_atoms": [
-            "③ 15"
-          ],
-          "answer_print": "15",
-          "answer_accept": [
-            "15개"
-          ],
-          "answer_unit": "개",
-          "answer_format": "수로 (개수)",
-          "figure": null,
-          "hint": "n각뿔대의 모서리의 수는 n각기둥과 같아요.",
-          "solution": "n = 5 이므로 e = 3n = 15개예요. (윗면 5개 + 아랫면 5개 + 옆모서리 5개)<br>각기둥과 각뿔대는 v, e, f 가 모두 같고, 다른 것은 옆면 모양이에요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "frustum.same-as-prism"
-          ]
-        },
-        {
-          "id": "m1-u11-t02-04",
           "level": "M",
-          "stem_src": "어떤 각뿔의 면의 수가 $10$ 일 때, 모서리의 수는? ① $9$ &nbsp; ② $14$ &nbsp; ③ $18$ &nbsp; ④ $20$",
-          "stem_print": "어떤 각뿔의 면의 수가 10개예요. 이 각뿔의 모서리의 수를 구하시오.",
-          "answer_atoms": [
-            "③ 18"
-          ],
-          "answer_print": "18",
-          "answer_accept": [
-            "18개"
-          ],
-          "answer_unit": "개",
-          "answer_format": "수로 (개수)",
-          "figure": null,
-          "hint": "n각뿔은 면이 n + 1 개예요. 먼저 n 을 구한 뒤 e = 2n 을 써요.",
-          "solution": "각뿔이므로 f = n + 1 = 10 에서 n = 9 (구각뿔).<br>e = 2n = 2 × 9 = 18개.<br>n 을 10 으로 잘못 두면 20 이 나와요 — 면의 수와 밑면 변의 수는 달라요.",
-          "work_space": "md",
-          "misconceptions": [
-            "prism-pyramid.formula"
-          ]
-        },
-        {
-          "id": "m1-u11-t02-05",
-          "level": "M",
-          "stem_src": "다음 중 옆면이 사다리꼴 인 입체는? ① 삼각기둥 &nbsp; ② 삼각뿔 &nbsp; ③ 사각뿔대 &nbsp; ④ 사각뿔",
-          "stem_print": "삼각기둥, 삼각뿔, 사각뿔대, 사각뿔 중에서 옆면이 모두 <b>사다리꼴</b>인 입체를 찾아 이름을 쓰시오.",
-          "answer_atoms": [
-            "③ 사각뿔대"
-          ],
-          "answer_print": "사각뿔대",
-          "answer_accept": [
-            "각뿔대"
-          ],
+          "stem_src": "모서리가 15개인 각기둥은 몇각기둥?",
+          "stem_print": "모서리가 15개인 각기둥은 몇각기둥인지 구하시오.",
+          "answer_atoms": ["오각기둥"],
+          "answer_print": "오각기둥",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
+          "answer_format": "다면체 이름으로 (단위 없음)",
           "figure": null,
-          "hint": "각기둥의 옆면은 직사각형, 각뿔의 옆면은 삼각형이에요. 남는 하나는 무엇일까요?",
-          "solution": "각뿔대는 각뿔의 위쪽을 밑면과 평행하게 잘라낸 입체라서 옆면이 모두 사다리꼴이에요.",
+          "hint": "각기둥의 모서리 수는 E=3n이에요.",
+          "solution": "3n=15 → n=5, 오각기둥이에요.",
           "work_space": "md",
-          "misconceptions": [
-            "frustum.same-as-prism"
-          ]
-        },
-        {
-          "id": "m1-u11-t02-06",
-          "level": "M",
-          "stem_src": "$n$각기둥과 $n$각뿔대의 비교 중 옳은 것은? ① 두 입체의 면 수가 다르다. ② 두 입체의 모서리 수가 다르다. ③ 두 입체의 꼭짓점 수가 다르다. ④ 모든 수가 같다.",
-          "stem_print": "n각기둥과 n각뿔대의 꼭짓점의 수, 모서리의 수, 면의 수를 비교하면 어떤 관계인지 한 문장으로 쓰시오.",
-          "answer_atoms": [
-            "④ 모든 수가 같다"
-          ],
-          "answer_print": "세 가지 수가 모두 같아요",
-          "answer_accept": [
-            "모두 같다",
-            "v, e, f 가 모두 같다"
-          ],
-          "answer_unit": null,
-          "answer_format": "한 문장으로 (단위 없음)",
-          "figure": null,
-          "hint": "n각기둥의 v, e, f 를 쓰고 n각뿔대의 v, e, f 도 써서 나란히 놓아 봐요.",
-          "solution": "n각기둥도 n각뿔대도 v = 2n, e = 3n, f = n + 2 예요. 세 수가 모두 같아요.<br>다른 것은 옆면 모양(직사각형과 사다리꼴)과 두 밑면의 관계(합동과 닮음)예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "frustum.same-as-prism"
-          ]
-        },
-        {
-          "id": "m1-u11-t02-07",
-          "level": "H",
-          "stem_src": "어떤 각기둥의 모든 모서리의 수와 꼭짓점의 수를 합한 값이 $25$ 일 때, 면의 수는?",
-          "stem_print": "어떤 각기둥에서 모서리의 수와 꼭짓점의 수를 더한 값이 25예요. 이 각기둥의 면의 수를 구하시오.",
-          "answer_atoms": [
-            "$F = 7$ (오각기둥)"
-          ],
-          "answer_print": "7",
-          "answer_accept": [
-            "7개",
-            "오각기둥이므로 7개"
-          ],
-          "answer_unit": "개",
-          "answer_format": "수로 (개수)",
-          "figure": null,
-          "hint": "n각기둥은 e = 3n, v = 2n 이에요. 둘을 더하면 어떤 식이 될까요?",
-          "solution": "e + v = 3n + 2n = 5n = 25 에서 n = 5 (오각기둥).<br>f = n + 2 = 7개.<br>검산: v = 10, e = 15, f = 7 → 10 − 15 + 7 = 2 ✓",
-          "work_space": "lg",
-          "misconceptions": [
-            "prism-pyramid.formula"
-          ]
-        },
-        {
-          "id": "m1-u11-t02-08",
-          "level": "H",
-          "stem_src": "육각기둥과 칠각뿔의 모서리의 수의 차는?",
-          "stem_print": "육각기둥의 모서리의 수와 칠각뿔의 모서리의 수의 차를 구하시오.",
-          "answer_atoms": [
-            "$4$"
-          ],
-          "answer_print": "4",
-          "answer_accept": [
-            "4개"
-          ],
-          "answer_unit": "개",
-          "answer_format": "수로 (개수)",
-          "figure": null,
-          "hint": "각기둥은 e = 3n, 각뿔은 e = 2n 이에요.",
-          "solution": "육각기둥 e = 3 × 6 = 18개, 칠각뿔 e = 2 × 7 = 14개.<br>차 = 18 − 14 = 4개.",
-          "work_space": "lg",
-          "misconceptions": [
-            "prism-pyramid.formula"
-          ]
-        },
-        {
-          "id": "m1-u11-t02-09",
-          "level": "H",
-          "stem_src": "$n$각뿔과 $n$각기둥의 면 수의 차는 항상 얼마인가요? ($n \\geq 3$)",
-          "stem_print": "n 이 3 이상일 때, n각기둥의 면의 수에서 n각뿔의 면의 수를 뺀 값을 구하시오.",
-          "answer_atoms": [
-            "$1$"
-          ],
-          "answer_print": "1",
-          "answer_accept": [
-            "1개",
-            "항상 1"
-          ],
-          "answer_unit": "개",
-          "answer_format": "수로 (개수)",
-          "figure": null,
-          "hint": "n각기둥의 면은 n + 2 개, n각뿔의 면은 n + 1 개예요.",
-          "solution": "(n + 2) − (n + 1) = 1<br>n 이 무엇이든 항상 1개 차이예요.<br>각뿔은 위쪽이 한 점으로 모여 윗 밑면이 없기 때문이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "prism-pyramid.formula"
-          ]
+          "misconceptions": ["prism-pyramid.formula"]
         }
       ]
     },
     {
       "no": 3,
-      "title": "정다면체 5종",
-      "principle": "정다면체는 ① 모든 면이 합동인 정다각형이고 ② 한 꼭짓점에 모이는 면의 수가 모두 같은 입체예요. 두 조건을 함께 만족하는 것은 정사면체·정육면체·정팔면체·정십이면체·정이십면체 다섯 가지뿐이에요.",
+      "title": "정다면체 5종 (★)",
+      "principle": "정다면체는 ① 면이 모두 합동인 정다각형, ② 한 꼭짓점에 모인 면의 수가 같음 — 두 조건을 다 만족해야 해요.",
       "problems": [
         {
           "id": "m1-u11-t03-01",
           "level": "L",
-          "stem_src": "정다면체의 종류는 모두 몇 개인가요? ① 4 &nbsp; ② 5 &nbsp; ③ 6 &nbsp; ④ 셀 수 없이 많다",
-          "stem_print": "정다면체는 모두 몇 가지인지 구하시오.",
-          "answer_atoms": [
-            "② 5"
-          ],
-          "answer_print": "5",
-          "answer_accept": [
-            "5가지",
-            "다섯 가지"
-          ],
-          "answer_unit": "가지",
-          "answer_format": "수로 (가짓수)",
+          "stem_src": "정팔면체의 면의 모양은?",
+          "stem_print": "정팔면체의 면의 모양을 쓰시오.",
+          "answer_atoms": ["정삼각형"],
+          "answer_print": "정삼각형",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "도형 이름으로 (단위 없음)",
           "figure": null,
-          "hint": "정사면체부터 하나씩 이름을 떠올려 봐요.",
-          "solution": "정사면체·정육면체·정팔면체·정십이면체·정이십면체, 정확히 5가지예요. 더 많지도 적지도 않아요.",
+          "hint": "정팔면체는 한 꼭짓점에 4개가 모여요.",
+          "solution": "정팔면체는 정삼각형 8개로 이루어져 있어요.",
           "work_space": "sm",
-          "misconceptions": [
-            "platonic.naming"
-          ]
+          "misconceptions": ["platonic.naming"]
         },
         {
           "id": "m1-u11-t03-02",
           "level": "L",
-          "stem_src": "면이 정삼각형 인 정다면체를 모두 고르면? ① 정사면체, 정팔면체, 정이십면체 ② 정사면체, 정육면체, 정팔면체 ③ 정육면체, 정팔면체 ④ 정사면체, 정십이면체, 정이십면체",
-          "stem_print": "면이 <b>정삼각형</b>인 정다면체를 모두 찾아 이름을 쓰시오.",
-          "answer_atoms": [
-            "① 정사면체, 정팔면체, 정이십면체"
-          ],
-          "answer_print": "정사면체, 정팔면체, 정이십면체",
-          "answer_accept": [
-            "정사면체 / 정팔면체 / 정이십면체"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘정○면체’ 꼴로, 모두 쉼표로 나누어",
+          "stem_src": "정다면체는 모두 몇 가지?",
+          "stem_print": "정다면체는 모두 몇 가지인지 구하시오.",
+          "answer_atoms": ["5"],
+          "answer_print": "5",
+          "answer_accept": [],
+          "answer_unit": "가지",
+          "answer_format": "수로 (단위: 가지)",
           "figure": null,
-          "hint": "정다면체 5가지의 면 모양을 정삼각형·정사각형·정오각형으로 나눠 봐요.",
-          "solution": "정삼각형 면 — 정사면체·정팔면체·정이십면체 (3가지)<br>정사각형 면 — 정육면체 (1가지)<br>정오각형 면 — 정십이면체 (1가지)",
+          "hint": "정삼각형 3종 + 정사각형 1종 + 정오각형 1종이에요.",
+          "solution": "정사면체·정육면체·정팔면체·정십이면체·정이십면체, 총 5가지예요.",
           "work_space": "sm",
-          "misconceptions": [
-            "platonic.naming"
-          ]
+          "misconceptions": ["platonic.naming"]
         },
         {
           "id": "m1-u11-t03-03",
-          "level": "L",
-          "stem_src": "정십이면체의 면의 모양과 면의 수를 차례로 쓰세요. ① 정삼각형, 12 &nbsp; ② 정사각형, 12 &nbsp; ③ 정오각형, 12 &nbsp; ④ 정육각형, 12",
-          "stem_print": "정십이면체의 면의 모양과 면의 수를 차례대로 구하시오.",
-          "answer_atoms": [
-            "③ 정오각형, 12"
-          ],
-          "answer_print": "정오각형, 12개",
-          "answer_accept": [
-            "정오각형 12개"
-          ],
+          "level": "M",
+          "stem_src": "면이 모두 정삼각형이면 무조건 정다면체인가요? (2지선다 → 단답 재작성)",
+          "stem_print": "면이 모두 정삼각형이면 무조건 정다면체인지 쓰시오.",
+          "answer_atoms": ["아니에요"],
+          "answer_print": "아니요",
+          "answer_accept": ["아니에요", "아니오"],
           "answer_unit": null,
-          "answer_format": "‘면 모양, ○개’ 꼴로",
+          "answer_format": "예/아니요로",
           "figure": null,
-          "hint": "이름의 ‘십이’가 무엇의 개수인지 생각해 봐요.",
-          "solution": "정십이면체는 정오각형 12개로 둘러싸인 정다면체예요. 이름의 ‘십이’는 면의 수예요.",
+          "hint": "꼭짓점 조건도 함께 확인해야 해요.",
+          "solution": "면 조건만으론 부족해요. 각 꼭짓점에 모인 면의 수도 같아야 정다면체예요.",
           "work_space": "sm",
-          "misconceptions": [
-            "platonic.naming"
-          ]
-        },
-        {
-          "id": "m1-u11-t03-04",
-          "level": "M",
-          "stem_src": "정사각뿔이 정다면체가 아닌 이유로 가장 적절한 것은? ① 면이 5개여서 (정다면체 면 수가 아님) ② 밑면(정사각형)과 옆면(정삼각형)이 합동이 아니어서 ③ 모서리 수가 너무 많아서 ④ 꼭짓점이 5개라서",
-          "stem_print": "밑면이 정사각형이고 옆면이 정삼각형인 정사각뿔은 정다면체가 아니에요. 그 까닭을 정다면체의 조건과 연결하여 한 문장으로 쓰시오.",
-          "answer_atoms": [
-            "② 밑면과 옆면이 합동이 아니어서"
-          ],
-          "answer_print": "밑면과 옆면이 합동이 아니어서",
-          "answer_accept": [
-            "모든 면이 합동인 정다각형이 아니어서",
-            "면이 두 종류라서"
-          ],
-          "answer_unit": null,
-          "answer_format": "한 문장으로 (단위 없음)",
-          "figure": null,
-          "hint": "정다면체의 첫째 조건은 ‘모든 면이 합동인 정다각형’이에요.",
-          "solution": "정사각뿔은 면이 정사각형 1개와 정삼각형 4개로 두 종류예요.<br>‘모든 면이 합동인 정다각형’이라는 첫째 조건을 만족하지 못해요.",
-          "work_space": "md",
-          "misconceptions": [
-            "platonic.two-conditions"
-          ]
-        },
-        {
-          "id": "m1-u11-t03-05",
-          "level": "M",
-          "stem_src": "한 꼭짓점에 모이는 면의 수가 $5$ 개인 정다면체는? ① 정사면체 &nbsp; ② 정팔면체 &nbsp; ③ 정십이면체 &nbsp; ④ 정이십면체",
-          "stem_print": "한 꼭짓점에 모이는 면의 수가 5개인 정다면체의 이름을 쓰시오.",
-          "answer_atoms": [
-            "④ 정이십면체"
-          ],
-          "answer_print": "정이십면체",
-          "answer_accept": [
-            "정20면체"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘정○면체’ 꼴로",
-          "figure": null,
-          "hint": "정삼각형 5개가 한 꼭짓점에 모이면 각의 합은 5 × 60° 예요.",
-          "solution": "정사면체는 3개씩(180°), 정팔면체는 4개씩(240°), 정이십면체는 5개씩(300°) 모여요.<br>정십이면체는 정오각형이 3개씩(324°) 모여요.<br>따라서 답은 정이십면체예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "platonic.angle-sum"
-          ]
-        },
-        {
-          "id": "m1-u11-t03-06",
-          "level": "M",
-          "stem_src": "정삼각기둥(밑면 정삼각형 + 옆면 정사각형)이 정다면체가 아닌 이유로 옳은 것은? ① 면이 합동이 아니다 (정삼각형 ≠ 정사각형) ② 옆면이 정사각형이 아니다 ③ 한 꼭짓점에 모이는 면의 수가 다양하다 ④ 모서리가 너무 적다",
-          "stem_print": "밑면이 정삼각형이고 옆면이 모두 정사각형인 삼각기둥이 있어요. 이 입체가 정다면체가 아닌 까닭을 한 문장으로 쓰시오.",
-          "answer_atoms": [
-            "① 면이 합동이 아니다 (정삼각형 ≠ 정사각형)"
-          ],
-          "answer_print": "면이 합동이 아니어서 (정삼각형 ≠ 정사각형)",
-          "answer_accept": [
-            "모든 면이 합동인 정다각형이 아니어서",
-            "면이 두 종류라서"
-          ],
-          "answer_unit": null,
-          "answer_format": "한 문장으로 (단위 없음)",
-          "figure": null,
-          "hint": "밑면과 옆면이 같은 정다각형인지 살펴봐요.",
-          "solution": "옆면이 정사각형이어도 밑면(정삼각형)과 옆면(정사각형)은 합동이 아니에요. 첫째 조건을 만족하지 못해요.<br>게다가 한 꼭짓점에 모이는 면의 구성도 자리마다 달라서 둘째 조건도 깨져요.",
-          "work_space": "md",
-          "misconceptions": [
-            "platonic.two-conditions"
-          ]
-        },
-        {
-          "id": "m1-u11-t03-07",
-          "level": "H",
-          "stem_src": "한 꼭짓점에 정삼각형 $6$ 개 가 모이면 정다면체가 만들어질까요? 그 이유와 함께 답하세요.",
-          "stem_print": "한 꼭짓점에 정삼각형 6개가 모이면 정다면체를 만들 수 있는지 답하고, 그 까닭을 각의 합으로 설명하시오.",
-          "answer_atoms": [
-            "아니요. 평면이 되어 입체가 만들어지지 않아요."
-          ],
-          "answer_print": "아니요. 평면이 되어 입체가 만들어지지 않아요.",
-          "answer_accept": [
-            "만들 수 없다. 각의 합이 360°라서"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘예 / 아니요’ + 까닭을 한 문장으로 (단위 없음)",
-          "figure": null,
-          "hint": "정삼각형 한 내각은 60° 예요. 6개면 각의 합은 얼마일까요?",
-          "solution": "정삼각형 한 내각은 60° 이므로 6개가 모이면 6 × 60° = 360° 예요.<br>각의 합이 360° 이면 종이가 딱 평평하게 깔려서 위로 솟아오르지 못해요.<br>각의 합이 360° 보다 작아야(180°·240°·300°) 입체가 되므로 정삼각형으로 만드는 정다면체는 3가지뿐이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "platonic.angle-sum"
-          ]
-        },
-        {
-          "id": "m1-u11-t03-08",
-          "level": "H",
-          "stem_src": "정육각형 정다면체가 존재하지 않는 이유는? (한 꼭짓점에 모이는 정육각형 수에 대해 분석)",
-          "stem_print": "정육각형만으로는 정다면체를 만들 수 없어요. 한 꼭짓점에 모이는 정육각형의 수를 이용하여 그 까닭을 쓰시오.",
-          "answer_atoms": [
-            "한 꼭짓점에 정육각형이 3개만 모여도 각 합 = 360°가 되어 평면이 됨."
-          ],
-          "answer_print": "한 꼭짓점에 정육각형이 3개만 모여도 각 합 = 360°가 되어 평면이 됨.",
-          "answer_accept": [
-            "정육각형 3개의 각의 합이 360°라서"
-          ],
-          "answer_unit": null,
-          "answer_format": "한 문장으로 (단위 없음)",
-          "figure": null,
-          "hint": "정육각형 한 내각은 120° 예요. 입체가 되려면 한 꼭짓점에 면이 적어도 3개는 모여야 해요.",
-          "solution": "정육각형 한 내각은 120° 예요. 한 꼭짓점에 3개가 모이면 3 × 120° = 360° 로 평면이 돼요(벌집 모양).<br>2개로는 입체가 닫히지 않고, 3개 이상이면 360° 이상이 되므로 정육각형 정다면체는 있을 수 없어요.<br>그래서 정다면체의 면이 될 수 있는 것은 정삼각형(60°)·정사각형(90°)·정오각형(108°)뿐이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "platonic.angle-sum",
-            "platonic.naming"
-          ]
-        },
-        {
-          "id": "m1-u11-t03-09",
-          "level": "H",
-          "stem_src": "정십이면체와 정이십면체에서 $V$, $E$, $F$ 의 값을 비교해서 신기한 점을 발견할 수 있어요. 무엇인가요?",
-          "stem_print": "정십이면체는 v = 20, e = 30, f = 12 이고 정이십면체는 v = 12, e = 30, f = 20 이에요. 두 정다면체의 v, e, f 사이에 어떤 관계가 있는지 한 문장으로 쓰시오.",
-          "answer_atoms": [
-            "정십이면체와 정이십면체는 $V$ 와 $F$ 가 서로 바뀐 관계 (쌍대 dual)"
-          ],
-          "answer_print": "꼭짓점의 수와 면의 수가 서로 바뀐 관계 (쌍대)",
-          "answer_accept": [
-            "v 와 f 가 서로 바뀌고 e 는 같다",
-            "쌍대 관계"
-          ],
-          "answer_unit": null,
-          "answer_format": "한 문장으로 (단위 없음)",
-          "figure": null,
-          "hint": "두 입체에서 같은 값은 무엇이고 자리를 바꾼 값은 무엇인가요?",
-          "solution": "모서리의 수는 30개로 같고, 꼭짓점의 수와 면의 수가 서로 자리를 바꿨어요. 이런 관계를 <b>쌍대</b>라고 해요.<br>정육면체(v = 8, f = 6)와 정팔면체(v = 6, f = 8)도 쌍대이고, 정사면체는 자기 자신과 쌍대예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "poly.count-swap"
-          ]
+          "misconceptions": ["platonic.two-conditions"]
         }
       ]
     },
     {
       "no": 4,
       "title": "회전체 식별과 종류",
-      "principle": "평면도형을 한 직선(회전축) 둘레로 한 바퀴 돌려 만든 입체를 회전체라고 해요. 직사각형은 원기둥, 직각삼각형은 원뿔, 사다리꼴은 원뿔대, 반원은 구가 돼요.",
+      "principle": "직사각형→원기둥, 직각삼각형→원뿔, 사다리꼴→원뿔대, 반원→구.",
       "problems": [
         {
           "id": "m1-u11-t04-01",
           "level": "L",
-          "stem_src": "직사각형을 한 변을 회전축으로 하여 1회전 시킬 때 만들어지는 회전체는? ① 원기둥 &nbsp; ② 원뿔 &nbsp; ③ 원뿔대 &nbsp; ④ 구",
-          "stem_print": "직사각형의 한 변을 회전축으로 하여 1회전 시킬 때 생기는 회전체의 이름을 쓰시오.",
-          "answer_atoms": [
-            "① 원기둥"
-          ],
-          "answer_print": "원기둥",
-          "answer_accept": [
-            "원기둥 모양"
-          ],
+          "stem_src": "직각삼각형의 직각을 낀 한 변을 축으로 1회전하면?",
+          "stem_print": "직각삼각형의 직각을 낀 한 변을 축으로 1회전시키면 생기는 회전체의 이름을 쓰시오.",
+          "answer_atoms": ["원뿔"],
+          "answer_print": "원뿔",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
+          "answer_format": "낱말로 (단위 없음)",
           "figure": null,
-          "hint": "통조림 캔 모양을 떠올려 봐요.",
-          "solution": "직사각형을 한 변 둘레로 돌리면 밑면이 원인 기둥, 곧 원기둥이 만들어져요.",
+          "hint": "직각삼각형을 돌리면 뾰족한 입체가 생겨요.",
+          "solution": "직각을 낀 변을 축으로 돌리면 원뿔이 생겨요.",
           "work_space": "sm",
-          "misconceptions": [
-            "rot.shape-to-solid"
-          ]
+          "misconceptions": ["rot.shape-to-solid"]
         },
         {
           "id": "m1-u11-t04-02",
           "level": "L",
-          "stem_src": "반원을 그 지름을 회전축으로 하여 1회전 시킬 때 생기는 회전체는? ① 원기둥 &nbsp; ② 원뿔 &nbsp; ③ 구 &nbsp; ④ 반구",
-          "stem_print": "반원을 그 지름을 회전축으로 하여 1회전 시킬 때 생기는 회전체의 이름을 쓰시오.",
-          "answer_atoms": [
-            "③ 구"
-          ],
+          "stem_src": "반원을 지름을 축으로 1회전하면?",
+          "stem_print": "반원을 지름을 축으로 1회전시키면 생기는 회전체의 이름을 쓰시오.",
+          "answer_atoms": ["구"],
           "answer_print": "구",
-          "answer_accept": [
-            "구 모양"
-          ],
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
+          "answer_format": "낱말로 (단위 없음)",
           "figure": null,
-          "hint": "지구본을 떠올려 봐요. 반쪽이 아니라 한 바퀴를 다 돌아요.",
-          "solution": "반원이 지름 둘레로 360° 돌면 구의 겉면을 남김없이 덮어요. 그래서 반구가 아니라 구가 돼요.",
+          "hint": "반쪽만 채워지는 게 아니라 전체가 채워져요.",
+          "solution": "반원을 지름으로 돌리면 구가 돼요.",
           "work_space": "sm",
-          "misconceptions": [
-            "rot.shape-to-solid"
-          ]
+          "misconceptions": ["rot.shape-to-solid"]
         },
         {
           "id": "m1-u11-t04-03",
           "level": "L",
-          "stem_src": "다음 중 회전체가 아닌 것은? ① 원기둥 &nbsp; ② 사각기둥 &nbsp; ③ 원뿔 &nbsp; ④ 구",
-          "stem_print": "원기둥, 사각기둥, 원뿔, 구 중에서 회전체가 <b>아닌</b> 것을 찾아 이름을 쓰시오.",
-          "answer_atoms": [
-            "② 사각기둥"
-          ],
-          "answer_print": "사각기둥",
-          "answer_accept": [
-            "사각기둥(다면체)"
-          ],
-          "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
-          "figure": null,
-          "hint": "곡면이 있는지 살펴봐요. 회전체는 옆면이 곡면이에요.",
-          "solution": "사각기둥은 모든 면이 평면 다각형이라 다면체예요.<br>직사각형을 돌리면 원기둥이 되지, 사각기둥은 되지 않아요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "solid.curved-is-polyhedron"
-          ]
-        },
-        {
-          "id": "m1-u11-t04-04",
-          "level": "M",
-          "stem_src": "아래 사다리꼴을 평행한 두 변에 수직인 변(왼쪽 변)을 회전축으로 1회전 시키면 어떤 회전체가 만들어지나요?",
-          "stem_print": "아래 사다리꼴을 왼쪽 변(평행한 두 변에 수직인 변)을 회전축으로 하여 1회전 시킬 때 생기는 회전체의 이름을 쓰시오.",
-          "answer_atoms": [
-            "③ 원뿔대"
-          ],
+          "stem_src": "사다리꼴(직각 2개)을 평행하지 않은 변을 축으로 1회전하면?",
+          "stem_print": "사다리꼴(직각 2개)을 평행하지 않은 변을 축으로 1회전시키면 생기는 회전체의 이름을 쓰시오.",
+          "answer_atoms": ["원뿔대"],
           "answer_print": "원뿔대",
-          "answer_accept": [
-            "원뿔대 모양"
-          ],
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
-          "figure": "<svg class=\"fig-svg\" viewBox=\"0 0 240 180\">\n  <line x1=\"60\" y1=\"20\" x2=\"60\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n  <text x=\"60\" y=\"13\" text-anchor=\"middle\" font-size=\"10\" fill=\"#94a3b8\">회전축</text>\n  <polygon points=\"60,40 60,150 160,150 130,40\" fill=\"rgba(245,158,11,0.3)\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"115\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#666\">사다리꼴 (직각 두 개)</text>\n</svg>",
-          "hint": "위는 좁고 아래는 넓은 통이 만들어져요.",
-          "solution": "직각이 두 개인 사다리꼴을 그 수직인 변 둘레로 돌리면 작은 원(윗면), 큰 원(아랫면), 곡면인 옆면을 가진 원뿔대가 만들어져요.",
-          "work_space": "md",
-          "misconceptions": [
-            "rot.shape-to-solid"
-          ]
-        },
-        {
-          "id": "m1-u11-t04-05",
-          "level": "M",
-          "stem_src": "직각삼각형의 빗변 을 회전축으로 1회전 시키면 어떤 모양이 되나요?",
-          "stem_print": "직각삼각형을 <b>빗변</b>을 회전축으로 하여 1회전 시키면 어떤 모양의 입체가 되는지 한 문장으로 쓰시오.",
-          "answer_atoms": [
-            "두 원뿔이 밑면을 공유하며 붙은 모양"
-          ],
-          "answer_print": "두 원뿔이 밑면을 공유하며 붙은 모양",
-          "answer_accept": [
-            "원뿔 2개가 밑면끼리 맞붙은 모양"
-          ],
-          "answer_unit": null,
-          "answer_format": "한 문장으로 (단위 없음)",
+          "answer_format": "낱말로 (단위 없음)",
           "figure": null,
-          "hint": "직각인 꼭짓점이 회전축에서 가장 멀리 떨어져 있어요. 그 점은 돌면서 원을 그려요.",
-          "solution": "빗변의 두 끝점이 회전축 위에 있고, 직각인 꼭짓점이 돌면서 원을 그려요.<br>그 원이 두 원뿔의 공통 밑면이 되어 위쪽 원뿔과 아래쪽 원뿔이 밑면끼리 붙은 모양이 돼요.",
-          "work_space": "md",
-          "misconceptions": [
-            "rot.axis-matters"
-          ]
-        },
-        {
-          "id": "m1-u11-t04-06",
-          "level": "M",
-          "stem_src": "직각삼각형 ABC ($\\angle B = 90°$)에서 $\\overline{BC}$ 를 회전축으로 1회전 시킬 때 생기는 입체와, $\\overline{AB}$ 를 회전축으로 1회전 시킬 때 생기는 입체에 대한 설명으로 옳은 것은? ① 둘 다 원뿔, 모양이 같다 ② 둘 다 원뿔, 모양이 다르다 (반지름·높이 다름) ③ 한쪽은 원뿔, 다른 쪽은 원기둥 ④ 둘 다 구",
-          "stem_print": "∠B = 90° 인 직각삼각형 ABC 에서 변 BC 를 회전축으로 1회전 시킨 입체와 변 AB 를 회전축으로 1회전 시킨 입체를 비교하여 어떤 관계인지 한 문장으로 쓰시오. (단, 변 AB 와 변 BC 의 길이는 서로 달라요.)",
-          "answer_atoms": [
-            "② 둘 다 원뿔, 모양이 다르다"
-          ],
-          "answer_print": "둘 다 원뿔이지만 모양이 달라요",
-          "answer_accept": [
-            "둘 다 원뿔, 모양이 다르다",
-            "반지름과 높이가 서로 바뀐 원뿔"
-          ],
-          "answer_unit": null,
-          "answer_format": "한 문장으로 (단위 없음)",
-          "figure": null,
-          "hint": "각각의 경우에 밑면의 반지름과 높이가 무엇이 되는지 적어 봐요.",
-          "solution": "변 BC 를 축으로 돌리면 밑면의 반지름은 변 AB, 높이는 변 BC 인 원뿔이 돼요.<br>변 AB 를 축으로 돌리면 밑면의 반지름은 변 BC, 높이는 변 AB 인 원뿔이 돼요.<br>두 길이가 다르면 반지름과 높이가 서로 뒤바뀌므로 둘 다 원뿔이지만 모양은 달라요.",
-          "work_space": "md",
-          "misconceptions": [
-            "rot.axis-matters"
-          ]
-        },
-        {
-          "id": "m1-u11-t04-07",
-          "level": "H",
-          "stem_src": "가로 $4$, 세로 $6$ 인 직사각형을 가로 변을 회전축으로 1회전 시킨 입체와, 세로 변을 회전축으로 1회전 시킨 입체는 같을까요? 답과 이유를 쓰세요.",
-          "stem_print": "가로가 4, 세로가 6 인 직사각형이 있어요. 가로 변을 회전축으로 1회전 시킨 입체와 세로 변을 회전축으로 1회전 시킨 입체가 같은지 답하고, 그 까닭을 쓰시오.",
-          "answer_atoms": [
-            "다른 원기둥이에요."
-          ],
-          "answer_print": "다른 원기둥이에요.",
-          "answer_accept": [
-            "같지 않다. 반지름과 높이가 서로 바뀐 원기둥이라서"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘같아요 / 달라요’ + 까닭을 한 문장으로 (단위 없음)",
-          "figure": null,
-          "hint": "각각의 경우에 반지름과 높이가 얼마인지 적어 봐요.",
-          "solution": "가로 변(길이 4)을 축으로 돌리면 반지름 6, 높이 4 인 원기둥이 돼요.<br>세로 변(길이 6)을 축으로 돌리면 반지름 4, 높이 6 인 원기둥이 돼요.<br>둘 다 원기둥이지만 밑면의 크기와 높이가 달라서 같은 입체가 아니에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "rot.axis-matters"
-          ]
-        },
-        {
-          "id": "m1-u11-t04-08",
-          "level": "H",
-          "stem_src": "아래 도형을 회전축 둘레로 1회전 시킬 때 만들어지는 입체는 어떤 모양인가요? (도형: 직사각형 위에 직각삼각형이 얹혀진 모양)",
-          "stem_print": "아래 도형은 직사각형 위에 직각삼각형이 얹힌 모양이에요. 이 도형을 회전축 둘레로 1회전 시킬 때 생기는 입체의 모양을 한 문장으로 쓰시오.",
-          "answer_atoms": [
-            "③ 원뿔이 위에 있고 원기둥이 아래 (원뿔 + 원기둥)"
-          ],
-          "answer_print": "아래는 원기둥, 위는 원뿔이 붙은 모양",
-          "answer_accept": [
-            "원기둥 위에 원뿔이 얹힌 모양",
-            "원뿔 + 원기둥"
-          ],
-          "answer_unit": null,
-          "answer_format": "한 문장으로 (단위 없음)",
-          "figure": "<svg class=\"fig-svg\" viewBox=\"0 0 240 200\">\n  <line x1=\"60\" y1=\"20\" x2=\"60\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n  <text x=\"60\" y=\"13\" text-anchor=\"middle\" font-size=\"10\" fill=\"#94a3b8\">회전축</text>\n  <!-- 직사각형 (아래) -->\n  <polygon points=\"60,100 60,170 140,170 140,100\" fill=\"rgba(245,158,11,0.3)\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <!-- 직각삼각형 (위) -->\n  <polygon points=\"60,40 60,100 140,100\" fill=\"rgba(245,158,11,0.5)\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n</svg>",
-          "hint": "직사각형 부분과 직각삼각형 부분을 따로 돌려 보고 이어 붙여요.",
-          "solution": "직사각형 부분은 원기둥이 되고, 회전축에 직각을 낀 변이 놓인 직각삼각형 부분은 원뿔이 돼요.<br>둘이 위아래로 붙어서 연필처럼 뾰족한 입체가 만들어져요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "rot.shape-to-solid"
-          ]
-        },
-        {
-          "id": "m1-u11-t04-09",
-          "level": "H",
-          "stem_src": "반지름이 $5$ 인 원을 회전축이 원의 중심에서 $10$ 만큼 떨어진 평행한 직선 둘레로 1회전 시키면 어떤 모양이 만들어질까요?",
-          "stem_print": "반지름이 5 인 원이 있어요. 이 원의 중심에서 10 만큼 떨어져 있고 원과 만나지 않는 직선을 회전축으로 하여 원을 1회전 시킬 때 생기는 입체의 모양을 쓰시오.",
-          "answer_atoms": [
-            "도넛 모양 (수학에서는 \"토러스(torus)\")"
-          ],
-          "answer_print": "도넛 모양 (수학에서는 \"토러스(torus)\")",
-          "answer_accept": [
-            "도넛 모양",
-            "토러스"
-          ],
-          "answer_unit": null,
-          "answer_format": "모양 이름으로 (단위 없음)",
-          "figure": null,
-          "hint": "원이 회전축에서 떨어진 채로 도는 모습을 상상해 봐요. 가운데가 비어요.",
-          "solution": "원의 중심이 회전축에서 10 만큼 떨어진 채로 한 바퀴 돌면, 원이 지나간 자리는 가운데가 뚫린 도넛 모양이 돼요.<br>중1에서 배우는 회전체 네 가지(원기둥·원뿔·원뿔대·구)에는 없는 모양이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "rot.axis-matters"
-          ]
+          "hint": "밑면 두 개의 크기가 달라요.",
+          "solution": "사다리꼴을 그렇게 돌리면 원뿔대가 생겨요.",
+          "work_space": "sm",
+          "misconceptions": ["rot.axis-matters"]
         }
       ]
     },
     {
       "no": 5,
-      "title": "회전체의 단면",
-      "principle": "회전체를 회전축에 <b>수직</b>으로 자르면 단면은 언제나 원이에요. 회전축을 <b>포함</b>하는 평면으로 자르면(축단면) 단면은 좌우가 대칭인 도형이고, 어느 방향으로 잘라도 모두 합동이에요.",
+      "title": "회전체의 단면 (★)",
+      "principle": "회전축에 수직 = 항상 원. 회전축을 포함(축단면) = 좌우대칭 도형.",
       "problems": [
         {
           "id": "m1-u11-t05-01",
           "level": "L",
-          "stem_src": "원기둥을 회전축에 수직 으로 자른 단면의 모양은? ① 원 &nbsp; ② 직사각형 &nbsp; ③ 정사각형 &nbsp; ④ 타원",
-          "stem_print": "원기둥을 회전축에 <b>수직</b>인 평면으로 자를 때 생기는 단면의 모양을 쓰시오.",
-          "answer_atoms": [
-            "① 원"
-          ],
+          "stem_src": "원기둥을 회전축에 수직으로 자른 단면은?",
+          "stem_print": "원기둥을 회전축에 수직으로 자른 단면의 모양을 쓰시오.",
+          "answer_atoms": ["원"],
           "answer_print": "원",
-          "answer_accept": [
-            "원 모양"
-          ],
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "‘원 / 직사각형 / 사다리꼴’ 처럼 도형 이름으로 (단위 없음)",
+          "answer_format": "낱말로 (단위 없음)",
           "figure": null,
-          "hint": "회전체를 회전축에 수직으로 자른 단면은 언제나 같은 도형이에요.",
-          "solution": "회전체를 회전축에 수직으로 자르면 단면은 항상 원이에요. 원기둥은 어디를 잘라도 합동인 원이 나와요.",
+          "hint": "회전축에 수직인 단면은 항상 같은 모양이에요.",
+          "solution": "회전축에 수직으로 자른 단면은 항상 원이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "sect.perp-vs-axis"
-          ]
+          "misconceptions": ["sect.perp-vs-axis"]
         },
         {
           "id": "m1-u11-t05-02",
-          "level": "L",
-          "stem_src": "원뿔의 축단면 (회전축을 포함하는 단면)의 모양은? ① 원 &nbsp; ② 이등변삼각형 &nbsp; ③ 직사각형 &nbsp; ④ 사다리꼴",
-          "stem_print": "원뿔을 회전축을 <b>포함</b>하는 평면으로 자를 때 생기는 단면(축단면)의 모양을 쓰시오.",
-          "answer_atoms": [
-            "② 이등변삼각형"
-          ],
+          "level": "M",
+          "stem_src": "원뿔을 회전축을 포함하여 자른 단면은?",
+          "stem_print": "원뿔을 회전축을 포함하여 자른 단면의 모양을 쓰시오.",
+          "answer_atoms": ["이등변삼각형"],
           "answer_print": "이등변삼각형",
-          "answer_accept": [
-            "이등변 삼각형"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘원 / 직사각형 / 사다리꼴’ 처럼 도형 이름으로 (단위 없음)",
-          "figure": null,
-          "hint": "원뿔의 한가운데를 위에서 아래로 갈라 보면 어떤 도형이 보일까요?",
-          "solution": "회전축을 포함하도록 자르면 회전하기 전의 직각삼각형과 그 거울상이 나란히 붙어 이등변삼각형이 보여요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "sect.perp-vs-axis"
-          ]
-        },
-        {
-          "id": "m1-u11-t05-03",
-          "level": "L",
-          "stem_src": "구의 어떤 단면이라도 항상 어떤 모양인가요? ① 원 &nbsp; ② 타원 &nbsp; ③ 사각형 &nbsp; ④ 단면이 없음",
-          "stem_print": "구를 어떤 평면으로 자르더라도 단면은 항상 어떤 모양인지 쓰시오.",
-          "answer_atoms": [
-            "① 원"
-          ],
-          "answer_print": "원",
-          "answer_accept": [
-            "원 모양"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘원 / 직사각형 / 사다리꼴’ 처럼 도형 이름으로 (단위 없음)",
-          "figure": null,
-          "hint": "구는 어느 방향에서 봐도 똑같이 생겼어요.",
-          "solution": "구는 어떻게 잘라도 단면이 원이에요. 중심을 지나도록 자를 때 가장 큰 원이 나와요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "sect.axis-shape"
-          ]
-        },
-        {
-          "id": "m1-u11-t05-04",
-          "level": "M",
-          "stem_src": "★ 원뿔을 회전축에 수직 으로 자르면 어떤 모양인가요? ① 원 &nbsp; ② 이등변삼각형 &nbsp; ③ 직각삼각형 &nbsp; ④ 사다리꼴",
-          "stem_print": "원뿔을 회전축에 <b>수직</b>인 평면으로 자를 때 생기는 단면의 모양을 쓰시오.",
-          "answer_atoms": [
-            "① 원"
-          ],
-          "answer_print": "원",
-          "answer_accept": [
-            "원 모양"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘원 / 직사각형 / 사다리꼴’ 처럼 도형 이름으로 (단위 없음)",
-          "figure": null,
-          "hint": "이등변삼각형은 회전축을 포함해서 자른 단면이에요. 수직으로 자른 단면과 헷갈리지 않도록 해요.",
-          "solution": "★ 이 단원에서 가장 많이 걸리는 함정이에요. 수직으로 자른 단면은 언제나 원이에요.<br>이등변삼각형은 회전축을 포함하도록 잘랐을 때 나오는 모양이에요.<br>외우는 말 — 수직은 원, 축단면은 좌우 대칭.",
-          "work_space": "md",
-          "misconceptions": [
-            "sect.perp-vs-axis"
-          ]
-        },
-        {
-          "id": "m1-u11-t05-05",
-          "level": "M",
-          "stem_src": "★ 원기둥의 축단면 (회전축을 포함하는 단면)의 모양은? ① 원 &nbsp; ② 직사각형 &nbsp; ③ 정사각형 &nbsp; ④ 사다리꼴",
-          "stem_print": "원기둥을 회전축을 <b>포함</b>하는 평면으로 자를 때 생기는 단면(축단면)의 모양을 쓰시오.",
-          "answer_atoms": [
-            "② 직사각형"
-          ],
-          "answer_print": "직사각형",
-          "answer_accept": [
-            "직사각형 모양"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘원 / 직사각형 / 사다리꼴’ 처럼 도형 이름으로 (단위 없음)",
-          "figure": null,
-          "hint": "가로는 지름, 세로는 높이가 돼요.",
-          "solution": "원기둥의 축단면은 가로가 지름(반지름의 2배), 세로가 높이인 직사각형이에요.<br>지름과 높이가 같을 때만 정사각형이 되므로 일반적으로는 직사각형이라고 답해요.",
-          "work_space": "md",
-          "misconceptions": [
-            "sect.perp-vs-axis"
-          ]
-        },
-        {
-          "id": "m1-u11-t05-06",
-          "level": "M",
-          "stem_src": "원뿔대를 회전축을 포함하는 평면으로 자른 단면(축단면)은 어떤 모양인가요? 또한 같은 원뿔대의 어느 축단면이든 모두 합동 일까요?",
-          "stem_print": "원뿔대를 회전축을 포함하는 평면으로 자를 때 생기는 단면의 모양을 쓰고, 자르는 방향을 바꿔도 이 단면들이 모두 합동인지 답하시오.",
-          "answer_atoms": [
-            "(등변)사다리꼴, 모든 축단면은 합동"
-          ],
-          "answer_print": "(등변)사다리꼴, 모든 축단면은 합동",
-          "answer_accept": [
-            "등변사다리꼴 / 모두 합동이다"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘도형 이름 + 합동 여부’ 꼴로",
-          "figure": null,
-          "hint": "원뿔대는 사다리꼴을 돌려서 만든 회전체예요.",
-          "solution": "원뿔대의 축단면은 회전하기 전의 사다리꼴과 그 거울상이 붙은 등변사다리꼴이에요.<br>회전체는 축을 중심으로 어느 방향에서 잘라도 모습이 같으므로 축단면은 모두 합동이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "sect.axis-shape"
-          ]
-        },
-        {
-          "id": "m1-u11-t05-07",
-          "level": "H",
-          "stem_src": "어떤 회전체를 회전축에 수직으로 자른 단면이 항상 같은 크기의 원이 나왔어요. 이 회전체는 무엇일 가능성이 가장 높은가요? ① 원기둥 &nbsp; ② 원뿔 &nbsp; ③ 원뿔대 &nbsp; ④ 구",
-          "stem_print": "어떤 회전체를 회전축에 수직으로 자를 때마다 항상 크기가 같은 원이 나왔어요. 이 회전체의 이름을 쓰시오.",
-          "answer_atoms": [
-            "① 원기둥"
-          ],
-          "answer_print": "원기둥",
-          "answer_accept": [
-            "원기둥 모양"
-          ],
+          "answer_accept": [],
           "answer_unit": null,
           "answer_format": "도형 이름으로 (단위 없음)",
           "figure": null,
-          "hint": "‘항상 크기가 같다’가 핵심이에요. 위로 갈수록 작아지는 입체는 답이 아니에요.",
-          "solution": "원기둥은 어느 높이에서 잘라도 같은 크기의 원이 나와요.<br>원뿔과 원뿔대는 위로 갈수록 원이 작아지고, 구는 가운데가 가장 크고 위아래로 갈수록 작아져요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sect.axis-shape"
-          ]
+          "hint": "회전 전 직각삼각형과 그 거울상이 만나요.",
+          "solution": "축단면은 원래 직각삼각형과 거울상이 합쳐진 이등변삼각형이에요.",
+          "work_space": "md",
+          "misconceptions": ["sect.perp-vs-axis"]
         },
         {
-          "id": "m1-u11-t05-08",
-          "level": "H",
-          "stem_src": "반지름이 $5$, 높이가 $8$ 인 원기둥의 축단면의 둘레 는?",
-          "stem_print": "밑면의 반지름이 5, 높이가 8 인 원기둥이 있어요. 이 원기둥의 축단면의 둘레의 길이를 구하시오.",
-          "answer_atoms": [
-            "$36$"
-          ],
-          "answer_print": "36",
-          "answer_accept": [
-            "36 (단위 없음)"
-          ],
-          "answer_unit": null,
-          "answer_format": "수로 (단위 없음)",
+          "id": "m1-u11-t05-03",
+          "level": "M",
+          "stem_src": "밑면 반지름 3cm, 높이 5cm인 원기둥의 축단면의 가로 길이는?",
+          "stem_print": "밑면 반지름 3cm, 높이 5cm인 원기둥의 축단면의 가로 길이를 구하시오.",
+          "answer_atoms": ["6"],
+          "answer_print": "6",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "수로 (단위: cm)",
           "figure": null,
-          "hint": "축단면은 가로가 지름, 세로가 높이인 직사각형이에요.",
-          "solution": "축단면은 가로 2 × 5 = 10, 세로 8 인 직사각형이에요.<br>둘레 = 2 × (10 + 8) = 36<br>가로를 반지름 5 로 두지 않도록 조심해요. 축단면은 회전축을 가로지르므로 반지름이 양쪽으로 펼쳐져 지름이 돼요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sect.axis-shape"
-          ]
-        },
-        {
-          "id": "m1-u11-t05-09",
-          "level": "H",
-          "stem_src": "반지름이 $6$ 인 구를 중심에서 $4$ 만큼 떨어진 곳에서 회전축에 수직으로 자른 단면의 반지름은? (피타고라스 정리)",
-          "stem_print": "반지름이 6 인 구를 중심에서 4 만큼 떨어진 곳에서 회전축에 수직인 평면으로 잘랐어요. 이때 생기는 단면인 원의 반지름을 구하시오. (피타고라스 정리를 이용해요.)",
-          "answer_atoms": [
-            "$\\sqrt{20} = 2\\sqrt{5}$"
-          ],
-          "answer_print": "2√<span style=\"text-decoration:overline\">5</span>",
-          "answer_accept": [
-            "2√5",
-            "√20"
-          ],
-          "answer_unit": null,
-          "answer_format": "가장 간단한 근호 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "구의 중심 O, 단면의 중심 M, 단면 위의 점 P 로 직각삼각형을 만들어 봐요. 선분 OP 는 구의 반지름이에요.",
-          "solution": "선분 OM = 4, 선분 OP = 6 인 직각삼각형 OMP 에서<br>4<sup>2</sup> + (선분 MP)<sup>2</sup> = 6<sup>2</sup><br>(선분 MP)<sup>2</sup> = 36 − 16 = 20<br>선분 MP = √<span style=\"text-decoration:overline\">20</span> = 2√<span style=\"text-decoration:overline\">5</span><br>단면이 중심을 지날 때(거리가 0일 때) 반지름이 6 으로 가장 커요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "sect.axis-shape"
-          ]
+          "hint": "축단면의 가로는 지름이에요.",
+          "solution": "축단면의 가로 = 지름 = 2×3=6cm.",
+          "work_space": "md",
+          "misconceptions": ["sect.axis-shape"]
         }
       ]
     },
     {
       "no": 6,
       "title": "회전체의 전개도",
-      "principle": "원기둥의 옆면을 펼치면 직사각형이 되고 가로는 밑면의 둘레와 같아요. 원뿔의 옆면을 펼치면 부채꼴이 되고, 부채꼴의 반지름은 모선, 호의 길이는 밑면의 둘레와 같아요.",
+      "principle": "원기둥 옆면 = 직사각형(가로=밑면 둘레). 원뿔 옆면 = 부채꼴(반지름=모선).",
       "problems": [
         {
           "id": "m1-u11-t06-01",
           "level": "L",
-          "stem_src": "원기둥의 옆면을 펼치면 어떤 모양이 되나요? ① 원 &nbsp; ② 직사각형 &nbsp; ③ 부채꼴 &nbsp; ④ 사다리꼴",
-          "stem_print": "원기둥의 옆면을 펼치면 어떤 도형이 되는지 쓰시오.",
-          "answer_atoms": [
-            "② 직사각형"
-          ],
-          "answer_print": "직사각형",
-          "answer_accept": [
-            "직사각형 모양"
-          ],
+          "stem_src": "원뿔의 옆면을 펼치면 어떤 도형이 되나요?",
+          "stem_print": "원뿔의 옆면을 펼치면 어떤 도형이 되는지 쓰시오.",
+          "answer_atoms": ["부채꼴"],
+          "answer_print": "부채꼴",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
+          "answer_format": "낱말로 (단위 없음)",
           "figure": null,
-          "hint": "통조림에 붙은 종이 라벨을 떼어 펼쳐 봐요.",
-          "solution": "원기둥의 옆면을 펼치면 직사각형이 돼요. 가로는 밑면의 둘레, 세로는 원기둥의 높이예요.",
+          "hint": "삼각형이 아니에요.",
+          "solution": "원뿔의 옆면을 펼치면 부채꼴이 돼요.",
           "work_space": "sm",
-          "misconceptions": [
-            "net.side-shape"
-          ]
+          "misconceptions": ["net.side-shape"]
         },
         {
           "id": "m1-u11-t06-02",
-          "level": "L",
-          "stem_src": "원뿔의 옆면을 펼치면 어떤 모양이 되나요? ① 원 &nbsp; ② 삼각형 &nbsp; ③ 부채꼴 &nbsp; ④ 사다리꼴",
-          "stem_print": "원뿔의 옆면을 펼치면 어떤 도형이 되는지 쓰시오.",
-          "answer_atoms": [
-            "③ 부채꼴"
-          ],
-          "answer_print": "부채꼴",
-          "answer_accept": [
-            "부채꼴 모양"
-          ],
-          "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
+          "level": "M",
+          "stem_src": "밑면 반지름 5cm인 원기둥의 옆면을 펼친 직사각형의 가로는? (계수만)",
+          "stem_print": "밑면 반지름 5cm인 원기둥의 옆면을 펼친 직사각형의 가로를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["10"],
+          "answer_print": "10π",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "OOπ 꼴로 (단위: cm)",
           "figure": null,
-          "hint": "고깔모자를 한 줄 따라 갈라서 펼쳐 봐요.",
-          "solution": "원뿔의 옆면은 곡면이라 펼치면 부채꼴이 돼요. 부채꼴의 반지름은 모선, 호는 밑면의 둘레예요.<br>삼각형으로 착각하기 쉬우니 조심해요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "net.side-shape"
-          ]
+          "hint": "옆면 직사각형의 가로 = 밑면의 둘레예요.",
+          "solution": "가로 = 밑면 둘레 = 2π×5=10π cm.",
+          "work_space": "md",
+          "misconceptions": ["net.length-mapping"]
         },
         {
           "id": "m1-u11-t06-03",
           "level": "L",
-          "stem_src": "다음 중 전개도가 존재하지 않는 입체는? ① 원기둥 &nbsp; ② 원뿔 &nbsp; ③ 원뿔대 &nbsp; ④ 구",
-          "stem_print": "원기둥, 원뿔, 원뿔대, 구 중에서 전개도를 그릴 수 <b>없는</b> 입체를 찾아 이름을 쓰시오.",
-          "answer_atoms": [
-            "④ 구"
-          ],
-          "answer_print": "구",
-          "answer_accept": [
-            "구 모양"
-          ],
+          "stem_src": "구는 전개도가 있나요? (2지선다 → 단답 재작성)",
+          "stem_print": "구는 전개도가 있는지 쓰시오.",
+          "answer_atoms": ["없어요"],
+          "answer_print": "없어요",
+          "answer_accept": ["없다", "없음"],
           "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
+          "answer_format": "예/아니요로",
           "figure": null,
-          "hint": "지구본을 평면 지도로 펼치면 왜 모양이 늘어날까요?",
-          "solution": "구는 평면 위에 완전히 펼칠 수 없어요. 그래서 지구본을 지도로 만들면 넓이나 모양이 늘어나요.<br>원기둥·원뿔·원뿔대는 모두 전개도를 그릴 수 있어요.",
+          "hint": "구는 평면에 완전히 펼칠 수 없어요.",
+          "solution": "구를 펼치면 반드시 찢어지거나 겹쳐요 — 전개도가 없어요.",
           "work_space": "sm",
-          "misconceptions": [
-            "net.side-shape"
-          ]
-        },
-        {
-          "id": "m1-u11-t06-04",
-          "level": "M",
-          "stem_src": "밑면의 반지름이 $4$ cm 인 원기둥의 옆면 직사각형의 가로의 길이는?",
-          "stem_print": "밑면의 반지름이 4 cm 인 원기둥이 있어요. 이 원기둥의 옆면을 펼친 직사각형의 가로의 길이를 구하시오.",
-          "answer_atoms": [
-            "$8\\pi$ cm"
-          ],
-          "answer_print": "8π",
-          "answer_accept": [
-            "8π cm",
-            "8 × π cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "π 를 그대로 둔 수로",
-          "figure": null,
-          "hint": "옆면 직사각형의 가로는 밑면의 둘레와 같아요.",
-          "solution": "가로 = 밑면의 둘레 = 2 × π × 4 = 8π (cm)<br>반지름 4 를 그대로 답하지 않도록 조심해요. 가로는 둘레예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "net.length-mapping"
-          ]
-        },
-        {
-          "id": "m1-u11-t06-05",
-          "level": "M",
-          "stem_src": "밑면의 반지름이 $3$ cm, 모선의 길이가 $9$ cm 인 원뿔의 옆면 부채꼴의 호의 길이 는?",
-          "stem_print": "밑면의 반지름이 3 cm, 모선의 길이가 9 cm 인 원뿔이 있어요. 이 원뿔의 옆면을 펼친 부채꼴의 호의 길이를 구하시오.",
-          "answer_atoms": [
-            "$6\\pi$ cm"
-          ],
-          "answer_print": "6π",
-          "answer_accept": [
-            "6π cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "π 를 그대로 둔 수로",
-          "figure": null,
-          "hint": "부채꼴의 호는 밑면의 둘레와 같아요. 모선은 부채꼴의 반지름이에요.",
-          "solution": "호의 길이 = 밑면의 둘레 = 2 × π × 3 = 6π (cm)<br>모선 9 는 부채꼴의 반지름이라 호의 길이와는 상관없어요.<br>9 × 2π = 18π 처럼 계산하지 않도록 조심해요.",
-          "work_space": "md",
-          "misconceptions": [
-            "net.length-mapping"
-          ]
-        },
-        {
-          "id": "m1-u11-t06-06",
-          "level": "M",
-          "stem_src": "원뿔 옆면 부채꼴의 반지름은 무엇과 같나요? ① 원뿔의 높이 &nbsp; ② 원뿔의 모선 &nbsp; ③ 밑면의 반지름 &nbsp; ④ 밑면의 둘레",
-          "stem_print": "원뿔의 옆면을 펼친 부채꼴의 반지름은 원뿔의 어느 길이와 같은지 쓰시오.",
-          "answer_atoms": [
-            "② 원뿔의 모선"
-          ],
-          "answer_print": "원뿔의 모선",
-          "answer_accept": [
-            "모선",
-            "모선의 길이"
-          ],
-          "answer_unit": null,
-          "answer_format": "길이의 이름으로 (단위 없음)",
-          "figure": null,
-          "hint": "부채꼴의 곧은 가장자리는 원뿔에서 어디부터 어디까지였을까요?",
-          "solution": "부채꼴을 다시 말아 원뿔을 만들면, 부채꼴의 곧은 가장자리는 원뿔의 꼭짓점에서 밑면의 둘레까지 이어진 선, 곧 모선이 돼요.",
-          "work_space": "md",
-          "misconceptions": [
-            "net.length-mapping"
-          ]
-        },
-        {
-          "id": "m1-u11-t06-07",
-          "level": "H",
-          "stem_src": "밑면의 반지름이 $r$, 모선의 길이가 $l$ 인 원뿔의 옆면 부채꼴의 중심각 을 $\\theta$ 라 할 때, $\\theta$ 를 $r$ 과 $l$ 로 나타내세요. (Unit 10 부채꼴 호 공식 활용)",
-          "stem_print": "밑면의 반지름이 r, 모선의 길이가 l 인 원뿔이 있어요. 이 원뿔의 옆면을 펼친 부채꼴의 중심각의 크기를 r 과 l 을 사용하여 나타내시오.",
-          "answer_atoms": [
-            "$\\theta = \\dfrac{r}{l} \\times 360°$"
-          ],
-          "answer_print": "<span class=\"frac\"><b>r</b><i>l</i></span> × 360°",
-          "answer_accept": [
-            "(r ÷ l) × 360°",
-            "360° × r ÷ l"
-          ],
-          "answer_unit": null,
-          "answer_format": "r 과 l 로 나타낸 식으로",
-          "figure": null,
-          "hint": "부채꼴의 호의 길이는 밑면의 둘레와 같아요. 중심각이 θ 일 때 호의 길이는 (θ ÷ 360) × 2πl 이에요.",
-          "solution": "반지름이 l, 중심각이 θ 인 부채꼴의 호의 길이는 (θ ÷ 360) × 2πl 이에요.<br>이것이 밑면의 둘레 2πr 과 같아야 하므로<br>(θ ÷ 360) × 2πl = 2πr<br>θ ÷ 360 = r ÷ l<br>θ = (r ÷ l) × 360°<br>예를 들어 r = 3, l = 9 이면 θ = (3 ÷ 9) × 360° = 120° 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "net.length-mapping"
-          ]
-        },
-        {
-          "id": "m1-u11-t06-08",
-          "level": "H",
-          "stem_src": "옆면 직사각형의 가로가 $10\\pi$ cm, 세로가 $7$ cm 인 원기둥의 밑면 반지름과 높이를 구하세요.",
-          "stem_print": "어떤 원기둥의 옆면을 펼쳤더니 가로가 10π cm, 세로가 7 cm 인 직사각형이었어요. 이 원기둥의 밑면의 반지름과 높이를 차례대로 구하시오.",
-          "answer_atoms": [
-            "반지름 $5$ cm, 높이 $7$ cm"
-          ],
-          "answer_print": "반지름 5 cm, 높이 7 cm",
-          "answer_accept": [
-            "5 cm, 7 cm"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘반지름 ○ cm, 높이 ○ cm’ 꼴로",
-          "figure": null,
-          "hint": "가로는 2πr, 세로는 높이예요.",
-          "solution": "가로 2πr = 10π 에서 r = 5 (cm).<br>세로가 곧 높이이므로 높이 = 7 cm.<br>옆면의 정보만으로 원기둥의 크기를 되돌려 찾을 수 있어요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "net.length-mapping"
-          ]
-        },
-        {
-          "id": "m1-u11-t06-09",
-          "level": "H",
-          "stem_src": "원뿔의 옆면 부채꼴의 호의 길이가 $8\\pi$ cm, 반지름이 $12$ cm 일 때, 원뿔의 밑면 반지름과 모선을 구하세요.",
-          "stem_print": "어떤 원뿔의 옆면을 펼쳤더니 호의 길이가 8π cm, 반지름이 12 cm 인 부채꼴이었어요. 이 원뿔의 밑면의 반지름과 모선의 길이를 차례대로 구하시오.",
-          "answer_atoms": [
-            "밑면 반지름 $4$ cm, 모선 $12$ cm"
-          ],
-          "answer_print": "밑면 반지름 4 cm, 모선 12 cm",
-          "answer_accept": [
-            "4 cm, 12 cm"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘밑면 반지름 ○ cm, 모선 ○ cm’ 꼴로",
-          "figure": null,
-          "hint": "부채꼴의 반지름은 모선, 호의 길이는 밑면의 둘레예요.",
-          "solution": "부채꼴의 반지름 12 cm 가 곧 모선이에요.<br>호의 길이 = 밑면의 둘레이므로 8π = 2πr 에서 r = 4 (cm).<br>검산 — 중심각 = (4 ÷ 12) × 360° = 120° ✓",
-          "work_space": "lg",
-          "misconceptions": [
-            "net.length-mapping"
-          ]
+          "misconceptions": ["net.side-shape"]
         }
       ]
     },
     {
       "no": 7,
-      "title": "종합 (입체 추론)",
-      "principle": "전개도에서 입체를, 단면에서 입체를, 입체에서 v·e·f 를 거꾸로 찾아가는 유형이에요. 다면체인지 회전체인지부터 가른 다음 그 종류의 규칙을 떠올리면 길이 보여요.",
+      "title": "종합 — 오일러 공식과 결합 입체",
+      "principle": "모든 다면체는 V − E + F = 2. 두 입체를 붙이면 맞닿은 면은 겉에서 숨어요.",
       "problems": [
         {
           "id": "m1-u11-t07-01",
-          "level": "L",
-          "stem_src": "정삼각형 4개로 이루어진 전개도를 접으면 어떤 입체가 되나요? ① 정사면체 &nbsp; ② 정육면체 &nbsp; ③ 정팔면체 &nbsp; ④ 사각뿔",
-          "stem_print": "합동인 정삼각형 4개로 이루어진 전개도를 접으면 어떤 입체가 되는지 이름을 쓰시오.",
-          "answer_atoms": [
-            "① 정사면체"
-          ],
-          "answer_print": "정사면체",
-          "answer_accept": [
-            "정4면체"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘정○면체’ 꼴로",
+          "level": "M",
+          "stem_src": "정육면체 두 개를 한 면끼리 딱 붙이면 겉에 보이는 면은 모두 몇 개?",
+          "stem_print": "정육면체 두 개를 한 면끼리 딱 붙이면 겉에 보이는 면은 모두 몇 개인지 구하시오.",
+          "answer_atoms": ["10"],
+          "answer_print": "10",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "수로 (단위: 개)",
           "figure": null,
-          "hint": "면이 4개인 정다면체예요.",
-          "solution": "정사면체는 정삼각형 4개로 둘러싸이고 모든 꼭짓점에 면이 3개씩 모여요.<br>정팔면체는 정삼각형 8개, 정이십면체는 20개예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "platonic.naming"
-          ]
+          "hint": "맞닿은 자리의 면 2개는 겉에서 안 보여요.",
+          "solution": "6+6=12에서 맞닿아 숨은 2개를 빼면 10개예요.",
+          "work_space": "md",
+          "misconceptions": ["combine.shared-face"]
         },
         {
           "id": "m1-u11-t07-02",
-          "level": "L",
-          "stem_src": "옆면이 직사각형 1개 + 윗·아래 밑면이 원 2개로 이루어진 전개도를 접으면 어떤 입체가 되나요? ① 원뿔 &nbsp; ② 원기둥 &nbsp; ③ 구 &nbsp; ④ 원뿔대",
-          "stem_print": "직사각형 1개와 합동인 원 2개로 이루어진 전개도를 접으면 어떤 입체가 되는지 이름을 쓰시오.",
-          "answer_atoms": [
-            "② 원기둥"
-          ],
-          "answer_print": "원기둥",
-          "answer_accept": [
-            "원기둥 모양"
-          ],
-          "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
+          "level": "M",
+          "stem_src": "v=6, e=12인 다면체의 면의 수는?",
+          "stem_print": "꼭짓점이 6개, 모서리가 12개인 다면체의 면의 수를 구하시오.",
+          "answer_atoms": ["8"],
+          "answer_print": "8",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "수로 (단위: 개)",
           "figure": null,
-          "hint": "직사각형이 옆면이 되는 회전체예요.",
-          "solution": "원기둥의 전개도는 옆면인 직사각형 1개와 두 밑면인 원 2개로 이루어져 있어요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "net.side-shape"
-          ]
+          "hint": "V−E+F=2를 이용해요.",
+          "solution": "6−12+F=2 → F=8개.",
+          "work_space": "md",
+          "misconceptions": ["euler.sign"]
         },
         {
           "id": "m1-u11-t07-03",
-          "level": "L",
-          "stem_src": "단면이 항상 원이고, 어떻게 잘라도 단면이 원인 입체는? ① 원기둥 &nbsp; ② 원뿔 &nbsp; ③ 구 &nbsp; ④ 정육면체",
-          "stem_print": "원기둥, 원뿔, 구, 정육면체 중에서 어떻게 잘라도 단면이 항상 원인 입체를 찾아 이름을 쓰시오.",
-          "answer_atoms": [
-            "③ 구"
-          ],
-          "answer_print": "구",
-          "answer_accept": [
-            "구 모양"
-          ],
-          "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
-          "figure": null,
-          "hint": "원기둥은 축단면이 직사각형, 원뿔은 축단면이 삼각형이에요.",
-          "solution": "구만 어떻게 잘라도 단면이 원이에요. 다른 회전체는 축단면이 직사각형·삼각형·사다리꼴이에요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "sect.axis-shape"
-          ]
-        },
-        {
-          "id": "m1-u11-t07-04",
           "level": "M",
-          "stem_src": "어떤 회전체의 축단면이 이등변삼각형 이었어요. 이 회전체는? ① 원기둥 &nbsp; ② 원뿔 &nbsp; ③ 원뿔대 &nbsp; ④ 구",
-          "stem_print": "어떤 회전체의 축단면이 이등변삼각형이었어요. 이 회전체의 이름을 쓰시오.",
-          "answer_atoms": [
-            "② 원뿔"
-          ],
-          "answer_print": "원뿔",
-          "answer_accept": [
-            "원뿔 모양"
-          ],
-          "answer_unit": null,
-          "answer_format": "도형 이름으로 (단위 없음)",
-          "figure": null,
-          "hint": "축단면이 직사각형이면 원기둥, 사다리꼴이면 원뿔대, 원이면 구예요.",
-          "solution": "원뿔의 축단면은 회전하기 전의 직각삼각형과 거울상이 붙은 이등변삼각형이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "sect.perp-vs-axis"
-          ]
-        },
-        {
-          "id": "m1-u11-t07-05",
-          "level": "M",
-          "stem_src": "반지름 $5$ 인 원기둥과 반지름 $3$ · 모선 $5$ 인 원뿔을 밑면이 일치하도록 붙였을 때, 만들어진 입체에 대한 설명으로 옳은 것은? ① 회전체이다 &nbsp; ② 다면체이다 &nbsp; ③ 회전체이지만 옆면이 모두 평면이다 &nbsp; ④ 정다면체이다",
-          "stem_print": "밑면의 반지름이 5 인 원기둥과 밑면의 반지름이 3, 모선이 5 인 원뿔을 밑면의 중심이 같도록 위아래로 붙였어요. 만들어진 입체가 다면체인지 회전체인지 쓰고, 그 까닭을 한 문장으로 쓰시오.",
-          "answer_atoms": [
-            "① 회전체이다"
-          ],
-          "answer_print": "회전체예요 (옆면에 곡면이 있어요)",
-          "answer_accept": [
-            "회전체",
-            "회전체이다"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘다면체 / 회전체’ + 까닭을 한 문장으로 (단위 없음)",
-          "figure": null,
-          "hint": "두 입체 모두 같은 축을 중심으로 돌려서 만들 수 있는지 생각해 봐요.",
-          "solution": "원기둥도 원뿔도 회전체이고, 같은 회전축으로 이어 붙였으므로 결과도 회전체예요.<br>반지름이 달라서 옆면에 턱이 생기지만, 옆면에 곡면이 있으므로 다면체는 아니에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.curved-is-polyhedron"
-          ]
-        },
-        {
-          "id": "m1-u11-t07-06",
-          "level": "M",
-          "stem_src": "정사면체와 정팔면체에서 한 꼭짓점에 모이는 면의 수의 합은?",
-          "stem_print": "정사면체의 한 꼭짓점에 모이는 면의 수와 정팔면체의 한 꼭짓점에 모이는 면의 수의 합을 구하시오.",
-          "answer_atoms": [
-            "$7$"
-          ],
-          "answer_print": "7",
-          "answer_accept": [
-            "7개"
-          ],
+          "stem_src": "꼭짓점 5개, 모서리 8개인 다면체의 면의 수는?",
+          "stem_print": "꼭짓점이 5개, 모서리가 8개인 다면체의 면의 수를 구하시오.",
+          "answer_atoms": ["5"],
+          "answer_print": "5",
+          "answer_accept": [],
           "answer_unit": "개",
-          "answer_format": "수로 (개수)",
+          "answer_format": "수로 (단위: 개)",
           "figure": null,
-          "hint": "정사면체는 정삼각형 3개, 정팔면체는 정삼각형 4개가 한 꼭짓점에 모여요.",
-          "solution": "정사면체 3개 + 정팔면체 4개 = 7개.",
+          "hint": "V−E+F=2를 이용해요.",
+          "solution": "5−8+F=2 → F=5개.",
           "work_space": "md",
-          "misconceptions": [
-            "platonic.angle-sum"
-          ]
-        },
-        {
-          "id": "m1-u11-t07-07",
-          "level": "H",
-          "stem_src": "사각기둥과 사각뿔이 한 사각형 면을 정확히 공유하면서 위로 결합되어 있어요. 만들어진 입체의 면, 모서리, 꼭짓점 수 ($F, E, V$)를 구하고 오일러 공식 검증.",
-          "stem_print": "사각기둥과 사각뿔이 한 사각형 면을 꼭 맞게 공유하며 위아래로 붙어 있어요. 이 입체의 꼭짓점의 수, 모서리의 수, 면의 수를 구하고 오일러 공식 v − e + f = 2 가 성립하는지 확인하시오.",
-          "answer_atoms": [
-            "$V = 9, E = 16, F = 9$ ; $V-E+F = 2$ ✓"
-          ],
-          "answer_print": "꼭짓점 9개, 모서리 16개, 면 9개 (9 − 16 + 9 = 2)",
-          "answer_accept": [
-            "9, 16, 9",
-            "v = 9, e = 16, f = 9"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘꼭짓점 ○개, 모서리 ○개, 면 ○개’ 꼴로 쓰고 검산까지",
-          "figure": null,
-          "hint": "각 입체의 v, e, f 를 따로 구한 뒤 겹치는 부분을 빼요. 맞닿은 면은 양쪽에서 사라져요.",
-          "solution": "사각기둥 v = 8, e = 12, f = 6 / 사각뿔 v = 5, e = 8, f = 5<br>겹치는 꼭짓점 4개, 겹치는 모서리 4개, 맞닿은 사각형 면은 양쪽에서 1개씩 사라져요.<br>v = 8 + 5 − 4 = 9<br>e = 12 + 8 − 4 = 16<br>f = 6 + 5 − 2 = 9<br>검산: 9 − 16 + 9 = 2 ✓",
-          "work_space": "lg",
-          "misconceptions": [
-            "combine.shared-face",
-            "euler.sign"
-          ]
-        },
-        {
-          "id": "m1-u11-t07-08",
-          "level": "H",
-          "stem_src": "어떤 다면체의 모든 면이 정삼각형이고 모서리가 $30$, 꼭짓점이 $12$ 일 때, 면의 수와 이 다면체의 이름을 추측하세요.",
-          "stem_print": "모든 면이 정삼각형이고 모서리가 30개, 꼭짓점이 12개인 다면체가 있어요. 오일러 공식을 이용해 면의 수를 구하고, 이 다면체의 이름을 쓰시오.",
-          "answer_atoms": [
-            "면 $20$ → 정이십면체"
-          ],
-          "answer_print": "면 20개, 정이십면체",
-          "answer_accept": [
-            "20개 / 정이십면체"
-          ],
-          "answer_unit": null,
-          "answer_format": "‘면 ○개, 정○면체’ 꼴로",
-          "figure": null,
-          "hint": "v − e + f = 2 에 v = 12, e = 30 을 넣어요.",
-          "solution": "12 − 30 + f = 2 에서 f = 20.<br>면이 모두 정삼각형이고 v = 12, e = 30, f = 20 인 정다면체는 정이십면체예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "euler.sign",
-            "platonic.naming"
-          ]
-        },
-        {
-          "id": "m1-u11-t07-09",
-          "level": "H",
-          "stem_src": "아래 평면도형을 회전축 둘레로 1회전 시키면 어떤 모양의 회전체가 되나요?",
-          "stem_print": "아래 ㄱ자 모양의 평면도형을 회전축 둘레로 1회전 시킬 때 생기는 입체의 모양을 한 문장으로 쓰시오.",
-          "answer_atoms": [
-            "① 큰 원기둥에서 작은 원기둥을 빼낸 모양"
-          ],
-          "answer_print": "큰 원기둥에서 작은 원기둥을 빼낸 모양",
-          "answer_accept": [
-            "윗부분이 한 단 좁아진 원기둥"
-          ],
-          "answer_unit": null,
-          "answer_format": "한 문장으로 (단위 없음)",
-          "figure": "<svg class=\"fig-svg\" viewBox=\"0 0 240 180\">\n  <line x1=\"60\" y1=\"20\" x2=\"60\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n  <text x=\"60\" y=\"13\" text-anchor=\"middle\" font-size=\"10\" fill=\"#94a3b8\">회전축</text>\n  <!-- ㄱ자 모양 -->\n  <polygon points=\"60,40 60,150 130,150 130,100 100,100 100,40\" fill=\"rgba(245,158,11,0.3)\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"120\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#666\">ㄱ자 모양 (큰 직사각형 - 작은 직사각형)</text>\n</svg>",
-          "hint": "ㄱ자 모양은 큰 직사각형에서 작은 직사각형을 덜어낸 모양이에요. 각각을 돌려 보고 빼요.",
-          "solution": "ㄱ자 도형은 큰 직사각형에서 위쪽 작은 직사각형을 덜어낸 모양이에요.<br>회전시키면 큰 원기둥에서 위쪽 작은 원기둥을 덜어낸 입체가 돼요. 윗부분에 둥근 턱이 생긴 원기둥 모양이에요.<br>평면도형의 합과 차가 회전체의 합과 차로 그대로 옮겨져요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "rot.shape-to-solid"
-          ]
+          "misconceptions": ["euler.sign"]
         }
       ]
     }
