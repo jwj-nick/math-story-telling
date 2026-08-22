@@ -64,6 +64,22 @@
           "solution": "정육면체(정사각기둥)는 V=8, E=12, F=6이에요.",
           "work_space": "sm",
           "misconceptions": ["poly.count-swap"]
+        },
+        {
+          "id": "m1-u11-t01-04",
+          "level": "H",
+          "stem_src": "다음 여섯 입체 중 다면체는 모두 몇 개인가요? 원기둥, 정팔면체, 원뿔대, 오각기둥, 정십이면체, 구",
+          "stem_print": "다음 여섯 입체 중 다면체는 모두 몇 개인지 구하시오. 원기둥, 정팔면체, 원뿔대, 오각기둥, 정십이면체, 구",
+          "answer_atoms": ["3"],
+          "answer_print": "3",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "수로 (단위: 개)",
+          "figure": null,
+          "hint": "여섯 입체를 하나씩 살펴보며 곡면이 있는지 확인해요.",
+          "solution": "원기둥·원뿔대·구는 곡면이 있어 회전체이고, 정팔면체·오각기둥·정십이면체는 평평한 다각형 면만 있어 다면체예요. 다면체는 3개예요.",
+          "work_space": "lg",
+          "misconceptions": ["solid.curved-is-polyhedron"]
         }
       ]
     },
@@ -119,6 +135,22 @@
           "solution": "3n=15 → n=5, 오각기둥이에요.",
           "work_space": "md",
           "misconceptions": ["prism-pyramid.formula"]
+        },
+        {
+          "id": "m1-u11-t02-04",
+          "level": "H",
+          "stem_src": "면의 수가 10개인 각뿔대가 있어요. 이 각뿔대의 모서리는 몇 개인가요?",
+          "stem_print": "면의 수가 10개인 각뿔대의 모서리의 수를 구하시오.",
+          "answer_atoms": ["24"],
+          "answer_print": "24",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "수로 (단위: 개)",
+          "figure": null,
+          "hint": "각뿔대는 각기둥처럼 F=n+2, E=3n이에요.",
+          "solution": "F=n+2=10 → n=8(팔각뿔대). E=3n=3×8=24개.",
+          "work_space": "lg",
+          "misconceptions": ["frustum.same-as-prism"]
         }
       ]
     },
@@ -174,6 +206,22 @@
           "solution": "면 조건만으론 부족해요. 각 꼭짓점에 모인 면의 수도 같아야 정다면체예요.",
           "work_space": "sm",
           "misconceptions": ["platonic.two-conditions"]
+        },
+        {
+          "id": "m1-u11-t03-04",
+          "level": "H",
+          "stem_src": "각 꼭짓점에 정삼각형이 5개씩 모이는 정다면체의 이름은?",
+          "stem_print": "각 꼭짓점에 정삼각형이 5개씩 모이는 정다면체의 이름을 쓰시오.",
+          "answer_atoms": ["정이십면체"],
+          "answer_print": "정이십면체",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "다면체 이름으로 (단위 없음)",
+          "figure": null,
+          "hint": "정삼각형이 면인 정다면체는 정사면체(3개)·정팔면체(4개)·정이십면체(5개)예요.",
+          "solution": "한 꼭짓점에 정삼각형이 5개씩 모이는 정다면체는 정이십면체예요.",
+          "work_space": "lg",
+          "misconceptions": ["platonic.angle-sum"]
         }
       ]
     },
@@ -228,6 +276,22 @@
           "hint": "밑면 두 개의 크기가 달라요.",
           "solution": "사다리꼴을 그렇게 돌리면 원뿔대가 생겨요.",
           "work_space": "sm",
+          "misconceptions": ["rot.axis-matters"]
+        },
+        {
+          "id": "m1-u11-t04-04",
+          "level": "H",
+          "stem_src": "가로 4cm, 세로 9cm인 직사각형을 세로 변을 회전축으로 1회전시켰어요. 만들어지는 원기둥의 밑면의 반지름은 몇 cm인가요?",
+          "stem_print": "가로 4cm, 세로 9cm인 직사각형을 세로 변을 회전축으로 하여 1회전시켰을 때 만들어지는 원기둥의 밑면의 반지름을 구하시오.",
+          "answer_atoms": ["4"],
+          "answer_print": "4",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "수로 (단위: cm)",
+          "figure": null,
+          "hint": "회전축이 된 변은 원기둥의 높이가 되고, 축에서 떨어진 변의 길이가 반지름이 돼요.",
+          "solution": "세로 변(9cm)이 회전축이자 원기둥의 높이가 되고, 축에서 떨어진 가로 변(4cm)이 반지름이 돼요. 반지름 4cm.",
+          "work_space": "lg",
           "misconceptions": ["rot.axis-matters"]
         }
       ]
@@ -284,6 +348,22 @@
           "solution": "축단면의 가로 = 지름 = 2×3=6cm.",
           "work_space": "md",
           "misconceptions": ["sect.axis-shape"]
+        },
+        {
+          "id": "m1-u11-t05-04",
+          "level": "H",
+          "stem_src": "밑면의 반지름이 5cm, 높이가 8cm인 원뿔을 회전축을 포함하여 잘랐어요. 이 단면의 넓이는 몇 cm²인가요?",
+          "stem_print": "밑면의 반지름이 5cm, 높이가 8cm인 원뿔을 회전축을 포함하여 자른 단면의 넓이를 구하시오.",
+          "answer_atoms": ["40"],
+          "answer_print": "40",
+          "answer_accept": [],
+          "answer_unit": "cm²",
+          "answer_format": "수로 (단위: cm²)",
+          "figure": null,
+          "hint": "축단면은 밑변이 지름(2×반지름), 높이가 원래 높이인 이등변삼각형이에요.",
+          "solution": "축단면은 밑변 2×5=10cm, 높이 8cm인 이등변삼각형이에요. 넓이 = 10×8÷2=40cm².",
+          "work_space": "lg",
+          "misconceptions": ["sect.axis-shape"]
         }
       ]
     },
@@ -339,6 +419,22 @@
           "solution": "구를 펼치면 반드시 찢어지거나 겹쳐요 — 전개도가 없어요.",
           "work_space": "sm",
           "misconceptions": ["net.side-shape"]
+        },
+        {
+          "id": "m1-u11-t06-04",
+          "level": "H",
+          "stem_src": "원기둥의 옆면을 펼친 직사각형의 가로가 14π cm예요. 이 원기둥의 밑면의 반지름은 몇 cm인가요?",
+          "stem_print": "원기둥의 옆면을 펼친 직사각형의 가로가 14π cm일 때, 이 원기둥의 밑면의 반지름을 구하시오.",
+          "answer_atoms": ["7"],
+          "answer_print": "7",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "수로 (단위: cm)",
+          "figure": null,
+          "hint": "옆면 직사각형의 가로 = 밑면의 둘레(2πr)예요.",
+          "solution": "2πr=14π → r=7cm.",
+          "work_space": "lg",
+          "misconceptions": ["net.length-mapping"]
         }
       ]
     },
@@ -394,6 +490,22 @@
           "solution": "5−8+F=2 → F=5개.",
           "work_space": "md",
           "misconceptions": ["euler.sign"]
+        },
+        {
+          "id": "m1-u11-t07-04",
+          "level": "H",
+          "stem_src": "밑면이 정사각형인 사각뿔 두 개를 밑면끼리 딱 맞붙였어요. 이 입체의 모서리는 몇 개인가요?",
+          "stem_print": "밑면이 정사각형인 사각뿔 두 개를 밑면끼리 딱 맞붙인 입체의 모서리의 수를 구하시오.",
+          "answer_atoms": ["12"],
+          "answer_print": "12",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "수로 (단위: 개)",
+          "figure": null,
+          "hint": "맞닿은 밑면은 안으로 숨고, 맞닿은 자리의 변은 겹쳐서 한 번만 세어요.",
+          "solution": "꼭짓점: 밑면 4개(공유)+꼭대기 2개=6개. 면: 옆면만 4+4=8개(밑면 2개는 안으로 숨음). V−E+F=2에서 6−E+8=2 → E=12개.",
+          "work_space": "lg",
+          "misconceptions": ["combine.shared-face"]
         }
       ]
     }
