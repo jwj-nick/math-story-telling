@@ -9,7 +9,7 @@
     "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. 유형1-1,1-2,2-1은 2지선다를 단답형으로 재작성. 전부 기초~보통 수준(L/M)만 포함 — 심화(H)는 이번 회차에서 제외."
+    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. 유형1-1,1-2,2-1은 2지선다를 단답형으로 재작성. 2026-08-22: 유형마다 4번째 심화(H) 문항 추가(총 21→28). 음수 답은 앱과 동일하게 ASCII 하이픈(-)으로 통일해 answer_atoms와 정확히 일치시킴."
   },
   "types": [
     {
@@ -63,6 +63,22 @@
           "hint": "x의 계수끼리 같아야 해요.",
           "solution": "양변의 x 계수가 같아야 하므로 a=3이에요.",
           "work_space": "sm",
+          "misconceptions": ["eq.identity-coeff-compare"]
+        },
+        {
+          "id": "m1-u04-t01-04",
+          "level": "H",
+          "stem_src": "3(2x − a) = bx − 15가 x에 대한 항등식일 때, a − b의 값은?",
+          "stem_print": "3(2x − a) = bx − 15가 x에 대한 항등식일 때, a − b의 값을 구하시오.",
+          "answer_atoms": ["-1"],
+          "answer_print": "-1",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "먼저 좌변을 전개해서 x의 계수와 상수항을 각각 비교해요.",
+          "solution": "좌변을 전개하면 6x − 3a = bx − 15. x의 계수를 비교하면 b=6, 상수항을 비교하면 −3a=−15이므로 a=5. 따라서 a−b=5−6=−1이에요.",
+          "work_space": "md",
           "misconceptions": ["eq.identity-coeff-compare"]
         }
       ]
@@ -119,6 +135,22 @@
           "solution": "35 ÷ 5 = 7이에요.",
           "work_space": "sm",
           "misconceptions": ["eq.coeff-divide"]
+        },
+        {
+          "id": "m1-u04-t02-04",
+          "level": "H",
+          "stem_src": "a = b일 때, 3a − 5 = 3b + k가 항상 성립하도록 하는 k의 값은?",
+          "stem_print": "a = b일 때, 3a − 5 = 3b + k가 항상 성립하도록 하는 k의 값을 구하시오.",
+          "answer_atoms": ["-5"],
+          "answer_print": "-5",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "등식의 성질을 두 번 적용해서 3a − 5와 짝이 되는 식을 만들어 보아요.",
+          "solution": "a=b의 양변에 3을 곱하면 3a=3b(등식의 성질). 양변에서 5를 빼면 3a−5=3b−5. 3b+k와 비교하면 k=−5예요.",
+          "work_space": "md",
+          "misconceptions": ["eq.prop-different-number"]
         }
       ]
     },
@@ -174,6 +206,22 @@
           "solution": "6=3x, x=2예요.",
           "work_space": "md",
           "misconceptions": []
+        },
+        {
+          "id": "m1-u04-t03-04",
+          "level": "H",
+          "stem_src": "7x − 4 − 3x = 5x + 8 − 4x의 해는?",
+          "stem_print": "7x − 4 − 3x = 5x + 8 − 4x의 해를 구하시오.",
+          "answer_atoms": ["4"],
+          "answer_print": "4",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "먼저 양변에서 동류항끼리 정리한 뒤 이항해요.",
+          "solution": "좌변을 정리하면 4x−4, 우변을 정리하면 x+8. 4x−4=x+8에서 3x=12, x=4예요.",
+          "work_space": "md",
+          "misconceptions": ["eq.like-terms-mix", "eq.transpose-sign"]
         }
       ]
     },
@@ -229,6 +277,22 @@
           "solution": "양변에 10을 곱하면 2x+4=10, x=3이에요.",
           "work_space": "md",
           "misconceptions": ["eq.multiply-partial"]
+        },
+        {
+          "id": "m1-u04-t04-04",
+          "level": "H",
+          "stem_src": "(x − 1)/2 − (x − 4)/3 = 1의 해는?",
+          "stem_print": "(x − 1)/2 − (x − 4)/3 = 1의 해를 구하시오.",
+          "answer_atoms": ["1"],
+          "answer_print": "1",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "분모의 최소공배수 6을 양변에 곱해서 분수를 없애요. 이때 각 분자는 통째로 괄호로 묶어서 곱해요.",
+          "solution": "양변에 6을 곱하면 3(x−1) − 2(x−4) = 6. 전개하면 3x−3−2x+8=6, x+5=6, x=1이에요.",
+          "work_space": "lg",
+          "misconceptions": ["eq.frac-numerator-paren", "eq.paren-minus-distribute"]
         }
       ]
     },
@@ -284,6 +348,22 @@
           "solution": "2×6+5=17이므로 a=17이에요.",
           "work_space": "sm",
           "misconceptions": []
+        },
+        {
+          "id": "m1-u04-t05-04",
+          "level": "H",
+          "stem_src": "3x + a = 2a − x의 해가 x = 5일 때, a의 값은?",
+          "stem_print": "3x + a = 2a − x의 해가 x = 5일 때, a의 값을 구하시오.",
+          "answer_atoms": ["20"],
+          "answer_print": "20",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "x=5를 대입해서 a에 대한 방정식을 만들어요.",
+          "solution": "x=5를 대입하면 15+a=2a−5. 이항하면 15+5=2a−a, a=20이에요.",
+          "work_space": "md",
+          "misconceptions": ["eq.transpose-sign"]
         }
       ]
     },
@@ -339,6 +419,22 @@
           "solution": "2(x+x+4)=28, x=5, 가로=x+4=9예요.",
           "work_space": "md",
           "misconceptions": ["eq.word-answer-not-asked"]
+        },
+        {
+          "id": "m1-u04-t06-04",
+          "level": "H",
+          "stem_src": "현재 삼촌의 나이는 조카 나이의 6배입니다. 10년 후에는 삼촌의 나이가 조카 나이의 3배보다 4살 많아진다고 해요. 현재 조카의 나이는?",
+          "stem_print": "현재 삼촌의 나이는 조카 나이의 6배이다. 10년 후에는 삼촌의 나이가 조카 나이의 3배보다 4살 많아진다고 할 때, 현재 조카의 나이를 구하시오.",
+          "answer_atoms": ["8"],
+          "answer_print": "8",
+          "answer_accept": [],
+          "answer_unit": "살",
+          "answer_format": "수로",
+          "figure": null,
+          "hint": "조카의 현재 나이를 x로 놓고, 10년 후 두 사람의 나이를 각각 x+10, 6x+10으로 나타내요.",
+          "solution": "조카를 x라 하면 삼촌은 6x. 10년 후 6x+10 = 3(x+10)+4. 정리하면 6x+10=3x+34, 3x=24, x=8이에요.",
+          "work_space": "lg",
+          "misconceptions": ["eq.word-no-variable"]
         }
       ]
     },
@@ -394,6 +490,22 @@
           "solution": "(60+40)x=200, x=2예요.",
           "work_space": "md",
           "misconceptions": []
+        },
+        {
+          "id": "m1-u04-t07-04",
+          "level": "H",
+          "stem_src": "농도 6%인 소금물 300g과 농도 x%인 소금물 200g을 섞었더니 농도 12%인 소금물 500g이 되었어요. x의 값은?",
+          "stem_print": "농도 6%인 소금물 300g과 농도 x%인 소금물 200g을 섞었더니 농도 12%인 소금물 500g이 되었다. x의 값을 구하시오.",
+          "answer_atoms": ["21"],
+          "answer_print": "21",
+          "answer_accept": [],
+          "answer_unit": "%",
+          "answer_format": "수로",
+          "figure": null,
+          "hint": "각 소금물의 소금 양을 더하면 섞은 뒤 소금물의 소금 양과 같아요.",
+          "solution": "6%×300 + x%×200 = 12%×500. 18 + 2x = 60이므로 2x=42, x=21이에요.",
+          "work_space": "lg",
+          "misconceptions": ["eq.word-mixture-total"]
         }
       ]
     }
