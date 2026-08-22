@@ -9,7 +9,7 @@
     "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. π가 든 답은 계수만 물었으므로 OOπ 꼴로 합성. 유형7(2)는 원본 앱이 완성 텍스트(1:2:3)로 채점하므로 그대로 사용. 전부 기초~보통 수준(L/M)만 포함 — 심화(H)는 Nick 요청으로 이번 회차에서 제외."
+    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. π가 든 답은 계수만 물었으므로 OOπ 꼴로 합성. 유형7(2)는 원본 앱이 완성 텍스트(1:2:3)로 채점하므로 그대로 사용. 기초~보통(L/M) 21문항에 이어, 유형마다 심화(H) 1문항씩(총 7)을 후속 회차에서 추가 — 부피↔높이/반지름 역산, 겉넓이+부피 결합 조건, 회전체·복합 입체 결합 부피 등 다단계 개념결합형."
   },
   "types": [
     {
@@ -64,6 +64,22 @@
           "solution": "2×12+40=24+40=64cm².",
           "work_space": "md",
           "misconceptions": ["solid.prism-one-base"]
+        },
+        {
+          "id": "m1-u12-t01-04",
+          "level": "H",
+          "stem_src": "밑면이 한 변 5cm인 정사각형인 사각기둥의 겉넓이가 210cm²일 때, 이 사각기둥의 부피는?",
+          "stem_print": "밑면이 한 변 5cm인 정사각형인 사각기둥의 겉넓이가 210cm²일 때, 이 사각기둥의 부피를 구하시오.",
+          "answer_atoms": ["200"],
+          "answer_print": "200",
+          "answer_accept": [],
+          "answer_unit": "cm³",
+          "answer_format": "수로 (단위: cm³)",
+          "figure": null,
+          "hint": "겉넓이에서 밑넓이 2개만큼 뺀 값이 옆넓이예요. 옆넓이를 밑면 둘레로 나누면 높이가 나와요.",
+          "solution": "밑넓이=5×5=25, 옆넓이=210−2×25=160, 밑면 둘레=20이므로 높이=160÷20=8, 부피=25×8=200cm³.",
+          "work_space": "lg",
+          "misconceptions": ["solid.prism-one-base"]
         }
       ]
     },
@@ -117,6 +133,22 @@
           "figure": null,
           "hint": "밑넓이부터 구한 뒤 1／3을 곱해요.",
           "solution": "밑넓이=6×6=36, (1/3)×36×4=48cm³.",
+          "work_space": "md",
+          "misconceptions": ["solid.pyramid-third-missing"]
+        },
+        {
+          "id": "m1-u12-t02-04",
+          "level": "H",
+          "stem_src": "밑면이 한 변 3cm인 정사각형이고 부피가 27cm³인 사각뿔의 높이는?",
+          "stem_print": "밑면이 한 변 3cm인 정사각형이고 부피가 27cm³인 사각뿔의 높이를 구하시오.",
+          "answer_atoms": ["9"],
+          "answer_print": "9",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "수로 (단위: cm)",
+          "figure": null,
+          "hint": "뿔의 부피 = (1／3)×밑넓이×높이 임을 거꾸로 이용해요.",
+          "solution": "밑넓이=3×3=9, 27=(1/3)×9×h → 3h=27 → h=9cm.",
           "work_space": "md",
           "misconceptions": ["solid.pyramid-third-missing"]
         }
@@ -174,6 +206,22 @@
           "solution": "2π×2²+2π×2×5=8π+20π=28π cm².",
           "work_space": "md",
           "misconceptions": ["solid.prism-one-base"]
+        },
+        {
+          "id": "m1-u12-t03-04",
+          "level": "H",
+          "stem_src": "밑면의 반지름이 4cm인 원기둥의 겉넓이가 88π cm²일 때, 이 원기둥의 부피는? (계수만)",
+          "stem_print": "밑면의 반지름이 4cm인 원기둥의 겉넓이가 88π cm²일 때, 이 원기둥의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["112"],
+          "answer_print": "112π",
+          "answer_accept": [],
+          "answer_unit": "cm³",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
+          "figure": null,
+          "hint": "겉넓이에서 밑넓이 2개를 뺀 값이 옆넓이예요. 옆넓이를 밑면 둘레로 나누면 높이가 나와요.",
+          "solution": "밑넓이=π×4²=16π, 옆넓이=88π−2×16π=56π, 밑면 둘레=2π×4=8π이므로 높이=56π÷8π=7, 부피=π×16×7=112π cm³.",
+          "work_space": "lg",
+          "misconceptions": ["solid.radius-once", "solid.lateral-diameter"]
         }
       ]
     },
@@ -228,6 +276,22 @@
           "hint": "겉넓이엔 높이가 아니라 모선을 써요.",
           "solution": "π×3²+π×3×5=9π+15π=24π cm² (높이 4는 안 씀).",
           "work_space": "md",
+          "misconceptions": ["solid.cone-slant-vs-height"]
+        },
+        {
+          "id": "m1-u12-t04-04",
+          "level": "H",
+          "stem_src": "밑면의 반지름이 5cm인 원뿔의 부피가 100π cm³일 때, 이 원뿔의 겉넓이는? (계수만)",
+          "stem_print": "밑면의 반지름이 5cm인 원뿔의 부피가 100π cm³일 때, 이 원뿔의 겉넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["90"],
+          "answer_print": "90π",
+          "answer_accept": [],
+          "answer_unit": "cm²",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
+          "figure": null,
+          "hint": "부피로 높이를 먼저 구한 뒤, 피타고라스 정리로 모선을 구해요. 겉넓이엔 모선을 써요.",
+          "solution": "100π=(1/3)×π×25×h → h=12. 모선 l=√(5²+12²)=13. 겉넓이=π×5²+π×5×13=25π+65π=90π cm².",
+          "work_space": "lg",
           "misconceptions": ["solid.cone-slant-vs-height"]
         }
       ]
@@ -284,6 +348,22 @@
           "solution": "구 부피 (4/3)π×27=36π, 반구는 절반인 18π cm³.",
           "work_space": "md",
           "misconceptions": []
+        },
+        {
+          "id": "m1-u12-t05-04",
+          "level": "H",
+          "stem_src": "겉넓이(곡면+평면)가 243π cm²인 반구의 부피는? (계수만)",
+          "stem_print": "겉넓이(곡면+평면)가 243π cm²인 반구의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["486"],
+          "answer_print": "486π",
+          "answer_accept": [],
+          "answer_unit": "cm³",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
+          "figure": null,
+          "hint": "반구의 겉넓이는 곡면(2πr²)과 잘린 평면 원(πr²)을 더한 3πr²예요.",
+          "solution": "3πr²=243π → r²=81 → r=9. 구의 부피=(4/3)π×729=972π, 반구는 절반이므로 486π cm³.",
+          "work_space": "lg",
+          "misconceptions": ["solid.hemisphere-flat-circle"]
         }
       ]
     },
@@ -338,6 +418,22 @@
           "hint": "구의 부피 공식을 그대로 써요.",
           "solution": "(4/3)π×3³=36π cm³.",
           "work_space": "md",
+          "misconceptions": ["solid.axis-swap"]
+        },
+        {
+          "id": "m1-u12-t06-04",
+          "level": "H",
+          "stem_src": "가로 2cm, 세로 5cm인 직사각형 위에 밑변 2cm, 높이 6cm인 직각삼각형을 반지름이 같도록 포개어 만든 오각형이 있어요. 이 오각형을 세로변을 축으로 1회전시키면 원기둥과 원뿔이 결합된 입체가 생겨요. 이 입체 전체의 부피는? (계수만)",
+          "stem_print": "가로 2cm, 세로 5cm인 직사각형 위에 밑변 2cm, 높이 6cm인 직각삼각형을 반지름이 같도록 포개어 만든 오각형을 세로변을 축으로 1회전시켜 원기둥과 원뿔이 결합된 입체를 만들 때, 이 입체 전체의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["28"],
+          "answer_print": "28π",
+          "answer_accept": [],
+          "answer_unit": "cm³",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
+          "figure": null,
+          "hint": "회전체를 원기둥 부분과 원뿔 부분으로 나눠 부피를 각각 구한 뒤 더해요.",
+          "solution": "원기둥(r=2,h=5) 부피=π×4×5=20π, 원뿔(r=2,h=6) 부피=(1/3)×π×4×6=8π. 합=20π+8π=28π cm³.",
+          "work_space": "lg",
           "misconceptions": ["solid.axis-swap"]
         }
       ]
@@ -394,6 +490,22 @@
           "solution": "24π+18π−2×4π=34π cm².",
           "work_space": "md",
           "misconceptions": ["solid.join-face-kept"]
+        },
+        {
+          "id": "m1-u12-t07-04",
+          "level": "H",
+          "stem_src": "밑면의 반지름이 6cm인 원뿔(높이 4cm) 위에 반지름 6cm인 반구를 얹어 만든 아이스크림콘 모양 입체의 부피는? (계수만)",
+          "stem_print": "밑면의 반지름이 6cm인 원뿔(높이 4cm) 위에 반지름 6cm인 반구를 얹어 만든 아이스크림콘 모양 입체의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["192"],
+          "answer_print": "192π",
+          "answer_accept": [],
+          "answer_unit": "cm³",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
+          "figure": null,
+          "hint": "원뿔의 부피와 반구의 부피를 각각 구한 뒤 더해요.",
+          "solution": "원뿔 부피=(1/3)×π×36×4=48π, 반구 부피=(2/3)×π×216=144π. 합=48π+144π=192π cm³.",
+          "work_space": "md",
+          "misconceptions": ["solid.sphere-formula-mix"]
         }
       ]
     }
