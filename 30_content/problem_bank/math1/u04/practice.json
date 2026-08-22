@@ -3,1530 +3,397 @@
     "grade": "math1",
     "unit": 4,
     "unit_name": "일차방정식",
-    "generation": "A",
-    "source": "40_grades/middle/math1/04_일차방정식/problems",
-    "extracted": "2026-07-29",
-    "extractor": "70_tools/print/extract_gen_ac.py",
+    "source": "40_grades/middle/math1/app1/p4.html",
+    "extracted": "2026-08-22",
+    "generation": "D",
+    "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
-    "notation": "html-sup + css-frac",
-    "note": "answer_atoms 는 원본 type_NN_app.html 의 .sol-panel 첫 <strong> 값 그대로. 절대 손으로 고치지 않는다. 원본은 KaTeX($...$) 표기라서 지면용 stem_print/answer_print/hint/solution 은 HTML(유니코드·<sup>·.frac)로 변환했다."
+    "notation": "html-sup",
+    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. 유형1-1,1-2,2-1은 2지선다를 단답형으로 재작성. 전부 기초~보통 수준(L/M)만 포함 — 심화(H)는 이번 회차에서 제외."
   },
   "types": [
     {
       "no": 1,
-      "title": "방정식과 항등식 판별",
-      "principle": "등식에 여러 값을 넣어 보고 특정한 값에서만 참인지, 어떤 값을 넣어도 참인지를 보고 이름을 정해요. 양변을 전개해서 완전히 같은 식이 되는지 확인하면 빨라요. 미지의 상수가 있으면 x 의 계수끼리, 상수항끼리 비교해요.",
+      "title": "방정식 / 항등식 판별",
+      "principle": "특정 값에서만 참이면 방정식, 모든 값에서 참이면 항등식이에요.",
       "problems": [
         {
           "id": "m1-u04-t01-01",
           "level": "L",
-          "stem_src": "등식 $x + 2 = 5$는 방정식인가요, 항등식인가요? 그 이유도 설명하세요.",
-          "stem_print": "등식 x + 2 = 5 가 방정식인지 항등식인지 쓰고, 그렇게 판단한 이유도 쓰시오.",
-          "answer_atoms": [
-            "방정식"
-          ],
-          "answer_print": "방정식 (특정한 값에서만 참)",
-          "answer_accept": [
-            "방정식",
-            "x = 3 일 때만 참이므로 방정식"
-          ],
+          "stem_src": "x + 2 = 5는 방정식인가요, 항등식인가요? (2지선다)",
+          "stem_print": "x + 2 = 5는 방정식과 항등식 중 어느 것인지 쓰시오.",
+          "answer_atoms": ["방정식"],
+          "answer_print": "방정식",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "'방정식' 또는 '항등식' 중 하나를 낱말로 (단위 없음)",
+          "answer_format": "용어(방정식/항등식)로",
           "figure": null,
-          "hint": "x 에 1, 2, 3 을 차례로 넣어 보고 참이 되는 값이 몇 개인지 세어 보세요.",
-          "solution": "x = 3 일 때만 3 + 2 = 5 로 참이 되고, x 에 1 이나 2 를 넣으면 거짓이에요. 특정한 값에서만 참이 되는 등식이므로 방정식이에요.",
+          "hint": "x = 3일 때만 참이 되는지 확인해요.",
+          "solution": "x = 3일 때만 참이 되므로 방정식이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "eq.identity-vs-equation"
-          ]
+          "misconceptions": ["eq.identity-vs-equation"]
         },
         {
           "id": "m1-u04-t01-02",
           "level": "L",
-          "stem_src": "$x = 1$이 방정식 $2x + 1 = 3$의 해인지 확인하세요.",
-          "stem_print": "x = 1 이 방정식 2x + 1 = 3 의 해인지 아닌지 확인하여 쓰시오.",
-          "answer_atoms": [
-            "해이다"
-          ],
-          "answer_print": "해이다 (대입하면 좌변과 우변의 값이 같아요)",
-          "answer_accept": [
-            "해이다",
-            "해가 맞다",
-            "해"
-          ],
+          "stem_src": "3(x − 1) = 3x − 3은 방정식인가요, 항등식인가요? (2지선다)",
+          "stem_print": "3(x − 1) = 3x − 3은 방정식과 항등식 중 어느 것인지 쓰시오.",
+          "answer_atoms": ["항등식"],
+          "answer_print": "항등식",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "'해이다' 또는 '해가 아니다' 중 하나로 (단위 없음)",
+          "answer_format": "용어(방정식/항등식)로",
           "figure": null,
-          "hint": "x = 1 을 좌변에 넣어 계산한 값과 우변의 값을 비교해 보세요.",
-          "solution": "좌변 = 2 × 1 + 1 = 3 이고 우변 = 3 이에요. 양변의 값이 같으므로 x = 1 은 이 방정식의 해예요.",
+          "hint": "괄호를 풀어서 양변이 같은 식이 되는지 봐요.",
+          "solution": "괄호를 풀면 3x−3=3x−3, 모든 x에서 참이니 항등식이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "eq.solution-no-check"
-          ]
+          "misconceptions": []
         },
         {
           "id": "m1-u04-t01-03",
-          "level": "L",
-          "stem_src": "$3(x-1) = 3x - 3$은 방정식인가요, 항등식인가요?",
-          "stem_print": "3(x − 1) = 3x − 3 이 방정식인지 항등식인지 쓰시오.",
-          "answer_atoms": [
-            "항등식"
-          ],
-          "answer_print": "항등식 (어떤 값을 넣어도 참)",
-          "answer_accept": [
-            "항등식",
-            "양변이 같은 식이므로 항등식"
-          ],
+          "level": "M",
+          "stem_src": "ax + 7 = 3x + b가 항등식이 되려면 a의 값은?",
+          "stem_print": "ax + 7 = 3x + b가 항등식이 되려면 a의 값을 구하시오.",
+          "answer_atoms": ["3"],
+          "answer_print": "3",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "'방정식' 또는 '항등식' 중 하나를 낱말로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "좌변을 분배법칙으로 전개해서 우변과 모양이 같은지 비교해 보세요.",
-          "solution": "좌변을 전개하면 3x − 3 이고 우변도 3x − 3 이에요. 양변이 완전히 같은 식이므로 어떤 x 를 넣어도 참이 되는 항등식이에요.",
+          "hint": "x의 계수끼리 같아야 해요.",
+          "solution": "양변의 x 계수가 같아야 하므로 a=3이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "eq.identity-vs-equation",
-            "eq.paren-partial-distribute"
-          ]
-        },
-        {
-          "id": "m1-u04-t01-04",
-          "level": "M",
-          "stem_src": "등식 $ax + 2 = 4x + b$가 $x$에 관한 항등식일 때, 상수 $a$, $b$의 값을 구하세요.",
-          "stem_print": "등식 ax + 2 = 4x + b 가 x 에 대한 항등식일 때, 상수 a, b 의 값을 각각 구하시오.",
-          "answer_atoms": [
-            "$a=4$, $b=2$"
-          ],
-          "answer_print": "a = 4, b = 2",
-          "answer_accept": [
-            "a = 4, b = 2",
-            "a는 4, b는 2"
-          ],
-          "answer_unit": null,
-          "answer_format": "a = 꼴, b = 꼴로 두 값 모두 (단위 없음)",
-          "figure": null,
-          "hint": "항등식이 되려면 양변의 x 의 계수끼리, 상수항끼리 각각 같아야 해요.",
-          "solution": "x 의 계수를 비교하면 a = 4 이고, 상수항을 비교하면 2 = b 예요. 따라서 a = 4, b = 2 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.identity-coeff-compare"
-          ]
-        },
-        {
-          "id": "m1-u04-t01-05",
-          "level": "M",
-          "stem_src": "$x + 3 = 3 + x$는 방정식인가요, 항등식인가요? 그 이유를 설명하세요.",
-          "stem_print": "x + 3 = 3 + x 가 방정식인지 항등식인지 쓰고, 그 이유도 쓰시오.",
-          "answer_atoms": [
-            "항등식"
-          ],
-          "answer_print": "항등식 (어떤 값을 넣어도 참)",
-          "answer_accept": [
-            "항등식",
-            "교환법칙이므로 항등식"
-          ],
-          "answer_unit": null,
-          "answer_format": "'방정식' 또는 '항등식' 중 하나를 낱말로 (단위 없음)",
-          "figure": null,
-          "hint": "x 에 0, 1, −1 을 넣어 보면 양변의 값이 어떻게 되나요?",
-          "solution": "덧셈의 교환법칙에 의해 x + 3 과 3 + x 는 언제나 같은 값이에요. 어떤 x 를 넣어도 참이므로 항등식이에요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.identity-vs-equation"
-          ]
-        },
-        {
-          "id": "m1-u04-t01-06",
-          "level": "M",
-          "stem_src": "방정식 $2x - 1 = 5$의 해를 구하고, 그 해를 대입해 검산하세요.",
-          "stem_print": "방정식 2x − 1 = 5 를 풀어 x 의 값을 구하고, 구한 해를 대입한 검산 과정도 쓰시오.",
-          "answer_atoms": [
-            "$x=3$"
-          ],
-          "answer_print": "x = 3",
-          "answer_accept": [
-            "3",
-            "x = 3"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "−1 을 우변으로 이항한 다음, 양변을 x 의 계수로 나눠 보세요.",
-          "solution": "−1 을 이항하면 2x = 5 + 1 = 6 이고, 양변을 2 로 나누면 x = 3 이에요. 검산하면 좌변 = 2 × 3 − 1 = 5 로 우변과 같아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.transpose-sign",
-            "eq.solution-no-check"
-          ]
-        },
-        {
-          "id": "m1-u04-t01-07",
-          "level": "H",
-          "stem_src": "$(a-1)x + 3b = 0$이 $x$에 관한 항등식이 되도록 하는 상수 $a$, $b$의 값을 구하세요.",
-          "stem_print": "(a − 1)x + 3b = 0 이 x 에 대한 항등식이 되도록 하는 상수 a, b 의 값을 각각 구하시오.",
-          "answer_atoms": [
-            "$a=1$, $b=0$"
-          ],
-          "answer_print": "a = 1, b = 0",
-          "answer_accept": [
-            "a = 1, b = 0"
-          ],
-          "answer_unit": null,
-          "answer_format": "a = 꼴, b = 꼴로 두 값 모두 (단위 없음)",
-          "figure": null,
-          "hint": "모든 x 에서 좌변이 0 이 되려면 x 의 계수와 상수항이 각각 어떤 값이어야 할까요?",
-          "solution": "x 의 계수가 0 이어야 하므로 a − 1 = 0, 즉 a = 1 이에요. 상수항도 0 이어야 하므로 3b = 0, 즉 b = 0 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.identity-coeff-compare"
-          ]
-        },
-        {
-          "id": "m1-u04-t01-08",
-          "level": "H",
-          "stem_src": "$x=2$가 방정식 $ax + 6 = 2$의 해일 때, 상수 $a$의 값을 구하세요.",
-          "stem_print": "x = 2 가 방정식 ax + 6 = 2 의 해일 때, 상수 a 의 값을 구하시오.",
-          "answer_atoms": [
-            "$a = -2$"
-          ],
-          "answer_print": "a = −2",
-          "answer_accept": [
-            "a = -2",
-            "−2"
-          ],
-          "answer_unit": null,
-          "answer_format": "a = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "해라는 말은 그 값을 넣으면 등식이 성립한다는 뜻이에요. x = 2 를 대입해 보세요.",
-          "solution": "x = 2 를 대입하면 2a + 6 = 2 예요. 6 을 이항하면 2a = −4 이고, 양변을 2 로 나누면 a = −2 예요. 확인하면 −2 × 2 + 6 = 2 로 맞아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.solution-no-check",
-            "eq.transpose-sign"
-          ]
-        },
-        {
-          "id": "m1-u04-t01-09",
-          "level": "H",
-          "stem_src": "등식 $ax + b = 3x + c$가 $x$에 관한 항등식일 때, $a$와 $b-c$의 값을 구하세요.",
-          "stem_print": "등식 ax + b = 3x + c 가 x 에 대한 항등식일 때, a 의 값과 b − c 의 값을 각각 구하시오.",
-          "answer_atoms": [
-            "$a=3$, $b-c=0$"
-          ],
-          "answer_print": "a = 3, b − c = 0",
-          "answer_accept": [
-            "a = 3, b - c = 0",
-            "a = 3 이고 b 와 c 가 같으므로 b − c = 0"
-          ],
-          "answer_unit": null,
-          "answer_format": "a = 꼴, b − c = 꼴로 두 값 모두 (단위 없음)",
-          "figure": null,
-          "hint": "x 의 계수끼리, 상수항끼리 같다고 놓아 보세요.",
-          "solution": "x 의 계수를 비교하면 a = 3 이에요. 상수항을 비교하면 b = c 이므로 b − c = 0 이에요. b 와 c 각각의 값은 주어지지 않아 알 수 없어요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.identity-coeff-compare"
-          ]
+          "misconceptions": ["eq.identity-coeff-compare"]
         }
       ]
     },
     {
       "no": 2,
-      "title": "등식의 성질",
-      "principle": "등식은 양팔 저울과 같아요. 양변에 똑같은 수를 더하거나 빼거나 곱하면 저울은 그대로 균형을 유지해요. 나눌 때만 조건이 하나 붙는데, 0 이 아닌 수로만 나눌 수 있어요.",
+      "title": "등식의 성질 활용",
+      "principle": "양변에 같은 수를 더하거나 빼거나 곱하거나(0 제외) 나눠도 등식은 그대로예요.",
       "problems": [
         {
           "id": "m1-u04-t02-01",
           "level": "L",
-          "stem_src": "$x - 3 = 5$에서 양변에 3을 더하면 $x = $ ?",
-          "stem_print": "x − 3 = 5 의 양변에 3 을 더하여 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 8$"
-          ],
-          "answer_print": "x = 8",
-          "answer_accept": [
-            "8",
-            "x = 8"
-          ],
+          "stem_src": "a = b일 때, a + 9 = b + 9는 항상 성립하나요? (2지선다)",
+          "stem_print": "a = b일 때, a + 9 = b + 9가 항상 성립하는지 쓰시오.",
+          "answer_atoms": ["맞아요"],
+          "answer_print": "맞아요",
+          "answer_accept": ["네"],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "예/아니요로",
           "figure": null,
-          "hint": "양변에 같은 수를 더해도 등식은 그대로 성립해요.",
-          "solution": "양변에 3 을 더하면 x − 3 + 3 = 5 + 3 이에요. 좌변에는 x 만 남으므로 x = 8 이에요.",
+          "hint": "등식의 성질을 떠올려요.",
+          "solution": "양변에 같은 수를 더해도 등식은 성립해요.",
           "work_space": "sm",
-          "misconceptions": [
-            "eq.prop-different-number"
-          ]
+          "misconceptions": []
         },
         {
           "id": "m1-u04-t02-02",
           "level": "L",
-          "stem_src": "$x + 4 = 9$에서 양변에 4를 빼면 $x = $ ?",
-          "stem_print": "x + 4 = 9 의 양변에서 4 를 빼어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 5$"
-          ],
-          "answer_print": "x = 5",
-          "answer_accept": [
-            "5",
-            "x = 5"
-          ],
+          "stem_src": "x − 6 = 11에서 x만 남기려면 양변에 무엇을 더해야 하나요?",
+          "stem_print": "x − 6 = 11에서 x만 남기려면 양변에 무엇을 더해야 하는지 쓰시오.",
+          "answer_atoms": ["6"],
+          "answer_print": "6",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "양변에서 같은 수를 빼도 등식은 그대로 성립해요.",
-          "solution": "양변에서 4 를 빼면 x + 4 − 4 = 9 − 4 이므로 x = 5 예요.",
+          "hint": "빠진 수를 채워 x = ? 꼴로 만들어요.",
+          "solution": "양변에 6을 더하면 x = 17이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "eq.prop-different-number"
-          ]
+          "misconceptions": ["eq.prop-different-number"]
         },
         {
           "id": "m1-u04-t02-03",
           "level": "L",
-          "stem_src": "$2x = 10$에서 양변을 2로 나누면 $x = $ ?",
-          "stem_print": "2x = 10 의 양변을 2 로 나누어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 5$"
-          ],
-          "answer_print": "x = 5",
-          "answer_accept": [
-            "5",
-            "x = 5"
-          ],
+          "stem_src": "5x = 35의 양변을 5로 나누면 x는?",
+          "stem_print": "5x = 35의 양변을 5로 나누면 x는 얼마인지 구하시오.",
+          "answer_atoms": ["7"],
+          "answer_print": "7",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "0 이 아닌 같은 수로 양변을 나누어도 등식은 그대로 성립해요.",
-          "solution": "양변을 2 로 나누면 2x ÷ 2 = 10 ÷ 2 이므로 x = 5 예요.",
+          "hint": "양변을 계수로 나눠요.",
+          "solution": "35 ÷ 5 = 7이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "eq.coeff-divide"
-          ]
-        },
-        {
-          "id": "m1-u04-t02-04",
-          "level": "M",
-          "stem_src": "$\\dfrac{x}{3} = 4$에서 양변에 3을 곱하면 $x = $ ?",
-          "stem_print": "<span class=\"frac\"><b>x</b><i>3</i></span> = 4 의 양변에 3 을 곱하여 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 12$"
-          ],
-          "answer_print": "x = 12",
-          "answer_accept": [
-            "12",
-            "x = 12"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "분모를 없애려면 분모와 같은 수를 양변에 곱해요.",
-          "solution": "양변에 3 을 곱하면 <span class=\"frac\"><b>x</b><i>3</i></span> × 3 = 4 × 3 이므로 x = 12 예요. 검산하면 12 ÷ 3 = 4 로 맞아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.multiply-partial"
-          ]
-        },
-        {
-          "id": "m1-u04-t02-05",
-          "level": "M",
-          "stem_src": "$a = b$이면 $3a - 1 = 3b - 1$인지 판단하고 이유를 설명하세요.",
-          "stem_print": "a = b 일 때 3a − 1 = 3b − 1 이 성립하는지 '참' 또는 '거짓'으로 쓰고, 그 이유도 쓰시오.",
-          "answer_atoms": [
-            "참"
-          ],
-          "answer_print": "참",
-          "answer_accept": [
-            "참",
-            "성립해요",
-            "참이다"
-          ],
-          "answer_unit": null,
-          "answer_format": "'참' 또는 '거짓'으로 (단위 없음)",
-          "figure": null,
-          "hint": "양변에 같은 수를 곱하고, 다시 양변에서 같은 수를 빼면 등식은 어떻게 될까요?",
-          "solution": "a = b 의 양변에 3 을 곱하면 3a = 3b 이고, 다시 양변에서 1 을 빼면 3a − 1 = 3b − 1 이에요. 등식의 성질을 두 번 적용한 것이므로 참이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.prop-different-number"
-          ]
-        },
-        {
-          "id": "m1-u04-t02-06",
-          "level": "M",
-          "stem_src": "$a = b$이면 $\\dfrac{a}{2} + 1 = \\dfrac{b}{2} + 1$인지 판단하고 이유를 설명하세요.",
-          "stem_print": "a = b 일 때 <span class=\"frac\"><b>a</b><i>2</i></span> + 1 = <span class=\"frac\"><b>b</b><i>2</i></span> + 1 이 성립하는지 '참' 또는 '거짓'으로 쓰고, 그 이유도 쓰시오.",
-          "answer_atoms": [
-            "참"
-          ],
-          "answer_print": "참",
-          "answer_accept": [
-            "참",
-            "성립해요",
-            "참이다"
-          ],
-          "answer_unit": null,
-          "answer_format": "'참' 또는 '거짓'으로 (단위 없음)",
-          "figure": null,
-          "hint": "양변을 2 로 나눈 다음, 양변에 1 을 더해 보세요.",
-          "solution": "a = b 의 양변을 2 로 나누면 두 분수가 서로 같고, 다시 양변에 1 을 더해도 등식은 그대로 성립해요. 그래서 참이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.prop-different-number"
-          ]
-        },
-        {
-          "id": "m1-u04-t02-07",
-          "level": "H",
-          "stem_src": "$a = b$일 때, $\\dfrac{a}{0} = \\dfrac{b}{0}$이 성립하는지 판단하세요.",
-          "stem_print": "a = b 일 때 <span class=\"frac\"><b>a</b><i>0</i></span> = <span class=\"frac\"><b>b</b><i>0</i></span> 이 성립하는지 '참' 또는 '거짓'으로 쓰고, 그 까닭도 쓰시오.",
-          "answer_atoms": [
-            "거짓 (성립하지 않음)"
-          ],
-          "answer_print": "거짓 (성립하지 않음)",
-          "answer_accept": [
-            "거짓",
-            "0 으로 나눌 수 없으므로 거짓"
-          ],
-          "answer_unit": null,
-          "answer_format": "'참' 또는 '거짓'으로 쓰고 까닭까지 (단위 없음)",
-          "figure": null,
-          "hint": "등식의 나눗셈 성질에는 조건이 하나 붙어 있었어요. 그 조건을 떠올려 보세요.",
-          "solution": "양변을 나눌 수 있는 것은 0 이 아닌 수로 나눌 때뿐이에요. 0 으로 나누는 것은 수학에서 정의되지 않으므로 이 등식은 성립하지 않아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.prop-divide-zero"
-          ]
-        },
-        {
-          "id": "m1-u04-t02-08",
-          "level": "H",
-          "stem_src": "$2a = 2b$이면 $a = b$가 성립하는지 판단하고, 이유를 설명하세요.",
-          "stem_print": "2a = 2b 일 때 a = b 가 성립하는지 '참' 또는 '거짓'으로 쓰고, 그 이유도 쓰시오.",
-          "answer_atoms": [
-            "참"
-          ],
-          "answer_print": "참",
-          "answer_accept": [
-            "참",
-            "성립해요",
-            "참이다"
-          ],
-          "answer_unit": null,
-          "answer_format": "'참' 또는 '거짓'으로 (단위 없음)",
-          "figure": null,
-          "hint": "양변을 2 로 나눌 수 있는지 먼저 확인해 보세요. 2 는 0 이 아니에요.",
-          "solution": "2 는 0 이 아니므로 양변을 2 로 나눌 수 있어요. 2a ÷ 2 = 2b ÷ 2 이므로 a = b 가 되어 참이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.coeff-divide"
-          ]
-        },
-        {
-          "id": "m1-u04-t02-09",
-          "level": "H",
-          "stem_src": "등식의 성질만을 이용하여 $3(x-1) = 6$을 단계별로 풀어보세요. (이항 사용 금지)",
-          "stem_print": "등식의 성질만 이용하여 3(x − 1) = 6 을 풀어 x 의 값을 구하고, 각 단계에서 사용한 성질도 쓰시오. (단, 이항은 사용하지 마시오.)",
-          "answer_atoms": [
-            "$x = 3$"
-          ],
-          "answer_print": "x = 3",
-          "answer_accept": [
-            "3",
-            "x = 3"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "먼저 양변을 3 으로 나누고, 그다음 양변에 1 을 더해 보세요.",
-          "solution": "① 양변을 3 으로 나누면 (나눗셈 성질) x − 1 = 2 예요. ② 양변에 1 을 더하면 (덧셈 성질) x = 3 이에요. 검산하면 3 × (3 − 1) = 6 으로 맞아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.prop-different-number",
-            "eq.coeff-divide"
-          ]
+          "misconceptions": ["eq.coeff-divide"]
         }
       ]
     },
     {
       "no": 3,
-      "title": "일차방정식 풀기 (정수 계수)",
-      "principle": "x 가 있는 항은 좌변으로, 숫자만 있는 항은 우변으로 옮겨요. 옮길 때는 부호를 반대로 바꾸고, 마지막에 x 의 계수로 양변을 나눠요. 다 풀고 나면 원래 식에 넣어 검산해요.",
+      "title": "기본 일차방정식 풀기",
+      "principle": "이항 → 동류항 정리 → 계수로 나누기 순서예요.",
       "problems": [
         {
           "id": "m1-u04-t03-01",
-          "level": "L",
-          "stem_src": "$x + 5 = 12$를 풀어라.",
-          "stem_print": "방정식 x + 5 = 12 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 7$"
-          ],
-          "answer_print": "x = 7",
-          "answer_accept": [
-            "7",
-            "x = 7"
-          ],
+          "level": "M",
+          "stem_src": "3x + 2 = 11의 해는?",
+          "stem_print": "3x + 2 = 11의 해를 구하시오.",
+          "answer_atoms": ["3"],
+          "answer_print": "3",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "5 를 우변으로 이항하면서 부호를 반대로 바꿔 보세요.",
-          "solution": "5 를 이항하면 x = 12 − 5 = 7 이에요. 검산하면 7 + 5 = 12 로 맞아요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.transpose-sign"
-          ]
+          "hint": "2를 이항한 뒤 3으로 나눠요.",
+          "solution": "3x=9, x=3이에요.",
+          "work_space": "md",
+          "misconceptions": ["eq.transpose-sign"]
         },
         {
           "id": "m1-u04-t03-02",
-          "level": "L",
-          "stem_src": "$3x = 18$을 풀어라.",
-          "stem_print": "방정식 3x = 18 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 6$"
-          ],
-          "answer_print": "x = 6",
-          "answer_accept": [
-            "6",
-            "x = 6"
-          ],
+          "level": "M",
+          "stem_src": "4x − 5 = 2x + 7의 해는?",
+          "stem_print": "4x − 5 = 2x + 7의 해를 구하시오.",
+          "answer_atoms": ["6"],
+          "answer_print": "6",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "양변을 x 의 계수인 3 으로 나눠 보세요.",
-          "solution": "양변을 3 으로 나누면 x = 18 ÷ 3 = 6 이에요. 검산하면 3 × 6 = 18 로 맞아요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.coeff-divide"
-          ]
+          "hint": "x항은 좌변, 상수항은 우변으로 이항해요.",
+          "solution": "2x=12, x=6이에요.",
+          "work_space": "md",
+          "misconceptions": ["eq.like-terms-mix"]
         },
         {
           "id": "m1-u04-t03-03",
-          "level": "L",
-          "stem_src": "$4x - 1 = 11$을 풀어라.",
-          "stem_print": "방정식 4x − 1 = 11 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 3$"
-          ],
-          "answer_print": "x = 3",
-          "answer_accept": [
-            "3",
-            "x = 3"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "−1 을 우변으로 이항해서 4x 가 얼마인지 먼저 구해 보세요.",
-          "solution": "−1 을 이항하면 4x = 11 + 1 = 12 이고, 양변을 4 로 나누면 x = 3 이에요. 검산하면 4 × 3 − 1 = 11 로 맞아요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.transpose-sign"
-          ]
-        },
-        {
-          "id": "m1-u04-t03-04",
           "level": "M",
-          "stem_src": "$5x - 3 = 2x + 9$를 풀어라.",
-          "stem_print": "방정식 5x − 3 = 2x + 9 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 4$"
-          ],
-          "answer_print": "x = 4",
-          "answer_accept": [
-            "4",
-            "x = 4"
-          ],
+          "stem_src": "7 − x = 2x + 1의 해는?",
+          "stem_print": "7 − x = 2x + 1의 해를 구하시오.",
+          "answer_atoms": ["2"],
+          "answer_print": "2",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "x 가 있는 항은 좌변으로, 숫자만 있는 항은 우변으로 이항해 보세요.",
-          "solution": "이항하면 5x − 2x = 9 + 3 이므로 3x = 12, 즉 x = 4 예요. 검산하면 좌변 = 17, 우변 = 17 로 같아요.",
+          "hint": "−x를 우변으로, 1을 좌변으로 이항해요.",
+          "solution": "6=3x, x=2예요.",
           "work_space": "md",
-          "misconceptions": [
-            "eq.transpose-sign",
-            "eq.like-terms-mix"
-          ]
-        },
-        {
-          "id": "m1-u04-t03-05",
-          "level": "M",
-          "stem_src": "$2x + 7 = x - 3$을 풀어라.",
-          "stem_print": "방정식 2x + 7 = x − 3 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = -10$"
-          ],
-          "answer_print": "x = −10",
-          "answer_accept": [
-            "-10",
-            "x = -10"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "이항하면 2x − x = −3 − 7 이 돼요. 해가 음수로 나올 수도 있어요.",
-          "solution": "이항하면 2x − x = −3 − 7 이므로 x = −10 이에요. 검산하면 좌변 = −13, 우변 = −13 으로 같아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.transpose-sign"
-          ]
-        },
-        {
-          "id": "m1-u04-t03-06",
-          "level": "M",
-          "stem_src": "$6 - x = 2x - 9$를 풀어라.",
-          "stem_print": "방정식 6 − x = 2x − 9 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 5$"
-          ],
-          "answer_print": "x = 5",
-          "answer_accept": [
-            "5",
-            "x = 5"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "−x 를 우변으로, −9 를 좌변으로 이항해 보세요.",
-          "solution": "이항하면 6 + 9 = 2x + x 이므로 15 = 3x, 즉 x = 5 예요. 검산하면 좌변 = 1, 우변 = 1 로 같아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.transpose-sign"
-          ]
-        },
-        {
-          "id": "m1-u04-t03-07",
-          "level": "H",
-          "stem_src": "방정식 $ax + 3 = 15$의 해가 $x = 4$일 때, 상수 $a$의 값을 구하세요.",
-          "stem_print": "방정식 ax + 3 = 15 의 해가 x = 4 일 때, 상수 a 의 값을 구하시오.",
-          "answer_atoms": [
-            "$a = 3$"
-          ],
-          "answer_print": "a = 3",
-          "answer_accept": [
-            "3",
-            "a = 3"
-          ],
-          "answer_unit": null,
-          "answer_format": "a = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "x = 4 를 대입하면 a 에 대한 방정식이 만들어져요.",
-          "solution": "x = 4 를 대입하면 4a + 3 = 15 예요. 3 을 이항하면 4a = 12 이고, 양변을 4 로 나누면 a = 3 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.solution-no-check"
-          ]
-        },
-        {
-          "id": "m1-u04-t03-08",
-          "level": "H",
-          "stem_src": "방정식 $2x - a = x + 5$의 해가 $x = -2$일 때, 상수 $a$의 값을 구하세요.",
-          "stem_print": "방정식 2x − a = x + 5 의 해가 x = −2 일 때, 상수 a 의 값을 구하시오.",
-          "answer_atoms": [
-            "$a = -7$"
-          ],
-          "answer_print": "a = −7",
-          "answer_accept": [
-            "-7",
-            "a = -7"
-          ],
-          "answer_unit": null,
-          "answer_format": "a = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "x = −2 를 양변에 대입해서 a 에 대한 방정식을 만들어 보세요.",
-          "solution": "x = −2 를 대입하면 2 × (−2) − a = (−2) + 5, 즉 −4 − a = 3 이에요. −4 를 이항하면 −a = 7 이므로 a = −7 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.solution-no-check",
-            "eq.transpose-sign"
-          ]
-        },
-        {
-          "id": "m1-u04-t03-09",
-          "level": "H",
-          "stem_src": "방정식 $3x + 5 = x + k$의 해가 $x = 1$일 때, 상수 $k$의 값을 구하세요.",
-          "stem_print": "방정식 3x + 5 = x + k 의 해가 x = 1 일 때, 상수 k 의 값을 구하시오.",
-          "answer_atoms": [
-            "$k = 7$"
-          ],
-          "answer_print": "k = 7",
-          "answer_accept": [
-            "7",
-            "k = 7"
-          ],
-          "answer_unit": null,
-          "answer_format": "k = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "x = 1 을 대입하면 k 에 대한 방정식이 나와요.",
-          "solution": "x = 1 을 대입하면 3 × 1 + 5 = 1 + k, 즉 8 = 1 + k 예요. 따라서 k = 7 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.solution-no-check"
-          ]
+          "misconceptions": []
         }
       ]
     },
     {
       "no": 4,
-      "title": "계수가 분수·소수인 방정식",
-      "principle": "분수는 분모의 최소공배수를, 소수는 10 의 거듭제곱을 양변에 곱해서 계수를 정수로 바꿔요. 이때 양변의 모든 항에 빠짐없이 곱해야 해요. 분자가 여러 항이면 괄호로 묶고 곱해요.",
+      "title": "괄호·분수·소수 계수 방정식",
+      "principle": "괄호는 분배법칙으로, 분수·소수는 정수로 바꿔서 풀어요.",
       "problems": [
         {
           "id": "m1-u04-t04-01",
-          "level": "L",
-          "stem_src": "$\\dfrac{x}{3} = 4$를 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>x</b><i>3</i></span> = 4 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 12$"
-          ],
-          "answer_print": "x = 12",
-          "answer_accept": [
-            "12",
-            "x = 12"
-          ],
+          "level": "M",
+          "stem_src": "3(x − 2) = 9의 해는?",
+          "stem_print": "3(x − 2) = 9의 해를 구하시오.",
+          "answer_atoms": ["5"],
+          "answer_print": "5",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "양변에 분모인 3 을 곱해서 분수를 없애 보세요.",
-          "solution": "양변에 3 을 곱하면 x = 12 예요. 검산하면 12 ÷ 3 = 4 로 맞아요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.multiply-partial"
-          ]
+          "hint": "괄호를 먼저 분배법칙으로 풀어요.",
+          "solution": "3x−6=9, 3x=15, x=5예요.",
+          "work_space": "md",
+          "misconceptions": ["eq.paren-partial-distribute"]
         },
         {
           "id": "m1-u04-t04-02",
-          "level": "L",
-          "stem_src": "$0.2x = 1.6$을 풀어라.",
-          "stem_print": "방정식 0.2x = 1.6 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 8$"
-          ],
-          "answer_print": "x = 8",
-          "answer_accept": [
-            "8",
-            "x = 8"
-          ],
+          "level": "M",
+          "stem_src": "x/2 + 1 = 4의 해는?",
+          "stem_print": "x/2 + 1 = 4의 해를 구하시오.",
+          "answer_atoms": ["6"],
+          "answer_print": "6",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "소수점 아래가 한 자리이므로 양변에 10 을 곱해 보세요.",
-          "solution": "양변에 10 을 곱하면 2x = 16 이고, 양변을 2 로 나누면 x = 8 이에요. 검산하면 0.2 × 8 = 1.6 으로 맞아요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.multiply-partial"
-          ]
+          "hint": "양변에 2를 곱하되, 모든 항에 곱해요.",
+          "solution": "양변에 2를 곱하면 x+2=8, x=6이에요.",
+          "work_space": "md",
+          "misconceptions": ["eq.multiply-partial"]
         },
         {
           "id": "m1-u04-t04-03",
-          "level": "L",
-          "stem_src": "$\\dfrac{x}{2} - 1 = 2$를 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>x</b><i>2</i></span> − 1 = 2 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 6$"
-          ],
-          "answer_print": "x = 6",
-          "answer_accept": [
-            "6",
-            "x = 6"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "양변에 2 를 곱할 때 −1 과 2 에도 빠짐없이 곱해야 해요.",
-          "solution": "양변에 2 를 곱하면 x − 2 = 4 이고, −2 를 이항하면 x = 6 이에요. 검산하면 6 ÷ 2 − 1 = 2 로 맞아요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.multiply-partial"
-          ]
-        },
-        {
-          "id": "m1-u04-t04-04",
           "level": "M",
-          "stem_src": "$\\dfrac{x}{3} + \\dfrac{x}{6} = 2$를 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>x</b><i>3</i></span> + <span class=\"frac\"><b>x</b><i>6</i></span> = 2 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 4$"
-          ],
-          "answer_print": "x = 4",
-          "answer_accept": [
-            "4",
-            "x = 4"
-          ],
+          "stem_src": "0.2x + 0.4 = 1의 해는?",
+          "stem_print": "0.2x + 0.4 = 1의 해를 구하시오.",
+          "answer_atoms": ["3"],
+          "answer_print": "3",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "분모 3 과 6 의 최소공배수는 6 이에요. 양변에 6 을 곱해 보세요.",
-          "solution": "양변에 6 을 곱하면 2x + x = 12 이므로 3x = 12, 즉 x = 4 예요.",
+          "hint": "양변에 10을 곱해 정수로 바꿔요.",
+          "solution": "양변에 10을 곱하면 2x+4=10, x=3이에요.",
           "work_space": "md",
-          "misconceptions": [
-            "eq.multiply-partial"
-          ]
-        },
-        {
-          "id": "m1-u04-t04-05",
-          "level": "M",
-          "stem_src": "$0.5x - 0.2 = 1.3$을 풀어라.",
-          "stem_print": "방정식 0.5x − 0.2 = 1.3 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 3$"
-          ],
-          "answer_print": "x = 3",
-          "answer_accept": [
-            "3",
-            "x = 3"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "양변에 10 을 곱해서 모든 항을 정수로 바꿔 보세요.",
-          "solution": "양변에 10 을 곱하면 5x − 2 = 13 이에요. −2 를 이항하면 5x = 15 이고, x = 3 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.multiply-partial"
-          ]
-        },
-        {
-          "id": "m1-u04-t04-06",
-          "level": "M",
-          "stem_src": "$\\dfrac{x}{4} - \\dfrac{x}{3} = -1$을 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>x</b><i>4</i></span> − <span class=\"frac\"><b>x</b><i>3</i></span> = −1 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 12$"
-          ],
-          "answer_print": "x = 12",
-          "answer_accept": [
-            "12",
-            "x = 12"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "분모 4 와 3 의 최소공배수는 12 예요. 우변의 −1 에도 곱해야 해요.",
-          "solution": "양변에 12 를 곱하면 3x − 4x = −12 이므로 −x = −12 이고, 양변을 −1 로 나누면 x = 12 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.multiply-partial",
-            "eq.coeff-divide"
-          ]
-        },
-        {
-          "id": "m1-u04-t04-07",
-          "level": "H",
-          "stem_src": "$\\dfrac{x-1}{2} + \\dfrac{x+3}{4} = 3$을 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>x − 1</b><i>2</i></span> + <span class=\"frac\"><b>x + 3</b><i>4</i></span> = 3 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = \\dfrac{11}{3}$"
-          ],
-          "answer_print": "x = <span class=\"frac\"><b>11</b><i>3</i></span>",
-          "answer_accept": [
-            "x = 11/3",
-            "11/3"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로, 기약분수로 (단위 없음)",
-          "figure": null,
-          "hint": "분모 2 와 4 의 최소공배수는 4 예요. 분자가 여러 항이니 곱할 때 괄호를 씌워 주세요.",
-          "solution": "양변에 4 를 곱하면 2(x − 1) + (x + 3) = 12 예요. 전개하면 2x − 2 + x + 3 = 12, 즉 3x + 1 = 12 이므로 3x = 11 이고 x = <span class=\"frac\"><b>11</b><i>3</i></span> 이에요. 해가 분수로 나와도 괜찮아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.frac-numerator-paren"
-          ]
-        },
-        {
-          "id": "m1-u04-t04-08",
-          "level": "H",
-          "stem_src": "$0.3(x+2) = 0.1(2x+1) + 0.9$를 풀어라.",
-          "stem_print": "방정식 0.3(x + 2) = 0.1(2x + 1) + 0.9 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 4$"
-          ],
-          "answer_print": "x = 4",
-          "answer_accept": [
-            "4",
-            "x = 4"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "양변에 10 을 곱하되 괄호는 그대로 두고, 우변의 0.9 에도 곱해 보세요.",
-          "solution": "양변에 10 을 곱하면 3(x + 2) = (2x + 1) + 9 예요. 전개하면 3x + 6 = 2x + 10 이므로 x = 4 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.multiply-partial",
-            "eq.paren-partial-distribute"
-          ]
-        },
-        {
-          "id": "m1-u04-t04-09",
-          "level": "H",
-          "stem_src": "$\\dfrac{x}{2} - \\dfrac{1}{3} = \\dfrac{x+1}{6}$을 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>x</b><i>2</i></span> − <span class=\"frac\"><b>1</b><i>3</i></span> = <span class=\"frac\"><b>x + 1</b><i>6</i></span> 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = \\dfrac{3}{2}$"
-          ],
-          "answer_print": "x = <span class=\"frac\"><b>3</b><i>2</i></span>",
-          "answer_accept": [
-            "x = 3/2",
-            "3/2",
-            "1.5"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로, 기약분수로 (단위 없음)",
-          "figure": null,
-          "hint": "분모 2, 3, 6 의 최소공배수는 6 이에요. 우변의 분자에는 괄호를 씌워 곱해요.",
-          "solution": "양변에 6 을 곱하면 3x − 2 = x + 1 이에요. 이항하면 2x = 3 이므로 x = <span class=\"frac\"><b>3</b><i>2</i></span> 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.multiply-partial",
-            "eq.frac-numerator-paren"
-          ]
+          "misconceptions": ["eq.multiply-partial"]
         }
       ]
     },
     {
       "no": 5,
-      "title": "괄호가 있는 방정식",
-      "principle": "분배법칙으로 괄호를 먼저 풀어요. 괄호 앞의 수는 괄호 안 모든 항에 곱하고, 괄호 앞이 − 이면 괄호 안 모든 항의 부호가 바뀌는 것에 주의해요. 그다음 이항해서 정리해요.",
+      "title": "해의 조건으로 미정계수 구하기",
+      "principle": "주어진 해를 방정식에 대입해서 미지 계수를 거꾸로 구해요.",
       "problems": [
         {
           "id": "m1-u04-t05-01",
-          "level": "L",
-          "stem_src": "$2(x + 3) = 10$을 풀어라.",
-          "stem_print": "방정식 2(x + 3) = 10 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 2$"
-          ],
-          "answer_print": "x = 2",
-          "answer_accept": [
-            "2",
-            "x = 2"
-          ],
+          "level": "M",
+          "stem_src": "3x + a = 11의 해가 x = 3일 때, a의 값은?",
+          "stem_print": "3x + a = 11의 해가 x = 3일 때, a의 값을 구하시오.",
+          "answer_atoms": ["2"],
+          "answer_print": "2",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "분배법칙으로 괄호를 먼저 풀어 보세요. 2 를 x 와 3 에 모두 곱해요.",
-          "solution": "괄호를 풀면 2x + 6 = 10 이에요. 6 을 이항하면 2x = 4 이므로 x = 2 예요. 검산하면 2 × (2 + 3) = 10 으로 맞아요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.paren-partial-distribute"
-          ]
+          "hint": "x = 3을 대입해서 a에 대한 식을 만들어요.",
+          "solution": "9+a=11이므로 a=2예요.",
+          "work_space": "md",
+          "misconceptions": []
         },
         {
           "id": "m1-u04-t05-02",
-          "level": "L",
-          "stem_src": "$3(2x - 1) = 9$를 풀어라.",
-          "stem_print": "방정식 3(2x − 1) = 9 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 2$"
-          ],
-          "answer_print": "x = 2",
-          "answer_accept": [
-            "2",
-            "x = 2"
-          ],
+          "level": "M",
+          "stem_src": "ax − 4 = 8의 해가 x = 4일 때, a의 값은?",
+          "stem_print": "ax − 4 = 8의 해가 x = 4일 때, a의 값을 구하시오.",
+          "answer_atoms": ["3"],
+          "answer_print": "3",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "3 을 2x 에도, −1 에도 곱해야 해요.",
-          "solution": "괄호를 풀면 6x − 3 = 9 예요. −3 을 이항하면 6x = 12 이므로 x = 2 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.paren-partial-distribute"
-          ]
+          "hint": "x = 4를 대입해서 a에 대한 식을 만들어요.",
+          "solution": "4a−4=8, 4a=12, a=3이에요.",
+          "work_space": "md",
+          "misconceptions": []
         },
         {
           "id": "m1-u04-t05-03",
-          "level": "L",
-          "stem_src": "$4(x - 2) = 2x + 4$를 풀어라.",
-          "stem_print": "방정식 4(x − 2) = 2x + 4 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 6$"
-          ],
-          "answer_print": "x = 6",
-          "answer_accept": [
-            "6",
-            "x = 6"
-          ],
+          "level": "M",
+          "stem_src": "2x + 5 = a의 해가 x = 6일 때, a의 값은?",
+          "stem_print": "2x + 5 = a의 해가 x = 6일 때, a의 값을 구하시오.",
+          "answer_atoms": ["17"],
+          "answer_print": "17",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "좌변을 전개하면 4x − 8 이 돼요. 그다음 이항해 보세요.",
-          "solution": "괄호를 풀면 4x − 8 = 2x + 4 예요. 이항하면 2x = 12 이므로 x = 6 이에요.",
+          "hint": "x = 6을 좌변에 대입해요.",
+          "solution": "2×6+5=17이므로 a=17이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "eq.paren-partial-distribute",
-            "eq.transpose-sign"
-          ]
-        },
-        {
-          "id": "m1-u04-t05-04",
-          "level": "M",
-          "stem_src": "$2(3x - 1) = 3(x + 4)$를 풀어라.",
-          "stem_print": "방정식 2(3x − 1) = 3(x + 4) 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = \\dfrac{14}{3}$"
-          ],
-          "answer_print": "x = <span class=\"frac\"><b>14</b><i>3</i></span>",
-          "answer_accept": [
-            "x = 14/3",
-            "14/3"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로, 기약분수로 (단위 없음)",
-          "figure": null,
-          "hint": "양쪽 괄호를 모두 전개한 다음 이항해 보세요.",
-          "solution": "괄호를 풀면 6x − 2 = 3x + 12 예요. 이항하면 3x = 14 이므로 x = <span class=\"frac\"><b>14</b><i>3</i></span> 예요. 해가 분수로 나와도 괜찮아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.paren-partial-distribute"
-          ]
-        },
-        {
-          "id": "m1-u04-t05-05",
-          "level": "M",
-          "stem_src": "$5(x - 2) - 3(2x + 1) = 4$를 풀어라.",
-          "stem_print": "방정식 5(x − 2) − 3(2x + 1) = 4 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = -17$"
-          ],
-          "answer_print": "x = −17",
-          "answer_accept": [
-            "-17",
-            "x = -17"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "괄호 앞의 −3 은 괄호 안 두 항 모두에 곱해요. 부호에 주의해요.",
-          "solution": "전개하면 5x − 10 − 6x − 3 = 4 예요. 정리하면 −x − 13 = 4 이므로 −x = 17, 즉 x = −17 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.paren-minus-distribute"
-          ]
-        },
-        {
-          "id": "m1-u04-t05-06",
-          "level": "M",
-          "stem_src": "$-(2x - 5) + 3(x + 2) = 4x - 1$을 풀어라.",
-          "stem_print": "방정식 −(2x − 5) + 3(x + 2) = 4x − 1 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 4$"
-          ],
-          "answer_print": "x = 4",
-          "answer_accept": [
-            "4",
-            "x = 4"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "−(2x − 5) 는 앞에 −1 이 곱해진 것으로 보고 괄호 안 부호를 모두 바꿔요.",
-          "solution": "전개하면 −2x + 5 + 3x + 6 = 4x − 1 이에요. 좌변을 정리하면 x + 11 = 4x − 1 이고, 이항하면 −3x = −12 이므로 x = 4 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.paren-minus-distribute"
-          ]
-        },
-        {
-          "id": "m1-u04-t05-07",
-          "level": "H",
-          "stem_src": "방정식 $2(3x + a) = 5(x - 1) + 2$의 해가 $x = 3$일 때, 상수 $a$의 값을 구하세요.",
-          "stem_print": "방정식 2(3x + a) = 5(x − 1) + 2 의 해가 x = 3 일 때, 상수 a 의 값을 구하시오.",
-          "answer_atoms": [
-            "$a = -3$"
-          ],
-          "answer_print": "a = −3",
-          "answer_accept": [
-            "-3",
-            "a = -3"
-          ],
-          "answer_unit": null,
-          "answer_format": "a = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "x = 3 을 대입하면 a 에 대한 방정식이 만들어져요.",
-          "solution": "x = 3 을 대입하면 2(9 + a) = 5 × 2 + 2 = 12 예요. 전개하면 18 + 2a = 12 이므로 2a = −6 이고 a = −3 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.solution-no-check"
-          ]
-        },
-        {
-          "id": "m1-u04-t05-08",
-          "level": "H",
-          "stem_src": "$a(x + 2) = 3x + 6$이 $x$에 관한 항등식이 되도록 하는 $a$의 값을 구하세요.",
-          "stem_print": "a(x + 2) = 3x + 6 이 x 에 대한 항등식이 되도록 하는 상수 a 의 값을 구하시오.",
-          "answer_atoms": [
-            "$a = 3$"
-          ],
-          "answer_print": "a = 3",
-          "answer_accept": [
-            "3",
-            "a = 3"
-          ],
-          "answer_unit": null,
-          "answer_format": "a = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "우변을 공통인수로 묶으면 좌변과 모양을 비교하기 쉬워져요.",
-          "solution": "우변은 3x + 6 = 3(x + 2) 로 묶을 수 있어요. 양변이 모든 x 에서 같으려면 a = 3 이어야 해요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.identity-coeff-compare"
-          ]
-        },
-        {
-          "id": "m1-u04-t05-09",
-          "level": "H",
-          "stem_src": "$3(x - 2) - 2(x + 1) = a(x - 1) + b$가 $x$에 관한 항등식일 때, $a + b$의 값을 구하세요.",
-          "stem_print": "3(x − 2) − 2(x + 1) = a(x − 1) + b 가 x 에 대한 항등식일 때, a + b 의 값을 구하시오.",
-          "answer_atoms": [
-            "$a+b = 1 + (-7) = -6$"
-          ],
-          "answer_print": "a + b = 1 + (−7) = −6",
-          "answer_accept": [
-            "-6",
-            "a + b = -6",
-            "a = 1, b = -7"
-          ],
-          "answer_unit": null,
-          "answer_format": "a + b 의 값을 수로 (단위 없음)",
-          "figure": null,
-          "hint": "좌변을 전개해서 x 의 계수와 상수항을 먼저 정리한 뒤 우변과 비교해 보세요.",
-          "solution": "좌변을 전개하면 3x − 6 − 2x − 2 = x − 8 이고, 우변을 전개하면 ax − a + b 예요. x 의 계수를 비교하면 a = 1 이고, 상수항을 비교하면 −a + b = −8 이므로 b = −7 이에요. 따라서 a + b = 1 + (−7) = −6 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.paren-minus-distribute",
-            "eq.identity-coeff-compare"
-          ]
+          "misconceptions": []
         }
       ]
     },
     {
       "no": 6,
-      "title": "복잡한 방정식 (괄호 + 분수)",
-      "principle": "괄호 풀기 → 분수·소수 없애기 → 이항 → 동류항 정리 순서로 풀어요. 분자가 여러 항인 분수에 수를 곱할 때는 분자를 괄호로 묶어야 뒤 항의 부호를 잃지 않아요.",
+      "title": "일차방정식의 활용 (수·나이·도형)",
+      "principle": "무엇을 x로 놓을지 먼저 정하고, 문제가 진짜 묻는 값이 x와 같은지 마지막에 확인해요.",
       "problems": [
         {
           "id": "m1-u04-t06-01",
-          "level": "L",
-          "stem_src": "$3x - 2 = x + 8$을 풀어라.",
-          "stem_print": "방정식 3x − 2 = x + 8 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 5$"
-          ],
-          "answer_print": "x = 5",
-          "answer_accept": [
-            "5",
-            "x = 5"
-          ],
+          "level": "M",
+          "stem_src": "연속하는 두 자연수의 합이 25일 때, 두 수 중 작은 수는?",
+          "stem_print": "연속하는 두 자연수의 합이 25일 때, 두 수 중 작은 수를 구하시오.",
+          "answer_atoms": ["12"],
+          "answer_print": "12",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "x 항은 좌변으로, 숫자는 우변으로 이항해 보세요.",
-          "solution": "이항하면 3x − x = 8 + 2 이므로 2x = 10, 즉 x = 5 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.transpose-sign"
-          ]
+          "hint": "작은 수를 x로 놓으면 큰 수는 x+1이에요.",
+          "solution": "x+(x+1)=25, x=12예요.",
+          "work_space": "md",
+          "misconceptions": ["eq.word-no-variable"]
         },
         {
           "id": "m1-u04-t06-02",
-          "level": "L",
-          "stem_src": "$4(x - 1) = 2(x + 3)$를 풀어라.",
-          "stem_print": "방정식 4(x − 1) = 2(x + 3) 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 5$"
-          ],
-          "answer_print": "x = 5",
-          "answer_accept": [
-            "5",
-            "x = 5"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "level": "M",
+          "stem_src": "현재 아버지 나이는 딸 나이의 3배이고, 두 사람 나이의 합이 52살일 때 딸의 나이는?",
+          "stem_print": "현재 아버지 나이는 딸 나이의 3배이고, 두 사람 나이의 합이 52살일 때 딸의 나이를 구하시오.",
+          "answer_atoms": ["13"],
+          "answer_print": "13",
+          "answer_accept": [],
+          "answer_unit": "살",
+          "answer_format": "수로",
           "figure": null,
-          "hint": "양쪽 괄호를 먼저 전개해 보세요.",
-          "solution": "괄호를 풀면 4x − 4 = 2x + 6 이에요. 이항하면 2x = 10 이므로 x = 5 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.paren-partial-distribute"
-          ]
+          "hint": "딸의 나이를 x로 놓으면 아버지 나이는 3x예요.",
+          "solution": "x+3x=52, x=13이에요.",
+          "work_space": "md",
+          "misconceptions": []
         },
         {
           "id": "m1-u04-t06-03",
-          "level": "L",
-          "stem_src": "$\\dfrac{x+2}{3} = 2$를 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>x + 2</b><i>3</i></span> = 2 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 4$"
-          ],
-          "answer_print": "x = 4",
-          "answer_accept": [
-            "4",
-            "x = 4"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "양변에 3 을 곱해서 분수를 없애 보세요. 분자 전체가 괄호로 묶여 있다고 생각해요.",
-          "solution": "양변에 3 을 곱하면 x + 2 = 6 이므로 x = 4 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "eq.frac-numerator-paren"
-          ]
-        },
-        {
-          "id": "m1-u04-t06-04",
           "level": "M",
-          "stem_src": "$\\dfrac{2x-1}{3} = \\dfrac{x+2}{2}$를 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>2x − 1</b><i>3</i></span> = <span class=\"frac\"><b>x + 2</b><i>2</i></span> 를 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 8$"
-          ],
-          "answer_print": "x = 8",
-          "answer_accept": [
-            "8",
-            "x = 8"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
+          "stem_src": "세로가 x cm인 직사각형의 가로가 세로보다 4cm 길고, 둘레가 28cm일 때 가로의 길이는?",
+          "stem_print": "세로가 x cm인 직사각형의 가로가 세로보다 4cm 길고, 둘레가 28cm일 때 가로의 길이를 구하시오.",
+          "answer_atoms": ["9"],
+          "answer_print": "9",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "수로",
           "figure": null,
-          "hint": "분모 3 과 2 의 최소공배수는 6 이에요. 분자에는 괄호를 씌워 곱해요.",
-          "solution": "양변에 6 을 곱하면 2(2x − 1) = 3(x + 2) 예요. 전개하면 4x − 2 = 3x + 6 이므로 x = 8 이에요.",
+          "hint": "둘레 = 2×(가로+세로). 세로 x를 먼저 구한 뒤 가로를 계산해요.",
+          "solution": "2(x+x+4)=28, x=5, 가로=x+4=9예요.",
           "work_space": "md",
-          "misconceptions": [
-            "eq.frac-numerator-paren"
-          ]
-        },
-        {
-          "id": "m1-u04-t06-05",
-          "level": "M",
-          "stem_src": "$\\dfrac{2(x-3)}{5} = \\dfrac{x}{2} - 1$을 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>2(x − 3)</b><i>5</i></span> = <span class=\"frac\"><b>x</b><i>2</i></span> − 1 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = -2$"
-          ],
-          "answer_print": "x = −2",
-          "answer_accept": [
-            "-2",
-            "x = -2"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "분모 5 와 2 의 최소공배수는 10 이에요. 우변의 −1 에도 빠짐없이 곱해요.",
-          "solution": "양변에 10 을 곱하면 4(x − 3) = 5x − 10 이에요. 전개하면 4x − 12 = 5x − 10 이므로 −x = 2, 즉 x = −2 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.frac-numerator-paren",
-            "eq.multiply-partial"
-          ]
-        },
-        {
-          "id": "m1-u04-t06-06",
-          "level": "M",
-          "stem_src": "$\\dfrac{x}{6} + 1 = \\dfrac{x}{4} - 1$을 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>x</b><i>6</i></span> + 1 = <span class=\"frac\"><b>x</b><i>4</i></span> − 1 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 24$"
-          ],
-          "answer_print": "x = 24",
-          "answer_accept": [
-            "24",
-            "x = 24"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "분모 6 과 4 의 최소공배수는 12 예요. 양쪽의 상수항에도 곱해야 해요.",
-          "solution": "양변에 12 를 곱하면 2x + 12 = 3x − 12 예요. 이항하면 −x = −24 이므로 x = 24 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.multiply-partial"
-          ]
-        },
-        {
-          "id": "m1-u04-t06-07",
-          "level": "H",
-          "stem_src": "$\\dfrac{x-1}{2} - \\dfrac{x+2}{3} = 1$을 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>x − 1</b><i>2</i></span> − <span class=\"frac\"><b>x + 2</b><i>3</i></span> = 1 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 13$"
-          ],
-          "answer_print": "x = 13",
-          "answer_accept": [
-            "13",
-            "x = 13"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "양변에 6 을 곱하고, 빼는 분수의 분자에는 괄호를 꼭 씌워요.",
-          "solution": "양변에 6 을 곱하면 3(x − 1) − 2(x + 2) = 6 이에요. 전개하면 3x − 3 − 2x − 4 = 6, 즉 x − 7 = 6 이므로 x = 13 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.frac-numerator-paren",
-            "eq.paren-minus-distribute"
-          ]
-        },
-        {
-          "id": "m1-u04-t06-08",
-          "level": "H",
-          "stem_src": "$\\dfrac{3x+2}{4} - \\dfrac{x-1}{6} = \\dfrac{x+3}{2}$를 풀어라.",
-          "stem_print": "방정식 <span class=\"frac\"><b>3x + 2</b><i>4</i></span> − <span class=\"frac\"><b>x − 1</b><i>6</i></span> = <span class=\"frac\"><b>x + 3</b><i>2</i></span> 을 풀어 x 의 값을 구하시오.",
-          "answer_atoms": [
-            "$x = 10$"
-          ],
-          "answer_print": "x = 10",
-          "answer_accept": [
-            "10",
-            "x = 10"
-          ],
-          "answer_unit": null,
-          "answer_format": "x = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "분모 4, 6, 2 의 최소공배수는 12 예요. 빼는 분수의 부호에 주의해요.",
-          "solution": "양변에 12 를 곱하면 3(3x + 2) − 2(x − 1) = 6(x + 3) 이에요. 전개하면 9x + 6 − 2x + 2 = 6x + 18, 즉 7x + 8 = 6x + 18 이므로 x = 10 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.frac-numerator-paren",
-            "eq.paren-minus-distribute"
-          ]
-        },
-        {
-          "id": "m1-u04-t06-09",
-          "level": "H",
-          "stem_src": "방정식 $\\dfrac{2x+a}{3} = \\dfrac{x}{2} + 1$의 해가 $x = 6$일 때, 상수 $a$의 값을 구하세요.",
-          "stem_print": "방정식 <span class=\"frac\"><b>2x + a</b><i>3</i></span> = <span class=\"frac\"><b>x</b><i>2</i></span> + 1 의 해가 x = 6 일 때, 상수 a 의 값을 구하시오.",
-          "answer_atoms": [
-            "$a = 0$"
-          ],
-          "answer_print": "a = 0",
-          "answer_accept": [
-            "0",
-            "a = 0"
-          ],
-          "answer_unit": null,
-          "answer_format": "a = 꼴로 (단위 없음)",
-          "figure": null,
-          "hint": "x = 6 을 대입하면 a 에 대한 방정식이 나와요.",
-          "solution": "x = 6 을 대입하면 <span class=\"frac\"><b>12 + a</b><i>3</i></span> = 3 + 1 = 4 예요. 양변에 3 을 곱하면 12 + a = 12 이므로 a = 0 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.solution-no-check"
-          ]
+          "misconceptions": ["eq.word-answer-not-asked"]
         }
       ]
     },
     {
       "no": 7,
-      "title": "일차방정식의 활용",
-      "principle": "먼저 무엇을 x 로 놓을지 한 줄로 적어요. 그다음 문제의 관계를 등식으로 옮기고 풀어요. 마지막에는 구한 x 가 문제에서 묻는 값인지, 조건에 맞는지 검토해요.",
+      "title": "일차방정식의 활용 (거리·속력·시간·농도)",
+      "principle": "거리=속력×시간, 소금의 양=농도×소금물의 양÷100. 단위를 통일해요.",
       "problems": [
         {
           "id": "m1-u04-t07-01",
-          "level": "L",
-          "stem_src": "어떤 수의 3배보다 7이 큰 수가 31일 때, 어떤 수를 구하세요.",
-          "stem_print": "어떤 수의 3 배보다 7 만큼 큰 수가 31 입니다. 어떤 수를 구하시오.",
-          "answer_atoms": [
-            "8"
-          ],
-          "answer_print": "8",
-          "answer_accept": [
-            "8",
-            "x = 8"
-          ],
-          "answer_unit": null,
-          "answer_format": "수로 (단위 없음)",
+          "level": "M",
+          "stem_src": "시속 4km로 걷다가 시속 6km로 뛰어서 총 5km를 1시간 만에 갔을 때, 걸은 거리는?",
+          "stem_print": "시속 4km로 걷다가 시속 6km로 뛰어서 총 5km를 1시간 만에 갔을 때, 걸은 거리를 구하시오.",
+          "answer_atoms": ["2"],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": "km",
+          "answer_format": "수로",
           "figure": null,
-          "hint": "어떤 수를 x 로 놓으면 '3 배보다 7 만큼 큰 수' 는 3x + 7 로 나타낼 수 있어요.",
-          "solution": "어떤 수를 x 라 하면 3x + 7 = 31 이에요. 7 을 이항하면 3x = 24 이므로 x = 8 이에요. 검토하면 3 × 8 + 7 = 31 로 맞아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.word-no-variable"
-          ]
+          "hint": "걸은 거리를 x km로 놓고, 시간 = 거리÷속력으로 식을 세워요.",
+          "solution": "x/4+(5−x)/6=1, x=2예요.",
+          "work_space": "lg",
+          "misconceptions": []
         },
         {
           "id": "m1-u04-t07-02",
-          "level": "L",
-          "stem_src": "연속하는 세 자연수의 합이 36일 때, 가운데 수를 구하세요.",
-          "stem_print": "연속하는 세 자연수의 합이 36 일 때, 가운데 수를 구하시오.",
-          "answer_atoms": [
-            "12"
-          ],
-          "answer_print": "12",
-          "answer_accept": [
-            "12",
-            "x = 12"
-          ],
-          "answer_unit": null,
-          "answer_format": "수로 (단위 없음)",
+          "level": "M",
+          "stem_src": "농도 8%인 소금물 250g에 물을 더 넣어 농도를 5%로 만들려면 물을 몇 g 더 넣어야 할까요?",
+          "stem_print": "농도 8%인 소금물 250g에 물을 더 넣어 농도를 5%로 만들려면 물을 몇 g 더 넣어야 하는지 구하시오.",
+          "answer_atoms": ["150"],
+          "answer_print": "150",
+          "answer_accept": [],
+          "answer_unit": "g",
+          "answer_format": "수로",
           "figure": null,
-          "hint": "가운데 수를 x 로 놓으면 세 수는 x − 1, x, x + 1 이 돼요.",
-          "solution": "가운데 수를 x 라 하면 (x − 1) + x + (x + 1) = 36 이에요. 정리하면 3x = 36 이므로 x = 12 예요. 검토하면 11 + 12 + 13 = 36 으로 맞아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "eq.word-no-variable"
-          ]
+          "hint": "물을 더 넣으면 소금 양은 그대로, 전체 양만 늘어나요.",
+          "solution": "20/(250+x)=0.05, x=150이에요.",
+          "work_space": "lg",
+          "misconceptions": ["eq.word-mixture-total"]
         },
         {
           "id": "m1-u04-t07-03",
-          "level": "L",
-          "stem_src": "한 개에 500원인 과자와 한 개에 300원인 사탕을 합쳐 10개 사고 4,200원을 냈습니다. 과자는 몇 개 샀나요?",
-          "stem_print": "한 개에 500 원인 과자와 한 개에 300 원인 사탕을 합하여 10 개 사고 4200 원을 냈습니다. 과자는 몇 개 샀는지 구하시오.",
-          "answer_atoms": [
-            "6개"
-          ],
-          "answer_print": "6",
-          "answer_accept": [
-            "6",
-            "6개"
-          ],
-          "answer_unit": "개",
-          "answer_format": "개수를 수로 (단위 개)",
-          "figure": null,
-          "hint": "과자를 x 개 사면 사탕은 (10 − x) 개예요. 금액의 합으로 식을 세워 보세요.",
-          "solution": "과자를 x 개라 하면 500x + 300(10 − x) = 4200 이에요. 전개하면 500x + 3000 − 300x = 4200, 즉 200x = 1200 이므로 x = 6 이에요. 검토하면 500 × 6 + 300 × 4 = 4200 으로 맞아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.word-no-variable",
-            "eq.word-answer-not-asked"
-          ]
-        },
-        {
-          "id": "m1-u04-t07-04",
           "level": "M",
-          "stem_src": "현재 아버지의 나이는 44세이고, 딸의 나이는 16세입니다. 몇 년 후에 아버지의 나이가 딸의 나이의 2배가 될까요?",
-          "stem_print": "현재 아버지의 나이는 44 세, 딸의 나이는 16 세입니다. 몇 년 후에 아버지의 나이가 딸의 나이의 2 배가 되는지 구하시오.",
-          "answer_atoms": [
-            "12년 후"
-          ],
-          "answer_print": "12",
-          "answer_accept": [
-            "12",
-            "12년 후"
-          ],
-          "answer_unit": "년 후",
-          "answer_format": "몇 년 후인지 수로 (단위 년)",
-          "figure": null,
-          "hint": "x 년 후 아버지의 나이는 44 + x, 딸의 나이는 16 + x 예요.",
-          "solution": "x 년 후라 하면 44 + x = 2(16 + x) 예요. 전개하면 44 + x = 32 + 2x 이므로 −x = −12, 즉 x = 12 예요. 검토하면 12 년 후 아버지는 56 세, 딸은 28 세로 2 배가 맞아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.word-answer-not-asked"
-          ]
-        },
-        {
-          "id": "m1-u04-t07-05",
-          "level": "M",
-          "stem_src": "500원짜리 동전과 100원짜리 동전이 합쳐서 15개이고, 총 금액은 4,300원입니다. 500원짜리 동전은 몇 개인가요?",
-          "stem_print": "500 원짜리 동전과 100 원짜리 동전이 합하여 15 개이고 금액의 합은 4300 원입니다. 500 원짜리 동전은 몇 개인지 구하시오.",
-          "answer_atoms": [
-            "7개"
-          ],
-          "answer_print": "7",
-          "answer_accept": [
-            "7",
-            "7개"
-          ],
-          "answer_unit": "개",
-          "answer_format": "개수를 수로 (단위 개)",
-          "figure": null,
-          "hint": "500 원짜리를 x 개라 하면 100 원짜리는 (15 − x) 개예요.",
-          "solution": "500x + 100(15 − x) = 4300 이에요. 전개하면 500x + 1500 − 100x = 4300, 즉 400x = 2800 이므로 x = 7 이에요. 검토하면 500 × 7 + 100 × 8 = 4300 으로 맞아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.word-no-variable"
-          ]
-        },
-        {
-          "id": "m1-u04-t07-06",
-          "level": "M",
-          "stem_src": "갑은 A지점에서 출발해 시속 60km로, 을은 A지점에서 1시간 먼저 출발해 시속 40km로 같은 방향으로 이동합니다. 갑이 출발한 지 몇 시간 후에 갑이 을을 따라잡나요?",
-          "stem_print": "갑은 A 지점에서 시속 60 km 로 출발하고, 을은 같은 지점에서 1 시간 먼저 출발하여 시속 40 km 로 같은 방향으로 갑니다. 갑이 출발한 지 몇 시간 후에 을을 따라잡는지 구하시오.",
-          "answer_atoms": [
-            "2시간 후"
-          ],
+          "stem_src": "A는 시속 60km, B는 시속 40km로 같은 지점에서 반대 방향으로 동시에 출발했을 때, 200km 떨어지는 데 걸리는 시간은?",
+          "stem_print": "A는 시속 60km, B는 시속 40km로 같은 지점에서 반대 방향으로 동시에 출발했을 때, 200km 떨어지는 데 걸리는 시간을 구하시오.",
+          "answer_atoms": ["2"],
           "answer_print": "2",
-          "answer_accept": [
-            "2",
-            "2시간 후"
-          ],
-          "answer_unit": "시간 후",
-          "answer_format": "몇 시간 후인지 수로 (단위 시간)",
+          "answer_accept": [],
+          "answer_unit": "시간",
+          "answer_format": "수로",
           "figure": null,
-          "hint": "갑이 출발한 지 x 시간 후라면 을은 (x + 1) 시간 동안 갔어요. 두 사람이 간 거리가 같아지는 순간을 찾아요.",
-          "solution": "갑이 간 거리와 을이 간 거리가 같으므로 60x = 40(x + 1) 이에요. 전개하면 60x = 40x + 40 이므로 20x = 40, 즉 x = 2 예요. 검토하면 갑은 120 km, 을은 120 km 로 같아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.word-answer-not-asked"
-          ]
-        },
-        {
-          "id": "m1-u04-t07-07",
-          "level": "H",
-          "stem_src": "12%의 소금물 300g에 소금을 더 녹여 20%의 소금물을 만들려고 합니다. 소금을 몇 g 더 넣어야 하나요?",
-          "stem_print": "12 % 의 소금물 300 g 에 소금을 더 넣어 20 % 의 소금물을 만들려고 합니다. 소금을 몇 g 더 넣어야 하는지 구하시오.",
-          "answer_atoms": [
-            "30g"
-          ],
-          "answer_print": "30",
-          "answer_accept": [
-            "30",
-            "30g"
-          ],
-          "answer_unit": "g",
-          "answer_format": "무게를 수로 (단위 g)",
-          "figure": null,
-          "hint": "처음 소금의 양은 300 의 12 % 예요. 소금을 넣으면 소금물 전체의 양도 함께 늘어나요.",
-          "solution": "처음 소금의 양은 300 × 0.12 = 36 g 이에요. 소금을 x g 더 넣으면 소금은 (36 + x) g, 소금물은 (300 + x) g 이 되므로 <span class=\"frac\"><b>36 + x</b><i>300 + x</i></span> = 0.2 예요. 정리하면 36 + x = 60 + 0.2x 이므로 0.8x = 24, 즉 x = 30 이에요. 검토하면 66 ÷ 330 = 0.2 로 20 % 가 맞아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.word-mixture-total"
-          ]
-        },
-        {
-          "id": "m1-u04-t07-08",
-          "level": "H",
-          "stem_src": "8%의 소금물 A와 14%의 소금물 B를 섞어서 12%의 소금물 300g을 만들려고 합니다. 소금물 A는 몇 g 필요한가요?",
-          "stem_print": "8 % 의 소금물 A 와 14 % 의 소금물 B 를 섞어 12 % 의 소금물 300 g 을 만들려고 합니다. 소금물 A 는 몇 g 필요한지 구하시오.",
-          "answer_atoms": [
-            "100g"
-          ],
-          "answer_print": "100",
-          "answer_accept": [
-            "100",
-            "100g"
-          ],
-          "answer_unit": "g",
-          "answer_format": "무게를 수로 (단위 g)",
-          "figure": null,
-          "hint": "A 를 x g 쓰면 B 는 (300 − x) g 이에요. 섞기 전 두 소금의 양의 합과 섞은 뒤 소금의 양이 같아요.",
-          "solution": "0.08x + 0.14(300 − x) = 0.12 × 300 = 36 이에요. 양변에 100 을 곱하면 8x + 14(300 − x) = 3600 이고, 전개하면 8x + 4200 − 14x = 3600, 즉 −6x = −600 이므로 x = 100 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.word-mixture-total"
-          ]
-        },
-        {
-          "id": "m1-u04-t07-09",
-          "level": "H",
-          "stem_src": "둘레가 60cm인 직사각형이 있습니다. 가로의 길이가 세로의 길이보다 6cm 길다면, 가로와 세로는 각각 몇 cm인가요?",
-          "stem_print": "둘레의 길이가 60 cm 인 직사각형이 있습니다. 가로의 길이가 세로의 길이보다 6 cm 더 길 때, 가로와 세로의 길이를 각각 구하시오.",
-          "answer_atoms": [
-            "가로 18cm, 세로 12cm"
-          ],
-          "answer_print": "가로 18 cm, 세로 12 cm",
-          "answer_accept": [
-            "가로 18cm 세로 12cm",
-            "18cm, 12cm"
-          ],
-          "answer_unit": null,
-          "answer_format": "가로와 세로를 각각 (단위 cm)",
-          "figure": null,
-          "hint": "세로를 x cm 라 하면 가로는 (x + 6) cm 예요. 둘레는 (가로 + 세로) 를 2 배 한 값이에요.",
-          "solution": "세로를 x cm 라 하면 2 × {(x + 6) + x} = 60 이에요. 정리하면 4x + 12 = 60 이므로 4x = 48, 즉 x = 12 예요. 따라서 세로는 12 cm, 가로는 18 cm 예요. 검토하면 둘레는 2 × (18 + 12) = 60 cm 이고 가로와 세로의 차는 6 cm 로 맞아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "eq.word-answer-not-asked"
-          ]
+          "hint": "두 사람이 함께 벌리는 거리 = (두 속력의 합)×시간이에요.",
+          "solution": "(60+40)x=200, x=2예요.",
+          "work_space": "md",
+          "misconceptions": []
         }
       ]
     }

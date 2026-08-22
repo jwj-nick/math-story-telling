@@ -1,0 +1,15 @@
+{
+  "id": "m1-u04-c",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 4,
+  "unit_name": "일차방정식",
+  "title": "일차방정식의 활용(거리·속력·시간·농도)",
+  "subtitle": "거리·속력·시간·농도 문제",
+  "bank": "math1/u04/practice.json",
+  "misconceptions": "misconceptions/math1_u04.json",
+  "types": [7],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

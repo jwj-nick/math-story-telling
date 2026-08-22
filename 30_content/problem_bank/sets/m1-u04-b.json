@@ -1,0 +1,15 @@
+{
+  "id": "m1-u04-b",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 4,
+  "unit_name": "일차방정식",
+  "title": "괄호·분수·소수 계수·미정계수",
+  "subtitle": "괄호·분수·소수 계수 방정식 · 해의 조건으로 미정계수 구하기 · 활용(수·나이·도형)",
+  "bank": "math1/u04/practice.json",
+  "misconceptions": "misconceptions/math1_u04.json",
+  "types": [4, 5, 6],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

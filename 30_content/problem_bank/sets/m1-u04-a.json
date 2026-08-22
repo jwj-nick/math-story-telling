@@ -1,0 +1,15 @@
+{
+  "id": "m1-u04-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 4,
+  "unit_name": "일차방정식",
+  "title": "방정식·항등식 판별·등식의 성질",
+  "subtitle": "방정식/항등식 판별 · 등식의 성질 활용 · 기본 일차방정식 풀기",
+  "bank": "math1/u04/practice.json",
+  "misconceptions": "misconceptions/math1_u04.json",
+  "types": [1, 2, 3],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
