@@ -1,0 +1,22 @@
+{
+  "id": "m1-u02-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 2,
+  "unit_name": "정수와 유리수",
+  "title": "수의 분류·수직선·절댓값",
+  "subtitle": "수의 분류 · 수직선과 좌표 · 절댓값",
+  "bank": "math1/u02/practice.json",
+  "misconceptions": "misconceptions/math1_u02.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}
