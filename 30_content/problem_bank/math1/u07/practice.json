@@ -9,7 +9,7 @@
     "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. answer_atoms 는 원본 script 의 prob()/P()/pick() 값 그대로. 2지선다 9문항은 지면에서 단답형으로 재작성했다. 전부 기초~보통 수준(L/M)만 포함 — 심화(H)는 Nick 요청으로 이번 회차에서 제외."
+    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. answer_atoms 는 원본 script 의 prob()/P()/pick() 값 그대로. 2지선다 9문항은 지면에서 단답형으로 재작성했다. 기초~보통(L/M) 21문항 + 2026-08-22 추가 심화(H) 7문항(유형당 1개, 다단계·개념결합형) = 28문항."
   },
   "types": [
     {
@@ -64,6 +64,22 @@
           "solution": "선분은 방향이 없는 도형이라 AB = BA예요. 따라서 8cm예요.",
           "work_space": "sm",
           "misconceptions": ["fig.notation-confuse"]
+        },
+        {
+          "id": "m1-u07-t01-04",
+          "level": "H",
+          "stem_src": "직선 l 위에 서로 다른 네 점 A, B, C, D가 이 순서대로 있어요. 이 네 점 중 두 점을 골라 만들 수 있는 서로 다른 반직선은 모두 몇 개인가요?",
+          "stem_print": "직선 l 위에 서로 다른 네 점 A, B, C, D가 이 순서대로 있다. 이 네 점 중 두 점을 골라 만들 수 있는 서로 다른 반직선의 개수를 구하시오.",
+          "answer_atoms": ["6"],
+          "answer_print": "6",
+          "answer_accept": ["6개"],
+          "answer_unit": "개",
+          "answer_format": "개수를 수로",
+          "figure": null,
+          "hint": "반직선은 시작점과 뻗어가는 방향으로 정해져요. 같은 방향이면 다른 점을 지나도 늘 같은 반직선이에요.",
+          "solution": "A에서는 오른쪽으로 뻗는 반직선 1개(AB=AC=AD와 같은 반직선), B에서는 왼쪽 1개·오른쪽 1개로 2개, C에서도 왼쪽 1개·오른쪽 1개로 2개, D에서는 왼쪽 1개예요. 모두 더하면 1+2+2+1=6개예요.",
+          "work_space": "lg",
+          "misconceptions": ["fig.count-lines"]
         }
       ]
     },
@@ -119,6 +135,22 @@
           "solution": "AB = AC + CB = 4 + 9 = 13cm예요.",
           "work_space": "sm",
           "misconceptions": ["fig.between-add"]
+        },
+        {
+          "id": "m1-u07-t02-04",
+          "level": "H",
+          "stem_src": "점 M은 선분 AB의 중점, 점 N은 선분 MB의 중점이에요. AB = 32cm이고, 선분 AN 위의 점 C에 대해 AC = 6cm일 때, 선분 CN의 길이는 몇 cm인가요?",
+          "stem_print": "점 M은 선분 AB의 중점이고, 점 N은 선분 MB의 중점이다. AB = 32cm이고, 선분 AN 위의 점 C에 대하여 AC = 6cm일 때, 선분 CN의 길이를 구하시오.",
+          "answer_atoms": ["18"],
+          "answer_print": "18",
+          "answer_accept": ["18cm"],
+          "answer_unit": "cm",
+          "answer_format": "길이를 cm 단위 수로",
+          "figure": null,
+          "hint": "AM부터 구하고, AN까지 차례로 구해봐요.",
+          "solution": "AM = MB = 32÷2 = 16cm, N은 MB의 중점이니 MN = NB = 16÷2 = 8cm. AN = AM + MN = 16+8 = 24cm. C는 AN 위에 있고 AC = 6cm이니 CN = AN − AC = 24−6 = 18cm예요.",
+          "work_space": "lg",
+          "misconceptions": ["fig.midpoint-half", "fig.between-add"]
         }
       ]
     },
@@ -174,6 +206,22 @@
           "solution": "180° − (50° + 60°) = 180° − 110° = 70°예요.",
           "work_space": "md",
           "misconceptions": ["ang.split-add", "ang.type-range"]
+        },
+        {
+          "id": "m1-u07-t03-04",
+          "level": "H",
+          "stem_src": "한 점 O에서 나온 네 반직선 OA, OB, OC, OD가 시계 방향 순서로 놓여 점 O 둘레를 한 바퀴 이뤄요. ∠AOB=100°, ∠BOC=95°, ∠COD=80°일 때, ∠DOA의 크기는 몇 도인가요?",
+          "stem_print": "한 점 O에서 나온 네 반직선 OA, OB, OC, OD가 시계 방향 순서로 놓여 점 O 둘레를 한 바퀴 이룬다. ∠AOB=100°, ∠BOC=95°, ∠COD=80°일 때, ∠DOA의 크기를 구하시오.",
+          "answer_atoms": ["85"],
+          "answer_print": "85",
+          "answer_accept": [],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "한 점 둘레를 도는 각을 모두 더하면 360°예요.",
+          "solution": "네 각의 합은 360°이므로 ∠DOA = 360−(100+95+80) = 360−275 = 85°예요.",
+          "work_space": "md",
+          "misconceptions": ["ang.split-add"]
         }
       ]
     },
@@ -228,6 +276,22 @@
           "hint": "이 단원에서 배운 이름이에요.",
           "solution": "두 직선이 만나 서로 마주 보는 두 각을 맞꼭지각이라 하고, 이 둘은 항상 크기가 같아요.",
           "work_space": "sm",
+          "misconceptions": ["ang.vertical-vs-adjacent"]
+        },
+        {
+          "id": "m1-u07-t04-04",
+          "level": "H",
+          "stem_src": "두 직선이 한 점에서 만나 생긴 네 각 중, 이웃한 두 각의 크기의 비가 2:3이에요. 이 중 더 큰 각의 맞꼭지각의 크기는 몇 도인가요?",
+          "stem_print": "두 직선이 한 점에서 만나 생긴 네 각 중, 이웃한 두 각의 크기의 비가 2:3이다. 이 중 더 큰 각의 맞꼭지각의 크기를 구하시오.",
+          "answer_atoms": ["108"],
+          "answer_print": "108",
+          "answer_accept": [],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "이웃한 두 각의 합은 180°예요. 비를 이용해 두 각을 먼저 구해봐요.",
+          "solution": "이웃한 두 각의 합은 180°이고 비가 2:3이므로 180÷5=36, 두 각은 72°, 108°예요. 더 큰 각 108°의 맞꼭지각은 크기가 같으므로 108°예요.",
+          "work_space": "md",
           "misconceptions": ["ang.vertical-vs-adjacent"]
         }
       ]
@@ -284,6 +348,22 @@
           "solution": "동위각이라는 이름은 두 직선이 평행하지 않아도 붙어요. 다만 크기가 같아지는 건 평행할 때뿐이에요.",
           "work_space": "md",
           "misconceptions": ["par.corresponding-vs-alternate"]
+        },
+        {
+          "id": "m1-u07-t05-04",
+          "level": "H",
+          "stem_src": "두 직선 l, m이 서로 평행해요. l과 m 사이에 있는 점 P에서 꺾인 두 선분을 그었더니 l과 이루는 각이 38°, m과 이루는 각이 40°가 됐어요. 꺾인 점 P에서 두 선분이 이루는 각의 크기는 몇 도인가요?",
+          "stem_print": "두 직선 l, m이 서로 평행하다. l과 m 사이에 있는 점 P에서 꺾인 두 선분을 그었더니 l과 이루는 각이 38°, m과 이루는 각이 40°가 되었다. 꺾인 점 P에서 두 선분이 이루는 각의 크기를 구하시오.",
+          "answer_atoms": ["78"],
+          "answer_print": "78",
+          "answer_accept": [],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "점 P를 지나면서 l, m과 나란한 보조선을 그어봐요.",
+          "solution": "점 P를 지나며 l, m과 나란한 보조선을 그으면 엇각의 성질로 꺾인 각이 두 조각(38°, 40°)으로 나뉘어요. 그래서 38+40=78°예요.",
+          "work_space": "lg",
+          "misconceptions": ["par.auxiliary-line"]
         }
       ]
     },
@@ -338,6 +418,22 @@
           "hint": "한 점에서 만남·평행·일치를 세어봐요.",
           "solution": "한 점에서 만남, 평행, 일치 — 모두 3가지예요.",
           "work_space": "sm",
+          "misconceptions": ["pos.plane-relations"]
+        },
+        {
+          "id": "m1-u07-t06-04",
+          "level": "H",
+          "stem_src": "평면 위에 서로 다른 직선 5개가 있어요. 어느 두 직선도 평행하지 않고, 어느 세 직선도 한 점에서 만나지 않아요. 이 다섯 직선으로 생기는 교점은 모두 몇 개인가요?",
+          "stem_print": "평면 위에 서로 다른 직선 5개가 있다. 어느 두 직선도 평행하지 않고, 어느 세 직선도 한 점에서 만나지 않는다. 이 다섯 직선으로 생기는 교점은 모두 몇 개인지 구하시오.",
+          "answer_atoms": ["10"],
+          "answer_print": "10",
+          "answer_accept": ["10개"],
+          "answer_unit": "개",
+          "answer_format": "개수를 수로",
+          "figure": null,
+          "hint": "직선을 두 개씩 짝지을 때마다 교점이 하나씩 생겨요.",
+          "solution": "서로 다른 두 직선은 평행하지 않으면 반드시 한 점에서 만나요. 5개 중 2개를 고르는 방법의 수만큼 교점이 생기므로 5×4÷2=10개예요.",
+          "work_space": "lg",
           "misconceptions": ["pos.plane-relations"]
         }
       ]
@@ -394,6 +490,22 @@
           "solution": "전체 11개 중 평행 3개, 만나는 것 4개를 빼면 11 − 3 − 4 = 4개예요.",
           "work_space": "lg",
           "misconceptions": ["pos.box-count", "pos.skew-position"]
+        },
+        {
+          "id": "m1-u07-t07-04",
+          "level": "H",
+          "stem_src": "직육면체에서 한 모서리와 평행한 면은 몇 개인가요?",
+          "stem_print": "직육면체에서 한 모서리와 평행한 면은 몇 개인지 구하시오.",
+          "answer_atoms": ["2"],
+          "answer_print": "2",
+          "answer_accept": ["2개"],
+          "answer_unit": "개",
+          "answer_format": "개수를 수로",
+          "figure": null,
+          "hint": "그 모서리를 포함하는 면, 만나는 면, 평행한 면으로 나눠서 6개 면을 분류해봐요.",
+          "solution": "직육면체의 면은 6개예요. 그중 한 모서리를 포함하는 면은 2개, 그 모서리와 한 점에서 만나는 면은 2개, 남는 2개가 그 모서리와 평행한 면이에요.",
+          "work_space": "md",
+          "misconceptions": ["pos.box-count"]
         }
       ]
     }
