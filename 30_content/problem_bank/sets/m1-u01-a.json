@@ -1,0 +1,22 @@
+{
+  "id": "m1-u01-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 1,
+  "unit_name": "소인수분해",
+  "title": "소수·거듭제곱·소인수분해",
+  "subtitle": "소수·합성수 판별 · 거듭제곱 표기와 계산 · 소인수분해 실행",
+  "bank": "math1/u01/practice.json",
+  "misconceptions": "misconceptions/math1_u01.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

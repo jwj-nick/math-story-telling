@@ -1,0 +1,22 @@
+{
+  "id": "m1-u01-b",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 1,
+  "unit_name": "소인수분해",
+  "title": "약수의 개수·최대공약수·최소공배수",
+  "subtitle": "약수의 개수 · 최대공약수 · 최소공배수",
+  "bank": "math1/u01/practice.json",
+  "misconceptions": "misconceptions/math1_u01.json",
+  "types": [
+    4,
+    5,
+    6
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

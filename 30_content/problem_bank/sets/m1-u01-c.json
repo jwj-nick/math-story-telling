@@ -1,0 +1,20 @@
+{
+  "id": "m1-u01-c",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 1,
+  "unit_name": "소인수분해",
+  "title": "GCD·LCM 관계식 활용",
+  "subtitle": "두 수의 곱과 GCD·LCM 관계 · 공약수 모두 구하기 · 관계식 거꾸로 쓰기",
+  "bank": "math1/u01/practice.json",
+  "misconceptions": "misconceptions/math1_u01.json",
+  "types": [
+    7
+  ],
+  "time_min": 8,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}
