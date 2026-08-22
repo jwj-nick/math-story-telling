@@ -64,6 +64,22 @@
           "solution": "변이 12개이므로 십이각형이에요.",
           "work_space": "sm",
           "misconceptions": []
+        },
+        {
+          "id": "m1-u09-t01-04",
+          "level": "H",
+          "stem_src": "변의 수와 꼭짓점의 수를 모두 더했더니 30이었어요. 이 다각형의 이름은?",
+          "stem_print": "어떤 다각형의 변의 수와 꼭짓점의 수를 모두 더했더니 30이었습니다. 이 다각형의 이름을 구하시오.",
+          "answer_atoms": ["십오각형"],
+          "answer_print": "십오각형",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "다각형 이름으로 (단위 없음)",
+          "figure": null,
+          "hint": "변의 수와 꼭짓점의 수는 항상 같아요(=n).",
+          "solution": "변의 수=꼭짓점의 수=n이므로 2n=30, n=15예요. 그래서 십오각형이에요.",
+          "work_space": "lg",
+          "misconceptions": ["poly.side-vertex-count"]
         }
       ]
     },
@@ -119,6 +135,22 @@
           "solution": "n(n−3)÷2=35 → n(n−3)=70 → n=10이므로 십각형이에요.",
           "work_space": "md",
           "misconceptions": []
+        },
+        {
+          "id": "m1-u09-t02-04",
+          "level": "H",
+          "stem_src": "전체 대각선의 수가 한 꼭짓점에서 그은 대각선의 수의 9배인 다각형은 몇각형?",
+          "stem_print": "어떤 다각형의 전체 대각선의 수가 한 꼭짓점에서 그을 수 있는 대각선의 수의 9배일 때, 이 다각형은 몇각형인지 구하시오.",
+          "answer_atoms": ["십팔각형"],
+          "answer_print": "십팔각형",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "다각형 이름으로 (단위 없음)",
+          "figure": null,
+          "hint": "전체 대각선 수는 n(n−3)÷2, 한 꼭짓점당은 n−3이에요.",
+          "solution": "n(n−3)÷2 = 9×(n−3)에서 양변을 (n−3)으로 나누면 n÷2=9, n=18이에요. 그래서 십팔각형이에요.",
+          "work_space": "lg",
+          "misconceptions": ["poly.diag-vertex-vs-total"]
         }
       ]
     },
@@ -174,6 +206,22 @@
           "solution": "180−40=140, 140÷2=70이므로 한 밑각은 70°예요.",
           "work_space": "md",
           "misconceptions": ["poly.triangle-sum"]
+        },
+        {
+          "id": "m1-u09-t03-04",
+          "level": "H",
+          "stem_src": "세 내각의 비가 2:3:4일 때, 가장 큰 내각의 외각은?",
+          "stem_print": "삼각형의 세 내각의 크기의 비가 2:3:4일 때, 가장 큰 내각의 외각의 크기를 구하시오.",
+          "answer_atoms": ["100"],
+          "answer_print": "100",
+          "answer_accept": [],
+          "answer_unit": "°",
+          "answer_format": "수로 (단위: °)",
+          "figure": null,
+          "hint": "비의 합으로 180°를 나눠 각 조각의 크기를 먼저 구해요.",
+          "solution": "180÷9=20°이므로 세 각은 40°, 60°, 80°예요. 가장 큰 각 80°의 외각은 180−80=100°예요.",
+          "work_space": "lg",
+          "misconceptions": ["poly.exterior-adds-adjacent"]
         }
       ]
     },
@@ -229,6 +277,22 @@
           "solution": "오각형 내각의 합은 540°, 540−(100+110+90+95)=145이므로 나머지 내각은 145°예요.",
           "work_space": "md",
           "misconceptions": ["poly.interior-sum-formula"]
+        },
+        {
+          "id": "m1-u09-t04-04",
+          "level": "H",
+          "stem_src": "내각의 합이 외각의 합의 7배인 다각형은?",
+          "stem_print": "어떤 다각형의 내각의 크기의 합이 외각의 크기의 합의 7배일 때, 이 다각형의 이름을 구하시오.",
+          "answer_atoms": ["십육각형"],
+          "answer_print": "십육각형",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "다각형 이름으로 (단위 없음)",
+          "figure": null,
+          "hint": "외각의 합은 항상 360°예요.",
+          "solution": "외각의 합=360°, 내각의 합=7×360=2520°. 180×(n−2)=2520에서 n−2=14, n=16이에요. 그래서 십육각형이에요.",
+          "work_space": "lg",
+          "misconceptions": ["poly.interior-sum-formula", "poly.exterior-sum-varies"]
         }
       ]
     },
@@ -284,6 +348,22 @@
           "solution": "180−130=50이므로 외각은 50°예요.",
           "work_space": "md",
           "misconceptions": ["poly.interior-exterior-supplement"]
+        },
+        {
+          "id": "m1-u09-t05-04",
+          "level": "H",
+          "stem_src": "칠각형의 일곱 외각 중 여섯 개의 합이 305°일 때, 나머지 한 외각에 대응하는 내각은?",
+          "stem_print": "칠각형의 일곱 외각 중 여섯 개의 크기의 합이 305°일 때, 나머지 한 외각에 대응하는 내각의 크기를 구하시오.",
+          "answer_atoms": ["125"],
+          "answer_print": "125",
+          "answer_accept": [],
+          "answer_unit": "°",
+          "answer_format": "수로 (단위: °)",
+          "figure": null,
+          "hint": "외각의 합은 항상 360°, 내각과 외각의 합은 180°예요.",
+          "solution": "나머지 외각=360−305=55°, 대응 내각=180−55=125°예요.",
+          "work_space": "lg",
+          "misconceptions": ["poly.exterior-sum-varies", "poly.interior-exterior-supplement"]
         }
       ]
     },
@@ -339,6 +419,22 @@
           "solution": "외각=180−144=36°, 360÷36=10이므로 정십각형이에요.",
           "work_space": "md",
           "misconceptions": ["poly.regular-interior-no-divide"]
+        },
+        {
+          "id": "m1-u09-t06-04",
+          "level": "H",
+          "stem_src": "한 내각이 한 외각의 8배인 정다각형은?",
+          "stem_print": "한 내각의 크기가 한 외각의 크기의 8배인 정다각형의 이름을 구하시오.",
+          "answer_atoms": ["정십팔각형"],
+          "answer_print": "정십팔각형",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "정다각형 이름으로 (단위 없음)",
+          "figure": null,
+          "hint": "한 내각과 한 외각의 합은 항상 180°예요.",
+          "solution": "내각+외각=180°, 내각=8×외각이므로 9×외각=180°, 외각=20°예요. 360÷20=18이므로 정십팔각형이에요.",
+          "work_space": "lg",
+          "misconceptions": ["poly.interior-exterior-supplement"]
         }
       ]
     },
@@ -394,6 +490,22 @@
           "solution": "180×(5−2)=540이므로 내각의 합은 540°예요.",
           "work_space": "sm",
           "misconceptions": ["poly.interior-sum-formula"]
+        },
+        {
+          "id": "m1-u09-t07-04",
+          "level": "H",
+          "stem_src": "육각형의 여섯 내각의 비가 2:3:3:4:4:4일 때, 가장 큰 내각과 가장 작은 내각의 차는?",
+          "stem_print": "육각형의 여섯 내각의 크기의 비가 2:3:3:4:4:4일 때, 가장 큰 내각과 가장 작은 내각의 크기의 차를 구하시오.",
+          "answer_atoms": ["72"],
+          "answer_print": "72",
+          "answer_accept": [],
+          "answer_unit": "°",
+          "answer_format": "수로 (단위: °)",
+          "figure": null,
+          "hint": "육각형 내각의 합부터 구한 뒤 비를 나눠요.",
+          "solution": "육각형 내각의 합=720°, 비의 합=20이므로 1당 36°예요. 최대 4×36=144°, 최소 2×36=72°, 차는 144−72=72°예요.",
+          "work_space": "lg",
+          "misconceptions": ["poly.interior-sum-formula", "poly.ratio-total-mismatch"]
         }
       ]
     }
