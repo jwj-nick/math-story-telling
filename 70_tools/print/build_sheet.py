@@ -218,10 +218,13 @@ def select_problems(cfg, bank):
                 picked.extend((t, p) for p in ps[:per])
         picked.sort(key=lambda tp: (['L', 'M', 'H'].index(tp[1]['level']), tp[0]['no']))
     else:
+        # type-set: 기본은 L/M만. H(심화)는 mock 전용 — 은행에 H를 추가해도
+        # 기존 유형세트(a/b/c) 문항 수·레이아웃이 그대로 유지되도록 여기서 제외한다.
         for tno in cfg['types']:
             t = types[tno]
             for p in t['problems']:
-                picked.append((t, p))
+                if p['level'] != 'H':
+                    picked.append((t, p))
     return picked
 
 
