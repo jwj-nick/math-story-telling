@@ -3,1457 +3,397 @@
     "grade": "math1",
     "unit": 12,
     "unit_name": "입체도형의 겉넓이와 부피",
-    "generation": "A",
-    "source": "40_grades/middle/math1/12_입체도형의겉넓이와부피/problems",
-    "extracted": "2026-07-29",
-    "extractor": "70_tools/print/extract_gen_ac.py",
+    "source": "40_grades/middle/math1/app1/p12.html",
+    "generation": "D",
+    "extracted": "2026-08-21",
+    "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "pi_policy": "π 는 남긴 꼴로 답한다. π = 3.14 로 바꿔 계산하지 않는다 (원본 정답이 모두 π 형태).",
-    "note": "answer_atoms 는 원본 추출값 그대로. 원본은 4지선다였으나 지면에서는 단답형으로 재작성했다."
+    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. π가 든 답은 계수만 물었으므로 OOπ 꼴로 합성. 유형7(2)는 원본 앱이 완성 텍스트(1:2:3)로 채점하므로 그대로 사용. 전부 기초~보통 수준(L/M)만 포함 — 심화(H)는 Nick 요청으로 이번 회차에서 제외."
   },
   "types": [
     {
       "no": 1,
       "title": "각기둥의 겉넓이·부피",
-      "principle": "기둥은 밑면이 2개예요. 겉넓이 = 밑넓이 × 2 + 옆넓이, 옆넓이 = 밑면의 둘레 × 높이, 부피 = 밑넓이 × 높이 로 구해요.",
+      "principle": "부피 = 밑넓이×높이. 겉넓이 = 2×밑넓이 + (밑면 둘레×높이).",
       "problems": [
         {
           "id": "m1-u12-t01-01",
           "level": "L",
-          "stem_src": "가로 $6$ cm, 세로 $5$ cm, 높이 $4$ cm인 직육면체의 부피는? ① $60$ cm³ &nbsp; ② $90$ cm³ &nbsp; ③ $120$ cm³ &nbsp; ④ $148$ cm³",
-          "stem_print": "가로 6 cm, 세로 5 cm, 높이 4 cm 인 직육면체의 부피를 구하시오.",
-          "answer_atoms": [
-            "③ $120$ cm³"
-          ],
-          "answer_print": "120",
-          "answer_accept": [
-            "120 cm³"
-          ],
+          "stem_src": "가로 4cm, 세로 5cm, 높이 3cm인 직육면체의 부피는?",
+          "stem_print": "가로 4cm, 세로 5cm, 높이 3cm인 직육면체의 부피를 구하시오.",
+          "answer_atoms": ["60"],
+          "answer_print": "60",
+          "answer_accept": [],
           "answer_unit": "cm³",
-          "answer_format": "수로 (단위 cm³)",
+          "answer_format": "수로 (단위: cm³)",
           "figure": null,
-          "hint": "직육면체의 부피는 가로 × 세로 × 높이 로 구해요.",
-          "solution": "6 × 5 × 4 = 120 이므로 부피는 120 cm³ 예요. 같은 직육면체의 겉넓이 148 cm² 와 헷갈리지 않도록 단위를 꼭 확인해요.",
+          "hint": "가로×세로×높이를 곱해요.",
+          "solution": "4×5×3=60cm³.",
           "work_space": "sm",
-          "misconceptions": [
-            "solid.unit-area-volume"
-          ]
+          "misconceptions": ["solid.unit-area-volume"]
         },
         {
           "id": "m1-u12-t01-02",
           "level": "L",
-          "stem_src": "한 모서리의 길이가 $4$ cm인 정육면체의 겉넓이와 부피를 차례대로 쓰세요. ① $96$ cm², $48$ cm³ &nbsp; ② $96$ cm², $64$ cm³ &nbsp; ③ $48$ cm², $64$ cm³ &nbsp; ④ $24$ cm², $16$ cm³",
-          "stem_print": "한 모서리의 길이가 4 cm 인 정육면체가 있어요. (1) 겉넓이와 (2) 부피를 각각 구하시오.",
-          "answer_atoms": [
-            "② 겉넓이 $96$ cm², 부피 $64$ cm³"
-          ],
-          "answer_print": "(1) 96 cm²  (2) 64 cm³",
-          "answer_accept": [
-            "겉넓이 96 cm², 부피 64 cm³"
-          ],
-          "answer_unit": null,
-          "answer_format": "(1), (2) 를 차례로 · 단위까지 쓰기",
+          "stem_src": "한 모서리 4cm인 정육면체의 겉넓이는?",
+          "stem_print": "한 모서리가 4cm인 정육면체의 겉넓이를 구하시오.",
+          "answer_atoms": ["96"],
+          "answer_print": "96",
+          "answer_accept": [],
+          "answer_unit": "cm²",
+          "answer_format": "수로 (단위: cm²)",
           "figure": null,
-          "hint": "정육면체의 겉넓이는 한 면 넓이의 6배이고, 부피는 한 모서리를 세 번 곱한 값이에요.",
-          "solution": "겉넓이 = 6 × 4<sup>2</sup> = 6 × 16 = 96 cm² 예요.<br>부피 = 4<sup>3</sup> = 64 cm³ 예요.<br>넓이는 cm², 부피는 cm³ 로 단위가 달라요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.unit-area-volume"
-          ]
+          "hint": "정육면체는 합동인 면이 6개예요.",
+          "solution": "6×4²=6×16=96cm².",
+          "work_space": "sm",
+          "misconceptions": ["solid.unit-area-volume"]
         },
         {
           "id": "m1-u12-t01-03",
-          "level": "L",
-          "stem_src": "밑면이 밑변 $4$ cm, 높이 $3$ cm인 직각삼각형이고, 기둥의 높이가 $10$ cm인 삼각기둥의 부피는? ① $30$ cm³ &nbsp; ② $60$ cm³ &nbsp; ③ $120$ cm³ &nbsp; ④ $360$ cm³",
-          "stem_print": "밑면이 밑변 4 cm, 높이 3 cm 인 직각삼각형이고, 기둥의 높이가 10 cm 인 삼각기둥의 부피를 구하시오.",
-          "answer_atoms": [
-            "② $60$ cm³"
-          ],
-          "answer_print": "60",
-          "answer_accept": [
-            "60 cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "수로 (단위 cm³)",
-          "figure": null,
-          "hint": "각기둥의 부피는 밑넓이 × 높이 예요. 삼각형의 넓이는 밑변 × 높이 ÷ 2 로 구해요.",
-          "solution": "밑넓이 = <span class=\"frac\"><b>1</b><i>2</i></span> × 4 × 3 = 6 cm² 예요.<br>부피 = 6 × 10 = 60 cm³ 예요.<br>삼각형 넓이에서 ÷ 2 를 빠뜨리면 120 이 나와요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.base-area-formula"
-          ]
-        },
-        {
-          "id": "m1-u12-t01-04",
           "level": "M",
-          "stem_src": "밑면이 가로 $5$ cm, 세로 $3$ cm인 직사각형이고 높이가 $8$ cm인 사각기둥의 겉넓이 는? ① $94$ cm² &nbsp; ② $128$ cm² &nbsp; ③ $158$ cm² &nbsp; ④ $240$ cm²",
-          "stem_print": "밑면이 가로 5 cm, 세로 3 cm 인 직사각형이고 높이가 8 cm 인 사각기둥의 겉넓이를 구하시오.",
-          "answer_atoms": [
-            "③ $158$ cm²"
-          ],
-          "answer_print": "158",
-          "answer_accept": [
-            "158 cm²"
-          ],
+          "stem_src": "밑넓이 12cm², 옆넓이 40cm²인 각기둥의 겉넓이는?",
+          "stem_print": "밑넓이가 12cm², 옆넓이가 40cm²인 각기둥의 겉넓이를 구하시오.",
+          "answer_atoms": ["64"],
+          "answer_print": "64",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "수로 (단위 cm²)",
+          "answer_format": "수로 (단위: cm²)",
           "figure": null,
-          "hint": "겉넓이 = 밑넓이 × 2 + 옆넓이 예요. 옆넓이는 밑면의 둘레 × 높이 로 구해요.",
-          "solution": "밑넓이 = 5 × 3 = 15 cm² 이므로 두 밑면은 30 cm² 예요.<br>밑면의 둘레 = 2 × (5 + 3) = 16 cm, 옆넓이 = 16 × 8 = 128 cm² 예요.<br>겉넓이 = 30 + 128 = 158 cm² 예요. 128 만 쓰면 밑면 두 개가 빠진 답이에요.",
+          "hint": "밑면은 위아래 2개예요.",
+          "solution": "2×12+40=24+40=64cm².",
           "work_space": "md",
-          "misconceptions": [
-            "solid.prism-one-base"
-          ]
-        },
-        {
-          "id": "m1-u12-t01-05",
-          "level": "M",
-          "stem_src": "정육면체의 부피가 $216$ cm³일 때, 한 모서리의 길이는? ① $4$ cm &nbsp; ② $6$ cm &nbsp; ③ $8$ cm &nbsp; ④ $12$ cm",
-          "stem_print": "정육면체의 부피가 216 cm³ 일 때, 한 모서리의 길이를 구하시오.",
-          "answer_atoms": [
-            "② $6$ cm"
-          ],
-          "answer_print": "6",
-          "answer_accept": [
-            "6 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "수로 (단위 cm)",
-          "figure": null,
-          "hint": "같은 수를 세 번 곱해서 216 이 되는 수를 찾아요.",
-          "solution": "한 모서리를 a 라 하면 a<sup>3</sup> = 216 이에요.<br>4<sup>3</sup> = 64, 5<sup>3</sup> = 125, 6<sup>3</sup> = 216 이므로 a = 6 cm 예요.<br>부피의 단위는 cm³ 이지만 길이의 단위는 cm 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.unit-area-volume"
-          ]
-        },
-        {
-          "id": "m1-u12-t01-06",
-          "level": "M",
-          "stem_src": "밑면이 평행한 두 변의 길이가 $4, 6$ cm이고 높이 $5$ cm인 사다리꼴이며, 기둥의 높이가 $10$ cm인 사각기둥의 부피 는? ① $100$ cm³ &nbsp; ② $200$ cm³ &nbsp; ③ $250$ cm³ &nbsp; ④ $300$ cm³",
-          "stem_print": "밑면이 평행한 두 변의 길이가 4 cm, 6 cm 이고 그 두 변 사이의 거리가 5 cm 인 사다리꼴이며, 기둥의 높이가 10 cm 인 사각기둥의 부피를 구하시오.",
-          "answer_atoms": [
-            "③ $250$ cm³"
-          ],
-          "answer_print": "250",
-          "answer_accept": [
-            "250 cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "수로 (단위 cm³)",
-          "figure": null,
-          "hint": "사다리꼴의 넓이는 (윗변 + 아랫변) × 높이 ÷ 2 예요. 그다음 기둥의 높이를 곱해요.",
-          "solution": "밑넓이 = <span class=\"frac\"><b>1</b><i>2</i></span> × (4 + 6) × 5 = 25 cm² 예요.<br>부피 = 25 × 10 = 250 cm³ 예요.<br>사다리꼴 안에서 재는 높이 5 cm 와 기둥의 높이 10 cm 는 뜻이 달라요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.two-heights",
-            "solid.base-area-formula"
-          ]
-        },
-        {
-          "id": "m1-u12-t01-07",
-          "level": "H",
-          "stem_src": "한 변의 길이가 $4$ cm인 정삼각형 밑면을 가지고 높이가 $10$ cm인 정삼각기둥의 겉넓이 는? (정삼각형 한 변 $a$의 넓이 = $\\frac{\\sqrt{3}}{4}a^2$이지만, 본 문항에서는 정삼각형 한 변 $4$cm의 넓이를 $4\\sqrt{3}$ cm²로 주어진 것으로 사용) ① $120 + 8\\sqrt{3}$ cm² &nbsp; ② $120 + 4\\sqrt{3}$ cm² &nbsp; ③ $80 + 8\\sqrt{3}$ cm² &nbsp; ④ $80$ cm²",
-          "stem_print": "한 변의 길이가 4 cm 인 정삼각형을 밑면으로 하고 높이가 10 cm 인 정삼각기둥이 있어요. 한 변이 4 cm 인 정삼각형의 넓이를 4√<span style=\"text-decoration:overline\">3</span> cm² 로 주어진 값으로 쓸 때, 이 정삼각기둥의 겉넓이를 구하시오.",
-          "answer_atoms": [
-            "① $120 + 8\\sqrt{3}$ cm²"
-          ],
-          "answer_print": "120 + 8√<span style=\"text-decoration:overline\">3</span>",
-          "answer_accept": [
-            "120 + 8√3 cm²",
-            "8√3 + 120 cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "√3 을 남긴 꼴로 (단위 cm²)",
-          "figure": null,
-          "hint": "두 밑면의 넓이와 옆넓이를 더해요. 옆넓이는 밑면의 둘레 × 높이 예요.",
-          "solution": "두 밑면 = 2 × 4√<span style=\"text-decoration:overline\">3</span> = 8√<span style=\"text-decoration:overline\">3</span> cm² 예요.<br>밑면의 둘레 = 4 × 3 = 12 cm 이므로 옆넓이 = 12 × 10 = 120 cm² 예요.<br>겉넓이 = 120 + 8√<span style=\"text-decoration:overline\">3</span> cm² 예요. 밑면을 한 개만 더하면 120 + 4√<span style=\"text-decoration:overline\">3</span> 이 되어요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.prism-one-base"
-          ]
-        },
-        {
-          "id": "m1-u12-t01-08",
-          "level": "H",
-          "stem_src": "한 모서리 $6$ cm인 정육면체에서 한 꼭짓점 부분을 잘라 한 모서리 $2$ cm인 작은 정육면체를 떼어냈어요. 남은 입체의 부피 는? ① $208$ cm³ &nbsp; ② $216$ cm³ &nbsp; ③ $208$ cm² &nbsp; ④ $128$ cm³",
-          "stem_print": "한 모서리의 길이가 6 cm 인 정육면체에서 한 꼭짓점 쪽의 한 모서리 2 cm 인 작은 정육면체를 잘라 냈어요. 남은 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "① $208$ cm³"
-          ],
-          "answer_print": "208",
-          "answer_accept": [
-            "208 cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "수로 (단위 cm³)",
-          "figure": null,
-          "hint": "큰 정육면체의 부피에서 잘라 낸 작은 정육면체의 부피를 빼요.",
-          "solution": "큰 정육면체 = 6<sup>3</sup> = 216 cm³, 작은 정육면체 = 2<sup>3</sup> = 8 cm³ 예요.<br>남은 부피 = 216 − 8 = 208 cm³ 예요. 부피이므로 단위는 cm³ 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.unit-area-volume"
-          ]
-        },
-        {
-          "id": "m1-u12-t01-09",
-          "level": "H",
-          "stem_src": "두 정육면체 A와 B가 있어요. A의 모서리는 B의 $2$배예요. A의 부피 는 B의 부피의 몇 배인가요? ① $2$배 &nbsp; ② $4$배 &nbsp; ③ $6$배 &nbsp; ④ $8$배",
-          "stem_print": "두 정육면체 A, B 가 있어요. A 의 한 모서리는 B 의 한 모서리의 2배예요. A 의 부피는 B 의 부피의 몇 배인지 구하시오.",
-          "answer_atoms": [
-            "④ $8$배"
-          ],
-          "answer_print": "8",
-          "answer_accept": [
-            "8배"
-          ],
-          "answer_unit": "배",
-          "answer_format": "수로 (단위 배)",
-          "figure": null,
-          "hint": "B 의 한 모서리를 a 라 하면 A 의 한 모서리는 2a 예요. 부피는 모서리를 세 번 곱해요.",
-          "solution": "B 의 부피 = a<sup>3</sup> 이고 A 의 부피 = (2a)<sup>3</sup> = 8a<sup>3</sup> 이므로 8배예요.<br>길이를 k배 하면 겉넓이는 k<sup>2</sup>배, 부피는 k<sup>3</sup>배가 돼요. 이 문제에서 겉넓이는 4배예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.scale-power"
-          ]
+          "misconceptions": ["solid.prism-one-base"]
         }
       ]
     },
     {
       "no": 2,
-      "title": "각뿔의 겉넓이·부피",
-      "principle": "뿔의 부피는 밑면과 높이가 같은 기둥 부피의 <span class=\"frac\"><b>1</b><i>3</i></span> 이에요. 겉넓이는 밑면 1개와 옆면 전체를 더해요.",
+      "title": "각뿔의 겉넓이·부피 (★ 1／3)",
+      "principle": "부피 = (1／3)×밑넓이×높이. 겉넓이 = 밑넓이(1개) + 옆넓이.",
       "problems": [
         {
           "id": "m1-u12-t02-01",
           "level": "L",
-          "stem_src": "밑면이 한 변의 길이가 $6$ cm인 정사각형이고, 높이가 $5$ cm인 사각뿔의 부피 는? ① $30$ cm³ &nbsp; ② $60$ cm³ &nbsp; ③ $90$ cm³ &nbsp; ④ $180$ cm³",
-          "stem_print": "밑면이 한 변의 길이가 6 cm 인 정사각형이고, 높이가 5 cm 인 사각뿔의 부피를 구하시오.",
-          "answer_atoms": [
-            "② $60$ cm³"
-          ],
-          "answer_print": "60",
-          "answer_accept": [
-            "60 cm³"
-          ],
+          "stem_src": "밑넓이 18cm², 높이 6cm인 각뿔의 부피는?",
+          "stem_print": "밑넓이가 18cm², 높이가 6cm인 각뿔의 부피를 구하시오.",
+          "answer_atoms": ["36"],
+          "answer_print": "36",
+          "answer_accept": [],
           "answer_unit": "cm³",
-          "answer_format": "수로 (단위 cm³)",
+          "answer_format": "수로 (단위: cm³)",
           "figure": null,
-          "hint": "각뿔의 부피는 밑넓이 × 높이 × <span class=\"frac\"><b>1</b><i>3</i></span> 로 구해요.",
-          "solution": "밑넓이 = 6 × 6 = 36 cm² 예요.<br>부피 = <span class=\"frac\"><b>1</b><i>3</i></span> × 36 × 5 = 60 cm³ 예요.<br><span class=\"frac\"><b>1</b><i>3</i></span> 을 빠뜨리면 180 이 나와요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.pyramid-third-missing"
-          ]
+          "hint": "각기둥 부피의 1／3이에요.",
+          "solution": "(1/3)×18×6=36cm³.",
+          "work_space": "sm",
+          "misconceptions": ["solid.pyramid-third-missing"]
         },
         {
           "id": "m1-u12-t02-02",
-          "level": "L",
-          "stem_src": "정삼각뿔의 한 옆면(삼각형)의 밑변이 $4$ cm, 높이가 $6$ cm일 때, 이 옆면 한 개 의 넓이는? ① $6$ cm² &nbsp; ② $12$ cm² &nbsp; ③ $24$ cm² &nbsp; ④ $48$ cm²",
-          "stem_print": "정삼각뿔의 한 옆면은 밑변이 4 cm, 높이가 6 cm 인 삼각형이에요. 이 옆면 한 개의 넓이를 구하시오.",
-          "answer_atoms": [
-            "② $12$ cm²"
-          ],
-          "answer_print": "12",
-          "answer_accept": [
-            "12 cm²"
-          ],
+          "level": "M",
+          "stem_src": "밑넓이 9cm², 옆넓이 24cm²인 각뿔의 겉넓이는?",
+          "stem_print": "밑넓이가 9cm², 옆넓이가 24cm²인 각뿔의 겉넓이를 구하시오.",
+          "answer_atoms": ["33"],
+          "answer_print": "33",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "수로 (단위 cm²)",
+          "answer_format": "수로 (단위: cm²)",
           "figure": null,
-          "hint": "삼각형의 넓이는 밑변 × 높이 ÷ 2 로 구해요.",
-          "solution": "<span class=\"frac\"><b>1</b><i>2</i></span> × 4 × 6 = 12 cm² 예요.<br>이 문제는 옆면 한 개만 물었으므로 세 개를 모두 더하지 않아요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "solid.base-area-formula"
-          ]
+          "hint": "뿔의 밑면은 1개뿐이에요.",
+          "solution": "9+24=33cm².",
+          "work_space": "md",
+          "misconceptions": ["solid.cone-base-count"]
         },
         {
           "id": "m1-u12-t02-03",
-          "level": "L",
-          "stem_src": "밑면이 두 변이 $3$ cm, $4$ cm인 직각삼각형이고, 높이가 $9$ cm인 각뿔(직각삼각뿔)의 부피 는? ① $18$ cm³ &nbsp; ② $36$ cm³ &nbsp; ③ $54$ cm³ &nbsp; ④ $108$ cm³",
-          "stem_print": "밑면이 두 직각변의 길이가 3 cm, 4 cm 인 직각삼각형이고, 높이가 9 cm 인 삼각뿔의 부피를 구하시오.",
-          "answer_atoms": [
-            "① $18$ cm³"
-          ],
-          "answer_print": "18",
-          "answer_accept": [
-            "18 cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "수로 (단위 cm³)",
-          "figure": null,
-          "hint": "밑넓이를 먼저 구한 다음 밑넓이 × 높이 × <span class=\"frac\"><b>1</b><i>3</i></span> 을 계산해요.",
-          "solution": "밑넓이 = <span class=\"frac\"><b>1</b><i>2</i></span> × 3 × 4 = 6 cm² 예요.<br>부피 = <span class=\"frac\"><b>1</b><i>3</i></span> × 6 × 9 = 18 cm³ 예요.<br><span class=\"frac\"><b>1</b><i>3</i></span> 을 빠뜨리면 54, 삼각형의 ÷ 2 까지 빠뜨리면 108 이 나와요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.pyramid-third-missing",
-            "solid.base-area-formula"
-          ]
-        },
-        {
-          "id": "m1-u12-t02-04",
           "level": "M",
-          "stem_src": "밑면이 한 변 $4$ cm인 정사각형이고, 옆면 4개가 모두 합동인 정사각뿔. 옆면 한 개가 밑변 $4$ cm, 높이 $5$ cm인 삼각형일 때 겉넓이 는? ① $40$ cm² &nbsp; ② $46$ cm² &nbsp; ③ $56$ cm² &nbsp; ④ $76$ cm²",
-          "stem_print": "밑면이 한 변 4 cm 인 정사각형이고 옆면 4개가 모두 합동인 정사각뿔이 있어요. 옆면 한 개는 밑변 4 cm, 높이 5 cm 인 삼각형이에요. 이 정사각뿔의 겉넓이를 구하시오.",
-          "answer_atoms": [
-            "③ $56$ cm²"
-          ],
-          "answer_print": "56",
-          "answer_accept": [
-            "56 cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "수로 (단위 cm²)",
-          "figure": null,
-          "hint": "뿔의 겉넓이는 밑면 1개와 옆면 전체를 더한 값이에요.",
-          "solution": "밑넓이 = 4 × 4 = 16 cm² 예요.<br>옆면 한 개 = <span class=\"frac\"><b>1</b><i>2</i></span> × 4 × 5 = 10 cm² 이므로 옆면 4개는 40 cm² 예요.<br>겉넓이 = 16 + 40 = 56 cm² 예요. 40 만 쓰면 밑면이 빠진 답이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.cone-base-count"
-          ]
-        },
-        {
-          "id": "m1-u12-t02-05",
-          "level": "M",
-          "stem_src": "밑면과 높이가 같은 각기둥의 부피가 $300$ cm³일 때, 같은 밑면과 높이를 가진 각뿔의 부피 는? ① $100$ cm³ &nbsp; ② $150$ cm³ &nbsp; ③ $300$ cm³ &nbsp; ④ $900$ cm³",
-          "stem_print": "밑면과 높이가 같은 각기둥의 부피가 300 cm³ 예요. 같은 밑면과 같은 높이를 가진 각뿔의 부피를 구하시오.",
-          "answer_atoms": [
-            "① $100$ cm³"
-          ],
-          "answer_print": "100",
-          "answer_accept": [
-            "100 cm³"
-          ],
+          "stem_src": "밑면이 한 변 6cm인 정사각형, 높이가 4cm인 사각뿔의 부피는?",
+          "stem_print": "밑면이 한 변 6cm인 정사각형이고 높이가 4cm인 사각뿔의 부피를 구하시오.",
+          "answer_atoms": ["48"],
+          "answer_print": "48",
+          "answer_accept": [],
           "answer_unit": "cm³",
-          "answer_format": "수로 (단위 cm³)",
+          "answer_format": "수로 (단위: cm³)",
           "figure": null,
-          "hint": "뿔의 부피는 밑면과 높이가 같은 기둥 부피의 <span class=\"frac\"><b>1</b><i>3</i></span> 이에요.",
-          "solution": "300 × <span class=\"frac\"><b>1</b><i>3</i></span> = 100 cm³ 예요.<br>기둥 하나를 같은 모양의 뿔 세 개로 꼭 채울 수 있다는 뜻이에요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "solid.pyramid-third-missing"
-          ]
-        },
-        {
-          "id": "m1-u12-t02-06",
-          "level": "M",
-          "stem_src": "정사각뿔의 모든 모서리가 $6$ cm로 같다(즉, 밑면 정사각형 한 변 $6$, 옆 모서리도 $6$). 옆면 4개 각각은 어떤 삼각형인가? ① 직각삼각형 &nbsp; ② 이등변삼각형 (정삼각형 아님) &nbsp; ③ 정삼각형 &nbsp; ④ 부등변삼각형",
-          "stem_print": "정사각뿔의 모든 모서리의 길이가 6 cm 로 같아요. 이 정사각뿔의 옆면 한 개는 어떤 삼각형인지 이름을 쓰시오.",
-          "answer_atoms": [
-            "③ 정삼각형"
-          ],
-          "answer_print": "정삼각형",
-          "answer_accept": [
-            "세 변의 길이가 같은 삼각형"
-          ],
-          "answer_unit": null,
-          "answer_format": "삼각형의 이름으로 (단위 없음)",
-          "figure": null,
-          "hint": "옆면 한 개의 세 변이 각각 어느 모서리인지 살펴봐요.",
-          "solution": "옆면 한 개의 세 변은 밑면의 한 변 6 cm 와 옆 모서리 6 cm, 6 cm 예요.<br>세 변의 길이가 모두 같으므로 정삼각형이에요.<br>다만 밑면이 정사각형이므로 이 입체는 정사면체가 아니에요.",
+          "hint": "밑넓이부터 구한 뒤 1／3을 곱해요.",
+          "solution": "밑넓이=6×6=36, (1/3)×36×4=48cm³.",
           "work_space": "md",
-          "misconceptions": []
-        },
-        {
-          "id": "m1-u12-t02-07",
-          "level": "H",
-          "stem_src": "밑면이 한 변 $6$ cm인 정사각형이고 높이 $9$ cm인 정사각뿔에서, 꼭짓점에서 높이 $3$ cm까지 잘라낸 작은 정사각뿔을 떼어냈어요. 작은 정사각뿔의 밑면은 한 변 $2$ cm입니다. 남은 각뿔대 의 부피는? ① $96$ cm³ &nbsp; ② $104$ cm³ &nbsp; ③ $108$ cm³ &nbsp; ④ $112$ cm³",
-          "stem_print": "밑면이 한 변 6 cm 인 정사각형이고 높이가 9 cm 인 정사각뿔에서, 꼭짓점 쪽의 높이 3 cm 부분을 잘라 냈어요. 잘라 낸 작은 정사각뿔의 밑면은 한 변이 2 cm 예요. 남은 각뿔대의 부피를 구하시오.",
-          "answer_atoms": [
-            "② $104$ cm³"
-          ],
-          "answer_print": "104",
-          "answer_accept": [
-            "104 cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "수로 (단위 cm³)",
-          "figure": null,
-          "hint": "큰 각뿔의 부피에서 잘라 낸 작은 각뿔의 부피를 빼요.",
-          "solution": "큰 각뿔 = <span class=\"frac\"><b>1</b><i>3</i></span> × 6<sup>2</sup> × 9 = 108 cm³ 예요.<br>작은 각뿔 = <span class=\"frac\"><b>1</b><i>3</i></span> × 2<sup>2</sup> × 3 = 4 cm³ 예요.<br>각뿔대의 부피 = 108 − 4 = 104 cm³ 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.pyramid-third-missing"
-          ]
-        },
-        {
-          "id": "m1-u12-t02-08",
-          "level": "H",
-          "stem_src": "두 사각뿔 A, B가 있어요. A는 밑넓이 $12$ cm², 높이 $9$ cm. B는 밑넓이 $18$ cm², 높이 $6$ cm. 두 부피의 비 $V_A : V_B$는? ① $1 : 1$ &nbsp; ② $2 : 3$ &nbsp; ③ $3 : 2$ &nbsp; ④ $4 : 3$",
-          "stem_print": "두 사각뿔 A, B 가 있어요. A 는 밑넓이가 12 cm², 높이가 9 cm 이고 B 는 밑넓이가 18 cm², 높이가 6 cm 예요. (A 의 부피) : (B 의 부피) 를 구하시오.",
-          "answer_atoms": [
-            "① $1:1$"
-          ],
-          "answer_print": "1 : 1",
-          "answer_accept": [
-            "1:1",
-            "같다"
-          ],
-          "answer_unit": null,
-          "answer_format": "가장 간단한 자연수의 비로 (단위 없음)",
-          "figure": null,
-          "hint": "두 부피를 각각 구한 다음 비로 나타내요.",
-          "solution": "A 의 부피 = <span class=\"frac\"><b>1</b><i>3</i></span> × 12 × 9 = 36 cm³ 예요.<br>B 의 부피 = <span class=\"frac\"><b>1</b><i>3</i></span> × 18 × 6 = 36 cm³ 예요.<br>두 부피가 같으므로 비는 1 : 1 이에요. 밑넓이 × 높이 의 값이 같으면 부피도 같아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.pyramid-third-missing"
-          ]
-        },
-        {
-          "id": "m1-u12-t02-09",
-          "level": "H",
-          "stem_src": "정사각뿔의 옆면 4개가 모두 한 변 $6$ cm인 정삼각형일 때, 옆면 4개의 옆넓이의 합 은? (정삼각형 한 변 $6$의 넓이는 $9\\sqrt{3}$ cm²로 사용) ① $18\\sqrt{3}$ cm² &nbsp; ② $24\\sqrt{3}$ cm² &nbsp; ③ $36\\sqrt{3}$ cm² &nbsp; ④ $48\\sqrt{3}$ cm²",
-          "stem_print": "정사각뿔의 옆면 4개가 모두 한 변 6 cm 인 정삼각형이에요. 한 변이 6 cm 인 정삼각형의 넓이를 9√<span style=\"text-decoration:overline\">3</span> cm² 로 주어진 값으로 쓸 때, 옆넓이의 합을 구하시오.",
-          "answer_atoms": [
-            "③ $36\\sqrt{3}$ cm²"
-          ],
-          "answer_print": "36√<span style=\"text-decoration:overline\">3</span>",
-          "answer_accept": [
-            "36√3 cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "√3 을 남긴 꼴로 (단위 cm²)",
-          "figure": null,
-          "hint": "옆면 한 개의 넓이에 옆면의 개수를 곱해요.",
-          "solution": "옆면 한 개 = 9√<span style=\"text-decoration:overline\">3</span> cm² 이므로 옆넓이 = 4 × 9√<span style=\"text-decoration:overline\">3</span> = 36√<span style=\"text-decoration:overline\">3</span> cm² 예요.<br>옆넓이에는 밑면을 넣지 않아요. 밑면까지 넣으면 겉넓이가 돼요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.cone-base-count"
-          ]
+          "misconceptions": ["solid.pyramid-third-missing"]
         }
       ]
     },
     {
       "no": 3,
       "title": "원기둥의 겉넓이·부피",
-      "principle": "원기둥도 밑면이 2개예요. 부피 = πr<sup>2</sup>h, 옆넓이 = 2πr × h, 겉넓이 = 2πr<sup>2</sup> + 2πrh 로 구해요.",
+      "principle": "부피 = πr²h. 겉넓이 = 2πr² + 2πrh.",
       "problems": [
         {
           "id": "m1-u12-t03-01",
           "level": "L",
-          "stem_src": "반지름 $3$ cm, 높이 $7$ cm인 원기둥의 부피 는? ① $21\\pi$ cm³ &nbsp; ② $42\\pi$ cm³ &nbsp; ③ $63\\pi$ cm³ &nbsp; ④ $189\\pi$ cm³",
-          "stem_print": "밑면의 반지름이 3 cm, 높이가 7 cm 인 원기둥의 부피를 구하시오.",
-          "answer_atoms": [
-            "③ $63\\pi$ cm³"
-          ],
-          "answer_print": "63π",
-          "answer_accept": [
-            "63π cm³",
-            "63 × π cm³"
-          ],
+          "stem_src": "반지름 3cm, 높이 5cm인 원기둥의 부피는? (계수만)",
+          "stem_print": "반지름 3cm, 높이 5cm인 원기둥의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["45"],
+          "answer_print": "45π",
+          "answer_accept": [],
           "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
           "figure": null,
-          "hint": "원기둥의 부피는 πr<sup>2</sup>h 예요. 반지름을 두 번 곱해요.",
-          "solution": "부피 = π × 3<sup>2</sup> × 7 = 9π × 7 = 63π cm³ 예요.<br>반지름을 한 번만 곱하면 21π 가 나와요.",
+          "hint": "V = πr²h.",
+          "solution": "π×3²×5=45π cm³.",
           "work_space": "sm",
-          "misconceptions": [
-            "solid.radius-once"
-          ]
+          "misconceptions": ["solid.radius-once"]
         },
         {
           "id": "m1-u12-t03-02",
-          "level": "L",
-          "stem_src": "반지름 $4$ cm, 높이 $5$ cm인 원기둥의 옆넓이 는? ① $20\\pi$ cm² &nbsp; ② $40\\pi$ cm² &nbsp; ③ $80\\pi$ cm² &nbsp; ④ $160\\pi$ cm²",
-          "stem_print": "밑면의 반지름이 4 cm, 높이가 5 cm 인 원기둥의 옆넓이를 구하시오.",
-          "answer_atoms": [
-            "② $40\\pi$ cm²"
-          ],
-          "answer_print": "40π",
-          "answer_accept": [
-            "40π cm²"
-          ],
+          "level": "M",
+          "stem_src": "반지름 4cm, 높이 6cm인 원기둥의 옆넓이는? (계수만)",
+          "stem_print": "반지름 4cm, 높이 6cm인 원기둥의 옆넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["48"],
+          "answer_print": "48π",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm²)",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
           "figure": null,
-          "hint": "옆넓이는 밑면의 둘레 2πr 에 높이를 곱해서 구해요.",
-          "solution": "밑면의 둘레 = 2π × 4 = 8π cm 예요.<br>옆넓이 = 8π × 5 = 40π cm² 예요.<br>둘레 대신 반지름을 곱하면 20π 가 나와요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "solid.lateral-diameter"
-          ]
+          "hint": "옆넓이 = 밑면 둘레 × 높이.",
+          "solution": "2π×4×6=48π cm².",
+          "work_space": "md",
+          "misconceptions": ["solid.lateral-diameter"]
         },
         {
           "id": "m1-u12-t03-03",
-          "level": "L",
-          "stem_src": "반지름 $2$ cm, 높이 $5$ cm인 원기둥 A가 있어요. 반지름만 두 배($4$ cm)로 늘린 원기둥 B의 부피는 A의 몇 배? ① $2$배 &nbsp; ② $4$배 &nbsp; ③ $8$배 &nbsp; ④ $16$배",
-          "stem_print": "밑면의 반지름이 2 cm, 높이가 5 cm 인 원기둥 A 가 있어요. 높이는 그대로 두고 반지름만 두 배로 늘린 원기둥 B 의 부피는 A 의 부피의 몇 배인지 구하시오.",
-          "answer_atoms": [
-            "② $4$배"
-          ],
-          "answer_print": "4",
-          "answer_accept": [
-            "4배"
-          ],
-          "answer_unit": "배",
-          "answer_format": "수로 (단위 배)",
-          "figure": null,
-          "hint": "부피 πr<sup>2</sup>h 에서 반지름은 두 번 곱해져요.",
-          "solution": "A 의 부피 = π × 2<sup>2</sup> × 5 = 20π cm³ 예요.<br>B 의 부피 = π × 4<sup>2</sup> × 5 = 80π cm³ 예요.<br>80π ÷ 20π = 4 이므로 4배예요. 반지름만 k배 하면 부피는 k<sup>2</sup>배가 돼요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.scale-power"
-          ]
-        },
-        {
-          "id": "m1-u12-t03-04",
           "level": "M",
-          "stem_src": "반지름 $5$ cm, 높이 $6$ cm인 원기둥의 겉넓이 는? ① $30\\pi$ cm² &nbsp; ② $60\\pi$ cm² &nbsp; ③ $80\\pi$ cm² &nbsp; ④ $110\\pi$ cm²",
-          "stem_print": "밑면의 반지름이 5 cm, 높이가 6 cm 인 원기둥의 겉넓이를 구하시오.",
-          "answer_atoms": [
-            "④ $110\\pi$ cm²"
-          ],
-          "answer_print": "110π",
-          "answer_accept": [
-            "110π cm²"
-          ],
+          "stem_src": "반지름 2cm, 높이 5cm인 원기둥의 겉넓이는? (계수만)",
+          "stem_print": "반지름 2cm, 높이 5cm인 원기둥의 겉넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["28"],
+          "answer_print": "28π",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm²)",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
           "figure": null,
-          "hint": "겉넓이는 두 밑면과 옆넓이를 모두 더한 값이에요.",
-          "solution": "두 밑면 = 2 × π × 5<sup>2</sup> = 50π cm² 예요.<br>옆넓이 = 2π × 5 × 6 = 60π cm² 예요.<br>겉넓이 = 50π + 60π = 110π cm² 예요. 60π 만 쓰면 밑면 두 개가 빠진 답이에요.",
+          "hint": "밑면은 위아래 2개예요.",
+          "solution": "2π×2²+2π×2×5=8π+20π=28π cm².",
           "work_space": "md",
-          "misconceptions": [
-            "solid.prism-one-base"
-          ]
-        },
-        {
-          "id": "m1-u12-t03-05",
-          "level": "M",
-          "stem_src": "원기둥의 전개도에서 옆면 직사각형의 가로 길이는 $10\\pi$ cm, 세로 길이는 $7$ cm입니다. 이 원기둥의 반지름 은? ① $5$ cm &nbsp; ② $7$ cm &nbsp; ③ $10$ cm &nbsp; ④ $10\\pi$ cm",
-          "stem_print": "어떤 원기둥의 전개도에서 옆면인 직사각형의 가로 길이가 10π cm, 세로 길이가 7 cm 예요. 이 원기둥의 밑면의 반지름을 구하시오.",
-          "answer_atoms": [
-            "① $5$ cm"
-          ],
-          "answer_print": "5",
-          "answer_accept": [
-            "5 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "수로 (단위 cm)",
-          "figure": null,
-          "hint": "옆면 직사각형의 가로 길이는 밑면 원의 둘레와 같아요.",
-          "solution": "밑면의 둘레가 10π cm 이므로 2πr = 10π 예요.<br>양변을 2π 로 나누면 r = 5 cm 예요.<br>가로 길이 10π 를 그대로 반지름으로 쓰지 않도록 조심해요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.lateral-diameter"
-          ]
-        },
-        {
-          "id": "m1-u12-t03-06",
-          "level": "M",
-          "stem_src": "반지름 $3$ cm인 원기둥의 부피가 $54\\pi$ cm³일 때, 높이는? ① $3$ cm &nbsp; ② $6$ cm &nbsp; ③ $9$ cm &nbsp; ④ $18$ cm",
-          "stem_print": "밑면의 반지름이 3 cm 인 원기둥의 부피가 54π cm³ 예요. 이 원기둥의 높이를 구하시오.",
-          "answer_atoms": [
-            "② $6$ cm"
-          ],
-          "answer_print": "6",
-          "answer_accept": [
-            "6 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "수로 (단위 cm)",
-          "figure": null,
-          "hint": "πr<sup>2</sup>h 에 아는 값을 넣고 남은 h 를 구해요.",
-          "solution": "π × 3<sup>2</sup> × h = 54π 이므로 9πh = 54π 예요.<br>양변을 9π 로 나누면 h = 6 cm 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.radius-once"
-          ]
-        },
-        {
-          "id": "m1-u12-t03-07",
-          "level": "H",
-          "stem_src": "반지름 $5$ cm인 원기둥 안에 반지름 $3$ cm인 원기둥 모양 구멍이 같은 축으로 뚫려 있어요. 전체 높이는 $10$ cm. 이 관 모양 입체의 부피는? ① $90\\pi$ cm³ &nbsp; ② $160\\pi$ cm³ &nbsp; ③ $250\\pi$ cm³ &nbsp; ④ $340\\pi$ cm³",
-          "stem_print": "밑면의 반지름이 5 cm 인 원기둥 안에, 같은 축으로 반지름 3 cm 인 원기둥 모양의 구멍이 뚫려 있어요. 전체 높이는 10 cm 예요. 이 관 모양 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "② $160\\pi$ cm³"
-          ],
-          "answer_print": "160π",
-          "answer_accept": [
-            "160π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "큰 원기둥의 부피에서 구멍의 부피를 빼요.",
-          "solution": "큰 원기둥 = π × 5<sup>2</sup> × 10 = 250π cm³ 예요.<br>구멍 = π × 3<sup>2</sup> × 10 = 90π cm³ 예요.<br>관 모양의 부피 = 250π − 90π = 160π cm³ 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.radius-once"
-          ]
-        },
-        {
-          "id": "m1-u12-t03-08",
-          "level": "H",
-          "stem_src": "반지름 $3$ cm, 높이 $4$ cm인 원기둥의 옆면을 펼친 직사각형의 대각선 길이 는? (단, $\\pi$는 약 $1$ 단위로 처리해 직사각형 크기를 그대로 가로 $6\\pi$, 세로 $4$로 사용한다고 가정하지 말고, 다음 단순 값으로 계산: 가로 $6$, 세로 $8$로 놓고 답하기 — 즉 둘레와 높이가 각각 $6, 8$인 직사각형의 대각선) ① $6$ &nbsp; ② $8$ &nbsp; ③ $10$ &nbsp; ④ $14$",
-          "stem_print": "어떤 원기둥의 옆면을 펼쳤더니 가로 6 cm, 세로 8 cm 인 직사각형이 되었어요. 이 직사각형의 대각선의 길이를 구하시오. (두 변이 3 cm, 4 cm 이면 대각선이 5 cm 가 되는 직각삼각형을 이용해요.)",
-          "answer_atoms": [
-            "③ $10$"
-          ],
-          "answer_print": "10",
-          "answer_accept": [
-            "10 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "수로 (단위 cm)",
-          "figure": null,
-          "hint": "가로와 세로가 3 : 4 이면 대각선은 5 에 해당하는 길이가 돼요.",
-          "solution": "가로 6 cm, 세로 8 cm 는 3 cm, 4 cm 의 두 배예요.<br>그러므로 대각선도 5 cm 의 두 배인 10 cm 예요.<br>곡면인 옆면도 펼치면 평면 도형이 된다는 점이 핵심이에요.",
-          "work_space": "md",
-          "misconceptions": []
-        },
-        {
-          "id": "m1-u12-t03-09",
-          "level": "H",
-          "stem_src": "가로 $4$ cm, 세로 $5$ cm인 직사각형을 세로(길이 $5$)를 축으로 한 바퀴 돌렸어요. 만들어지는 입체의 부피 는? ① $40\\pi$ cm³ &nbsp; ② $80\\pi$ cm³ &nbsp; ③ $100\\pi$ cm³ &nbsp; ④ $200\\pi$ cm³",
-          "stem_print": "가로 4 cm, 세로 5 cm 인 직사각형을 세로인 변(길이 5 cm)을 축으로 하여 한 바퀴 돌렸어요. 이때 만들어지는 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "② $80\\pi$ cm³"
-          ],
-          "answer_print": "80π",
-          "answer_accept": [
-            "80π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "축에 붙어 있는 변이 높이가 되고, 축에 수직인 변이 반지름이 돼요.",
-          "solution": "반지름 4 cm, 높이 5 cm 인 원기둥이 만들어져요.<br>부피 = π × 4<sup>2</sup> × 5 = 80π cm³ 예요.<br>축을 반대로 잡으면 반지름 5 cm, 높이 4 cm 가 되어 다른 입체가 돼요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.axis-swap"
-          ]
+          "misconceptions": ["solid.prism-one-base"]
         }
       ]
     },
     {
       "no": 4,
-      "title": "원뿔의 겉넓이·부피",
-      "principle": "원뿔은 부피에 높이 h 를, 옆넓이에 모선 l 을 써요. 부피 = <span class=\"frac\"><b>1</b><i>3</i></span>πr<sup>2</sup>h, 옆넓이 = πrl, 겉넓이 = πr<sup>2</sup> + πrl 이에요.",
+      "title": "원뿔의 겉넓이·부피 (★ h vs l)",
+      "principle": "부피엔 높이 h, 겉넓이(옆면)엔 모선 l. 겉넓이 = πr² + πrl.",
       "problems": [
         {
           "id": "m1-u12-t04-01",
           "level": "L",
-          "stem_src": "반지름 $3$ cm, 높이 $4$ cm인 원뿔의 부피 는? ① $4\\pi$ cm³ &nbsp; ② $12\\pi$ cm³ &nbsp; ③ $24\\pi$ cm³ &nbsp; ④ $36\\pi$ cm³",
-          "stem_print": "밑면의 반지름이 3 cm, 높이가 4 cm 인 원뿔의 부피를 구하시오.",
-          "answer_atoms": [
-            "② $12\\pi$ cm³"
-          ],
+          "stem_src": "반지름 3cm, 높이 4cm인 원뿔의 부피는? (계수만)",
+          "stem_print": "반지름 3cm, 높이 4cm인 원뿔의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["12"],
           "answer_print": "12π",
-          "answer_accept": [
-            "12π cm³"
-          ],
+          "answer_accept": [],
           "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
           "figure": null,
-          "hint": "원뿔의 부피는 <span class=\"frac\"><b>1</b><i>3</i></span>πr<sup>2</sup>h 예요. 부피에는 모선이 아니라 높이를 써요.",
-          "solution": "부피 = <span class=\"frac\"><b>1</b><i>3</i></span> × π × 3<sup>2</sup> × 4 = <span class=\"frac\"><b>1</b><i>3</i></span> × 9π × 4 = 12π cm³ 예요.<br><span class=\"frac\"><b>1</b><i>3</i></span> 을 빠뜨리면 36π 가 되어 원기둥의 부피와 같아져요.",
+          "hint": "V = (1／3)πr²h.",
+          "solution": "(1/3)×π×3²×4=12π cm³.",
           "work_space": "sm",
-          "misconceptions": [
-            "solid.pyramid-third-missing"
-          ]
+          "misconceptions": ["solid.cone-slant-vs-height"]
         },
         {
           "id": "m1-u12-t04-02",
-          "level": "L",
-          "stem_src": "반지름 $5$ cm, 모선 $8$ cm인 원뿔의 옆넓이 만 구하면? ① $20\\pi$ cm² &nbsp; ② $25\\pi$ cm² &nbsp; ③ $40\\pi$ cm² &nbsp; ④ $80\\pi$ cm²",
-          "stem_print": "밑면의 반지름이 5 cm, 모선의 길이가 8 cm 인 원뿔의 옆넓이를 구하시오.",
-          "answer_atoms": [
-            "③ $40\\pi$ cm²"
-          ],
-          "answer_print": "40π",
-          "answer_accept": [
-            "40π cm²"
-          ],
+          "level": "M",
+          "stem_src": "반지름 3cm, 모선 5cm인 원뿔의 옆넓이는? (계수만)",
+          "stem_print": "반지름 3cm, 모선 5cm인 원뿔의 옆넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["15"],
+          "answer_print": "15π",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm²)",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
           "figure": null,
-          "hint": "원뿔의 옆넓이는 πrl 이에요. l 은 모선의 길이예요.",
-          "solution": "옆넓이 = π × 5 × 8 = 40π cm² 예요.<br>밑면의 넓이 π × 5<sup>2</sup> = 25π cm² 와 헷갈리지 않도록 해요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "solid.cone-slant-vs-height"
-          ]
+          "hint": "옆넓이 = πrl.",
+          "solution": "π×3×5=15π cm².",
+          "work_space": "md",
+          "misconceptions": ["solid.cone-slant-vs-height"]
         },
         {
           "id": "m1-u12-t04-03",
-          "level": "L",
-          "stem_src": "반지름 $4$ cm, 모선 $6$ cm인 원뿔의 겉넓이 (밑면 + 옆면 전체)는? ① $16\\pi$ cm² &nbsp; ② $24\\pi$ cm² &nbsp; ③ $32\\pi$ cm² &nbsp; ④ $40\\pi$ cm²",
-          "stem_print": "밑면의 반지름이 4 cm, 모선의 길이가 6 cm 인 원뿔의 겉넓이를 구하시오.",
-          "answer_atoms": [
-            "④ $40\\pi$ cm²"
-          ],
-          "answer_print": "40π",
-          "answer_accept": [
-            "40π cm²"
-          ],
+          "level": "M",
+          "stem_src": "반지름 3cm, 높이 4cm, 모선 5cm인 원뿔의 겉넓이는? (계수만)",
+          "stem_print": "반지름 3cm, 높이 4cm, 모선 5cm인 원뿔의 겉넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["24"],
+          "answer_print": "24π",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm²)",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
           "figure": null,
-          "hint": "겉넓이는 밑면 1개와 옆면을 더한 값이에요.",
-          "solution": "밑면 = π × 4<sup>2</sup> = 16π cm² 예요.<br>옆면 = π × 4 × 6 = 24π cm² 예요.<br>겉넓이 = 16π + 24π = 40π cm² 예요. 원뿔의 밑면은 1개뿐이에요.",
+          "hint": "겉넓이엔 높이가 아니라 모선을 써요.",
+          "solution": "π×3²+π×3×5=9π+15π=24π cm² (높이 4는 안 씀).",
           "work_space": "md",
-          "misconceptions": [
-            "solid.cone-base-count"
-          ]
-        },
-        {
-          "id": "m1-u12-t04-04",
-          "level": "M",
-          "stem_src": "반지름 $4$ cm, 모선 $12$ cm인 원뿔의 옆면 전개도 (부채꼴)의 중심각 은? ① $90°$ &nbsp; ② $120°$ &nbsp; ③ $180°$ &nbsp; ④ $270°$",
-          "stem_print": "밑면의 반지름이 4 cm, 모선의 길이가 12 cm 인 원뿔이 있어요. 이 원뿔의 옆면을 펼친 부채꼴의 중심각의 크기를 구하시오.",
-          "answer_atoms": [
-            "② $120°$"
-          ],
-          "answer_print": "120",
-          "answer_accept": [
-            "120도"
-          ],
-          "answer_unit": "°",
-          "answer_format": "수로 (단위 °)",
-          "figure": null,
-          "hint": "부채꼴의 호의 길이가 밑면 원의 둘레와 같다는 점을 이용해요.",
-          "solution": "호의 길이 = 밑면의 둘레 = 2π × 4 = 8π cm 예요.<br>모선을 반지름으로 하는 원의 둘레는 2π × 12 = 24π cm 이므로 부채꼴은 그 원의 <span class=\"frac\"><b>8</b><i>24</i></span> = <span class=\"frac\"><b>1</b><i>3</i></span> 이에요.<br>중심각 = <span class=\"frac\"><b>1</b><i>3</i></span> × 360° = 120° 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.cone-slant-vs-height"
-          ]
-        },
-        {
-          "id": "m1-u12-t04-05",
-          "level": "M",
-          "stem_src": "반지름 $3$ cm, 높이 $4$ cm, 모선 $5$ cm인 원뿔의 부피 와 옆넓이 를 차례로 쓰면? ① $12\\pi$ cm³, $15\\pi$ cm² &nbsp; ② $15\\pi$ cm³, $12\\pi$ cm² &nbsp; ③ $20\\pi$ cm³, $15\\pi$ cm² &nbsp; ④ $12\\pi$ cm³, $20\\pi$ cm²",
-          "stem_print": "밑면의 반지름이 3 cm, 높이가 4 cm, 모선의 길이가 5 cm 인 원뿔이 있어요. (1) 부피와 (2) 옆넓이를 각각 구하시오.",
-          "answer_atoms": [
-            "① $12\\pi$ cm³, $15\\pi$ cm²"
-          ],
-          "answer_print": "(1) 12π cm³  (2) 15π cm²",
-          "answer_accept": [
-            "부피 12π cm³, 옆넓이 15π cm²"
-          ],
-          "answer_unit": null,
-          "answer_format": "(1), (2) 를 차례로 · π 를 남긴 채 단위까지 쓰기",
-          "figure": null,
-          "hint": "부피에는 높이 4 cm 를, 옆넓이에는 모선 5 cm 를 써요.",
-          "solution": "부피 = <span class=\"frac\"><b>1</b><i>3</i></span> × π × 3<sup>2</sup> × 4 = 12π cm³ 예요.<br>옆넓이 = π × 3 × 5 = 15π cm² 예요.<br>높이와 모선을 바꿔 쓰면 두 답이 서로 뒤바뀐 것처럼 보여요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.cone-slant-vs-height"
-          ]
-        },
-        {
-          "id": "m1-u12-t04-06",
-          "level": "M",
-          "stem_src": "반지름 $5$ cm, 모선 $13$ cm인 원뿔의 높이 를 구하시오. (피타고라스 단순 값 $5, 12, 13$ 활용) ① $8$ cm &nbsp; ② $10$ cm &nbsp; ③ $12$ cm &nbsp; ④ $14$ cm",
-          "stem_print": "밑면의 반지름이 5 cm, 모선의 길이가 13 cm 인 원뿔의 높이를 구하시오. (세 변의 길이가 5, 12, 13 인 직각삼각형을 이용해요.)",
-          "answer_atoms": [
-            "③ $12$ cm"
-          ],
-          "answer_print": "12",
-          "answer_accept": [
-            "12 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "수로 (단위 cm)",
-          "figure": null,
-          "hint": "반지름·높이·모선이 직각삼각형을 이루고 모선이 가장 긴 변이에요.",
-          "solution": "반지름 5 cm 와 높이 h 를 두 직각변으로 하고 모선 13 cm 를 가장 긴 변으로 하는 직각삼각형이 생겨요.<br>5, 12, 13 이 그런 세 수이므로 높이는 12 cm 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.cone-slant-vs-height"
-          ]
-        },
-        {
-          "id": "m1-u12-t04-07",
-          "level": "H",
-          "stem_src": "반지름 $4$ cm, 모선 $9$ cm인 원뿔. 옆면 전개도(부채꼴)의 넓이를 두 가지 방법 으로 확인하세요. (A) $\\pi r l$ 공식 (B) 부채꼴 넓이 = $\\frac{1}{2}\\times$ 호 $\\times$ 반지름(모선) 두 방법의 결과로 옳은 것은? ① 둘 다 $18\\pi$ cm² &nbsp; ② 둘 다 $36\\pi$ cm² &nbsp; ③ (A) $36\\pi$, (B) $18\\pi$ &nbsp; ④ 두 값이 다르다",
-          "stem_print": "밑면의 반지름이 4 cm, 모선의 길이가 9 cm 인 원뿔이 있어요. 옆면을 펼친 부채꼴의 넓이를 (가) πrl 로, (나) <span class=\"frac\"><b>1</b><i>2</i></span> × 호의 길이 × 모선 으로 각각 구하고, 그 넓이를 쓰시오.",
-          "answer_atoms": [
-            "② 둘 다 $36\\pi$ cm²"
-          ],
-          "answer_print": "36π",
-          "answer_accept": [
-            "36π cm² (두 방법 모두)"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm²)",
-          "figure": null,
-          "hint": "부채꼴의 호의 길이는 밑면 원의 둘레 2πr 과 같아요.",
-          "solution": "(가) πrl = π × 4 × 9 = 36π cm² 예요.<br>(나) 호의 길이 = 2π × 4 = 8π cm 이므로 <span class=\"frac\"><b>1</b><i>2</i></span> × 8π × 9 = 36π cm² 예요.<br>두 방법의 값이 같아요. πrl = <span class=\"frac\"><b>1</b><i>2</i></span> × 2πr × l 이기 때문이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.lateral-diameter"
-          ]
-        },
-        {
-          "id": "m1-u12-t04-08",
-          "level": "H",
-          "stem_src": "반지름 $6$ cm, 높이 $8$ cm인 큰 원뿔에서 꼭짓점 쪽에서 잘라 반지름 $3$ cm, 높이 $4$ cm인 작은 원뿔을 떼어냈어요. 남은 원뿔대 의 부피는? ① $60\\pi$ cm³ &nbsp; ② $84\\pi$ cm³ &nbsp; ③ $96\\pi$ cm³ &nbsp; ④ $108\\pi$ cm³",
-          "stem_print": "밑면의 반지름이 6 cm, 높이가 8 cm 인 원뿔에서 꼭짓점 쪽을 잘라, 밑면의 반지름 3 cm, 높이 4 cm 인 작은 원뿔을 떼어 냈어요. 남은 원뿔대의 부피를 구하시오.",
-          "answer_atoms": [
-            "② $84\\pi$ cm³"
-          ],
-          "answer_print": "84π",
-          "answer_accept": [
-            "84π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "큰 원뿔의 부피에서 작은 원뿔의 부피를 빼요.",
-          "solution": "큰 원뿔 = <span class=\"frac\"><b>1</b><i>3</i></span> × π × 6<sup>2</sup> × 8 = 96π cm³ 예요.<br>작은 원뿔 = <span class=\"frac\"><b>1</b><i>3</i></span> × π × 3<sup>2</sup> × 4 = 12π cm³ 예요.<br>원뿔대의 부피 = 96π − 12π = 84π cm³ 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.pyramid-third-missing"
-          ]
-        },
-        {
-          "id": "m1-u12-t04-09",
-          "level": "H",
-          "stem_src": "직각변이 $3$ cm, $4$ cm이고 빗변이 $5$ cm인 직각삼각형을 높이가 $4$인 직각변 을 축으로 한 바퀴 돌렸어요. 만들어지는 원뿔의 부피 와 옆넓이 를 차례로 쓰면? ① $12\\pi$ cm³, $15\\pi$ cm² &nbsp; ② $16\\pi$ cm³, $20\\pi$ cm² &nbsp; ③ $12\\pi$ cm³, $20\\pi$ cm² &nbsp; ④ $16\\pi$ cm³, $15\\pi$ cm²",
-          "stem_print": "두 직각변의 길이가 3 cm, 4 cm 이고 빗변의 길이가 5 cm 인 직각삼각형을 길이가 4 cm 인 직각변을 축으로 하여 한 바퀴 돌렸어요. 만들어지는 원뿔의 (1) 부피와 (2) 옆넓이를 각각 구하시오.",
-          "answer_atoms": [
-            "① $12\\pi$ cm³, $15\\pi$ cm²"
-          ],
-          "answer_print": "(1) 12π cm³  (2) 15π cm²",
-          "answer_accept": [
-            "부피 12π cm³, 옆넓이 15π cm²"
-          ],
-          "answer_unit": null,
-          "answer_format": "(1), (2) 를 차례로 · π 를 남긴 채 단위까지 쓰기",
-          "figure": null,
-          "hint": "축이 된 변이 높이, 축에 수직인 변이 반지름, 빗변이 모선이 돼요.",
-          "solution": "반지름 3 cm, 높이 4 cm, 모선 5 cm 인 원뿔이 만들어져요.<br>부피 = <span class=\"frac\"><b>1</b><i>3</i></span> × π × 3<sup>2</sup> × 4 = 12π cm³ 예요.<br>옆넓이 = π × 3 × 5 = 15π cm² 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.axis-swap",
-            "solid.cone-slant-vs-height"
-          ]
+          "misconceptions": ["solid.cone-slant-vs-height"]
         }
       ]
     },
     {
       "no": 5,
       "title": "구의 겉넓이·부피",
-      "principle": "구는 겉넓이 4πr<sup>2</sup>, 부피 <span class=\"frac\"><b>4</b><i>3</i></span>πr<sup>3</sup> 이에요. 반구의 부피는 그 절반이고, 반구의 겉넓이는 곡면 2πr<sup>2</sup> 에 잘린 평면 원 πr<sup>2</sup> 을 더해요.",
+      "principle": "겉넓이 = 4πr². 부피 = (4／3)πr³. 반구 부피 = 구의 절반, 반구 겉넓이 = 곡면+평면원.",
       "problems": [
         {
           "id": "m1-u12-t05-01",
           "level": "L",
-          "stem_src": "반지름 $3$ cm인 구의 부피 는? ① $12\\pi$ cm³ &nbsp; ② $27\\pi$ cm³ &nbsp; ③ $36\\pi$ cm³ &nbsp; ④ $108\\pi$ cm³",
-          "stem_print": "반지름이 3 cm 인 구의 부피를 구하시오.",
-          "answer_atoms": [
-            "③ $36\\pi$ cm³"
-          ],
+          "stem_src": "반지름 3cm인 구의 겉넓이는? (계수만)",
+          "stem_print": "반지름 3cm인 구의 겉넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["36"],
           "answer_print": "36π",
-          "answer_accept": [
-            "36π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
+          "answer_accept": [],
+          "answer_unit": "cm²",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
           "figure": null,
-          "hint": "구의 부피는 <span class=\"frac\"><b>4</b><i>3</i></span>πr<sup>3</sup> 예요. 반지름을 세 번 곱해요.",
-          "solution": "부피 = <span class=\"frac\"><b>4</b><i>3</i></span>π × 3<sup>3</sup> = <span class=\"frac\"><b>4</b><i>3</i></span>π × 27 = 36π cm³ 예요.<br><span class=\"frac\"><b>4</b><i>3</i></span> 을 빠뜨리면 108π 가 나와요.",
+          "hint": "S = 4πr².",
+          "solution": "4π×3²=36π cm².",
           "work_space": "sm",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
+          "misconceptions": ["solid.sphere-formula-mix"]
         },
         {
           "id": "m1-u12-t05-02",
-          "level": "L",
-          "stem_src": "반지름 $5$ cm인 구의 겉넓이 는? ① $25\\pi$ cm² &nbsp; ② $50\\pi$ cm² &nbsp; ③ $100\\pi$ cm² &nbsp; ④ $125\\pi$ cm²",
-          "stem_print": "반지름이 5 cm 인 구의 겉넓이를 구하시오.",
-          "answer_atoms": [
-            "③ $100\\pi$ cm²"
-          ],
-          "answer_print": "100π",
-          "answer_accept": [
-            "100π cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm²)",
+          "level": "M",
+          "stem_src": "반지름 6cm인 구의 부피는? (계수만)",
+          "stem_print": "반지름 6cm인 구의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["288"],
+          "answer_print": "288π",
+          "answer_accept": [],
+          "answer_unit": "cm³",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
           "figure": null,
-          "hint": "구의 겉넓이는 4πr<sup>2</sup> 예요.",
-          "solution": "겉넓이 = 4π × 5<sup>2</sup> = 4π × 25 = 100π cm² 예요.<br>25π 는 반지름이 같은 원 한 개의 넓이예요. 구의 겉넓이는 그것의 4배예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
+          "hint": "V = (4／3)πr³.",
+          "solution": "(4/3)π×6³=(4/3)π×216=288π cm³.",
+          "work_space": "md",
+          "misconceptions": ["solid.sphere-formula-mix"]
         },
         {
           "id": "m1-u12-t05-03",
-          "level": "L",
-          "stem_src": "반지름 $6$ cm인 반구 의 부피는? ① $72\\pi$ cm³ &nbsp; ② $144\\pi$ cm³ &nbsp; ③ $216\\pi$ cm³ &nbsp; ④ $288\\pi$ cm³",
-          "stem_print": "반지름이 6 cm 인 반구의 부피를 구하시오.",
-          "answer_atoms": [
-            "② $144\\pi$ cm³"
-          ],
-          "answer_print": "144π",
-          "answer_accept": [
-            "144π cm³"
-          ],
+          "level": "M",
+          "stem_src": "반지름 3cm인 반구의 부피는? (계수만)",
+          "stem_print": "반지름 3cm인 반구의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["18"],
+          "answer_print": "18π",
+          "answer_accept": [],
           "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
           "figure": null,
-          "hint": "반구의 부피는 구의 부피의 절반이에요.",
-          "solution": "구의 부피 = <span class=\"frac\"><b>4</b><i>3</i></span>π × 6<sup>3</sup> = <span class=\"frac\"><b>4</b><i>3</i></span>π × 216 = 288π cm³ 예요.<br>반구 = 288π ÷ 2 = 144π cm³ 예요. <span class=\"frac\"><b>2</b><i>3</i></span>πr<sup>3</sup> 으로 바로 구해도 같아요.",
+          "hint": "반구의 부피는 구 부피의 절반이에요.",
+          "solution": "구 부피 (4/3)π×27=36π, 반구는 절반인 18π cm³.",
           "work_space": "md",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
-        },
-        {
-          "id": "m1-u12-t05-04",
-          "level": "M",
-          "stem_src": "반지름 $4$ cm인 반구 의 겉넓이 (곡면 + 평면 원)는? ① $16\\pi$ cm² &nbsp; ② $32\\pi$ cm² &nbsp; ③ $48\\pi$ cm² &nbsp; ④ $64\\pi$ cm²",
-          "stem_print": "반지름이 4 cm 인 반구의 겉넓이를 구하시오. (곡면과 잘린 평면 원을 모두 포함해요.)",
-          "answer_atoms": [
-            "③ $48\\pi$ cm²"
-          ],
-          "answer_print": "48π",
-          "answer_accept": [
-            "48π cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm²)",
-          "figure": null,
-          "hint": "곡면은 구 겉넓이의 절반이고, 잘린 자리에 평면 원이 하나 생겨요.",
-          "solution": "곡면 = <span class=\"frac\"><b>1</b><i>2</i></span> × 4π × 4<sup>2</sup> = 32π cm² 예요.<br>평면 원 = π × 4<sup>2</sup> = 16π cm² 예요.<br>겉넓이 = 32π + 16π = 48π cm² 예요. 32π 만 쓰면 평면 원이 빠진 답이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.hemisphere-flat-circle"
-          ]
-        },
-        {
-          "id": "m1-u12-t05-05",
-          "level": "M",
-          "stem_src": "구 A의 반지름이 $r$, 구 B의 반지름이 $2r$일 때, B의 부피는 A의 몇 배? ① $2$배 &nbsp; ② $4$배 &nbsp; ③ $6$배 &nbsp; ④ $8$배",
-          "stem_print": "구 A 의 반지름은 r, 구 B 의 반지름은 2r 이에요. B 의 부피는 A 의 부피의 몇 배인지 구하시오.",
-          "answer_atoms": [
-            "④ $8$배"
-          ],
-          "answer_print": "8",
-          "answer_accept": [
-            "8배"
-          ],
-          "answer_unit": "배",
-          "answer_format": "수로 (단위 배)",
-          "figure": null,
-          "hint": "부피 식에서 반지름은 세 번 곱해져요.",
-          "solution": "A 의 부피 = <span class=\"frac\"><b>4</b><i>3</i></span>πr<sup>3</sup> 이에요.<br>B 의 부피 = <span class=\"frac\"><b>4</b><i>3</i></span>π(2r)<sup>3</sup> = <span class=\"frac\"><b>4</b><i>3</i></span>π × 8r<sup>3</sup> 이므로 8배예요.<br>같은 조건에서 겉넓이는 4배가 돼요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.scale-power"
-          ]
-        },
-        {
-          "id": "m1-u12-t05-06",
-          "level": "M",
-          "stem_src": "구의 부피가 $36\\pi$ cm³일 때, 반지름은? ① $2$ cm &nbsp; ② $3$ cm &nbsp; ③ $4$ cm &nbsp; ④ $6$ cm",
-          "stem_print": "구의 부피가 36π cm³ 일 때, 이 구의 반지름을 구하시오.",
-          "answer_atoms": [
-            "② $3$ cm"
-          ],
-          "answer_print": "3",
-          "answer_accept": [
-            "3 cm"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "수로 (단위 cm)",
-          "figure": null,
-          "hint": "<span class=\"frac\"><b>4</b><i>3</i></span>πr<sup>3</sup> = 36π 에서 r<sup>3</sup> 의 값을 먼저 구해요.",
-          "solution": "<span class=\"frac\"><b>4</b><i>3</i></span>πr<sup>3</sup> = 36π 이므로 r<sup>3</sup> = 36 × <span class=\"frac\"><b>3</b><i>4</i></span> = 27 이에요.<br>3 × 3 × 3 = 27 이므로 반지름은 3 cm 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
-        },
-        {
-          "id": "m1-u12-t05-07",
-          "level": "H",
-          "stem_src": "반지름 $r$인 구가 원기둥 안에 꼭 맞게 들어갑니다 (원기둥 높이 = $2r$, 반지름 = $r$). 이때 구 부피와 원기둥 부피의 비 $V_{구} : V_{원기둥}$은? ① $1 : 2$ &nbsp; ② $2 : 3$ &nbsp; ③ $3 : 4$ &nbsp; ④ $1 : 3$",
-          "stem_print": "반지름이 r 인 구가 밑면의 반지름 r, 높이 2r 인 원기둥 안에 꼭 맞게 들어 있어요. (구의 부피) : (원기둥의 부피) 를 구하시오.",
-          "answer_atoms": [
-            "② $2 : 3$"
-          ],
-          "answer_print": "2 : 3",
-          "answer_accept": [
-            "2:3"
-          ],
-          "answer_unit": null,
-          "answer_format": "가장 간단한 자연수의 비로 (단위 없음)",
-          "figure": null,
-          "hint": "두 부피를 각각 r 로 나타낸 다음 비교해요.",
-          "solution": "구의 부피 = <span class=\"frac\"><b>4</b><i>3</i></span>πr<sup>3</sup> 이에요.<br>원기둥의 부피 = πr<sup>2</sup> × 2r = 2πr<sup>3</sup> 이에요.<br><span class=\"frac\"><b>4</b><i>3</i></span> : 2 = 4 : 6 = 2 : 3 이에요. 아르키메데스가 가장 아꼈던 결과예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
-        },
-        {
-          "id": "m1-u12-t05-08",
-          "level": "H",
-          "stem_src": "같은 반지름 $r$이고, 원뿔 높이 = 구 지름 = 원기둥 높이 = $2r$일 때, 부피 비 $V_{원뿔} : V_{구} : V_{원기둥}$은? ① $1 : 2 : 3$ &nbsp; ② $1 : 3 : 2$ &nbsp; ③ $1 : 4 : 6$ &nbsp; ④ $2 : 4 : 3$",
-          "stem_print": "밑면의 반지름이 모두 r 로 같고, 원뿔의 높이 = 구의 지름 = 원기둥의 높이 = 2r 이에요. (원뿔의 부피) : (구의 부피) : (원기둥의 부피) 를 구하시오.",
-          "answer_atoms": [
-            "① $1 : 2 : 3$"
-          ],
-          "answer_print": "1 : 2 : 3",
-          "answer_accept": [
-            "1:2:3"
-          ],
-          "answer_unit": null,
-          "answer_format": "가장 간단한 자연수의 비로 (단위 없음)",
-          "figure": null,
-          "hint": "세 부피를 각각 r 로 나타내면 분모를 같게 맞출 수 있어요.",
-          "solution": "원뿔 = <span class=\"frac\"><b>1</b><i>3</i></span>πr<sup>2</sup> × 2r = <span class=\"frac\"><b>2</b><i>3</i></span>πr<sup>3</sup> 이에요.<br>구 = <span class=\"frac\"><b>4</b><i>3</i></span>πr<sup>3</sup> 이에요.<br>원기둥 = πr<sup>2</sup> × 2r = 2πr<sup>3</sup> = <span class=\"frac\"><b>6</b><i>3</i></span>πr<sup>3</sup> 이에요.<br>2 : 4 : 6 = 1 : 2 : 3 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
-        },
-        {
-          "id": "m1-u12-t05-09",
-          "level": "H",
-          "stem_src": "반지름 $3$ cm인 반구 위에 같은 반지름의 원기둥(높이 $4$ cm)이 얹어진 합성 입체(평평한 바닥은 원기둥의 다른 밑면). 이 입체의 부피 는? ① $36\\pi$ cm³ &nbsp; ② $48\\pi$ cm³ &nbsp; ③ $54\\pi$ cm³ &nbsp; ④ $72\\pi$ cm³",
-          "stem_print": "반지름이 3 cm 인 반구 위에 밑면의 반지름이 같은 원기둥(높이 4 cm)이 얹혀 있어요. 이 입체 전체의 부피를 구하시오.",
-          "answer_atoms": [
-            "③ $54\\pi$ cm³"
-          ],
-          "answer_print": "54π",
-          "answer_accept": [
-            "54π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "반구의 부피와 원기둥의 부피를 더해요.",
-          "solution": "반구 = <span class=\"frac\"><b>2</b><i>3</i></span>π × 3<sup>3</sup> = 18π cm³ 예요.<br>원기둥 = π × 3<sup>2</sup> × 4 = 36π cm³ 예요.<br>전체 = 18π + 36π = 54π cm³ 예요. 맞닿은 면은 부피에는 영향을 주지 않아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.join-face-kept"
-          ]
+          "misconceptions": []
         }
       ]
     },
     {
       "no": 6,
-      "title": "회전체의 부피",
-      "principle": "평면도형을 축을 중심으로 돌리면 입체가 돼요. 축에 붙어 있는 변은 높이가 되고, 축에서 떨어진 거리는 반지름이 돼요.",
+      "title": "회전체의 부피 (단원 11 연계)",
+      "principle": "회전축을 확인하고, r과 h를 정확히 읽은 뒤 원기둥·원뿔·구 공식을 그대로 적용해요.",
       "problems": [
         {
           "id": "m1-u12-t06-01",
           "level": "L",
-          "stem_src": "가로 $3$ cm, 세로 $5$ cm인 직사각형을 가로($3$)를 축으로 한 바퀴 돌렸어요. 만들어진 입체의 부피는? ① $15\\pi$ cm³ &nbsp; ② $45\\pi$ cm³ &nbsp; ③ $75\\pi$ cm³ &nbsp; ④ $225\\pi$ cm³",
-          "stem_print": "가로 3 cm, 세로 5 cm 인 직사각형을 가로인 변(길이 3 cm)을 축으로 하여 한 바퀴 돌렸어요. 만들어지는 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "③ $75\\pi$ cm³"
-          ],
-          "answer_print": "75π",
-          "answer_accept": [
-            "75π cm³"
-          ],
+          "stem_src": "가로 3cm, 세로 4cm인 직사각형을 세로변을 축으로 1회전시키면 생기는 원기둥의 부피는? (계수만)",
+          "stem_print": "가로 3cm, 세로 4cm인 직사각형을 세로변을 축으로 1회전시키면 생기는 원기둥의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["36"],
+          "answer_print": "36π",
+          "answer_accept": [],
           "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
           "figure": null,
-          "hint": "축이 된 변이 높이가 되고, 축에 수직인 변이 반지름이 돼요.",
-          "solution": "높이 3 cm, 반지름 5 cm 인 원기둥이 만들어져요.<br>부피 = π × 5<sup>2</sup> × 3 = 75π cm³ 예요.<br>축을 세로로 잡으면 45π 가 되어 다른 입체가 돼요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.axis-swap"
-          ]
+          "hint": "축에 붙어 있지 않은 변의 길이가 반지름이에요.",
+          "solution": "r=3, h=4 → π×3²×4=36π cm³.",
+          "work_space": "sm",
+          "misconceptions": ["solid.axis-swap"]
         },
         {
           "id": "m1-u12-t06-02",
-          "level": "L",
-          "stem_src": "직각삼각형(직각변 $3$, $4$)을 $3$cm 직각변을 축으로 회전했어요. 만들어진 원뿔의 부피는? ① $4\\pi$ cm³ &nbsp; ② $12\\pi$ cm³ &nbsp; ③ $16\\pi$ cm³ &nbsp; ④ $48\\pi$ cm³",
-          "stem_print": "두 직각변의 길이가 3 cm, 4 cm 인 직각삼각형을 길이가 3 cm 인 직각변을 축으로 하여 한 바퀴 돌렸어요. 만들어지는 원뿔의 부피를 구하시오.",
-          "answer_atoms": [
-            "③ $16\\pi$ cm³"
-          ],
-          "answer_print": "16π",
-          "answer_accept": [
-            "16π cm³"
-          ],
+          "level": "M",
+          "stem_src": "밑변 3cm, 높이 4cm인 직각삼각형의 직각을 낀 변을 축으로 1회전시키면 생기는 원뿔의 부피는? (계수만)",
+          "stem_print": "밑변 3cm, 높이 4cm인 직각삼각형의 직각을 낀 변을 축으로 1회전시키면 생기는 원뿔의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["12"],
+          "answer_print": "12π",
+          "answer_accept": [],
           "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
           "figure": null,
-          "hint": "축이 된 변이 높이가 되고, 다른 직각변이 반지름이 돼요.",
-          "solution": "높이 3 cm, 반지름 4 cm 인 원뿔이 만들어져요.<br>부피 = <span class=\"frac\"><b>1</b><i>3</i></span>π × 4<sup>2</sup> × 3 = 16π cm³ 예요.<br><span class=\"frac\"><b>1</b><i>3</i></span> 을 빠뜨리면 48π 가 나와요.",
+          "hint": "회전체 부피 공식은 원뿔과 같아요.",
+          "solution": "r=3, h=4 → (1/3)π×3²×4=12π cm³.",
           "work_space": "md",
-          "misconceptions": [
-            "solid.axis-swap",
-            "solid.pyramid-third-missing"
-          ]
+          "misconceptions": ["solid.axis-swap"]
         },
         {
           "id": "m1-u12-t06-03",
-          "level": "L",
-          "stem_src": "반지름 $4$ cm인 반원을 지름을 축으로 한 바퀴 돌렸어요. 만들어진 입체의 부피는? ① $\\frac{128}{3}\\pi$ cm³ &nbsp; ② $\\frac{256}{3}\\pi$ cm³ &nbsp; ③ $\\frac{4}{3}\\pi$ cm³ &nbsp; ④ $64\\pi$ cm³",
-          "stem_print": "반지름이 4 cm 인 반원을 지름을 축으로 하여 한 바퀴 돌렸어요. 만들어지는 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "② $\\frac{256}{3}\\pi$ cm³"
-          ],
-          "answer_print": "<span class=\"frac\"><b>256</b><i>3</i></span>π",
-          "answer_accept": [
-            "256π/3 cm³",
-            "(256/3)π cm³"
-          ],
+          "level": "M",
+          "stem_src": "반지름 3cm인 반원을 지름을 축으로 1회전시키면 생기는 구의 부피는? (계수만)",
+          "stem_print": "반지름 3cm인 반원을 지름을 축으로 1회전시키면 생기는 구의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["36"],
+          "answer_print": "36π",
+          "answer_accept": [],
           "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
           "figure": null,
-          "hint": "반원을 지름을 축으로 돌리면 구가 돼요.",
-          "solution": "구가 만들어져요.<br>부피 = <span class=\"frac\"><b>4</b><i>3</i></span>π × 4<sup>3</sup> = <span class=\"frac\"><b>4</b><i>3</i></span>π × 64 = <span class=\"frac\"><b>256</b><i>3</i></span>π cm³ 예요.",
+          "hint": "구의 부피 공식을 그대로 써요.",
+          "solution": "(4/3)π×3³=36π cm³.",
           "work_space": "md",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
-        },
-        {
-          "id": "m1-u12-t06-04",
-          "level": "M",
-          "stem_src": "사다리꼴(평행한 두 변 $2$ cm, $5$ cm, 두 평행변 사이 거리 = 사다리꼴의 다리 길이 $4$ cm)을 그 다리(길이 $4$)를 축으로 회전했어요. 만들어지는 원뿔대 의 부피는? (두 밑면 반지름 $R=5, r=2$, 높이 $h=4$ 원뿔대 공식 $V = \\frac{\\pi h}{3}(R^2 + Rr + r^2)$ 사용) ① $39\\pi$ cm³ &nbsp; ② $52\\pi$ cm³ &nbsp; ③ $\\frac{156\\pi}{3}$ cm³ &nbsp; ④ ② 또는 ③ 모두 같은 답",
-          "stem_print": "평행한 두 변의 길이가 2 cm, 5 cm 이고 두 평행한 변에 수직인 다리의 길이가 4 cm 인 사다리꼴을 그 다리를 축으로 하여 한 바퀴 돌렸어요. 만들어지는 원뿔대는 두 밑면의 반지름이 5 cm 와 2 cm, 높이가 4 cm 예요. 원뿔대의 부피 공식 V = <span class=\"frac\"><b>πh</b><i>3</i></span>(R<sup>2</sup> + Rr + r<sup>2</sup>) 을 이용하여 부피를 구하시오.",
-          "answer_atoms": [
-            "④ ② 또는 ③ 모두 같은 답 ($52\\pi$ cm³)"
-          ],
-          "answer_print": "52π",
-          "answer_accept": [
-            "52π cm³",
-            "156π/3 cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "R = 5, r = 2, h = 4 를 공식에 그대로 넣어요.",
-          "solution": "R<sup>2</sup> + Rr + r<sup>2</sup> = 25 + 10 + 4 = 39 예요.<br>V = <span class=\"frac\"><b>π × 4</b><i>3</i></span> × 39 = <span class=\"frac\"><b>156</b><i>3</i></span>π = 52π cm³ 예요.<br>큰 원뿔에서 작은 원뿔을 빼는 방법으로도 같은 값이 나와요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.axis-swap"
-          ]
-        },
-        {
-          "id": "m1-u12-t06-05",
-          "level": "M",
-          "stem_src": "아래쪽이 가로 $4$ cm, 세로 $3$ cm 직사각형이고 그 위에 빗변이 직사각형의 윗변과 만나는 직각삼각형(밑변 $4$, 높이 $2$)이 결합된 도형을, 직사각형의 세로($3$)를 포함하는 변(즉 도형의 한쪽 수직변, 길이 $3+2=5$)을 축으로 회전했어요. (간단히 풀이) 직사각형 회전 = 원기둥 + 삼각형 회전 = 원뿔. 부피는? ① $48\\pi + \\frac{32\\pi}{3}$ cm³ &nbsp; ② $48\\pi$ cm³ &nbsp; ③ $\\frac{32\\pi}{3}$ cm³ &nbsp; ④ $\\frac{176\\pi}{3}$ cm³",
-          "stem_print": "가로 4 cm, 세로 3 cm 인 직사각형 위에 밑변 4 cm, 높이 2 cm 인 직각삼각형이 붙어 있는 도형이 있어요. 이 도형을 왼쪽 수직인 변(길이 3 + 2 = 5 cm)을 축으로 하여 한 바퀴 돌리면, 반지름 4 cm·높이 3 cm 인 원기둥 위에 반지름 4 cm·높이 2 cm 인 원뿔이 얹힌 입체가 만들어져요. 이 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "④ $\\frac{176\\pi}{3}$ cm³"
-          ],
-          "answer_print": "<span class=\"frac\"><b>176</b><i>3</i></span>π",
-          "answer_accept": [
-            "176π/3 cm³",
-            "48π + 32π/3 cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "원기둥의 부피와 원뿔의 부피를 각각 구해서 더해요.",
-          "solution": "원기둥 = π × 4<sup>2</sup> × 3 = 48π = <span class=\"frac\"><b>144</b><i>3</i></span>π cm³ 예요.<br>원뿔 = <span class=\"frac\"><b>1</b><i>3</i></span>π × 4<sup>2</sup> × 2 = <span class=\"frac\"><b>32</b><i>3</i></span>π cm³ 예요.<br>전체 = <span class=\"frac\"><b>144</b><i>3</i></span>π + <span class=\"frac\"><b>32</b><i>3</i></span>π = <span class=\"frac\"><b>176</b><i>3</i></span>π cm³ 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.pyramid-third-missing"
-          ]
-        },
-        {
-          "id": "m1-u12-t06-06",
-          "level": "M",
-          "stem_src": "회전축에서 떨어진 정사각형(한 변 $2$ cm, 축과의 거리 $3$ cm)을 한 바퀴 돌렸어요. 만들어지는 입체의 모양은? ① 원기둥 &nbsp; ② 원뿔 &nbsp; ③ 도넛(토러스) 모양 &nbsp; ④ 구",
-          "stem_print": "회전축에서 3 cm 떨어진 곳에 한 변이 2 cm 인 정사각형이 있어요. 이 정사각형을 축을 중심으로 한 바퀴 돌리면 어떤 모양의 입체가 만들어지는지 쓰시오.",
-          "answer_atoms": [
-            "③ 도넛(토러스) 모양"
-          ],
-          "answer_print": "도넛(토러스) 모양",
-          "answer_accept": [
-            "가운데가 뚫린 도넛 모양",
-            "토러스"
-          ],
-          "answer_unit": null,
-          "answer_format": "입체의 모양을 말로 (단위 없음)",
-          "figure": null,
-          "hint": "축에 닿지 않은 도형이 돌면 가운데 자리가 어떻게 될지 생각해 봐요.",
-          "solution": "정사각형이 회전축에 닿지 않으므로 가운데가 비어 있는 도넛(토러스) 모양이 만들어져요.<br>이 입체의 부피를 구하는 것은 중1 범위를 넘어가요. 모양을 알아보는 것까지가 목표예요.",
-          "work_space": "md",
-          "misconceptions": []
-        },
-        {
-          "id": "m1-u12-t06-07",
-          "level": "H",
-          "stem_src": "직각삼각형(직각변 $3$, $4$, 빗변 $5$)을 빗변(길이 $5$)을 축으로 한 바퀴 돌렸어요. 만들어진 입체는 두 원뿔이 밑면을 공유하며 합쳐진 모양. 부피의 합 은? (직각꼭짓점에서 빗변에 내린 수선 길이 = $\\frac{12}{5}$, 그 발은 빗변을 $\\frac{9}{5}, \\frac{16}{5}$로 분할.) ① $\\frac{48\\pi}{5}$ cm³ &nbsp; ② $\\frac{144\\pi}{25}$ cm³ &nbsp; ③ $\\frac{48\\pi}{25}$ cm³ &nbsp; ④ $20\\pi$ cm³",
-          "stem_print": "두 직각변이 3 cm, 4 cm 이고 빗변이 5 cm 인 직각삼각형을 빗변을 축으로 하여 한 바퀴 돌렸어요. 만들어지는 입체는 밑면을 맞댄 두 원뿔이에요. 직각인 꼭짓점에서 빗변에 내린 수선의 길이는 <span class=\"frac\"><b>12</b><i>5</i></span> cm 이고, 그 발이 빗변을 <span class=\"frac\"><b>9</b><i>5</i></span> cm 와 <span class=\"frac\"><b>16</b><i>5</i></span> cm 로 나눠요. 이 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "① $\\frac{48\\pi}{5}$ cm³"
-          ],
-          "answer_print": "<span class=\"frac\"><b>48</b><i>5</i></span>π",
-          "answer_accept": [
-            "48π/5 cm³",
-            "9.6π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "두 원뿔의 반지름이 같으니 두 높이를 먼저 더해요.",
-          "solution": "두 원뿔의 반지름은 모두 <span class=\"frac\"><b>12</b><i>5</i></span> cm 이고 높이의 합은 <span class=\"frac\"><b>9</b><i>5</i></span> + <span class=\"frac\"><b>16</b><i>5</i></span> = 5 cm 예요.<br>부피 = <span class=\"frac\"><b>1</b><i>3</i></span>π × <span class=\"frac\"><b>144</b><i>25</i></span> × 5 = <span class=\"frac\"><b>48</b><i>5</i></span>π cm³ 예요.<br>반지름이 같으므로 두 원뿔을 따로 구하지 않고 높이만 더해도 돼요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.pyramid-third-missing"
-          ]
-        },
-        {
-          "id": "m1-u12-t06-08",
-          "level": "H",
-          "stem_src": "L자 도형(큰 직사각형 $5\\times 3$ + 작은 직사각형 $2\\times 2$가 한쪽 모서리에 붙은 형태로, 회전축에서 떨어진 부분이 있음)을 단순하게 큰 원기둥 ($r=5, h=3$)에서 작은 원기둥 ($r=2, h=2$)를 빼는 형태로 가정하고 계산할 때, 부피는? ① $75\\pi - 8\\pi = 67\\pi$ cm³ &nbsp; ② $75\\pi + 8\\pi = 83\\pi$ cm³ &nbsp; ③ $25\\pi \\cdot 3 - 4\\pi \\cdot 2 = 67\\pi$ cm³ &nbsp; ④ ① 또는 ③ 모두 같은 답",
-          "stem_print": "어떤 도형을 돌려서 만든 입체가 반지름 5 cm·높이 3 cm 인 원기둥에서 반지름 2 cm·높이 2 cm 인 원기둥을 파낸 모양이에요. 이 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "④ ① 또는 ③ 모두 같은 답 ($67\\pi$ cm³)"
-          ],
-          "answer_print": "67π",
-          "answer_accept": [
-            "67π cm³",
-            "75π − 8π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "큰 원기둥의 부피에서 파낸 원기둥의 부피를 빼요.",
-          "solution": "큰 원기둥 = π × 5<sup>2</sup> × 3 = 75π cm³ 예요.<br>파낸 원기둥 = π × 2<sup>2</sup> × 2 = 8π cm³ 예요.<br>부피 = 75π − 8π = 67π cm³ 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.radius-once"
-          ]
-        },
-        {
-          "id": "m1-u12-t06-09",
-          "level": "H",
-          "stem_src": "직각삼각형(직각변 $3$, $4$, 빗변 $5$)을 길이 $4$ 직각변을 축으로 회전했을 때 만들어진 원뿔의 옆넓이 는? ① $9\\pi$ cm² &nbsp; ② $12\\pi$ cm² &nbsp; ③ $15\\pi$ cm² &nbsp; ④ $20\\pi$ cm²",
-          "stem_print": "두 직각변이 3 cm, 4 cm 이고 빗변이 5 cm 인 직각삼각형을 길이가 4 cm 인 직각변을 축으로 하여 한 바퀴 돌렸어요. 만들어지는 원뿔의 옆넓이를 구하시오.",
-          "answer_atoms": [
-            "③ $15\\pi$ cm²"
-          ],
-          "answer_print": "15π",
-          "answer_accept": [
-            "15π cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm²)",
-          "figure": null,
-          "hint": "돌 때 빗변이 지나간 자리가 옆면이 되므로 빗변이 모선이 돼요.",
-          "solution": "반지름 3 cm, 높이 4 cm, 모선 5 cm 인 원뿔이 만들어져요.<br>옆넓이 = π × 3 × 5 = 15π cm² 예요.<br>모선 대신 높이 4 를 쓰면 12π 가 되어 틀려요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.cone-slant-vs-height",
-            "solid.axis-swap"
-          ]
+          "misconceptions": ["solid.axis-swap"]
         }
       ]
     },
     {
       "no": 7,
-      "title": "복합 입체 (시험 빈도 최고)",
-      "principle": "복합 입체는 더하거나 빼서 구해요. 부피는 그냥 더하거나 빼면 되지만, 겉넓이에서는 맞닿아 안으로 들어간 면을 빼요.",
+      "title": "복합 입체 (★)",
+      "principle": "복합 입체는 단순 입체의 합·차로 나눠요. 맞닿은 면은 겉넓이에서 빼요.",
       "problems": [
         {
           "id": "m1-u12-t07-01",
-          "level": "L",
-          "stem_src": "반지름 $3$ cm인 반구 위에 같은 반지름의 원기둥(높이 $5$ cm)이 붙은 캡슐 모양 입체. 부피 는? ① $18\\pi$ cm³ &nbsp; ② $45\\pi$ cm³ &nbsp; ③ $63\\pi$ cm³ &nbsp; ④ $99\\pi$ cm³",
-          "stem_print": "밑면의 반지름이 3 cm 인 반구 위에 반지름이 같은 원기둥(높이 5 cm)이 붙어 있는 캡슐 모양 입체가 있어요. 이 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "③ $63\\pi$ cm³"
-          ],
-          "answer_print": "63π",
-          "answer_accept": [
-            "63π cm³"
-          ],
+          "level": "M",
+          "stem_src": "반지름 3cm, 높이 6cm인 원기둥 안에 반지름 3cm인 구가 꼭 맞게 들어있을 때, 구를 뺀 나머지 부분의 부피는? (계수만)",
+          "stem_print": "반지름 3cm, 높이 6cm인 원기둥 안에 반지름 3cm인 구가 꼭 맞게 들어있을 때, 구를 뺀 나머지 부분의 부피를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["18"],
+          "answer_print": "18π",
+          "answer_accept": [],
           "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
+          "answer_format": "OOπ 꼴로 (단위: cm³)",
           "figure": null,
-          "hint": "반구의 부피와 원기둥의 부피를 더해요.",
-          "solution": "반구 = <span class=\"frac\"><b>2</b><i>3</i></span>π × 3<sup>3</sup> = 18π cm³ 예요.<br>원기둥 = π × 3<sup>2</sup> × 5 = 45π cm³ 예요.<br>전체 = 18π + 45π = 63π cm³ 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.join-face-kept"
-          ]
+          "hint": "원기둥 부피에서 구 부피를 빼요.",
+          "solution": "원기둥(π×9×6=54π) − 구((4/3)π×27=36π)=18π cm³.",
+          "work_space": "lg",
+          "misconceptions": []
         },
         {
           "id": "m1-u12-t07-02",
-          "level": "L",
-          "stem_src": "한 모서리 $5$ cm인 정육면체에서 한 꼭짓점 부분의 한 모서리 $2$ cm인 작은 정육면체를 잘라냈어요. 남은 입체의 부피는? ① $117$ cm³ &nbsp; ② $123$ cm³ &nbsp; ③ $125$ cm³ &nbsp; ④ $133$ cm³",
-          "stem_print": "한 모서리가 5 cm 인 정육면체에서 한 꼭짓점 쪽의 한 모서리 2 cm 인 작은 정육면체를 잘라 냈어요. 남은 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "① $117$ cm³"
-          ],
-          "answer_print": "117",
-          "answer_accept": [
-            "117 cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "수로 (단위 cm³)",
+          "level": "M",
+          "stem_src": "반지름 r, 높이 2r인 원기둥 안에 원뿔과 구가 꼭 맞게 들어있을 때, 원뿔:구:원기둥의 부피 비는?",
+          "stem_print": "반지름 r, 높이 2r인 원기둥 안에 원뿔과 구가 꼭 맞게 들어있을 때, 원뿔:구:원기둥의 부피 비를 쓰시오.",
+          "answer_atoms": ["1:2:3"],
+          "answer_print": "1:2:3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "비율로 (단위 없음)",
           "figure": null,
-          "hint": "큰 정육면체의 부피에서 잘라 낸 부피를 빼요.",
-          "solution": "5<sup>3</sup> − 2<sup>3</sup> = 125 − 8 = 117 cm³ 예요.<br>부피이므로 단위는 cm³ 예요.",
+          "hint": "반지름이 어떤 값이든 이 비율은 항상 같아요.",
+          "solution": "원뿔:구:원기둥 = 1:2:3 (아르키메데스의 발견).",
           "work_space": "sm",
-          "misconceptions": [
-            "solid.unit-area-volume"
-          ]
+          "misconceptions": []
         },
         {
           "id": "m1-u12-t07-03",
-          "level": "L",
-          "stem_src": "반지름 $2$ cm, 높이 $5$ cm인 원기둥 두 개가 옆으로 나란히 합쳐진 ($r$만 공유, 다른 부분 합쳐짐 없는 단순 결합) 입체의 부피의 합 은? ① $20\\pi$ cm³ &nbsp; ② $40\\pi$ cm³ &nbsp; ③ $80\\pi$ cm³ &nbsp; ④ $100\\pi$ cm³",
-          "stem_print": "밑면의 반지름이 2 cm, 높이가 5 cm 인 원기둥 두 개를 나란히 놓았어요. 두 원기둥의 부피의 합을 구하시오.",
-          "answer_atoms": [
-            "② $40\\pi$ cm³"
-          ],
-          "answer_print": "40π",
-          "answer_accept": [
-            "40π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "원기둥 한 개의 부피를 구한 다음 두 배 해요.",
-          "solution": "원기둥 한 개 = π × 2<sup>2</sup> × 5 = 20π cm³ 예요.<br>두 개의 합 = 40π cm³ 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "solid.radius-once"
-          ]
-        },
-        {
-          "id": "m1-u12-t07-04",
           "level": "M",
-          "stem_src": "반지름 $3$ cm인 반구 의 부피를 구하시오. (힌트: 같은 반지름·높이의 원기둥에서 원뿔을 빼면 반구와 같은 부피 — 카발리에리 원리 활용) ① $9\\pi$ cm³ &nbsp; ② $18\\pi$ cm³ &nbsp; ③ $27\\pi$ cm³ &nbsp; ④ $36\\pi$ cm³",
-          "stem_print": "반지름이 3 cm 인 반구의 부피를 구하시오. (밑면의 반지름과 높이가 모두 3 cm 인 원기둥에서 같은 밑면·같은 높이의 원뿔을 빼면 이 반구와 부피가 같아요.)",
-          "answer_atoms": [
-            "② $18\\pi$ cm³"
-          ],
-          "answer_print": "18π",
-          "answer_accept": [
-            "18π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "원기둥의 부피에서 원뿔의 부피를 빼 보아요. <span class=\"frac\"><b>2</b><i>3</i></span>πr<sup>3</sup> 으로 바로 구해도 돼요.",
-          "solution": "원기둥 = π × 3<sup>2</sup> × 3 = 27π cm³ 예요.<br>원뿔 = <span class=\"frac\"><b>1</b><i>3</i></span>π × 3<sup>2</sup> × 3 = 9π cm³ 예요.<br>27π − 9π = 18π cm³ 이고, <span class=\"frac\"><b>2</b><i>3</i></span>π × 3<sup>3</sup> = 18π cm³ 과 같아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
-        },
-        {
-          "id": "m1-u12-t07-05",
-          "level": "M",
-          "stem_src": "반지름 $r$인 구가 같은 반지름의 원기둥(높이 $2r$) 안에 꼭 맞게 들어 있어요. 원기둥과 구 사이 빈 공간 의 부피는? (단 $r=3$) ① $12\\pi$ cm³ &nbsp; ② $18\\pi$ cm³ &nbsp; ③ $24\\pi$ cm³ &nbsp; ④ $36\\pi$ cm³",
-          "stem_print": "반지름이 3 cm 인 구가 밑면의 반지름 3 cm, 높이 6 cm 인 원기둥 안에 꼭 맞게 들어 있어요. 원기둥과 구 사이 빈 공간의 부피를 구하시오.",
-          "answer_atoms": [
-            "② $18\\pi$ cm³"
-          ],
-          "answer_print": "18π",
-          "answer_accept": [
-            "18π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "원기둥의 부피에서 구의 부피를 빼요.",
-          "solution": "원기둥 = π × 3<sup>2</sup> × 6 = 54π cm³ 예요.<br>구 = <span class=\"frac\"><b>4</b><i>3</i></span>π × 3<sup>3</sup> = 36π cm³ 예요.<br>빈 공간 = 54π − 36π = 18π cm³ 예요. 이 값은 같은 조건의 원뿔의 부피와 같아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
-        },
-        {
-          "id": "m1-u12-t07-06",
-          "level": "M",
-          "stem_src": "반지름 $r$이 같고 원뿔 높이 = 구 지름 = 원기둥 높이 $= 2r$일 때, $V_{원기둥} = 24\\pi$ cm³입니다. 같은 조건의 구의 부피는? ① $8\\pi$ cm³ &nbsp; ② $12\\pi$ cm³ &nbsp; ③ $16\\pi$ cm³ &nbsp; ④ $24\\pi$ cm³",
-          "stem_print": "밑면의 반지름이 같고 원뿔의 높이 = 구의 지름 = 원기둥의 높이 인 원뿔, 구, 원기둥이 있어요. 원기둥의 부피가 24π cm³ 일 때, 구의 부피를 구하시오.",
-          "answer_atoms": [
-            "③ $16\\pi$ cm³"
-          ],
-          "answer_print": "16π",
-          "answer_accept": [
-            "16π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm³)",
-          "figure": null,
-          "hint": "원뿔 : 구 : 원기둥 의 부피의 비가 1 : 2 : 3 이라는 점을 이용해요.",
-          "solution": "구의 부피는 원기둥의 부피의 <span class=\"frac\"><b>2</b><i>3</i></span> 이에요.<br>24π × <span class=\"frac\"><b>2</b><i>3</i></span> = 16π cm³ 예요. 같은 조건의 원뿔은 8π cm³ 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
-        },
-        {
-          "id": "m1-u12-t07-07",
-          "level": "H",
-          "stem_src": "반지름 $4$ cm인 반구 위에 같은 반지름의 원뿔(높이 $3$ cm, 모선 $5$ cm)이 결합된 입체의 겉넓이 는? (결합면 평면 원은 내부) ① $20\\pi$ cm² &nbsp; ② $32\\pi$ cm² &nbsp; ③ $48\\pi$ cm² &nbsp; ④ $52\\pi$ cm²",
-          "stem_print": "밑면의 반지름이 4 cm 인 반구 위에, 밑면의 반지름이 같고 높이가 3 cm, 모선이 5 cm 인 원뿔이 붙어 있어요. 이 입체의 겉넓이를 구하시오. (맞닿은 평면 원은 안쪽에 있어요.)",
-          "answer_atoms": [
-            "④ $52\\pi$ cm²"
-          ],
-          "answer_print": "52π",
-          "answer_accept": [
-            "52π cm²"
-          ],
+          "stem_src": "겉넓이 각각 24π cm², 18π cm²인 두 입체를 넓이 4π cm²인 면끼리 붙이면 겉넓이는? (계수만)",
+          "stem_print": "겉넓이가 각각 24π cm², 18π cm²인 두 입체를 넓이 4π cm²인 면끼리 붙이면 겉넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["34"],
+          "answer_print": "34π",
+          "answer_accept": [],
           "answer_unit": "cm²",
-          "answer_format": "π 를 남긴 꼴로 (단위 cm²)",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
           "figure": null,
-          "hint": "겉으로 드러난 면만 더해요. 반구의 곡면과 원뿔의 옆면이에요.",
-          "solution": "반구의 곡면 = 2π × 4<sup>2</sup> = 32π cm² 예요.<br>원뿔의 옆넓이 = π × 4 × 5 = 20π cm² 예요.<br>겉넓이 = 32π + 20π = 52π cm² 예요. 맞닿은 원 16π 를 두 번 더하면 84π 가 되어 틀려요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.join-face-kept",
-            "solid.cone-slant-vs-height"
-          ]
-        },
-        {
-          "id": "m1-u12-t07-08",
-          "level": "H",
-          "stem_src": "한 모서리 $6$ cm인 정육면체의 한 면 중앙에서 반대편 면까지 반지름 $2$ cm인 원기둥 모양 구멍이 뚫려 있어요. 입체의 부피 는? ① $216 - 24\\pi$ cm³ &nbsp; ② $216 - 8\\pi$ cm³ &nbsp; ③ $216 + 24\\pi$ cm³ &nbsp; ④ $200\\pi$ cm³",
-          "stem_print": "한 모서리가 6 cm 인 정육면체의 한 면의 중앙에서 반대편 면까지, 반지름이 2 cm 인 원기둥 모양의 구멍이 뚫려 있어요. 이 입체의 부피를 구하시오.",
-          "answer_atoms": [
-            "① $216 - 24\\pi$ cm³"
-          ],
-          "answer_print": "216 − 24π",
-          "answer_accept": [
-            "216 − 24π cm³"
-          ],
-          "answer_unit": "cm³",
-          "answer_format": "π 를 남긴 꼴로 · π = 3.14 로 계산하지 않기 (단위 cm³)",
-          "figure": null,
-          "hint": "정육면체의 부피에서 구멍의 부피를 빼요. 구멍의 길이는 6 cm 예요.",
-          "solution": "정육면체 = 6<sup>3</sup> = 216 cm³ 예요.<br>구멍 = π × 2<sup>2</sup> × 6 = 24π cm³ 예요.<br>부피 = 216 − 24π cm³ 예요. π 가 남아 있어도 그대로 두는 것이 정확한 답이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.pi-dropped"
-          ]
-        },
-        {
-          "id": "m1-u12-t07-09",
-          "level": "H",
-          "stem_src": "반지름이 같은 원뿔·구·원기둥 (높이 모두 $= 2r$)에서 구의 부피 가 $32\\pi$ cm³입니다. 같은 조건의 원뿔과 원기둥의 부피는? ① 원뿔 $16\\pi$, 원기둥 $48\\pi$ cm³ &nbsp; ② 원뿔 $\\frac{32}{3}\\pi$, 원기둥 $48\\pi$ cm³ &nbsp; ③ 원뿔 $16\\pi$, 원기둥 $64\\pi$ cm³ &nbsp; ④ 원뿔 $\\frac{32}{3}\\pi$, 원기둥 $32\\pi$ cm³",
-          "stem_print": "밑면의 반지름이 같고 원뿔의 높이 = 구의 지름 = 원기둥의 높이 인 원뿔, 구, 원기둥이 있어요. 구의 부피가 32π cm³ 일 때, (1) 원뿔의 부피와 (2) 원기둥의 부피를 각각 구하시오.",
-          "answer_atoms": [
-            "① 원뿔 $16\\pi$ cm³, 원기둥 $48\\pi$ cm³"
-          ],
-          "answer_print": "(1) 16π cm³  (2) 48π cm³",
-          "answer_accept": [
-            "원뿔 16π cm³, 원기둥 48π cm³"
-          ],
-          "answer_unit": null,
-          "answer_format": "(1), (2) 를 차례로 · π 를 남긴 채 단위까지 쓰기",
-          "figure": null,
-          "hint": "원뿔 : 구 : 원기둥 = 1 : 2 : 3 이고, 구가 2 에 해당해요.",
-          "solution": "구가 32π cm³ 이므로 비에서 1 에 해당하는 값은 16π cm³ 예요.<br>원뿔 = 16π cm³ 예요.<br>원기둥 = 3 × 16π = 48π cm³ 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "solid.sphere-formula-mix"
-          ]
+          "hint": "맞닿은 면 2개는 겉에서 안 보여요.",
+          "solution": "24π+18π−2×4π=34π cm².",
+          "work_space": "md",
+          "misconceptions": ["solid.join-face-kept"]
         }
       ]
     }

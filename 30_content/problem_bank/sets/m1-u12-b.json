@@ -1,0 +1,22 @@
+{
+  "id": "m1-u12-b",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 12,
+  "unit_name": "입체도형의 겉넓이와 부피",
+  "title": "원뿔·구·회전체의 부피",
+  "subtitle": "원뿔의 겉넓이·부피(★h vs l) · 구의 겉넓이·부피 · 회전체의 부피(단원11 연계)",
+  "bank": "math1/u12/practice.json",
+  "misconceptions": "misconceptions/math1_u12.json",
+  "types": [
+    4,
+    5,
+    6
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

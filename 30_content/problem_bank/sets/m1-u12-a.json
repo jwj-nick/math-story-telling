@@ -1,0 +1,22 @@
+{
+  "id": "m1-u12-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 12,
+  "unit_name": "입체도형의 겉넓이와 부피",
+  "title": "각기둥·각뿔·원기둥의 겉넓이와 부피",
+  "subtitle": "각기둥의 겉넓이·부피 · 각뿔의 겉넓이·부피(★1/3) · 원기둥의 겉넓이·부피",
+  "bank": "math1/u12/practice.json",
+  "misconceptions": "misconceptions/math1_u12.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

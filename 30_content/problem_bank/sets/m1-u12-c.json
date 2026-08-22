@@ -1,0 +1,20 @@
+{
+  "id": "m1-u12-c",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 12,
+  "unit_name": "입체도형의 겉넓이와 부피",
+  "title": "복합 입체",
+  "subtitle": "원기둥에서 구 빼기 · 1:2:3 비율 · 붙인 입체의 겉넓이",
+  "bank": "math1/u12/practice.json",
+  "misconceptions": "misconceptions/math1_u12.json",
+  "types": [
+    7
+  ],
+  "time_min": 8,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}
