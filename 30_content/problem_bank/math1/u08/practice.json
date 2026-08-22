@@ -5,11 +5,11 @@
     "unit_name": "작도와 합동",
     "source": "40_grades/middle/math1/app1/p8.html",
     "generation": "D",
-    "extracted": "2026-08-20",
+    "extracted": "2026-08-22",
     "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. 2지선다 12문항을 단답형으로 재작성. 전부 기초~보통 수준(L/M)만 포함 — 심화(H)는 Nick 요청으로 이번 회차에서 제외."
+    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. 2지선다 12문항을 단답형으로 재작성. 2026-08-22: 유형마다 심화(H) 1문항씩 총 7문항 추가(p8.html 4번 문항, TOTAL 21→28) — constr.assume-result·constr.trisection 오개념 신규 태깅, perp.bisector-property·constr.same-radius·tri.inequality-equal·cong.correspondence-order 심화 재적용."
   },
   "types": [
     {
@@ -64,6 +64,22 @@
           "solution": "작도는 눈금 없는 자와 컴퍼스만 쓸 수 있어요. 각도기는 쓸 수 없어요.",
           "work_space": "sm",
           "misconceptions": ["constr.tool-role"]
+        },
+        {
+          "id": "m1-u08-t01-04",
+          "level": "H",
+          "stem_src": "선분 AB의 중점을 작도할 때, 자로 눈대중으로 가운데쯤이라고 생각되는 곳에 점을 찍어 표시하는 것도 올바른 작도라고 할 수 있을까요? (2지선다 → 단답 재작성)",
+          "stem_print": "선분 AB의 중점을 작도할 때, 자로 눈대중으로 가운데쯤이라고 생각되는 곳에 점을 찍어 표시하는 것도 올바른 작도라고 할 수 있는지 쓰시오.",
+          "answer_atoms": ["아니에요"],
+          "answer_print": "아니요",
+          "answer_accept": ["아니에요"],
+          "answer_unit": null,
+          "answer_format": "예/아니요로",
+          "figure": null,
+          "hint": "작도는 눈대중이 아니라 정해진 두 도구만으로 결과를 만들어 내는 과정이에요.",
+          "solution": "눈대중으로 찍은 점은 정확한 중점이라는 보장이 없어요. 작도는 자와 컴퍼스만으로 결과를 만들어 내는 과정이라, 눈대중 표시는 작도라고 할 수 없어요.",
+          "work_space": "sm",
+          "misconceptions": ["constr.assume-result"]
         }
       ]
     },
@@ -119,6 +135,22 @@
           "solution": "컴퍼스로 그대로 옮겼으므로 5cm예요.",
           "work_space": "sm",
           "misconceptions": ["constr.tool-role"]
+        },
+        {
+          "id": "m1-u08-t02-04",
+          "level": "H",
+          "stem_src": "길이 4cm인 선분을 컴퍼스로 벌림을 바꾸지 않고 같은 방향으로 5번 이어 붙여 그렸다. 전체 길이는?",
+          "stem_print": "길이 4cm인 선분을 컴퍼스로 벌림을 바꾸지 않고 같은 방향으로 5번 이어 붙여 그렸어요. 전체 길이를 구하시오.",
+          "answer_atoms": ["20"],
+          "answer_print": "20",
+          "answer_accept": ["20cm"],
+          "answer_unit": "cm",
+          "answer_format": "길이를 cm 단위 수로",
+          "figure": null,
+          "hint": "컴퍼스 벌림을 바꾸지 않으면 옮길 때마다 같은 길이가 이어져요.",
+          "solution": "벌림을 바꾸지 않았으므로 매번 4cm씩 이어져요. 4cm를 5번 이어 붙이면 4 × 5 = 20(cm)이에요.",
+          "work_space": "md",
+          "misconceptions": ["constr.same-radius"]
         }
       ]
     },
@@ -173,6 +205,22 @@
           "hint": "수직이등분선 위의 점은 두 끝점에서 거리가 같아요.",
           "solution": "MB = MA = 7cm예요.",
           "work_space": "sm",
+          "misconceptions": ["perp.bisector-property"]
+        },
+        {
+          "id": "m1-u08-t03-04",
+          "level": "H",
+          "stem_src": "삼각형 ABC에서 AB=6cm, AC=11cm이고, 변 BC의 수직이등분선이 변 AC와 만나는 점을 D라고 하자. 이때 삼각형 ABD의 둘레는?",
+          "stem_print": "삼각형 ABC에서 AB = 6cm, AC = 11cm이고, 변 BC의 수직이등분선이 변 AC와 만나는 점을 D라고 해요. 이때 삼각형 ABD의 둘레를 구하시오.",
+          "answer_atoms": ["17"],
+          "answer_print": "17",
+          "answer_accept": ["17cm"],
+          "answer_unit": "cm",
+          "answer_format": "길이를 cm 단위 수로",
+          "figure": null,
+          "hint": "D는 변 BC의 수직이등분선 위에 있으니 BD = CD예요. 삼각형 ABD의 둘레를 AB + BD + AD로 놓고 BD를 CD로 바꿔 보세요.",
+          "solution": "D가 변 BC의 수직이등분선 위에 있으므로 BD = CD예요. 삼각형 ABD의 둘레는 AB + BD + AD = AB + CD + AD인데, CD + AD = AC이므로 결국 AB + AC와 같아요. 따라서 6 + 11 = 17(cm)이에요.",
+          "work_space": "md",
           "misconceptions": ["perp.bisector-property"]
         }
       ]
@@ -229,6 +277,22 @@
           "solution": "90° ÷ 2 = 45°, 45° ÷ 2 = 22.5°예요.",
           "work_space": "md",
           "misconceptions": ["angle.bisect-arithmetic"]
+        },
+        {
+          "id": "m1-u08-t04-04",
+          "level": "H",
+          "stem_src": "60°를 자와 컴퍼스로 이등분을 여러 번 거듭하면, 정확히 3등분한 각인 20°를 만들 수 있을까요? (2지선다 → 단답 재작성)",
+          "stem_print": "60°를 자와 컴퍼스로 이등분을 여러 번 거듭하면, 정확히 3등분한 각인 20°를 만들 수 있는지 쓰시오.",
+          "answer_atoms": ["아니에요"],
+          "answer_print": "아니요",
+          "answer_accept": ["아니에요"],
+          "answer_unit": null,
+          "answer_format": "예/아니요로",
+          "figure": null,
+          "hint": "이등분을 거듭하면 2, 4, 8, …등분만 만들어져요.",
+          "solution": "이등분을 아무리 반복해도 2의 거듭제곱(2, 4, 8, …)등분만 만들어져요. 20°는 60°의 정확히 3등분인데, 3은 2의 거듭제곱이 아니라서 이 방법으로는 만들 수 없어요.",
+          "work_space": "md",
+          "misconceptions": ["constr.trisection"]
         }
       ]
     },
@@ -284,6 +348,22 @@
           "solution": "세 각만 같으면 모양은 같아도 크기가 다를 수 있어요(닮음이지 합동은 아니에요).",
           "work_space": "sm",
           "misconceptions": ["tri.aaa-congruent"]
+        },
+        {
+          "id": "m1-u08-t05-04",
+          "level": "H",
+          "stem_src": "세 변의 길이가 5cm, 8cm, x cm인 삼각형을 만들 수 있다. x가 자연수일 때, x가 될 수 있는 값은 모두 몇 개?",
+          "stem_print": "세 변의 길이가 5cm, 8cm, x cm인 삼각형을 만들 수 있어요. x가 자연수일 때, x가 될 수 있는 값은 모두 몇 개인지 구하시오.",
+          "answer_atoms": ["9"],
+          "answer_print": "9",
+          "answer_accept": ["9개"],
+          "answer_unit": "개",
+          "answer_format": "개수를 개 단위 수로",
+          "figure": null,
+          "hint": "가장 긴 변은 나머지 두 변의 합보다 짧아야 하고, 나머지 두 변의 차보다는 길어야 해요.",
+          "solution": "8 − 5 < x < 8 + 5, 즉 3 < x < 13이에요. x는 자연수이므로 4, 5, 6, 7, 8, 9, 10, 11, 12로 모두 9개예요.",
+          "work_space": "md",
+          "misconceptions": ["tri.inequality-equal"]
         }
       ]
     },
@@ -339,6 +419,22 @@
           "solution": "B↔E이므로 ∠E = ∠B = 70°예요.",
           "work_space": "sm",
           "misconceptions": ["cong.correspondence-order"]
+        },
+        {
+          "id": "m1-u08-t06-04",
+          "level": "H",
+          "stem_src": "△ABC ≡ △DEF이고 △DEF ≡ △GHI일 때, ∠A = 55°이면 ∠G의 크기는?",
+          "stem_print": "△ABC ≡ △DEF이고 △DEF ≡ △GHI일 때, ∠A = 55°이면 ∠G의 크기를 구하시오.",
+          "answer_atoms": ["55"],
+          "answer_print": "55",
+          "answer_accept": ["55도"],
+          "answer_unit": "°",
+          "answer_format": "각의 크기를 ° 단위 수로",
+          "figure": null,
+          "hint": "글자 순서대로 두 번 대응을 따라가 보세요.",
+          "solution": "△ABC ≡ △DEF에서 A↔D, △DEF ≡ △GHI에서 D↔G이므로 A↔G예요. 따라서 ∠G = ∠A = 55°예요.",
+          "work_space": "md",
+          "misconceptions": ["cong.correspondence-order"]
         }
       ]
     },
@@ -393,6 +489,22 @@
           "hint": "같은 변을 공유하니까요.",
           "solution": "공통변은 두 삼각형이 공유하는 하나의 변이라 길이가 항상 같아요.",
           "work_space": "sm",
+          "misconceptions": []
+        },
+        {
+          "id": "m1-u08-t07-04",
+          "level": "H",
+          "stem_src": "삼각형 ABC와 삼각형 ADC가 변 AC를 공통으로 갖는다. AB=AD이고 BC=DC일 때, 두 삼각형이 합동임을 보이려면 어떤 합동 조건을 쓰면 될까?",
+          "stem_print": "삼각형 ABC와 삼각형 ADC가 변 AC를 공통으로 가져요. AB = AD이고 BC = DC일 때, 두 삼각형이 합동임을 보이려면 어떤 합동 조건을 쓰면 되는지 쓰시오.",
+          "answer_atoms": ["SSS"],
+          "answer_print": "SSS",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "합동 조건의 기호로 (SSS/SAS/ASA)",
+          "figure": null,
+          "hint": "공통변도 두 삼각형에서 길이가 같은 변으로 셀 수 있어요. 세 쌍의 변을 모두 짝지어 보세요.",
+          "solution": "AB = AD, BC = DC, 그리고 공통변 AC = AC로 세 쌍의 변이 모두 같아요. 세 변이 각각 같으므로 SSS 합동이에요.",
+          "work_space": "md",
           "misconceptions": []
         }
       ]

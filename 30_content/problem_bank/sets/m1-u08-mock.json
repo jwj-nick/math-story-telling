@@ -1,0 +1,20 @@
+{
+  "id": "m1-u08-mock",
+  "kind": "mock",
+  "grade": "math1",
+  "unit": 8,
+  "unit_name": "작도와 합동",
+  "title": "작도와 합동 심화 모의고사",
+  "subtitle": "7유형 심화 통합",
+  "bank": "math1/u08/practice.json",
+  "misconceptions": "misconceptions/math1_u08.json",
+  "types": [1, 2, 3, 4, 5, 6, 7],
+  "time_min": 20,
+  "outputs": ["Q", "K"],
+  "columns": 2,
+  "pick": {
+    "quota": {
+      "H": 1
+    }
+  }
+}
