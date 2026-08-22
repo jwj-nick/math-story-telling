@@ -3,1506 +3,397 @@
     "grade": "math1",
     "unit": 3,
     "unit_name": "문자와 식",
-    "generation": "A",
-    "source": "40_grades/middle/math1/03_문자와식/problems",
-    "extracted": "2026-07-29",
-    "extractor": "70_tools/print/extract_gen_ac.py",
+    "source": "40_grades/middle/math1/app1/p3.html",
+    "extracted": "2026-08-22",
+    "generation": "D",
+    "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
-    "notation": "html-sup + css-frac",
-    "note": "answer_atoms 는 원본 type_NN_app.html 의 .sol-panel 첫 strong 값 그대로. 절대 손으로 고치지 않는다. 원본 63문항 중 7문항은 정답 표기가 비표준이라 추출값이 비어 있고, 그 문항은 원본 해설을 읽어 정답을 확정했다(문항 note 참조). 원본 KaTeX 표기는 지면용으로 HTML(유니코드·sup·.frac)로 변환했다. 문자식 표기 규약: 곱셈 기호 없이 숫자를 문자 앞에, 나눗셈은 분수 꼴로."
+    "notation": "html-sup",
+    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. 유형4-3은 2지선다(단항식/다항식)를 단답형으로 재작성. 음수 답은 앱 disp 인자와 동일한 문자(유니코드 마이너스 −)로 통일해 answer_atoms와 정확히 일치시킴 — 단, 7-2는 앱에서 ASCII 하이픈으로 썼으므로 그대로 유지. 전부 기초~보통 수준(L/M)만 포함 — 심화(H)는 이번 회차에서 제외."
   },
   "types": [
     {
       "no": 1,
       "title": "식 세우기",
-      "principle": "수량 사이의 관계를 먼저 말로 정리해요 (단가 × 개수, 거리 ÷ 속력 처럼). 그 다음 문자를 그 자리에 넣어요. 쓸 때는 곱셈 기호를 생략하고 숫자를 문자 앞에 쓰며, 나눗셈은 분수 꼴로 바꿔요. 항이 둘 이상인데 뒤에 단위를 붙일 때는 식 전체를 괄호로 묶어요.",
+      "principle": "문장을 순서대로 그대로 옮기면 식이 돼요.",
       "problems": [
         {
           "id": "m1-u03-t01-01",
           "level": "L",
-          "stem_src": "1자루에 $a$원인 볼펜 6자루의 값을 식으로 나타내세요.",
-          "stem_print": "한 자루에 a 원인 볼펜 6자루의 값을 문자를 사용한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$6a$원"
-          ],
-          "answer_print": "6a",
-          "answer_accept": [
-            "6a 원",
-            "a × 6 을 정리한 6a"
-          ],
-          "answer_unit": "원",
-          "answer_format": "곱셈 기호 없이, 숫자를 문자 앞에 쓴 식으로 (예: 6a)",
+          "stem_src": "한 개에 1000원인 빵 x개의 값을 문자식으로 나타내면?",
+          "stem_print": "한 개에 1000원인 빵 x개의 값을 문자식으로 나타내시오.",
+          "answer_atoms": ["1000x"],
+          "answer_print": "1000x",
+          "answer_accept": ["1000×x"],
+          "answer_unit": null,
+          "answer_format": "문자식으로",
           "figure": null,
-          "hint": "단가 × 개수 로 식을 세워 보세요. 곱셈 기호는 지우고 숫자를 문자 앞에 써요.",
-          "solution": "볼펜 한 자루가 a 원이므로 6자루의 값은 a × 6 이에요. 곱셈 기호를 생략하고 숫자를 문자 앞으로 옮기면 6a 원이에요.",
+          "hint": "단가 × 개수로 생각해요.",
+          "solution": "빵 1개 값 1000원에 개수 x를 곱하면 1000x원이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.omit-order-reversed"
-          ]
+          "misconceptions": []
         },
         {
           "id": "m1-u03-t01-02",
           "level": "L",
-          "stem_src": "한 변의 길이가 $x$ cm인 정사각형의 둘레의 길이를 식으로 나타내세요.",
-          "stem_print": "한 변의 길이가 x cm 인 정사각형의 둘레의 길이를 문자를 사용한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$4x$ cm"
-          ],
-          "answer_print": "4x",
-          "answer_accept": [
-            "4x cm",
-            "x × 4 를 정리한 4x"
-          ],
-          "answer_unit": "cm",
-          "answer_format": "곱셈 기호 없이, 숫자를 문자 앞에 쓴 식으로",
+          "stem_src": "가로 a, 세로 b인 직사각형의 둘레를 문자식으로 나타내면?",
+          "stem_print": "가로가 a, 세로가 b인 직사각형의 둘레를 문자식으로 나타내시오.",
+          "answer_atoms": ["2a+2b"],
+          "answer_print": "2a+2b",
+          "answer_accept": ["2(a+b)", "2×a+2×b"],
+          "answer_unit": null,
+          "answer_format": "문자식으로",
           "figure": null,
-          "hint": "정사각형의 둘레는 한 변의 길이를 네 번 더한 것과 같아요.",
-          "solution": "한 변이 x cm 이고 변이 네 개이므로 둘레는 x × 4 예요. 곱셈 기호를 생략하고 숫자를 앞에 쓰면 4x cm 예요.",
+          "hint": "둘레 = 가로 + 세로를 두 번 더한 거예요.",
+          "solution": "가로 a와 세로 b를 각각 두 번씩 더하면 2a+2b예요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.omit-order-reversed"
-          ]
+          "misconceptions": []
         },
         {
           "id": "m1-u03-t01-03",
           "level": "L",
-          "stem_src": "$x$km를 시속 4km로 걸으면 걸리는 시간을 식으로 나타내세요.",
-          "stem_print": "x km 의 거리를 시속 4 km 로 걸을 때 걸리는 시간을 문자를 사용한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$\\dfrac{x}{4}$시간"
-          ],
-          "answer_print": "<span class=\"frac\"><b>x</b><i>4</i></span>",
-          "answer_accept": [
-            "x/4 시간",
-            "x ÷ 4 를 분수로 고친 x/4"
-          ],
-          "answer_unit": "시간",
-          "answer_format": "나눗셈 기호 없이 분수 꼴로 (분모에 속력)",
-          "figure": null,
-          "hint": "시간은 거리를 속력으로 나눈 값이에요. 나눗셈은 분수로 바꿔 써요.",
-          "solution": "시간 = 거리 ÷ 속력 이므로 x ÷ 4 예요. 나눗셈을 분수로 바꾸면 나뉘는 수 x 가 분자, 나누는 수 4 가 분모로 가서 <span class=\"frac\"><b>x</b><i>4</i></span> 시간이에요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "alg.div-not-fraction"
-          ]
-        },
-        {
-          "id": "m1-u03-t01-04",
-          "level": "M",
-          "stem_src": "5000원을 내고 $a$원짜리 아이스크림 2개를 샀을 때 거스름돈을 식으로 나타내세요.",
-          "stem_print": "5000 원을 내고 한 개에 a 원인 아이스크림 2개를 샀다. 거스름돈을 문자를 사용한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$(5000 - 2a)$원"
-          ],
-          "answer_print": "(5000 − 2a)",
-          "answer_accept": [
-            "5000 − 2a (원)",
-            "(5000 − 2a) 원"
-          ],
-          "answer_unit": "원",
-          "answer_format": "괄호로 묶은 식으로, 곱셈 기호 없이",
-          "figure": null,
-          "hint": "거스름돈은 낸 돈에서 산 물건의 값을 뺀 것이에요. 아이스크림 값부터 식으로 써 보세요.",
-          "solution": "아이스크림 2개의 값은 a × 2 = 2a 원이에요. 거스름돈은 5000 − 2a 원이고, 뒤에 단위를 붙일 때는 (5000 − 2a) 원 처럼 괄호로 묶어요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.omit-order-reversed"
-          ]
-        },
-        {
-          "id": "m1-u03-t01-05",
-          "level": "M",
-          "stem_src": "어떤 수 $n$에서 $n$의 3배를 뺀 값을 식으로 나타내세요.",
-          "stem_print": "어떤 수 n 에서 n 의 3배를 뺀 값을 식으로 나타내고, 동류항을 정리하여 가장 간단히 하시오.",
-          "answer_atoms": [
-            "$n - 3n = -2n$"
-          ],
-          "answer_print": "n − 3n = −2n",
-          "answer_accept": [
-            "−2n",
-            "n − 3n = −2n"
-          ],
+          "stem_src": "정가 p원에서 30% 할인한 가격을 문자식으로 나타내면?",
+          "stem_print": "정가 p원에서 30% 할인한 가격을 문자식으로 나타내시오.",
+          "answer_atoms": ["0.7p"],
+          "answer_print": "0.7p",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "세운 식과 정리한 결과를 등호로 이어 쓴 식으로 (단위 없음)",
+          "answer_format": "문자식으로",
           "figure": null,
-          "hint": "n 의 3배를 먼저 식으로 써 보세요. 그 다음 n 에서 그것을 빼요.",
-          "solution": "n 의 3배는 3n 이에요. n 에서 3n 을 빼면 n − 3n 이고, n 의 계수는 1 이므로 계수끼리 계산하면 (1 − 3)n = −2n 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.like-terms-not-same",
-            "alg.coefficient-one"
-          ]
-        },
-        {
-          "id": "m1-u03-t01-06",
-          "level": "M",
-          "stem_src": "밑변의 길이가 $a$ cm, 높이가 $h$ cm인 삼각형의 넓이를 식으로 나타내세요.",
-          "stem_print": "밑변의 길이가 a cm, 높이가 h cm 인 삼각형의 넓이를 문자를 사용한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$\\dfrac{ah}{2}$ cm²"
-          ],
-          "answer_print": "<span class=\"frac\"><b>ah</b><i>2</i></span>",
-          "answer_accept": [
-            "ah/2 cm²",
-            "(1/2)ah cm²",
-            "0.5ah cm²"
-          ],
-          "answer_unit": "cm²",
-          "answer_format": "나눗셈은 분수 꼴로, 곱셈 기호 없이",
-          "figure": null,
-          "hint": "삼각형의 넓이는 밑변과 높이를 곱한 뒤 2로 나눈 값이에요. 나눗셈은 분수로 바꿔요.",
-          "solution": "(a × h) ÷ 2 예요. 곱셈 기호를 생략하면 분자가 ah 가 되고, 2로 나누는 것은 분모에 2를 쓰는 것이므로 <span class=\"frac\"><b>ah</b><i>2</i></span> cm² 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.div-not-fraction"
-          ]
-        },
-        {
-          "id": "m1-u03-t01-07",
-          "level": "H",
-          "stem_src": "정가가 $p$원인 물건을 20% 할인해서 팔고 있어요. 이 물건 $n$개를 살 때 총 금액을 식으로 나타내세요.",
-          "stem_print": "정가가 p 원인 물건을 20 % 할인하여 팔고 있다. 이 물건 n 개를 살 때 지불해야 하는 금액을 문자를 사용한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$0.8pn$원"
-          ],
-          "answer_print": "0.8pn",
-          "answer_accept": [
-            "0.8pn 원",
-            "0.8np 원",
-            "4pn/5 원"
-          ],
-          "answer_unit": "원",
-          "answer_format": "곱셈 기호 없이, 숫자를 문자 앞에 쓴 식으로",
-          "figure": null,
-          "hint": "할인율이 아니라 실제로 내는 비율을 먼저 정해 보세요. 20 % 를 깎으면 정가의 몇 % 를 내나요?",
-          "solution": "20 % 를 할인하면 정가의 80 % 를 내므로 한 개의 값은 p × 0.8 = 0.8p 원이에요. n 개를 사면 0.8p × n 이고, 숫자를 맨 앞에 두고 곱셈 기호를 생략하면 0.8pn 원이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.omit-order-reversed"
-          ]
-        },
-        {
-          "id": "m1-u03-t01-08",
-          "level": "H",
-          "stem_src": "시속 $a$ km로 $t$시간 달린 다음, 시속 $b$ km로 2시간 더 달렸을 때 전체 이동 거리를 식으로 나타내세요.",
-          "stem_print": "시속 a km 로 t 시간 달린 다음, 시속 b km 로 2시간 더 달렸다. 전체 이동 거리를 문자를 사용한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$(at + 2b)$ km"
-          ],
-          "answer_print": "(at + 2b)",
-          "answer_accept": [
-            "at + 2b (km)",
-            "(at + 2b) km"
-          ],
-          "answer_unit": "km",
-          "answer_format": "괄호로 묶은 식으로, 곱셈 기호 없이",
-          "figure": null,
-          "hint": "구간을 둘로 나눠 각각의 거리를 먼저 구해 보세요. 거리는 속력과 시간의 곱이에요.",
-          "solution": "첫 구간의 거리는 a × t = at km, 둘째 구간의 거리는 b × 2 = 2b km 예요. 두 거리를 더하면 (at + 2b) km 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.omit-order-reversed"
-          ]
-        },
-        {
-          "id": "m1-u03-t01-09",
-          "level": "H",
-          "stem_src": "어른 $a$명, 어린이 $b$명이 놀이공원에 입장했어요. 어른 입장료는 $m$원, 어린이 입장료는 어른의 반값이에요. 전체 입장료 합계를 식으로 나타내세요.",
-          "stem_print": "어른 a 명과 어린이 b 명이 놀이공원에 입장하였다. 어른 한 명의 입장료는 m 원이고 어린이 한 명의 입장료는 어른의 반값이다. 전체 입장료의 합계를 문자를 사용한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$\\left(am + \\dfrac{bm}{2}\\right)$원"
-          ],
-          "answer_print": "am + <span class=\"frac\"><b>bm</b><i>2</i></span>",
-          "answer_accept": [
-            "am + bm/2 (원)",
-            "(2am + bm)/2 원",
-            "am + 0.5bm 원"
-          ],
-          "answer_unit": "원",
-          "answer_format": "곱셈 기호 없이, 나눗셈은 분수 꼴로",
-          "figure": null,
-          "hint": "어린이 한 명의 입장료부터 문자로 써 보세요. 반값은 2로 나눈 값이에요.",
-          "solution": "어른 a 명의 입장료는 am 원이에요. 어린이 한 명은 m ÷ 2 이므로 b 명이면 <span class=\"frac\"><b>bm</b><i>2</i></span> 원이에요. 둘을 더하면 am + <span class=\"frac\"><b>bm</b><i>2</i></span> 원이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.div-not-fraction"
-          ]
+          "hint": "30% 할인하면 70%만 남아요.",
+          "solution": "정가의 70%가 남으므로 0.7p예요.",
+          "work_space": "sm",
+          "misconceptions": []
         }
       ]
     },
     {
       "no": 2,
       "title": "곱셈·나눗셈 기호 생략",
-      "principle": "곱셈 기호는 생략하고 숫자를 문자 앞에, 문자끼리는 알파벳 순서로 써요. 같은 문자가 여러 번 곱해지면 거듭제곱으로 줄이고, 계수 1 과 −1 은 숫자를 쓰지 않아요. 나눗셈은 분수 꼴로 바꾸되, 곱셈과 나눗셈이 섞여 있으면 왼쪽부터 차례로 처리해요.",
+      "principle": "숫자는 문자 앞에, 나눗셈은 분수로.",
       "problems": [
         {
           "id": "m1-u03-t02-01",
           "level": "L",
-          "stem_src": "$b \\times a \\times b$를 기호 생략 규칙에 따라 나타내세요.",
-          "stem_print": "b × a × b 를 곱셈 기호를 생략하여 간단히 나타내시오.",
-          "answer_atoms": [
-            "$ab^2$"
-          ],
-          "answer_print": "ab<sup>2</sup>",
-          "answer_accept": [
-            "ab²",
-            "ab^2"
-          ],
+          "stem_src": "a × b × (−2)를 기호 생략으로 나타내면?",
+          "stem_print": "a × b × (−2)를 기호 생략으로 나타내시오.",
+          "answer_atoms": ["−2ab"],
+          "answer_print": "−2ab",
+          "answer_accept": ["-2ab"],
           "answer_unit": null,
-          "answer_format": "곱셈 기호 없이, 문자는 알파벳 순서로, 같은 문자는 거듭제곱 꼴로",
+          "answer_format": "기호를 생략한 식으로",
           "figure": null,
-          "hint": "곱하는 순서를 바꿔도 결과는 같아요. 문자를 알파벳 순서로 모은 뒤 같은 문자를 거듭제곱으로 줄여요.",
-          "solution": "b × a × b = a × b × b 예요. 같은 문자 b 가 두 번 곱해졌으므로 b<sup>2</sup> 으로 줄이고, 문자를 알파벳 순서로 쓰면 ab<sup>2</sup> 이에요.",
+          "hint": "숫자를 맨 앞에 써요.",
+          "solution": "곱셈 기호를 생략하고 숫자를 앞으로 보내면 −2ab예요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.omit-order-reversed",
-            "alg.repeat-times-vs-power"
-          ]
+          "misconceptions": ["alg.omit-order-reversed"]
         },
         {
           "id": "m1-u03-t02-02",
           "level": "L",
-          "stem_src": "$(-1) \\times x \\times 5$를 기호 생략 규칙에 따라 나타내세요.",
-          "stem_print": "(−1) × x × 5 를 곱셈 기호를 생략하여 간단히 나타내시오.",
-          "answer_atoms": [
-            "$-5x$"
-          ],
-          "answer_print": "−5x",
-          "answer_accept": [
-            "−5x",
-            "−(5x)"
-          ],
+          "stem_src": "x ÷ 4 × y를 기호 생략으로 나타내면?",
+          "stem_print": "x ÷ 4 × y를 기호 생략으로 나타내시오.",
+          "answer_atoms": ["xy/4"],
+          "answer_print": "xy/4",
+          "answer_accept": ["(xy)/4"],
           "answer_unit": null,
-          "answer_format": "곱셈 기호 없이, 부호와 숫자를 문자 앞에 쓴 식으로",
+          "answer_format": "분수 꼴로",
           "figure": null,
-          "hint": "문자를 뺀 숫자끼리 먼저 곱해 계수를 정하고, 그 계수를 문자 앞에 써요.",
-          "solution": "숫자끼리 먼저 곱하면 (−1) × 5 = −5 예요. 이 값이 계수이므로 문자 앞에 써서 −5x 가 돼요.",
+          "hint": "나눗셈부터 분수로 바꾼 뒤 곱해요.",
+          "solution": "x ÷ 4 × y = (x/4) × y = xy/4예요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.omit-order-reversed"
-          ]
+          "misconceptions": ["alg.div-not-fraction", "alg.left-to-right"]
         },
         {
           "id": "m1-u03-t02-03",
           "level": "L",
-          "stem_src": "$y \\div 7$을 분수로 나타내세요.",
-          "stem_print": "y ÷ 7 을 나눗셈 기호를 쓰지 않고 분수 꼴로 나타내시오.",
-          "answer_atoms": [
-            "$\\dfrac{y}{7}$"
-          ],
-          "answer_print": "<span class=\"frac\"><b>y</b><i>7</i></span>",
-          "answer_accept": [
-            "y/7",
-            "(1/7)y"
-          ],
+          "stem_src": "a × a × a를 거듭제곱 꼴로 쓸 때, 밑은 a이고 지수는 얼마?",
+          "stem_print": "a × a × a를 거듭제곱 꼴로 쓸 때, 밑은 a이고 지수는 얼마인지 쓰시오.",
+          "answer_atoms": ["3"],
+          "answer_print": "3",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "나눗셈 기호 없이 분수 꼴로",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "나뉘는 수가 분자, 나누는 수가 분모예요. 어느 쪽이 위로 가는지 확인해 보세요.",
-          "solution": "y ÷ 7 에서 나뉘는 수는 y 이고 나누는 수는 7 이므로 <span class=\"frac\"><b>y</b><i>7</i></span> 이에요.",
+          "hint": "몇 번 곱했는지 세어봐요.",
+          "solution": "a를 세 번 곱했으니 지수는 3이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.div-not-fraction"
-          ]
-        },
-        {
-          "id": "m1-u03-t02-04",
-          "level": "M",
-          "stem_src": "$a \\div 3 \\times b$를 기호 생략 규칙에 따라 나타내세요.",
-          "stem_print": "a ÷ 3 × b 를 곱셈·나눗셈 기호를 생략하여 간단히 나타내시오.",
-          "answer_atoms": [
-            "$\\dfrac{ab}{3}$"
-          ],
-          "answer_print": "<span class=\"frac\"><b>ab</b><i>3</i></span>",
-          "answer_accept": [
-            "ab/3",
-            "(1/3)ab",
-            "ba/3"
-          ],
-          "answer_unit": null,
-          "answer_format": "나눗셈은 분수 꼴로, 곱셈 기호 없이",
-          "figure": null,
-          "hint": "왼쪽부터 차례로 하세요. 먼저 a ÷ 3 을 분수로 바꾼 다음 b 를 곱해요.",
-          "solution": "a ÷ 3 = <span class=\"frac\"><b>a</b><i>3</i></span> 이고, 여기에 b 를 곱하면 분자에 b 가 붙어요. 그래서 <span class=\"frac\"><b>ab</b><i>3</i></span> 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.div-not-fraction",
-            "alg.left-to-right"
-          ]
-        },
-        {
-          "id": "m1-u03-t02-05",
-          "level": "M",
-          "stem_src": "다음 식을 기호 생략 규칙대로 나타낸 것 중 옳지 않은 것을 고르세요. ① $x \\times (-3) = -3x$ ② $a \\div b \\div 2 = \\dfrac{a}{2b}$ ③ $2 \\times x \\times x = 2x^2$ ④ $1 \\times y = 1y$",
-          "stem_print": "다음 ① ~ ④ 중 곱셈·나눗셈 기호를 생략하여 나타낸 것이 <strong>옳지 않은</strong> 것을 하나 고르시오.<br>① x × (−3) = −3x<br>② a ÷ b ÷ 2 = <span class=\"frac\"><b>a</b><i>2b</i></span><br>③ 2 × x × x = 2x<sup>2</sup><br>④ 1 × y = 1y",
-          "answer_atoms": [
-            "④"
-          ],
-          "answer_print": "④",
-          "answer_accept": [
-            "4",
-            "4번"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호 ① ~ ④ 중 하나로 (단위 없음)",
-          "figure": null,
-          "hint": "계수가 1 일 때 숫자 1 을 그대로 두어도 되는지 규칙을 떠올려 보세요.",
-          "solution": "①, ②, ③ 은 모두 규칙에 맞아요. ④ 는 계수 1 을 생략해야 하므로 1 × y 는 그냥 y 로 써야 해요. 계수가 1 이거나 −1 일 때 숫자 1 은 쓰지 않아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.coefficient-one"
-          ]
-        },
-        {
-          "id": "m1-u03-t02-06",
-          "level": "M",
-          "stem_src": "$-3xy^2$을 기호를 모두 살려서 원래 표현으로 복원하세요. (곱셈 기호 $\\times$와 괄호 모두 표시)",
-          "stem_print": "−3xy<sup>2</sup> 을 생략된 곱셈 기호와 괄호를 모두 살려서 나타내시오.",
-          "answer_atoms": [
-            "$(-3) \\times x \\times y \\times y$"
-          ],
-          "answer_print": "(−3) × x × y × y",
-          "answer_accept": [
-            "(−3) × x × y × y",
-            "(−3) × x × y²"
-          ],
-          "answer_unit": null,
-          "answer_format": "곱셈 기호 × 와 괄호를 모두 쓴 식으로",
-          "figure": null,
-          "hint": "거듭제곱은 같은 문자를 그 횟수만큼 곱한 것이에요. 음수 계수는 괄호로 감싸요.",
-          "solution": "계수 −3 은 괄호를 씌워 (−3) 으로 쓰고, y<sup>2</sup> 은 y 를 두 번 곱한 것이므로 y × y 로 풀어요. 그래서 (−3) × x × y × y 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.repeat-times-vs-power"
-          ]
-        },
-        {
-          "id": "m1-u03-t02-07",
-          "level": "H",
-          "stem_src": "$a \\times a \\div b \\times (-2) \\times b$를 기호 생략 규칙에 따라 가장 간단한 형태로 나타내세요.",
-          "stem_print": "a × a ÷ b × (−2) × b 를 곱셈·나눗셈 기호를 생략하여 가장 간단한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$-2a^2$"
-          ],
-          "answer_print": "−2a<sup>2</sup>",
-          "answer_accept": [
-            "−2a²",
-            "−2a^2",
-            "−(2a²)"
-          ],
-          "answer_unit": null,
-          "answer_format": "곱셈 기호 없이, 거듭제곱 꼴로 가장 간단히",
-          "figure": null,
-          "hint": "왼쪽부터 차례로 계산해요. 분모로 내려간 문자와 뒤에서 곱해지는 같은 문자가 만나면 어떻게 되는지 살펴보세요.",
-          "solution": "왼쪽부터 하면 a × a = a<sup>2</sup> 이고, ÷ b 로 b 가 분모로 가요. 뒤에서 다시 b 를 곱하므로 분자와 분모의 b 가 약분되어 사라져요. 남은 계수 −2 를 앞에 쓰면 −2a<sup>2</sup> 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.left-to-right",
-            "alg.repeat-times-vs-power"
-          ]
-        },
-        {
-          "id": "m1-u03-t02-08",
-          "level": "H",
-          "stem_src": "$\\dfrac{2x^2y}{3}$를 ÷와 ×를 사용해서 원래 형태로 나타내세요.",
-          "stem_print": "<span class=\"frac\"><b>2x<sup>2</sup>y</b><i>3</i></span> 를 곱셈 기호 × 와 나눗셈 기호 ÷ 를 모두 사용한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$2 \\times x \\times x \\times y \\div 3$"
-          ],
-          "answer_print": "2 × x × x × y ÷ 3",
-          "answer_accept": [
-            "2 × x × x × y ÷ 3",
-            "2 × x² × y ÷ 3"
-          ],
-          "answer_unit": null,
-          "answer_format": "× 와 ÷ 를 모두 쓴 식으로",
-          "figure": null,
-          "hint": "분자 전체를 분모로 나눈 것이 분수예요. 분자를 먼저 곱셈으로 풀어 쓴 다음 ÷ 를 붙여 보세요.",
-          "solution": "분자 2x<sup>2</sup>y 는 2 × x × x × y 예요. 분수는 분자를 분모로 나눈 것이므로 뒤에 ÷ 3 을 붙여 2 × x × x × y ÷ 3 이 돼요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.div-not-fraction"
-          ]
-        },
-        {
-          "id": "m1-u03-t02-09",
-          "level": "H",
-          "stem_src": "다음 중 $\\dfrac{ab}{3c}$와 같은 식을 모두 고르세요. ① $a \\times b \\div 3 \\div c$ ② $a \\div 3 \\times b \\div c$ ③ $a \\times b \\div (3c)$ ④ $a \\div c \\div b \\times 3$",
-          "stem_print": "다음 ① ~ ④ 중 <span class=\"frac\"><b>ab</b><i>3c</i></span> 와 같은 식을 모두 고르시오.<br>① a × b ÷ 3 ÷ c<br>② a ÷ 3 × b ÷ c<br>③ a × b ÷ (3c)<br>④ a ÷ c ÷ b × 3",
-          "answer_atoms": [
-            "①, ②, ③"
-          ],
-          "answer_print": "①, ②, ③",
-          "answer_accept": [
-            "1, 2, 3",
-            "①②③"
-          ],
-          "answer_unit": null,
-          "answer_format": "해당하는 번호를 모두 쓰시오 (단위 없음)",
-          "figure": null,
-          "hint": "각 식을 왼쪽부터 차례로 분수로 바꿔 보세요. 나누는 수는 분모로, 곱하는 수는 분자로 가요.",
-          "solution": "① 은 분모에 3 과 c 가 차례로 붙어 분모가 3c 가 돼요. ② 도 분모가 3, 그 다음 c 로 붙어 같은 식이 돼요. ③ 은 (3c) 전체가 분모예요. ④ 는 b 가 분모로, 3 이 분자로 가서 분자와 분모가 서로 뒤바뀐 다른 식이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.left-to-right"
-          ]
+          "misconceptions": ["alg.repeat-times-vs-power"]
         }
       ]
     },
     {
       "no": 3,
       "title": "식의 값 계산",
-      "principle": "문자 자리에 주어진 수를 넣어요. 넣기 전에 생략된 곱셈 기호를 되살리고, 음수나 분수를 넣을 때는 반드시 괄호로 감싸요. 거듭제곱은 밑이 무엇인지 괄호로 확인한 뒤 계산해요.",
+      "principle": "음수를 대입할 땐 반드시 괄호를 써요.",
       "problems": [
         {
           "id": "m1-u03-t03-01",
           "level": "L",
-          "stem_src": "$x = 3$일 때, $4x - 7$의 값을 구하세요.",
-          "stem_print": "x = 3 일 때, 4x − 7 의 값을 구하시오.",
-          "answer_atoms": [
-            "$5$"
-          ],
-          "answer_print": "5",
-          "answer_accept": [
-            "5"
-          ],
+          "stem_src": "x = 2일 때 3x + 1의 값은?",
+          "stem_print": "x = 2일 때 3x + 1의 값을 구하시오.",
+          "answer_atoms": ["7"],
+          "answer_print": "7",
+          "answer_accept": [],
           "answer_unit": null,
           "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "4x 는 4 와 x 의 곱이에요. x 자리에 수를 넣을 때 곱셈 기호를 다시 살려서 써 보세요.",
-          "solution": "4x − 7 에 x = 3 을 넣으면 4 × 3 − 7 이에요. 곱셈을 먼저 하면 12 − 7 이므로 값은 5 예요.",
+          "hint": "x 자리에 2를 넣어 계산해요.",
+          "solution": "3×2+1=7이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.substitute-restore-times"
-          ]
+          "misconceptions": ["alg.substitute-restore-times"]
         },
         {
           "id": "m1-u03-t03-02",
           "level": "L",
-          "stem_src": "$a = 2, b = -1$일 때, $3a + 2b$의 값을 구하세요.",
-          "stem_print": "a = 2, b = −1 일 때, 3a + 2b 의 값을 구하시오.",
-          "answer_atoms": [
-            "$4$"
-          ],
-          "answer_print": "4",
-          "answer_accept": [
-            "4"
-          ],
+          "stem_src": "a = −2일 때 a² − 3a의 값은?",
+          "stem_print": "a = −2일 때 a² − 3a의 값을 구하시오.",
+          "answer_atoms": ["10"],
+          "answer_print": "10",
+          "answer_accept": [],
           "answer_unit": null,
           "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "음수를 넣을 때는 괄호로 감싸 주세요. 그래야 앞의 부호와 섞이지 않아요.",
-          "solution": "3a + 2b 에 값을 넣으면 3 × 2 + 2 × (−1) 이에요. 곱셈을 먼저 하면 6 + (−2) 이므로 값은 4 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "alg.negative-no-paren"
-          ]
+          "hint": "음수를 대입할 땐 괄호를 써요.",
+          "solution": "(−2)² − 3×(−2) = 4+6 = 10이에요.",
+          "work_space": "md",
+          "misconceptions": ["alg.negative-no-paren"]
         },
         {
           "id": "m1-u03-t03-03",
           "level": "L",
-          "stem_src": "$x = 5$일 때, $\\dfrac{x}{5} + 1$의 값을 구하세요.",
-          "stem_print": "x = 5 일 때, <span class=\"frac\"><b>x</b><i>5</i></span> + 1 의 값을 구하시오.",
-          "answer_atoms": [
-            "$2$"
-          ],
-          "answer_print": "2",
-          "answer_accept": [
-            "2"
-          ],
+          "stem_src": "x + y = 5, xy = −6일 때 x² + y²의 값은?",
+          "stem_print": "x + y = 5, xy = −6일 때 x² + y²의 값을 구하시오.",
+          "answer_atoms": ["37"],
+          "answer_print": "37",
+          "answer_accept": [],
           "answer_unit": null,
           "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "분자에 있는 문자 자리에만 수를 넣어요. 분모는 그대로 두세요.",
-          "solution": "분자의 x 에 5 를 넣으면 <span class=\"frac\"><b>5</b><i>5</i></span> = 1 이에요. 여기에 1 을 더하면 값은 2 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "alg.substitute-restore-times"
-          ]
-        },
-        {
-          "id": "m1-u03-t03-04",
-          "level": "M",
-          "stem_src": "$a = -3$일 때, $a^2 - 4a + 1$의 값을 구하세요.",
-          "stem_print": "a = −3 일 때, a<sup>2</sup> − 4a + 1 의 값을 구하시오.",
-          "answer_atoms": [
-            "$22$"
-          ],
-          "answer_print": "22",
-          "answer_accept": [
-            "22"
-          ],
-          "answer_unit": null,
-          "answer_format": "수로 (단위 없음)",
-          "figure": null,
-          "hint": "음수를 제곱할 때는 괄호를 씌워야 밑이 음수 전체가 돼요. 괄호가 없으면 밑이 달라져요.",
-          "solution": "a<sup>2</sup> 은 (−3)<sup>2</sup> = 9 예요. −4a 는 −4 × (−3) = 12 예요. 따라서 9 + 12 + 1 = 22 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.negative-no-paren"
-          ]
-        },
-        {
-          "id": "m1-u03-t03-05",
-          "level": "M",
-          "stem_src": "$x = \\dfrac{1}{2}$일 때, $6x - 4$의 값을 구하세요.",
-          "stem_print": "x = <span class=\"frac\"><b>1</b><i>2</i></span> 일 때, 6x − 4 의 값을 구하시오.",
-          "answer_atoms": [
-            "$-1$"
-          ],
-          "answer_print": "−1",
-          "answer_accept": [
-            "−1"
-          ],
-          "answer_unit": null,
-          "answer_format": "수로 (단위 없음)",
-          "figure": null,
-          "hint": "6x 는 6 과 x 의 곱이에요. 분수를 넣을 때도 곱셈 기호를 되살려서 써 보세요.",
-          "solution": "6x 에 분수를 넣으면 6 × <span class=\"frac\"><b>1</b><i>2</i></span> = 3 이에요. 여기서 4 를 빼면 3 − 4 이므로 값은 −1 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.substitute-restore-times"
-          ]
-        },
-        {
-          "id": "m1-u03-t03-06",
-          "level": "M",
-          "stem_src": "$x = 2, y = -1$일 때, $\\dfrac{x - y}{x + y}$의 값을 구하세요.",
-          "stem_print": "x = 2, y = −1 일 때, <span class=\"frac\"><b>x − y</b><i>x + y</i></span> 의 값을 구하시오.",
-          "answer_atoms": [
-            "$3$"
-          ],
-          "answer_print": "3",
-          "answer_accept": [
-            "3"
-          ],
-          "answer_unit": null,
-          "answer_format": "수로 (단위 없음)",
-          "figure": null,
-          "hint": "분자와 분모를 따로 계산한 뒤 나누세요. 음수를 뺄 때는 괄호를 꼭 씌워요.",
-          "solution": "분자는 2 − (−1) = 2 + 1 = 3 이에요. 분모는 2 + (−1) = 1 이에요. 따라서 3 ÷ 1 = 3 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.negative-no-paren"
-          ]
-        },
-        {
-          "id": "m1-u03-t03-07",
-          "level": "H",
-          "stem_src": "$x + y = 4$이고 $xy = 3$일 때, $x^2 + y^2$의 값을 구하세요.",
-          "stem_print": "x + y = 4, xy = 3 일 때, x<sup>2</sup> + y<sup>2</sup> 의 값을 구하시오.",
-          "answer_atoms": [
-            "$10$"
-          ],
-          "answer_print": "10",
-          "answer_accept": [
-            "10"
-          ],
-          "answer_unit": null,
-          "answer_format": "수로 (단위 없음)",
-          "figure": null,
-          "hint": "(x + y) 를 두 번 곱해서 펼쳐 보세요. 펼친 식과 구하려는 식이 무엇만큼 차이 나는지 보이나요?",
-          "solution": "(x + y) 를 두 번 곱해 펼치면 x<sup>2</sup> + 2xy + y<sup>2</sup> 이에요. 즉 x<sup>2</sup> + y<sup>2</sup> 은 (x + y) 의 제곱에서 2xy 를 뺀 값이에요. 4 의 제곱은 16 이고 2xy = 2 × 3 = 6 이므로 16 − 6 = 10 이에요.",
+          "hint": "(x+y)² = x²+2xy+y²을 이용해요.",
+          "solution": "(x+y)² − 2xy = 25 − (−12) = 37이에요.",
           "work_space": "lg",
-          "misconceptions": [
-            "alg.repeat-times-vs-power"
-          ]
-        },
-        {
-          "id": "m1-u03-t03-08",
-          "level": "H",
-          "stem_src": "$a = -2$일 때, $A = 3a^2 - 2a + 1$의 값을 구하고, 그 값을 다시 $b$로 놓고 $2b - 5$의 값을 구하세요.",
-          "stem_print": "a = −2 일 때 A = 3a<sup>2</sup> − 2a + 1 의 값을 구하고, 그 값을 b 라 할 때 2b − 5 의 값을 구하시오.",
-          "answer_atoms": [
-            "$31$"
-          ],
-          "answer_print": "29",
-          "answer_accept": [
-            "29",
-            "A = 17, 2b − 5 = 29"
-          ],
-          "answer_unit": null,
-          "answer_format": "2b − 5 의 값을 수로 (단위 없음)",
-          "figure": null,
-          "hint": "두 단계로 나눠 풀어요. 먼저 A 의 값을 구하고, 그 수를 b 자리에 넣어요.",
-          "solution": "A = 3 × (−2)<sup>2</sup> − 2 × (−2) + 1 = 12 + 4 + 1 = 17 이에요. b = 17 이므로 2b − 5 = 2 × 17 − 5 = 34 − 5 = 29 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.negative-no-paren"
-          ],
-          "note": "★ 원본 앱 정답 오류 — 원본 해설이 2 × 17 − 5 를 31 로 적었으나 실제 값은 29 (A = 3×4 + 4 + 1 = 17, 2×17 − 5 = 29). answer_atoms 는 원본 그대로 두고 answer_print 만 바로잡음. 원본 type_03_app.html 을 고치면 answer_atoms 도 함께 재추출해야 V2 가 통과한다."
-        },
-        {
-          "id": "m1-u03-t03-09",
-          "level": "H",
-          "stem_src": "$x = 1$일 때 $ax + b = 5$이고, $x = -1$일 때 $ax + b = -1$이에요. $a$와 $b$의 값을 각각 구하세요.",
-          "stem_print": "x = 1 일 때 ax + b = 5 이고, x = −1 일 때 ax + b = −1 이다. 상수 a, b 의 값을 각각 구하시오.",
-          "answer_atoms": [
-            "$a = 3, b = 2$"
-          ],
-          "answer_print": "a = 3, b = 2",
-          "answer_accept": [
-            "a = 3 이고 b = 2",
-            "a: 3, b: 2"
-          ],
-          "answer_unit": null,
-          "answer_format": "a 와 b 의 값을 각각 수로 (단위 없음)",
-          "figure": null,
-          "hint": "x 자리에 두 값을 각각 넣어 식을 두 개 세워 보세요. 두 식을 더하거나 빼면 문자 하나가 사라져요.",
-          "solution": "x = 1 을 넣으면 a + b = 5 예요. x = −1 을 넣으면 −a + b = −1 이에요. 두 식을 더하면 2b = 4 이므로 b = 2 예요. 이를 첫 식에 넣으면 a = 5 − 2 = 3 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.substitute-restore-times"
-          ]
+          "misconceptions": []
         }
       ]
     },
     {
       "no": 4,
       "title": "단항식·다항식 & 차수·계수",
-      "principle": "식을 + 와 − 로 끊어서 항을 세어요. 계수는 문자 앞에 붙은 수를 부호까지 함께 읽고, 상수항은 문자가 없는 항이에요. 차수는 각 항에서 문자가 곱해진 횟수를 센 뒤 그중 가장 큰 값으로 정해요.",
+      "principle": "항은 +, −로 끊은 조각. 차수는 문자가 곱해진 횟수.",
       "problems": [
         {
           "id": "m1-u03-t04-01",
-          "level": "L",
-          "stem_src": "$4x - 7$에서 다음을 구하세요. ① 항의 개수 ② $x$의 계수 ③ 상수항",
-          "stem_print": "다항식 4x − 7 에 대하여 다음을 각각 구하시오.<br>(1) 항의 개수<br>(2) x 의 계수<br>(3) 상수항",
-          "answer_atoms": [],
-          "answer_print": "(1) 2 / (2) 4 / (3) −7",
-          "answer_accept": [
-            "(1) 2개 (2) 4 (3) −7",
-            "항 2개, 계수 4, 상수항 −7"
-          ],
+          "level": "M",
+          "stem_src": "3x − 5의 계수는?",
+          "stem_print": "3x − 5의 계수를 구하시오.",
+          "answer_atoms": ["3"],
+          "answer_print": "3",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "(1) 은 개수, (2) (3) 은 부호까지 붙인 수로 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "식을 + 와 − 에서 끊어 보세요. 상수항은 앞에 붙은 부호까지 함께 읽어야 해요.",
-          "solution": "4x − 7 은 4x 와 −7 두 개의 항으로 이루어져 있어요. x 앞에 붙은 수가 계수이므로 x 의 계수는 4 예요. 문자가 없는 항이 상수항이고, 앞의 부호까지 포함해서 −7 이에요.",
+          "hint": "x에 곱해진 수를 찾아요.",
+          "solution": "3x의 계수는 3이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.term-coefficient-degree-mixup",
-            "alg.coefficient-sign-dropped"
-          ],
-          "note": "원본 정답 표기 비표준 — 해설에서 확정"
+          "misconceptions": ["alg.term-coefficient-degree-mixup"]
         },
         {
           "id": "m1-u03-t04-02",
-          "level": "L",
-          "stem_src": "다음 중 단항식인 것을 모두 고르세요. ① $2x - 1$ ② $-3y$ ③ $\\dfrac{a}{4}$ ④ $x + y$",
-          "stem_print": "다음 ① ~ ④ 중 단항식인 것을 모두 고르시오.<br>① 2x − 1<br>② −3y<br>③ <span class=\"frac\"><b>a</b><i>4</i></span><br>④ x + y",
-          "answer_atoms": [
-            "②, ③"
-          ],
-          "answer_print": "②, ③",
-          "answer_accept": [
-            "2, 3",
-            "②③"
-          ],
+          "level": "M",
+          "stem_src": "2x² + 3x − 1의 차수는?",
+          "stem_print": "2x² + 3x − 1의 차수를 구하시오.",
+          "answer_atoms": ["2"],
+          "answer_print": "2",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "해당하는 번호를 모두 쓰시오 (단위 없음)",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "단항식은 항이 하나뿐인 식이에요. + 나 − 로 끊어지는 곳이 있는지 먼저 살펴보세요.",
-          "solution": "① 과 ④ 는 + 또는 − 로 두 부분으로 나뉘므로 항이 두 개인 다항식이에요. ② 는 항이 하나이고, ③ 은 a 를 4 로 나눈 것이므로 역시 항이 하나예요.",
+          "hint": "문자가 가장 많이 곱해진 항을 찾아요.",
+          "solution": "x²의 차수가 2로 가장 높아요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.monomial-vs-polynomial"
-          ]
+          "misconceptions": ["alg.term-coefficient-degree-mixup"]
         },
         {
           "id": "m1-u03-t04-03",
-          "level": "L",
-          "stem_src": "$3x^2 - 5x + 2$의 차수를 구하세요.",
-          "stem_print": "다항식 3x<sup>2</sup> − 5x + 2 의 차수를 구하시오.",
-          "answer_atoms": [
-            "2"
-          ],
-          "answer_print": "2",
-          "answer_accept": [
-            "2",
-            "이차 (차수 2)"
-          ],
+          "level": "M",
+          "stem_src": "5x + 2는 단항식인가요, 다항식인가요? (2지선다)",
+          "stem_print": "5x + 2는 단항식과 다항식 중 어느 것인지 쓰시오.",
+          "answer_atoms": ["다항식"],
+          "answer_print": "다항식",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "차수를 수로 (단위 없음)",
+          "answer_format": "단항식·다항식 중 하나의 꼴로",
           "figure": null,
-          "hint": "항마다 문자가 몇 번 곱해졌는지 세어 보고, 그중 가장 큰 값을 고르세요.",
-          "solution": "3x<sup>2</sup> 은 x 가 두 번 곱해졌으므로 차수가 2, −5x 는 차수가 1, 2 는 문자가 없으므로 차수가 0 이에요. 가장 큰 값이 다항식의 차수이므로 2 예요.",
+          "hint": "항이 몇 개인지 세어봐요.",
+          "solution": "항이 5x, 2로 2개니까 다항식이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.term-coefficient-degree-mixup"
-          ]
-        },
-        {
-          "id": "m1-u03-t04-04",
-          "level": "M",
-          "stem_src": "다음 식 중 일차식인 것을 모두 고르세요. ① $x^2 + 1$ ② $3x - 2$ ③ $5$ ④ $-x + 4$",
-          "stem_print": "다음 ① ~ ④ 중 <strong>일차식</strong>인 것을 모두 고르시오.<br>① x<sup>2</sup> + 1<br>② 3x − 2<br>③ 5<br>④ −x + 4",
-          "answer_atoms": [
-            "②, ④"
-          ],
-          "answer_print": "②, ④",
-          "answer_accept": [
-            "2, 4",
-            "②④"
-          ],
-          "answer_unit": null,
-          "answer_format": "해당하는 번호를 모두 쓰시오 (단위 없음)",
-          "figure": null,
-          "hint": "일차식은 가장 높은 차수가 꼭 1 이어야 해요. 문자가 아예 없는 식의 차수는 몇일까요?",
-          "solution": "① 은 가장 높은 차수가 2 라 이차식이에요. ③ 은 문자가 없어 차수가 0 인 상수식이라 일차식이 아니에요. ② 와 ④ 는 가장 높은 차수가 1 이므로 일차식이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.constant-is-linear"
-          ]
-        },
-        {
-          "id": "m1-u03-t04-05",
-          "level": "M",
-          "stem_src": "$-x$의 계수는 얼마인가요? 그리고 $x^2$의 계수는 얼마인가요?",
-          "stem_print": "다음 계수를 각각 구하시오.<br>(1) −x 에서 x 의 계수<br>(2) x<sup>2</sup> 에서 x<sup>2</sup> 의 계수",
-          "answer_atoms": [],
-          "answer_print": "(1) −1 / (2) 1",
-          "answer_accept": [
-            "(1) −1 (2) 1",
-            "−1 과 1"
-          ],
-          "answer_unit": null,
-          "answer_format": "부호까지 붙인 수로 각각 (단위 없음)",
-          "figure": null,
-          "hint": "안 보이는 계수가 숨어 있어요. 곱셈 기호를 되살려서 문자 앞에 무엇이 있었는지 써 보세요.",
-          "solution": "−x 는 (−1) × x 를 줄여 쓴 것이므로 계수는 −1 이에요. x<sup>2</sup> 은 1 × x<sup>2</sup> 이므로 계수는 1 이에요. 계수가 1 이나 −1 일 때 숫자 1 을 쓰지 않기로 약속했을 뿐, 계수가 없는 것은 아니에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.coefficient-one"
-          ],
-          "note": "원본 정답 표기 비표준 — 해설에서 확정"
-        },
-        {
-          "id": "m1-u03-t04-06",
-          "level": "M",
-          "stem_src": "$2x^2y + 3xy - y + 5$에서 다음을 구하세요. ① 항의 개수 ② $xy$의 계수 ③ 차수",
-          "stem_print": "다항식 2x<sup>2</sup>y + 3xy − y + 5 에 대하여 다음을 각각 구하시오.<br>(1) 항의 개수<br>(2) xy 의 계수<br>(3) 다항식의 차수",
-          "answer_atoms": [],
-          "answer_print": "(1) 4 / (2) 3 / (3) 3",
-          "answer_accept": [
-            "(1) 4개 (2) 3 (3) 3",
-            "항 4개, 계수 3, 차수 3"
-          ],
-          "answer_unit": null,
-          "answer_format": "(1) 은 개수, (2) (3) 은 수로 (단위 없음)",
-          "figure": null,
-          "hint": "문자가 두 개인 항의 차수는 곱해진 문자의 개수를 모두 세어 더해요.",
-          "solution": "+ 와 − 로 끊으면 2x<sup>2</sup>y, 3xy, −y, 5 로 항이 4 개예요. xy 앞의 수는 3 이므로 계수는 3 이에요. 각 항의 차수는 차례로 3, 2, 1, 0 이고 그중 가장 큰 값이 다항식의 차수이므로 3 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.term-coefficient-degree-mixup"
-          ],
-          "note": "원본 정답 표기 비표준 — 해설에서 확정"
-        },
-        {
-          "id": "m1-u03-t04-07",
-          "level": "H",
-          "stem_src": "$(a-2)x^2 + 3x - 1$이 일차식이 되려면 $a$의 값은 얼마인가요?",
-          "stem_print": "(a − 2)x<sup>2</sup> + 3x − 1 이 x 에 대한 일차식이 되도록 하는 상수 a 의 값을 구하시오.",
-          "answer_atoms": [
-            "$a = 2$"
-          ],
-          "answer_print": "a = 2",
-          "answer_accept": [
-            "2",
-            "a 는 2"
-          ],
-          "answer_unit": null,
-          "answer_format": "a 의 값을 수로 (단위 없음)",
-          "figure": null,
-          "hint": "가장 높은 차수가 1 이 되려면 그보다 높은 차수의 항이 남아 있으면 안 돼요. 그 항을 없애려면 계수가 어떤 값이어야 할까요?",
-          "solution": "일차식이 되려면 이차항이 사라져야 하므로 x<sup>2</sup> 의 계수 a − 2 가 0 이어야 해요. a − 2 = 0 에서 a = 2 예요. 이때 식은 3x − 1 이 되어 일차식이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.constant-is-linear"
-          ]
-        },
-        {
-          "id": "m1-u03-t04-08",
-          "level": "H",
-          "stem_src": "$\\dfrac{1}{x} + 3$은 다항식인가요? 단항식인가요? 그리고 차수는 얼마인가요?",
-          "stem_print": "<span class=\"frac\"><b>1</b><i>x</i></span> + 3 이 다항식인지 아닌지 판단하고, 그 까닭을 함께 쓰시오.",
-          "answer_atoms": [
-            "다항식이 아니에요"
-          ],
-          "answer_print": "다항식이 아니에요 (분모에 문자가 있어서 항의 차수를 정할 수 없어요)",
-          "answer_accept": [
-            "다항식이 아니다",
-            "다항식이 아니에요 — 분모에 문자가 들어 있어서"
-          ],
-          "answer_unit": null,
-          "answer_format": "'다항식이다' 또는 '다항식이 아니다' 중 하나와 그 까닭을 함께 (단위 없음)",
-          "figure": null,
-          "hint": "다항식의 각 항은 수와 문자의 곱이어야 해요. 문자가 분모에 있어도 그 조건에 맞을까요?",
-          "solution": "다항식의 각 항은 수와 문자의 곱이라서 문자가 분모에 오면 안 돼요. 첫 항은 문자가 분모에 있으므로 이 식은 다항식이 아니에요. 다항식이 아니므로 차수도 말할 수 없어요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.monomial-vs-polynomial"
-          ]
-        },
-        {
-          "id": "m1-u03-t04-09",
-          "level": "H",
-          "stem_src": "어떤 다항식의 $x^2$의 계수는 $2$, $x$의 계수는 $-3$, 상수항은 $1$이에요. 이 다항식을 쓰고, 이 다항식의 차수와 항의 개수를 구하세요.",
-          "stem_print": "어떤 다항식은 x<sup>2</sup> 의 계수가 2, x 의 계수가 −3, 상수항이 1 이다. 이 다항식을 쓰고, 그 다항식의 차수와 항의 개수를 각각 구하시오.",
-          "answer_atoms": [],
-          "answer_print": "2x<sup>2</sup> − 3x + 1 / 차수 2 / 항 3",
-          "answer_accept": [
-            "2x² − 3x + 1, 차수 2, 항 3개",
-            "1 − 3x + 2x², 차수 2, 항 3개"
-          ],
-          "answer_unit": null,
-          "answer_format": "다항식은 차수가 높은 항부터 쓴 식으로, 차수와 항의 개수는 수로 (단위 없음)",
-          "figure": null,
-          "hint": "계수는 문자 앞에 붙는 수예요. 부호까지 그대로 살려서 항을 하나씩 조립해 보세요.",
-          "solution": "x<sup>2</sup> 의 계수가 2 이므로 2x<sup>2</sup>, x 의 계수가 −3 이므로 −3x, 상수항이 1 이므로 + 1 이에요. 이어 쓰면 2x<sup>2</sup> − 3x + 1 이고, 가장 높은 차수는 2, 항은 3 개예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.term-coefficient-degree-mixup",
-            "alg.coefficient-sign-dropped"
-          ],
-          "note": "원본 정답 표기 비표준 — 해설에서 확정"
+          "misconceptions": ["alg.monomial-vs-polynomial"]
         }
       ]
     },
     {
       "no": 5,
       "title": "동류항 정리",
-      "principle": "문자 부분이 완전히 같은 항끼리만 묶어요. 문자가 같아도 차수가 다르면 동류항이 아니에요. 묶을 때는 계수만 더하거나 빼고 문자 부분은 그대로 두며, 동류항이 없는 항은 그 자리에 그대로 남겨요.",
+      "principle": "문자와 차수가 둘 다 같아야 동류항이에요.",
       "problems": [
         {
           "id": "m1-u03-t05-01",
-          "level": "L",
-          "stem_src": "$4x + 3 - 2x + 1$을 간단히 하세요.",
-          "stem_print": "4x + 3 − 2x + 1 을 간단히 하시오.",
-          "answer_atoms": [
-            "$2x + 4$"
-          ],
-          "answer_print": "2x + 4",
-          "answer_accept": [
-            "4 + 2x"
-          ],
+          "level": "M",
+          "stem_src": "3x + 2y − x + y를 정리하면?",
+          "stem_print": "3x + 2y − x + y를 간단히 정리하시오.",
+          "answer_atoms": ["2x+3y"],
+          "answer_print": "2x+3y",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
+          "answer_format": "간단히 정리한 식으로",
           "figure": null,
-          "hint": "문자가 붙은 항끼리, 문자가 없는 항끼리 따로 모아 보세요.",
-          "solution": "문자가 붙은 항은 4x 와 −2x 이고 계수끼리 계산하면 (4 − 2)x = 2x 예요. 문자가 없는 항은 3 과 1 이고 더하면 4 예요. 그래서 2x + 4 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "alg.like-terms-not-same"
-          ]
+          "hint": "x끼리, y끼리 각각 모아요.",
+          "solution": "x: 3x−x=2x, y: 2y+y=3y → 2x+3y예요.",
+          "work_space": "md",
+          "misconceptions": ["alg.like-terms-not-same"]
         },
         {
           "id": "m1-u03-t05-02",
-          "level": "L",
-          "stem_src": "$5y - 3 + y - 2y + 7$을 간단히 하세요.",
-          "stem_print": "5y − 3 + y − 2y + 7 을 간단히 하시오.",
-          "answer_atoms": [
-            "$4y + 4$"
-          ],
-          "answer_print": "4y + 4",
-          "answer_accept": [
-            "4 + 4y"
-          ],
+          "level": "M",
+          "stem_src": "2x² + 3x − 2x² + 4x − 1을 정리하면?",
+          "stem_print": "2x² + 3x − 2x² + 4x − 1을 간단히 정리하시오.",
+          "answer_atoms": ["7x−1"],
+          "answer_print": "7x−1",
+          "answer_accept": ["7x-1"],
           "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
+          "answer_format": "간단히 정리한 식으로",
           "figure": null,
-          "hint": "y 가 붙은 항이 세 개예요. 숫자가 안 보이는 항의 계수가 몇인지 먼저 정해 보세요.",
-          "solution": "y 가 붙은 항은 5y, y, −2y 이고 y 의 계수는 1 이므로 (5 + 1 − 2)y = 4y 예요. 문자가 없는 항은 −3 과 7 이고 더하면 4 예요. 그래서 4y + 4 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "alg.coefficient-one"
-          ]
+          "hint": "x²끼리 먼저 사라지는지 확인해요.",
+          "solution": "2x²−2x²=0, 3x+4x=7x → 7x−1이에요.",
+          "work_space": "md",
+          "misconceptions": []
         },
         {
           "id": "m1-u03-t05-03",
-          "level": "L",
-          "stem_src": "$3a + 2b - a + 4b$를 간단히 하세요.",
-          "stem_print": "3a + 2b − a + 4b 를 간단히 하시오.",
-          "answer_atoms": [
-            "$2a + 6b$"
-          ],
-          "answer_print": "2a + 6b",
-          "answer_accept": [
-            "6b + 2a"
-          ],
+          "level": "M",
+          "stem_src": "4x − 7x + 2x는?",
+          "stem_print": "4x − 7x + 2x를 계산하시오.",
+          "answer_atoms": ["−x"],
+          "answer_print": "−x",
+          "answer_accept": ["-x"],
           "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
+          "answer_format": "간단히 정리한 식으로",
           "figure": null,
-          "hint": "문자가 서로 다르면 묶을 수 없어요. 같은 문자끼리만 모아 보세요.",
-          "solution": "a 가 붙은 항은 3a 와 −a 이고 a 의 계수는 1 이므로 (3 − 1)a = 2a 예요. b 가 붙은 항은 2b 와 4b 이므로 6b 예요. 문자가 다르므로 더 이상 합칠 수 없어 2a + 6b 예요.",
+          "hint": "계수만 더하고 빼요.",
+          "solution": "4−7+2=−1 → −x예요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.like-terms-not-same",
-            "alg.coefficient-one"
-          ]
-        },
-        {
-          "id": "m1-u03-t05-04",
-          "level": "M",
-          "stem_src": "$2x^2 + 3x - x^2 + 4x - 5$를 간단히 하세요.",
-          "stem_print": "2x<sup>2</sup> + 3x − x<sup>2</sup> + 4x − 5 를 간단히 하시오.",
-          "answer_atoms": [
-            "$x^2 + 7x - 5$"
-          ],
-          "answer_print": "x<sup>2</sup> + 7x − 5",
-          "answer_accept": [
-            "x² + 7x − 5",
-            "x^2 + 7x − 5"
-          ],
-          "answer_unit": null,
-          "answer_format": "차수가 높은 항부터 쓴 가장 간단한 식으로",
-          "figure": null,
-          "hint": "문자가 같아도 차수가 다르면 묶을 수 없어요. 차수별로 줄을 나눠 정리해 보세요.",
-          "solution": "이차항은 2x<sup>2</sup> 과 −x<sup>2</sup> 이고 (2 − 1)x<sup>2</sup> = x<sup>2</sup> 이에요. 일차항은 3x 와 4x 로 7x 예요. 문자가 없는 항은 −5 예요. 그래서 x<sup>2</sup> + 7x − 5 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.like-terms-not-same",
-            "alg.repeat-times-vs-power"
-          ]
-        },
-        {
-          "id": "m1-u03-t05-05",
-          "level": "M",
-          "stem_src": "다음 중 동류항끼리 바르게 묶은 것은? ① $3x$와 $3y$ ② $2x^2$와 $-x^2$ ③ $4x$와 $4x^2$ ④ $5$와 $5x$",
-          "stem_print": "다음 ① ~ ④ 중 두 항이 서로 동류항인 것을 하나 고르시오.<br>① 3x 와 3y<br>② 2x<sup>2</sup> 과 −x<sup>2</sup><br>③ 4x 와 4x<sup>2</sup><br>④ 5 와 5x",
-          "answer_atoms": [
-            "②"
-          ],
-          "answer_print": "②",
-          "answer_accept": [
-            "2",
-            "2번"
-          ],
-          "answer_unit": null,
-          "answer_format": "번호 ① ~ ④ 중 하나로 (단위 없음)",
-          "figure": null,
-          "hint": "문자가 같은지, 차수도 같은지 두 가지를 모두 확인해야 해요.",
-          "solution": "① 은 문자가 서로 달라요. ③ 은 문자는 같지만 차수가 달라요. ④ 는 한쪽에 문자가 없어 차수가 달라요. ② 만 문자와 차수가 모두 같아 동류항이에요. 계수가 달라도 동류항 여부와는 상관없어요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.like-terms-not-same"
-          ]
-        },
-        {
-          "id": "m1-u03-t05-06",
-          "level": "M",
-          "stem_src": "$5x - 3y + 2x + y - 4$를 간단히 하세요.",
-          "stem_print": "5x − 3y + 2x + y − 4 를 간단히 하시오.",
-          "answer_atoms": [
-            "$7x - 2y - 4$"
-          ],
-          "answer_print": "7x − 2y − 4",
-          "answer_accept": [
-            "−2y + 7x − 4"
-          ],
-          "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
-          "figure": null,
-          "hint": "x 항, y 항, 문자가 없는 항의 세 무리로 나눠 보세요. 숫자가 안 보이는 항의 계수도 챙기세요.",
-          "solution": "x 항은 5x 와 2x 로 7x 예요. y 항은 −3y 와 y 이고 y 의 계수는 1 이므로 (−3 + 1)y = −2y 예요. 문자가 없는 항은 −4 예요. 그래서 7x − 2y − 4 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.like-terms-not-same",
-            "alg.coefficient-one"
-          ]
-        },
-        {
-          "id": "m1-u03-t05-07",
-          "level": "H",
-          "stem_src": "$ax + 3y - 2x + by - 1$을 간단히 한 결과가 $3x + y - 1$이 되려면 $a$, $b$의 값을 구하세요.",
-          "stem_print": "ax + 3y − 2x + by − 1 을 간단히 한 결과가 3x + y − 1 이 되도록 하는 상수 a, b 의 값을 각각 구하시오.",
-          "answer_atoms": [
-            "$a = 5, b = -2$"
-          ],
-          "answer_print": "a = 5, b = −2",
-          "answer_accept": [
-            "a = 5 이고 b = −2",
-            "a: 5, b: −2"
-          ],
-          "answer_unit": null,
-          "answer_format": "a 와 b 의 값을 각각 부호까지 붙인 수로 (단위 없음)",
-          "figure": null,
-          "hint": "왼쪽 식을 먼저 동류항끼리 묶어 보세요. 그 다음 x 의 계수끼리, y 의 계수끼리 짝지어 비교해요.",
-          "solution": "왼쪽을 정리하면 x 항은 (a − 2)x, y 항은 (3 + b)y, 나머지는 −1 이에요. 오른쪽과 계수를 짝지으면 a − 2 = 3 에서 a = 5, 3 + b = 1 에서 b = −2 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.term-coefficient-degree-mixup"
-          ]
-        },
-        {
-          "id": "m1-u03-t05-08",
-          "level": "H",
-          "stem_src": "$3x^2 - 2x + 1$과 $-x^2 + 5x - 3$을 더하면 어떻게 되나요? 그리고 이 결과의 $x$ 계수는 무엇인가요?",
-          "stem_print": "3x<sup>2</sup> − 2x + 1 과 −x<sup>2</sup> + 5x − 3 을 더한 식을 구하고, 그 결과에서 x 의 계수를 쓰시오.",
-          "answer_atoms": [],
-          "answer_print": "2x<sup>2</sup> + 3x − 2 / x 의 계수 3",
-          "answer_accept": [
-            "2x² + 3x − 2, 계수 3",
-            "합 2x² + 3x − 2 이고 x 의 계수는 3"
-          ],
-          "answer_unit": null,
-          "answer_format": "합은 차수가 높은 항부터 쓴 식으로, 계수는 부호까지 붙인 수로 (단위 없음)",
-          "figure": null,
-          "hint": "두 식을 이어 쓴 다음 차수별로 나눠 정리해 보세요. 계수를 말할 때는 부호도 함께 읽어요.",
-          "solution": "이차항은 3x<sup>2</sup> 과 −x<sup>2</sup> 이므로 2x<sup>2</sup> 이에요. 일차항은 −2x 와 5x 이므로 3x 예요. 문자가 없는 항은 1 과 −3 이므로 −2 예요. 합은 2x<sup>2</sup> + 3x − 2 이고, x 의 계수는 3 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.like-terms-not-same",
-            "alg.coefficient-sign-dropped"
-          ],
-          "note": "원본 정답 표기 비표준 — 해설에서 확정"
-        },
-        {
-          "id": "m1-u03-t05-09",
-          "level": "H",
-          "stem_src": "어떤 식에서 $2x - 5$를 빼야 하는데 실수로 더했더니 $5x + 1$이 되었어요. 바르게 계산한 결과를 구하세요.",
-          "stem_print": "어떤 식에서 2x − 5 를 빼야 할 것을 잘못하여 더했더니 5x + 1 이 되었다. 바르게 계산한 식을 구하시오.",
-          "answer_atoms": [
-            "$x + 11$"
-          ],
-          "answer_print": "x + 11",
-          "answer_accept": [
-            "11 + x"
-          ],
-          "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
-          "figure": null,
-          "hint": "먼저 어떤 식이 무엇인지 되찾아야 해요. 잘못한 계산을 거꾸로 되돌려 보세요.",
-          "solution": "어떤 식에 2x − 5 를 더해 5x + 1 이 되었으므로 어떤 식은 (5x + 1) − (2x − 5) = 5x + 1 − 2x + 5 = 3x + 6 이에요. 바르게 계산하면 (3x + 6) − (2x − 5) = 3x + 6 − 2x + 5 = x + 11 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.paren-minus-partial"
-          ]
+          "misconceptions": []
         }
       ]
     },
     {
       "no": 6,
       "title": "일차식의 덧셈·뺄셈",
-      "principle": "괄호를 먼저 풀어요. 괄호 앞이 + 이면 안의 부호를 그대로 두고, − 이면 괄호 안 모든 항의 부호를 바꿔요. 괄호 앞에 수가 있으면 안의 모든 항에 빠짐없이 곱해요. 괄호가 겹쳐 있으면 안쪽부터 풀고, 마지막에 동류항을 정리해요.",
+      "principle": "괄호를 먼저 풀어요. 빼기 괄호는 안의 부호가 전부 반전!",
       "problems": [
         {
           "id": "m1-u03-t06-01",
-          "level": "L",
-          "stem_src": "$(3x + 4) + (x - 2)$를 계산하세요.",
-          "stem_print": "(3x + 4) + (x − 2) 를 계산하시오.",
-          "answer_atoms": [
-            "$4x + 2$"
-          ],
-          "answer_print": "4x + 2",
-          "answer_accept": [
-            "2 + 4x"
-          ],
+          "level": "M",
+          "stem_src": "(2x − 3) + (x + 5)는?",
+          "stem_print": "(2x − 3) + (x + 5)를 계산하시오.",
+          "answer_atoms": ["3x+2"],
+          "answer_print": "3x+2",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
+          "answer_format": "간단히 정리한 식으로",
           "figure": null,
-          "hint": "괄호 앞이 + 이면 괄호를 그냥 지워도 부호가 바뀌지 않아요.",
-          "solution": "괄호를 지우면 3x + 4 + x − 2 예요. x 항은 3x 와 x 로 4x, 문자가 없는 항은 4 와 −2 로 2 예요. 그래서 4x + 2 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "alg.like-terms-not-same"
-          ]
+          "hint": "괄호를 풀고 동류항끼리 모아요.",
+          "solution": "2x−3+x+5=3x+2예요.",
+          "work_space": "md",
+          "misconceptions": ["alg.coefficient-sign-dropped"]
         },
         {
           "id": "m1-u03-t06-02",
-          "level": "L",
-          "stem_src": "$(5x - 3) - (2x + 1)$을 계산하세요.",
-          "stem_print": "(5x − 3) − (2x + 1) 을 계산하시오.",
-          "answer_atoms": [
-            "$3x - 4$"
-          ],
-          "answer_print": "3x − 4",
-          "answer_accept": [
-            "−4 + 3x"
-          ],
+          "level": "M",
+          "stem_src": "(3x − 1) − (x − 4) + 2(x + 2)는?",
+          "stem_print": "(3x − 1) − (x − 4) + 2(x + 2)를 계산하시오.",
+          "answer_atoms": ["4x+7"],
+          "answer_print": "4x+7",
+          "answer_accept": [],
           "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
+          "answer_format": "간단히 정리한 식으로",
           "figure": null,
-          "hint": "뒤 괄호 앞에 − 가 있어요. 괄호 안의 항이 몇 개인지 세어 보고, 그 항 전부의 부호를 바꿔 보세요.",
-          "solution": "뒤 괄호 앞이 − 이므로 안의 두 항 모두 부호가 바뀌어 −2x − 1 이 돼요. 이어 쓰면 5x − 3 − 2x − 1 이고, 정리하면 3x − 4 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "alg.paren-minus-partial"
-          ]
+          "hint": "빼기 괄호와 곱하기 괄호를 각각 조심해서 풀어요.",
+          "solution": "3x−1−x+4+2x+4=4x+7이에요.",
+          "work_space": "lg",
+          "misconceptions": ["alg.paren-minus-partial", "alg.distribute-partial"]
         },
         {
           "id": "m1-u03-t06-03",
-          "level": "L",
-          "stem_src": "$(4a - 5) - (a - 3)$을 계산하세요.",
-          "stem_print": "(4a − 5) − (a − 3) 을 계산하시오.",
-          "answer_atoms": [
-            "$3a - 2$"
-          ],
-          "answer_print": "3a − 2",
-          "answer_accept": [
-            "−2 + 3a"
-          ],
-          "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
-          "figure": null,
-          "hint": "괄호 안에 이미 − 가 붙은 항이 있어요. 그 항의 부호도 바뀌면 어떤 부호가 될까요?",
-          "solution": "뒤 괄호를 풀면 −a + 3 이 돼요. 이어 쓰면 4a − 5 − a + 3 이고, a 항은 (4 − 1)a = 3a, 문자가 없는 항은 −5 + 3 = −2 이므로 3a − 2 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "alg.paren-minus-partial",
-            "alg.coefficient-one"
-          ]
-        },
-        {
-          "id": "m1-u03-t06-04",
           "level": "M",
-          "stem_src": "$(3x - 1) - (x - 4) + 2(x + 2)$를 계산하세요.",
-          "stem_print": "(3x − 1) − (x − 4) + 2(x + 2) 를 계산하시오.",
-          "answer_atoms": [
-            "$4x + 7$"
-          ],
-          "answer_print": "4x + 7",
-          "answer_accept": [
-            "7 + 4x"
-          ],
+          "stem_src": "(x + 3) − (2x − 1)은?",
+          "stem_print": "(x + 3) − (2x − 1)을 계산하시오.",
+          "answer_atoms": ["−x+4"],
+          "answer_print": "−x+4",
+          "answer_accept": ["-x+4"],
           "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
+          "answer_format": "간단히 정리한 식으로",
           "figure": null,
-          "hint": "괄호를 하나씩 처리해요. 앞의 − 괄호를 풀고, 뒤의 2 는 괄호 안 두 항 모두에 곱해요.",
-          "solution": "−(x − 4) = −x + 4 이고, 2(x + 2) = 2x + 4 예요. 모두 이어 쓰면 3x − 1 − x + 4 + 2x + 4 이고, x 항은 (3 − 1 + 2)x = 4x, 문자가 없는 항은 −1 + 4 + 4 = 7 이므로 4x + 7 이에요.",
+          "hint": "빼기 괄호 안 부호가 전부 바뀌어요.",
+          "solution": "x+3−2x+1=−x+4예요.",
           "work_space": "md",
-          "misconceptions": [
-            "alg.paren-minus-partial",
-            "alg.distribute-partial"
-          ]
-        },
-        {
-          "id": "m1-u03-t06-05",
-          "level": "M",
-          "stem_src": "다음 계산에서 틀린 부분을 찾고 바르게 고치세요. $(4x - 3) - (2x - 5) = 4x - 3 - 2x - 5 = 2x - 8$",
-          "stem_print": "다음 계산에서 잘못된 곳을 찾아 그 까닭을 쓰고, 바르게 계산한 식을 구하시오.<br>(4x − 3) − (2x − 5) = 4x − 3 − 2x − 5 = 2x − 8",
-          "answer_atoms": [],
-          "answer_print": "잘못된 곳: 뒤 괄호를 풀 때 안쪽 −5 의 부호를 바꾸지 않은 것 (+5 가 되어야 해요) / 바른 결과: 2x + 2",
-          "answer_accept": [
-            "−(2x − 5) 는 −2x + 5, 답은 2x + 2",
-            "부호 하나를 안 바꿈, 2x + 2"
-          ],
-          "answer_unit": null,
-          "answer_format": "잘못된 곳과 바르게 계산한 식으로",
-          "figure": null,
-          "hint": "괄호 앞의 − 는 괄호 안 항 하나에만 붙는 것이 아니에요. 두 항 모두 확인해 보세요.",
-          "solution": "괄호 앞이 − 이면 괄호 안 모든 항의 부호가 바뀌어야 해요. 안쪽 항은 두 개이므로 −(2x − 5) = −2x + 5 로 풀어야 하는데, 주어진 풀이는 뒤쪽 항의 부호를 그대로 두었어요. 바르게 하면 4x − 3 − 2x + 5 = 2x + 2 예요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.paren-minus-partial"
-          ],
-          "note": "원본 정답 표기 비표준 — 해설에서 확정"
-        },
-        {
-          "id": "m1-u03-t06-06",
-          "level": "M",
-          "stem_src": "$A = 2x - 3$, $B = x + 5$일 때, $2A - B$를 계산하세요.",
-          "stem_print": "A = 2x − 3, B = x + 5 일 때, 2A − B 를 계산하시오.",
-          "answer_atoms": [
-            "$3x - 11$"
-          ],
-          "answer_print": "3x − 11",
-          "answer_accept": [
-            "−11 + 3x"
-          ],
-          "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
-          "figure": null,
-          "hint": "A 와 B 를 넣을 때 각 식을 괄호로 감싸 두면 부호를 놓치지 않아요.",
-          "solution": "2A − B = 2(2x − 3) − (x + 5) 예요. 2(2x − 3) = 4x − 6 이고 −(x + 5) = −x − 5 예요. 이어 쓰면 4x − 6 − x − 5 이므로 3x − 11 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.paren-minus-partial",
-            "alg.distribute-partial"
-          ]
-        },
-        {
-          "id": "m1-u03-t06-07",
-          "level": "H",
-          "stem_src": "$3A - 2(A - B) = A + 2B$를 계산하여 확인하고, $A = x - 1$, $B = 2x + 3$일 때의 값을 구하세요.",
-          "stem_print": "3A − 2(A − B) 를 간단히 하면 A + 2B 가 됨을 보이고, A = x − 1, B = 2x + 3 일 때 그 식의 값을 구하시오.",
-          "answer_atoms": [],
-          "answer_print": "3A − 2(A − B) = 3A − 2A + 2B = A + 2B / 값: 5x + 5",
-          "answer_accept": [
-            "A + 2B 이고 값은 5x + 5",
-            "5 + 5x"
-          ],
-          "answer_unit": null,
-          "answer_format": "정리 과정과 최종 식을 함께, 값은 동류항을 정리한 식으로",
-          "figure": null,
-          "hint": "괄호 앞의 −2 를 괄호 안 두 항 모두에 곱해 보세요. 뺄셈이 곱해지면 부호가 어떻게 되나요?",
-          "solution": "−2(A − B) = −2A + 2B 이므로 3A − 2A + 2B = A + 2B 예요. 여기에 값을 넣으면 (x − 1) + 2(2x + 3) = x − 1 + 4x + 6 = 5x + 5 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.distribute-partial",
-            "alg.paren-minus-partial"
-          ],
-          "note": "원본 정답 표기 비표준 — 해설에서 확정"
-        },
-        {
-          "id": "m1-u03-t06-08",
-          "level": "H",
-          "stem_src": "어떤 식 $X$에 $3x - 2$를 더해야 하는데, 실수로 빼서 $x + 4$가 되었어요. 바르게 계산한 결과를 구하세요.",
-          "stem_print": "어떤 식 X 에 3x − 2 를 더해야 할 것을 잘못하여 뺐더니 x + 4 가 되었다. 바르게 계산한 식을 구하시오.",
-          "answer_atoms": [
-            "$7x$"
-          ],
-          "answer_print": "7x",
-          "answer_accept": [
-            "7x + 0",
-            "7x (상수항 없음)"
-          ],
-          "answer_unit": null,
-          "answer_format": "동류항을 정리한 가장 간단한 식으로",
-          "figure": null,
-          "hint": "먼저 X 가 무엇인지 되찾으세요. 뺐더니 어떤 식이 되었다면, 거꾸로 무엇을 하면 X 가 나올까요?",
-          "solution": "X − (3x − 2) = x + 4 이므로 X = (x + 4) + (3x − 2) = 4x + 2 예요. 바르게 계산하면 (4x + 2) + (3x − 2) = 7x 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.paren-minus-partial"
-          ]
-        },
-        {
-          "id": "m1-u03-t06-09",
-          "level": "H",
-          "stem_src": "$A - \\{2B - (A + B)\\}$를 간단히 하세요. ($A$, $B$는 일차식)",
-          "stem_print": "A, B 가 일차식일 때, A − {2B − (A + B)} 를 A 와 B 를 사용한 가장 간단한 식으로 나타내시오.",
-          "answer_atoms": [
-            "$2A - B$"
-          ],
-          "answer_print": "2A − B",
-          "answer_accept": [
-            "−B + 2A"
-          ],
-          "answer_unit": null,
-          "answer_format": "A 와 B 로 나타낸 가장 간단한 식으로",
-          "figure": null,
-          "hint": "괄호가 겹쳐 있으면 안쪽 소괄호부터 풀어요. 중괄호는 그 다음이에요.",
-          "solution": "안쪽부터 풀면 2B − (A + B) = 2B − A − B = B − A 예요. 그러면 A − (B − A) = A − B + A 이므로 2A − B 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.paren-minus-partial"
-          ]
+          "misconceptions": ["alg.paren-minus-partial"]
         }
       ]
     },
     {
       "no": 7,
-      "title": "일차식 × 수 / ÷ 수",
-      "principle": "괄호 앞의 수는 괄호 안 모든 항에 빠짐없이 곱해요. 수로 나눌 때는 그 수의 역수를 곱한다고 생각하면 편해요. 분모가 다른 분수식은 통분한 뒤 계산하고, 분자가 두 항 이상이면 반드시 괄호로 묶어 두어요.",
+      "title": "일차식 × 수, 일차식 ÷ 수",
+      "principle": "분배법칙 — 괄호 안 모든 항에 곱해요.",
       "problems": [
         {
           "id": "m1-u03-t07-01",
-          "level": "L",
-          "stem_src": "$4(3x - 2)$를 전개하세요.",
-          "stem_print": "4(3x − 2) 를 전개하시오.",
-          "answer_atoms": [
-            "$12x - 8$"
-          ],
-          "answer_print": "12x − 8",
-          "answer_accept": [
-            "−8 + 12x"
-          ],
+          "level": "M",
+          "stem_src": "4(3x − 2)는?",
+          "stem_print": "4(3x − 2)를 계산하시오.",
+          "answer_atoms": ["12x−8"],
+          "answer_print": "12x−8",
+          "answer_accept": ["12x-8"],
           "answer_unit": null,
-          "answer_format": "괄호를 푼 가장 간단한 식으로",
+          "answer_format": "간단히 정리한 식으로",
           "figure": null,
-          "hint": "괄호 밖의 수는 안에 있는 항 하나하나에 모두 곱해요. 몇 번 곱해야 하는지 세어 보세요.",
-          "solution": "4 를 두 항 모두에 곱해요. 4 × 3x = 12x 이고 4 × (−2) = −8 이므로 12x − 8 이에요.",
+          "hint": "괄호 안 두 항 모두에 곱해요.",
+          "solution": "4×3x − 4×2 = 12x−8이에요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.distribute-partial"
-          ]
+          "misconceptions": ["alg.distribute-partial"]
         },
         {
           "id": "m1-u03-t07-02",
-          "level": "L",
-          "stem_src": "$-3(2x - 5)$를 전개하세요.",
-          "stem_print": "−3(2x − 5) 를 전개하시오.",
-          "answer_atoms": [
-            "$-6x + 15$"
-          ],
-          "answer_print": "−6x + 15",
-          "answer_accept": [
-            "15 − 6x"
-          ],
+          "level": "M",
+          "stem_src": "(1/2)(6x − 4) − 3(x + 1)은?",
+          "stem_print": "(1/2)(6x − 4) − 3(x + 1)을 계산하시오.",
+          "answer_atoms": ["-5"],
+          "answer_print": "-5",
+          "answer_accept": ["−5"],
           "answer_unit": null,
-          "answer_format": "괄호를 푼 가장 간단한 식으로",
+          "answer_format": "수로 (단위 없음)",
           "figure": null,
-          "hint": "곱하는 수가 음수예요. 음수와 음수를 곱하면 부호가 어떻게 되는지 떠올려 보세요.",
-          "solution": "−3 을 두 항 모두에 곱해요. (−3) × 2x = −6x 이고 (−3) × (−5) = +15 이므로 −6x + 15 예요.",
-          "work_space": "sm",
-          "misconceptions": [
-            "alg.distribute-partial"
-          ]
+          "hint": "각각 분배법칙으로 풀고 동류항을 모아요.",
+          "solution": "3x−2−3x−3=−5예요.",
+          "work_space": "lg",
+          "misconceptions": ["alg.distribute-partial"]
         },
         {
           "id": "m1-u03-t07-03",
-          "level": "L",
-          "stem_src": "$(8x - 4) \\div 2$를 계산하세요.",
-          "stem_print": "(8x − 4) ÷ 2 를 계산하시오.",
-          "answer_atoms": [
-            "$4x - 2$"
-          ],
-          "answer_print": "4x − 2",
-          "answer_accept": [
-            "−2 + 4x"
-          ],
+          "level": "M",
+          "stem_src": "(6x − 4) ÷ 2는?",
+          "stem_print": "(6x − 4) ÷ 2를 계산하시오.",
+          "answer_atoms": ["3x−2"],
+          "answer_print": "3x−2",
+          "answer_accept": ["3x-2"],
           "answer_unit": null,
-          "answer_format": "괄호를 푼 가장 간단한 식으로",
+          "answer_format": "간단히 정리한 식으로",
           "figure": null,
-          "hint": "어떤 수로 나누는 것은 그 수의 역수를 곱하는 것과 같아요. 나누기도 항 하나하나에 해 줘요.",
-          "solution": "괄호 안 두 항을 각각 2 로 나눠요. 8x ÷ 2 = 4x 이고 (−4) ÷ 2 = −2 이므로 4x − 2 예요.",
+          "hint": "나누는 수의 역수를 곱하는 것과 같아요.",
+          "solution": "(6x−4) ÷ 2 = 3x−2예요.",
           "work_space": "sm",
-          "misconceptions": [
-            "alg.div-not-fraction",
-            "alg.distribute-partial"
-          ]
-        },
-        {
-          "id": "m1-u03-t07-04",
-          "level": "M",
-          "stem_src": "$\\dfrac{1}{2}(6x - 4) - 3(x + 1)$을 계산하세요.",
-          "stem_print": "<span class=\"frac\"><b>1</b><i>2</i></span>(6x − 4) − 3(x + 1) 을 계산하시오.",
-          "answer_atoms": [
-            "$-5$"
-          ],
-          "answer_print": "−5",
-          "answer_accept": [
-            "−5 (x 항이 모두 없어져요)"
-          ],
-          "answer_unit": null,
-          "answer_format": "가장 간단한 식으로 (x 항이 남지 않으면 수만 쓰시오)",
-          "figure": null,
-          "hint": "두 괄호를 각각 먼저 풀어요. 두 번째 괄호 앞의 − 도 잊지 말고 함께 곱해 주세요.",
-          "solution": "앞의 괄호를 풀면 3x − 2 예요. 뒤는 3(x + 1) = 3x + 3 이고 앞에 − 가 붙어 −3x − 3 이 돼요. 모두 이어 쓰면 3x − 2 − 3x − 3 이고, x 항이 서로 없어져 −5 만 남아요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.distribute-partial",
-            "alg.paren-minus-partial"
-          ]
-        },
-        {
-          "id": "m1-u03-t07-05",
-          "level": "M",
-          "stem_src": "$\\dfrac{2x + 1}{3} + \\dfrac{x - 2}{3}$를 계산하세요.",
-          "stem_print": "<span class=\"frac\"><b>2x + 1</b><i>3</i></span> + <span class=\"frac\"><b>x − 2</b><i>3</i></span> 를 계산하시오.",
-          "answer_atoms": [
-            "$x - \\dfrac{1}{3}$"
-          ],
-          "answer_print": "x − <span class=\"frac\"><b>1</b><i>3</i></span>",
-          "answer_accept": [
-            "x − 1/3",
-            "(3x − 1)/3"
-          ],
-          "answer_unit": null,
-          "answer_format": "가장 간단한 식으로 (분수가 남으면 기약분수로)",
-          "figure": null,
-          "hint": "분모가 이미 같아요. 분자끼리 더한 뒤 동류항을 정리해 보세요. 분모는 더하지 않아요.",
-          "solution": "분모가 같으므로 분자끼리 더하면 (2x + 1) + (x − 2) = 3x − 1 이에요. 따라서 <span class=\"frac\"><b>3x − 1</b><i>3</i></span> 이고, 항마다 나누면 x − <span class=\"frac\"><b>1</b><i>3</i></span> 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.fraction-add-denominator"
-          ]
-        },
-        {
-          "id": "m1-u03-t07-06",
-          "level": "M",
-          "stem_src": "$\\dfrac{a}{2} + \\dfrac{a}{3}$을 계산하세요.",
-          "stem_print": "<span class=\"frac\"><b>a</b><i>2</i></span> + <span class=\"frac\"><b>a</b><i>3</i></span> 을 계산하시오.",
-          "answer_atoms": [
-            "$\\dfrac{5a}{6}$"
-          ],
-          "answer_print": "<span class=\"frac\"><b>5a</b><i>6</i></span>",
-          "answer_accept": [
-            "5a/6",
-            "(5/6)a"
-          ],
-          "answer_unit": null,
-          "answer_format": "하나의 분수 꼴로, 기약분수로",
-          "figure": null,
-          "hint": "분모가 다르면 먼저 통분해요. 두 분모의 최소공배수를 찾아 보세요.",
-          "solution": "두 분모의 최소공배수는 6 이에요. 통분하면 <span class=\"frac\"><b>3a</b><i>6</i></span> + <span class=\"frac\"><b>2a</b><i>6</i></span> 이고, 분자끼리 더하면 <span class=\"frac\"><b>5a</b><i>6</i></span> 이에요.",
-          "work_space": "md",
-          "misconceptions": [
-            "alg.fraction-add-denominator"
-          ]
-        },
-        {
-          "id": "m1-u03-t07-07",
-          "level": "H",
-          "stem_src": "$\\dfrac{3x - 1}{4} - \\dfrac{2x + 3}{6}$을 계산하세요.",
-          "stem_print": "<span class=\"frac\"><b>3x − 1</b><i>4</i></span> − <span class=\"frac\"><b>2x + 3</b><i>6</i></span> 을 계산하시오.",
-          "answer_atoms": [
-            "$\\dfrac{5x - 9}{12}$"
-          ],
-          "answer_print": "<span class=\"frac\"><b>5x − 9</b><i>12</i></span>",
-          "answer_accept": [
-            "(5x − 9)/12",
-            "5x/12 − 3/4"
-          ],
-          "answer_unit": null,
-          "answer_format": "하나의 분수 꼴로, 기약분수로",
-          "figure": null,
-          "hint": "통분한 뒤 뒤쪽 분자를 괄호로 묶어 두세요. 앞의 − 가 그 괄호 전체에 걸려요.",
-          "solution": "두 분모의 최소공배수는 12 예요. 통분하면 <span class=\"frac\"><b>3(3x − 1)</b><i>12</i></span> − <span class=\"frac\"><b>2(2x + 3)</b><i>12</i></span> 이에요. 분자를 계산하면 9x − 3 − (4x + 6) = 9x − 3 − 4x − 6 = 5x − 9 이므로 <span class=\"frac\"><b>5x − 9</b><i>12</i></span> 예요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.fraction-add-denominator",
-            "alg.paren-minus-partial"
-          ]
-        },
-        {
-          "id": "m1-u03-t07-08",
-          "level": "H",
-          "stem_src": "$2(3x - 1) - 3(x - 2) = ax + b$ 일 때, $a + b$의 값을 구하세요.",
-          "stem_print": "2(3x − 1) − 3(x − 2) 를 간단히 하면 ax + b 이다. 이때 a + b 의 값을 구하시오.",
-          "answer_atoms": [
-            "$a + b = 3 + 4 = 7$"
-          ],
-          "answer_print": "a + b = 3 + 4 = 7",
-          "answer_accept": [
-            "7",
-            "a = 3, b = 4 이므로 7"
-          ],
-          "answer_unit": null,
-          "answer_format": "a + b 의 값을 수로 (단위 없음)",
-          "figure": null,
-          "hint": "왼쪽 식을 먼저 정리해 ax + b 꼴로 만들어 보세요. 그 다음 a 와 b 가 각각 무엇인지 읽어요.",
-          "solution": "2(3x − 1) = 6x − 2 이고 −3(x − 2) = −3x + 6 이에요. 이어 쓰면 6x − 2 − 3x + 6 = 3x + 4 예요. 따라서 a = 3, b = 4 이고 a + b = 3 + 4 = 7 이에요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.distribute-partial",
-            "alg.paren-minus-partial"
-          ]
-        },
-        {
-          "id": "m1-u03-t07-09",
-          "level": "H",
-          "stem_src": "$4(2x - 1) - k(x - 3) = 5x + 5$를 만족하는 상수 $k$를 구하세요.",
-          "stem_print": "모든 x 에 대하여 4(2x − 1) − k(x − 3) = 5x + 5 가 성립할 때, 상수 k 의 값을 구하시오.",
-          "answer_atoms": [
-            "$k = 3$"
-          ],
-          "answer_print": "k = 3",
-          "answer_accept": [
-            "3",
-            "k 는 3"
-          ],
-          "answer_unit": null,
-          "answer_format": "k 의 값을 수로 (단위 없음)",
-          "figure": null,
-          "hint": "왼쪽을 전개해 x 항과 문자가 없는 항으로 나눠 보세요. 양쪽에서 x 의 계수끼리 짝지어 비교해요.",
-          "solution": "왼쪽을 전개하면 8x − 4 − kx + 3k 이고, 정리하면 (8 − k)x + (3k − 4) 예요. 오른쪽과 x 의 계수를 비교하면 8 − k = 5 에서 k = 3 이에요. 문자가 없는 항도 3 × 3 − 4 = 5 로 오른쪽과 같아 맞아요.",
-          "work_space": "lg",
-          "misconceptions": [
-            "alg.distribute-partial",
-            "alg.term-coefficient-degree-mixup"
-          ]
+          "misconceptions": []
         }
       ]
     }

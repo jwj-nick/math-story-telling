@@ -1,0 +1,15 @@
+{
+  "id": "m1-u03-c",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 3,
+  "unit_name": "문자와 식",
+  "title": "일차식 곱셈·나눗셈",
+  "subtitle": "일차식 × 수, 일차식 ÷ 수",
+  "bank": "math1/u03/practice.json",
+  "misconceptions": "misconceptions/math1_u03.json",
+  "types": [7],
+  "time_min": 8,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

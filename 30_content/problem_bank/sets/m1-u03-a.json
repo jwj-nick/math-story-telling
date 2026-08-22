@@ -1,0 +1,15 @@
+{
+  "id": "m1-u03-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 3,
+  "unit_name": "문자와 식",
+  "title": "식 세우기·기호 생략·식의 값",
+  "subtitle": "식 세우기 · 곱셈·나눗셈 기호 생략 · 식의 값 계산",
+  "bank": "math1/u03/practice.json",
+  "misconceptions": "misconceptions/math1_u03.json",
+  "types": [1, 2, 3],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

@@ -1,0 +1,15 @@
+{
+  "id": "m1-u03-b",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 3,
+  "unit_name": "문자와 식",
+  "title": "단항식·다항식·동류항·일차식 덧뺄셈",
+  "subtitle": "단항식·다항식 & 차수·계수 · 동류항 정리 · 일차식의 덧셈·뺄셈",
+  "bank": "math1/u03/practice.json",
+  "misconceptions": "misconceptions/math1_u03.json",
+  "types": [4, 5, 6],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
