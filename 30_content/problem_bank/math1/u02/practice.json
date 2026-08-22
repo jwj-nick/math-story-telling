@@ -64,6 +64,22 @@
           "solution": "정수는 모두 유리수지만, 유리수 중에는 정수가 아닌 것도 있어요.",
           "work_space": "sm",
           "misconceptions": ["num.rational-includes-integer"]
+        },
+        {
+          "id": "m1-u02-t01-04",
+          "level": "H",
+          "stem_src": "다음 수 중에서 정수이지만 자연수가 아닌 수는 모두 몇 개인가요? -7, 0, 8/4, -3/2, 10, -15, 1/2, -9",
+          "stem_print": "다음 수 중에서 정수이지만 자연수가 아닌 수는 모두 몇 개인지 구하시오. −7, 0, 8/4, −3/2, 10, −15, 1/2, −9",
+          "answer_atoms": ["4"],
+          "answer_print": "4",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "수로 (단위: 개)",
+          "figure": null,
+          "hint": "먼저 정수인 것만 골라내고, 그중에서 자연수(1,2,3,...)가 아닌 것만 다시 골라요.",
+          "solution": "정수는 −7, 0, 8/4(=2), 10, −15, −9로 모두 6개예요. 이 중 자연수(2, 10)를 빼면 −7, 0, −15, −9로 4개예요.",
+          "work_space": "md",
+          "misconceptions": ["num.natural-vs-integer"]
         }
       ]
     },
@@ -119,6 +135,22 @@
           "solution": "5−(−2)=7.",
           "work_space": "md",
           "misconceptions": []
+        },
+        {
+          "id": "m1-u02-t02-04",
+          "level": "H",
+          "stem_src": "한 눈금의 크기가 4인 수직선에서, 점 A는 0에서 왼쪽으로 3칸, 점 B는 0에서 오른쪽으로 5칸 떨어져 있어요. 두 점 A, B 사이의 거리는?",
+          "stem_print": "한 눈금의 크기가 4인 수직선에서 점 A는 0의 왼쪽으로 3칸, 점 B는 0의 오른쪽으로 5칸 떨어진 점이다. 두 점 A, B 사이의 거리를 구하시오.",
+          "answer_atoms": ["32"],
+          "answer_print": "32",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "먼저 두 점이 나타내는 수를 각각 구한 뒤 거리를 계산해요.",
+          "solution": "A=−3×4=−12, B=5×4=20이므로 거리는 20−(−12)=32예요.",
+          "work_space": "md",
+          "misconceptions": ["num.numberline-scale"]
         }
       ]
     },
@@ -174,6 +206,22 @@
           "solution": "절댓값이 더 작은 −3이 더 커요.",
           "work_space": "sm",
           "misconceptions": ["num.abs-bigger-means-bigger"]
+        },
+        {
+          "id": "m1-u02-t03-04",
+          "level": "H",
+          "stem_src": "어떤 수에서 3을 뺀 값의 절댓값이 4예요. 이런 수를 모두 구했을 때, 두 수의 곱은 얼마인가요?",
+          "stem_print": "어떤 수에서 3을 뺀 값의 절댓값이 4이다. 이런 수를 모두 구했을 때, 두 수의 곱을 구하시오.",
+          "answer_atoms": ["-7"],
+          "answer_print": "-7",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "절댓값이 4가 되려면 3을 뺀 값이 +4 또는 −4가 되어야 해요.",
+          "solution": "3을 뺀 값이 4이면 그 수는 7, −4이면 그 수는 −1이에요. 두 수의 곱은 7×(−1)=−7이에요.",
+          "work_space": "lg",
+          "misconceptions": ["num.abs-two-solutions"]
         }
       ]
     },
@@ -229,6 +277,22 @@
           "solution": "−2가 더 커요.",
           "work_space": "sm",
           "misconceptions": ["num.negative-order-reversed"]
+        },
+        {
+          "id": "m1-u02-t04-04",
+          "level": "H",
+          "stem_src": "-9 초과 -2 이하인 정수는 모두 몇 개인가요?",
+          "stem_print": "−9 초과 −2 이하인 정수는 모두 몇 개인지 구하시오.",
+          "answer_atoms": ["7"],
+          "answer_print": "7",
+          "answer_accept": [],
+          "answer_unit": "개",
+          "answer_format": "수로 (단위: 개)",
+          "figure": null,
+          "hint": "초과는 그 수를 포함하지 않고, 이하는 그 수를 포함해요. 음수는 수직선에서 방향에 주의해요.",
+          "solution": "−9는 포함하지 않고 −2는 포함하므로 −8,−7,−6,−5,−4,−3,−2로 모두 7개예요.",
+          "work_space": "md",
+          "misconceptions": ["num.range-endpoint", "num.negative-order-reversed"]
         }
       ]
     },
@@ -284,6 +348,22 @@
           "solution": "(−3)+(−5)+(−2)=−10.",
           "work_space": "md",
           "misconceptions": ["num.add-abs-rule"]
+        },
+        {
+          "id": "m1-u02-t05-04",
+          "level": "H",
+          "stem_src": "(-12) + (+5) - (-8) - (+20)은?",
+          "stem_print": "(−12) + (+5) − (−8) − (+20)을 구하시오.",
+          "answer_atoms": ["-19"],
+          "answer_print": "-19",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "뺄셈은 모두 부호를 바꿔서 덧셈으로 만들어요.",
+          "solution": "(−12)+(+5)+(+8)+(−20) = −19예요.",
+          "work_space": "lg",
+          "misconceptions": ["num.add-abs-rule", "num.sub-sign-partial"]
         }
       ]
     },
@@ -339,6 +419,22 @@
           "solution": "홀수 개라 부호는 −.",
           "work_space": "sm",
           "misconceptions": ["num.mul-sign-count"]
+        },
+        {
+          "id": "m1-u02-t06-04",
+          "level": "H",
+          "stem_src": "(-2) × (-3) × (+5) ÷ (-6)은?",
+          "stem_print": "(−2) × (−3) × (+5) ÷ (−6)을 구하시오.",
+          "answer_atoms": ["-5"],
+          "answer_print": "-5",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "곱셈과 나눗셈을 순서대로 계산하면서 음수의 개수를 세어요.",
+          "solution": "절댓값은 2×3×5÷6=5, 음수가 3개(홀수)라 부호는 −이므로 −5예요.",
+          "work_space": "lg",
+          "misconceptions": ["num.mul-sign-count"]
         }
       ]
     },
@@ -393,6 +489,22 @@
           "hint": "나눗셈·곱셈을 먼저 계산해요.",
           "solution": "(−3)+(−6)=−9.",
           "work_space": "md",
+          "misconceptions": ["num.order-of-operations"]
+        },
+        {
+          "id": "m1-u02-t07-04",
+          "level": "H",
+          "stem_src": "(-18) ÷ 3 + (-2) × (-4) - 5는?",
+          "stem_print": "(−18) ÷ 3 + (−2) × (−4) − 5를 구하시오.",
+          "answer_atoms": ["-3"],
+          "answer_print": "-3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "나눗셈과 곱셈을 먼저 계산한 뒤 더하고 빼요.",
+          "solution": "(−18)÷3=−6, (−2)×(−4)=8이므로 −6+8−5=−3이에요.",
+          "work_space": "lg",
           "misconceptions": ["num.order-of-operations"]
         }
       ]
