@@ -1,0 +1,20 @@
+{
+  "id": "m1-u13-c",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 13,
+  "unit_name": "자료의 정리와 해석",
+  "title": "종합 · 해석",
+  "subtitle": "두 집단 상대도수 비교 · 도수분포표에서 평균 어림 · 상대도수 역산",
+  "bank": "math1/u13/practice.json",
+  "misconceptions": "misconceptions/math1_u13.json",
+  "types": [
+    7
+  ],
+  "time_min": 8,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

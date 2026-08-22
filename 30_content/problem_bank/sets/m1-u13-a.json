@@ -1,0 +1,22 @@
+{
+  "id": "m1-u13-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 13,
+  "unit_name": "자료의 정리와 해석",
+  "title": "줄기와 잎·도수분포표",
+  "subtitle": "줄기와 잎 그림 · 도수분포표의 기본 · 도수분포표 만들기",
+  "bank": "math1/u13/practice.json",
+  "misconceptions": "misconceptions/math1_u13.json",
+  "types": [
+    1,
+    2,
+    3
+  ],
+  "time_min": 15,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}
