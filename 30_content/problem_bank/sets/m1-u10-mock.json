@@ -1,0 +1,1 @@
+{"id":"m1-u10-mock","kind":"mock","grade":"math1","unit":10,"unit_name":"원과 부채꼴","title":"원과 부채꼴 심화 모의고사","subtitle":"7유형 심화 통합","bank":"math1/u10/practice.json","misconceptions":"misconceptions/math1_u10.json","types":[1,2,3,4,5,6,7],"time_min":20,"outputs":["Q","K"],"columns":2,"pick":{"quota":{"H":1}}}

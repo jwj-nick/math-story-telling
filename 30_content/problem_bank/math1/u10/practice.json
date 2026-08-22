@@ -64,6 +64,22 @@
           "solution": "원과 두 점에서 만나는 직선은 할선이에요.",
           "work_space": "sm",
           "misconceptions": ["circle.tangent-secant"]
+        },
+        {
+          "id": "m1-u10-t01-04",
+          "level": "H",
+          "stem_src": "원의 중심 O에서 현 AB에 내린 수선의 발을 M이라 하자. 반지름이 10cm이고 AB=16cm일 때, OM의 길이는?",
+          "stem_print": "원의 중심 O에서 현 AB에 내린 수선의 발을 M이라 하자. 반지름이 10cm이고 AB=16cm일 때, OM의 길이를 구하시오.",
+          "answer_atoms": ["6"],
+          "answer_print": "6",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "수로 (단위: cm)",
+          "figure": null,
+          "hint": "중심에서 현에 내린 수선은 현을 이등분해요. 직각삼각형의 피타고라스 정리를 써 봐요.",
+          "solution": "수선의 발은 현을 이등분하므로 AM=8cm. 직각삼각형 OAM에서 OA=10(반지름), AM=8이므로 OM=√(10²−8²)=√36=6cm.",
+          "work_space": "md",
+          "misconceptions": ["circle.chord-perp-bisect"]
         }
       ]
     },
@@ -117,6 +133,22 @@
           "figure": null,
           "hint": "πr²=49π에서 r²=49예요.",
           "solution": "πr²=49π → r²=49 → r=7cm (반지름은 양수).",
+          "work_space": "md",
+          "misconceptions": ["circle.circumference-vs-area"]
+        },
+        {
+          "id": "m1-u10-t02-04",
+          "level": "H",
+          "stem_src": "둘레가 20π cm인 원의 넓이는? (계수만)",
+          "stem_print": "둘레가 20π cm인 원의 넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["100"],
+          "answer_print": "100π",
+          "answer_accept": [],
+          "answer_unit": "cm²",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
+          "figure": null,
+          "hint": "둘레 공식으로 먼저 반지름을 구한 다음, 넓이 공식을 써요.",
+          "solution": "C=2πr=20π에서 r=10. A=π×10²=100π cm².",
           "work_space": "md",
           "misconceptions": ["circle.circumference-vs-area"]
         }
@@ -174,6 +206,22 @@
           "solution": "중심각이 180°이면 부채꼴은 반원이 돼요(이때만 부채꼴=활꼴).",
           "work_space": "sm",
           "misconceptions": []
+        },
+        {
+          "id": "m1-u10-t03-04",
+          "level": "H",
+          "stem_src": "반지름 8cm, 중심각 90°인 부채꼴에서 활꼴의 넓이는? (부채꼴의 넓이 − 삼각형의 넓이, 예: 16π − 32 꼴로 입력)",
+          "stem_print": "반지름 8cm, 중심각 90°인 부채꼴에서 활꼴의 넓이를 구하시오. (부채꼴의 넓이에서 삼각형의 넓이를 뺀 값, π를 남긴 꼴로)",
+          "answer_atoms": ["16π − 32"],
+          "answer_print": "16π − 32",
+          "answer_accept": [],
+          "answer_unit": "cm²",
+          "answer_format": "식으로 (단위: cm²)",
+          "figure": null,
+          "hint": "활꼴 넓이 = 부채꼴 넓이 − 삼각형 넓이예요.",
+          "solution": "부채꼴 넓이 = π×8²×(90／360) = 16π. 삼각형(직각이등변) 넓이 = (1／2)×8×8 = 32. 활꼴 넓이 = 16π − 32 cm².",
+          "work_space": "lg",
+          "misconceptions": ["sector.segment-confusion"]
         }
       ]
     },
@@ -229,6 +277,22 @@
           "solution": "2πr×(90／360)=6π → r／2=6 → r=12cm.",
           "work_space": "md",
           "misconceptions": []
+        },
+        {
+          "id": "m1-u10-t04-04",
+          "level": "H",
+          "stem_src": "반지름 9cm, 중심각 100°인 부채꼴의 둘레는? (예: 5π + 18 꼴로 입력)",
+          "stem_print": "반지름 9cm, 중심각 100°인 부채꼴의 둘레를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["5π + 18"],
+          "answer_print": "5π + 18",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "식으로 (단위: cm)",
+          "figure": null,
+          "hint": "부채꼴의 둘레에는 호의 길이뿐 아니라 반지름 두 개도 들어가요.",
+          "solution": "호의 길이 l = 2π×9×(100／360) = 5π. 둘레 = l + 2r = 5π + 18 cm.",
+          "work_space": "md",
+          "misconceptions": ["sector.perimeter-missing-radii"]
         }
       ]
     },
@@ -284,6 +348,22 @@
           "solution": "25π×(θ／360)=15π → θ／360=15／25 → θ=216°.",
           "work_space": "md",
           "misconceptions": ["sector.ratio-360"]
+        },
+        {
+          "id": "m1-u10-t05-04",
+          "level": "H",
+          "stem_src": "부채꼴의 둘레가 24cm이고, 호의 길이가 반지름의 2배일 때, 이 부채꼴의 넓이는?",
+          "stem_print": "부채꼴의 둘레가 24cm이고, 호의 길이가 반지름의 2배일 때, 이 부채꼴의 넓이를 구하시오.",
+          "answer_atoms": ["36"],
+          "answer_print": "36",
+          "answer_accept": [],
+          "answer_unit": "cm²",
+          "answer_format": "수로 (단위: cm²)",
+          "figure": null,
+          "hint": "둘레 = 2r + l 이에요. l=2r을 대입해 r부터 구해요.",
+          "solution": "2r+l=24, l=2r이므로 2r+2r=24 → r=6, l=12. 넓이 = (1／2)×r×l = (1／2)×6×12 = 36cm².",
+          "work_space": "lg",
+          "misconceptions": ["sector.half-rl-misuse"]
         }
       ]
     },
@@ -338,6 +418,22 @@
           "hint": "호는 중심각에 정비례해요 — 각이 2배면 호도 2배예요.",
           "solution": "중심각이 60°→120°로 2배가 되므로 호도 2π×2=4π cm.",
           "work_space": "md",
+          "misconceptions": ["arc.chord-proportional"]
+        },
+        {
+          "id": "m1-u10-t06-04",
+          "level": "H",
+          "stem_src": "한 원에서 중심각 90°인 부채꼴의 호의 길이가 3π cm이다. 같은 원에서 중심각 150°인 부채꼴의 넓이는? (계수만)",
+          "stem_print": "한 원에서 중심각 90°인 부채꼴의 호의 길이가 3π cm이다. 같은 원에서 중심각 150°인 부채꼴의 넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["15"],
+          "answer_print": "15π",
+          "answer_accept": [],
+          "answer_unit": "cm²",
+          "answer_format": "OOπ 꼴로 (단위: cm²)",
+          "figure": null,
+          "hint": "먼저 호의 길이 공식으로 반지름을 구한 다음, 넓이 공식을 써요.",
+          "solution": "2πr×(90／360)=3π에서 r=6. 넓이 = π×6²×(150／360) = 15π cm².",
+          "work_space": "lg",
           "misconceptions": ["arc.chord-proportional"]
         }
       ]
@@ -394,6 +490,22 @@
           "solution": "호의 길이 π×5=5π, 지름 10을 더해 5π + 10 cm.",
           "work_space": "md",
           "misconceptions": ["semicircle.perimeter-missing-diameter"]
+        },
+        {
+          "id": "m1-u10-t07-04",
+          "level": "H",
+          "stem_src": "가로 12cm, 세로 6cm인 직사각형 안에 반지름 6cm인 사분원 두 개를(왼쪽 아래, 오른쪽 아래 꼭짓점을 중심으로) 그렸을 때, 사분원과 겹치지 않는 나머지 부분의 넓이는? (예: 72 − 18π 꼴로 입력)",
+          "stem_print": "가로 12cm, 세로 6cm인 직사각형 안에 반지름 6cm인 사분원 두 개를 왼쪽 아래, 오른쪽 아래 꼭짓점을 중심으로 그렸을 때, 사분원과 겹치지 않는 나머지 부분의 넓이를 구하시오. (π를 남긴 꼴로)",
+          "answer_atoms": ["72 − 18π"],
+          "answer_print": "72 − 18π",
+          "answer_accept": [],
+          "answer_unit": "cm²",
+          "answer_format": "식으로 (단위: cm²)",
+          "figure": null,
+          "hint": "직사각형 넓이에서 사분원 두 개의 넓이를 빼요.",
+          "solution": "직사각형 넓이 = 12×6 = 72. 사분원 두 개의 넓이 = 2×(1／4)×π×6² = 18π. 나머지 = 72 − 18π cm².",
+          "work_space": "lg",
+          "misconceptions": ["area.shaded-subtract"]
         }
       ]
     }
