@@ -1,0 +1,15 @@
+{
+  "id": "m1-u06-c",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 6,
+  "unit_name": "정비례와 반비례",
+  "title": "정비례·반비례의 활용",
+  "subtitle": "압력·부피, 거리·속력, 쪽수·날수 문제",
+  "bank": "math1/u06/practice.json",
+  "misconceptions": "misconceptions/math1_u06.json",
+  "types": [7],
+  "time_min": 10,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

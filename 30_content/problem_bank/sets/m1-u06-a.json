@@ -1,0 +1,15 @@
+{
+  "id": "m1-u06-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 6,
+  "unit_name": "정비례와 반비례",
+  "title": "정비례 식·그래프, 반비례 식",
+  "subtitle": "정비례 식 세우기 · 정비례 그래프 · 반비례 식 세우기",
+  "bank": "math1/u06/practice.json",
+  "misconceptions": "misconceptions/math1_u06.json",
+  "types": [1, 2, 3],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
