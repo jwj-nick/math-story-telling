@@ -9,7 +9,7 @@
     "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. 유형1-3,5-2,5-3은 2지선다를 단답형으로 재작성. 유형5·6은 앱의 공유 시나리오/그래프 설명을 유형 principle에 그대로 옮겨 지면에서도 동일하게 확인 가능. 전부 기초~보통 수준(L/M)만 포함 — 심화(H)는 이번 회차에서 제외."
+    "note": "app1 재설계(math2 스타일 압축) 이후 새로 추출. 유형1-3,5-2,5-3은 2지선다를 단답형으로 재작성. 유형5·6은 앱의 공유 시나리오/그래프 설명을 유형 principle에 그대로 옮겨 지면에서도 동일하게 확인 가능. 2026-08-22 유형별 4번째 문항(심화 H) 추가 — 다단계·개념결합형(이동 2회 합성, 사칙연산 후 사분면, 곱셈부호+부등식 결합, 원점 아닌 삼각형 넓이, 두 구간 증가량 차, 그래프 특징 elimination, 3단계 그래프 패턴). 유형7-4는 이 단원 관례(자동채점 불가한 손그림 대신 그래프 핵심 특징 서술형 답)를 그대로 따름."
   },
   "types": [
     {
@@ -64,6 +64,22 @@
           "solution": "(5,2)와 (2,5)는 순서가 달라 서로 다른 자리를 가리켜요.",
           "work_space": "sm",
           "misconceptions": ["coord.order-swap"]
+        },
+        {
+          "id": "m1-u05-t01-04",
+          "level": "H",
+          "stem_src": "원점에서 오른쪽으로 7, 위로 3만큼 이동한 뒤, 다시 왼쪽으로 10, 아래로 8만큼 이동했다면 최종 위치의 좌표는? (예: (2,3) 꼴로)",
+          "stem_print": "원점에서 오른쪽으로 7, 위로 3만큼 이동한 뒤, 다시 왼쪽으로 10, 아래로 8만큼 이동했을 때 최종 위치의 좌표를 (x, y) 꼴로 구하시오.",
+          "answer_atoms": ["(-3,-5)"],
+          "answer_print": "(−3, −5)",
+          "answer_accept": ["(-3,-5)"],
+          "answer_unit": null,
+          "answer_format": "좌표 (x, y) 꼴로",
+          "figure": null,
+          "hint": "두 번의 이동을 각각 x, y에 더하고 빼서 최종 위치를 구해요.",
+          "solution": "먼저 (0,0)에서 오른쪽 7, 위 3 이동 → (7,3). 다시 왼쪽 10, 아래 8 이동 → (7−10, 3−8)=(−3,−5)예요.",
+          "work_space": "md",
+          "misconceptions": ["coord.direction-sign"]
         }
       ]
     },
@@ -119,6 +135,22 @@
           "solution": "x=0이라 y축 위의 점이에요 — 어느 사분면도 아니에요.",
           "work_space": "sm",
           "misconceptions": ["coord.axis-not-quadrant"]
+        },
+        {
+          "id": "m1-u05-t02-04",
+          "level": "H",
+          "stem_src": "점 (3−7, (−2)×4)는 몇 사분면 위의 점인가요?",
+          "stem_print": "점 (3−7, (−2)×4)는 몇 사분면 위의 점인지 구하시오.",
+          "answer_atoms": ["3"],
+          "answer_print": "3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "사분면 번호로 (1~4)",
+          "figure": null,
+          "hint": "괄호 안을 먼저 계산해서 x좌표와 y좌표의 부호를 각각 확인해요.",
+          "solution": "x=3−7=−4, y=(−2)×4=−8로 둘 다 음수예요. 그래서 3사분면이에요.",
+          "work_space": "md",
+          "misconceptions": []
         }
       ]
     },
@@ -174,6 +206,22 @@
           "solution": "a>0이므로 −a<0, 즉 x좌표는 양수 y좌표는 음수라 4사분면이에요.",
           "work_space": "md",
           "misconceptions": ["coord.neg-letter"]
+        },
+        {
+          "id": "m1-u05-t03-04",
+          "level": "H",
+          "stem_src": "ab &lt; 0이고 a &lt; b일 때, 점 (a, b)는 몇 사분면 위의 점인가요?",
+          "stem_print": "ab &lt; 0이고 a &lt; b일 때, 점 (a, b)는 몇 사분면 위의 점인지 구하시오.",
+          "answer_atoms": ["2"],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "사분면 번호로 (1~4)",
+          "figure": null,
+          "hint": "ab &lt; 0이면 a, b는 서로 다른 부호예요. 두 경우 중 a &lt; b를 만족하는 쪽만 골라봐요.",
+          "solution": "ab&lt;0이라 a, b는 부호가 달라요. a&gt;0, b&lt;0이면 a&gt;b라 조건에 안 맞고, a&lt;0, b&gt;0이면 a&lt;b가 성립해요. 그래서 x좌표는 음수, y좌표는 양수인 2사분면이에요.",
+          "work_space": "md",
+          "misconceptions": ["coord.sign-product"]
         }
       ]
     },
@@ -229,6 +277,22 @@
           "solution": "3−(−4)=7이에요.",
           "work_space": "sm",
           "misconceptions": ["coord.distance-negative"]
+        },
+        {
+          "id": "m1-u05-t04-04",
+          "level": "H",
+          "stem_src": "세 점 (−2,−3), (4,−3), (−2,5)를 꼭짓점으로 하는 삼각형의 넓이는?",
+          "stem_print": "세 점 (−2, −3), (4, −3), (−2, 5)를 꼭짓점으로 하는 삼각형의 넓이를 구하시오.",
+          "answer_atoms": ["24"],
+          "answer_print": "24",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로 (단위 없음)",
+          "figure": null,
+          "hint": "밑변과 높이는 좌표의 차로 구해요. 원점이 아닌 점이라도 방법은 같아요.",
+          "solution": "(−2,−3)과 (4,−3)은 y좌표가 같아 밑변=4−(−2)=6. (−2,−3)과 (−2,5)는 x좌표가 같아 높이=5−(−3)=8. 넓이=6×8÷2=24예요.",
+          "work_space": "md",
+          "misconceptions": ["coord.distance-negative", "coord.area-triangle"]
         }
       ]
     },
@@ -282,6 +346,22 @@
           "figure": null,
           "hint": "같은 시간 동안 얼마나 늘었는지 비교해요.",
           "solution": "0~4분은 4분간 16cm, 6~10분은 4분간 2cm 늘어 0~4분이 더 빨라요.",
+          "work_space": "md",
+          "misconceptions": ["coord.rate-unit"]
+        },
+        {
+          "id": "m1-u05-t05-04",
+          "level": "H",
+          "stem_src": "0~4분과 6~10분 중, 물의 높이가 늘어난 양(cm)의 차이는 얼마인가요?",
+          "stem_print": "0~4분과 6~10분 중, 물의 높이가 늘어난 양(cm)의 차이를 구하시오.",
+          "answer_atoms": ["14"],
+          "answer_print": "14",
+          "answer_accept": [],
+          "answer_unit": "cm",
+          "answer_format": "수로",
+          "figure": null,
+          "hint": "두 구간 각각 얼마나 늘었는지 먼저 구한 뒤, 두 값의 차를 구해요.",
+          "solution": "0~4분은 0cm에서 16cm로 16cm 늘고, 6~10분은 16cm에서 18cm로 2cm 늘어요. 두 증가량의 차는 16−2=14cm예요.",
           "work_space": "md",
           "misconceptions": ["coord.rate-unit"]
         }
@@ -339,6 +419,22 @@
           "solution": "빠르게 변하다 점점 느려지니 A예요.",
           "work_space": "sm",
           "misconceptions": []
+        },
+        {
+          "id": "m1-u05-t06-04",
+          "level": "H",
+          "stem_src": "세 친구가 그래프 모양 A, B, C 중 하나에 해당하는 자신의 이동 상황을 설명했어요. ① 민준: \"처음엔 천천히 움직이다가 점점 더 빨라졌어요.\" ② 서연: \"달리다가 신호에 걸려 잠깐 멈췄다가 다시 달렸어요.\" ③ 태호: \"내내 같은 빠르기로 움직였어요.\" 이 중 A, B, C 어디에도 맞지 않는 설명을 한 사람은 누구인가요?",
+          "stem_print": "세 친구가 그래프 모양 A, B, C 중 하나에 해당하는 자신의 이동 상황을 설명했어요. ① 민준: \"처음엔 천천히 움직이다가 점점 더 빨라졌어요.\" ② 서연: \"달리다가 신호에 걸려 잠깐 멈췄다가 다시 달렸어요.\" ③ 태호: \"내내 같은 빠르기로 움직였어요.\" 이 중 A, B, C 어디에도 맞지 않는 설명을 한 사람이 누구인지 쓰시오.",
+          "answer_atoms": ["민준"],
+          "answer_print": "민준",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "이름으로",
+          "figure": null,
+          "hint": "A, B, C 세 모양의 특징을 하나씩 떠올리며 세 친구의 설명과 비교해봐요.",
+          "solution": "서연은 C(늘다가 멈추고 다시 늚), 태호는 B(일정한 속도)와 맞아요. 민준의 '천천히→점점 빨라짐'은 A(빠르게→느리게)와 정반대라 A, B, C 어디에도 맞지 않아요.",
+          "work_space": "lg",
+          "misconceptions": []
         }
       ]
     },
@@ -393,6 +489,22 @@
           "hint": "최고점 전엔 오르고, 후엔 내려가요.",
           "solution": "오후 2시 전엔 증가, 후엔 감소하니 증가→감소예요.",
           "work_space": "sm",
+          "misconceptions": []
+        },
+        {
+          "id": "m1-u05-t07-04",
+          "level": "H",
+          "stem_src": "물통에 물을 채우다가, 도중에 수도꼭지를 잠가 잠깐 멈췄고, 얼마 뒤 다시 같은 빠르기로 채우기 시작했다면, 이 상황의 시간-물의 높이 그래프 모양 변화를 순서대로 쓰면 어떻게 될까요? (예: 감소→평평→감소 처럼 화살표로 이어서 답하기)",
+          "stem_print": "물통에 물을 채우다가, 도중에 수도꼭지를 잠가 잠깐 멈췄고, 얼마 뒤 다시 같은 빠르기로 채우기 시작했다면, 이 상황의 시간-물의 높이 그래프 모양 변화를 순서대로 쓰시오. (예: 감소→평평→감소 처럼 화살표로 이어서 답할 것)",
+          "answer_atoms": ["증가→평평→증가"],
+          "answer_print": "증가→평평→증가",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "화살표(→)로 이은 패턴으로",
+          "figure": null,
+          "hint": "채우는 동안, 멈춘 동안, 다시 채우는 동안 그래프가 각각 어떻게 되는지 순서대로 떠올려봐요.",
+          "solution": "채우는 동안은 증가, 잠근 동안은 높이가 그대로라 평평, 다시 채우면 또 증가예요. 그래서 증가→평평→증가예요.",
+          "work_space": "md",
           "misconceptions": []
         }
       ]
