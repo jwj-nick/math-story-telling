@@ -1,0 +1,15 @@
+{
+  "id": "m1-u05-c",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 5,
+  "unit_name": "좌표와 그래프",
+  "title": "그래프 그리기 — 상황을 그래프로",
+  "subtitle": "상황 → 그래프 특징 찾기",
+  "bank": "math1/u05/practice.json",
+  "misconceptions": "misconceptions/math1_u05.json",
+  "types": [7],
+  "time_min": 8,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

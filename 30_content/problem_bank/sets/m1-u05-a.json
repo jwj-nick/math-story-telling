@@ -1,0 +1,15 @@
+{
+  "id": "m1-u05-a",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 5,
+  "unit_name": "좌표와 그래프",
+  "title": "순서쌍과 좌표·사분면 판별",
+  "subtitle": "순서쌍과 좌표 · 사분면 판별(수치 좌표) · 사분면 판별(문자 부호 조건)",
+  "bank": "math1/u05/practice.json",
+  "misconceptions": "misconceptions/math1_u05.json",
+  "types": [1, 2, 3],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

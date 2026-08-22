@@ -1,0 +1,15 @@
+{
+  "id": "m1-u05-b",
+  "kind": "type-set",
+  "grade": "math1",
+  "unit": 5,
+  "unit_name": "좌표와 그래프",
+  "title": "도형의 넓이·그래프 읽기·그래프 해석",
+  "subtitle": "좌표평면 위 도형의 넓이 · 그래프 읽기(변량의 변화) · 그래프 해석(상황 매칭)",
+  "bank": "math1/u05/practice.json",
+  "misconceptions": "misconceptions/math1_u05.json",
+  "types": [4, 5, 6],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
