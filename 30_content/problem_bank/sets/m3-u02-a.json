@@ -1,0 +1,15 @@
+{
+  "id": "m3-u02-a",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 2,
+  "unit_name": "근호를 포함한 식의 계산",
+  "title": "곱셈·나눗셈과 근호 드나들기",
+  "subtitle": "제곱근의 곱셈과 나눗셈 · 근호 밖으로 · 근호 안으로",
+  "bank": "math3/u02/practice.json",
+  "misconceptions": "misconceptions/math3_u02.json",
+  "types": [1, 2, 3],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
