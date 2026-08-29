@@ -1,0 +1,347 @@
+{
+  "meta": {
+    "grade": "math1",
+    "unit": 9,
+    "unit_name": "다각형",
+    "purpose": "exam-pool",
+    "authored": "2026-08-26",
+    "note": "중1 전범위 실전 모의고사용 문항 풀. EXAM_SPEC.md 준수."
+  },
+  "problems": [
+    {
+      "id": "e09-cn1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "다각형의 뜻",
+      "source_id": null,
+      "stem_print": "다음 중 다각형인 것은?",
+      "choices": [
+        "원",
+        "반원",
+        "부채꼴",
+        "활꼴",
+        "칠각형"
+      ],
+      "answer_choice": 5,
+      "distractor_why": [
+        "닫힌 도형이면 모두 다각형이라고 봄 — 원의 테두리는 곡선이라 선분이 하나도 없음",
+        "지름이 선분이라 다각형처럼 보임 — 반원에는 곡선인 호가 남아 있음",
+        "두 반지름이 선분이라 다각형처럼 보임 — 호 부분이 곡선임",
+        "현과 호로 닫혀 있어 다각형처럼 보임 — 호가 곡선이라 다각형이 아님"
+      ],
+      "answer_print": "칠각형",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "다각형의 변은 모두 곧은 선분이어야 해요.",
+      "solution": "다각형은 3개 이상의 선분으로만 둘러싸인 닫힌 도형이에요. 원·반원·부채꼴·활꼴은 모두 곡선(호)이 들어 있어서 다각형이 아니에요. 선분 7개로만 둘러싸인 칠각형이 다각형이에요.",
+      "work_space": "sm",
+      "misconceptions": ["poly.def-curve"]
+    },
+    {
+      "id": "e09-cn2",
+      "format": "choice5",
+      "level": "M",
+      "topic": "대각선의 수",
+      "source_id": null,
+      "stem_print": "한 꼭짓점에서 그을 수 있는 대각선의 수가 8인 다각형의 전체 대각선의 수는?",
+      "choices": [
+        "8",
+        "20",
+        "40",
+        "44",
+        "88"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "한 꼭짓점에서의 대각선 수 8을 전체 대각선의 수로 착각함",
+        "n−3=8인데 n=8로 잘못 두고 8×5÷2로 계산함",
+        "n=8로 잘못 두고 2로 나누기까지 빠뜨림 (8×5)",
+        "11×8을 구하고 2로 나누기를 빠뜨림"
+      ],
+      "answer_print": "44",
+      "answer_accept": null,
+      "answer_unit": "개",
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "먼저 n−3=8에서 변의 수 n을 구해요.",
+      "solution": "한 꼭짓점에서 그을 수 있는 대각선의 수는 n−3이에요. n−3=8이므로 n=11, 십일각형이에요. 전체 대각선의 수는 n(n−3)÷2=11×8÷2=44개예요.",
+      "work_space": "md",
+      "misconceptions": ["poly.diag-vertex-vs-total", "poly.diag-no-half"]
+    },
+    {
+      "id": "e09-cn3",
+      "format": "choice5",
+      "level": "M",
+      "topic": "정다각형의 한 내각",
+      "source_id": null,
+      "stem_print": "정십이각형의 한 내각의 크기는?",
+      "choices": [
+        "30°",
+        "135°",
+        "144°",
+        "150°",
+        "1800°"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "한 외각 360÷12=30°를 한 내각으로 착각함",
+        "내각의 합을 180×(12−3)=1620°로 잘못 구해 12로 나눔 — 대각선 공식의 n−3과 혼동",
+        "한 외각을 360÷(12−2)=36°로 잘못 구해 180−36을 답함",
+        "내각의 합 1800°를 꼭짓점 수로 나누지 않고 그대로 답함"
+      ],
+      "answer_print": "150°",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "내각의 합 180×(n−2)를 구한 뒤 꼭짓점 수만큼 똑같이 나눠요.",
+      "solution": "정십이각형의 내각의 합은 180×(12−2)=1800°예요. 정다각형은 모든 내각의 크기가 같으므로 한 내각은 1800÷12=150°예요. 한 외각 360÷12=30°를 구해 180−30=150°로 확인할 수도 있어요.",
+      "work_space": "md",
+      "misconceptions": ["poly.regular-interior-no-divide", "poly.interior-sum-formula"]
+    },
+    {
+      "id": "e09-cn4",
+      "format": "choice5",
+      "level": "H",
+      "topic": "정다각형과 대각선",
+      "source_id": null,
+      "stem_print": "한 내각과 한 외각의 크기의 비가 3:2인 정다각형의 전체 대각선의 수는?",
+      "choices": [
+        "2",
+        "5",
+        "10",
+        "72",
+        "108"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "한 꼭짓점에서 그을 수 있는 대각선의 수 n−3=2를 전체로 착각함",
+        "n(n−3)=10에서 2로 나누기를 빠뜨림",
+        "한 외각 72°를 그대로 답함",
+        "한 내각 108°를 그대로 답함"
+      ],
+      "answer_print": "5",
+      "answer_accept": null,
+      "answer_unit": "개",
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "내각+외각=180°이니 비로 한 외각부터 구해요. n을 찾은 다음 대각선 공식을 써요.",
+      "solution": "한 내각과 한 외각의 합은 180°예요. 비가 3:2이므로 180을 3+2=5로 나누면 한 조각이 36°이고, 한 외각은 2조각인 72°예요. 360÷72=5이므로 정오각형이에요. 전체 대각선의 수는 5×(5−3)÷2=5개예요.",
+      "work_space": "lg",
+      "misconceptions": ["poly.interior-exterior-supplement", "poly.diag-no-half"]
+    },
+    {
+      "id": "e09-cv1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "삼각형 내각의 합",
+      "source_id": "m1-u09-t03-01",
+      "stem_print": "삼각형의 두 내각이 각각 50°, 70°일 때, 나머지 한 내각의 크기는?",
+      "choices": [
+        "60°",
+        "70°",
+        "110°",
+        "120°",
+        "130°"
+      ],
+      "answer_choice": 1,
+      "distractor_why": [
+        "주어진 내각 70°를 그대로 답함",
+        "180에서 70만 빼고 50을 빼지 않음",
+        "두 내각의 합 50+70을 그대로 답함",
+        "180에서 50만 빼고 70을 빼지 않음"
+      ],
+      "answer_print": "60°",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "세 내각의 합은 180°예요.",
+      "solution": "삼각형의 세 내각의 합은 180°예요. 180−50−70=60이므로 나머지 내각은 60°예요.",
+      "work_space": "sm",
+      "misconceptions": ["poly.triangle-sum"]
+    },
+    {
+      "id": "e09-cv2",
+      "format": "choice5",
+      "level": "L",
+      "topic": "다각형 내각의 합",
+      "source_id": "m1-u09-t04-01",
+      "stem_print": "팔각형의 내각의 크기의 합은?",
+      "choices": [
+        "360°",
+        "900°",
+        "1080°",
+        "1260°",
+        "1440°"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "외각의 크기의 합과 혼동함",
+        "180×(8−3)으로 계산함 — 대각선 공식의 n−3과 혼동",
+        "180×(8−1)로 계산함",
+        "180×8로 계산함 — 2를 빼는 것을 빠뜨림"
+      ],
+      "answer_print": "1080°",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "180×(n−2)에 n=8을 넣어요.",
+      "solution": "다각형의 내각의 합은 180×(n−2)예요. 180×(8−2)=180×6=1080이므로 내각의 합은 1080°예요.",
+      "work_space": "sm",
+      "misconceptions": ["poly.interior-sum-formula", "poly.exterior-sum-varies"]
+    },
+    {
+      "id": "e09-cv3",
+      "format": "choice5",
+      "level": "M",
+      "topic": "외각의 합",
+      "source_id": "m1-u09-t05-02",
+      "stem_print": "오각형의 외각 4개가 각각 70°, 80°, 60°, 75°일 때, 나머지 한 외각의 크기는?",
+      "choices": [
+        "65°",
+        "75°",
+        "85°",
+        "255°",
+        "285°"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "360−285를 65로 잘못 계산함",
+        "네 외각의 합을 275로 잘못 더해 360−275를 답함",
+        "외각의 합을 오각형 내각의 합 540°로 혼동해 540−285를 답함",
+        "주어진 네 외각의 합 285°를 그대로 답함"
+      ],
+      "answer_print": "75°",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "외각의 합은 항상 360°예요.",
+      "solution": "다각형의 외각의 합은 변의 수와 상관없이 항상 360°예요. 360−(70+80+60+75)=360−285=75이므로 나머지 외각은 75°예요.",
+      "work_space": "md",
+      "misconceptions": ["poly.exterior-sum-varies"]
+    },
+    {
+      "id": "e09-cv4",
+      "format": "choice5",
+      "level": "H",
+      "topic": "삼각형 내각의 비와 외각",
+      "source_id": "m1-u09-t03-04",
+      "stem_print": "삼각형의 세 내각의 크기의 비가 2:3:4일 때, 가장 큰 내각의 외각의 크기는?",
+      "choices": [
+        "20°",
+        "40°",
+        "60°",
+        "80°",
+        "100°"
+      ],
+      "answer_choice": 5,
+      "distractor_why": [
+        "비 1조각의 크기 20°를 답함",
+        "가장 작은 내각을 답함",
+        "중간 크기의 내각을 답함",
+        "가장 큰 내각 80°를 구하고 외각으로 바꾸지 않음"
+      ],
+      "answer_print": "100°",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "비의 합으로 180°를 나눠 각 조각의 크기를 먼저 구해요.",
+      "solution": "비의 합은 2+3+4=9이므로 한 조각은 180÷9=20°예요. 세 내각은 40°, 60°, 80°예요. 가장 큰 내각은 80°이고, 그 외각은 180−80=100°예요.",
+      "work_space": "lg",
+      "misconceptions": ["poly.exterior-adds-adjacent", "poly.ratio-total-mismatch"]
+    },
+    {
+      "id": "e09-cv5",
+      "format": "choice5",
+      "level": "H",
+      "topic": "내각의 비",
+      "source_id": "m1-u09-t07-04",
+      "stem_print": "육각형의 여섯 내각의 크기의 비가 2:3:3:4:4:4일 때, 가장 큰 내각과 가장 작은 내각의 크기의 차는?",
+      "choices": [
+        "36°",
+        "54°",
+        "72°",
+        "108°",
+        "144°"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "차가 비 2조각(4−2)임을 놓치고 1조각 값 36°를 답함",
+        "내각의 합을 540°로 잘못 잡아 한 조각을 27°로 계산함",
+        "내각의 합을 180×6=1080°로 잘못 잡음 — 2를 빼지 않아 한 조각이 54°가 됨",
+        "가장 큰 내각 144°를 그대로 답함"
+      ],
+      "answer_print": "72°",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "육각형 내각의 합부터 구한 뒤 비를 나눠요.",
+      "solution": "육각형의 내각의 합은 180×(6−2)=720°예요. 비의 합은 2+3+3+4+4+4=20이므로 한 조각은 720÷20=36°예요. 가장 큰 내각은 4×36=144°, 가장 작은 내각은 2×36=72°이고, 차는 144−72=72°예요.",
+      "work_space": "lg",
+      "misconceptions": ["poly.interior-sum-formula", "poly.ratio-total-mismatch"]
+    },
+    {
+      "id": "e09-sh1",
+      "format": "short",
+      "level": "L",
+      "topic": "한 꼭짓점에서의 대각선",
+      "source_id": "m1-u09-t02-01",
+      "stem_print": "십각형의 한 꼭짓점에서 그을 수 있는 대각선의 수를 구하시오.",
+      "answer_print": "7",
+      "answer_accept": [],
+      "answer_unit": "개",
+      "answer_format": "수로 (단위: 개)",
+      "figure": null,
+      "hint": "자기 자신과 양옆 이웃 2개를 빼고 세요.",
+      "solution": "10−3=7이므로 대각선은 7개예요.",
+      "work_space": "sm",
+      "misconceptions": ["poly.vertex-diagonal-formula"]
+    },
+    {
+      "id": "e09-sh2",
+      "format": "short",
+      "level": "M",
+      "topic": "삼각형의 외각",
+      "source_id": "m1-u09-t03-02",
+      "stem_print": "삼각형에서 ∠A=55°, ∠B=60°일 때 꼭짓점 C의 외각을 구하시오.",
+      "answer_print": "115",
+      "answer_accept": [],
+      "answer_unit": "°",
+      "answer_format": "수로 (단위: °)",
+      "figure": null,
+      "hint": "외각은 이웃하지 않은 두 내각의 합과 같아요.",
+      "solution": "55+60=115이므로 외각은 115°예요.",
+      "work_space": "md",
+      "misconceptions": ["poly.exterior-adds-adjacent"]
+    },
+    {
+      "id": "e09-es1",
+      "format": "essay",
+      "level": "H",
+      "topic": "내각의 합과 대각선",
+      "source_id": null,
+      "stem_print": "어떤 다각형의 내각의 크기의 합이 1980°일 때, 이 다각형의 이름과 전체 대각선의 수를 차례대로 구하시오. 풀이 과정을 함께 쓰시오.",
+      "rubric": [
+        {"step": "180×(n−2)=1980으로 식을 세우고 n=13을 바르게 구했어요", "points": 3},
+        {"step": "십삼각형임을 밝히고 대각선 공식 n(n−3)÷2를 바르게 적용했어요", "points": 3},
+        {"step": "13×10÷2=65개를 바르게 답했어요", "points": 2}
+      ],
+      "answer_print": "십삼각형, 65개",
+      "answer_accept": ["십삼각형, 65", "13각형, 65개"],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "1980÷180=11은 잘린 삼각형의 수예요. 변의 수로 돌아가려면 2를 더해요.",
+      "solution": "내각의 합이 1980°이므로 180×(n−2)=1980에서 n−2=1980÷180=11, n=13이에요. 그래서 십삼각형이에요. 전체 대각선의 수는 n(n−3)÷2=13×(13−3)÷2=13×10÷2=65개예요. 나누기만 하고 2를 더하지 않으면 n=11로 잘못 나오니 조심해요.",
+      "work_space": "lg",
+      "misconceptions": ["poly.inverse-divide-only", "poly.diag-no-half"]
+    }
+  ]
+}

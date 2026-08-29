@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "grade": "math1",
+    "unit": 3,
+    "unit_name": "문자와 식",
+    "purpose": "exam-pool",
+    "authored": "2026-08-26",
+    "note": "중1 전범위 실전 모의고사용 문항 풀. EXAM_SPEC.md 준수. cn/es는 practice.json 28문항과 겹치지 않는 신규, cv는 practice.json 변환(source_id 기록). 오답 보기는 misconceptions/math1_u03.json 카탈로그 기반."
+  },
+  "problems": [
+    {
+      "id": "e03-cn1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "식 세우기",
+      "source_id": null,
+      "stem_print": "한 자루에 a원인 연필 3자루와 한 권에 b원인 공책 2권을 샀을 때, 전체 금액을 문자식으로 바르게 나타낸 것은?",
+      "choices": ["2a+3b", "3a+2b", "3a−2b", "5ab", "6ab"],
+      "answer_choice": 2,
+      "distractor_why": [
+        "연필과 공책의 개수를 서로 바꾸어 곱함",
+        "합해야 할 공책 값을 뺄셈으로 씀",
+        "개수 3과 2를 더한 5에 문자 a, b를 곱으로 이어 붙임",
+        "가격과 개수를 구분하지 않고 수와 문자를 전부 곱함"
+      ],
+      "answer_print": "3a+2b",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "물건 값은 (한 개 가격) × (개수)로 구해요.",
+      "solution": "연필 값은 a × 3 = 3a원이고, 공책 값은 b × 2 = 2b원이에요. 두 값을 더하면 전체 금액은 3a + 2b원이에요.",
+      "work_space": "sm",
+      "misconceptions": []
+    },
+    {
+      "id": "e03-cn2",
+      "format": "choice5",
+      "level": "M",
+      "topic": "일차식의 덧셈·뺄셈",
+      "source_id": null,
+      "stem_print": "2(x − 4) − (3x − 5)를 계산하면?",
+      "choices": ["−x−13", "−x−9", "−x−3", "−x+1", "5x−13"],
+      "answer_choice": 3,
+      "distractor_why": [
+        "빼기 괄호의 −를 3x에만 적용하고 −5의 부호를 바꾸지 않음",
+        "2를 x에만 곱하고 빼기 괄호의 부호도 첫 항만 바꿈",
+        "2를 괄호 안 첫 항 x에만 곱하고 −4에는 곱하지 않음",
+        "빼기 괄호를 더하기처럼 풀어 3x − 5의 부호를 그대로 둠"
+      ],
+      "answer_print": "−x−3",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "빼기 괄호를 풀면 괄호 안 모든 항의 부호가 바뀌어요.",
+      "solution": "2(x − 4) = 2x − 8이고, −(3x − 5) = −3x + 5예요. 모두 모으면 2x − 8 − 3x + 5 = −x − 3이에요.",
+      "work_space": "md",
+      "misconceptions": ["alg.paren-minus-partial", "alg.distribute-partial"]
+    },
+    {
+      "id": "e03-cn3",
+      "format": "choice5",
+      "level": "H",
+      "topic": "분수 꼴 일차식의 계산",
+      "source_id": null,
+      "stem_print": "<span class=\"frac\"><b>2x − 1</b><i>3</i></span> − <span class=\"frac\"><b>x − 2</b><i>4</i></span>를 계산하면?",
+      "choices": [
+        "<span class=\"frac\"><b>x+1</b><i>7</i></span>",
+        "<span class=\"frac\"><b>5x−10</b><i>12</i></span>",
+        "<span class=\"frac\"><b>5x−2</b><i>12</i></span>",
+        "<span class=\"frac\"><b>5x+2</b><i>12</i></span>",
+        "<span class=\"frac\"><b>5x+5</b><i>12</i></span>"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "통분하지 않고 분자는 분자끼리 빼고 분모는 분모끼리 더함",
+        "통분한 분자 3(x − 2)를 뺄 때 괄호 없이 −3x − 6으로 처리함",
+        "분자의 상수 −4 + 6을 4 − 6으로 잘못 계산함",
+        "4를 분자 2x에만 곱해 8x − 1로 씀"
+      ],
+      "answer_print": "<span class=\"frac\"><b>5x+2</b><i>12</i></span>",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "분모의 최소공배수로 통분하고, 분자에는 꼭 괄호를 씌워 계산해요.",
+      "solution": "분모 3과 4의 최소공배수 12로 통분해요. 분자는 4(2x − 1) − 3(x − 2) = 8x − 4 − 3x + 6 = 5x + 2가 돼요. 그래서 답은 (5x + 2)/12예요.",
+      "work_space": "lg",
+      "misconceptions": ["alg.fraction-add-denominator", "alg.paren-minus-partial"]
+    },
+    {
+      "id": "e03-cn4",
+      "format": "choice5",
+      "level": "H",
+      "topic": "일차식의 계산과 계수",
+      "source_id": null,
+      "stem_print": "(8x − 6) ÷ 2 − 3(x − 2)를 간단히 하면 ax + b일 때, a − b의 값은?",
+      "choices": ["−2", "1", "2", "4", "6"],
+      "answer_choice": 1,
+      "distractor_why": [
+        "÷ 2를 8x에만 적용해 4x − 6 − 3x + 6 = x로 정리함",
+        "a − b 대신 b − a를 구함",
+        "a − b가 아니라 a + b를 구함",
+        "3을 x에만 곱해 4x − 3 − 3x − 2 = x − 5로 정리함"
+      ],
+      "answer_print": "−2",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "나눗셈과 분배법칙을 먼저 정확히 처리한 다음 계수 a와 상수항 b를 읽어요.",
+      "solution": "(8x − 6) ÷ 2 = 4x − 3이고, −3(x − 2) = −3x + 6이에요. 더하면 4x − 3 − 3x + 6 = x + 3이에요. x의 계수 a = 1, 상수항 b = 3이므로 a − b = 1 − 3 = −2예요.",
+      "work_space": "md",
+      "misconceptions": ["alg.distribute-partial", "alg.coefficient-one"]
+    },
+    {
+      "id": "e03-cv1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "곱셈·나눗셈 기호 생략",
+      "source_id": "m1-u03-t02-02",
+      "stem_print": "x ÷ 4 × y를 곱셈과 나눗셈 기호를 생략하여 나타내면?",
+      "choices": [
+        "<span class=\"frac\"><b>xy</b><i>4</i></span>",
+        "<span class=\"frac\"><b>x</b><i>4y</i></span>",
+        "<span class=\"frac\"><b>y</b><i>4x</i></span>",
+        "<span class=\"frac\"><b>4y</b><i>x</i></span>",
+        "4xy"
+      ],
+      "answer_choice": 1,
+      "distractor_why": [
+        "뒤의 × y를 나눗셈으로 착각해 y를 분모에 넣음",
+        "분자로 갈 문자와 분모로 갈 문자를 서로 뒤바꿈",
+        "x ÷ 4를 4/x로 뒤집은 뒤 y를 곱함",
+        "나눗셈 기호까지 곱셈처럼 생략해 전부 곱함"
+      ],
+      "answer_print": "<span class=\"frac\"><b>xy</b><i>4</i></span>",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "곱셈과 나눗셈이 섞여 있으면 왼쪽부터 차례로 계산해요.",
+      "solution": "왼쪽부터 차례로 계산해요. x ÷ 4 = x/4이고, 여기에 y를 곱하면 xy/4예요.",
+      "work_space": "sm",
+      "misconceptions": ["alg.div-not-fraction", "alg.left-to-right"]
+    },
+    {
+      "id": "e03-cv2",
+      "format": "choice5",
+      "level": "M",
+      "topic": "동류항 정리",
+      "source_id": "m1-u03-t05-01",
+      "stem_print": "3x + 2y − x + y를 간단히 정리한 것은?",
+      "choices": ["2x+2y", "2x+3y", "3x+3y", "4x+3y", "5xy"],
+      "answer_choice": 2,
+      "distractor_why": [
+        "계수가 1인 + y를 0처럼 보고 y항에 더하지 않음",
+        "− x의 계수 −1을 몰라 x항에서 빼지 않음",
+        "− x를 + x로 보고 3x에 더함",
+        "동류항이 아닌 x와 y를 한꺼번에 합쳐 하나의 항으로 만듦"
+      ],
+      "answer_print": "2x+3y",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "문자와 차수가 같은 항끼리만 모을 수 있어요.",
+      "solution": "x끼리 모으면 3x − x = 2x, y끼리 모으면 2y + y = 3y예요. 정리하면 2x + 3y예요.",
+      "work_space": "sm",
+      "misconceptions": ["alg.like-terms-not-same", "alg.coefficient-one"]
+    },
+    {
+      "id": "e03-es1",
+      "format": "essay",
+      "level": "L",
+      "topic": "식 세우기와 식의 값",
+      "source_id": null,
+      "stem_print": "한 개에 800원인 사과 a개를 사고 5000원을 냈다. 거스름돈을 a를 사용한 식으로 나타내고, a = 4일 때의 거스름돈을 구하시오. 풀이 과정을 함께 쓰시오.",
+      "rubric": [
+        {"step": "거스름돈을 5000 − 800a원으로 바르게 나타냈어요", "points": 4},
+        {"step": "a = 4를 대입해 5000 − 3200으로 계산했어요", "points": 2},
+        {"step": "거스름돈 1800원을 구했어요", "points": 2}
+      ],
+      "answer_print": "1800원",
+      "answer_accept": ["1800", "5000−800a원, 1800원"],
+      "answer_unit": "원",
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "거스름돈은 낸 돈에서 물건 값을 뺀 금액이에요.",
+      "solution": "사과 값은 800 × a = 800a원이에요. 거스름돈은 (낸 돈) − (사과 값)이니까 5000 − 800a원이에요. a = 4를 대입하면 5000 − 800 × 4 = 5000 − 3200 = 1800원이에요.",
+      "work_space": "lg",
+      "misconceptions": ["alg.substitute-restore-times"]
+    },
+    {
+      "id": "e03-es2",
+      "format": "essay",
+      "level": "M",
+      "topic": "바르게 계산한 식",
+      "source_id": null,
+      "stem_print": "어떤 다항식 A에서 2x − 3을 빼야 할 것을 잘못하여 더했더니 5x + 1이 되었다. 바르게 계산한 식을 구하시오. 풀이 과정을 함께 쓰시오.",
+      "rubric": [
+        {"step": "잘못 계산한 식 A + (2x − 3) = 5x + 1에서 A = 3x + 4를 구했어요", "points": 4},
+        {"step": "바른 계산 A − (2x − 3)의 식을 세웠어요", "points": 2},
+        {"step": "답 x + 7을 구하고 정리했어요", "points": 2}
+      ],
+      "answer_print": "x+7",
+      "answer_accept": ["x + 7"],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "먼저 잘못 계산한 식을 세워 A가 무엇인지 구해요.",
+      "solution": "잘못 계산한 식은 A + (2x − 3) = 5x + 1이에요. 그래서 A = 5x + 1 − (2x − 3) = 5x + 1 − 2x + 3 = 3x + 4예요. 바르게 계산하면 A − (2x − 3) = 3x + 4 − 2x + 3 = x + 7이에요.",
+      "work_space": "lg",
+      "misconceptions": ["alg.paren-minus-partial"]
+    }
+  ]
+}

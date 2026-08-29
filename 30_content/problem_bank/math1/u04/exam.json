@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "grade": "math1",
+    "unit": 4,
+    "unit_name": "일차방정식",
+    "purpose": "exam-pool",
+    "authored": "2026-08-26",
+    "note": "중1 전범위 실전 모의고사용 문항 풀. EXAM_SPEC.md 준수. cn/es 는 practice.json 28문항과 겹치지 않는 신규, cv 는 practice.json 변환."
+  },
+  "problems": [
+    {
+      "id": "e04-cn1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "방정식과 항등식 판별",
+      "source_id": null,
+      "stem_print": "다음 중 x에 대한 항등식인 것은?",
+      "choices": [
+        "2x + 1 = 5",
+        "2(x − 1) = 2x − 2",
+        "3x = x",
+        "x − 4 = 4 − x",
+        "x + 1 = x − 1"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "x=2 에서만 참인 방정식인데 등호만 보고 항등식으로 착각",
+        "x=0 을 넣으면 참이 되어 모든 x 에서 참이라고 착각",
+        "양변 모양이 대칭이라 항상 같다고 착각 (x=4 에서만 참)",
+        "양변이 비슷해 보이지만 어떤 x 를 넣어도 참이 되지 않는 등식"
+      ],
+      "answer_print": "2(x − 1) = 2x − 2",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "괄호를 풀었을 때 양변이 완전히 같은 식이 되는지 확인해요.",
+      "solution": "②는 괄호를 풀면 2x − 2 = 2x − 2 로 양변이 완전히 같으니 모든 x 에서 참인 항등식이에요. ①은 x=2, ③은 x=0, ④는 x=4 에서만 참인 방정식이고, ⑤는 어떤 x 를 넣어도 참이 되지 않아요.",
+      "work_space": "sm",
+      "misconceptions": ["eq.identity-vs-equation"]
+    },
+    {
+      "id": "e04-cn2",
+      "format": "choice5",
+      "level": "M",
+      "topic": "괄호가 있는 일차방정식",
+      "source_id": null,
+      "stem_print": "일차방정식 2(x + 3) = 5x − 9 의 해는?",
+      "choices": ["−1", "3", "4", "5", "15"],
+      "answer_choice": 4,
+      "distractor_why": [
+        "6 을 이항할 때 부호를 바꾸지 않아 3x = −3 으로 정리함",
+        "3x = 15 로 정리한 뒤 3 이 아니라 5 로 나눔",
+        "괄호 앞의 2 를 x 에만 곱해 2x + 3 으로 전개함",
+        "3x = 15 까지 정리하고 3 으로 나누는 마지막 단계를 빠뜨림"
+      ],
+      "answer_print": "5",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "괄호를 분배법칙으로 풀고, x항과 상수항을 각각 부호를 바꿔 이항해요.",
+      "solution": "괄호를 풀면 2x + 6 = 5x − 9 예요. 이항하면 6 + 9 = 5x − 2x, 15 = 3x, x = 5 예요. 검산하면 좌변 2×(5+3)=16, 우변 5×5−9=16 으로 같아요.",
+      "work_space": "md",
+      "misconceptions": ["eq.paren-partial-distribute", "eq.transpose-sign"]
+    },
+    {
+      "id": "e04-cn3",
+      "format": "choice5",
+      "level": "M",
+      "topic": "해의 조건과 미정계수",
+      "source_id": null,
+      "stem_print": "x에 대한 일차방정식 5x − a = 2x + 7 의 해가 x = 4 일 때, 상수 a의 값은?",
+      "choices": ["−5", "5", "15", "19", "35"],
+      "answer_choice": 2,
+      "distractor_why": [
+        "20 − a = 15 를 a = 15 − 20 으로 잘못 이항함",
+        "우변 값 15 를 구하고 그대로 a 라고 답함",
+        "2×4+7 을 계산할 때 7 을 빼서 우변을 1 로 만듦",
+        "−a 를 이항하며 부호를 바꾸지 않아 a = 20 + 15 로 계산함"
+      ],
+      "answer_print": "5",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "해 x = 4 를 방정식에 대입하면 a 에 대한 방정식이 돼요.",
+      "solution": "x = 4 를 대입하면 20 − a = 8 + 7 = 15 예요. 이항하면 a = 20 − 15 = 5 예요. 검산하면 5×4−5=15, 2×4+7=15 로 양변이 같아요.",
+      "work_space": "md",
+      "misconceptions": ["eq.transpose-sign"]
+    },
+    {
+      "id": "e04-cn4",
+      "format": "choice5",
+      "level": "H",
+      "topic": "해가 같은 두 방정식",
+      "source_id": null,
+      "stem_print": "x에 대한 두 일차방정식 <span class=\"frac\"><b>x − 1</b><i>2</i></span> + 1 = <span class=\"frac\"><b>2x + 1</b><i>3</i></span> 과 a(x + 2) = x − 10 의 해가 서로 같을 때, 상수 a의 값은?",
+      "choices": ["−11", "−9", "−3", "3", "7"],
+      "answer_choice": 3,
+      "distractor_why": [
+        "a(x+2) 를 ax+2 로 잘못 보고 a + 2 = −9 를 풂",
+        "3a = −9 에서 3 으로 나누는 마지막 단계를 빠뜨림",
+        "−9 ÷ 3 의 부호를 놓쳐 a = 3 으로 답함",
+        "좌변의 1 에 6 을 곱하지 않아 x = −4 를 얻고 대입함"
+      ],
+      "answer_print": "−3",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "먼저 분수 방정식을 풀어 해를 구하고, 그 해를 두 번째 방정식에 대입해요.",
+      "solution": "첫 방정식의 양변에 6을 곱하면 3(x−1) + 6 = 2(2x+1), 3x + 3 = 4x + 2, x = 1 이에요. 이 해를 a(x+2) = x − 10 에 대입하면 3a = 1 − 10 = −9, a = −3 이에요. 검산하면 −3×(1+2) = −9, 1 − 10 = −9 로 같아요.",
+      "work_space": "md",
+      "misconceptions": ["eq.frac-numerator-paren", "eq.multiply-partial"]
+    },
+    {
+      "id": "e04-cv1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "등식의 성질",
+      "source_id": "m1-u04-t02-03",
+      "stem_print": "5x = 35 의 양변을 5로 나누면 x의 값은?",
+      "choices": ["7", "30", "35", "40", "175"],
+      "answer_choice": 1,
+      "distractor_why": [
+        "계수 5 를 나누지 않고 35 에서 빼서 없애려 함",
+        "양변을 나누지 않고 우변 값을 그대로 답함",
+        "5 로 나누는 대신 5 를 더함",
+        "5 로 나누는 대신 5 를 곱함"
+      ],
+      "answer_print": "7",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "x 에 곱해진 수를 없앨 때는 양변을 그 수로 나눠요.",
+      "solution": "x 에 5 가 곱해져 있으니 양변을 5 로 나눠요. x = 35 ÷ 5 = 7 이에요.",
+      "work_space": "sm",
+      "misconceptions": ["eq.coeff-divide"]
+    },
+    {
+      "id": "e04-cv2",
+      "format": "choice5",
+      "level": "M",
+      "topic": "일차방정식 풀기",
+      "source_id": "m1-u04-t03-02",
+      "stem_print": "일차방정식 4x − 5 = 2x + 7 의 해는?",
+      "choices": ["−1", "1", "2", "6", "12"],
+      "answer_choice": 4,
+      "distractor_why": [
+        "이항한 두 상수항의 부호를 모두 반대로 붙여 2x = −2 로 정리함",
+        "−5 를 이항하며 부호를 바꾸지 않아 2x = 2 로 정리함",
+        "2x 를 이항하며 더해 버려 6x = 12 로 정리함",
+        "2x = 12 에서 2 로 나누는 마지막 단계를 빠뜨림"
+      ],
+      "answer_print": "6",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "x 항은 좌변으로, 상수항은 우변으로 부호를 바꿔 이항해요.",
+      "solution": "2x 를 좌변으로, −5 를 우변으로 이항하면 4x − 2x = 7 + 5, 2x = 12, x = 6 이에요. 검산하면 4×6−5=19, 2×6+7=19 로 양변이 같아요.",
+      "work_space": "md",
+      "misconceptions": ["eq.transpose-sign"]
+    },
+    {
+      "id": "e04-es1",
+      "format": "essay",
+      "level": "M",
+      "topic": "일차방정식 활용 (과부족)",
+      "source_id": null,
+      "stem_print": "사탕을 학생들에게 4개씩 나누어 주면 3개가 남고, 5개씩 나누어 주면 2개가 모자란다고 한다. 학생 수를 구하시오. 풀이 과정을 함께 쓰시오.",
+      "rubric": [
+        {"step": "학생 수를 x명으로 놓고 사탕 개수를 4x+3, 5x−2 두 가지로 나타내 방정식 4x+3=5x−2 를 세웠어요", "points": 3},
+        {"step": "이항해 정리하고 x=5 를 구했어요", "points": 3},
+        {"step": "사탕 23개로 두 조건을 검산하고 학생 수 5명이라고 답했어요", "points": 2}
+      ],
+      "answer_print": "5",
+      "answer_accept": ["5명"],
+      "answer_unit": "명",
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "사탕 개수를 학생 수 x 로 두 가지 방법으로 나타내 보아요.",
+      "solution": "학생 수를 x명이라 하면, 4개씩 주면 3개가 남으니 사탕은 4x+3 개이고, 5개씩 주면 2개가 모자라니 5x−2 개이기도 해요. 4x+3 = 5x−2 에서 3+2 = 5x−4x, x = 5 예요. 사탕은 4×5+3 = 23개 — 5개씩 주려면 25개가 필요해서 2개가 모자라니 조건에 맞아요. 학생은 5명이에요.",
+      "work_space": "lg",
+      "misconceptions": ["eq.word-no-variable"]
+    },
+    {
+      "id": "e04-es2",
+      "format": "essay",
+      "level": "H",
+      "topic": "일차방정식 활용 (속력)",
+      "source_id": null,
+      "stem_print": "동생이 분속 60 m 로 걸어서 집을 나선 지 10분 후에, 언니가 같은 길을 분속 160 m 로 자전거를 타고 뒤따라갔다. 언니가 출발한 지 몇 분 후에 동생을 만나는지 구하시오. 풀이 과정을 함께 쓰시오.",
+      "rubric": [
+        {"step": "언니가 출발한 지 x분 후로 놓고 두 사람이 간 거리를 각각 160x m, 60(x+10) m 로 나타냈어요", "points": 3},
+        {"step": "만나는 순간 두 거리가 같다는 방정식 160x=60(x+10) 을 풀어 x=6 을 구했어요", "points": 3},
+        {"step": "두 거리가 960 m 로 같음을 검산하고 6분 후라고 답했어요", "points": 2}
+      ],
+      "answer_print": "6",
+      "answer_accept": ["6분"],
+      "answer_unit": "분",
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "언니가 출발한 뒤 x분 동안 두 사람이 간 거리가 같아지는 순간을 식으로 세워요.",
+      "solution": "언니가 출발한 지 x분 후에 만난다고 하면, 언니가 간 거리는 160x m 이고, 동생은 (x+10)분을 걸었으니 60(x+10) m 예요. 만나는 순간 두 거리가 같으니 160x = 60(x+10), 160x = 60x+600, 100x = 600, x = 6 이에요. 검산하면 언니는 160×6 = 960 m, 동생은 60×16 = 960 m 로 같아요. 언니가 출발한 지 6분 후에 만나요.",
+      "work_space": "lg",
+      "misconceptions": ["eq.word-no-variable"]
+    }
+  ]
+}
