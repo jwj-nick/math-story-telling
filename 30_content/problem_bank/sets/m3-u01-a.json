@@ -1,0 +1,15 @@
+{
+  "id": "m3-u01-a",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 1,
+  "unit_name": "제곱근과 실수",
+  "title": "제곱근의 뜻과 표기",
+  "subtitle": "제곱근 구하기 · 'a의 제곱근'과 '제곱근 a' · 제곱근의 성질",
+  "bank": "math3/u01/practice.json",
+  "misconceptions": "misconceptions/math3_u01.json",
+  "types": [1, 2, 3],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

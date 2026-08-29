@@ -1,0 +1,15 @@
+{
+  "id": "m3-u01-b",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 1,
+  "unit_name": "제곱근과 실수",
+  "title": "제곱수 만들기와 무리수 판별",
+  "subtitle": "근호 안을 제곱수로 만들기 · 유리수·무리수 판별",
+  "bank": "math3/u01/practice.json",
+  "misconceptions": "misconceptions/math3_u01.json",
+  "types": [4, 5],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

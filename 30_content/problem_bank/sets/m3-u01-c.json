@@ -1,0 +1,15 @@
+{
+  "id": "m3-u01-c",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 1,
+  "unit_name": "제곱근과 실수",
+  "title": "대소 비교와 정수 부분",
+  "subtitle": "제곱근의 대소 비교 · √a의 정수 부분",
+  "bank": "math3/u01/practice.json",
+  "misconceptions": "misconceptions/math3_u01.json",
+  "types": [6, 7],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
