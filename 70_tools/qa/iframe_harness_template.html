@@ -1,0 +1,91 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>harness</title>
+<style>body{margin:0;font:12px/1.4 monospace}#log{white-space:pre-wrap;padding:6px 8px;background:#111;color:#8f8;min-height:20px}iframe{width:1000px;height:2900px;border:0;display:block}</style>
+<div id="log">(running)</div>
+<iframe id="f"></iframe>
+<script>
+var L=[],ERR=[];function log(k,v){L.push(k+' = '+JSON.stringify(v));document.getElementById('log').textContent=L.join('\n');}
+var f=document.getElementById("f"); if(/short/.test(location.search)) f.style.height="700px"; if(/tall/.test(location.search)) f.style.height="4300px"; if(/dark/.test(location.search)) setTimeout(function(){try{localStorage.setItem("m1theme","dark");}catch(e){}},0);
+function load(url){return new Promise(function(res){f.onload=function(){var w=f.contentWindow;
+  w.addEventListener('error',function(e){ERR.push(String(e.message));});setTimeout(function(){res(w);},150);};f.src=url;});}
+function wait(ms){return new Promise(function(r){setTimeout(r,ms);});}
+var scen=location.hash.slice(1)||'flow';
+(async function(){
+  var w,d,q=function(s){return d.querySelector(s);},cnt=function(s){return d.querySelectorAll(s).length;};
+  try{
+  if(scen==='flow'){
+    localStorage.clear(); if(/dark/.test(location.search)) localStorage.setItem("m1theme","dark");
+    w=await load('u6.html'); d=w.document;
+    log('bar_on_initial(vary auto=1)', cnt('#prog i.on'));
+    q('#c1').value='14'; q('#c1b').click(); await wait(50);
+    log('c1_wrong1_out', q('#c1o').textContent); log('c1_wrong1_cls', q('#c1').className); log('c1_wrong1_reveals15', /15/.test(q('#c1o').textContent));
+    q('#c1').value='13'; q('#c1b').click(); await wait(50);
+    log('c1_wrong2_out', q('#c1o').textContent);
+    q('#c1').value='15'; q('#c1b').click(); await wait(50);
+    log('c1_ok_html', q('#c1o').innerHTML); log('c1_ok_cls', q('#c1').className); log('bar_after_c1(=2)', cnt('#prog i.on')); log('bar_bump', cnt('#prog i.bump'));
+    q('#c2').value='원점'; q('#c2b').click(); await wait(50);
+    q('#c5').value='아니요'; q('#c5b').click(); await wait(50);
+    log('bar_after_c2c5(=3, c5 bonus)', cnt('#prog i.on'));
+    q('#c4').value='3'; q('#c4b').click(); await wait(50); log('c4_wrong_cls', q('#c4').className);
+    q('#c4').dispatchEvent(new w.Event('input')); log('c4_after_input_cls', q('#c4').className);
+    q('#showex').click(); await wait(50); log('bar_after_teach(=4)', cnt('#prog i.on'));
+    log('m1checks', localStorage.getItem('m1checks')); log('m1progress', localStorage.getItem('m1progress'));
+    log('done_note_shown(false)', q('#done-note').classList.contains('show'));
+    w=await load('u6.html?r=1'); d=w.document;
+    log('r_c1_disabled', q('#c1').disabled); log('r_c1_value', q('#c1').value); log('r_c1b_disabled', q('#c1b').disabled); log('r_c1o', q('#c1o').textContent); log('r_c1_cls', q('#c1').className);
+    log('r_c2_disabled', q('#c2').disabled); log('r_c5_disabled(bonus, restored)', q('#c5').disabled); log('r_c4_disabled(false)', q('#c4').disabled);
+    log('r_showex_hidden', q('#showex').style.display); log('r_exbox_shown', q('#exbox').className);
+    log('r_bar_on(=4: c1,c2,teach + vary)', cnt('#prog i.on')); log('r_bar_pre(=3)', cnt('#prog i.on.pre'));
+    await wait(50);
+    log('r_banner', q('.resume')?q('.resume').textContent:null);
+    log('r_done_note_shown(false)', q('#done-note').classList.contains('show'));
+    var y0=w.scrollY; q('.rs-go').click(); await wait(1000); log('r_scrolled', w.scrollY>y0); log('r_scrollY', w.scrollY); log('r_active_id(c4)', d.activeElement&&d.activeElement.id);
+    q('#c4').value='-3'; q('#c4b').click(); await wait(300);
+    log('done_bar(=5)', cnt('#prog i.on'));
+    log('done_note_cls', q('#done-note').className); log('done_note_html', q('#done-note').innerHTML);
+    log('confetti_pieces(46)', cnt('.pg-confetti i')); log('confetti_on', !!q('.pg-confetti.on'));
+    log('m1progress2', localStorage.getItem('m1progress')); log('sidebar_done', !!q('.sb-link[data-id="u6"].done'));
+    await wait(2600); log('confetti_removed', !q('.pg-confetti'));
+    q('#c6').value='6'; q('#c6b').click(); await wait(300); log('confetti_after_recomplete(false)', !!q('.pg-confetti')); log('c6_saved', /c6/.test(localStorage.getItem('m1checks')));
+    w=await load('u6.html?r=2'); d=w.document; await wait(100);
+    log('v_c1_disabled(false)', q('#c1').disabled); log('v_c1_value(empty)', q('#c1').value); log('v_bar_on(=5)', cnt('#prog i.on'));
+    log('v_note_cls', q('#done-note').className); log('v_banner(false)', !!q('.resume')); log('v_confetti(false)', !!q('.pg-confetti'));
+    log('v_showex_visible', q('#showex').style.display);
+    // 회귀: g6·p6·d6 부팅 + 사이드바
+    w=await load('g6.html'); d=w.document; log('g6_sidebar', cnt('.sidebar .sb-link')); log('g6_prog_pre(0)', cnt('#prog i.on'));
+    w=await load('p6.html'); d=w.document; log('p6_sidebar', cnt('.sidebar .sb-link')); log('p6_prog_total(7)', cnt('#prog i')); log('p6_prog_on(0)', cnt('#prog i.on')); log('p6_banner(false)', !!q('.resume'));
+    w=await load('d6.html'); d=w.document; log('d6_sidebar', cnt('.sidebar .sb-link')); log('d6_theme', d.documentElement.getAttribute('data-theme'));
+    w=await load('index.html'); d=w.document; log('index_u6_done', !!q('.unit.done[href="u6.html"]')||cnt('.unit.done'));
+  }
+  if(scen==='restored'){
+    localStorage.clear(); if(/dark/.test(location.search)) localStorage.setItem("m1theme","dark");
+    w=await load('u6.html'); d=w.document;
+    q('#c1').value='15'; q('#c1b').click(); await wait(50);
+    q('#c2').value='원점'; q('#c2b').click(); await wait(50);
+    q('#showex').click(); await wait(50);
+    w=await load('u6.html?r=1'); d=w.document; await wait(300);
+    log('bar', cnt('#prog i.on')); log('banner', q('.resume')&&q('.resume').textContent);
+  }
+  if(scen==='stamp'){
+    localStorage.clear(); if(/dark/.test(location.search)) localStorage.setItem("m1theme","dark");
+    w=await load('u6.html'); d=w.document;
+    q('#c1').value='15'; q('#c1b').click(); await wait(40);
+    q('#c2').value='원점'; q('#c2b').click(); await wait(40);
+    q('#c4').value='-3'; q('#c4b').click(); await wait(40);
+    q('#showex').click(); await wait(40);
+    log('bar_before_last(4)', cnt('#prog i.on'));
+    q('#c6').value='6'; q('#c6b').click(); await wait(200);
+    log('bar(5)', cnt('#prog i.on')); log('note_cls', q('#done-note').className); log('confetti_pieces', cnt('.pg-confetti i')); log('reduced', w.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  }
+  if(scen==='retry'){
+    localStorage.clear(); if(/dark/.test(location.search)) localStorage.setItem("m1theme","dark");
+    w=await load('u6.html'); d=w.document;
+    q('#c1').value='14'; q('#c1b').click(); await wait(40);
+    q('#c2').value='원점'; q('#c2b').click(); await wait(40);
+    log('c1', q('#c1o').textContent); log('c2', q('#c2o').textContent);
+  }
+  }catch(e){log('HARNESS_EXCEPTION', String(e&&e.stack||e));}
+  log('iframe_errors', ERR); log('DONE', scen);
+})();
+</script>
