@@ -1,0 +1,15 @@
+{
+  "id": "m3-u04-b",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 4,
+  "unit_name": "이차방정식",
+  "title": "근의 공식과 근의 개수",
+  "subtitle": "근의 공식으로 풀기 · 근의 개수",
+  "bank": "math3/u04/practice.json",
+  "misconceptions": "misconceptions/math3_u04.json",
+  "types": [4, 5],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

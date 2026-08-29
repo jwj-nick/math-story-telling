@@ -27,7 +27,7 @@ BANK_ROOT = ROOT / '30_content' / 'problem_bank'
 APP_WORDS = ['□', '버튼', '슬라이더', '눌러', '탭을', '클릭', '위 그림에서 값을']
 KATEX_LEFT = re.compile(r'(\$|\\dfrac|\\frac|\\overline|\\overrightarrow|\\overleftrightarrow|\\angle|\\times|\\div|\\pi)')
 NUMERIC = re.compile(r'^[−\-]?\d+(\.\d+)?$')
-DEMAND = ['하시오', '구하시오', '나타내시오', '쓰시오', '고르시오', '까요?', '얼마인가요']
+DEMAND = ['하시오', '구하시오', '나타내시오', '쓰시오', '고르시오', '푸시오', '까요?', '얼마인가요']
 VOICE_BAD = re.compile(r'(한다|된다|이다|뺀다|더한다|곱한다|나눈다|계산한다|넣는다|바뀐다|사라진다)\.')
 
 errs, warns, infos = [], [], []

@@ -1,0 +1,15 @@
+{
+  "id": "m3-u04-c",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 4,
+  "unit_name": "이차방정식",
+  "title": "근이 주어진 방정식과 활용",
+  "subtitle": "근이 주어진 이차방정식 · 이차방정식의 활용",
+  "bank": "math3/u04/practice.json",
+  "misconceptions": "misconceptions/math3_u04.json",
+  "types": [6, 7],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
