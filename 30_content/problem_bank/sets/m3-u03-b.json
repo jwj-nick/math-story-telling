@@ -1,0 +1,15 @@
+{
+  "id": "m3-u03-b",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 3,
+  "unit_name": "다항식의 곱셈과 인수분해",
+  "title": "두 수 찾기와 여러 가지 인수분해",
+  "subtitle": "곱과 합으로 두 수 찾기 · 합차와 x² 계수가 있을 때",
+  "bank": "math3/u03/practice.json",
+  "misconceptions": "misconceptions/math3_u03.json",
+  "types": [4, 5],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

@@ -61,6 +61,7 @@
 - p 페이지 = 7유형 × 3문항, 난이도 **L / M / M**((3)번에 "왜?" 박스). 은행 `level`도 같게. 유형 세트 `a/b/c`는 H 없음이라 전 문항 포함, `mock`은 `quota {L:1, M:1}` → 14문항.
 - 회차 쪼개기: 7유형 → a(1·2·3) 9문항 / b(4·5) 6문항 / c(6·7) 6문항 / mock 14문항 = 회차 4개, PDF 8장.
 - 낱말·근호 정답(유리수/무리수, √10, −2)은 `answer_print`에 근거를 괄호로 덧붙여 V5(카드 정답 누출)를 피한다. 오개념 카드는 단원당 10~13장.
+- `answer_format`·`answer_unit`·`title`은 빌더가 이스케이프하므로 **HTML 금지, 유니코드(², √, −)만**. `stem_print`·`answer_print`·`hint`·`solution`·`principle`은 HTML 가능(`<sup>`, `.frac`).
 - 프린트 허브 삽입 = `python 70_tools/print/hub_add_unit.py math3 N`(마커 기반, 재실행 안전). PDF는 `40_grades/middle/math3/print/uNN/`(미추적) + 배포 `mid3/print/uNN/`.
 - 검증 = `70_tools/qa/check_page.py app3` → Node 정답 재계산 → 새 포트 서버 + headless Chrome 콘솔 0 → (파일럿만) iframe 하네스 → `verify_bank.py` 0 오류 → PDF 육안 2장.
 
@@ -70,4 +71,5 @@
 |---|---|---|---|---|---|---|
 | 1 제곱근과 실수 | ✅ | ✅ | ✅ 21 | ✅ | ✅ a/b/c/mock 8장 | ✅ 2026-08-30 |
 | 2 근호를 포함한 식의 계산 | ✅ | ✅ | ✅ 21 | ✅ | ✅ a/b/c/mock 8장 | ✅ 2026-08-30 |
-| 3~12 | — | — | — | — | — | 준비 중 카드 |
+| 3 다항식의 곱셈과 인수분해 | ✅ | ✅ | ✅ 21 | ✅ | ✅ a/b/c/mock 8장 | ✅ 2026-08-30 |
+| 4~12 | — | — | — | — | — | 준비 중 카드 |

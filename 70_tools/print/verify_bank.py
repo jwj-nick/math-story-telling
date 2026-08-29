@@ -144,6 +144,10 @@ def main():
                 errs.append('V4 %s 발문에 요구문이 없음: %s' % (pid, sp[:40]))
             if not p.get('answer_format'):
                 errs.append('V4 %s answer_format 누락' % pid)
+            # answer_format·answer_unit 은 build_sheet 가 esc() 로 이스케이프해 인쇄한다 → HTML 태그가 그대로 보인다 (2026-08-30 math3 u03 사고)
+            for field in ('answer_format', 'answer_unit'):
+                if re.search(r'<[a-zA-Z/]', p.get(field) or ''):
+                    errs.append('V4 %s %s 에 HTML 태그 — 유니코드(², √, −)만 쓸 것: %s' % (pid, field, p.get(field)))
             if p.get('answer_unit') is None and '단위' not in (p.get('answer_format') or '') \
                     and '수로' not in (p.get('answer_format') or '') and '꼴로' not in (p.get('answer_format') or '') \
                     and '식으로' not in (p.get('answer_format') or ''):
