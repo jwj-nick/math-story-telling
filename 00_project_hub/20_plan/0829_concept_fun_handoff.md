@@ -3,6 +3,8 @@
 
 > **이 문서 하나만 읽고 착수할 수 있게 쓴다.** 배경 토론은 `00_project_hub/10_chatlog/260829_concept_fun_ideas.md`(Round 1~2).
 > 작성 2026-08-29 · Nick 승인 완료(Q1~Q3) · 시작 시점 태그 `m1-exam6-nav-260829`.
+>
+> **✅ 실행 완료 (2026-08-29, 배포 `jwj-nick.github.io` 4988c91).** 결과·판단·검증 기록 = chatlog Round 3. 이 문서는 math2 포팅 때 같은 절차의 참고용으로 유지.
 
 ## 0. 한 줄 목표
 
