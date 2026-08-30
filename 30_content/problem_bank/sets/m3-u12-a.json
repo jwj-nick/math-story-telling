@@ -1,0 +1,15 @@
+{
+  "id": "m3-u12-a",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 12,
+  "unit_name": "상자 그림과 산점도",
+  "title": "사분위수와 상자 그림",
+  "subtitle": "사분위수(홀수·짝수 개) · 사분위 범위 · 상자 그림 읽기",
+  "bank": "math3/u12/practice.json",
+  "misconceptions": "misconceptions/math3_u12.json",
+  "types": [1, 2, 3],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

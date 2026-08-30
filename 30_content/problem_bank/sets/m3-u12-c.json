@@ -1,0 +1,15 @@
+{
+  "id": "m3-u12-c",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 12,
+  "unit_name": "상자 그림과 산점도",
+  "title": "상관관계",
+  "subtitle": "상관관계 판별 · 산점도와 상관관계 종합",
+  "bank": "math3/u12/practice.json",
+  "misconceptions": "misconceptions/math3_u12.json",
+  "types": [6, 7],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

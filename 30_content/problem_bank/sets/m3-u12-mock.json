@@ -1,0 +1,16 @@
+{
+  "id": "m3-u12-mock",
+  "kind": "mock",
+  "grade": "math3",
+  "unit": 12,
+  "unit_name": "상자 그림과 산점도",
+  "title": "단원 12 시험 대비 회차",
+  "subtitle": "7개 유형에서 골고루 · 난이도 오름차순 14문항",
+  "bank": "math3/u12/practice.json",
+  "misconceptions": "misconceptions/math3_u12.json",
+  "types": [1, 2, 3, 4, 5, 6, 7],
+  "pick": { "quota": { "L": 1, "M": 1 } },
+  "time_min": 25,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
