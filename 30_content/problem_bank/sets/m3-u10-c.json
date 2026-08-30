@@ -1,0 +1,15 @@
+{
+  "id": "m3-u10-c",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 10,
+  "unit_name": "원주각",
+  "title": "접선과 현 · 종합",
+  "subtitle": "접선과 현이 이루는 각 · 원주각 종합",
+  "bank": "math3/u10/practice.json",
+  "misconceptions": "misconceptions/math3_u10.json",
+  "types": [6, 7],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

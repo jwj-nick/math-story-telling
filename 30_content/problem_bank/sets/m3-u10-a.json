@@ -1,0 +1,15 @@
+{
+  "id": "m3-u10-a",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 10,
+  "unit_name": "원주각",
+  "title": "원주각의 기본",
+  "subtitle": "원주각과 중심각 · 같은 호와 반원 · 원주각과 호의 길이",
+  "bank": "math3/u10/practice.json",
+  "misconceptions": "misconceptions/math3_u10.json",
+  "types": [1, 2, 3],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
