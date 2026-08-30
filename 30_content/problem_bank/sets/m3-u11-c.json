@@ -1,0 +1,15 @@
+{
+  "id": "m3-u11-c",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 11,
+  "unit_name": "산포도",
+  "title": "자료 비교와 변환",
+  "subtitle": "표준편차의 뜻 · 자료를 변환하면",
+  "bank": "math3/u11/practice.json",
+  "misconceptions": "misconceptions/math3_u11.json",
+  "types": [6, 7],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

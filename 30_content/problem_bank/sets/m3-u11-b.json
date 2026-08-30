@@ -1,0 +1,15 @@
+{
+  "id": "m3-u11-b",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 11,
+  "unit_name": "산포도",
+  "title": "표준편차와 편차 표",
+  "subtitle": "표준편차 구하기 · 편차 표에서 분산",
+  "bank": "math3/u11/practice.json",
+  "misconceptions": "misconceptions/math3_u11.json",
+  "types": [4, 5],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
