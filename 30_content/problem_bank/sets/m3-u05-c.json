@@ -1,0 +1,15 @@
+{
+  "id": "m3-u05-c",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 5,
+  "unit_name": "이차함수와 그래프",
+  "title": "평행이동과 식 세우기",
+  "subtitle": "평행이동한 식 구하기 · 꼭짓점과 한 점으로 식 세우기",
+  "bank": "math3/u05/practice.json",
+  "misconceptions": "misconceptions/math3_u05.json",
+  "types": [6, 7],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

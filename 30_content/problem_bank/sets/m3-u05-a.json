@@ -1,0 +1,15 @@
+{
+  "id": "m3-u05-a",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 5,
+  "unit_name": "이차함수와 그래프",
+  "title": "함숫값과 y = ax² 의 그래프",
+  "subtitle": "이차함수의 뜻과 함숫값 · y = ax² 그래프의 성질 · 위아래 평행이동",
+  "bank": "math3/u05/practice.json",
+  "misconceptions": "misconceptions/math3_u05.json",
+  "types": [1, 2, 3],
+  "time_min": 15,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
