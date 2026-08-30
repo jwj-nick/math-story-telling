@@ -1,0 +1,15 @@
+{
+  "id": "m3-u06-b",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 6,
+  "unit_name": "이차함수의 활용",
+  "title": "최댓값과 최솟값",
+  "subtitle": "표준형에서 · 일반형에서",
+  "bank": "math3/u06/practice.json",
+  "misconceptions": "misconceptions/math3_u06.json",
+  "types": [4, 5],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

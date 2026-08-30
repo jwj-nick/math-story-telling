@@ -1,0 +1,16 @@
+{
+  "id": "m3-u06-mock",
+  "kind": "mock",
+  "grade": "math3",
+  "unit": 6,
+  "unit_name": "이차함수의 활용",
+  "title": "단원 6 시험 대비 회차",
+  "subtitle": "7개 유형에서 골고루 · 난이도 오름차순 14문항",
+  "bank": "math3/u06/practice.json",
+  "misconceptions": "misconceptions/math3_u06.json",
+  "types": [1, 2, 3, 4, 5, 6, 7],
+  "pick": { "quota": { "L": 1, "M": 1 } },
+  "time_min": 25,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

@@ -1,0 +1,15 @@
+{
+  "id": "m3-u06-c",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 6,
+  "unit_name": "이차함수의 활용",
+  "title": "계수 구하기와 활용",
+  "subtitle": "조건으로 계수 구하기 · 최대·최소의 활용",
+  "bank": "math3/u06/practice.json",
+  "misconceptions": "misconceptions/math3_u06.json",
+  "types": [6, 7],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
