@@ -1,0 +1,15 @@
+{
+  "id": "m3-u07-c",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 7,
+  "unit_name": "삼각비",
+  "title": "0°·90°와 삼각비의 표",
+  "subtitle": "0°, 90°의 삼각비와 대소 · 삼각비의 표",
+  "bank": "math3/u07/practice.json",
+  "misconceptions": "misconceptions/math3_u07.json",
+  "types": [6, 7],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
