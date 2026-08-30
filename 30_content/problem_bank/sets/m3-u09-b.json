@@ -1,0 +1,15 @@
+{
+  "id": "m3-u09-b",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 9,
+  "unit_name": "원과 직선",
+  "title": "접선의 성질",
+  "subtitle": "접선과 반지름은 수직 · 두 접선의 길이",
+  "bank": "math3/u09/practice.json",
+  "misconceptions": "misconceptions/math3_u09.json",
+  "types": [4, 5],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}

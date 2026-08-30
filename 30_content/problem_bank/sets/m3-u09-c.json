@@ -1,0 +1,15 @@
+{
+  "id": "m3-u09-c",
+  "kind": "type-set",
+  "grade": "math3",
+  "unit": 9,
+  "unit_name": "원과 직선",
+  "title": "내접원과 외접사각형",
+  "subtitle": "삼각형의 내접원 · 원에 외접하는 사각형",
+  "bank": "math3/u09/practice.json",
+  "misconceptions": "misconceptions/math3_u09.json",
+  "types": [6, 7],
+  "time_min": 12,
+  "outputs": ["Q", "K"],
+  "columns": 2
+}
