@@ -10,7 +10,8 @@
     "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "answer_atoms 는 원본 script 의 P(...)/pick(...) 값 그대로. 분수 답은 '3/5' 텍스트(원자와 동일). 유형당 난이도 L/M/M."
+    "note": "answer_atoms 는 원본 script 의 P(...)/pick(...) 값 그대로. 분수 답은 '3/5' 텍스트(원자와 동일). 유형당 난이도 L/M/M.",
+    "h_added": "2026-08-30"
   },
   "types": [
     {
@@ -23,23 +24,32 @@
           "level": "L",
           "stem_src": "밑변 4, 높이 3, 빗변 5인 직각삼각형에서 sin A 는?",
           "stem_print": "∠C = 90° 인 직각삼각형 ABC에서 밑변 AC = 4, 높이 BC = 3, 빗변 AB = 5 일 때, sin A 의 값을 구하시오.",
-          "answer_atoms": ["3/5"],
+          "answer_atoms": [
+            "3/5"
+          ],
           "answer_print": "3/5",
-          "answer_accept": ["0.6"],
+          "answer_accept": [
+            "0.6"
+          ],
           "answer_unit": null,
           "answer_format": "기약분수로",
           "figure": null,
           "hint": "sin A 는 A와 마주 보는 변(높이) ÷ 빗변이에요.",
           "solution": "sin A = 높이/빗변 = 3/5 예요.",
           "work_space": "sm",
-          "misconceptions": ["trig.sin-cos-swap", "trig.ratio-over-one"]
+          "misconceptions": [
+            "trig.sin-cos-swap",
+            "trig.ratio-over-one"
+          ]
         },
         {
           "id": "m3-u07-t01-02",
           "level": "M",
           "stem_src": "밑변 12, 높이 5, 빗변 13인 직각삼각형에서 cos A 는?",
           "stem_print": "∠C = 90° 인 직각삼각형 ABC에서 밑변 AC = 12, 높이 BC = 5, 빗변 AB = 13 일 때, cos A 의 값을 구하시오.",
-          "answer_atoms": ["12/13"],
+          "answer_atoms": [
+            "12/13"
+          ],
           "answer_print": "12/13",
           "answer_accept": [],
           "answer_unit": null,
@@ -48,14 +58,19 @@
           "hint": "cos A 는 A에 붙은 변(밑변) ÷ 빗변이에요.",
           "solution": "cos A = 밑변/빗변 = 12/13 이에요.",
           "work_space": "sm",
-          "misconceptions": ["trig.sin-cos-swap", "trig.reference-angle"]
+          "misconceptions": [
+            "trig.sin-cos-swap",
+            "trig.reference-angle"
+          ]
         },
         {
           "id": "m3-u07-t01-03",
           "level": "M",
           "stem_src": "빗변 10, 밑변 6인 직각삼각형에서 tan A 는?",
           "stem_print": "∠C = 90° 인 직각삼각형 ABC에서 빗변 AB = 10, 밑변 AC = 6 일 때, tan A 의 값을 구하시오.",
-          "answer_atoms": ["4/3"],
+          "answer_atoms": [
+            "4/3"
+          ],
           "answer_print": "4/3",
           "answer_accept": [],
           "answer_unit": null,
@@ -64,7 +79,31 @@
           "hint": "높이를 먼저 피타고라스로 구해요: √(10² − 6²).",
           "solution": "높이 = √(100 − 36) = 8 이므로 tan A = 높이/밑변 = 8/6 = 4/3 이에요.",
           "work_space": "md",
-          "misconceptions": ["trig.tan-with-hyp", "trig.ratio-over-one"]
+          "misconceptions": [
+            "trig.tan-with-hyp",
+            "trig.ratio-over-one"
+          ]
+        },
+        {
+          "id": "m3-u07-t01-04",
+          "level": "H",
+          "stem_src": "밑변 8, 높이 15 인 직각삼각형에서 sin A + cos A 의 값은? (분수로)",
+          "stem_print": "∠C = 90° 인 직각삼각형 ABC 에서 밑변 AC = 8, 높이 BC = 15 일 때, sin A + cos A 의 값을 구하시오.",
+          "answer_atoms": [
+            "23/17"
+          ],
+          "answer_print": "23/17",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "기약분수로",
+          "figure": null,
+          "hint": "빗변을 먼저 피타고라스로. 8-15-17 이에요.",
+          "solution": "빗변 17 이므로 sin A = 15/17, cos A = 8/17, 합은 23/17 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "trig.pythagoras-forgot",
+            "trig.ratio-over-one"
+          ]
         }
       ]
     },
@@ -78,23 +117,32 @@
           "level": "L",
           "stem_src": "sin A = 3/5 일 때 cos A 는?",
           "stem_print": "sin A = 3/5 일 때, cos A 의 값을 구하시오. (0° < A < 90°)",
-          "answer_atoms": ["4/5"],
+          "answer_atoms": [
+            "4/5"
+          ],
           "answer_print": "4/5",
-          "answer_accept": ["0.8"],
+          "answer_accept": [
+            "0.8"
+          ],
           "answer_unit": null,
           "answer_format": "기약분수로",
           "figure": null,
           "hint": "높이 3, 빗변 5인 직각삼각형을 그리면 밑변은 4예요.",
           "solution": "밑변 = √(5² − 3²) = 4 이므로 cos A = 4/5 예요.",
           "work_space": "sm",
-          "misconceptions": ["trig.pythagoras-forgot", "trig.sin-cos-swap"]
+          "misconceptions": [
+            "trig.pythagoras-forgot",
+            "trig.sin-cos-swap"
+          ]
         },
         {
           "id": "m3-u07-t02-02",
           "level": "M",
           "stem_src": "cos A = 5/13 일 때 tan A 는?",
           "stem_print": "cos A = 5/13 일 때, tan A 의 값을 구하시오. (0° < A < 90°)",
-          "answer_atoms": ["12/5"],
+          "answer_atoms": [
+            "12/5"
+          ],
           "answer_print": "12/5",
           "answer_accept": [],
           "answer_unit": null,
@@ -103,23 +151,54 @@
           "hint": "밑변 5, 빗변 13 → 높이 = √(13² − 5²).",
           "solution": "높이 = √(169 − 25) = 12 이므로 tan A = 12/5 예요.",
           "work_space": "md",
-          "misconceptions": ["trig.pythagoras-forgot", "trig.reference-angle"]
+          "misconceptions": [
+            "trig.pythagoras-forgot",
+            "trig.reference-angle"
+          ]
         },
         {
           "id": "m3-u07-t02-03",
           "level": "M",
           "stem_src": "sin A = 1/3 일 때 cos A = √k / 3 이에요. k는?",
           "stem_print": "sin A = 1/3 일 때, cos A 의 값을 구하시오. (0° < A < 90°, 근호를 남겨서)",
-          "answer_atoms": ["8"],
+          "answer_atoms": [
+            "8"
+          ],
           "answer_print": "2√2/3 (= √8/3)",
-          "answer_accept": ["√8/3", "2√2/3"],
+          "answer_accept": [
+            "√8/3",
+            "2√2/3"
+          ],
           "answer_unit": null,
           "answer_format": "근호를 남긴 분수로",
           "figure": null,
           "hint": "높이 1, 빗변 3 → 밑변 = √(9 − 1) = √8 = 2√2.",
           "solution": "밑변 = √(3² − 1²) = √8 = 2√2 이므로 cos A = 2√2/3 이에요.",
           "work_space": "md",
-          "misconceptions": ["trig.pythagoras-forgot"]
+          "misconceptions": [
+            "trig.pythagoras-forgot"
+          ]
+        },
+        {
+          "id": "m3-u07-t02-04",
+          "level": "H",
+          "stem_src": "tan A = 3/4 일 때 sin A × cos A 의 값은? (분수로)",
+          "stem_print": "tan A = <span class=\"frac\"><b>3</b><i>4</i></span> 일 때, sin A × cos A 의 값을 구하시오. (0° &lt; A &lt; 90°)",
+          "answer_atoms": [
+            "12/25"
+          ],
+          "answer_print": "12/25",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "기약분수로",
+          "figure": null,
+          "hint": "tan A = 높이/밑변 로 직각삼각형을 그리고 빗변을 구해요.",
+          "solution": "높이 3, 밑변 4, 빗변 5 인 삼각형에서 sin A = 3/5, cos A = 4/5 이므로 곱은 12/25 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "trig.pythagoras-forgot",
+            "trig.tan-with-hyp"
+          ]
         }
       ]
     },
@@ -133,39 +212,53 @@
           "level": "L",
           "stem_src": "sin 30° 의 값은?",
           "stem_print": "sin 30° 의 값을 구하시오.",
-          "answer_atoms": ["1/2"],
+          "answer_atoms": [
+            "1/2"
+          ],
           "answer_print": "1/2",
-          "answer_accept": ["0.5"],
+          "answer_accept": [
+            "0.5"
+          ],
           "answer_unit": null,
           "answer_format": "기약분수로",
           "figure": null,
           "hint": "1:√3:2 삼각형에서 30°와 마주 보는 변은 가장 짧은 1이에요.",
           "solution": "sin 30° = 1/2 예요.",
           "work_space": "sm",
-          "misconceptions": ["trig.special-value-swap"]
+          "misconceptions": [
+            "trig.special-value-swap"
+          ]
         },
         {
           "id": "m3-u07-t03-02",
           "level": "M",
           "stem_src": "cos 45° = √k / 2 일 때 k는?",
           "stem_print": "cos 45° 의 값을 구하시오. (분모를 유리화하여)",
-          "answer_atoms": ["2"],
+          "answer_atoms": [
+            "2"
+          ],
           "answer_print": "√2/2",
-          "answer_accept": ["1/√2"],
+          "answer_accept": [
+            "1/√2"
+          ],
           "answer_unit": null,
           "answer_format": "근호를 남긴 분수로 (분모 유리화)",
           "figure": null,
           "hint": "1:1:√2 삼각형에서 밑변 1, 빗변 √2 → 1/√2. 분모를 유리화해요.",
           "solution": "cos 45° = 1/√2 = √2/2 예요.",
           "work_space": "sm",
-          "misconceptions": ["trig.tan45"]
+          "misconceptions": [
+            "trig.tan45"
+          ]
         },
         {
           "id": "m3-u07-t03-03",
           "level": "M",
           "stem_src": "tan 60° = √k 일 때 k는?",
           "stem_print": "tan 60° 의 값을 구하시오.",
-          "answer_atoms": ["3"],
+          "answer_atoms": [
+            "3"
+          ],
           "answer_print": "√3",
           "answer_accept": [],
           "answer_unit": null,
@@ -174,7 +267,30 @@
           "hint": "60°와 마주 보는 변 √3, 붙은 변 1.",
           "solution": "tan 60° = √3/1 = √3 이에요.",
           "work_space": "sm",
-          "misconceptions": ["trig.tan-with-hyp"]
+          "misconceptions": [
+            "trig.tan-with-hyp"
+          ]
+        },
+        {
+          "id": "m3-u07-t03-04",
+          "level": "H",
+          "stem_src": "sin 60° ÷ cos 30° + tan 45° 의 값은?",
+          "stem_print": "sin 60° ÷ cos 30° + tan 45° 의 값을 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로",
+          "figure": null,
+          "hint": "sin 60° 와 cos 30° 는 같은 값이에요.",
+          "solution": "(√3/2) ÷ (√3/2) = 1, tan 45° = 1 이므로 1 + 1 = 2 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "trig.special-value-swap",
+            "trig.tan45"
+          ]
         }
       ]
     },
@@ -188,7 +304,9 @@
           "level": "L",
           "stem_src": "sin 30° + cos 60° 의 값은?",
           "stem_print": "sin 30° + cos 60° 의 값을 구하시오.",
-          "answer_atoms": ["1"],
+          "answer_atoms": [
+            "1"
+          ],
           "answer_print": "1",
           "answer_accept": [],
           "answer_unit": null,
@@ -197,39 +315,75 @@
           "hint": "두 값이 같아요 (sin A = cos(90° − A)).",
           "solution": "1/2 + 1/2 = 1 이에요.",
           "work_space": "sm",
-          "misconceptions": ["trig.special-value-swap"]
+          "misconceptions": [
+            "trig.special-value-swap"
+          ]
         },
         {
           "id": "m3-u07-t04-02",
           "level": "M",
           "stem_src": "tan 45° × cos 60° 의 값은?",
           "stem_print": "tan 45° × cos 60° 의 값을 구하시오.",
-          "answer_atoms": ["1/2"],
+          "answer_atoms": [
+            "1/2"
+          ],
           "answer_print": "1/2",
-          "answer_accept": ["0.5"],
+          "answer_accept": [
+            "0.5"
+          ],
           "answer_unit": null,
           "answer_format": "기약분수로",
           "figure": null,
           "hint": "tan 45° = 1 이에요.",
           "solution": "1 × 1/2 = 1/2 예요.",
           "work_space": "sm",
-          "misconceptions": ["trig.tan45"]
+          "misconceptions": [
+            "trig.tan45"
+          ]
         },
         {
           "id": "m3-u07-t04-03",
           "level": "M",
           "stem_src": "sin 60° × tan 30° 의 값은?",
           "stem_print": "sin 60° × tan 30° 의 값을 구하시오.",
-          "answer_atoms": ["1/2"],
+          "answer_atoms": [
+            "1/2"
+          ],
           "answer_print": "1/2",
-          "answer_accept": ["0.5"],
+          "answer_accept": [
+            "0.5"
+          ],
           "answer_unit": null,
           "answer_format": "기약분수로",
           "figure": null,
           "hint": "√3/2 × √3/3 — 근호끼리 곱하면 3이 돼요.",
           "solution": "(√3/2) × (√3/3) = 3/6 = 1/2 예요.",
           "work_space": "md",
-          "misconceptions": ["trig.special-value-swap"]
+          "misconceptions": [
+            "trig.special-value-swap"
+          ]
+        },
+        {
+          "id": "m3-u07-t04-04",
+          "level": "H",
+          "stem_src": "sin 60° × cos 30° − sin 30° × cos 60° 의 값은? (분수로)",
+          "stem_print": "sin 60° × cos 30° − sin 30° × cos 60° 의 값을 구하시오.",
+          "answer_atoms": [
+            "1/2"
+          ],
+          "answer_print": "1/2",
+          "answer_accept": [
+            "0.5"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로",
+          "figure": null,
+          "hint": "특수각 값을 넣고 곱셈 먼저.",
+          "solution": "3/4 − 1/4 = 1/2 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "trig.special-value-swap"
+          ]
         }
       ]
     },
@@ -243,7 +397,9 @@
           "level": "L",
           "stem_src": "빗변이 10 이고 A = 30° 인 직각삼각형의 높이는?",
           "stem_print": "빗변의 길이가 10 이고 ∠A = 30° 인 직각삼각형에서 ∠A 와 마주 보는 변(높이)의 길이를 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": null,
@@ -252,14 +408,18 @@
           "hint": "높이 = 빗변 × sin 30°.",
           "solution": "높이 = 10 × sin 30° = 10 × 1/2 = 5 예요.",
           "work_space": "sm",
-          "misconceptions": ["trig.side-from-ratio"]
+          "misconceptions": [
+            "trig.side-from-ratio"
+          ]
         },
         {
           "id": "m3-u07-t05-02",
           "level": "M",
           "stem_src": "밑변이 6 이고 A = 45° 인 직각삼각형의 높이는?",
           "stem_print": "밑변의 길이가 6 이고 ∠A = 45° 인 직각삼각형에서 높이를 구하시오.",
-          "answer_atoms": ["6"],
+          "answer_atoms": [
+            "6"
+          ],
           "answer_print": "6",
           "answer_accept": [],
           "answer_unit": null,
@@ -268,23 +428,51 @@
           "hint": "높이 = 밑변 × tan 45°.",
           "solution": "높이 = 6 × tan 45° = 6 × 1 = 6 이에요.",
           "work_space": "sm",
-          "misconceptions": ["trig.side-from-ratio"]
+          "misconceptions": [
+            "trig.side-from-ratio"
+          ]
         },
         {
           "id": "m3-u07-t05-03",
           "level": "M",
           "stem_src": "높이가 3 이고 A = 60° 인 직각삼각형의 빗변이 a√3 일 때 a는?",
           "stem_print": "높이가 3 이고 ∠A = 60° 인 직각삼각형의 빗변의 길이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["2"],
+          "answer_atoms": [
+            "2"
+          ],
           "answer_print": "2√3",
-          "answer_accept": ["6/√3"],
+          "answer_accept": [
+            "6/√3"
+          ],
           "answer_unit": null,
           "answer_format": "a√b 꼴로",
           "figure": null,
           "hint": "빗변 = 높이 ÷ sin 60° = 3 ÷ (√3/2).",
           "solution": "빗변 = 3 ÷ (√3/2) = 6/√3 = 2√3 이에요.",
           "work_space": "md",
-          "misconceptions": ["trig.side-from-ratio"]
+          "misconceptions": [
+            "trig.side-from-ratio"
+          ]
+        },
+        {
+          "id": "m3-u07-t05-04",
+          "level": "H",
+          "stem_src": "A = 30° 이고 높이가 4 인 직각삼각형의 둘레가 a + b√3 일 때 a + b 는?",
+          "stem_print": "∠A = 30°, ∠C = 90° 이고 높이 BC = 4 인 직각삼각형 ABC 의 둘레가 a + b√3 일 때, a + b 의 값을 구하시오.",
+          "answer_atoms": [
+            "16"
+          ],
+          "answer_print": "16",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "정수로",
+          "figure": null,
+          "hint": "빗변은 sin 30°, 밑변은 tan 30° 로 구해요.",
+          "solution": "빗변 8, 밑변 4√3 이므로 둘레는 4 + 8 + 4√3 = 12 + 4√3, a + b = 16 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "trig.side-from-ratio"
+          ]
         }
       ]
     },
@@ -298,7 +486,9 @@
           "level": "L",
           "stem_src": "sin 90° 의 값은?",
           "stem_print": "sin 90° 의 값을 구하시오.",
-          "answer_atoms": ["1"],
+          "answer_atoms": [
+            "1"
+          ],
           "answer_print": "1",
           "answer_accept": [],
           "answer_unit": null,
@@ -307,14 +497,18 @@
           "hint": "사분원에서 90°인 점은 세로축 위 — 세로 길이가 1이에요.",
           "solution": "sin 90° = 1 이에요.",
           "work_space": "sm",
-          "misconceptions": ["trig.zero-ninety"]
+          "misconceptions": [
+            "trig.zero-ninety"
+          ]
         },
         {
           "id": "m3-u07-t06-02",
           "level": "M",
           "stem_src": "cos 0° + tan 0° 의 값은?",
           "stem_print": "cos 0° + tan 0° 의 값을 구하시오.",
-          "answer_atoms": ["1"],
+          "answer_atoms": [
+            "1"
+          ],
           "answer_print": "1",
           "answer_accept": [],
           "answer_unit": null,
@@ -323,23 +517,53 @@
           "hint": "0° 인 점은 가로축 위 — 가로 1, 세로 0.",
           "solution": "cos 0° = 1, tan 0° = 0 이므로 합은 1 이에요.",
           "work_space": "sm",
-          "misconceptions": ["trig.zero-ninety"]
+          "misconceptions": [
+            "trig.zero-ninety"
+          ]
         },
         {
           "id": "m3-u07-t06-03",
           "level": "M",
           "stem_src": "0° < A < 90° 에서 A가 커질수록 값이 작아지는 것은?",
           "stem_print": "0° &lt; A &lt; 90° 에서 A 가 커질수록 값이 작아지는 삼각비를 sin A, cos A 중에서 고르시오.",
-          "answer_atoms": ["cos A"],
+          "answer_atoms": [
+            "cos A"
+          ],
           "answer_print": "cos A (가로 길이라 각이 커지면 짧아져요)",
-          "answer_accept": ["cos"],
+          "answer_accept": [
+            "cos"
+          ],
           "answer_unit": null,
           "answer_format": "sin A 또는 cos A 로",
           "figure": null,
           "hint": "사분원에서 점이 위로 올라갈수록 가로와 세로 중 무엇이 짧아지나요?",
           "solution": "사분원에서 cos A 는 가로 길이라 각이 커지면 짧아져요. sin A 는 세로 길이라 길어져요.",
           "work_space": "sm",
-          "misconceptions": ["trig.monotonic"]
+          "misconceptions": [
+            "trig.monotonic"
+          ]
+        },
+        {
+          "id": "m3-u07-t06-04",
+          "level": "H",
+          "stem_src": "sin 90° × cos 0° − tan 0° + sin 30° 의 값은?",
+          "stem_print": "sin 90° × cos 0° − tan 0° + sin 30° 의 값을 구하시오.",
+          "answer_atoms": [
+            "3/2"
+          ],
+          "answer_print": "3/2",
+          "answer_accept": [
+            "1.5"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로",
+          "figure": null,
+          "hint": "sin 90° = cos 0° = 1, tan 0° = 0.",
+          "solution": "1 × 1 − 0 + 1/2 = 3/2 예요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "trig.zero-ninety"
+          ]
         }
       ]
     },
@@ -353,7 +577,9 @@
           "level": "L",
           "stem_src": "표에서 sin 37° 의 값은?",
           "stem_print": "삼각비의 표를 이용하여 sin 37° 의 값을 구하시오. (표: 35° 0.5736/0.8192/0.7002, 36° 0.5878/0.8090/0.7265, 37° 0.6018/0.7986/0.7536, 38° 0.6157/0.7880/0.7813 — 각 행은 sin/cos/tan 순서)",
-          "answer_atoms": ["0.6018"],
+          "answer_atoms": [
+            "0.6018"
+          ],
           "answer_print": "0.6018",
           "answer_accept": [],
           "answer_unit": null,
@@ -362,14 +588,18 @@
           "hint": "37° 행의 첫 번째(sin) 값이에요.",
           "solution": "37° 행, sin 열 → 0.6018 이에요.",
           "work_space": "sm",
-          "misconceptions": ["trig.table-misread"]
+          "misconceptions": [
+            "trig.table-misread"
+          ]
         },
         {
           "id": "m3-u07-t07-02",
           "level": "M",
           "stem_src": "cos A = 0.8090 일 때 A 는 몇 도인가요?",
           "stem_print": "삼각비의 표에서 cos A = 0.8090 인 각 A 를 구하시오. (표: 35° 0.5736/0.8192/0.7002, 36° 0.5878/0.8090/0.7265, 37° 0.6018/0.7986/0.7536, 38° 0.6157/0.7880/0.7813 — sin/cos/tan 순서)",
-          "answer_atoms": ["36"],
+          "answer_atoms": [
+            "36"
+          ],
           "answer_print": "36",
           "answer_accept": [],
           "answer_unit": "°",
@@ -378,14 +608,18 @@
           "hint": "cos 열에서 0.8090 을 찾아 그 행의 각을 읽어요.",
           "solution": "cos 열의 0.8090 은 36° 행에 있으므로 A = 36° 예요.",
           "work_space": "sm",
-          "misconceptions": ["trig.table-misread"]
+          "misconceptions": [
+            "trig.table-misread"
+          ]
         },
         {
           "id": "m3-u07-t07-03",
           "level": "M",
           "stem_src": "빗변이 100 이고 A = 35° 인 직각삼각형의 높이는? (표를 써서 소수 둘째 자리까지)",
           "stem_print": "빗변의 길이가 100 이고 ∠A = 35° 인 직각삼각형의 높이를 삼각비의 표를 이용하여 소수 둘째 자리까지 구하시오. (sin 35° = 0.5736)",
-          "answer_atoms": ["57.36"],
+          "answer_atoms": [
+            "57.36"
+          ],
           "answer_print": "57.36",
           "answer_accept": [],
           "answer_unit": null,
@@ -394,7 +628,31 @@
           "hint": "높이 = 빗변 × sin 35°.",
           "solution": "높이 = 100 × 0.5736 = 57.36 이에요.",
           "work_space": "md",
-          "misconceptions": ["trig.table-misread", "trig.side-from-ratio"]
+          "misconceptions": [
+            "trig.table-misread",
+            "trig.side-from-ratio"
+          ]
+        },
+        {
+          "id": "m3-u07-t07-04",
+          "level": "H",
+          "stem_src": "sin 37° = 0.6018, cos 37° = 0.7986 일 때, 빗변이 50 이고 A = 37° 인 직각삼각형의 둘레는? (각 변을 소수 둘째 자리까지 구해 더해요)",
+          "stem_print": "sin 37° = 0.6018, cos 37° = 0.7986 일 때, 빗변의 길이가 50 이고 ∠A = 37° 인 직각삼각형의 둘레의 길이를 구하시오. (각 변의 길이를 소수 둘째 자리까지 구한 뒤 더한다.)",
+          "answer_atoms": [
+            "120.02"
+          ],
+          "answer_print": "120.02",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "소수 둘째 자리까지 수로",
+          "figure": null,
+          "hint": "높이 = 빗변 × sin A, 밑변 = 빗변 × cos A.",
+          "solution": "높이 30.09, 밑변 39.93 이므로 둘레는 50 + 30.09 + 39.93 = 120.02 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "trig.table-misread",
+            "trig.side-from-ratio"
+          ]
         }
       ]
     }

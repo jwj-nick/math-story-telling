@@ -9,7 +9,8 @@
     "extractor": "70_tools/print/extract_math2_p.py",
     "generation_note": "answer_atoms 는 원본 script 의 P(...)/pick 버튼 값 그대로. 2지선다는 지면에서 '고르시오'. 상자 그림·산점도는 다섯 수·순서쌍을 글로 제시(그림 없음). 유형당 난이도 L/M/M.",
     "review": "draft",
-    "notation": "html-sup"
+    "notation": "html-sup",
+    "h_added": "2026-08-30"
   },
   "types": [
     {
@@ -22,7 +23,9 @@
           "level": "L",
           "stem_src": "자료 2, 4, 5, 7, 8, 10, 12 의 제1사분위수 Q1 은?",
           "stem_print": "자료 2, 4, 5, 7, 8, 10, 12 의 제1사분위수 Q1 을 구하시오.",
-          "answer_atoms": ["4"],
+          "answer_atoms": [
+            "4"
+          ],
           "answer_print": "4",
           "answer_accept": [],
           "answer_unit": null,
@@ -31,14 +34,18 @@
           "hint": "중앙값 7 을 빼고 아래 {2, 4, 5}의 중앙값.",
           "solution": "Q2 = 7, 아래 절반 2, 4, 5 의 중앙값은 4 이므로 Q1 = 4 예요.",
           "work_space": "sm",
-          "misconceptions": ["box.q-with-median"]
+          "misconceptions": [
+            "box.q-with-median"
+          ]
         },
         {
           "id": "m3-u12-t01-02",
           "level": "M",
           "stem_src": "자료 3, 5, 6, 6, 9, 12, 14 의 제3사분위수 Q3 은?",
           "stem_print": "자료 3, 5, 6, 6, 9, 12, 14 의 제3사분위수 Q3 을 구하시오.",
-          "answer_atoms": ["12"],
+          "answer_atoms": [
+            "12"
+          ],
           "answer_print": "12",
           "answer_accept": [],
           "answer_unit": null,
@@ -47,14 +54,19 @@
           "hint": "중앙값 6 을 빼고 위 {9, 12, 14}의 중앙값.",
           "solution": "Q2 = 6(네 번째), 위 절반 9, 12, 14 의 중앙값은 12 이므로 Q3 = 12 예요.",
           "work_space": "sm",
-          "misconceptions": ["box.q-with-median", "box.unsorted"]
+          "misconceptions": [
+            "box.q-with-median",
+            "box.unsorted"
+          ]
         },
         {
           "id": "m3-u12-t01-03",
           "level": "M",
           "stem_src": "자료 4, 5, 7, 8, 10, 12, 13, 16, 20 의 제1사분위수 Q1 은?",
           "stem_print": "자료 4, 5, 7, 8, 10, 12, 13, 16, 20 의 제1사분위수 Q1 을 구하시오.",
-          "answer_atoms": ["6"],
+          "answer_atoms": [
+            "6"
+          ],
           "answer_print": "6",
           "answer_accept": [],
           "answer_unit": null,
@@ -63,7 +75,31 @@
           "hint": "9개 → 중앙값 10 을 빼면 아래 절반은 4개 — 가운데 두 수의 평균.",
           "solution": "Q2 = 10, 아래 절반 4, 5, 7, 8 의 중앙값은 (5 + 7) ÷ 2 = 6 이므로 Q1 = 6 이에요.",
           "work_space": "md",
-          "misconceptions": ["box.q-with-median", "box.even-split"]
+          "misconceptions": [
+            "box.q-with-median",
+            "box.even-split"
+          ]
+        },
+        {
+          "id": "m3-u12-t01-04",
+          "level": "H",
+          "stem_src": "자료 3, 8, 12, 15, 20, 24, 30 의 사분위 범위는?",
+          "stem_print": "자료 3, 8, 12, 15, 20, 24, 30 의 사분위 범위를 구하시오.",
+          "answer_atoms": [
+            "16"
+          ],
+          "answer_print": "16",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로",
+          "figure": null,
+          "hint": "Q1, Q3 를 먼저 구하고 뺄셈.",
+          "solution": "Q1 = 8, Q3 = 24 이므로 사분위 범위는 16 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "box.q-with-median",
+            "box.iqr-vs-range"
+          ]
         }
       ]
     },
@@ -77,7 +113,9 @@
           "level": "L",
           "stem_src": "자료 1, 3, 4, 6, 8, 9, 11, 15 의 제3사분위수 Q3 은?",
           "stem_print": "자료 1, 3, 4, 6, 8, 9, 11, 15 의 제3사분위수 Q3 을 구하시오.",
-          "answer_atoms": ["10"],
+          "answer_atoms": [
+            "10"
+          ],
           "answer_print": "10",
           "answer_accept": [],
           "answer_unit": null,
@@ -86,14 +124,18 @@
           "hint": "위 절반 {8, 9, 11, 15}의 중앙값.",
           "solution": "위 절반 8, 9, 11, 15 의 중앙값은 (9 + 11) ÷ 2 = 10 이므로 Q3 = 10 이에요.",
           "work_space": "sm",
-          "misconceptions": ["box.even-split"]
+          "misconceptions": [
+            "box.even-split"
+          ]
         },
         {
           "id": "m3-u12-t02-02",
           "level": "M",
           "stem_src": "자료 10, 12, 16, 17, 20, 22, 25, 30 의 제1사분위수 Q1 은?",
           "stem_print": "자료 10, 12, 16, 17, 20, 22, 25, 30 의 제1사분위수 Q1 을 구하시오.",
-          "answer_atoms": ["14"],
+          "answer_atoms": [
+            "14"
+          ],
           "answer_print": "14",
           "answer_accept": [],
           "answer_unit": null,
@@ -102,23 +144,53 @@
           "hint": "아래 절반 {10, 12, 16, 17}의 중앙값.",
           "solution": "아래 절반 10, 12, 16, 17 의 중앙값은 (12 + 16) ÷ 2 = 14 이므로 Q1 = 14 예요.",
           "work_space": "sm",
-          "misconceptions": ["box.even-split", "box.unsorted"]
+          "misconceptions": [
+            "box.even-split",
+            "box.unsorted"
+          ]
         },
         {
           "id": "m3-u12-t02-03",
           "level": "M",
           "stem_src": "자료 1, 3, 4, 6, 8, 9, 11, 15 의 사분위 범위는?",
           "stem_print": "자료 1, 3, 4, 6, 8, 9, 11, 15 의 사분위 범위를 구하시오.",
-          "answer_atoms": ["6.5"],
+          "answer_atoms": [
+            "6.5"
+          ],
           "answer_print": "6.5",
-          "answer_accept": ["13/2"],
+          "answer_accept": [
+            "13/2"
+          ],
           "answer_unit": null,
           "answer_format": "소수로 (분수도 가능)",
           "figure": null,
           "hint": "Q1 과 Q3 를 먼저 구하고 뺄셈.",
           "solution": "Q1 = (3 + 4) ÷ 2 = 3.5, Q3 = (9 + 11) ÷ 2 = 10 이므로 사분위 범위는 10 − 3.5 = 6.5 예요.",
           "work_space": "md",
-          "misconceptions": ["box.iqr-vs-range", "box.even-split"]
+          "misconceptions": [
+            "box.iqr-vs-range",
+            "box.even-split"
+          ]
+        },
+        {
+          "id": "m3-u12-t02-04",
+          "level": "H",
+          "stem_src": "자료 1, 4, 5, 7, 9, 12 의 Q1 + Q3 는?",
+          "stem_print": "자료 1, 4, 5, 7, 9, 12 에 대하여 Q1 + Q3 의 값을 구하시오.",
+          "answer_atoms": [
+            "13"
+          ],
+          "answer_print": "13",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로",
+          "figure": null,
+          "hint": "짝수 개 → 반으로 가르고 각 절반의 중앙값.",
+          "solution": "Q1 = 4, Q3 = 9 이므로 합은 13 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "box.even-split"
+          ]
         }
       ]
     },
@@ -132,7 +204,9 @@
           "level": "L",
           "stem_src": "이 자료의 사분위 범위는?",
           "stem_print": "어떤 반의 상자 그림이 최솟값 5, 제1사분위수 10, 중앙값 14, 제3사분위수 20, 최댓값 26 으로 그려졌다. 이 자료의 사분위 범위를 구하시오.",
-          "answer_atoms": ["10"],
+          "answer_atoms": [
+            "10"
+          ],
           "answer_print": "10",
           "answer_accept": [],
           "answer_unit": null,
@@ -141,14 +215,18 @@
           "hint": "Q3 − Q1.",
           "solution": "20 − 10 = 10 이에요.",
           "work_space": "sm",
-          "misconceptions": ["box.iqr-vs-range"]
+          "misconceptions": [
+            "box.iqr-vs-range"
+          ]
         },
         {
           "id": "m3-u12-t03-02",
           "level": "M",
           "stem_src": "이 자료의 범위(최댓값 − 최솟값)는?",
           "stem_print": "상자 그림이 최솟값 5, 제1사분위수 10, 중앙값 14, 제3사분위수 20, 최댓값 26 인 자료의 범위(최댓값 − 최솟값)를 구하시오.",
-          "answer_atoms": ["21"],
+          "answer_atoms": [
+            "21"
+          ],
           "answer_print": "21",
           "answer_accept": [],
           "answer_unit": null,
@@ -157,23 +235,53 @@
           "hint": "수염의 양 끝.",
           "solution": "26 − 5 = 21 이에요.",
           "work_space": "sm",
-          "misconceptions": ["box.iqr-vs-range"]
+          "misconceptions": [
+            "box.iqr-vs-range"
+          ]
         },
         {
           "id": "m3-u12-t03-03",
           "level": "M",
           "stem_src": "이 자료 중 20 이상인 것은 전체의 약 몇 % 인가요?",
           "stem_print": "상자 그림이 최솟값 5, 제1사분위수 10, 중앙값 14, 제3사분위수 20, 최댓값 26 인 자료에서 20 이상인 자료는 전체의 약 몇 % 인지 구하시오.",
-          "answer_atoms": ["25"],
+          "answer_atoms": [
+            "25"
+          ],
           "answer_print": "25 (%)",
-          "answer_accept": ["25%"],
+          "answer_accept": [
+            "25%"
+          ],
           "answer_unit": null,
           "answer_format": "% 를 뺀 수로",
           "figure": null,
           "hint": "20 은 Q3 예요. Q3 이상은 위쪽 수염.",
           "solution": "20 = Q3 이므로 그 이상은 위쪽 수염 부분, 전체의 약 25% 예요.",
           "work_space": "md",
-          "misconceptions": ["box.percent", "box.whisker-count"]
+          "misconceptions": [
+            "box.percent",
+            "box.whisker-count"
+          ]
+        },
+        {
+          "id": "m3-u12-t03-04",
+          "level": "H",
+          "stem_src": "상자 그림의 다섯 수가 5, 10, 14, 20, 26 인 자료가 40개일 때, 10 이상 20 이하인 자료는 약 몇 개인가요?",
+          "stem_print": "어떤 자료 40 개의 상자 그림이 최솟값 5, Q1 10, 중앙값 14, Q3 20, 최댓값 26 으로 그려졌다. 10 이상 20 이하인 자료는 약 몇 개인지 구하시오.",
+          "answer_atoms": [
+            "20"
+          ],
+          "answer_print": "20",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "개수를 자연수로",
+          "figure": null,
+          "hint": "10 과 20 은 Q1 과 Q3 — 상자 안이에요.",
+          "solution": "상자(Q1 ~ Q3)에는 전체의 약 절반이 들어 있으므로 약 20 개예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "box.percent",
+            "box.whisker-count"
+          ]
         }
       ]
     },
@@ -187,39 +295,53 @@
           "level": "L",
           "stem_src": "두 반의 중앙값은 같은가요?",
           "stem_print": "A반의 상자 그림은 최솟값 2, Q1 6, 중앙값 9, Q3 13, 최댓값 18 이고 B반은 최솟값 4, Q1 8, 중앙값 9, Q3 10, 최댓값 17 이다. 두 반의 중앙값이 같은지 '같다', '다르다' 중에서 고르시오.",
-          "answer_atoms": ["같다"],
+          "answer_atoms": [
+            "같다"
+          ],
           "answer_print": "같다 (둘 다 9)",
-          "answer_accept": ["같음"],
+          "answer_accept": [
+            "같음"
+          ],
           "answer_unit": null,
           "answer_format": "같다 또는 다르다 (단위 없음)",
           "figure": null,
           "hint": "상자 안의 선이 중앙값이에요.",
           "solution": "두 반 모두 중앙값이 9 로 같아요.",
           "work_space": "sm",
-          "misconceptions": ["box.line-is-mean"]
+          "misconceptions": [
+            "box.line-is-mean"
+          ]
         },
         {
           "id": "m3-u12-t04-02",
           "level": "M",
           "stem_src": "사분위 범위가 더 작은(가운데 절반이 더 촘촘한) 반은?",
           "stem_print": "A반의 상자 그림은 최솟값 2, Q1 6, 중앙값 9, Q3 13, 최댓값 18 이고 B반은 최솟값 4, Q1 8, 중앙값 9, Q3 10, 최댓값 17 이다. 사분위 범위가 더 작은 반을 A반, B반 중에서 고르시오.",
-          "answer_atoms": ["B반"],
+          "answer_atoms": [
+            "B반"
+          ],
           "answer_print": "B반 (사분위 범위 2 < 7)",
-          "answer_accept": ["B"],
+          "answer_accept": [
+            "B"
+          ],
           "answer_unit": null,
           "answer_format": "A반 또는 B반 (단위 없음)",
           "figure": null,
           "hint": "각 반의 Q3 − Q1 을 구해요.",
           "solution": "A반 13 − 6 = 7, B반 10 − 8 = 2 이므로 B반이 더 작아요.",
           "work_space": "sm",
-          "misconceptions": ["box.iqr-vs-range"]
+          "misconceptions": [
+            "box.iqr-vs-range"
+          ]
         },
         {
           "id": "m3-u12-t04-03",
           "level": "M",
           "stem_src": "범위(최댓값 − 최솟값)가 더 큰 반의 범위는?",
           "stem_print": "A반의 상자 그림은 최솟값 2, Q1 6, 중앙값 9, Q3 13, 최댓값 18 이고 B반은 최솟값 4, Q1 8, 중앙값 9, Q3 10, 최댓값 17 이다. 범위(최댓값 − 최솟값)가 더 큰 반의 범위를 구하시오.",
-          "answer_atoms": ["16"],
+          "answer_atoms": [
+            "16"
+          ],
           "answer_print": "16 (A반)",
           "answer_accept": [],
           "answer_unit": null,
@@ -228,7 +350,30 @@
           "hint": "각 반의 최댓값 − 최솟값.",
           "solution": "A반 18 − 2 = 16, B반 17 − 4 = 13 이므로 더 큰 쪽은 A반의 16 이에요.",
           "work_space": "md",
-          "misconceptions": ["box.iqr-vs-range", "box.whisker-count"]
+          "misconceptions": [
+            "box.iqr-vs-range",
+            "box.whisker-count"
+          ]
+        },
+        {
+          "id": "m3-u12-t04-04",
+          "level": "H",
+          "stem_src": "A반(2, 6, 9, 13, 18) 과 B반(4, 8, 9, 10, 17) 의 다섯 수에서, 두 반의 범위의 차와 사분위 범위의 차의 합은?",
+          "stem_print": "A반의 상자 그림은 최솟값 2, Q1 6, 중앙값 9, Q3 13, 최댓값 18 이고 B반은 최솟값 4, Q1 8, 중앙값 9, Q3 10, 최댓값 17 이다. 두 반의 범위의 차와 사분위 범위의 차의 합을 구하시오.",
+          "answer_atoms": [
+            "8"
+          ],
+          "answer_print": "8",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로",
+          "figure": null,
+          "hint": "범위 = 최대 − 최소, 사분위 범위 = Q3 − Q1 을 반마다 구해요.",
+          "solution": "범위의 차 16 − 13 = 3, 사분위 범위의 차 7 − 2 = 5 이므로 합은 8 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "box.iqr-vs-range"
+          ]
         }
       ]
     },
@@ -242,48 +387,91 @@
           "level": "L",
           "stem_src": "점수가 80점 이상인 학생은 몇 명인가요?",
           "stem_print": "8명의 (공부 시간, 점수)가 (1, 60), (2, 65), (2, 75), (3, 70), (3, 85), (4, 80), (5, 90), (5, 95) 인 산점도에서 점수가 80점 이상인 학생 수를 구하시오.",
-          "answer_atoms": ["4"],
+          "answer_atoms": [
+            "4"
+          ],
           "answer_print": "4 (명)",
-          "answer_accept": ["4명"],
+          "answer_accept": [
+            "4명"
+          ],
           "answer_unit": null,
           "answer_format": "명 수를 수로",
           "figure": null,
           "hint": "둘째 값이 80 이상인 순서쌍을 세요 — 80 도 포함.",
           "solution": "(3, 85), (4, 80), (5, 90), (5, 95) 의 4 명이에요.",
           "work_space": "sm",
-          "misconceptions": ["scat.boundary", "scat.axis-swap"]
+          "misconceptions": [
+            "scat.boundary",
+            "scat.axis-swap"
+          ]
         },
         {
           "id": "m3-u12-t05-02",
           "level": "M",
           "stem_src": "공부 시간이 3시간 미만인 학생은 전체의 몇 % 인가요?",
           "stem_print": "8명의 (공부 시간, 점수)가 (1, 60), (2, 65), (2, 75), (3, 70), (3, 85), (4, 80), (5, 90), (5, 95) 인 산점도에서 공부 시간이 3시간 미만인 학생은 전체의 몇 % 인지 구하시오.",
-          "answer_atoms": ["37.5"],
+          "answer_atoms": [
+            "37.5"
+          ],
           "answer_print": "37.5 (%)",
-          "answer_accept": ["37.5%"],
+          "answer_accept": [
+            "37.5%"
+          ],
           "answer_unit": null,
           "answer_format": "% 의 수만 (소수로)",
           "figure": null,
           "hint": "3시간 미만은 1, 2, 2 → 3명. 8명 중 3명.",
           "solution": "3시간 미만은 (1, 60), (2, 65), (2, 75) 의 3 명이므로 3 ÷ 8 × 100 = 37.5% 예요.",
           "work_space": "sm",
-          "misconceptions": ["scat.percent", "scat.boundary"]
+          "misconceptions": [
+            "scat.percent",
+            "scat.boundary"
+          ]
         },
         {
           "id": "m3-u12-t05-03",
           "level": "M",
           "stem_src": "공부 시간이 3시간인 학생들의 점수의 평균은?",
           "stem_print": "8명의 (공부 시간, 점수)가 (1, 60), (2, 65), (2, 75), (3, 70), (3, 85), (4, 80), (5, 90), (5, 95) 인 산점도에서 공부 시간이 3시간인 학생들의 점수의 평균을 구하시오.",
-          "answer_atoms": ["77.5"],
+          "answer_atoms": [
+            "77.5"
+          ],
           "answer_print": "77.5 (점)",
-          "answer_accept": ["77.5점"],
+          "answer_accept": [
+            "77.5점"
+          ],
           "answer_unit": null,
           "answer_format": "점수를 수로 (소수)",
           "figure": null,
           "hint": "첫째 값이 3 인 순서쌍 두 개.",
           "solution": "(3, 70), (3, 85) 두 명이므로 (70 + 85) ÷ 2 = 77.5 점이에요.",
           "work_space": "md",
-          "misconceptions": ["scat.axis-swap"]
+          "misconceptions": [
+            "scat.axis-swap"
+          ]
+        },
+        {
+          "id": "m3-u12-t05-04",
+          "level": "H",
+          "stem_src": "8명의 (공부 시간, 점수) 자료에서 점수가 공부 시간의 20배 이상인 학생은 몇 명인가요?",
+          "stem_print": "8명의 (공부 시간, 점수)가 (1, 60), (2, 65), (2, 75), (3, 70), (3, 85), (4, 80), (5, 90), (5, 95) 인 산점도에서 점수가 공부 시간의 20 배 이상인 학생 수를 구하시오.",
+          "answer_atoms": [
+            "6"
+          ],
+          "answer_print": "6",
+          "answer_accept": [
+            "6명"
+          ],
+          "answer_unit": null,
+          "answer_format": "명 수를 수로",
+          "figure": null,
+          "hint": "각 점에서 20 × (공부 시간) 과 점수를 비교해요. 같으면 포함.",
+          "solution": "조건을 만족하지 않는 것은 (5, 90), (5, 95) 두 명뿐이므로 6 명이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "scat.boundary",
+            "scat.axis-swap"
+          ]
         }
       ]
     },
@@ -297,48 +485,86 @@
           "level": "L",
           "stem_src": "키와 몸무게 사이의 상관관계는?",
           "stem_print": "키와 몸무게 사이의 상관관계를 '양의 상관관계', '음의 상관관계' 중에서 고르시오.",
-          "answer_atoms": ["양의 상관관계"],
+          "answer_atoms": [
+            "양의 상관관계"
+          ],
           "answer_print": "양의 상관관계",
-          "answer_accept": ["양"],
+          "answer_accept": [
+            "양"
+          ],
           "answer_unit": null,
           "answer_format": "둘 중 하나를 골라 그대로 쓰기 (단위 없음)",
           "figure": null,
           "hint": "키가 클수록 몸무게는?",
           "solution": "키가 클수록 몸무게도 무거운 경향이 있으므로 양의 상관관계예요.",
           "work_space": "sm",
-          "misconceptions": ["corr.direction"]
+          "misconceptions": [
+            "corr.direction"
+          ]
         },
         {
           "id": "m3-u12-t06-02",
           "level": "M",
           "stem_src": "겨울철 기온과 난방비 사이의 상관관계는?",
           "stem_print": "겨울철 기온과 난방비 사이의 상관관계를 '음의 상관관계', '상관관계 없음' 중에서 고르시오.",
-          "answer_atoms": ["음의 상관관계"],
+          "answer_atoms": [
+            "음의 상관관계"
+          ],
           "answer_print": "음의 상관관계",
-          "answer_accept": ["음"],
+          "answer_accept": [
+            "음"
+          ],
           "answer_unit": null,
           "answer_format": "둘 중 하나를 골라 그대로 쓰기 (단위 없음)",
           "figure": null,
           "hint": "기온이 오르면 난방비는?",
           "solution": "기온이 오를수록 난방비는 줄어드는 경향이므로 음의 상관관계예요.",
           "work_space": "sm",
-          "misconceptions": ["corr.direction"]
+          "misconceptions": [
+            "corr.direction"
+          ]
         },
         {
           "id": "m3-u12-t06-03",
           "level": "M",
           "stem_src": "신발 크기와 수학 점수 사이의 상관관계는?",
           "stem_print": "신발 크기와 수학 점수 사이의 상관관계를 '양의 상관관계', '상관관계 없음' 중에서 고르시오.",
-          "answer_atoms": ["상관관계 없음"],
+          "answer_atoms": [
+            "상관관계 없음"
+          ],
           "answer_print": "상관관계 없음",
-          "answer_accept": ["없음"],
+          "answer_accept": [
+            "없음"
+          ],
           "answer_unit": null,
           "answer_format": "둘 중 하나를 골라 그대로 쓰기 (단위 없음)",
           "figure": null,
           "hint": "발이 크다고 점수가 높거나 낮을 이유가 있나요?",
           "solution": "두 변량 사이에 아무 경향이 없으므로 상관관계가 없어요.",
           "work_space": "sm",
-          "misconceptions": ["corr.strength"]
+          "misconceptions": [
+            "corr.strength"
+          ]
+        },
+        {
+          "id": "m3-u12-t06-04",
+          "level": "H",
+          "stem_src": "다음 중 양의 상관관계가 있는 것의 개수는? ① 키와 몸무게 ② 겨울철 기온과 난방비 ③ 신발 크기와 수학 점수 ④ 공부 시간과 성적 ⑤ 자동차의 속력과 목적지까지 걸리는 시간",
+          "stem_print": "다음 중 양의 상관관계가 있는 것의 개수를 구하시오. ① 키와 몸무게 ② 겨울철 기온과 난방비 ③ 신발 크기와 수학 점수 ④ 공부 시간과 성적 ⑤ 자동차의 속력과 목적지까지 걸리는 시간",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "개수를 자연수로",
+          "figure": null,
+          "hint": "한쪽이 커질 때 다른 쪽도 커지는 것만 세요.",
+          "solution": "양의 상관관계는 ① 과 ④ 이므로 2 개예요. ②, ⑤ 는 음의 상관관계, ③ 은 상관관계가 없어요.",
+          "work_space": "md",
+          "misconceptions": [
+            "corr.direction"
+          ]
         }
       ]
     },
@@ -352,48 +578,89 @@
           "level": "L",
           "stem_src": "산점도의 점들이 오른쪽 위로 향하는 한 직선 가까이에 모여 있어요. 이 상관관계는?",
           "stem_print": "산점도의 점들이 오른쪽 위로 향하는 한 직선 가까이에 모여 있을 때, 이 두 변량의 상관관계를 '양의 상관관계', '음의 상관관계' 중에서 고르시오.",
-          "answer_atoms": ["양의 상관관계"],
+          "answer_atoms": [
+            "양의 상관관계"
+          ],
           "answer_print": "양의 상관관계 (강한)",
-          "answer_accept": ["양"],
+          "answer_accept": [
+            "양"
+          ],
           "answer_unit": null,
           "answer_format": "둘 중 하나를 골라 그대로 쓰기 (단위 없음)",
           "figure": null,
           "hint": "오른쪽 위로 = x 가 커질 때 y 도 커져요.",
           "solution": "오른쪽 위로 향하므로 양의 상관관계이고, 직선 가까이 모였으니 강한 상관관계예요.",
           "work_space": "sm",
-          "misconceptions": ["corr.direction"]
+          "misconceptions": [
+            "corr.direction"
+          ]
         },
         {
           "id": "m3-u12-t07-02",
           "level": "M",
           "stem_src": "두 산점도 중 점들이 직선에 더 가까이 모인 쪽의 상관관계는 더?",
           "stem_print": "두 산점도 중 점들이 한 직선에 더 가까이 모여 있는 쪽의 상관관계가 더 강한지 약한지 '강하다', '약하다' 중에서 고르시오.",
-          "answer_atoms": ["강하다"],
+          "answer_atoms": [
+            "강하다"
+          ],
           "answer_print": "강하다",
-          "answer_accept": ["강함"],
+          "answer_accept": [
+            "강함"
+          ],
           "answer_unit": null,
           "answer_format": "둘 중 하나를 골라 그대로 쓰기 (단위 없음)",
           "figure": null,
           "hint": "세기는 직선에 모인 정도예요.",
           "solution": "직선에 가까이 모일수록 강한 상관관계예요. 기울기와는 상관없어요.",
           "work_space": "sm",
-          "misconceptions": ["corr.strength"]
+          "misconceptions": [
+            "corr.strength"
+          ]
         },
         {
           "id": "m3-u12-t07-03",
           "level": "M",
           "stem_src": "유형 5의 자료에서 공부 시간이 4시간 이상이면서 점수가 90점 이상인 학생은 몇 명인가요?",
           "stem_print": "8명의 (공부 시간, 점수)가 (1, 60), (2, 65), (2, 75), (3, 70), (3, 85), (4, 80), (5, 90), (5, 95) 인 산점도에서 공부 시간이 4시간 이상이면서 점수가 90점 이상인 학생 수를 구하시오.",
-          "answer_atoms": ["2"],
+          "answer_atoms": [
+            "2"
+          ],
           "answer_print": "2 (명)",
-          "answer_accept": ["2명"],
+          "answer_accept": [
+            "2명"
+          ],
           "answer_unit": null,
           "answer_format": "명 수를 수로",
           "figure": null,
           "hint": "두 조건을 모두 만족하는 순서쌍만 세요.",
           "solution": "4시간 이상은 (4, 80), (5, 90), (5, 95) 이고 그중 90점 이상은 (5, 90), (5, 95) 의 2 명이에요.",
           "work_space": "md",
-          "misconceptions": ["scat.boundary"]
+          "misconceptions": [
+            "scat.boundary"
+          ]
+        },
+        {
+          "id": "m3-u12-t07-04",
+          "level": "H",
+          "stem_src": "8명의 (공부 시간, 점수) 자료에서 점수가 8명의 평균 점수 이상인 학생은 몇 명인가요?",
+          "stem_print": "8명의 (공부 시간, 점수)가 (1, 60), (2, 65), (2, 75), (3, 70), (3, 85), (4, 80), (5, 90), (5, 95) 인 산점도에서 점수가 8 명의 평균 점수 이상인 학생 수를 구하시오.",
+          "answer_atoms": [
+            "4"
+          ],
+          "answer_print": "4",
+          "answer_accept": [
+            "4명"
+          ],
+          "answer_unit": null,
+          "answer_format": "명 수를 수로",
+          "figure": null,
+          "hint": "평균부터 구해요: 합 620.",
+          "solution": "평균은 77.5 점이고 그 이상은 85, 80, 90, 95 의 4 명이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "scat.boundary",
+            "scat.percent"
+          ]
         }
       ]
     }

@@ -38,8 +38,13 @@ def main():
         q, k = pdfs.get('문제지'), pdfs.get('해답묶음')
         if not (q and k):
             raise SystemExit('pdfplan 에 문제지/해답묶음 이 없음: ' + sid)
-        tag = ('<span class="tag tag-mock">모의</span>' if cfg.get('kind') == 'mock'
-               else '<span class="tag tag-type">유형</span>')
+        quota = (cfg.get('pick') or {}).get('quota') or {}
+        if cfg.get('kind') == 'mock' and set(quota.keys()) == {'H'}:
+            tag = '<span class="tag tag-mock">심화</span>'
+        elif cfg.get('kind') == 'mock':
+            tag = '<span class="tag tag-mock">모의</span>'
+        else:
+            tag = '<span class="tag tag-type">유형</span>'
         rows.append('<div class="set">' + tag + '<span class="name">' + cfg['title'] + '</span>'
                     '<a class="btn btn-q" href="u' + nn + '/' + q + '" target="_blank">📄 문제지</a>'
                     '<a class="btn btn-k" href="u' + nn + '/' + k + '" target="_blank">📘 해답 묶음</a></div>')

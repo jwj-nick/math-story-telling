@@ -1,0 +1,31 @@
+{
+  "id": "m3-u12-d",
+  "kind": "mock",
+  "grade": "math3",
+  "unit": 12,
+  "unit_name": "상자 그림과 산점도",
+  "title": "상자그림과산점도 심화 모의고사",
+  "subtitle": "7유형 심화 통합 · 유형마다 도전 1문항 · 7문항",
+  "bank": "math3/u12/practice.json",
+  "misconceptions": "misconceptions/math3_u12.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "H": 1
+    }
+  },
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

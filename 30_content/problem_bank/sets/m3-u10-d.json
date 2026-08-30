@@ -1,0 +1,31 @@
+{
+  "id": "m3-u10-d",
+  "kind": "mock",
+  "grade": "math3",
+  "unit": 10,
+  "unit_name": "원주각",
+  "title": "원주각 심화 모의고사",
+  "subtitle": "7유형 심화 통합 · 유형마다 도전 1문항 · 7문항",
+  "bank": "math3/u10/practice.json",
+  "misconceptions": "misconceptions/math3_u10.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "H": 1
+    }
+  },
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

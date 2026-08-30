@@ -9,7 +9,8 @@
     "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "answer_atoms 는 원본 script 의 P(...) 값 그대로(앱은 작은 근·큰 근·근호 안 k 한 자리만 묻고, 지면은 해 전체를 답하게 재작성). 근이 둘이면 'x = a 또는 x = b'. 유형당 난이도 L/M/M."
+    "note": "answer_atoms 는 원본 script 의 P(...) 값 그대로(앱은 작은 근·큰 근·근호 안 k 한 자리만 묻고, 지면은 해 전체를 답하게 재작성). 근이 둘이면 'x = a 또는 x = b'. 유형당 난이도 L/M/M.",
+    "h_added": "2026-08-30"
   },
   "types": [
     {
@@ -22,48 +23,89 @@
           "level": "L",
           "stem_src": "x² − 5x + 6 = 0 의 두 근 중 작은 근은?",
           "stem_print": "이차방정식 x<sup>2</sup> − 5x + 6 = 0 을 푸시오.",
-          "answer_atoms": ["2"],
+          "answer_atoms": [
+            "2"
+          ],
           "answer_print": "x = 2 또는 x = 3",
-          "answer_accept": ["x = 3 또는 x = 2"],
+          "answer_accept": [
+            "x = 3 또는 x = 2"
+          ],
           "answer_unit": null,
           "answer_format": "x = ▢ 또는 x = ▢ 꼴로",
           "figure": null,
           "hint": "곱이 6, 합이 −5인 두 수로 인수분해해요.",
           "solution": "(x − 2)(x − 3) = 0 이므로 x − 2 = 0 또는 x − 3 = 0, 즉 x = 2 또는 x = 3 이에요.",
           "work_space": "sm",
-          "misconceptions": ["quad.sign-flip-roots"]
+          "misconceptions": [
+            "quad.sign-flip-roots"
+          ]
         },
         {
           "id": "m3-u04-t01-02",
           "level": "M",
           "stem_src": "x² + 3x − 10 = 0 의 두 근 중 큰 근은?",
           "stem_print": "이차방정식 x<sup>2</sup> + 3x − 10 = 0 을 푸시오.",
-          "answer_atoms": ["2"],
+          "answer_atoms": [
+            "2"
+          ],
           "answer_print": "x = −5 또는 x = 2",
-          "answer_accept": ["x = 2 또는 x = −5"],
+          "answer_accept": [
+            "x = 2 또는 x = −5"
+          ],
           "answer_unit": null,
           "answer_format": "x = ▢ 또는 x = ▢ 꼴로 (부호 포함)",
           "figure": null,
           "hint": "곱이 −10 이니 부호가 다른 두 수예요. 합이 3이 되는 짝을 찾아요.",
           "solution": "(x + 5)(x − 2) = 0 이므로 x = −5 또는 x = 2 예요.",
           "work_space": "sm",
-          "misconceptions": ["quad.sign-flip-roots"]
+          "misconceptions": [
+            "quad.sign-flip-roots"
+          ]
         },
         {
           "id": "m3-u04-t01-03",
           "level": "M",
           "stem_src": "2x² − 7x + 3 = 0 의 두 근 중 큰 근은?",
           "stem_print": "이차방정식 2x<sup>2</sup> − 7x + 3 = 0 을 푸시오.",
-          "answer_atoms": ["3"],
+          "answer_atoms": [
+            "3"
+          ],
           "answer_print": "x = <span class=\"frac\"><b>1</b><i>2</i></span> 또는 x = 3",
-          "answer_accept": ["x = 3 또는 x = 1/2"],
+          "answer_accept": [
+            "x = 3 또는 x = 1/2"
+          ],
           "answer_unit": null,
           "answer_format": "x = ▢ 또는 x = ▢ 꼴로 (분수는 기약분수로)",
           "figure": null,
           "hint": "(2x + ▢)(x + ▢) 꼴로 인수분해해요. 끝 항 3을 만드는 짝을 넣어 가운데가 −7x 인지 확인해요.",
           "solution": "(2x − 1)(x − 3) = 0 이므로 2x − 1 = 0 또는 x − 3 = 0, 즉 x = 1/2 또는 x = 3 이에요.",
           "work_space": "md",
-          "misconceptions": ["quad.sign-flip-roots", "quad.divide-by-x"]
+          "misconceptions": [
+            "quad.sign-flip-roots",
+            "quad.divide-by-x"
+          ]
+        },
+        {
+          "id": "m3-u04-t01-04",
+          "level": "H",
+          "stem_src": "(x − 2)(x + 3) = 6 의 두 근의 합은?",
+          "stem_print": "이차방정식 (x − 2)(x + 3) = 6 의 두 근의 합을 구하시오.",
+          "answer_atoms": [
+            "−1"
+          ],
+          "answer_print": "−1",
+          "answer_accept": [
+            "-1"
+          ],
+          "answer_unit": null,
+          "answer_format": "정수로 (부호 포함)",
+          "figure": null,
+          "hint": "우변이 0 이 아니면 인수분해 전에 전개해서 0 으로 만들어요.",
+          "solution": "x² + x − 6 = 6 → x² + x − 12 = 0 → (x + 4)(x − 3) = 0 이므로 두 근 −4, 3 의 합은 −1 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.sign-flip-roots"
+          ]
         }
       ]
     },
@@ -77,48 +119,92 @@
           "level": "L",
           "stem_src": "x² = 16 의 두 근 중 양수인 근은?",
           "stem_print": "이차방정식 x<sup>2</sup> = 16 을 푸시오.",
-          "answer_atoms": ["4"],
+          "answer_atoms": [
+            "4"
+          ],
           "answer_print": "x = ±4",
-          "answer_accept": ["x = 4 또는 x = −4"],
+          "answer_accept": [
+            "x = 4 또는 x = −4"
+          ],
           "answer_unit": null,
           "answer_format": "x = ±▢ 꼴로 (근 두 개 모두)",
           "figure": null,
           "hint": "제곱해서 16이 되는 수는 두 개예요.",
           "solution": "x 는 16의 제곱근이므로 x = ±√16 = ±4 예요.",
           "work_space": "sm",
-          "misconceptions": ["quad.missing-negative-root"]
+          "misconceptions": [
+            "quad.missing-negative-root"
+          ]
         },
         {
           "id": "m3-u04-t02-02",
           "level": "M",
           "stem_src": "(x − 3)² = 25 의 두 근 중 큰 근은?",
           "stem_print": "이차방정식 (x − 3)<sup>2</sup> = 25 를 푸시오.",
-          "answer_atoms": ["8"],
+          "answer_atoms": [
+            "8"
+          ],
           "answer_print": "x = −2 또는 x = 8",
-          "answer_accept": ["x = 8 또는 x = −2", "x = 3 ± 5"],
+          "answer_accept": [
+            "x = 8 또는 x = −2",
+            "x = 3 ± 5"
+          ],
           "answer_unit": null,
           "answer_format": "x = ▢ 또는 x = ▢ 꼴로",
           "figure": null,
           "hint": "x − 3 이 25의 제곱근이에요: x − 3 = ±5.",
           "solution": "x − 3 = ±5 이므로 x = 3 + 5 = 8 또는 x = 3 − 5 = −2 예요.",
           "work_space": "sm",
-          "misconceptions": ["quad.sqrt-forgot", "quad.missing-negative-root"]
+          "misconceptions": [
+            "quad.sqrt-forgot",
+            "quad.missing-negative-root"
+          ]
         },
         {
           "id": "m3-u04-t02-03",
           "level": "M",
           "stem_src": "3(x + 1)² = 12 의 두 근 중 작은 근은?",
           "stem_print": "이차방정식 3(x + 1)<sup>2</sup> = 12 를 푸시오.",
-          "answer_atoms": ["-3"],
+          "answer_atoms": [
+            "-3"
+          ],
           "answer_print": "x = −3 또는 x = 1",
-          "answer_accept": ["x = 1 또는 x = −3", "x = −1 ± 2"],
+          "answer_accept": [
+            "x = 1 또는 x = −3",
+            "x = −1 ± 2"
+          ],
           "answer_unit": null,
           "answer_format": "x = ▢ 또는 x = ▢ 꼴로 (부호 포함)",
           "figure": null,
           "hint": "먼저 양변을 3으로 나눠 (x + 1)<sup>2</sup> = 4 로 만들어요.",
           "solution": "(x + 1)<sup>2</sup> = 4 이므로 x + 1 = ±2, 즉 x = 1 또는 x = −3 이에요.",
           "work_space": "md",
-          "misconceptions": ["quad.sqrt-forgot"]
+          "misconceptions": [
+            "quad.sqrt-forgot"
+          ]
+        },
+        {
+          "id": "m3-u04-t02-04",
+          "level": "H",
+          "stem_src": "2(x + 1)² − 18 = 0 의 두 근의 곱은?",
+          "stem_print": "이차방정식 2(x + 1)<sup>2</sup> − 18 = 0 의 두 근의 곱을 구하시오.",
+          "answer_atoms": [
+            "−8"
+          ],
+          "answer_print": "−8",
+          "answer_accept": [
+            "-8"
+          ],
+          "answer_unit": null,
+          "answer_format": "정수로 (부호 포함)",
+          "figure": null,
+          "hint": "(x + 1)² = 9 꼴로 만들고 ± 를 잊지 마세요.",
+          "solution": "(x + 1)² = 9 에서 x + 1 = ±3, x = 2 또는 x = −4. 곱은 −8 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.missing-negative-root",
+            "quad.sqrt-forgot"
+          ]
         }
       ]
     },
@@ -132,7 +218,9 @@
           "level": "L",
           "stem_src": "x² + 6x + k 가 완전제곱식이 되게 하는 k는?",
           "stem_print": "x<sup>2</sup> + 6x + k 가 완전제곱식이 되도록 하는 상수 k의 값을 구하시오.",
-          "answer_atoms": ["9"],
+          "answer_atoms": [
+            "9"
+          ],
           "answer_print": "9",
           "answer_accept": [],
           "answer_unit": null,
@@ -141,14 +229,18 @@
           "hint": "x 계수 6의 절반은 3이에요. 3을 제곱해요.",
           "solution": "(x + 3)<sup>2</sup> = x<sup>2</sup> + 6x + 9 이므로 k = 9 예요.",
           "work_space": "sm",
-          "misconceptions": ["quad.complete-square-half"]
+          "misconceptions": [
+            "quad.complete-square-half"
+          ]
         },
         {
           "id": "m3-u04-t03-02",
           "level": "M",
           "stem_src": "x² − 8x + 3 = 0 을 (x − 4)² = k 로 고치면 k는?",
           "stem_print": "이차방정식 x<sup>2</sup> − 8x + 3 = 0 을 (x − 4)<sup>2</sup> = k 꼴로 고칠 때, k의 값을 구하시오.",
-          "answer_atoms": ["13"],
+          "answer_atoms": [
+            "13"
+          ],
           "answer_print": "13",
           "answer_accept": [],
           "answer_unit": null,
@@ -157,14 +249,18 @@
           "hint": "상수 3을 우변으로 넘기고, 양변에 (−8 ÷ 2)<sup>2</sup> = 16 을 더해요.",
           "solution": "x<sup>2</sup> − 8x = −3 → x<sup>2</sup> − 8x + 16 = −3 + 16 → (x − 4)<sup>2</sup> = 13 이에요.",
           "work_space": "md",
-          "misconceptions": ["quad.complete-square-half"]
+          "misconceptions": [
+            "quad.complete-square-half"
+          ]
         },
         {
           "id": "m3-u04-t03-03",
           "level": "M",
           "stem_src": "x² + 2x − 4 = 0 의 해가 x = −1 ± √k 일 때 k는?",
           "stem_print": "완전제곱식을 이용하여 이차방정식 x<sup>2</sup> + 2x − 4 = 0 을 푸시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "x = −1 ± √5",
           "answer_accept": [],
           "answer_unit": null,
@@ -173,7 +269,30 @@
           "hint": "x<sup>2</sup> + 2x = 4 의 양변에 1을 더하면 완전제곱식이 돼요.",
           "solution": "x<sup>2</sup> + 2x + 1 = 4 + 1 → (x + 1)<sup>2</sup> = 5 → x + 1 = ±√5 → x = −1 ± √5 예요.",
           "work_space": "md",
-          "misconceptions": ["quad.complete-square-half", "quad.sqrt-forgot"]
+          "misconceptions": [
+            "quad.complete-square-half",
+            "quad.sqrt-forgot"
+          ]
+        },
+        {
+          "id": "m3-u04-t03-04",
+          "level": "H",
+          "stem_src": "x² − 6x + 2 = 0 을 (x − p)² = q 꼴로 고칠 때 p + q 는?",
+          "stem_print": "이차방정식 x<sup>2</sup> − 6x + 2 = 0 을 (x − p)<sup>2</sup> = q 꼴로 고칠 때, p + q 의 값을 구하시오.",
+          "answer_atoms": [
+            "10"
+          ],
+          "answer_print": "10",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "정수로",
+          "figure": null,
+          "hint": "x 계수의 절반의 제곱(9)을 양변에 더해요.",
+          "solution": "x² − 6x + 9 = 7 → (x − 3)² = 7 이므로 p = 3, q = 7, p + q = 10 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.complete-square-half"
+          ]
         }
       ]
     },
@@ -187,48 +306,90 @@
           "level": "L",
           "stem_src": "x² + 3x + 1 = 0 의 해가 x = (−3 ± √k) / 2 일 때 k는?",
           "stem_print": "근의 공식을 이용하여 이차방정식 x<sup>2</sup> + 3x + 1 = 0 을 푸시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "x = <span class=\"frac\"><b>−3 ± √5</b><i>2</i></span>",
-          "answer_accept": ["x = (−3 ± √5)/2"],
+          "answer_accept": [
+            "x = (−3 ± √5)/2"
+          ],
           "answer_unit": null,
           "answer_format": "근의 공식 꼴 그대로 (근호를 남겨서)",
           "figure": null,
           "hint": "a = 1, b = 3, c = 1. 근호 안 b<sup>2</sup> − 4ac = 9 − 4 예요.",
           "solution": "x = (−3 ± √(9 − 4)) / 2 = (−3 ± √5) / 2 예요.",
           "work_space": "md",
-          "misconceptions": ["quad.formula-sign"]
+          "misconceptions": [
+            "quad.formula-sign"
+          ]
         },
         {
           "id": "m3-u04-t04-02",
           "level": "M",
           "stem_src": "2x² − 3x − 1 = 0 의 해가 x = (3 ± √k) / 4 일 때 k는?",
           "stem_print": "근의 공식을 이용하여 이차방정식 2x<sup>2</sup> − 3x − 1 = 0 을 푸시오.",
-          "answer_atoms": ["17"],
+          "answer_atoms": [
+            "17"
+          ],
           "answer_print": "x = <span class=\"frac\"><b>3 ± √17</b><i>4</i></span>",
-          "answer_accept": ["x = (3 ± √17)/4"],
+          "answer_accept": [
+            "x = (3 ± √17)/4"
+          ],
           "answer_unit": null,
           "answer_format": "근의 공식 꼴 그대로 (근호를 남겨서)",
           "figure": null,
           "hint": "a = 2, b = −3, c = −1. −b = 3, 분모 2a = 4, 근호 안은 9 − 4 × 2 × (−1) 이에요.",
           "solution": "x = (3 ± √(9 + 8)) / 4 = (3 ± √17) / 4 예요.",
           "work_space": "md",
-          "misconceptions": ["quad.formula-sign", "quad.discriminant-sign"]
+          "misconceptions": [
+            "quad.formula-sign",
+            "quad.discriminant-sign"
+          ]
         },
         {
           "id": "m3-u04-t04-03",
           "level": "M",
           "stem_src": "x² − 4x + 1 = 0 의 해가 x = 2 ± √k 일 때 k는?",
           "stem_print": "근의 공식을 이용하여 이차방정식 x<sup>2</sup> − 4x + 1 = 0 을 풀고, 가장 간단한 꼴로 나타내시오.",
-          "answer_atoms": ["3"],
+          "answer_atoms": [
+            "3"
+          ],
           "answer_print": "x = 2 ± √3",
-          "answer_accept": ["x = (4 ± 2√3)/2"],
+          "answer_accept": [
+            "x = (4 ± 2√3)/2"
+          ],
           "answer_unit": null,
           "answer_format": "x = ▢ ± √▢ 꼴로 (약분까지)",
           "figure": null,
           "hint": "근호 안은 16 − 4 = 12 = 4 × 3 이에요. √12 를 정리한 뒤 분모 2로 약분해요.",
           "solution": "x = (4 ± √12) / 2 = (4 ± 2√3) / 2 = 2 ± √3 이에요.",
           "work_space": "md",
-          "misconceptions": ["quad.formula-sign"]
+          "misconceptions": [
+            "quad.formula-sign"
+          ]
+        },
+        {
+          "id": "m3-u04-t04-04",
+          "level": "H",
+          "stem_src": "3x² − 5x + 1 = 0 의 해가 x = (5 ± √k) / 6 일 때 k는?",
+          "stem_print": "이차방정식 3x<sup>2</sup> − 5x + 1 = 0 을 푸시오.",
+          "answer_atoms": [
+            "x = (5 ± √13)/6"
+          ],
+          "answer_print": "x = <span class=\"frac\"><b>5 ± √13</b><i>6</i></span>",
+          "answer_accept": [
+            "(5±√13)/6"
+          ],
+          "answer_unit": null,
+          "answer_format": "근의 공식 꼴 그대로 (근호를 남겨서)",
+          "figure": null,
+          "hint": "a = 3, b = −5, c = 1 을 근의 공식에 넣어요. b² − 4ac = 25 − 12.",
+          "solution": "x = (5 ± √(25 − 12)) / 6 = (5 ± √13)/6 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.formula-sign",
+            "quad.discriminant-sign"
+          ]
         }
       ]
     },
@@ -242,39 +403,53 @@
           "level": "L",
           "stem_src": "x² − 6x + 9 = 0 의 근의 개수는?",
           "stem_print": "이차방정식 x<sup>2</sup> − 6x + 9 = 0 의 근의 개수를 구하시오.",
-          "answer_atoms": ["1"],
+          "answer_atoms": [
+            "1"
+          ],
           "answer_print": "1",
-          "answer_accept": ["중근"],
+          "answer_accept": [
+            "중근"
+          ],
           "answer_unit": "개",
           "answer_format": "개수로 (0, 1, 2 중 하나)",
           "figure": null,
           "hint": "b<sup>2</sup> − 4ac = 36 − 36 을 계산해요. (x − 3)<sup>2</sup> 으로 묶여요.",
           "solution": "b<sup>2</sup> − 4ac = 36 − 36 = 0 이므로 중근 하나예요. ((x − 3)<sup>2</sup> = 0, x = 3)",
           "work_space": "sm",
-          "misconceptions": ["quad.double-root-count"]
+          "misconceptions": [
+            "quad.double-root-count"
+          ]
         },
         {
           "id": "m3-u04-t05-02",
           "level": "M",
           "stem_src": "x² + x + 3 = 0 의 근의 개수는?",
           "stem_print": "이차방정식 x<sup>2</sup> + x + 3 = 0 의 근의 개수를 구하시오.",
-          "answer_atoms": ["0"],
+          "answer_atoms": [
+            "0"
+          ],
           "answer_print": "0",
-          "answer_accept": ["없다"],
+          "answer_accept": [
+            "없다"
+          ],
           "answer_unit": "개",
           "answer_format": "개수로 (0, 1, 2 중 하나)",
           "figure": null,
           "hint": "b<sup>2</sup> − 4ac = 1 − 12 예요. 근호 안이 음수면?",
           "solution": "b<sup>2</sup> − 4ac = 1 − 12 = −11 < 0 이므로 근이 없어요.",
           "work_space": "sm",
-          "misconceptions": ["quad.discriminant-sign"]
+          "misconceptions": [
+            "quad.discriminant-sign"
+          ]
         },
         {
           "id": "m3-u04-t05-03",
           "level": "M",
           "stem_src": "x² + 4x + k = 0 이 중근을 가질 때 k는?",
           "stem_print": "이차방정식 x<sup>2</sup> + 4x + k = 0 이 중근을 가질 때, 상수 k의 값을 구하시오.",
-          "answer_atoms": ["4"],
+          "answer_atoms": [
+            "4"
+          ],
           "answer_print": "4",
           "answer_accept": [],
           "answer_unit": null,
@@ -283,7 +458,33 @@
           "hint": "중근이려면 b<sup>2</sup> − 4ac = 0 이에요. 16 − 4k = 0.",
           "solution": "16 − 4k = 0 에서 k = 4 예요. 이때 (x + 2)<sup>2</sup> = 0 으로 중근 x = −2 를 가져요.",
           "work_space": "md",
-          "misconceptions": ["quad.double-root-count", "quad.complete-square-half"]
+          "misconceptions": [
+            "quad.double-root-count",
+            "quad.complete-square-half"
+          ]
+        },
+        {
+          "id": "m3-u04-t05-04",
+          "level": "H",
+          "stem_src": "x² + 2(k − 1)x + k² = 0 이 중근을 가질 때 k는?",
+          "stem_print": "이차방정식 x<sup>2</sup> + 2(k − 1)x + k<sup>2</sup> = 0 이 중근을 가질 때, k 의 값을 구하시오.",
+          "answer_atoms": [
+            "1/2"
+          ],
+          "answer_print": "<span class=\"frac\"><b>1</b><i>2</i></span>",
+          "answer_accept": [
+            "0.5",
+            "1/2"
+          ],
+          "answer_unit": null,
+          "answer_format": "기약분수로",
+          "figure": null,
+          "hint": "중근 ⇔ b² − 4ac = 0. b = 2(k − 1).",
+          "solution": "4(k − 1)² − 4k² = 0 → k² − 2k + 1 − k² = 0 → −2k + 1 = 0 → k = 1/2 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.double-root-count"
+          ]
         }
       ]
     },
@@ -297,7 +498,9 @@
           "level": "L",
           "stem_src": "두 근이 2, 5인 이차방정식이 x² + ax + 10 = 0 일 때 a는?",
           "stem_print": "두 근이 2, 5 인 이차방정식이 x<sup>2</sup> + ax + 10 = 0 일 때, 상수 a의 값을 구하시오.",
-          "answer_atoms": ["-7"],
+          "answer_atoms": [
+            "-7"
+          ],
           "answer_print": "−7",
           "answer_accept": [],
           "answer_unit": null,
@@ -306,14 +509,18 @@
           "hint": "(x − 2)(x − 5) = 0 을 전개해요.",
           "solution": "(x − 2)(x − 5) = x<sup>2</sup> − 7x + 10 이므로 a = −7 이에요.",
           "work_space": "sm",
-          "misconceptions": ["quad.sign-flip-roots"]
+          "misconceptions": [
+            "quad.sign-flip-roots"
+          ]
         },
         {
           "id": "m3-u04-t06-02",
           "level": "M",
           "stem_src": "x² − 5x + 6 = 0 의 두 근의 합은?",
           "stem_print": "이차방정식 x<sup>2</sup> − 5x + 6 = 0 의 두 근의 합을 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": null,
@@ -322,14 +529,18 @@
           "hint": "먼저 두 근을 구해요. (x − 2)(x − 3) = 0.",
           "solution": "두 근은 2와 3이므로 합은 5예요. (x항의 계수 −5 와 부호만 다르다는 것도 눈여겨봐요.)",
           "work_space": "sm",
-          "misconceptions": ["quad.sign-flip-roots"]
+          "misconceptions": [
+            "quad.sign-flip-roots"
+          ]
         },
         {
           "id": "m3-u04-t06-03",
           "level": "M",
           "stem_src": "x = 3 이 x² + ax − 12 = 0 의 한 근일 때 a는?",
           "stem_print": "x = 3 이 이차방정식 x<sup>2</sup> + ax − 12 = 0 의 한 근일 때, 상수 a의 값을 구하시오.",
-          "answer_atoms": ["1"],
+          "answer_atoms": [
+            "1"
+          ],
           "answer_print": "1",
           "answer_accept": [],
           "answer_unit": null,
@@ -338,7 +549,30 @@
           "hint": "근이면 대입했을 때 0이 돼요. x 자리 두 곳에 모두 3을 넣어요.",
           "solution": "9 + 3a − 12 = 0 에서 3a = 3, 즉 a = 1 이에요.",
           "work_space": "md",
-          "misconceptions": ["quad.root-substitute"]
+          "misconceptions": [
+            "quad.root-substitute"
+          ]
+        },
+        {
+          "id": "m3-u04-t06-04",
+          "level": "H",
+          "stem_src": "x² + bx − 3 = 0 의 한 근이 −3 일 때, 다른 한 근은?",
+          "stem_print": "이차방정식 x<sup>2</sup> + bx − 3 = 0 의 한 근이 −3 일 때, 다른 한 근을 구하시오.",
+          "answer_atoms": [
+            "1"
+          ],
+          "answer_print": "1",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "정수로",
+          "figure": null,
+          "hint": "근을 대입해 b 를 먼저 구해요. 또는 두 근의 곱 = −3.",
+          "solution": "x = −3 을 대입하면 9 − 3b − 3 = 0, b = 2. x² + 2x − 3 = (x + 3)(x − 1) = 0 이므로 다른 근은 1 이에요. (두 근의 곱이 −3 이라 −3 × 1 = −3 으로도 확인)",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.root-substitute",
+            "quad.sign-flip-roots"
+          ]
         }
       ]
     },
@@ -352,7 +586,9 @@
           "level": "L",
           "stem_src": "연속한 두 자연수의 곱이 56일 때, 작은 수는?",
           "stem_print": "연속한 두 자연수의 곱이 56 일 때, 두 수 중 작은 수를 구하시오.",
-          "answer_atoms": ["7"],
+          "answer_atoms": [
+            "7"
+          ],
           "answer_print": "7",
           "answer_accept": [],
           "answer_unit": null,
@@ -361,14 +597,18 @@
           "hint": "작은 수를 x 로 놓으면 큰 수는 x + 1 이에요. x(x + 1) = 56.",
           "solution": "x<sup>2</sup> + x − 56 = 0 → (x + 8)(x − 7) = 0 → x = −8 또는 x = 7. 자연수이므로 x = 7 이에요.",
           "work_space": "md",
-          "misconceptions": ["quad.no-check-condition"]
+          "misconceptions": [
+            "quad.no-check-condition"
+          ]
         },
         {
           "id": "m3-u04-t07-02",
           "level": "M",
           "stem_src": "어떤 양수를 제곱한 것이 그 수의 3배보다 10만큼 클 때, 그 수는?",
           "stem_print": "어떤 양수를 제곱한 값이 그 수의 3배보다 10 만큼 클 때, 그 양수를 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": null,
@@ -377,14 +617,19 @@
           "hint": "그 수를 x 로 놓으면 x<sup>2</sup> = 3x + 10 이에요. = 0 꼴로 정리해요.",
           "solution": "x<sup>2</sup> − 3x − 10 = 0 → (x − 5)(x + 2) = 0 → x = 5 또는 x = −2. 양수이므로 x = 5 예요.",
           "work_space": "md",
-          "misconceptions": ["quad.no-check-condition", "quad.not-zero-rhs"]
+          "misconceptions": [
+            "quad.no-check-condition",
+            "quad.not-zero-rhs"
+          ]
         },
         {
           "id": "m3-u04-t07-03",
           "level": "M",
           "stem_src": "가로가 세로보다 3 cm 긴 직사각형의 넓이가 40 cm² 일 때, 세로의 길이는?",
           "stem_print": "가로의 길이가 세로의 길이보다 3 cm 긴 직사각형의 넓이가 40 cm<sup>2</sup> 일 때, 세로의 길이를 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": "cm",
@@ -393,7 +638,34 @@
           "hint": "세로를 x 로 놓으면 가로는 x + 3 이에요. 넓이는 x(x + 3).",
           "solution": "x(x + 3) = 40 → x<sup>2</sup> + 3x − 40 = 0 → (x + 8)(x − 5) = 0 → 길이는 양수이므로 x = 5 (cm) 예요.",
           "work_space": "md",
-          "misconceptions": ["quad.no-check-condition", "quad.not-zero-rhs"]
+          "misconceptions": [
+            "quad.no-check-condition",
+            "quad.not-zero-rhs"
+          ]
+        },
+        {
+          "id": "m3-u04-t07-04",
+          "level": "H",
+          "stem_src": "n각형의 대각선의 개수는 n(n − 3)/2 개예요. 대각선이 35개인 다각형은 몇각형인가요?",
+          "stem_print": "n각형의 대각선의 개수는 <span class=\"frac\"><b>n(n − 3)</b><i>2</i></span> 개이다. 대각선의 개수가 35 인 다각형은 몇각형인지 구하시오.",
+          "answer_atoms": [
+            "10"
+          ],
+          "answer_print": "10 (십각형)",
+          "answer_accept": [
+            "십각형",
+            "10각형"
+          ],
+          "answer_unit": null,
+          "answer_format": "n 의 값을 자연수로",
+          "figure": null,
+          "hint": "n(n − 3)/2 = 35 → n(n − 3) = 70. 음수 근은 버려요.",
+          "solution": "n² − 3n − 70 = 0 → (n − 10)(n + 7) = 0 → n = 10 (n = −7 은 조건에 맞지 않아요). 십각형이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "quad.no-check-condition",
+            "quad.not-zero-rhs"
+          ]
         }
       ]
     }

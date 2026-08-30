@@ -1,0 +1,31 @@
+{
+  "id": "m3-u02-d",
+  "kind": "mock",
+  "grade": "math3",
+  "unit": 2,
+  "unit_name": "근호를 포함한 식의 계산",
+  "title": "근호를포함한식의계산 심화 모의고사",
+  "subtitle": "7유형 심화 통합 · 유형마다 도전 1문항 · 7문항",
+  "bank": "math3/u02/practice.json",
+  "misconceptions": "misconceptions/math3_u02.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "H": 1
+    }
+  },
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

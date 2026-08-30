@@ -1,0 +1,31 @@
+{
+  "id": "m3-u06-d",
+  "kind": "mock",
+  "grade": "math3",
+  "unit": 6,
+  "unit_name": "이차함수의 활용",
+  "title": "이차함수의활용 심화 모의고사",
+  "subtitle": "7유형 심화 통합 · 유형마다 도전 1문항 · 7문항",
+  "bank": "math3/u06/practice.json",
+  "misconceptions": "misconceptions/math3_u06.json",
+  "types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pick": {
+    "quota": {
+      "H": 1
+    }
+  },
+  "time_min": 20,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "columns": 2
+}

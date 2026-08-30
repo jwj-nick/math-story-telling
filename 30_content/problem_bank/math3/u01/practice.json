@@ -9,7 +9,8 @@
     "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "answer_atoms 는 원본 script 의 P(...)/pick(...) 값 그대로. 절대 손으로 고치지 않는다. 2지선다 6문항(유형5·6)은 지면에서 단답형으로 재작성했고, 낱말 정답(유리수/무리수)과 근호 정답(√10, −2)에는 근거를 괄호로 덧붙였다. 근호 표기 = √ 단순 표기, 근호 안이 두 항 이상이면 괄호. 유형당 난이도 L/M/M."
+    "note": "answer_atoms 는 원본 script 의 P(...)/pick(...) 값 그대로. 절대 손으로 고치지 않는다. 2지선다 6문항(유형5·6)은 지면에서 단답형으로 재작성했고, 낱말 정답(유리수/무리수)과 근호 정답(√10, −2)에는 근거를 괄호로 덧붙였다. 근호 표기 = √ 단순 표기, 근호 안이 두 항 이상이면 괄호. 유형당 난이도 L/M/M.",
+    "h_added": "2026-08-30"
   },
   "types": [
     {
@@ -22,48 +23,90 @@
           "level": "L",
           "stem_src": "36의 제곱근 중 양수인 것은?",
           "stem_print": "36의 제곱근 중 양수인 것을 구하시오.",
-          "answer_atoms": ["6"],
+          "answer_atoms": [
+            "6"
+          ],
           "answer_print": "6",
-          "answer_accept": ["√36"],
+          "answer_accept": [
+            "√36"
+          ],
           "answer_unit": null,
           "answer_format": "자연수로",
           "figure": null,
           "hint": "어떤 수를 제곱하면 36이 되는지 떠올려요. 6 × 6은 얼마인가요?",
           "solution": "6<sup>2</sup> = 36, (−6)<sup>2</sup> = 36 이므로 36의 제곱근은 ±6이고, 그중 양수는 6이에요.",
           "work_space": "sm",
-          "misconceptions": ["sqrt.root-count-one", "sqrt.name-vs-roots"]
+          "misconceptions": [
+            "sqrt.root-count-one",
+            "sqrt.name-vs-roots"
+          ]
         },
         {
           "id": "m3-u01-t01-02",
           "level": "M",
           "stem_src": "0.16의 양의 제곱근은?",
           "stem_print": "0.16의 양의 제곱근을 구하시오.",
-          "answer_atoms": ["0.4"],
+          "answer_atoms": [
+            "0.4"
+          ],
           "answer_print": "0.4",
-          "answer_accept": ["2/5", "√0.16"],
+          "answer_accept": [
+            "2/5",
+            "√0.16"
+          ],
           "answer_unit": null,
           "answer_format": "소수로 (또는 기약분수로)",
           "figure": null,
           "hint": "0.16 = 16/100 이에요. 분자와 분모가 각각 어떤 수의 제곱인가요?",
           "solution": "0.16 = <span class=\"frac\"><b>16</b><i>100</i></span> = (<span class=\"frac\"><b>4</b><i>10</i></span>)<sup>2</sup> 이므로 양의 제곱근은 <span class=\"frac\"><b>4</b><i>10</i></span> = 0.4예요. 확인: 0.4 × 0.4 = 0.16.",
           "work_space": "md",
-          "misconceptions": ["sqrt.decimal-shift"]
+          "misconceptions": [
+            "sqrt.decimal-shift"
+          ]
         },
         {
           "id": "m3-u01-t01-03",
           "level": "M",
           "stem_src": "(−9)²의 제곱근 중 양수인 것은?",
           "stem_print": "(−9)<sup>2</sup>의 제곱근 중 양수인 것을 구하시오.",
-          "answer_atoms": ["9"],
+          "answer_atoms": [
+            "9"
+          ],
           "answer_print": "9",
-          "answer_accept": ["√81"],
+          "answer_accept": [
+            "√81"
+          ],
           "answer_unit": null,
           "answer_format": "자연수로",
           "figure": null,
           "hint": "괄호 안을 먼저 계산해요. (−9)<sup>2</sup>은 얼마인가요?",
           "solution": "(−9)<sup>2</sup> = 81 이고, 81의 제곱근은 ±9예요. 그중 양수는 9예요.",
           "work_space": "md",
-          "misconceptions": ["sqrt.sqrt-of-neg-square", "sqrt.root-count-one"]
+          "misconceptions": [
+            "sqrt.sqrt-of-neg-square",
+            "sqrt.root-count-one"
+          ]
+        },
+        {
+          "id": "m3-u01-t01-04",
+          "level": "H",
+          "stem_src": "√16 의 양의 제곱근은?",
+          "stem_print": "√16 의 양의 제곱근을 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "자연수로",
+          "figure": null,
+          "hint": "먼저 √16 이 얼마인지 구하고, 그 수의 양의 제곱근을 찾아요.",
+          "solution": "√16 = 4 이고 4 의 양의 제곱근은 2 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "sqrt.name-vs-roots",
+            "sqrt.root-count-one"
+          ]
         }
       ]
     },
@@ -77,48 +120,89 @@
           "level": "L",
           "stem_src": "제곱근 64 의 값은?",
           "stem_print": "제곱근 64의 값을 구하시오.",
-          "answer_atoms": ["8"],
+          "answer_atoms": [
+            "8"
+          ],
           "answer_print": "8",
-          "answer_accept": ["√64"],
+          "answer_accept": [
+            "√64"
+          ],
           "answer_unit": null,
           "answer_format": "자연수로",
           "figure": null,
           "hint": "'제곱근 64'는 √64 라는 수 하나를 부르는 말이에요.",
           "solution": "제곱근 64 = √64 = 8 이에요. ('64의 제곱근'이라면 ±8 두 개예요.)",
           "work_space": "sm",
-          "misconceptions": ["sqrt.name-vs-roots"]
+          "misconceptions": [
+            "sqrt.name-vs-roots"
+          ]
         },
         {
           "id": "m3-u01-t02-02",
           "level": "M",
           "stem_src": "100의 제곱근 중 음수인 것은?",
           "stem_print": "100의 제곱근 중 음수인 것을 구하시오.",
-          "answer_atoms": ["-10"],
+          "answer_atoms": [
+            "-10"
+          ],
           "answer_print": "−10",
-          "answer_accept": ["−√100"],
+          "answer_accept": [
+            "−√100"
+          ],
           "answer_unit": null,
           "answer_format": "음의 정수로 (− 부호를 붙여서)",
           "figure": null,
           "hint": "100의 제곱근은 두 개예요. 그중 0보다 작은 쪽을 골라요.",
           "solution": "10<sup>2</sup> = 100, (−10)<sup>2</sup> = 100 이므로 100의 제곱근은 ±10이고, 음수인 것은 −10이에요.",
           "work_space": "sm",
-          "misconceptions": ["sqrt.root-count-one"]
+          "misconceptions": [
+            "sqrt.root-count-one"
+          ]
         },
         {
           "id": "m3-u01-t02-03",
           "level": "M",
           "stem_src": "제곱근 0.25 의 값은?",
           "stem_print": "제곱근 0.25의 값을 구하시오.",
-          "answer_atoms": ["0.5"],
+          "answer_atoms": [
+            "0.5"
+          ],
           "answer_print": "0.5",
-          "answer_accept": ["1/2", "√0.25"],
+          "answer_accept": [
+            "1/2",
+            "√0.25"
+          ],
           "answer_unit": null,
           "answer_format": "소수로 (또는 기약분수로)",
           "figure": null,
           "hint": "'제곱근 0.25' = √0.25 예요. 0.25 = 25/100 을 분수로 보면 근호가 벗겨져요.",
           "solution": "제곱근 0.25 = √0.25 = √(<span class=\"frac\"><b>25</b><i>100</i></span>) = <span class=\"frac\"><b>5</b><i>10</i></span> = 0.5 예요. 확인: 0.5 × 0.5 = 0.25.",
           "work_space": "md",
-          "misconceptions": ["sqrt.name-vs-roots", "sqrt.decimal-shift"]
+          "misconceptions": [
+            "sqrt.name-vs-roots",
+            "sqrt.decimal-shift"
+          ]
+        },
+        {
+          "id": "m3-u01-t02-04",
+          "level": "H",
+          "stem_src": "제곱근 81 과 81의 음의 제곱근의 합은?",
+          "stem_print": "제곱근 81 과 81 의 음의 제곱근의 합을 구하시오.",
+          "answer_atoms": [
+            "0"
+          ],
+          "answer_print": "0",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "정수로",
+          "figure": null,
+          "hint": "'제곱근 81' 은 √81 하나, '81의 제곱근' 은 ±9 둘이에요.",
+          "solution": "제곱근 81 = 9, 81 의 음의 제곱근은 −9 이므로 합은 0 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "sqrt.name-vs-roots",
+            "sqrt.root-count-one"
+          ]
         }
       ]
     },
@@ -132,7 +216,9 @@
           "level": "L",
           "stem_src": "(√5)² 의 값은?",
           "stem_print": "(√5)<sup>2</sup>의 값을 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": null,
@@ -141,30 +227,40 @@
           "hint": "√5는 '제곱하면 5가 되는 수'예요. 그 수를 제곱하면?",
           "solution": "√5를 제곱하면 정의에 따라 5가 돼요. (√5)<sup>2</sup> = 5.",
           "work_space": "sm",
-          "misconceptions": ["pyt.square-as-double"]
+          "misconceptions": [
+            "pyt.square-as-double"
+          ]
         },
         {
           "id": "m3-u01-t03-02",
           "level": "M",
           "stem_src": "√((−6)²) 의 값은?",
           "stem_print": "√((−6)<sup>2</sup>)의 값을 구하시오.",
-          "answer_atoms": ["6"],
+          "answer_atoms": [
+            "6"
+          ],
           "answer_print": "6",
-          "answer_accept": ["√36"],
+          "answer_accept": [
+            "√36"
+          ],
           "answer_unit": null,
           "answer_format": "정수로 (부호에 주의)",
           "figure": null,
           "hint": "근호 안 (−6)<sup>2</sup>을 먼저 계산해요. 근호는 양수 쪽을 가리켜요.",
           "solution": "(−6)<sup>2</sup> = 36 이므로 √((−6)<sup>2</sup>) = √36 = 6 이에요. −6이 아니에요.",
           "work_space": "sm",
-          "misconceptions": ["sqrt.sqrt-of-neg-square"]
+          "misconceptions": [
+            "sqrt.sqrt-of-neg-square"
+          ]
         },
         {
           "id": "m3-u01-t03-03",
           "level": "M",
           "stem_src": "√(2²) − √((−4)²) + (−√3)² 의 값은?",
           "stem_print": "√(2<sup>2</sup>) − √((−4)<sup>2</sup>) + (−√3)<sup>2</sup> 의 값을 구하시오.",
-          "answer_atoms": ["1"],
+          "answer_atoms": [
+            "1"
+          ],
           "answer_print": "1",
           "answer_accept": [],
           "answer_unit": null,
@@ -173,7 +269,31 @@
           "hint": "세 항을 각각 근호 없는 수로 바꾼 뒤 더하고 빼요. 각 항은 모두 양수가 돼요.",
           "solution": "√(2<sup>2</sup>) = 2, √((−4)<sup>2</sup>) = √16 = 4, (−√3)<sup>2</sup> = 3 이므로 2 − 4 + 3 = 1 이에요.",
           "work_space": "md",
-          "misconceptions": ["sqrt.sqrt-of-neg-square", "pyt.square-as-double"]
+          "misconceptions": [
+            "sqrt.sqrt-of-neg-square",
+            "pyt.square-as-double"
+          ]
+        },
+        {
+          "id": "m3-u01-t03-04",
+          "level": "H",
+          "stem_src": "(−√7)² − √((−4)²) + √(3²) 의 값은?",
+          "stem_print": "(−√7)<sup>2</sup> − √((−4)<sup>2</sup>) + √(3<sup>2</sup>) 의 값을 구하시오.",
+          "answer_atoms": [
+            "6"
+          ],
+          "answer_print": "6",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "정수로",
+          "figure": null,
+          "hint": "√(a²) 는 a 의 절댓값이에요. (−√7)² 은 7.",
+          "solution": "(−√7)² = 7, √((−4)²) = 4, √(3²) = 3 이므로 7 − 4 + 3 = 6 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "sqrt.sqrt-of-neg-square",
+            "pyt.square-as-double"
+          ]
         }
       ]
     },
@@ -187,7 +307,9 @@
           "level": "L",
           "stem_src": "√(8x) 가 자연수가 되게 하는 가장 작은 자연수 x는?",
           "stem_print": "√(8x)가 자연수가 되도록 하는 가장 작은 자연수 x의 값을 구하시오.",
-          "answer_atoms": ["2"],
+          "answer_atoms": [
+            "2"
+          ],
           "answer_print": "2",
           "answer_accept": [],
           "answer_unit": null,
@@ -196,14 +318,18 @@
           "hint": "8 = 2<sup>3</sup> 이에요. 2가 세 개면 짝이 안 맞아요. 몇 개가 더 있어야 제곱수가 될까요?",
           "solution": "8 = 2<sup>3</sup> 이므로 2를 하나 더 곱해야 2<sup>4</sup> = 16 = 4<sup>2</sup> 이 돼요. 따라서 x = 2 이고, √(8 × 2) = √16 = 4 예요.",
           "work_space": "sm",
-          "misconceptions": ["sqrt.radicand-parity"]
+          "misconceptions": [
+            "sqrt.radicand-parity"
+          ]
         },
         {
           "id": "m3-u01-t04-02",
           "level": "M",
           "stem_src": "√(45x) 가 자연수가 되게 하는 가장 작은 자연수 x는?",
           "stem_print": "√(45x)가 자연수가 되도록 하는 가장 작은 자연수 x의 값을 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": null,
@@ -212,14 +338,18 @@
           "hint": "45를 소인수분해하면 3<sup>2</sup> × 5 예요. 짝이 없는 소인수는 무엇인가요?",
           "solution": "45 = 3<sup>2</sup> × 5 에서 지수가 홀수인 소인수는 5뿐이에요. x = 5 를 곱하면 3<sup>2</sup> × 5<sup>2</sup> = 225 = 15<sup>2</sup> 이 되므로 √225 = 15 예요.",
           "work_space": "md",
-          "misconceptions": ["sqrt.radicand-parity"]
+          "misconceptions": [
+            "sqrt.radicand-parity"
+          ]
         },
         {
           "id": "m3-u01-t04-03",
           "level": "M",
           "stem_src": "√(60/x) 가 자연수가 되게 하는 가장 작은 자연수 x는?",
           "stem_print": "√(60/x)가 자연수가 되도록 하는 가장 작은 자연수 x의 값을 구하시오.",
-          "answer_atoms": ["15"],
+          "answer_atoms": [
+            "15"
+          ],
           "answer_print": "15",
           "answer_accept": [],
           "answer_unit": null,
@@ -228,7 +358,30 @@
           "hint": "이번엔 x로 '나누어요'. 60 = 2<sup>2</sup> × 3 × 5 에서 짝이 없는 소인수를 나누어 없애요.",
           "solution": "60 = 2<sup>2</sup> × 3 × 5 이고 지수가 홀수인 소인수는 3과 5예요. 이 둘을 나누어 없애야 하므로 x = 3 × 5 = 15 이고, √(60 ÷ 15) = √4 = 2 예요.",
           "work_space": "md",
-          "misconceptions": ["sqrt.radicand-parity", "sqrt.divide-form"]
+          "misconceptions": [
+            "sqrt.radicand-parity",
+            "sqrt.divide-form"
+          ]
+        },
+        {
+          "id": "m3-u01-t04-04",
+          "level": "H",
+          "stem_src": "√(24x) 가 자연수가 되게 하는 두 자리 자연수 x 중 가장 작은 것은?",
+          "stem_print": "√(24x) 가 자연수가 되게 하는 두 자리 자연수 x 중 가장 작은 것을 구하시오.",
+          "answer_atoms": [
+            "24"
+          ],
+          "answer_print": "24",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "자연수로",
+          "figure": null,
+          "hint": "24 를 소인수분해하면 2³ × 3. x = 6 × (제곱수) 꼴이에요.",
+          "solution": "24x = 2³ × 3 × x 가 제곱수가 되려면 x = 6 × k² (k 는 자연수). k = 1 이면 6(한 자리), k = 2 이면 24 이므로 답은 24 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "sqrt.radicand-parity"
+          ]
         }
       ]
     },
@@ -242,48 +395,89 @@
           "level": "L",
           "stem_src": "√25 는 유리수인가요, 무리수인가요?",
           "stem_print": "√25는 유리수인지 무리수인지 쓰시오.",
-          "answer_atoms": ["유리수"],
+          "answer_atoms": [
+            "유리수"
+          ],
           "answer_print": "유리수 (√25 = 5)",
-          "answer_accept": ["유리수"],
+          "answer_accept": [
+            "유리수"
+          ],
           "answer_unit": null,
           "answer_format": "'유리수' 또는 '무리수'로",
           "figure": null,
           "hint": "25는 어떤 자연수의 제곱인가요? 근호가 벗겨지면 유리수예요.",
           "solution": "25 = 5<sup>2</sup> 이므로 √25 = 5 예요. 5는 분수 5/1로 쓸 수 있으니 유리수예요.",
           "work_space": "sm",
-          "misconceptions": ["sqrt.radical-means-irrational"]
+          "misconceptions": [
+            "sqrt.radical-means-irrational"
+          ]
         },
         {
           "id": "m3-u01-t05-02",
           "level": "M",
           "stem_src": "√0.4 는 유리수인가요, 무리수인가요?",
           "stem_print": "√0.4는 유리수인지 무리수인지 쓰시오.",
-          "answer_atoms": ["무리수"],
+          "answer_atoms": [
+            "무리수"
+          ],
           "answer_print": "무리수 (근호가 벗겨지지 않아요)",
-          "answer_accept": ["무리수"],
+          "answer_accept": [
+            "무리수"
+          ],
           "answer_unit": null,
           "answer_format": "'유리수' 또는 '무리수'로",
           "figure": null,
           "hint": "0.4 = 4/10 = 2/5 예요. 분자·분모가 모두 제곱수인가요?",
           "solution": "0.4 = <span class=\"frac\"><b>2</b><i>5</i></span> 인데 2와 5는 제곱수가 아니라 근호가 벗겨지지 않아요. (0.2<sup>2</sup> = 0.04 이지 0.4가 아니에요.) 따라서 √0.4는 무리수예요.",
           "work_space": "md",
-          "misconceptions": ["sqrt.decimal-radicand", "sqrt.decimal-shift"]
+          "misconceptions": [
+            "sqrt.decimal-radicand",
+            "sqrt.decimal-shift"
+          ]
         },
         {
           "id": "m3-u01-t05-03",
           "level": "M",
           "stem_src": "√1.44 는 유리수인가요, 무리수인가요?",
           "stem_print": "√1.44는 유리수인지 무리수인지 쓰시오.",
-          "answer_atoms": ["유리수"],
+          "answer_atoms": [
+            "유리수"
+          ],
           "answer_print": "유리수 (√1.44 = 1.2)",
-          "answer_accept": ["유리수"],
+          "answer_accept": [
+            "유리수"
+          ],
           "answer_unit": null,
           "answer_format": "'유리수' 또는 '무리수'로",
           "figure": null,
           "hint": "1.44 = 144/100 이에요. 144와 100은 각각 어떤 수의 제곱인가요?",
           "solution": "1.44 = <span class=\"frac\"><b>144</b><i>100</i></span> = (<span class=\"frac\"><b>12</b><i>10</i></span>)<sup>2</sup> 이므로 √1.44 = 1.2 = <span class=\"frac\"><b>6</b><i>5</i></span> 예요. 분수로 쓸 수 있으니 유리수예요.",
           "work_space": "md",
-          "misconceptions": ["sqrt.decimal-radicand", "sqrt.radical-means-irrational"]
+          "misconceptions": [
+            "sqrt.decimal-radicand",
+            "sqrt.radical-means-irrational"
+          ]
+        },
+        {
+          "id": "m3-u01-t05-04",
+          "level": "H",
+          "stem_src": "√4, √7, √0.09, √12, √(1/4) 중 무리수의 개수는?",
+          "stem_print": "√4, √7, √0.09, √12, √(1/4) 중 무리수의 개수를 구하시오.",
+          "answer_atoms": [
+            "2"
+          ],
+          "answer_print": "2",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "개수를 자연수로",
+          "figure": null,
+          "hint": "근호 안이 (유리수)² 꼴이면 벗겨져서 유리수예요.",
+          "solution": "√4 = 2, √0.09 = 0.3, √(1/4) = 1/2 은 유리수이고 √7, √12 는 무리수이므로 2 개예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "sqrt.radical-means-irrational",
+            "sqrt.decimal-radicand"
+          ]
         }
       ]
     },
@@ -297,7 +491,9 @@
           "level": "L",
           "stem_src": "√7 과 √5 중 큰 수는?",
           "stem_print": "√7과 √5 중 큰 수를 쓰시오.",
-          "answer_atoms": ["√7"],
+          "answer_atoms": [
+            "√7"
+          ],
           "answer_print": "√7",
           "answer_accept": [],
           "answer_unit": null,
@@ -306,39 +502,74 @@
           "hint": "양수끼리는 근호 안의 수가 큰 쪽이 커요.",
           "solution": "7 > 5 이므로 √7 > √5 예요. 큰 수는 √7이에요.",
           "work_space": "sm",
-          "misconceptions": ["sqrt.compare-without-root"]
+          "misconceptions": [
+            "sqrt.compare-without-root"
+          ]
         },
         {
           "id": "m3-u01-t06-02",
           "level": "M",
           "stem_src": "3 과 √10 중 큰 수는?",
           "stem_print": "3과 √10 중 큰 수를 쓰시오.",
-          "answer_atoms": ["√10"],
+          "answer_atoms": [
+            "√10"
+          ],
           "answer_print": "√10 (3 = √9 &lt; √10)",
-          "answer_accept": ["√10"],
+          "answer_accept": [
+            "√10"
+          ],
           "answer_unit": null,
           "answer_format": "큰 수로 (근호 붙은 채로)",
           "figure": null,
           "hint": "3을 근호 안에 넣으면 √9예요. 이제 근호 안끼리 비교해요.",
           "solution": "3 = √9 이고 9 &lt; 10 이므로 √9 &lt; √10, 즉 3 &lt; √10 이에요. 큰 수는 √10이에요.",
           "work_space": "sm",
-          "misconceptions": ["sqrt.compare-without-root"]
+          "misconceptions": [
+            "sqrt.compare-without-root"
+          ]
         },
         {
           "id": "m3-u01-t06-03",
           "level": "M",
           "stem_src": "−√5 와 −2 중 큰 수는?",
           "stem_print": "−√5와 −2 중 큰 수를 쓰시오.",
-          "answer_atoms": ["−2"],
+          "answer_atoms": [
+            "−2"
+          ],
           "answer_print": "−2 (−√5 &lt; −2)",
-          "answer_accept": ["−2"],
+          "answer_accept": [
+            "−2"
+          ],
           "answer_unit": null,
           "answer_format": "큰 수로 (부호 포함)",
           "figure": null,
           "hint": "먼저 양수 √5와 2를 비교하고(2 = √4), 음수가 되면 순서가 뒤집히는 걸 떠올려요.",
           "solution": "2 = √4 이고 √4 &lt; √5 이므로 2 &lt; √5 예요. 음수가 되면 순서가 뒤집혀 −2 &gt; −√5 예요. 큰 수는 −2예요.",
           "work_space": "md",
-          "misconceptions": ["sqrt.negative-flip", "sqrt.compare-without-root"]
+          "misconceptions": [
+            "sqrt.negative-flip",
+            "sqrt.compare-without-root"
+          ]
+        },
+        {
+          "id": "m3-u01-t06-04",
+          "level": "H",
+          "stem_src": "√15, 4, √17 중 가장 큰 수를 √k 꼴로 나타낼 때 k는?",
+          "stem_print": "√15, 4, √17 중 가장 큰 수를 구하시오.",
+          "answer_atoms": [
+            "√17"
+          ],
+          "answer_print": "√17",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "큰 수로 (근호 붙은 채로)",
+          "figure": null,
+          "hint": "4 를 √16 으로 바꿔 근호 안의 수끼리 비교해요.",
+          "solution": "4 = √16 이므로 √15 < 4 < √17. 가장 큰 수는 √17 이에요.",
+          "work_space": "sm",
+          "misconceptions": [
+            "sqrt.compare-without-root"
+          ]
         }
       ]
     },
@@ -352,23 +583,31 @@
           "level": "L",
           "stem_src": "√10 은 어느 두 정수 사이에 있나요? (작은 쪽 정수)",
           "stem_print": "√10은 연속한 두 정수 사이에 있다. 그중 작은 쪽 정수를 쓰시오.",
-          "answer_atoms": ["3"],
+          "answer_atoms": [
+            "3"
+          ],
           "answer_print": "3",
-          "answer_accept": ["3 &lt; √10 &lt; 4"],
+          "answer_accept": [
+            "3 &lt; √10 &lt; 4"
+          ],
           "answer_unit": null,
           "answer_format": "정수로",
           "figure": null,
           "hint": "10을 양옆에서 끼우는 제곱수는 9와 16이에요.",
           "solution": "3<sup>2</sup> = 9 &lt; 10 &lt; 16 = 4<sup>2</sup> 이므로 3 &lt; √10 &lt; 4 예요. 작은 쪽 정수는 3이에요.",
           "work_space": "sm",
-          "misconceptions": ["sqrt.integer-part"]
+          "misconceptions": [
+            "sqrt.integer-part"
+          ]
         },
         {
           "id": "m3-u01-t07-02",
           "level": "M",
           "stem_src": "√50 의 정수 부분은?",
           "stem_print": "√50의 정수 부분을 구하시오.",
-          "answer_atoms": ["7"],
+          "answer_atoms": [
+            "7"
+          ],
           "answer_print": "7",
           "answer_accept": [],
           "answer_unit": null,
@@ -377,23 +616,53 @@
           "hint": "50을 끼우는 제곱수 두 개를 찾아요. 7<sup>2</sup>과 8<sup>2</sup>은 얼마인가요?",
           "solution": "7<sup>2</sup> = 49 &lt; 50 &lt; 64 = 8<sup>2</sup> 이므로 7 &lt; √50 &lt; 8 이에요. 정수 부분은 7이에요.",
           "work_space": "sm",
-          "misconceptions": ["sqrt.integer-part"]
+          "misconceptions": [
+            "sqrt.integer-part"
+          ]
         },
         {
           "id": "m3-u01-t07-03",
           "level": "M",
           "stem_src": "3 < √x < 4 를 만족하는 자연수 x는 모두 몇 개인가요?",
           "stem_print": "3 &lt; √x &lt; 4를 만족하는 자연수 x의 개수를 구하시오.",
-          "answer_atoms": ["6"],
+          "answer_atoms": [
+            "6"
+          ],
           "answer_print": "6",
-          "answer_accept": ["6개"],
+          "answer_accept": [
+            "6개"
+          ],
           "answer_unit": "개",
-          "answer_format": "개수(자연수)로",
+          "answer_format": "개수를 자연수로",
           "figure": null,
           "hint": "세 변을 모두 제곱하면 근호가 사라져요. 양 끝 값은 포함되지 않아요.",
           "solution": "각 변을 제곱하면 9 &lt; x &lt; 16 이에요. 이를 만족하는 자연수는 10, 11, 12, 13, 14, 15 로 6개예요.",
           "work_space": "md",
-          "misconceptions": ["sqrt.range-count", "sqrt.integer-part"]
+          "misconceptions": [
+            "sqrt.range-count",
+            "sqrt.integer-part"
+          ]
+        },
+        {
+          "id": "m3-u01-t07-04",
+          "level": "H",
+          "stem_src": "√x 의 정수 부분이 5가 되게 하는 자연수 x의 개수는?",
+          "stem_print": "√x 의 정수 부분이 5 가 되게 하는 자연수 x 의 개수를 구하시오.",
+          "answer_atoms": [
+            "11"
+          ],
+          "answer_print": "11",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "개수를 자연수로",
+          "figure": null,
+          "hint": "5 ≤ √x < 6 을 제곱해요. 25 는 포함, 36 은 제외.",
+          "solution": "5 ≤ √x < 6 이므로 25 ≤ x < 36. x = 25 부터 35 까지 11 개예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "sqrt.range-count",
+            "sqrt.integer-part"
+          ]
         }
       ]
     }

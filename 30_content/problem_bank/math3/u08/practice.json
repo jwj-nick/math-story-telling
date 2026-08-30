@@ -9,7 +9,8 @@
     "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "answer_atoms 는 원본 script 의 P(...) 값 그대로(앱은 a√3 의 a 만 묻고, 지면은 a√3 전체). 유형당 난이도 L/M/M."
+    "note": "answer_atoms 는 원본 script 의 P(...) 값 그대로(앱은 a√3 의 a 만 묻고, 지면은 a√3 전체). 유형당 난이도 L/M/M.",
+    "h_added": "2026-08-30"
   },
   "types": [
     {
@@ -22,7 +23,9 @@
           "level": "L",
           "stem_src": "빗변 8, A = 30° 인 직각삼각형의 높이는?",
           "stem_print": "빗변의 길이가 8 이고 ∠A = 30° 인 직각삼각형에서 ∠A 와 마주 보는 변(높이)의 길이를 구하시오.",
-          "answer_atoms": ["4"],
+          "answer_atoms": [
+            "4"
+          ],
           "answer_print": "4",
           "answer_accept": [],
           "answer_unit": null,
@@ -31,14 +34,18 @@
           "hint": "높이 = 빗변 × sin 30°.",
           "solution": "높이 = 8 × sin 30° = 8 × 1/2 = 4 예요.",
           "work_space": "sm",
-          "misconceptions": ["app.wrong-ratio"]
+          "misconceptions": [
+            "app.wrong-ratio"
+          ]
         },
         {
           "id": "m3-u08-t01-02",
           "level": "M",
           "stem_src": "빗변 12, A = 60° 인 직각삼각형의 밑변은?",
           "stem_print": "빗변의 길이가 12 이고 ∠A = 60° 인 직각삼각형에서 ∠A 에 붙은 변(밑변)의 길이를 구하시오.",
-          "answer_atoms": ["6"],
+          "answer_atoms": [
+            "6"
+          ],
           "answer_print": "6",
           "answer_accept": [],
           "answer_unit": null,
@@ -47,23 +54,53 @@
           "hint": "밑변 = 빗변 × cos 60°.",
           "solution": "밑변 = 12 × cos 60° = 12 × 1/2 = 6 이에요.",
           "work_space": "sm",
-          "misconceptions": ["app.wrong-ratio"]
+          "misconceptions": [
+            "app.wrong-ratio"
+          ]
         },
         {
           "id": "m3-u08-t01-03",
           "level": "M",
           "stem_src": "밑변 9, A = 30° 인 직각삼각형의 높이가 a√3 일 때 a는?",
           "stem_print": "밑변의 길이가 9 이고 ∠A = 30° 인 직각삼각형의 높이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["3"],
+          "answer_atoms": [
+            "3"
+          ],
           "answer_print": "3√3",
-          "answer_accept": ["9√3/3"],
+          "answer_accept": [
+            "9√3/3"
+          ],
           "answer_unit": null,
           "answer_format": "a√b 꼴로",
           "figure": null,
           "hint": "높이 = 밑변 × tan 30° = 9 × √3/3.",
           "solution": "높이 = 9 × tan 30° = 9 × √3/3 = 3√3 이에요.",
           "work_space": "md",
-          "misconceptions": ["app.tan-direction"]
+          "misconceptions": [
+            "app.tan-direction"
+          ]
+        },
+        {
+          "id": "m3-u08-t01-04",
+          "level": "H",
+          "stem_src": "빗변 10, A = 30° 인 직각삼각형의 넓이가 (a√3)/2 일 때 a는?",
+          "stem_print": "빗변의 길이가 10 이고 ∠A = 30° 인 직각삼각형의 넓이를 구하시오.",
+          "answer_atoms": [
+            "25√3/2"
+          ],
+          "answer_print": "<span class=\"frac\"><b>25√3</b><i>2</i></span>",
+          "answer_accept": [
+            "25√3/2"
+          ],
+          "answer_unit": null,
+          "answer_format": "근호를 남긴 분수로",
+          "figure": null,
+          "hint": "두 변을 sin, cos 으로 구하고 ½ × 밑변 × 높이.",
+          "solution": "높이 5, 밑변 5√3 이므로 넓이는 ½ × 5√3 × 5 = 25√3/2 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "app.wrong-ratio"
+          ]
         }
       ]
     },
@@ -77,7 +114,9 @@
           "level": "L",
           "stem_src": "삼각형 ABC에서 AC = 10, ∠A = 30° 일 때, C에서 AB에 내린 높이는?",
           "stem_print": "삼각형 ABC 에서 AC = 10, ∠A = 30° 일 때, 꼭짓점 C 에서 변 AB 에 내린 수선의 길이(높이)를 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": null,
@@ -86,30 +125,40 @@
           "hint": "수선을 내리면 빗변 AC = 10 인 직각삼각형이 생겨요. 높이 = 10 × sin 30°.",
           "solution": "높이 = AC × sin A = 10 × 1/2 = 5 예요.",
           "work_space": "sm",
-          "misconceptions": ["app.no-split"]
+          "misconceptions": [
+            "app.no-split"
+          ]
         },
         {
           "id": "m3-u08-t02-02",
           "level": "M",
           "stem_src": "삼각형 ABC에서 AB = 8, ∠B = 45° 일 때, A에서 BC에 내린 높이가 a√2 예요. a는?",
           "stem_print": "삼각형 ABC 에서 AB = 8, ∠B = 45° 일 때, 꼭짓점 A 에서 변 BC 에 내린 수선의 길이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["4"],
+          "answer_atoms": [
+            "4"
+          ],
           "answer_print": "4√2",
-          "answer_accept": ["8√2/2"],
+          "answer_accept": [
+            "8√2/2"
+          ],
           "answer_unit": null,
           "answer_format": "a√b 꼴로",
           "figure": null,
           "hint": "높이 = AB × sin B = 8 × √2/2.",
           "solution": "높이 = 8 × sin 45° = 8 × √2/2 = 4√2 예요.",
           "work_space": "md",
-          "misconceptions": ["app.no-split"]
+          "misconceptions": [
+            "app.no-split"
+          ]
         },
         {
           "id": "m3-u08-t02-03",
           "level": "M",
           "stem_src": "두 변이 10 인 이등변삼각형의 꼭지각이 120° 일 때, 밑변의 길이가 a√3 이에요. a는?",
           "stem_print": "두 변의 길이가 10 인 이등변삼각형의 꼭지각이 120° 일 때, 밑변의 길이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["10"],
+          "answer_atoms": [
+            "10"
+          ],
           "answer_print": "10√3",
           "answer_accept": [],
           "answer_unit": null,
@@ -118,7 +167,30 @@
           "hint": "꼭짓점에서 밑변에 수선을 내리면 밑각이 30° 인 직각삼각형 두 개. 밑변의 절반 = 10 × cos 30°.",
           "solution": "밑변의 절반 = 10 × cos 30° = 5√3 이므로 밑변 = 10√3 이에요.",
           "work_space": "md",
-          "misconceptions": ["app.no-split"]
+          "misconceptions": [
+            "app.no-split"
+          ]
+        },
+        {
+          "id": "m3-u08-t02-04",
+          "level": "H",
+          "stem_src": "삼각형 ABC에서 AB = 6, ∠B = 60°, BC = 10 이에요. A에서 BC에 내린 수선의 발을 H라 할 때 HC 의 길이는?",
+          "stem_print": "삼각형 ABC 에서 AB = 6, ∠B = 60°, BC = 10 이다. 꼭짓점 A 에서 변 BC 에 내린 수선의 발을 H 라 할 때, HC 의 길이를 구하시오.",
+          "answer_atoms": [
+            "7"
+          ],
+          "answer_print": "7",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로",
+          "figure": null,
+          "hint": "수선으로 나뉜 왼쪽 직각삼각형에서 BH = AB × cos B.",
+          "solution": "BH = 6 × cos 60° = 3 이므로 HC = 10 − 3 = 7 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "app.no-split",
+            "app.wrong-ratio"
+          ]
         }
       ]
     },
@@ -132,7 +204,9 @@
           "level": "L",
           "stem_src": "나무에서 20 m 떨어진 지점에서 꼭대기를 본 앙각이 45° 일 때 나무의 높이는? (m)",
           "stem_print": "나무에서 20 m 떨어진 지점에서 나무의 꼭대기를 올려다본 각이 45° 일 때, 나무의 높이를 구하시오.",
-          "answer_atoms": ["20"],
+          "answer_atoms": [
+            "20"
+          ],
           "answer_print": "20",
           "answer_accept": [],
           "answer_unit": "m",
@@ -141,30 +215,42 @@
           "hint": "높이 = 거리 × tan 45°.",
           "solution": "높이 = 20 × tan 45° = 20 × 1 = 20 (m) 이에요.",
           "work_space": "sm",
-          "misconceptions": ["app.hyp-as-distance", "app.tan-direction"]
+          "misconceptions": [
+            "app.hyp-as-distance",
+            "app.tan-direction"
+          ]
         },
         {
           "id": "m3-u08-t03-02",
           "level": "M",
           "stem_src": "건물에서 30 m 떨어진 지점에서 앙각이 30° 일 때 건물의 높이가 a√3 m 예요. a는?",
           "stem_print": "건물에서 30 m 떨어진 지점에서 건물의 꼭대기를 올려다본 각이 30° 일 때, 건물의 높이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["10"],
+          "answer_atoms": [
+            "10"
+          ],
           "answer_print": "10√3",
-          "answer_accept": ["30√3/3"],
+          "answer_accept": [
+            "30√3/3"
+          ],
           "answer_unit": "m",
           "answer_format": "a√b 꼴로",
           "figure": null,
           "hint": "높이 = 30 × tan 30° = 30 × √3/3.",
           "solution": "높이 = 30 × tan 30° = 30 × √3/3 = 10√3 (m) 이에요.",
           "work_space": "md",
-          "misconceptions": ["app.hyp-as-distance", "app.tan-direction"]
+          "misconceptions": [
+            "app.hyp-as-distance",
+            "app.tan-direction"
+          ]
         },
         {
           "id": "m3-u08-t03-03",
           "level": "M",
           "stem_src": "눈높이 1.5 m 인 사람이 탑에서 15 m 떨어진 곳에서 꼭대기를 본 앙각이 45° 일 때 탑의 높이는? (m)",
           "stem_print": "눈높이가 1.5 m 인 사람이 탑에서 15 m 떨어진 곳에서 탑의 꼭대기를 올려다본 각이 45° 일 때, 탑의 높이를 구하시오.",
-          "answer_atoms": ["16.5"],
+          "answer_atoms": [
+            "16.5"
+          ],
           "answer_print": "16.5",
           "answer_accept": [],
           "answer_unit": "m",
@@ -173,7 +259,30 @@
           "hint": "눈높이 위의 부분은 15 × tan 45°. 거기에 눈높이를 더해요.",
           "solution": "눈높이 위 = 15 × tan 45° = 15, 전체 높이 = 15 + 1.5 = 16.5 (m) 예요.",
           "work_space": "md",
-          "misconceptions": ["app.eye-height"]
+          "misconceptions": [
+            "app.eye-height"
+          ]
+        },
+        {
+          "id": "m3-u08-t03-04",
+          "level": "H",
+          "stem_src": "눈높이 1.6 m 인 사람이 건물에서 20 m 떨어진 곳에서 꼭대기를 본 앙각이 60° 예요. √3 = 1.73 으로 계산할 때 건물의 높이는 몇 m 인가요?",
+          "stem_print": "눈높이가 1.6 m 인 사람이 건물에서 20 m 떨어진 지점에서 건물 꼭대기를 올려다본 각(앙각)이 60° 이다. √3 = 1.73 으로 계산할 때, 건물의 높이는 몇 m 인지 구하시오.",
+          "answer_atoms": [
+            "36.2"
+          ],
+          "answer_print": "36.2",
+          "answer_accept": [],
+          "answer_unit": "m",
+          "answer_format": "소수로 (단위: m)",
+          "figure": null,
+          "hint": "tan 60° = 높이/거리. 눈높이를 마지막에 더해요.",
+          "solution": "눈높이 위쪽 높이는 20 × √3 ≈ 34.6 m 이고 눈높이 1.6 m 를 더하면 36.2 m 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "app.eye-height",
+            "app.tan-direction"
+          ]
         }
       ]
     },
@@ -187,7 +296,9 @@
           "level": "L",
           "stem_src": "두 변이 6, 8 이고 끼인각이 30° 인 삼각형의 넓이는?",
           "stem_print": "두 변의 길이가 6, 8 이고 그 끼인각의 크기가 30° 인 삼각형의 넓이를 구하시오.",
-          "answer_atoms": ["12"],
+          "answer_atoms": [
+            "12"
+          ],
           "answer_print": "12",
           "answer_accept": [],
           "answer_unit": null,
@@ -196,14 +307,18 @@
           "hint": "½ × 6 × 8 × sin 30°.",
           "solution": "½ × 6 × 8 × 1/2 = 12 예요.",
           "work_space": "sm",
-          "misconceptions": ["app.area-half-forgot"]
+          "misconceptions": [
+            "app.area-half-forgot"
+          ]
         },
         {
           "id": "m3-u08-t04-02",
           "level": "M",
           "stem_src": "두 변이 5, 8 이고 끼인각이 60° 인 삼각형의 넓이가 a√3 이에요. a는?",
           "stem_print": "두 변의 길이가 5, 8 이고 그 끼인각의 크기가 60° 인 삼각형의 넓이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["10"],
+          "answer_atoms": [
+            "10"
+          ],
           "answer_print": "10√3",
           "answer_accept": [],
           "answer_unit": null,
@@ -212,14 +327,18 @@
           "hint": "½ × 5 × 8 × sin 60° = 20 × √3/2.",
           "solution": "½ × 5 × 8 × √3/2 = 10√3 이에요.",
           "work_space": "md",
-          "misconceptions": ["app.area-half-forgot"]
+          "misconceptions": [
+            "app.area-half-forgot"
+          ]
         },
         {
           "id": "m3-u08-t04-03",
           "level": "M",
           "stem_src": "두 변이 4, 6 이고 끼인각이 45° 인 삼각형의 넓이가 a√2 예요. a는?",
           "stem_print": "두 변의 길이가 4, 6 이고 그 끼인각의 크기가 45° 인 삼각형의 넓이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["6"],
+          "answer_atoms": [
+            "6"
+          ],
           "answer_print": "6√2",
           "answer_accept": [],
           "answer_unit": null,
@@ -228,7 +347,30 @@
           "hint": "½ × 4 × 6 × sin 45° = 12 × √2/2.",
           "solution": "½ × 4 × 6 × √2/2 = 6√2 예요.",
           "work_space": "md",
-          "misconceptions": ["app.area-half-forgot"]
+          "misconceptions": [
+            "app.area-half-forgot"
+          ]
+        },
+        {
+          "id": "m3-u08-t04-04",
+          "level": "H",
+          "stem_src": "두 변이 6, 8 이고 끼인각이 60° 인 삼각형과, 두 변이 6, 8 이고 끼인각이 120° 인 삼각형의 넓이의 합이 a√3 일 때 a는?",
+          "stem_print": "두 변의 길이가 6, 8 이고 끼인각이 60° 인 삼각형과, 두 변의 길이가 6, 8 이고 끼인각이 120° 인 삼각형의 넓이의 합을 구하시오.",
+          "answer_atoms": [
+            "24√3"
+          ],
+          "answer_print": "24√3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "a√b 꼴로",
+          "figure": null,
+          "hint": "120° 의 sin 은 보각 60° 의 sin 과 같아요.",
+          "solution": "두 넓이가 모두 12√3 이므로 합은 24√3 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "app.obtuse-sin",
+            "app.area-half-forgot"
+          ]
         }
       ]
     },
@@ -242,7 +384,9 @@
           "level": "L",
           "stem_src": "두 변이 6, 10 이고 끼인각이 150° 인 삼각형의 넓이는?",
           "stem_print": "두 변의 길이가 6, 10 이고 그 끼인각의 크기가 150° 인 삼각형의 넓이를 구하시오.",
-          "answer_atoms": ["15"],
+          "answer_atoms": [
+            "15"
+          ],
           "answer_print": "15",
           "answer_accept": [],
           "answer_unit": null,
@@ -251,14 +395,18 @@
           "hint": "sin 150° = sin 30° = 1/2.",
           "solution": "½ × 6 × 10 × sin 150° = 30 × 1/2 = 15 예요.",
           "work_space": "sm",
-          "misconceptions": ["app.obtuse-sin"]
+          "misconceptions": [
+            "app.obtuse-sin"
+          ]
         },
         {
           "id": "m3-u08-t05-02",
           "level": "M",
           "stem_src": "두 변이 4, 8 이고 끼인각이 120° 인 삼각형의 넓이가 a√3 이에요. a는?",
           "stem_print": "두 변의 길이가 4, 8 이고 그 끼인각의 크기가 120° 인 삼각형의 넓이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["8"],
+          "answer_atoms": [
+            "8"
+          ],
           "answer_print": "8√3",
           "answer_accept": [],
           "answer_unit": null,
@@ -267,14 +415,19 @@
           "hint": "sin 120° = sin 60° = √3/2.",
           "solution": "½ × 4 × 8 × √3/2 = 8√3 이에요.",
           "work_space": "md",
-          "misconceptions": ["app.obtuse-sin", "app.area-half-forgot"]
+          "misconceptions": [
+            "app.obtuse-sin",
+            "app.area-half-forgot"
+          ]
         },
         {
           "id": "m3-u08-t05-03",
           "level": "M",
           "stem_src": "두 변이 6, 6 이고 끼인각이 135° 인 삼각형의 넓이가 a√2 예요. a는?",
           "stem_print": "두 변의 길이가 6, 6 이고 그 끼인각의 크기가 135° 인 삼각형의 넓이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["9"],
+          "answer_atoms": [
+            "9"
+          ],
           "answer_print": "9√2",
           "answer_accept": [],
           "answer_unit": null,
@@ -283,7 +436,29 @@
           "hint": "sin 135° = sin 45° = √2/2.",
           "solution": "½ × 6 × 6 × √2/2 = 9√2 예요.",
           "work_space": "md",
-          "misconceptions": ["app.obtuse-sin"]
+          "misconceptions": [
+            "app.obtuse-sin"
+          ]
+        },
+        {
+          "id": "m3-u08-t05-04",
+          "level": "H",
+          "stem_src": "두 변의 길이가 4, 5√2 이고 끼인각이 135° 인 삼각형의 넓이는?",
+          "stem_print": "두 변의 길이가 4, 5√2 이고 그 끼인각이 135° 인 삼각형의 넓이를 구하시오.",
+          "answer_atoms": [
+            "10"
+          ],
+          "answer_print": "10",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "수로",
+          "figure": null,
+          "hint": "sin 135° = sin(180° − 135°). √2 × √2 = 2.",
+          "solution": "½ × 4 × 5√2 × (√2/2) = 10 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "app.obtuse-sin"
+          ]
         }
       ]
     },
@@ -297,7 +472,9 @@
           "level": "L",
           "stem_src": "두 변이 6, 5 이고 끼인각이 30° 인 평행사변형의 넓이는?",
           "stem_print": "두 변의 길이가 6, 5 이고 그 끼인각의 크기가 30° 인 평행사변형의 넓이를 구하시오.",
-          "answer_atoms": ["15"],
+          "answer_atoms": [
+            "15"
+          ],
           "answer_print": "15",
           "answer_accept": [],
           "answer_unit": null,
@@ -306,14 +483,18 @@
           "hint": "평행사변형은 삼각형 두 개 — ½ 이 없어요. 6 × 5 × sin 30°.",
           "solution": "6 × 5 × 1/2 = 15 예요.",
           "work_space": "sm",
-          "misconceptions": ["app.parallelogram-half"]
+          "misconceptions": [
+            "app.parallelogram-half"
+          ]
         },
         {
           "id": "m3-u08-t06-02",
           "level": "M",
           "stem_src": "두 대각선의 길이가 8, 6 이고 끼인각이 60° 인 사각형의 넓이가 a√3 이에요. a는?",
           "stem_print": "두 대각선의 길이가 8, 6 이고 두 대각선이 이루는 각이 60° 인 사각형의 넓이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["12"],
+          "answer_atoms": [
+            "12"
+          ],
           "answer_print": "12√3",
           "answer_accept": [],
           "answer_unit": null,
@@ -322,14 +503,18 @@
           "hint": "½ × 8 × 6 × sin 60°.",
           "solution": "½ × 8 × 6 × √3/2 = 12√3 이에요.",
           "work_space": "md",
-          "misconceptions": ["app.diagonal-formula"]
+          "misconceptions": [
+            "app.diagonal-formula"
+          ]
         },
         {
           "id": "m3-u08-t06-03",
           "level": "M",
           "stem_src": "한 변이 4 이고 한 내각이 60° 인 마름모의 넓이가 a√3 이에요. a는?",
           "stem_print": "한 변의 길이가 4 이고 한 내각의 크기가 60° 인 마름모의 넓이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["8"],
+          "answer_atoms": [
+            "8"
+          ],
           "answer_print": "8√3",
           "answer_accept": [],
           "answer_unit": null,
@@ -338,7 +523,30 @@
           "hint": "마름모는 네 변이 같은 평행사변형: 4 × 4 × sin 60°.",
           "solution": "4 × 4 × √3/2 = 8√3 이에요.",
           "work_space": "md",
-          "misconceptions": ["app.parallelogram-half"]
+          "misconceptions": [
+            "app.parallelogram-half"
+          ]
+        },
+        {
+          "id": "m3-u08-t06-04",
+          "level": "H",
+          "stem_src": "한 변의 길이가 6 인 정육각형의 넓이가 a√3 일 때 a는?",
+          "stem_print": "한 변의 길이가 6 인 정육각형의 넓이를 구하시오.",
+          "answer_atoms": [
+            "54√3"
+          ],
+          "answer_print": "54√3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "a√b 꼴로",
+          "figure": null,
+          "hint": "정육각형은 한 변이 6 인 정삼각형 6개예요.",
+          "solution": "정삼각형 하나의 넓이는 ½ × 6 × 6 × sin 60° = 9√3 이므로 정육각형의 넓이는 54√3 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "app.equilateral-height",
+            "app.parallelogram-half"
+          ]
         }
       ]
     },
@@ -352,7 +560,9 @@
           "level": "L",
           "stem_src": "두 변이 8, 12 인 삼각형의 넓이가 24 일 때 끼인각(예각)은 몇 도인가요?",
           "stem_print": "두 변의 길이가 8, 12 인 삼각형의 넓이가 24 일 때, 두 변의 끼인각(예각)의 크기를 구하시오.",
-          "answer_atoms": ["30"],
+          "answer_atoms": [
+            "30"
+          ],
           "answer_print": "30",
           "answer_accept": [],
           "answer_unit": "°",
@@ -361,14 +571,18 @@
           "hint": "½ × 8 × 12 × sin C = 24 에서 sin C 를 구해요.",
           "solution": "48 sin C = 24 → sin C = 1/2 → C = 30° 예요.",
           "work_space": "md",
-          "misconceptions": ["app.angle-from-area"]
+          "misconceptions": [
+            "app.angle-from-area"
+          ]
         },
         {
           "id": "m3-u08-t07-02",
           "level": "M",
           "stem_src": "두 변이 5, 8 인 평행사변형의 넓이가 20√2 일 때 끼인각(예각)은 몇 도인가요?",
           "stem_print": "두 변의 길이가 5, 8 인 평행사변형의 넓이가 20√2 일 때, 두 변의 끼인각(예각)의 크기를 구하시오.",
-          "answer_atoms": ["45"],
+          "answer_atoms": [
+            "45"
+          ],
           "answer_print": "45",
           "answer_accept": [],
           "answer_unit": "°",
@@ -377,14 +591,19 @@
           "hint": "5 × 8 × sin x = 20√2 에서 sin x 를 구해요.",
           "solution": "40 sin x = 20√2 → sin x = √2/2 → x = 45° 예요.",
           "work_space": "md",
-          "misconceptions": ["app.angle-from-area", "app.parallelogram-half"]
+          "misconceptions": [
+            "app.angle-from-area",
+            "app.parallelogram-half"
+          ]
         },
         {
           "id": "m3-u08-t07-03",
           "level": "M",
           "stem_src": "한 변이 4 인 정삼각형의 넓이가 a√3 이에요. a는?",
           "stem_print": "한 변의 길이가 4 인 정삼각형의 넓이를 구하시오. (근호를 남겨서)",
-          "answer_atoms": ["4"],
+          "answer_atoms": [
+            "4"
+          ],
           "answer_print": "4√3",
           "answer_accept": [],
           "answer_unit": null,
@@ -393,7 +612,31 @@
           "hint": "정삼각형은 두 변 4, 4, 끼인각 60° 인 삼각형이에요.",
           "solution": "½ × 4 × 4 × sin 60° = 8 × √3/2 = 4√3 이에요.",
           "work_space": "md",
-          "misconceptions": ["app.equilateral-height"]
+          "misconceptions": [
+            "app.equilateral-height"
+          ]
+        },
+        {
+          "id": "m3-u08-t07-04",
+          "level": "H",
+          "stem_src": "두 변의 길이가 6, 10 인 삼각형의 넓이가 15√3 일 때, 끼인각이 둔각이면 몇 도인가요?",
+          "stem_print": "두 변의 길이가 6, 10 인 삼각형의 넓이가 15√3 일 때, 끼인각이 둔각이면 그 크기를 구하시오.",
+          "answer_atoms": [
+            "120"
+          ],
+          "answer_print": "120°",
+          "answer_accept": [
+            "120"
+          ],
+          "answer_unit": null,
+          "answer_format": "각도(°)를 수로",
+          "figure": null,
+          "hint": "sin C 의 값을 먼저 구해요. 같은 sin 값을 갖는 예각과 둔각은 서로 보각.",
+          "solution": "sin C = 15√3 ÷ 30 = √3/2 이므로 C = 60° 또는 120°. 둔각이므로 120° 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "app.angle-from-area"
+          ]
         }
       ]
     }

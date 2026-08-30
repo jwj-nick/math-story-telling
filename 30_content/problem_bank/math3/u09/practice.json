@@ -9,7 +9,8 @@
     "extractor": "70_tools/print/extract_math2_p.py",
     "review": "draft",
     "notation": "html-sup",
-    "note": "answer_atoms 는 원본 script 의 P(...) 값 그대로. 정답은 모두 자연수. 유형당 난이도 L/M/M."
+    "note": "answer_atoms 는 원본 script 의 P(...) 값 그대로. 정답은 모두 자연수. 유형당 난이도 L/M/M.",
+    "h_added": "2026-08-30"
   },
   "types": [
     {
@@ -22,7 +23,9 @@
           "level": "L",
           "stem_src": "반지름 5인 원에서 중심으로부터 거리가 3인 현의 길이는?",
           "stem_print": "반지름의 길이가 5 인 원에서 중심으로부터의 거리가 3 인 현의 길이를 구하시오.",
-          "answer_atoms": ["8"],
+          "answer_atoms": [
+            "8"
+          ],
           "answer_print": "8",
           "answer_accept": [],
           "answer_unit": null,
@@ -31,14 +34,18 @@
           "hint": "현의 절반 = √(5² − 3²). 두 배를 잊지 마세요.",
           "solution": "현의 절반 = √(25 − 9) = 4 이므로 현의 길이는 8 이에요.",
           "work_space": "sm",
-          "misconceptions": ["circ.chord-half"]
+          "misconceptions": [
+            "circ.chord-half"
+          ]
         },
         {
           "id": "m3-u09-t01-02",
           "level": "M",
           "stem_src": "반지름 10인 원에서 중심으로부터 거리가 6인 현의 길이는?",
           "stem_print": "반지름의 길이가 10 인 원에서 중심으로부터의 거리가 6 인 현의 길이를 구하시오.",
-          "answer_atoms": ["16"],
+          "answer_atoms": [
+            "16"
+          ],
           "answer_print": "16",
           "answer_accept": [],
           "answer_unit": null,
@@ -47,14 +54,19 @@
           "hint": "√(10² − 6²) = 8 이 현의 절반이에요.",
           "solution": "현의 절반 = √(100 − 36) = 8 이므로 현의 길이는 16 이에요.",
           "work_space": "sm",
-          "misconceptions": ["circ.chord-half", "circ.hyp-wrong"]
+          "misconceptions": [
+            "circ.chord-half",
+            "circ.hyp-wrong"
+          ]
         },
         {
           "id": "m3-u09-t01-03",
           "level": "M",
           "stem_src": "반지름 13인 원에서 길이가 24인 현은 중심에서 얼마나 떨어져 있나요?",
           "stem_print": "반지름의 길이가 13 인 원에서 길이가 24 인 현과 중심 사이의 거리를 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": null,
@@ -63,7 +75,30 @@
           "hint": "현의 절반은 12. 반지름 13 이 빗변이에요.",
           "solution": "거리 = √(13² − 12²) = √25 = 5 예요.",
           "work_space": "md",
-          "misconceptions": ["circ.hyp-wrong"]
+          "misconceptions": [
+            "circ.hyp-wrong"
+          ]
+        },
+        {
+          "id": "m3-u09-t01-04",
+          "level": "H",
+          "stem_src": "반지름 5인 원에서 길이가 6인 현과 길이가 8인 현이 평행하고 중심의 같은 쪽에 있을 때, 두 현 사이의 거리는?",
+          "stem_print": "반지름의 길이가 5 인 원에서 길이가 6 인 현과 길이가 8 인 현이 서로 평행하고 중심에 대하여 같은 쪽에 있을 때, 두 현 사이의 거리를 구하시오.",
+          "answer_atoms": [
+            "1"
+          ],
+          "answer_print": "1",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "자연수로",
+          "figure": null,
+          "hint": "각 현까지의 거리를 따로 구해 빼요.",
+          "solution": "길이 6 인 현까지의 거리는 √(25 − 9) = 4, 길이 8 인 현까지는 √(25 − 16) = 3 이므로 두 현 사이의 거리는 4 − 3 = 1 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "circ.chord-half",
+            "circ.equal-dist-chord"
+          ]
         }
       ]
     },
@@ -77,7 +112,9 @@
           "level": "L",
           "stem_src": "길이 8인 현이 중심에서 3만큼 떨어져 있을 때 원의 반지름은?",
           "stem_print": "길이가 8 인 현이 원의 중심에서 3 만큼 떨어져 있을 때, 이 원의 반지름의 길이를 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": null,
@@ -86,14 +123,18 @@
           "hint": "현의 절반 4, 거리 3 → 빗변(반지름)을 구해요.",
           "solution": "r = √(3² + 4²) = 5 예요.",
           "work_space": "sm",
-          "misconceptions": ["circ.hyp-wrong"]
+          "misconceptions": [
+            "circ.hyp-wrong"
+          ]
         },
         {
           "id": "m3-u09-t02-02",
           "level": "M",
           "stem_src": "길이 12인 현이 중심에서 8만큼 떨어져 있을 때 원의 반지름은?",
           "stem_print": "길이가 12 인 현이 원의 중심에서 8 만큼 떨어져 있을 때, 이 원의 반지름의 길이를 구하시오.",
-          "answer_atoms": ["10"],
+          "answer_atoms": [
+            "10"
+          ],
           "answer_print": "10",
           "answer_accept": [],
           "answer_unit": null,
@@ -102,14 +143,18 @@
           "hint": "현의 절반 6, 거리 8.",
           "solution": "r = √(8² + 6²) = √100 = 10 이에요.",
           "work_space": "sm",
-          "misconceptions": ["circ.hyp-wrong"]
+          "misconceptions": [
+            "circ.hyp-wrong"
+          ]
         },
         {
           "id": "m3-u09-t02-03",
           "level": "M",
           "stem_src": "원의 일부에서 현 AB = 16 이고, AB의 중점에서 호까지의 거리가 4 일 때 원의 반지름은?",
           "stem_print": "원의 일부(호)에서 현 AB = 16 이고, AB 의 중점에서 호까지의 거리가 4 일 때, 이 원의 반지름의 길이를 구하시오.",
-          "answer_atoms": ["10"],
+          "answer_atoms": [
+            "10"
+          ],
           "answer_print": "10",
           "answer_accept": [],
           "answer_unit": null,
@@ -118,7 +163,29 @@
           "hint": "반지름을 r 로 놓으면 중심에서 현까지의 거리는 r − 4 예요.",
           "solution": "r² = 8² + (r − 4)² → r² = 64 + r² − 8r + 16 → 8r = 80 → r = 10 이에요.",
           "work_space": "md",
-          "misconceptions": ["circ.arc-height"]
+          "misconceptions": [
+            "circ.arc-height"
+          ]
+        },
+        {
+          "id": "m3-u09-t02-04",
+          "level": "H",
+          "stem_src": "원의 일부에서 현 AB = 24 이고, AB의 중점에서 호까지의 거리가 8 일 때 원의 반지름은?",
+          "stem_print": "원의 일부(호)에서 현 AB = 24 이고, AB 의 중점에서 호까지의 거리가 8 일 때, 이 원의 반지름의 길이를 구하시오.",
+          "answer_atoms": [
+            "13"
+          ],
+          "answer_print": "13",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "자연수로",
+          "figure": null,
+          "hint": "반지름을 r 로 놓으면 중심에서 현까지의 거리는 r − 8.",
+          "solution": "r² = 12² + (r − 8)² → r² = 144 + r² − 16r + 64 → 16r = 208 → r = 13 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "circ.arc-height"
+          ]
         }
       ]
     },
@@ -132,7 +199,9 @@
           "level": "L",
           "stem_src": "중심 O에서 두 현 AB, CD 까지의 거리가 같고 AB = 10 일 때 CD 는?",
           "stem_print": "원의 중심 O 에서 두 현 AB, CD 까지의 거리가 같고 AB = 10 일 때, CD 의 길이를 구하시오.",
-          "answer_atoms": ["10"],
+          "answer_atoms": [
+            "10"
+          ],
           "answer_print": "10",
           "answer_accept": [],
           "answer_unit": null,
@@ -141,14 +210,18 @@
           "hint": "같은 거리에 있는 두 현의 길이는 같아요.",
           "solution": "중심에서 같은 거리에 있으므로 CD = AB = 10 이에요.",
           "work_space": "sm",
-          "misconceptions": ["circ.equal-dist-chord"]
+          "misconceptions": [
+            "circ.equal-dist-chord"
+          ]
         },
         {
           "id": "m3-u09-t03-02",
           "level": "M",
           "stem_src": "반지름 5인 원에서 중심으로부터 같은 거리에 있는 두 현 중 하나의 길이가 6 일 때 다른 현의 길이는?",
           "stem_print": "반지름의 길이가 5 인 원에서 중심으로부터 같은 거리에 있는 두 현 중 하나의 길이가 6 일 때, 다른 현의 길이를 구하시오.",
-          "answer_atoms": ["6"],
+          "answer_atoms": [
+            "6"
+          ],
           "answer_print": "6",
           "answer_accept": [],
           "answer_unit": null,
@@ -157,14 +230,18 @@
           "hint": "거리가 같으면 길이도 같아요. 반지름은 확인용이에요.",
           "solution": "같은 거리 → 같은 길이이므로 6 이에요. (거리는 √(25 − 9) = 4)",
           "work_space": "sm",
-          "misconceptions": ["circ.equal-dist-chord"]
+          "misconceptions": [
+            "circ.equal-dist-chord"
+          ]
         },
         {
           "id": "m3-u09-t03-03",
           "level": "M",
           "stem_src": "반지름 5인 원에서 중심으로부터 거리가 3, 4인 두 현 중 더 긴 현의 길이는?",
           "stem_print": "반지름의 길이가 5 인 원에서 중심으로부터의 거리가 각각 3, 4 인 두 현 중 더 긴 현의 길이를 구하시오.",
-          "answer_atoms": ["8"],
+          "answer_atoms": [
+            "8"
+          ],
           "answer_print": "8",
           "answer_accept": [],
           "answer_unit": null,
@@ -173,7 +250,31 @@
           "hint": "중심에 가까운 현이 더 길어요. 거리 3인 현을 구해요.",
           "solution": "거리 3인 현: 절반 = √(25 − 9) = 4 → 8. (거리 4인 현은 6) 더 긴 현은 8 이에요.",
           "work_space": "md",
-          "misconceptions": ["circ.equal-dist-chord", "circ.chord-half"]
+          "misconceptions": [
+            "circ.equal-dist-chord",
+            "circ.chord-half"
+          ]
+        },
+        {
+          "id": "m3-u09-t03-04",
+          "level": "H",
+          "stem_src": "반지름 10인 원에서 중심으로부터의 거리가 6인 현 AB와 8인 현 CD의 길이의 합은?",
+          "stem_print": "반지름의 길이가 10 인 원에서 중심으로부터의 거리가 6 인 현 AB 와 8 인 현 CD 의 길이의 합을 구하시오.",
+          "answer_atoms": [
+            "28"
+          ],
+          "answer_print": "28",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "자연수로",
+          "figure": null,
+          "hint": "각 현의 절반을 피타고라스로 구하고 두 배씩.",
+          "solution": "AB = 2√(10² − 6²) = 16, CD = 2√(10² − 8²) = 12 이므로 합은 28 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "circ.chord-half",
+            "circ.equal-dist-chord"
+          ]
         }
       ]
     },
@@ -187,7 +288,9 @@
           "level": "L",
           "stem_src": "OP = 10, 반지름 6 일 때 접선 PT 의 길이는?",
           "stem_print": "원 O 밖의 점 P 에서 원에 그은 접선의 접점을 T 라 할 때, OP = 10, 반지름 6 이면 접선 PT 의 길이를 구하시오.",
-          "answer_atoms": ["8"],
+          "answer_atoms": [
+            "8"
+          ],
           "answer_print": "8",
           "answer_accept": [],
           "answer_unit": null,
@@ -196,14 +299,18 @@
           "hint": "직각은 T 에. PT = √(OP² − OT²).",
           "solution": "PT = √(10² − 6²) = √64 = 8 이에요.",
           "work_space": "sm",
-          "misconceptions": ["circ.tangent-right-angle"]
+          "misconceptions": [
+            "circ.tangent-right-angle"
+          ]
         },
         {
           "id": "m3-u09-t04-02",
           "level": "M",
           "stem_src": "접선 PT = 12, 반지름 5 일 때 OP 의 길이는?",
           "stem_print": "원 O 밖의 점 P 에서 그은 접선의 길이 PT = 12, 반지름이 5 일 때, OP 의 길이를 구하시오.",
-          "answer_atoms": ["13"],
+          "answer_atoms": [
+            "13"
+          ],
           "answer_print": "13",
           "answer_accept": [],
           "answer_unit": null,
@@ -212,14 +319,19 @@
           "hint": "OP 가 빗변이에요: OP² = 5² + 12².",
           "solution": "OP = √(25 + 144) = √169 = 13 이에요.",
           "work_space": "sm",
-          "misconceptions": ["circ.tangent-right-angle", "circ.tangent-add"]
+          "misconceptions": [
+            "circ.tangent-right-angle",
+            "circ.tangent-add"
+          ]
         },
         {
           "id": "m3-u09-t04-03",
           "level": "M",
           "stem_src": "OP = 17, 접선 PT = 15 일 때 원의 반지름은?",
           "stem_print": "원 O 밖의 점 P 에서 그은 접선의 길이 PT = 15 이고 OP = 17 일 때, 원의 반지름의 길이를 구하시오.",
-          "answer_atoms": ["8"],
+          "answer_atoms": [
+            "8"
+          ],
           "answer_print": "8",
           "answer_accept": [],
           "answer_unit": null,
@@ -228,7 +340,30 @@
           "hint": "r = OT = √(OP² − PT²).",
           "solution": "r = √(17² − 15²) = √(289 − 225) = √64 = 8 이에요.",
           "work_space": "md",
-          "misconceptions": ["circ.tangent-add"]
+          "misconceptions": [
+            "circ.tangent-add"
+          ]
+        },
+        {
+          "id": "m3-u09-t04-04",
+          "level": "H",
+          "stem_src": "원 O 밖의 점 P에서 그은 접선의 길이 PT = 12 이고, 선분 PO가 원과 만나는 점을 A라 할 때 PA = 8 이에요. 원의 반지름은?",
+          "stem_print": "원 O 밖의 점 P 에서 그은 접선의 접점을 T, 선분 PO 가 원과 만나는 점을 A 라 하자. PT = 12, PA = 8 일 때, 원의 반지름의 길이를 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "자연수로",
+          "figure": null,
+          "hint": "OP = PA + 반지름. 직각삼각형 OTP 에서 피타고라스.",
+          "solution": "반지름을 r 라 하면 OP = r + 8 이고 (r + 8)² = r² + 12² 에서 16r + 64 = 144, r = 5 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "circ.tangent-right-angle",
+            "circ.tangent-add"
+          ]
         }
       ]
     },
@@ -242,7 +377,9 @@
           "level": "L",
           "stem_src": "점 P에서 원에 그은 두 접선의 접점이 A, B 이고 PA = 9 일 때 PB 는?",
           "stem_print": "원 밖의 점 P 에서 원에 그은 두 접선의 접점을 A, B 라 할 때, PA = 9 이면 PB 의 길이를 구하시오.",
-          "answer_atoms": ["9"],
+          "answer_atoms": [
+            "9"
+          ],
           "answer_print": "9",
           "answer_accept": [],
           "answer_unit": null,
@@ -251,14 +388,18 @@
           "hint": "두 접선의 길이는 같아요.",
           "solution": "PA = PB 이므로 PB = 9 예요.",
           "work_space": "sm",
-          "misconceptions": ["circ.two-tangents"]
+          "misconceptions": [
+            "circ.two-tangents"
+          ]
         },
         {
           "id": "m3-u09-t05-02",
           "level": "M",
           "stem_src": "PA = 2x + 1, PB = 9 가 두 접선의 길이일 때 x는?",
           "stem_print": "원 밖의 점 P 에서 그은 두 접선의 길이가 PA = 2x + 1, PB = 9 일 때, x 의 값을 구하시오.",
-          "answer_atoms": ["4"],
+          "answer_atoms": [
+            "4"
+          ],
           "answer_print": "4",
           "answer_accept": [],
           "answer_unit": null,
@@ -267,14 +408,18 @@
           "hint": "PA = PB 로 식을 세워요.",
           "solution": "2x + 1 = 9 에서 x = 4 예요.",
           "work_space": "sm",
-          "misconceptions": ["circ.two-tangents"]
+          "misconceptions": [
+            "circ.two-tangents"
+          ]
         },
         {
           "id": "m3-u09-t05-03",
           "level": "M",
           "stem_src": "두 접선이 이루는 각 ∠APB = 60°, PA = 6 일 때 AB 의 길이는?",
           "stem_print": "원 밖의 점 P 에서 그은 두 접선의 접점을 A, B 라 하고 ∠APB = 60°, PA = 6 일 때, AB 의 길이를 구하시오.",
-          "answer_atoms": ["6"],
+          "answer_atoms": [
+            "6"
+          ],
           "answer_print": "6",
           "answer_accept": [],
           "answer_unit": null,
@@ -283,7 +428,31 @@
           "hint": "PA = PB 인 이등변삼각형의 꼭지각이 60° 예요.",
           "solution": "삼각형 PAB 는 PA = PB, ∠P = 60° 인 정삼각형이므로 AB = 6 이에요.",
           "work_space": "md",
-          "misconceptions": ["circ.tangent-triangle", "circ.two-tangents"]
+          "misconceptions": [
+            "circ.tangent-triangle",
+            "circ.two-tangents"
+          ]
+        },
+        {
+          "id": "m3-u09-t05-04",
+          "level": "H",
+          "stem_src": "반지름 3인 원 밖의 점 P에서 그은 두 접선의 접점을 A, B라 하자. ∠APB = 60° 일 때 PA = a√3 이에요. a는?",
+          "stem_print": "반지름의 길이가 3 인 원 O 밖의 점 P 에서 그은 두 접선의 접점을 A, B 라 하자. ∠APB = 60° 일 때, PA 의 길이를 구하시오.",
+          "answer_atoms": [
+            "3√3"
+          ],
+          "answer_print": "3√3",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "a√b 꼴로",
+          "figure": null,
+          "hint": "두 접선의 길이가 같으니 OP 가 각을 이등분해요. 직각삼각형 OAP 에서 tan 30°.",
+          "solution": "∠APO = 30° 이고 ∠OAP = 90° 이므로 tan 30° = OA/PA = 3/PA, PA = 3√3 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "circ.two-tangents",
+            "circ.tangent-triangle"
+          ]
         }
       ]
     },
@@ -297,7 +466,9 @@
           "level": "L",
           "stem_src": "삼각형 ABC의 내접원이 AB, BC와 만나는 점을 각각 F, D라 할 때, AB = 7, AF = 3 이면 BD 는?",
           "stem_print": "삼각형 ABC 의 내접원이 변 AB, BC 와 만나는 점을 각각 F, D 라 할 때, AB = 7, AF = 3 이면 BD 의 길이를 구하시오.",
-          "answer_atoms": ["4"],
+          "answer_atoms": [
+            "4"
+          ],
           "answer_print": "4",
           "answer_accept": [],
           "answer_unit": null,
@@ -306,14 +477,18 @@
           "hint": "BF = AB − AF, 그리고 BD = BF (같은 꼭짓점 B 의 접선).",
           "solution": "BF = 7 − 3 = 4 이고 BD = BF 이므로 BD = 4 예요.",
           "work_space": "sm",
-          "misconceptions": ["circ.incircle-tangent"]
+          "misconceptions": [
+            "circ.incircle-tangent"
+          ]
         },
         {
           "id": "m3-u09-t06-02",
           "level": "M",
           "stem_src": "AB = 8, BC = 9, CA = 7 인 삼각형의 내접원이 BC와 만나는 점을 D라 할 때 BD 는?",
           "stem_print": "AB = 8, BC = 9, CA = 7 인 삼각형 ABC 의 내접원이 변 BC 와 만나는 점을 D 라 할 때, BD 의 길이를 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": null,
@@ -322,14 +497,18 @@
           "hint": "BD = x 로 놓으면 CD = 9 − x, AF = AE 로 식을 세워요. (BD = (AB + BC − CA)/2)",
           "solution": "BD = x, CD = 9 − x, BF = x, CE = 9 − x, AF = 8 − x, AE = 7 − (9 − x) = x − 2. AF = AE → 8 − x = x − 2 → x = 5 예요.",
           "work_space": "md",
-          "misconceptions": ["circ.incircle-tangent"]
+          "misconceptions": [
+            "circ.incircle-tangent"
+          ]
         },
         {
           "id": "m3-u09-t06-03",
           "level": "M",
           "stem_src": "세 변이 6, 8, 10 인 직각삼각형의 내접원의 반지름은?",
           "stem_print": "세 변의 길이가 6, 8, 10 인 직각삼각형의 내접원의 반지름의 길이를 구하시오.",
-          "answer_atoms": ["2"],
+          "answer_atoms": [
+            "2"
+          ],
           "answer_print": "2",
           "answer_accept": [],
           "answer_unit": null,
@@ -338,7 +517,29 @@
           "hint": "직각 꼭짓점 쪽 접선의 길이가 r 이에요. (6 − r) + (8 − r) = 10.",
           "solution": "빗변 10 = (6 − r) + (8 − r) 에서 r = 2 예요. (r = (6 + 8 − 10)/2)",
           "work_space": "md",
-          "misconceptions": ["circ.incircle-radius"]
+          "misconceptions": [
+            "circ.incircle-radius"
+          ]
+        },
+        {
+          "id": "m3-u09-t06-04",
+          "level": "H",
+          "stem_src": "AB = 13, BC = 14, CA = 15 인 삼각형 ABC의 내접원이 변 BC와 만나는 점을 D라 할 때 BD는?",
+          "stem_print": "AB = 13, BC = 14, CA = 15 인 삼각형 ABC 의 내접원이 변 BC 와 만나는 점을 D 라 할 때, BD 의 길이를 구하시오.",
+          "answer_atoms": [
+            "6"
+          ],
+          "answer_print": "6",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "자연수로",
+          "figure": null,
+          "hint": "BD = x 로 놓고 CD = 14 − x, AF = AE 로 식을 세워요.",
+          "solution": "BD = BF = x, CD = CE = 14 − x, AF = 13 − x, AE = 15 − (14 − x) = 1 + x. AF = AE 에서 13 − x = 1 + x, x = 6 이에요.",
+          "work_space": "md",
+          "misconceptions": [
+            "circ.incircle-tangent"
+          ]
         }
       ]
     },
@@ -352,7 +553,9 @@
           "level": "L",
           "stem_src": "원에 외접하는 사각형 ABCD에서 AB = 5, CD = 7, AD = 4 일 때 BC 는?",
           "stem_print": "원에 외접하는 사각형 ABCD 에서 AB = 5, CD = 7, AD = 4 일 때, BC 의 길이를 구하시오.",
-          "answer_atoms": ["8"],
+          "answer_atoms": [
+            "8"
+          ],
           "answer_print": "8",
           "answer_accept": [],
           "answer_unit": null,
@@ -361,14 +564,18 @@
           "hint": "AB + CD = AD + BC.",
           "solution": "5 + 7 = 4 + BC 에서 BC = 8 이에요.",
           "work_space": "sm",
-          "misconceptions": ["circ.circumscribed-quad"]
+          "misconceptions": [
+            "circ.circumscribed-quad"
+          ]
         },
         {
           "id": "m3-u09-t07-02",
           "level": "M",
           "stem_src": "원에 외접하는 사각형 ABCD에서 AB = 6, BC = 9, CD = 8 일 때 AD 는?",
           "stem_print": "원에 외접하는 사각형 ABCD 에서 AB = 6, BC = 9, CD = 8 일 때, AD 의 길이를 구하시오.",
-          "answer_atoms": ["5"],
+          "answer_atoms": [
+            "5"
+          ],
           "answer_print": "5",
           "answer_accept": [],
           "answer_unit": null,
@@ -377,14 +584,18 @@
           "hint": "AB + CD = AD + BC 에 값을 넣어요.",
           "solution": "6 + 8 = AD + 9 에서 AD = 5 예요.",
           "work_space": "sm",
-          "misconceptions": ["circ.circumscribed-quad"]
+          "misconceptions": [
+            "circ.circumscribed-quad"
+          ]
         },
         {
           "id": "m3-u09-t07-03",
           "level": "M",
           "stem_src": "원에 외접하는 사각형의 둘레가 30 일 때 AB + CD 는?",
           "stem_print": "원에 외접하는 사각형 ABCD 의 둘레의 길이가 30 일 때, AB + CD 의 값을 구하시오.",
-          "answer_atoms": ["15"],
+          "answer_atoms": [
+            "15"
+          ],
           "answer_print": "15",
           "answer_accept": [],
           "answer_unit": null,
@@ -393,7 +604,29 @@
           "hint": "둘레 = (AB + CD) + (AD + BC) 이고 두 묶음이 같아요.",
           "solution": "AB + CD = AD + BC 이고 둘의 합이 30 이므로 AB + CD = 15 예요.",
           "work_space": "md",
-          "misconceptions": ["circ.circumscribed-quad"]
+          "misconceptions": [
+            "circ.circumscribed-quad"
+          ]
+        },
+        {
+          "id": "m3-u09-t07-04",
+          "level": "H",
+          "stem_src": "원에 외접하는 사각형 ABCD에서 AB = 3x − 1, BC = 2x + 4, CD = x + 5, AD = 10 일 때 x는?",
+          "stem_print": "원에 외접하는 사각형 ABCD 에서 AB = 3x − 1, BC = 2x + 4, CD = x + 5, AD = 10 일 때, x 의 값을 구하시오.",
+          "answer_atoms": [
+            "5"
+          ],
+          "answer_print": "5",
+          "answer_accept": [],
+          "answer_unit": null,
+          "answer_format": "자연수로",
+          "figure": null,
+          "hint": "마주 보는 변의 합이 같아요.",
+          "solution": "AB + CD = AD + BC 에서 4x + 4 = 2x + 14, x = 5 예요.",
+          "work_space": "md",
+          "misconceptions": [
+            "circ.circumscribed-quad"
+          ]
         }
       ]
     }
