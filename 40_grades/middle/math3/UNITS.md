@@ -83,3 +83,4 @@
 | 12 상자 그림과 산점도 | ✅ | ✅ | ✅ 21 | ✅ | ✅ a/b/c/mock 8장 | ✅ 2026-08-30 |
 
 - **2026-08-31 심화 확장**: 전 12단원 유형당 H 1문항(총 84) + 심화 모의고사 회차(m3-uNN-d, quota H:1) 추가 — 은행 28문항/단원, 앱 v20260830n, PDF 24장. 도구=`70_tools/print/add_h_problems.py`.
+- **2026-08-31 전범위 실전 모의고사 (Phase B, math1 방식 패리티 완료)**: `70_tools/print/EXAM_SPEC3.md`(math3판 저작 스펙) + `verify_exam3.py`(원본 verify_exam.py 무변형 사본, grade=math3) + `plan_exam3.py`(신규, 6회차 자동 배정 도구) 신설. `build_exam.py` 1줄 일반화(`cfg['grade']`). 12단원 `exam.json` 132문항 신규 저작(cn48+cv42+sh18+es24, 난이도 L49·M52·H31 — 6회차 22문항×선택15/단답3/서술4 수요와 정확히 일치하도록 역산). `verify_exam3.py --all` 오류 0(경고 15는 전부 수치 정렬 검사기의 분수·근호 false positive이거나 확인 후 허용). 6회차 config `sets/exam/m3-exam-{a~f}.json`(a/b/c=표준 L9M10H3, d=쉬움 L22, e/f=도전 M11H11) 자동 배정 — `--sets` 오류 0·경고 0, 132문항 전부 정확히 1회 사용. `build_exam.py`×6 + `print_pdf.ps1` → PDF 12장(`print/exam/`, 소스 리포 미추적). 프린트 허브에 `.examhub` 섹션(6회차 카드) 삽입.

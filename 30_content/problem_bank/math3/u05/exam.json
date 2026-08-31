@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "grade": "math3",
+    "unit": 5,
+    "unit_name": "이차함수와 그래프",
+    "purpose": "exam-pool",
+    "authored": "2026-08-31",
+    "note": "중3 전범위 실전 모의고사용 문항 풀. EXAM_SPEC3.md 준수. cv1은 t02-01(x축 대칭)을, cv2는 t05-02(축의 방정식)을 선택형으로 변환. sh1은 t01-01을 그대로 복사. cn1~3·es1~2는 신규 문항."
+  },
+  "problems": [
+    {
+      "id": "e05-cn1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "y = ax² 그래프의 성질(개념 판단)",
+      "source_id": null,
+      "stem_print": "이차함수 y = ax<sup>2</sup> (a≠0) 의 그래프에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "a > 0이면 그래프는 위로 볼록해요.",
+        "|a|의 값이 클수록 그래프의 폭은 넓어져요.",
+        "그래프는 항상 점 (0, 0)을 지나요.",
+        "그래프는 x축에 대하여 대칭이에요.",
+        "a의 값에 따라 그래프가 원점을 지나지 않을 수도 있어요."
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "a의 부호와 볼록 방향을 반대로 기억함(a > 0이면 아래로 볼록해요)",
+        "|a|와 그래프의 폭의 관계를 반대로 기억함(|a|가 클수록 폭은 좁아져요)",
+        "대칭축을 x축과 y축을 혼동함(y = ax²의 그래프는 y축에 대하여 대칭이에요)",
+        "평행이동한 그래프와 혼동해 a의 값에 따라 원점을 지나지 않을 수 있다고 착각함(원점을 지나는 성질은 a의 값과 무관해요)"
+      ],
+      "answer_print": "그래프는 항상 점 (0, 0)을 지나요.",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "a의 부호는 볼록 방향, |a|의 크기는 폭과 관련 있어요. 원점을 지나는 성질과 대칭축도 함께 떠올려 보세요.",
+      "solution": "y = ax²(a≠0)의 그래프는 a의 값에 관계없이 항상 원점 (0, 0)을 지나요. a > 0이면 아래로 볼록, a < 0이면 위로 볼록하고, |a|가 클수록 폭은 좁아져요. 그래프는 항상 y축에 대하여 대칭이에요. 따라서 옳은 설명은 '그래프는 항상 점 (0, 0)을 지나요'예요.",
+      "work_space": "sm",
+      "misconceptions": ["quadfunc.sign-convex-confusion", "quadfunc.width-inverse-confusion", "quadfunc.axis-of-symmetry-confusion", "quadfunc.origin-pass-misunderstood"]
+    },
+    {
+      "id": "e05-cn2",
+      "format": "choice5",
+      "level": "M",
+      "topic": "평행이동한 이차함수의 꼭짓점",
+      "source_id": null,
+      "stem_print": "이차함수 y = 2(x + 1)<sup>2</sup> − 5 의 그래프를 x축의 방향으로 −3만큼, y축의 방향으로 4만큼 평행이동한 그래프의 꼭짓점의 좌표는?",
+      "choices": [
+        "(2, −1)",
+        "(−4, −1)",
+        "(−4, −9)",
+        "(3, −8)",
+        "(−2, −1)"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "x축 이동 방향의 부호를 반대로 적용함(−3 대신 +3으로 계산)",
+        "y축 이동 방향의 부호를 반대로 적용함(+4 대신 −4로 계산)",
+        "x축·y축의 이동량을 서로 바꾸어 적용함",
+        "원래 꼭짓점의 x좌표 부호를 반대로 읽음((x + 1)² 에서 꼭짓점의 x좌표를 1로 잘못 읽음)"
+      ],
+      "answer_print": "(−4, −1)",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "먼저 원래 그래프의 꼭짓점을 읽고, 그 좌표에 이동한 만큼을 그대로 더하거나 빼요.",
+      "solution": "y = 2(x + 1)² − 5의 꼭짓점은 (−1, −5)예요. x축 방향으로 −3만큼 이동하면 x좌표는 −1 + (−3) = −4, y축 방향으로 4만큼 이동하면 y좌표는 −5 + 4 = −1이 돼요. 따라서 꼭짓점은 (−4, −1)이에요.",
+      "work_space": "md",
+      "misconceptions": ["quadfunc.translate-direction-sign", "quadfunc.vertex-read-sign"]
+    },
+    {
+      "id": "e05-cn3",
+      "format": "choice5",
+      "level": "H",
+      "topic": "꼭짓점과 두 점으로 함숫값 구하기",
+      "source_id": null,
+      "stem_print": "이차함수 y = a(x − 2)<sup>2</sup> + q 의 그래프가 두 점 (0, 5), (2, 1)을 지날 때, 이 그래프가 지나는 점 (4, k)의 k의 값은?",
+      "choices": [
+        "−11",
+        "−3",
+        "4",
+        "5",
+        "17"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "축 p를 0으로 잘못 읽어 점 (0, 5)를 꼭짓점으로 착각해서 계산함",
+        "(0 − 2)<sup>2</sup> 을 부호까지 그대로 옮겨 −4로 계산해 a의 부호를 반대로 구함",
+        "q를 더하는 것을 잊고 a(x − 2)<sup>2</sup> 부분만 계산함",
+        "x = 4를 (x − 2)로 바꾸지 않고 그대로 제곱해 계산함(평행이동을 반영하지 않음)"
+      ],
+      "answer_print": "5",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "식의 (x − 2) 가 0이 되는 점 (2, 1)이 바로 꼭짓점이에요. 꼭짓점을 먼저 이용해 q를 구해요.",
+      "solution": "x = 2일 때 (x − 2)² = 0이므로 점 (2, 1)이 꼭짓점이고 q = 1이에요. x = 0을 대입하면 5 = a×(0 − 2)² + 1 = 4a + 1이므로 a = 1이에요. 식은 y = (x − 2)² + 1이고, x = 4를 대입하면 k = (4 − 2)² + 1 = 4 + 1 = 5예요.",
+      "work_space": "lg",
+      "misconceptions": ["quadfunc.vertex-form-shortcut", "quadfunc.point-substitute", "quadfunc.shift-sign"]
+    },
+    {
+      "id": "e05-cv1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "x축 대칭인 그래프의 식",
+      "source_id": "m3-u05-t02-01",
+      "stem_print": "이차함수 y = 2x<sup>2</sup> 의 그래프와 x축에 대하여 대칭인 그래프의 식이 y = ax<sup>2</sup> 일 때, a의 값은?",
+      "choices": [
+        "−4",
+        "−2",
+        "−1",
+        "2",
+        "4"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "대칭을 적용하면서 계수의 크기도 두 배가 된다고 착각함",
+        "부호만 반대로 바꾸면 된다고 생각해 계수의 절댓값을 1로 잘못 줄여 씀",
+        "x축 대칭이 아니라 y축 대칭으로 착각해 a가 그대로라고 봄(y = ax²의 그래프는 이미 y축에 대하여 대칭이에요)",
+        "부호도 반대로, 크기도 두 배로 착각함"
+      ],
+      "answer_print": "−2",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "x축 대칭은 그래프의 모든 점의 y좌표의 부호를 반대로 바꾸는 것과 같아요.",
+      "solution": "x축에 대하여 대칭이면 y 대신 −y를 넣은 것과 같아요. −y = 2x² 에서 y = −2x² 이므로 a = −2예요.",
+      "work_space": "sm",
+      "misconceptions": ["quadfunc.reflection-xaxis", "quadfunc.axis-of-symmetry-confusion"]
+    },
+    {
+      "id": "e05-cv2",
+      "format": "choice5",
+      "level": "M",
+      "topic": "이차함수의 축의 방정식",
+      "source_id": "m3-u05-t05-02",
+      "stem_print": "이차함수 y = −3(x + 1)<sup>2</sup> − 2 의 그래프의 축의 방정식은?",
+      "choices": [
+        "x = −3",
+        "x = −2",
+        "x = −1",
+        "x = 1",
+        "x = 2"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "축의 값을 y = ax² 의 계수 a(=−3)와 혼동함",
+        "축을 위아래 이동량 q(=−2)와 혼동함",
+        "(x + 1) 에서 부호를 바꾸지 않고 그대로 x = 1로 읽음",
+        "괄호 안의 +1과 계수의 음수를 함께 섞어 부호를 반대로 계산함"
+      ],
+      "answer_print": "x = −1",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "축은 꼭짓점을 지나는 세로선이에요. 괄호 안이 0이 되는 x값을 찾아요.",
+      "solution": "x + 1 = 0이 되는 x는 −1이므로 축은 직선 x = −1이에요.",
+      "work_space": "sm",
+      "misconceptions": ["quadfunc.axis-as-constant-confusion", "quadfunc.shift-sign"]
+    },
+    {
+      "id": "e05-sh1",
+      "format": "short",
+      "level": "L",
+      "topic": "이차함수의 함숫값",
+      "source_id": "m3-u05-t01-01",
+      "stem_src": "y = 2x² 에서 x = 3 일 때 y의 값은?",
+      "stem_print": "이차함수 y = 2x<sup>2</sup> 에서 x = 3 일 때 y의 값을 구하시오.",
+      "answer_atoms": ["18"],
+      "answer_print": "18",
+      "answer_accept": [],
+      "answer_unit": null,
+      "answer_format": "정수로",
+      "figure": null,
+      "hint": "x를 먼저 제곱한 뒤 2를 곱해요.",
+      "solution": "y = 2 × 3<sup>2</sup> = 2 × 9 = 18이에요.",
+      "work_space": "sm",
+      "misconceptions": ["quadfunc.point-substitute"]
+    },
+    {
+      "id": "e05-es1",
+      "format": "essay",
+      "level": "L",
+      "topic": "이차함수의 평행이동과 꼭짓점",
+      "source_id": null,
+      "stem_print": "이차함수 y = x<sup>2</sup> 을 y축의 방향으로 −6만큼 평행이동한 그래프의 식을 구하고, 이 그래프의 꼭짓점의 좌표를 구하시오. 풀이 과정을 함께 쓰시오.",
+      "rubric": [
+        {"step": "평행이동한 식을 y = x² − 6 으로 바르게 세웠어요", "points": 4},
+        {"step": "꼭짓점의 좌표를 (0, −6)으로 구했어요", "points": 4}
+      ],
+      "answer_print": "식 y = x<sup>2</sup> − 6, 꼭짓점 (0, −6)",
+      "answer_accept": ["y = x² − 6이고 꼭짓점은 (0, −6)", "y=x²−6, (0,−6)"],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "위아래 이동은 식 끝에 이동한 만큼을 더하거나 빼요.",
+      "solution": "y축의 방향으로 −6만큼 평행이동하면 식 끝에 −6을 더해 y = x² − 6이 돼요. 원래 꼭짓점 (0, 0)이 아래로 6만큼 이동하므로 꼭짓점은 (0, −6)이에요.",
+      "work_space": "lg",
+      "misconceptions": ["quadfunc.q-as-x-confusion"]
+    },
+    {
+      "id": "e05-es2",
+      "format": "essay",
+      "level": "M",
+      "topic": "축·최솟값·한 점으로 식 세우기",
+      "source_id": null,
+      "stem_print": "이차함수 y = a(x − 1)<sup>2</sup> + q 의 그래프의 축이 직선 x = 1이고 최솟값이 −4이며, 점 (3, 4)를 지날 때, 이 이차함수의 식을 구하시오. 풀이 과정을 함께 쓰시오.",
+      "rubric": [
+        {"step": "최솟값 조건에서 꼭짓점의 y좌표 q = −4 를 구했어요", "points": 3},
+        {"step": "점 (3, 4)를 대입해 a = 2를 구했어요", "points": 3},
+        {"step": "이차함수의 식을 y = 2(x − 1)² − 4 로 바르게 정리했어요", "points": 2}
+      ],
+      "answer_print": "y = 2(x − 1)<sup>2</sup> − 4",
+      "answer_accept": ["y=2(x−1)²−4"],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "최솟값은 꼭짓점의 y좌표와 같아요. q를 먼저 구한 뒤 주어진 점을 대입해 a를 구해요.",
+      "solution": "축이 x = 1이고 최솟값이 −4이므로 꼭짓점은 (1, −4)이고 q = −4예요. y = a(x − 1)² − 4 에 점 (3, 4)를 대입하면 4 = a×(3 − 1)² − 4 = 4a − 4이므로 4a = 8, a = 2예요. 따라서 식은 y = 2(x − 1)² − 4예요.",
+      "work_space": "lg",
+      "misconceptions": ["quadfunc.min-value-as-vertex-y", "quadfunc.point-substitute"]
+    }
+  ]
+}

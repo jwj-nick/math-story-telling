@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "grade": "math3",
+    "unit": 3,
+    "unit_name": "다항식의 곱셈과 인수분해",
+    "purpose": "exam-pool",
+    "authored": "2026-08-31",
+    "note": "중3 전범위 실전 모의고사용 문항 풀. EXAM_SPEC3.md 준수."
+  },
+  "problems": [
+    {
+      "id": "e03-cn1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "인수분해 — 곱과 합으로 두 수 찾기",
+      "source_id": null,
+      "stem_print": "x<sup>2</sup> + 7x + 12 를 인수분해한 것은?",
+      "choices": [
+        "(x+2)(x+6)",
+        "(x+3)(x+4)",
+        "(x+1)(x+12)",
+        "(x−3)(x−4)",
+        "(x+3)(x−4)"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "곱이 12가 되는 짝 중 2와 6을 골라 합이 7이 아니라 8이 되는 것을 놓침",
+        "곱이 12가 되는 짝 중 1과 12를 골라 합이 7이 아니라 13이 되는 것을 놓침",
+        "두 수의 부호를 모두 음수로 놓아 가운데 항의 부호가 반대로 나옴",
+        "두 수의 부호를 다르게 놓아 상수항이 양수가 아니라 음수로 나옴"
+      ],
+      "answer_print": "(x+3)(x+4)",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "곱이 12, 합이 7이 되는 두 수를 먼저 찾아요.",
+      "solution": "곱이 12, 합이 7인 두 수는 3과 4예요. 그래서 x<sup>2</sup> + 7x + 12 = (x+3)(x+4)예요. 전개하면 x<sup>2</sup> + 4x + 3x + 12 = x<sup>2</sup> + 7x + 12로 맞아요.",
+      "work_space": "sm",
+      "misconceptions": ["factor.sum-product-swap", "factor.sign-error"]
+    },
+    {
+      "id": "e03-cn2",
+      "format": "choice5",
+      "level": "M",
+      "topic": "인수분해 — x² 계수가 있을 때",
+      "source_id": null,
+      "stem_print": "3x<sup>2</sup> + 5x + 2 를 인수분해한 것은?",
+      "choices": [
+        "(3x+1)(x+2)",
+        "(3x+2)(x+1)",
+        "(3x−1)(x+2)",
+        "(3x−2)(x−1)",
+        "(3x+1)(x−2)"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "곱이 2가 되는 짝 1과 2를 3x, x 자리에 잘못 배치해 가운데 항이 7x가 됨",
+        "상수항 중 하나만 부호를 음수로 바꿔 가운데 항은 맞지만 상수항의 부호가 틀림",
+        "두 상수의 부호를 모두 음수로 바꿔 가운데 항의 부호가 반대로 나옴",
+        "상수의 배치와 부호를 모두 잘못 잡아 가운데 항과 상수항이 둘 다 틀림"
+      ],
+      "answer_print": "(3x+2)(x+1)",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "3x<sup>2</sup>을 3x×x로 놓고, 상수 2를 두 수의 곱으로 나눠 가운데 항이 5x가 되는 배치를 찾아요.",
+      "solution": "3x<sup>2</sup> + 5x + 2를 (3x+□)(x+□) 꼴로 놓아요. 상수 2를 1과 2로 나누어 3x와 2, x와 1을 짝지으면 3x×1 + 2×x = 3x + 2x = 5x가 나와요. 그래서 3x<sup>2</sup> + 5x + 2 = (3x+2)(x+1)이에요. 전개하면 3x<sup>2</sup> + 3x + 2x + 2 = 3x<sup>2</sup> + 5x + 2로 맞아요.",
+      "work_space": "md",
+      "misconceptions": ["factor.coefficient-placement", "factor.sign-error"]
+    },
+    {
+      "id": "e03-cn3",
+      "format": "choice5",
+      "level": "M",
+      "topic": "완전제곱식 — 도형의 넓이",
+      "source_id": null,
+      "stem_print": "한 변의 길이가 (x + 6)cm인 정사각형의 넓이를 나타낸 식으로 옳은 것은?",
+      "choices": [
+        "x<sup>2</sup> + 6x + 36",
+        "x<sup>2</sup> + 12x + 6",
+        "x<sup>2</sup> + 36",
+        "x<sup>2</sup> + 12x + 36",
+        "x<sup>2</sup> − 12x + 36"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "가운데 항을 2×x×6이 아니라 x×6으로만 계산해 절반만 반영함",
+        "상수항을 6<sup>2</sup> = 36이 아니라 6으로 그대로 씀",
+        "가운데 항을 아예 빠뜨리고 합차공식처럼 x<sup>2</sup>과 36만 남김",
+        "부호를 반대로 착각해 (x−6)<sup>2</sup>처럼 계산함"
+      ],
+      "answer_print": "x<sup>2</sup> + 12x + 36",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "정사각형의 넓이는 한 변을 제곱해요. (x+6)<sup>2</sup>을 완전제곱 공식으로 전개해요.",
+      "solution": "정사각형의 넓이는 (x+6)<sup>2</sup>이에요. (a+b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup> 공식을 쓰면 x<sup>2</sup> + 2×x×6 + 6<sup>2</sup> = x<sup>2</sup> + 12x + 36이에요.",
+      "work_space": "md",
+      "misconceptions": ["factor.double-middle-forgot", "factor.square-const-forgot"]
+    },
+    {
+      "id": "e03-cn4",
+      "format": "choice5",
+      "level": "H",
+      "topic": "인수분해 — 공통인수와 합차 공식",
+      "source_id": null,
+      "stem_print": "3x<sup>2</sup> − 27 을 인수분해한 것은?",
+      "choices": [
+        "(x+3)(x−3)",
+        "3(x−3)<sup>2</sup>",
+        "3(x+3)(x−3)",
+        "3(x+3)<sup>2</sup>",
+        "3x(x−9)"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "공통인수 3을 앞에 빠뜨리고 (x+3)(x−3)만 답으로 씀",
+        "x<sup>2</sup> − 9를 합차공식이 아니라 완전제곱식으로 착각해 3(x−3)<sup>2</sup>으로 잘못 씀",
+        "부호를 반대로 착각해 3(x+3)<sup>2</sup>처럼 합의 제곱으로 씀",
+        "공통인수를 3이 아니라 3x로 착각해 상수항을 3x로 나누어 잘못 계산함"
+      ],
+      "answer_print": "3(x+3)(x−3)",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "먼저 공통인수 3을 묶어낸 다음, 남은 식이 두 제곱의 차인지 확인해요.",
+      "solution": "3x<sup>2</sup> − 27 = 3(x<sup>2</sup> − 9)로 공통인수 3을 먼저 묶어요. x<sup>2</sup> − 9 = x<sup>2</sup> − 3<sup>2</sup>은 합차 공식으로 (x+3)(x−3)이 돼요. 그래서 3x<sup>2</sup> − 27 = 3(x+3)(x−3)이에요.",
+      "work_space": "lg",
+      "misconceptions": ["factor.common-factor-dropped", "factor.diff-square-as-perfect"]
+    },
+    {
+      "id": "e03-cv1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "곱셈공식으로 수 계산",
+      "source_id": "m3-u03-t06-01",
+      "stem_print": "곱셈공식을 이용하여 102<sup>2</sup> 의 값을 구한 것으로 옳은 것은?",
+      "choices": ["10004", "10204", "10404", "10804", "20404"],
+      "answer_choice": 3,
+      "distractor_why": [
+        "가운데 항 2×100×2 = 400을 빠뜨리고 100<sup>2</sup> + 2<sup>2</sup>만 계산함",
+        "가운데 항을 2×100×2가 아니라 100×2 = 200으로 절반만 계산함",
+        "가운데 항을 2×100×2가 아니라 2×100×4 = 800으로 잘못 계산함",
+        "100<sup>2</sup> 부분을 실수로 2배 하여 20000으로 계산함"
+      ],
+      "answer_print": "10404",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "102 = 100 + 2로 보고 (a+b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>을 써요.",
+      "solution": "102<sup>2</sup> = (100+2)<sup>2</sup> = 100<sup>2</sup> + 2×100×2 + 2<sup>2</sup> = 10000 + 400 + 4 = 10404예요.",
+      "work_space": "sm",
+      "misconceptions": ["factor.number-trick-half"]
+    },
+    {
+      "id": "e03-cv2",
+      "format": "choice5",
+      "level": "M",
+      "topic": "곱셈공식의 변형 — 식의 값",
+      "source_id": "m3-u03-t07-03",
+      "stem_print": "x + y = 6, xy = 5 일 때, (x − y)<sup>2</sup> 의 값으로 옳은 것은?",
+      "choices": ["16", "20", "26", "36", "56"],
+      "answer_choice": 1,
+      "distractor_why": [
+        "4xy만 계산하고 (x+y)<sup>2</sup>을 더하지 않음",
+        "4xy 대신 2xy를 빼서 36 − 10 = 26으로 계산함",
+        "(x+y)<sup>2</sup>만 계산하고 4xy를 빼는 것을 잊음",
+        "부호를 반대로 써서 (x+y)<sup>2</sup> + 4xy로 계산함"
+      ],
+      "answer_print": "16",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "(x−y)<sup>2</sup> = (x+y)<sup>2</sup> − 4xy 공식을 써요.",
+      "solution": "(x−y)<sup>2</sup> = (x+y)<sup>2</sup> − 4xy = 6<sup>2</sup> − 4×5 = 36 − 20 = 16이에요.",
+      "work_space": "md",
+      "misconceptions": ["factor.identity-variant"]
+    },
+    {
+      "id": "e03-sh1",
+      "format": "short",
+      "level": "L",
+      "topic": "인수분해 — 공통인수",
+      "source_id": "m3-u03-t03-01",
+      "stem_print": "3x<sup>2</sup> + 6x 를 인수분해하시오.",
+      "answer_atoms": ["2"],
+      "answer_print": "3x(x + 2)",
+      "answer_accept": [],
+      "answer_unit": null,
+      "answer_format": "공통인수로 묶은 식으로 (끝까지)",
+      "figure": null,
+      "hint": "두 항에 공통으로 들어 있는 것은 3과 x, 둘 다예요.",
+      "solution": "3x<sup>2</sup> + 6x = 3x × x + 3x × 2 = 3x(x + 2) 예요.",
+      "work_space": "sm",
+      "misconceptions": ["poly.common-factor-partial"]
+    },
+    {
+      "id": "e03-es1",
+      "format": "essay",
+      "level": "L",
+      "topic": "곱셈공식 활용 — 직사각형의 넓이",
+      "source_id": null,
+      "stem_print": "가로의 길이가 (x + 5)cm, 세로의 길이가 (x − 2)cm인 직사각형의 넓이를 x에 대한 식으로 나타내시오. 풀이 과정을 함께 쓰시오.",
+      "rubric": [
+        {"step": "넓이 = (x + 5)(x − 2)로 식을 세웠어요", "points": 4},
+        {"step": "전개하여 x<sup>2</sup> + 3x − 10으로 정리했어요", "points": 4}
+      ],
+      "answer_print": "x<sup>2</sup> + 3x − 10",
+      "answer_accept": ["x²+3x−10"],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "직사각형의 넓이는 가로×세로예요. 두 일차식을 곱한 뒤 전개해요.",
+      "solution": "직사각형의 넓이 = 가로×세로 = (x+5)(x−2)예요. 전개하면 x<sup>2</sup> − 2x + 5x − 10 = x<sup>2</sup> + 3x − 10이에요.",
+      "work_space": "lg",
+      "misconceptions": ["factor.expand-sign-error"]
+    },
+    {
+      "id": "e03-es2",
+      "format": "essay",
+      "level": "M",
+      "topic": "곱셈공식과 인수분해 활용 — 도형 넓이",
+      "source_id": null,
+      "stem_print": "가로의 길이가 (x + 4)cm, 세로의 길이가 (x − 4)cm인 직사각형 모양의 종이에서 한 변의 길이가 3cm인 정사각형을 오려냈다. 남은 부분의 넓이를 x에 대한 식으로 나타내시오. 풀이 과정을 함께 쓰시오.",
+      "rubric": [
+        {"step": "직사각형의 넓이를 (x + 4)(x − 4) = x<sup>2</sup> − 16으로 전개했어요", "points": 3},
+        {"step": "정사각형의 넓이 3<sup>2</sup> = 9를 구했어요", "points": 2},
+        {"step": "남은 넓이를 x<sup>2</sup> − 16 − 9 = x<sup>2</sup> − 25로 정리했어요", "points": 3}
+      ],
+      "answer_print": "x<sup>2</sup> − 25",
+      "answer_accept": ["x²−25"],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "직사각형의 넓이를 먼저 전개하고, 거기서 정사각형의 넓이를 빼요.",
+      "solution": "직사각형의 넓이는 (x+4)(x−4) = x<sup>2</sup> − 4<sup>2</sup> = x<sup>2</sup> − 16이에요(합차 공식). 오려낸 정사각형의 넓이는 3<sup>2</sup> = 9cm<sup>2</sup>예요. 남은 부분의 넓이는 x<sup>2</sup> − 16 − 9 = x<sup>2</sup> − 25예요.",
+      "work_space": "lg",
+      "misconceptions": ["factor.diff-square-as-perfect", "factor.area-subtract-order"]
+    }
+  ]
+}

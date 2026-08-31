@@ -1,0 +1,126 @@
+{
+  "id": "m3-exam-e",
+  "kind": "exam",
+  "difficulty_kind": "hard",
+  "grade": "math3",
+  "title": "도전 모의고사 1회",
+  "subtitle": "보통 11·도전 11 — 실력이 붙은 뒤, 마무리용",
+  "time_min": 45,
+  "total_points": 100,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "problems": [
+    {
+      "unit": 2,
+      "pid": "e02-cv2",
+      "points": 4
+    },
+    {
+      "unit": 3,
+      "pid": "e03-cn3",
+      "points": 4
+    },
+    {
+      "unit": 6,
+      "pid": "e06-cn3",
+      "points": 4
+    },
+    {
+      "unit": 7,
+      "pid": "e07-cv4",
+      "points": 4
+    },
+    {
+      "unit": 9,
+      "pid": "e09-cn3",
+      "points": 4
+    },
+    {
+      "unit": 9,
+      "pid": "e09-cv3",
+      "points": 4
+    },
+    {
+      "unit": 9,
+      "pid": "e09-cv4",
+      "points": 4
+    },
+    {
+      "unit": 10,
+      "pid": "e10-cn2",
+      "points": 4
+    },
+    {
+      "unit": 10,
+      "pid": "e10-cn5",
+      "points": 4
+    },
+    {
+      "unit": 10,
+      "pid": "e10-cv4",
+      "points": 4
+    },
+    {
+      "unit": 11,
+      "pid": "e11-cn5",
+      "points": 4
+    },
+    {
+      "unit": 11,
+      "pid": "e11-cv4",
+      "points": 3
+    },
+    {
+      "unit": 11,
+      "pid": "e11-cv5",
+      "points": 3
+    },
+    {
+      "unit": 12,
+      "pid": "e12-cn2",
+      "points": 3
+    },
+    {
+      "unit": 12,
+      "pid": "e12-cn4",
+      "points": 3
+    },
+    {
+      "unit": 7,
+      "pid": "e07-sh2",
+      "points": 4
+    },
+    {
+      "unit": 8,
+      "pid": "e08-sh2",
+      "points": 4
+    },
+    {
+      "unit": 10,
+      "pid": "e10-sh2",
+      "points": 4
+    },
+    {
+      "unit": 1,
+      "pid": "e01-es2",
+      "points": 8
+    },
+    {
+      "unit": 3,
+      "pid": "e03-es2",
+      "points": 8
+    },
+    {
+      "unit": 4,
+      "pid": "e04-es2",
+      "points": 8
+    },
+    {
+      "unit": 6,
+      "pid": "e06-es2",
+      "points": 8
+    }
+  ]
+}

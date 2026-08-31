@@ -85,7 +85,7 @@ def load(cfg):
     for it in cfg['problems']:
         u = it['unit']
         if u not in pools:
-            d = json.loads((BANK_ROOT / 'math1' / ('u%02d' % u) / 'exam.json').read_text(encoding='utf-8'))
+            d = json.loads((BANK_ROOT / cfg['grade'] / ('u%02d' % u) / 'exam.json').read_text(encoding='utf-8'))
             pools[u] = {p['id']: p for p in d['problems']}
         p = pools[u].get(it['pid'])
         if p is None:

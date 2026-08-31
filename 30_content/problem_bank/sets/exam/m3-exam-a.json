@@ -1,0 +1,126 @@
+{
+  "id": "m3-exam-a",
+  "kind": "exam",
+  "difficulty_kind": "std",
+  "grade": "math3",
+  "title": "실전 모의고사 1회",
+  "subtitle": "기본 9·보통 10·도전 3 — 실제 시험과 같은 난이도 배합",
+  "time_min": 45,
+  "total_points": 100,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "problems": [
+    {
+      "unit": 1,
+      "pid": "e01-cn3",
+      "points": 4
+    },
+    {
+      "unit": 1,
+      "pid": "e01-cv1",
+      "points": 4
+    },
+    {
+      "unit": 2,
+      "pid": "e02-cv1",
+      "points": 4
+    },
+    {
+      "unit": 3,
+      "pid": "e03-cn1",
+      "points": 4
+    },
+    {
+      "unit": 5,
+      "pid": "e05-cn1",
+      "points": 4
+    },
+    {
+      "unit": 5,
+      "pid": "e05-cv2",
+      "points": 4
+    },
+    {
+      "unit": 6,
+      "pid": "e06-cv1",
+      "points": 4
+    },
+    {
+      "unit": 7,
+      "pid": "e07-cn3",
+      "points": 4
+    },
+    {
+      "unit": 7,
+      "pid": "e07-cn4",
+      "points": 4
+    },
+    {
+      "unit": 7,
+      "pid": "e07-cv3",
+      "points": 4
+    },
+    {
+      "unit": 8,
+      "pid": "e08-cn3",
+      "points": 4
+    },
+    {
+      "unit": 9,
+      "pid": "e09-cn4",
+      "points": 3
+    },
+    {
+      "unit": 11,
+      "pid": "e11-cn2",
+      "points": 3
+    },
+    {
+      "unit": 12,
+      "pid": "e12-cn3",
+      "points": 3
+    },
+    {
+      "unit": 12,
+      "pid": "e12-cv3",
+      "points": 3
+    },
+    {
+      "unit": 4,
+      "pid": "e04-sh1",
+      "points": 4
+    },
+    {
+      "unit": 11,
+      "pid": "e11-sh1",
+      "points": 4
+    },
+    {
+      "unit": 12,
+      "pid": "e12-sh1",
+      "points": 4
+    },
+    {
+      "unit": 2,
+      "pid": "e02-es2",
+      "points": 8
+    },
+    {
+      "unit": 7,
+      "pid": "e07-es1",
+      "points": 8
+    },
+    {
+      "unit": 10,
+      "pid": "e10-es2",
+      "points": 8
+    },
+    {
+      "unit": 11,
+      "pid": "e11-es2",
+      "points": 8
+    }
+  ]
+}
