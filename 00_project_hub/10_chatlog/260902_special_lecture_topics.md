@@ -211,3 +211,22 @@ chatlog에 Round 기록.
 
 고등 수학(특강 14 + 수능 3과목 전 단원)은 규모가 별도 프로젝트급 → **`00_project_hub/20_plan/260902_high_math_master_plan.md`** 신규 작성 (같은 repo `40_grades/high/`에서 진행, 세션 오픈 위치·프롬프트·아키텍처·Phase 로드맵 포함). 상세는 그 파일이 정본.
 
+---
+
+## Round 2 — 정정: 고1 공통수학은 이미 완성돼 있었다 (2026-09-02)
+
+> Nick 지적: `high1/math/mat1_hub.html`·`mat2_hub.html`에 공통수학1·2가 이미 배포돼 있음 — 알고 계획했는가?
+> **NCC 답: 몰랐음.** Round 0~1과 플랜 v1은 고등 백지 전제로 작성한 오류. 실사 후 정정.
+
+### 실사 결과
+- **워크스페이스 `C:/Kids/70_HighSchool/`** (git `jwj-nick/high_son`) = 아들 고교 학습 시스템, 2갈래(subject_hub 흥미 / exam_track 내신).
+- `subject_hub/공통수학1·2/` → `high1/math/`에 **공통수학1 6단원(mat1_) + 공통수학2 7단원(mat2_) + 허브 배포 완료**. KaTeX·JSXGraph·자작 Canvas 이미 사용, 8원칙 + 학습 루프 원칙 보유.
+- exam_track이 내신·오답노트(`1sem_mid_Q*`)·수행평가 페이지 소유.
+
+### 플랜 v2 반영 (마스터 플랜 파일 전면 수정)
+1. **세션 위치 변경**: ~~이 repo `40_grades/high/`~~ → **`C:/Kids/70_HighSchool/subject_hub`** (기존 공통수학 관행·배포 경로의 소유자).
+2. **고1 특강 G1~G5 기본 제외**: 기존 단원 앱과 중복(이차함수=mat1_quadratic, 행렬=mat1_matrix, 집합명제=mat2_logic, 도형의 방정식=mat2_coordline/circle, 절댓값=mat1_equation). 아들 약점 관찰 시에만 부활.
+3. **신규 범위 = 대수·미적Ⅰ·확통 전 단원 앱 + 관문 특강 9(G6~G14)**. 특강 7단계 규격은 math-story-telling에서 이식(참조 구현 speed-mastery.html).
+4. 내신·프린트·모의고사는 exam_track 소관으로 분리.
+5. `40_grades/high/`는 사용하지 않음(placeholder 유지).
+
