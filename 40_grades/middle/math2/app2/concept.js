@@ -41,6 +41,7 @@
     if(/counting-mastery/.test(f)) return {kind:'counting-mastery'};
     if(/inequality-mastery/.test(f)) return {kind:'inequality-mastery'};
     if(/similar-mastery/.test(f)) return {kind:'similar-mastery'};
+    if(/pythagoras-mastery/.test(f)) return {kind:'pythagoras-mastery'};
     return {kind:'home'};
   }
   function hexA(hex,a){var n=parseInt(hex.slice(1),16);return 'rgba('+(n>>16&255)+','+(n>>8&255)+','+(n&255)+','+a+')';}
@@ -202,6 +203,7 @@
       '<a class="sb-link tool'+(activeId==='counting-mastery'?' active':'')+'" href="counting-mastery.html" data-mkey="counting-mastery"><span class="sb-no">🌳</span>경우의 수 특강<span class="sb-chk">✓</span></a>'+
       '<a class="sb-link tool'+(activeId==='inequality-mastery'?' active':'')+'" href="inequality-mastery.html" data-mkey="inequality-mastery"><span class="sb-no">⚖️</span>부등식 방향 특강<span class="sb-chk">✓</span></a>'+
       '<a class="sb-link tool'+(activeId==='similar-mastery'?' active':'')+'" href="similar-mastery.html" data-mkey="similar-mastery"><span class="sb-no">🔍</span>닮음비 특강<span class="sb-chk">✓</span></a>'+
+      '<a class="sb-link tool'+(activeId==='pythagoras-mastery'?' active':'')+'" href="pythagoras-mastery.html" data-mkey="pythagoras-mastery"><span class="sb-no">🔺</span>피타고라스 특강<span class="sb-chk">✓</span></a>'+
       '<a class="sb-link tool" href="../mid1/map/mastery.html"><span class="sb-no">🏅</span>특강 지도</a>'+
       '<div class="sb-sep"></div>'+
       '<details class="sb-sem" open><summary class="sb-group">1학기</summary>';
