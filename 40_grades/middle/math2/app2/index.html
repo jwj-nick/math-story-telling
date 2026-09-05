@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>중2 수학</title>
-<link rel="stylesheet" href="concept.css?v=20260830a">
+<link rel="stylesheet" href="concept.css?v=20260905a">
 </head>
 <body>
 <div class="wrap">
@@ -54,33 +54,21 @@
     <span><div class="u-t">계산 연습</div><div class="u-d">챕터별 빠른 계산 연습. 새로고침하면 새 문제가 나와요.</div></span>
   </a>
 
-  <a class="tool-card" href="slope-mastery.html" style="background:linear-gradient(135deg,#4f92d6,#77b2ea)">
+  <a class="tool-card" href="slope-mastery.html" data-mastery="slope-mastery" style="background:linear-gradient(135deg,#4f92d6,#77b2ea)">
     <span class="u-no" style="background:rgba(255,255,255,.22);color:#fff">📈</span>
     <span><div class="u-t">기울기 완전정복 특강</div><div class="u-d">오른쪽으로 1칸 갈 때 몇 칸 오르나요? 점을 끌어 보면 기울기가 보여요. 속력과 같은 개념이에요.</div></span>
   </a>
 
-  <a class="tool-card" href="counting-mastery.html" style="background:linear-gradient(135deg,#b06ad0,#c98fe0)">
+  <a class="tool-card" href="counting-mastery.html" data-mastery="counting-mastery" style="background:linear-gradient(135deg,#b06ad0,#c98fe0)">
     <span class="u-no" style="background:rgba(255,255,255,.22);color:#fff">🌳</span>
     <span><div class="u-t">경우의 수 세는 법 특강</div><div class="u-d">감으로 세면 하나씩 빠져요. 나열하고, 수형도로 정리하고, 그다음에 곱할지 더할지 정해요.</div></span>
   </a>
-
-  <a class="tool-card" href="print/index.html" style="background:linear-gradient(135deg,#4361EE,#7c3aed)">
-    <span class="u-no" style="background:rgba(255,255,255,.22);color:#fff">🖨️</span>
-    <span><div class="u-t">프린트 학습지</div><div class="u-d">유형별 연습 + 시험 대비 회차, 1~11단원 전부. 문제지·해답 묶음을 인쇄해서 풀어요.</div></span>
+  <a class="tool-card" href="inequality-mastery.html" data-mastery="inequality-mastery" style="background:linear-gradient(135deg,#3fa89a,#63c6b1)">
+    <span class="u-no" style="background:rgba(255,255,255,.22);color:#fff">⚖️</span>
+    <span><div class="u-t">부등식 방향 감각 특강</div><div class="u-d">음수를 곱하거나 나눌 때 부등호가 왜 뒤집히는지 수직선에서 봐요.</div></span>
+  </a>
+  <a class="tool-card" href="similar-mastery.html" data-mastery="similar-mastery" style="background:linear-gradient(135deg,#c77d9e,#e0a0bd)">
+    <span class="u-no" style="background:rgba(255,255,255,.22);color:#fff">🔍</span>
+    <span><div class="u-t">닮음비 → 넓이비 → 부피비 특강</div><div class="u-d">길이가 2배면 넓이는 4배, 부피는 8배예요. 격자와 블록을 직접 세어 보면 알 수 있어요.</div></span>
   </a>
 
-  <div class="foot">세은의 중2 · 1·2학기 · 천천히 정확하게 → 그다음 빠르게</div>
-</div>
-
-<script src="concept.js?v=20260830a"></script>
-<script>
-  MJ.boot();
-  document.querySelectorAll('.unit').forEach(function(a){
-    var id=a.getAttribute('data-u');
-    if(MJ.isDone(id)) a.classList.add('done');
-    var u=MJ.UNITS.filter(function(x){return x.id===id;})[0];
-    if(u){var no=a.querySelector('.u-no'); if(no) no.style.background='linear-gradient(135deg,'+u.u+','+u.u2+')';}
-  });
-</script>
-</body>
-</html>
