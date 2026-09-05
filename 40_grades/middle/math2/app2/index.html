@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>중2 수학</title>
-<link rel="stylesheet" href="concept.css?v=20260905a">
+<link rel="stylesheet" href="concept.css?v=20260830a">
 </head>
 <body>
 <div class="wrap">
@@ -72,3 +72,30 @@
     <span><div class="u-t">닮음비 → 넓이비 → 부피비 특강</div><div class="u-d">길이가 2배면 넓이는 4배, 부피는 8배예요. 격자와 블록을 직접 세어 보면 알 수 있어요.</div></span>
   </a>
 
+
+
+  <a class="tool-card" href="../mid1/map/mastery.html" style="background:linear-gradient(135deg,#6b5a2e,#c9a14a)">
+    <span class="u-no" style="background:rgba(255,255,255,.22);color:#fff">🏅</span>
+    <span><div class="u-t">특강 지도 — 어디서 막혔는지 찾기</div><div class="u-d">중1~중3 특강이 어떤 순서로 이어지는지 한눈에 봐요. 완주 도장도 여기에 모여요.</div></span>
+  </a>
+
+  <a class="tool-card" href="print/index.html" style="background:linear-gradient(135deg,#4361EE,#7c3aed)">
+    <span class="u-no" style="background:rgba(255,255,255,.22);color:#fff">🖨️</span>
+    <span><div class="u-t">프린트 학습지</div><div class="u-d">유형별 연습 + 시험 대비 회차, 1~11단원 전부. 문제지·해답 묶음을 인쇄해서 풀어요.</div></span>
+  </a>
+
+  <div class="foot">세은의 중2 · 1·2학기 · 천천히 정확하게 → 그다음 빠르게</div>
+</div>
+
+<script src="concept.js?v=20260830a"></script>
+<script>
+  MJ.boot();
+  document.querySelectorAll('.unit').forEach(function(a){
+    var id=a.getAttribute('data-u');
+    if(MJ.isDone(id)) a.classList.add('done');
+    var u=MJ.UNITS.filter(function(x){return x.id===id;})[0];
+    if(u){var no=a.querySelector('.u-no'); if(no) no.style.background='linear-gradient(135deg,'+u.u+','+u.u2+')';}
+  });
+</script>
+</body>
+</html>

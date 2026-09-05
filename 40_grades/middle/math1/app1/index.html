@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>중1 수학</title>
-<link rel="stylesheet" href="concept.css?v=20260905a">
+<link rel="stylesheet" href="concept.css?v=20260830b">
 </head>
 <body>
 <div class="wrap">
@@ -78,3 +78,31 @@
     <span><div class="u-t">문장제 번역 특강</div><div class="u-d">문장제는 표 하나로 번역하는 일이에요. 속력·농도·비율 특강의 그 표로 나이·일·과부족까지 풀어요.</div></span>
   </a>
 
+
+  <a class="tool-card" href="../../map/mastery.html" style="background:linear-gradient(135deg,#6b5a2e,#c9a14a)">
+    <span class="u-no" style="background:rgba(255,255,255,.22);color:#fff">🏅</span>
+    <span><div class="u-t">특강 지도 — 어디서 막혔는지 찾기</div><div class="u-d">중1~중3 특강이 어떤 순서로 이어지는지 한눈에 봐요. 완주 도장도 여기에 모여요.</div></span>
+  </a>
+
+  <a class="tool-card" href="../print/index.html" style="background:linear-gradient(135deg,#4361EE,#7c3aed)">
+    <span class="u-no" style="background:rgba(255,255,255,.22);color:#fff">🖨️</span>
+    <span><div class="u-t">프린트 학습지</div><div class="u-d">유형별 연습 + 전 범위 실전 모의고사, 1~13단원 전부. 문제지·해답 묶음을 인쇄해서 풀어요.</div></span>
+  </a>
+
+  <p class="lede" style="font-size:13.5px;margin:18px 2px 0">💡 옛 버전이 필요하면 <a href="../index.html" style="color:var(--u);font-weight:700">이전 중1 수학 홈</a>에서 볼 수 있어요.</p>
+
+  <div class="foot">세은의 중1 · 새 버전 재설계 완주 · 1~13단원 전 단원 오픈 🎉</div>
+</div>
+
+<script src="concept.js?v=20260830b"></script>
+<script>
+  MJ1.boot();
+  document.querySelectorAll('.unit[data-u]').forEach(function(a){
+    var id=a.getAttribute('data-u');
+    if(MJ1.isDone(id)) a.classList.add('done');
+    var u=MJ1.UNITS.filter(function(x){return x.id===id;})[0];
+    if(u){var no=a.querySelector('.u-no'); if(no) no.style.background='linear-gradient(135deg,'+u.u+','+u.u2+')';}
+  });
+</script>
+</body>
+</html>
