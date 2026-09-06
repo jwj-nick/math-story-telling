@@ -1,0 +1,126 @@
+{
+  "id": "m2-exam-c",
+  "kind": "exam",
+  "difficulty_kind": "std",
+  "grade": "math2",
+  "title": "실전 모의고사 3회",
+  "subtitle": "기본 9·보통 10·도전 3",
+  "time_min": 45,
+  "total_points": 100,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "problems": [
+    {
+      "unit": 1,
+      "pid": "e01-c5",
+      "points": 4
+    },
+    {
+      "unit": 2,
+      "pid": "e02-c8",
+      "points": 4
+    },
+    {
+      "unit": 3,
+      "pid": "e03-c8",
+      "points": 4
+    },
+    {
+      "unit": 4,
+      "pid": "e04-c9",
+      "points": 4
+    },
+    {
+      "unit": 5,
+      "pid": "e05-c6",
+      "points": 4
+    },
+    {
+      "unit": 6,
+      "pid": "e06-c1",
+      "points": 4
+    },
+    {
+      "unit": 6,
+      "pid": "e06-c6",
+      "points": 4
+    },
+    {
+      "unit": 7,
+      "pid": "e07-c1",
+      "points": 4
+    },
+    {
+      "unit": 7,
+      "pid": "e07-c4",
+      "points": 4
+    },
+    {
+      "unit": 8,
+      "pid": "e08-c4",
+      "points": 4
+    },
+    {
+      "unit": 8,
+      "pid": "e08-c5",
+      "points": 4
+    },
+    {
+      "unit": 9,
+      "pid": "e09-c1",
+      "points": 3
+    },
+    {
+      "unit": 9,
+      "pid": "e09-c6",
+      "points": 3
+    },
+    {
+      "unit": 10,
+      "pid": "e10-c2",
+      "points": 3
+    },
+    {
+      "unit": 11,
+      "pid": "e11-c6",
+      "points": 3
+    },
+    {
+      "unit": 3,
+      "pid": "e03-s2",
+      "points": 4
+    },
+    {
+      "unit": 4,
+      "pid": "e04-s1",
+      "points": 4
+    },
+    {
+      "unit": 6,
+      "pid": "e06-s2",
+      "points": 4
+    },
+    {
+      "unit": 1,
+      "pid": "e01-e1",
+      "points": 8
+    },
+    {
+      "unit": 2,
+      "pid": "e02-e1",
+      "points": 8
+    },
+    {
+      "unit": 8,
+      "pid": "e08-e1",
+      "points": 8
+    },
+    {
+      "unit": 11,
+      "pid": "e11-e1",
+      "points": 8
+    }
+  ]
+}

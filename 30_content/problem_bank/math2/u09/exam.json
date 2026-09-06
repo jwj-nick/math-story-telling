@@ -1,0 +1,398 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 9,
+    "unit_name": "도형의 닮음",
+    "purpose": "exam-pool",
+    "authored": "2026-09-06",
+    "note": "중2 전범위 실전 모의고사용 문항 풀. EXAM_SPEC2.md 준수."
+  },
+  "problems": [
+    {
+      "id": "e09-c1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "닮음비로 대응변 구하기",
+      "source_id": null,
+      "stem_print": "삼각형 ABC 와 삼각형 DEF 가 닮음이고 AB = 4cm, DE = 6cm 입니다. BC = 8cm 일 때, EF 의 길이를 구하시오.",
+      "choices": [
+        "6cm",
+        "12cm",
+        "14cm",
+        "16cm",
+        "24cm"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "닮음비를 쓰지 않고 DE 의 길이를 그대로 답함",
+        "닮음비 <span class=\"frac\"><b>3</b><i>2</i></span> 대신 차 2 를 더해 계산함",
+        "8 에 2 를 곱해 16 으로 만듦",
+        "8 에 3 을 곱하고 2 로 나누는 것을 잊음"
+      ],
+      "answer_print": "12cm",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "닮음비는 4 : 6 = 2 : 3 이에요. 대응하는 변끼리 같은 비를 이뤄요.",
+      "solution": "닮음비는 AB : DE = 4 : 6 = 2 : 3 이에요. BC : EF = 2 : 3 이므로 8 : EF = 2 : 3 이고, EF = 8 × <span class=\"frac\"><b>3</b><i>2</i></span> = <b>12cm</b> 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "ratio2.similar-ratio"
+      ]
+    },
+    {
+      "id": "e09-c2",
+      "format": "choice5",
+      "level": "L",
+      "topic": "삼각형의 닮음 조건",
+      "source_id": null,
+      "stem_print": "두 삼각형이 닮음임을 보이는 조건이 <b>아닌</b> 것은?",
+      "choices": [
+        "세 쌍의 대응변의 길이의 비가 모두 같다",
+        "두 쌍의 대응변의 길이의 비가 같고 그 끼인각의 크기가 같다",
+        "두 쌍의 대응각의 크기가 각각 같다",
+        "두 쌍의 대응변의 길이의 비가 같고 한 쌍의 대응각의 크기가 같다",
+        "세 쌍의 대응각의 크기가 각각 같다"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "SSS 닮음 조건을 잘못된 것으로 봄",
+        "SAS 닮음 조건을 잘못된 것으로 봄",
+        "AA 닮음 조건을 잘못된 것으로 봄",
+        "세 각이 같으면 닮음인데 이를 잘못된 것으로 봄"
+      ],
+      "answer_print": "두 쌍의 대응변의 길이의 비가 같고 한 쌍의 대응각의 크기가 같다",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "같다고 주어진 각이 두 변 <b>사이의 각</b>이어야 해요.",
+      "solution": "닮음 조건은 SSS, SAS, AA 세 가지예요. 두 변의 비가 같을 때 각이 <b>끼인각이 아니면</b> 삼각형의 모양이 하나로 정해지지 않아 닮음이라고 할 수 없어요. 세 각이 각각 같은 것은 AA 조건을 이미 넘으므로 닮음이에요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "ratio2.similarity-conditions"
+      ]
+    },
+    {
+      "id": "e09-c3",
+      "format": "choice5",
+      "level": "M",
+      "topic": "닮음비와 넓이비",
+      "source_id": null,
+      "stem_print": "닮음비가 2 : 5 인 두 삼각형의 넓이의 비를 구하시오.",
+      "choices": [
+        "4 : 25",
+        "2 : 5",
+        "8 : 125",
+        "4 : 10",
+        "10 : 25"
+      ],
+      "answer_choice": 1,
+      "distractor_why": [
+        "넓이비를 길이비와 같다고 잘못 생각함",
+        "부피비인 세제곱으로 잘못 계산함",
+        "한쪽만 제곱하고 다른 쪽은 두 배로 함",
+        "두 수에 같은 수를 곱하기만 함"
+      ],
+      "answer_print": "4 : 25",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "길이가 k 배면 넓이는 k<sup>2</sup> 배예요.",
+      "solution": "닮음비가 2 : 5 이면 <b>넓이비는 2<sup>2</sup> : 5<sup>2</sup> = 4 : 25</b> 예요. 넓이는 길이 두 개를 곱해 만들어지니 비가 <b>제곱</b>이 되는 거예요. 참고로 부피비는 8 : 125 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "ratio2.area-ratio-square"
+      ]
+    },
+    {
+      "id": "e09-c4",
+      "format": "choice5",
+      "level": "M",
+      "topic": "평행선과 선분의 비",
+      "source_id": null,
+      "stem_print": "삼각형 ABC 에서 변 AB 위의 점 D 와 변 AC 위의 점 E 에 대하여 DE ∥ BC 입니다. AD = 4cm, DB = 6cm, AE = 6cm 일 때, EC 의 길이를 구하시오.",
+      "choices": [
+        "4cm",
+        "6cm",
+        "9cm",
+        "10cm",
+        "15cm"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "AD 의 길이를 그대로 답함",
+        "AE 의 길이를 그대로 답함",
+        "AD : AB = AE : AC 를 쓰면서 AC 를 EC 로 착각함",
+        "비를 뒤집어 6 × <span class=\"frac\"><b>4</b><i>6</i></span> 대신 6 × <span class=\"frac\"><b>6</b><i>4</i></span> × ... 로 계산함"
+      ],
+      "answer_print": "9cm",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "DE ∥ BC 이면 AD : DB = AE : EC 예요.",
+      "solution": "DE ∥ BC 이므로 <b>AD : DB = AE : EC</b> 예요. 곧 4 : 6 = 6 : EC 이므로 4 × EC = 36 이고 <b>EC = 9cm</b> 예요.",
+      "work_space": "md",
+      "misconceptions": [
+        "ratio2.parallel-segment-ratio"
+      ]
+    },
+    {
+      "id": "e09-c5",
+      "format": "choice5",
+      "level": "M",
+      "topic": "삼각형의 두 변의 중점을 이은 선분",
+      "source_id": null,
+      "stem_print": "삼각형 ABC 에서 변 AB 의 중점을 M, 변 AC 의 중점을 N 이라 합니다. BC = 14cm 일 때, MN 의 길이를 구하시오.",
+      "choices": [
+        "3.5cm",
+        "4cm",
+        "6cm",
+        "7cm",
+        "14cm"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "4등분한다고 잘못 생각함",
+        "14 를 3 으로 나눈 값에 가깝게 어림함",
+        "14 에서 절반을 두 번 빼서 계산함",
+        "MN 과 BC 가 같다고 잘못 생각함"
+      ],
+      "answer_print": "7cm",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "두 변의 중점을 이은 선분은 나머지 한 변과 평행하고 길이가 그 절반이에요.",
+      "solution": "삼각형의 두 변의 <b>중점을 이은 선분</b>은 나머지 한 변과 평행하고 그 길이가 <b>절반</b>이에요. 그러므로 MN = 14 ÷ 2 = <b>7cm</b> 이고 MN ∥ BC 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "ratio2.midsegment"
+      ]
+    },
+    {
+      "id": "e09-c6",
+      "format": "choice5",
+      "level": "M",
+      "topic": "삼각형의 무게중심",
+      "source_id": null,
+      "stem_print": "삼각형 ABC 의 무게중심을 G, 변 BC 의 중점을 M 이라 합니다. AM = 12cm 일 때, AG 의 길이를 구하시오.",
+      "choices": [
+        "4cm",
+        "6cm",
+        "8cm",
+        "9cm",
+        "12cm"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "GM 의 길이 4cm 를 AG 로 착각함",
+        "무게중심이 중선을 절반으로 나눈다고 잘못 생각함",
+        "중선을 3 : 1 로 나눈다고 잘못 생각함",
+        "중선 전체 길이를 그대로 답함"
+      ],
+      "answer_print": "8cm",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "무게중심은 중선을 꼭짓점 쪽에서부터 2 : 1 로 나눠요.",
+      "solution": "무게중심은 중선을 꼭짓점 쪽에서부터 <b>2 : 1</b> 로 나눠요. 그러므로 AG : GM = 2 : 1 이고 AG = 12 × <span class=\"frac\"><b>2</b><i>3</i></span> = <b>8cm</b> 예요. GM 은 4cm 예요.",
+      "work_space": "md",
+      "misconceptions": [
+        "ratio2.centroid-ratio"
+      ]
+    },
+    {
+      "id": "e09-c7",
+      "format": "choice5",
+      "level": "H",
+      "topic": "닮음비와 부피비",
+      "source_id": null,
+      "stem_print": "닮음비가 1 : 3 인 두 원기둥이 있습니다. 작은 원기둥의 부피가 5cm<sup>3</sup> 일 때, 큰 원기둥의 부피를 구하시오.",
+      "choices": [
+        "15cm<sup>3</sup>",
+        "45cm<sup>3</sup>",
+        "75cm<sup>3</sup>",
+        "135cm<sup>3</sup>",
+        "150cm<sup>3</sup>"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "부피비를 길이비와 같다고 보아 3배로 계산함",
+        "부피비를 넓이비인 9배로 계산함",
+        "27 대신 15 를 곱해 어림함",
+        "27 배 대신 30 배로 어림함"
+      ],
+      "answer_print": "135cm<sup>3</sup>",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "길이가 k 배면 부피는 k<sup>3</sup> 배예요.",
+      "solution": "닮음비가 1 : 3 이면 부피비는 <b>1<sup>3</sup> : 3<sup>3</sup> = 1 : 27</b> 이에요. 그러므로 큰 원기둥의 부피는 5 × 27 = <b>135cm<sup>3</sup></b> 예요. 넓이는 제곱, 부피는 세제곱으로 커진다는 것이 핵심이에요.",
+      "work_space": "md",
+      "misconceptions": [
+        "ratio2.volume-ratio-cube"
+      ]
+    },
+    {
+      "id": "e09-c8",
+      "format": "choice5",
+      "level": "H",
+      "topic": "닮음의 활용 — 그림자",
+      "source_id": null,
+      "stem_print": "같은 시각에 길이가 1.5m 인 막대의 그림자가 2m 이고, 어떤 나무의 그림자가 12m 였습니다. 이 나무의 높이를 구하시오.",
+      "choices": [
+        "6m",
+        "8m",
+        "9m",
+        "16m",
+        "18m"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "그림자 12 를 2 로 나눈 값만 답함",
+        "1.5 와 2 의 차 0.5 를 12 에 더해 어림함",
+        "비를 뒤집어 12 × <span class=\"frac\"><b>2</b><i>1.5</i></span> 로 계산함",
+        "12 에 1.5 를 곱하고 2 로 나누는 것을 잊음"
+      ],
+      "answer_print": "9m",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "같은 시각의 그림자는 닮음이에요. (높이) : (그림자) 의 비가 같아요.",
+      "solution": "같은 시각에는 햇빛의 각도가 같아 막대와 나무가 만드는 두 삼각형이 <b>닮음</b>이에요. (높이) : (그림자) 가 같으므로 1.5 : 2 = x : 12 예요. 2x = 18 이므로 <b>x = 9m</b> 예요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "ratio2.shadow-application"
+      ]
+    },
+    {
+      "id": "e09-s1",
+      "format": "short",
+      "level": "L",
+      "topic": "닮음비 구하기",
+      "source_id": null,
+      "stem_print": "닮은 두 삼각형에서 대응하는 두 변의 길이가 각각 6cm 와 15cm 일 때, 두 삼각형의 닮음비를 가장 간단한 자연수의 비로 나타내시오.",
+      "choices": null,
+      "answer_print": "2 : 5",
+      "answer_accept": [
+        "2:5",
+        "2 대 5"
+      ],
+      "answer_unit": null,
+      "answer_format": "비로 써요",
+      "figure": null,
+      "hint": "두 수의 최대공약수로 나눠요.",
+      "solution": "6 : 15 에서 두 수를 최대공약수 3 으로 나누면 <b>2 : 5</b> 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "ratio2.similar-ratio"
+      ]
+    },
+    {
+      "id": "e09-s2",
+      "format": "short",
+      "level": "M",
+      "topic": "무게중심과 넓이",
+      "source_id": null,
+      "stem_print": "넓이가 36cm<sup>2</sup> 인 삼각형 ABC 의 무게중심을 G 라 할 때, 삼각형 GBC 의 넓이를 구하시오.",
+      "choices": null,
+      "answer_print": "12",
+      "answer_accept": [
+        "12cm2",
+        "12cm²",
+        "12"
+      ],
+      "answer_unit": "cm²",
+      "answer_format": "숫자로 써요",
+      "figure": null,
+      "hint": "무게중심은 삼각형을 넓이가 같은 세 조각으로 나눠요.",
+      "solution": "무게중심과 세 꼭짓점을 이으면 삼각형이 <b>넓이가 같은 세 개</b>로 나뉘어요. 그러므로 삼각형 GBC 의 넓이는 36 ÷ 3 = <b>12cm<sup>2</sup></b> 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "ratio2.centroid-area-third"
+      ]
+    },
+    {
+      "id": "e09-e1",
+      "format": "essay",
+      "level": "L",
+      "topic": "닮음비로 변의 길이 구하기",
+      "source_id": null,
+      "stem_print": "삼각형 ABC 와 삼각형 DEF 가 닮음이고 닮음비가 3 : 4 입니다. AB = 9cm 일 때 DE 의 길이를 구하시오. 풀이 과정을 함께 쓰시오.",
+      "choices": null,
+      "rubric": [
+        {
+          "step": "대응변의 비가 3 : 4 임을 이용해 9 : DE = 3 : 4 를 세웠어요",
+          "points": 3
+        },
+        {
+          "step": "3 × DE = 36 으로 정리했어요",
+          "points": 3
+        },
+        {
+          "step": "DE = 12cm 를 구했어요",
+          "points": 2
+        }
+      ],
+      "answer_print": "12cm",
+      "answer_accept": [
+        "12",
+        "12 cm"
+      ],
+      "answer_unit": "cm",
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "닮음비는 대응하는 모든 변에 똑같이 적용돼요.",
+      "solution": "닮음비가 3 : 4 이므로 대응변 AB 와 DE 도 3 : 4 예요. 9 : DE = 3 : 4 에서 3 × DE = 9 × 4 = 36 이므로 <b>DE = 12cm</b> 예요. 9 는 3 의 3배이니 DE 도 4 의 3배인 12 라고 생각해도 같아요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "ratio2.similar-ratio"
+      ]
+    },
+    {
+      "id": "e09-e2",
+      "format": "essay",
+      "level": "H",
+      "topic": "닮음비·넓이비·부피비 종합",
+      "source_id": null,
+      "stem_print": "닮음비가 2 : 3 인 두 직육면체 모양의 상자가 있습니다. 작은 상자의 겉넓이가 24cm<sup>2</sup>, 부피가 16cm<sup>3</sup> 일 때, 큰 상자의 겉넓이와 부피를 각각 구하시오. 풀이 과정을 함께 쓰시오.",
+      "choices": null,
+      "rubric": [
+        {
+          "step": "넓이비 4 : 9, 부피비 8 : 27 임을 밝혔어요",
+          "points": 3
+        },
+        {
+          "step": "겉넓이를 24 × <span class=\"frac\"><b>9</b><i>4</i></span> = 54 로 구했어요",
+          "points": 3
+        },
+        {
+          "step": "부피를 16 × <span class=\"frac\"><b>27</b><i>8</i></span> = 54 로 구했어요",
+          "points": 2
+        }
+      ],
+      "answer_print": "겉넓이 54cm², 부피 54cm³",
+      "answer_accept": [
+        "54, 54",
+        "겉넓이 54 부피 54"
+      ],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "길이가 k 배면 넓이는 k<sup>2</sup> 배, 부피는 k<sup>3</sup> 배예요.",
+      "solution": "닮음비가 2 : 3 이므로 <b>넓이비는 4 : 9</b>, <b>부피비는 8 : 27</b> 이에요. 겉넓이는 24 : S = 4 : 9 에서 4S = 216, 곧 S = <b>54cm<sup>2</sup></b> 예요. 부피는 16 : V = 8 : 27 에서 8V = 432, 곧 V = <b>54cm<sup>3</sup></b> 예요. 두 값이 우연히 같지만 단위가 서로 다르다는 점을 눈여겨봐요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "ratio2.area-ratio-square",
+        "ratio2.volume-ratio-cube"
+      ]
+    }
+  ]
+}

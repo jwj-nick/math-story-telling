@@ -1,0 +1,407 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 8,
+    "unit_name": "사각형의 성질",
+    "purpose": "exam-pool",
+    "authored": "2026-09-06",
+    "note": "중2 전범위 실전 모의고사용 문항 풀. EXAM_SPEC2.md 준수."
+  },
+  "problems": [
+    {
+      "id": "e08-c1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "평행사변형의 성질",
+      "source_id": null,
+      "stem_print": "평행사변형 ABCD 에서 ∠A = 110° 일 때, ∠B 의 크기를 구하시오.",
+      "choices": [
+        "55°",
+        "70°",
+        "90°",
+        "110°",
+        "125°"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "이웃한 각의 합이 180° 인 것을 이등분으로 잘못 봄",
+        "평행사변형의 모든 각이 직각이라고 잘못 생각함",
+        "마주 보는 각과 이웃한 각을 헷갈려 110° 를 답함",
+        "360° 에서 110° 를 두 번 뺀 뒤 잘못 나눔"
+      ],
+      "answer_print": "70°",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "평행사변형에서 <b>이웃한 두 각</b>의 합은 180° 예요.",
+      "solution": "평행사변형에서 마주 보는 각은 같고, <b>이웃한 두 각의 합은 180°</b> 예요. ∠A 와 ∠B 는 이웃하므로 ∠B = 180° − 110° = <b>70°</b> 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "quad2.adjacent-angles"
+      ]
+    },
+    {
+      "id": "e08-c2",
+      "format": "choice5",
+      "level": "L",
+      "topic": "평행사변형의 대각선",
+      "source_id": null,
+      "stem_print": "평행사변형 ABCD 의 두 대각선의 교점을 O 라 할 때, 항상 옳은 것은?",
+      "choices": [
+        "두 대각선의 길이가 같다",
+        "두 대각선이 서로를 이등분한다",
+        "두 대각선이 서로 수직이다",
+        "대각선이 내각을 이등분한다",
+        "AO = BO 이다"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "직사각형에서만 성립하는 성질을 평행사변형 전체로 넓힘",
+        "마름모에서만 성립하는 성질을 평행사변형 전체로 넓힘",
+        "마름모에서만 성립하는 성질을 평행사변형 전체로 넓힘",
+        "서로 다른 대각선의 반쪽끼리 같다고 잘못 생각함"
+      ],
+      "answer_print": "두 대각선이 서로를 이등분한다",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "평행사변형이면 반드시 성립하는 것과, 직사각형·마름모에서만 성립하는 것을 갈라요.",
+      "solution": "평행사변형에서 언제나 옳은 것은 <b>두 대각선이 서로를 이등분한다</b> 예요(AO = CO, BO = DO). 대각선의 길이가 같은 것은 <b>직사각형</b>, 대각선이 수직이거나 내각을 이등분하는 것은 <b>마름모</b>의 성질이에요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "quad2.diagonal-properties"
+      ]
+    },
+    {
+      "id": "e08-c3",
+      "format": "choice5",
+      "level": "L",
+      "topic": "마름모의 성질",
+      "source_id": null,
+      "stem_print": "네 변의 길이가 모두 같은 사각형에서 반드시 성립하는 것은?",
+      "choices": [
+        "두 대각선이 서로 수직이다",
+        "네 각이 모두 직각이다",
+        "두 대각선의 길이가 같다",
+        "한 내각이 60° 이다",
+        "두 대각선의 길이가 서로 다르다"
+      ],
+      "answer_choice": 1,
+      "distractor_why": [
+        "마름모와 정사각형을 같은 것으로 봄",
+        "직사각형의 성질을 마름모에 적용함",
+        "마름모의 각은 정해져 있지 않은데 특정 값으로 봄",
+        "정사각형일 때는 두 대각선의 길이가 같으므로 '반드시'가 아님"
+      ],
+      "answer_print": "두 대각선이 서로 수직이다",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "네 변이 같은 사각형은 마름모예요. 마름모의 대각선은 어떤 관계일까요.",
+      "solution": "네 변의 길이가 모두 같은 사각형은 <b>마름모</b>예요. 마름모의 두 대각선은 <b>서로 수직이등분</b>해요. 네 각이 모두 직각인 것은 정사각형일 때만이고, 대각선의 길이는 정사각형이 아니면 서로 달라요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "quad2.rhombus-vs-square"
+      ]
+    },
+    {
+      "id": "e08-c4",
+      "format": "choice5",
+      "level": "M",
+      "topic": "평행사변형이 되는 조건",
+      "source_id": null,
+      "stem_print": "사각형 ABCD 가 평행사변형이 되는 조건이 <b>아닌</b> 것은?",
+      "choices": [
+        "두 쌍의 대변이 각각 평행하다",
+        "두 쌍의 대변의 길이가 각각 같다",
+        "두 쌍의 대각의 크기가 각각 같다",
+        "한 쌍의 대변이 평행하고 그 길이가 같다",
+        "한 쌍의 대변이 평행하고 다른 한 쌍의 길이가 같다"
+      ],
+      "answer_choice": 5,
+      "distractor_why": [
+        "평행사변형의 정의를 조건이 아니라고 잘못 봄",
+        "두 쌍의 대변이 같은 조건을 잘못된 것으로 봄",
+        "두 쌍의 대각이 같은 조건을 잘못된 것으로 봄",
+        "한 쌍이 평행하고 같은 조건을 잘못된 것으로 봄"
+      ],
+      "answer_print": "한 쌍의 대변이 평행하고 다른 한 쌍의 길이가 같다",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "\"평행\"과 \"길이가 같다\"가 <b>같은 한 쌍</b>에 대한 조건이어야 해요.",
+      "solution": "평행사변형이 되는 조건에서 \"한 쌍의 대변이 평행하고 그 길이가 같다\"는 <b>같은 한 쌍</b>에 대한 조건이어야 해요. 서로 <b>다른 쌍</b>이 각각 평행하고 같은 경우에는 등변사다리꼴이 될 수도 있어서 평행사변형이라고 단정할 수 없어요.",
+      "work_space": "md",
+      "misconceptions": [
+        "quad2.parallelogram-conditions"
+      ]
+    },
+    {
+      "id": "e08-c5",
+      "format": "choice5",
+      "level": "M",
+      "topic": "특별한 평행사변형이 되는 조건",
+      "source_id": null,
+      "stem_print": "평행사변형 ABCD 가 직사각형이 되는 조건으로 옳은 것은?",
+      "choices": [
+        "AB = BC",
+        "두 대각선이 서로 수직이다",
+        "대각선이 내각을 이등분한다",
+        "두 대각선이 서로를 이등분한다",
+        "두 대각선의 길이가 같다"
+      ],
+      "answer_choice": 5,
+      "distractor_why": [
+        "이웃한 두 변이 같으면 마름모가 되는 조건임",
+        "대각선이 수직이면 마름모가 되는 조건임",
+        "대각선이 내각을 이등분하면 마름모가 되는 조건임",
+        "모든 평행사변형에서 이미 성립하므로 새로운 조건이 아님"
+      ],
+      "answer_print": "두 대각선의 길이가 같다",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "직사각형의 두 대각선은 길이가 같아요. 마름모의 두 대각선은 수직이에요.",
+      "solution": "평행사변형이 <b>직사각형</b>이 되려면 한 내각이 직각이거나 <b>두 대각선의 길이가 같아야</b> 해요. 두 대각선이 수직이거나 이웃한 두 변이 같으면 <b>마름모</b>가 돼요. 두 대각선이 서로를 이등분하는 것은 모든 평행사변형에서 이미 성립해요.",
+      "work_space": "md",
+      "misconceptions": [
+        "quad2.rectangle-condition"
+      ]
+    },
+    {
+      "id": "e08-c6",
+      "format": "choice5",
+      "level": "M",
+      "topic": "등변사다리꼴",
+      "source_id": null,
+      "stem_print": "AD ∥ BC 인 등변사다리꼴 ABCD 에서 ∠B = 75° 일 때, ∠A 의 크기를 구하시오.",
+      "choices": [
+        "75°",
+        "90°",
+        "105°",
+        "115°",
+        "135°"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "아래 두 밑각이 같은 것을 위아래 각이 같다고 잘못 봄",
+        "사다리꼴의 모든 각을 직각으로 잘못 생각함",
+        "180° 에서 뺄 때 75° 대신 65° 를 뺌",
+        "360° 에서 75° 를 세 번 뺀 값을 어림함"
+      ],
+      "answer_print": "105°",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "AD 와 BC 가 평행하니 A 와 B 는 같은 쪽에 있는 두 각이에요.",
+      "solution": "AD ∥ BC 이므로 ∠A 와 ∠B 는 <b>같은 쪽 안쪽각</b>이고 합이 180° 예요. 그러므로 ∠A = 180° − 75° = <b>105°</b> 예요. 등변사다리꼴에서는 ∠C = ∠B = 75°, ∠D = ∠A = 105° 예요.",
+      "work_space": "md",
+      "misconceptions": [
+        "quad2.trapezoid-angles"
+      ]
+    },
+    {
+      "id": "e08-c7",
+      "format": "choice5",
+      "level": "M",
+      "topic": "평행사변형의 넓이 나누기",
+      "source_id": null,
+      "stem_print": "넓이가 40cm<sup>2</sup> 인 평행사변형 ABCD 에서 두 대각선의 교점을 O 라 할 때, 삼각형 OAB 의 넓이를 구하시오.",
+      "choices": [
+        "5cm<sup>2</sup>",
+        "8cm<sup>2</sup>",
+        "10cm<sup>2</sup>",
+        "20cm<sup>2</sup>",
+        "40cm<sup>2</sup>"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "8등분된다고 잘못 생각함",
+        "5등분된다고 잘못 생각함",
+        "대각선 하나만 그은 것으로 보아 2등분으로 계산함",
+        "나누지 않고 전체 넓이를 그대로 답함"
+      ],
+      "answer_print": "10cm<sup>2</sup>",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "두 대각선을 모두 그으면 넓이가 같은 삼각형 몇 개로 나뉠까요.",
+      "solution": "평행사변형의 두 대각선은 서로를 이등분하므로, 두 대각선을 모두 그으면 <b>넓이가 같은 네 개의 삼각형</b>으로 나뉘어요. 그러므로 삼각형 OAB 의 넓이는 40 ÷ 4 = <b>10cm<sup>2</sup></b> 예요.",
+      "work_space": "md",
+      "misconceptions": [
+        "quad2.diagonal-area-quarter"
+      ]
+    },
+    {
+      "id": "e08-c8",
+      "format": "choice5",
+      "level": "H",
+      "topic": "사각형 사이의 포함 관계",
+      "source_id": null,
+      "stem_print": "다음 설명 중 옳은 것은?",
+      "choices": [
+        "모든 평행사변형은 직사각형이다",
+        "모든 마름모는 정사각형이다",
+        "모든 사다리꼴은 평행사변형이다",
+        "모든 정사각형은 마름모이다",
+        "모든 직사각형은 마름모이다"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "포함 관계의 방향을 반대로 읽음",
+        "마름모에 각 조건까지 있다고 잘못 봄",
+        "사다리꼴은 한 쌍만 평행해도 되므로 평행사변형이라 할 수 없음",
+        "직사각형은 네 변이 같지 않을 수 있으므로 마름모가 아님"
+      ],
+      "answer_print": "모든 정사각형은 마름모이다",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "조건이 <b>더 많은 쪽</b>이 조건이 적은 쪽에 포함돼요.",
+      "solution": "정사각형은 네 변이 모두 같으므로 <b>마름모의 조건을 갖추고</b> 있어요. 그래서 \"모든 정사각형은 마름모\"가 옳아요. 반대로 마름모가 모두 정사각형인 것은 아니에요(각이 직각이 아닐 수 있어요). 포함 관계는 사다리꼴 ⊃ 평행사변형 ⊃ (직사각형, 마름모) ⊃ 정사각형 순이에요.",
+      "work_space": "md",
+      "misconceptions": [
+        "quad2.inclusion-direction"
+      ]
+    },
+    {
+      "id": "e08-c9",
+      "format": "choice5",
+      "level": "H",
+      "topic": "평행선과 삼각형의 넓이",
+      "source_id": null,
+      "stem_print": "AD ∥ BC 인 사다리꼴 ABCD 에서 두 대각선의 교점을 O 라 합니다. 삼각형 ABD 의 넓이가 18cm<sup>2</sup> 일 때, 삼각형 ACD 의 넓이를 구하시오.",
+      "choices": [
+        "9cm<sup>2</sup>",
+        "12cm<sup>2</sup>",
+        "18cm<sup>2</sup>",
+        "24cm<sup>2</sup>",
+        "36cm<sup>2</sup>"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "두 삼각형의 넓이가 절반 관계라고 잘못 생각함",
+        "밑변의 비를 잘못 잡아 <span class=\"frac\"><b>2</b><i>3</i></span> 배로 봄",
+        "두 삼각형을 더한 값으로 잘못 계산함",
+        "두 배가 된다고 잘못 생각함"
+      ],
+      "answer_print": "18cm<sup>2</sup>",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "두 삼각형은 밑변 AD 를 함께 쓰고, 높이도 같아요. 평행선 사이의 거리는 일정하니까요.",
+      "solution": "삼각형 ABD 와 삼각형 ACD 는 <b>밑변 AD 를 함께</b> 쓰고, 꼭짓점 B 와 C 가 모두 직선 BC 위에 있어요. AD ∥ BC 이므로 두 삼각형의 <b>높이가 같아요</b>. 밑변과 높이가 같으면 넓이도 같으므로 삼각형 ACD 의 넓이도 <b>18cm<sup>2</sup></b> 예요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "quad2.equal-area-parallel"
+      ]
+    },
+    {
+      "id": "e08-s1",
+      "format": "short",
+      "level": "L",
+      "topic": "평행사변형의 대변",
+      "source_id": null,
+      "stem_print": "평행사변형 ABCD 에서 AB = 7cm, BC = 5cm 일 때, 이 평행사변형의 둘레의 길이를 구하시오.",
+      "choices": null,
+      "answer_print": "24cm",
+      "answer_accept": [
+        "24",
+        "24 cm"
+      ],
+      "answer_unit": "cm",
+      "answer_format": "숫자로 써요",
+      "figure": null,
+      "hint": "평행사변형은 마주 보는 변의 길이가 같아요.",
+      "solution": "평행사변형에서 마주 보는 변의 길이가 같으므로 CD = AB = 7cm, AD = BC = 5cm 예요. 둘레는 (7 + 5) × 2 = <b>24cm</b> 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "quad2.opposite-sides"
+      ]
+    },
+    {
+      "id": "e08-e1",
+      "format": "essay",
+      "level": "L",
+      "topic": "평행사변형의 각 구하기",
+      "source_id": null,
+      "stem_print": "평행사변형 ABCD 에서 ∠A 의 크기가 ∠B 의 크기의 2배일 때, ∠A 와 ∠B 의 크기를 각각 구하시오. 풀이 과정을 함께 쓰시오.",
+      "choices": null,
+      "rubric": [
+        {
+          "step": "이웃한 두 각의 합이 180° 임을 밝혔어요",
+          "points": 3
+        },
+        {
+          "step": "∠B 를 x 로 놓고 2x + x = 180° 를 세웠어요",
+          "points": 3
+        },
+        {
+          "step": "∠B = 60°, ∠A = 120° 를 구했어요",
+          "points": 2
+        }
+      ],
+      "answer_print": "∠A = 120°, ∠B = 60°",
+      "answer_accept": [
+        "120°, 60°",
+        "A=120, B=60"
+      ],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "평행사변형에서 이웃한 두 각의 합은 180° 예요.",
+      "solution": "평행사변형에서 이웃한 두 각의 합은 <b>180°</b> 예요. ∠B 를 x 라 하면 ∠A = 2x 이므로 2x + x = 180° 예요. 3x = 180° 에서 x = 60° 이므로 <b>∠B = 60°, ∠A = 120°</b> 예요. 마주 보는 각도 각각 같으니 ∠C = 120°, ∠D = 60° 예요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "quad2.adjacent-angles"
+      ]
+    },
+    {
+      "id": "e08-e2",
+      "format": "essay",
+      "level": "H",
+      "topic": "마름모임을 설명하기",
+      "source_id": null,
+      "stem_print": "평행사변형 ABCD 에서 두 대각선이 서로 수직일 때, 이 사각형이 마름모임을 설명하시오. 풀이 과정을 함께 쓰시오.",
+      "choices": null,
+      "rubric": [
+        {
+          "step": "두 대각선의 교점 O 에서 AO = CO, BO = DO 임을 밝혔어요",
+          "points": 3
+        },
+        {
+          "step": "∠AOB = ∠BOC = 90° 이므로 삼각형 ABO 와 CBO 가 합동임을 보였어요",
+          "points": 3
+        },
+        {
+          "step": "AB = BC 이고 같은 방법으로 네 변이 모두 같으므로 마름모라고 결론지었어요",
+          "points": 2
+        }
+      ],
+      "answer_print": "네 변의 길이가 모두 같으므로 마름모이다",
+      "answer_accept": [
+        "마름모",
+        "네 변이 모두 같다"
+      ],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "대각선의 교점에서 생기는 네 삼각형이 서로 합동임을 보이면 돼요.",
+      "solution": "두 대각선의 교점을 O 라 하면, 평행사변형이므로 <b>AO = CO, BO = DO</b> 예요. 두 대각선이 수직이므로 ∠AOB = ∠BOC = 90° 예요. 삼각형 ABO 와 삼각형 CBO 를 견주면 AO = CO, BO 는 공통, 끼인각이 모두 90° 로 같으므로 두 삼각형은 <b>합동</b>이에요(SAS 합동). 따라서 AB = BC 예요. 같은 방법으로 BC = CD, CD = DA 도 보일 수 있으니 <b>네 변의 길이가 모두 같아 마름모</b>예요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "quad2.rhombus-proof",
+        "tri.sas-congruent"
+      ]
+    }
+  ]
+}

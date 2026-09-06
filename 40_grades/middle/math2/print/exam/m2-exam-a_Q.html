@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>실전 모의고사 1회 시험지</title>
+<style>
+@page { size: A4; margin: 14mm 13mm 12mm 13mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: 'Malgun Gothic','맑은 고딕',sans-serif; color: #1a1a1a; font-size: 11pt; line-height: 1.55; }
+sup { font-size: .72em; vertical-align: super; line-height: 0; }
+.sheet { max-width: 182mm; margin: 0 auto; }
+
+/* ── 머리말 ── */
+.head { border-bottom: 2.4pt solid #2b4c9b; padding-bottom: 6px; margin-bottom: 10px; }
+.head .crumb { font-size: 9pt; color: #2b4c9b; font-weight: 700; letter-spacing: .04em; }
+.head h1 { font-size: 17pt; font-weight: 800; margin: 2px 0 1px; }
+.head .sub { font-size: 9.5pt; color: #555; }
+.idbar { display: flex; gap: 10px; align-items: flex-end; margin: 8px 0 4px; font-size: 9.5pt; color: #333; }
+.idbar .f { border-bottom: 1px solid #999; min-width: 30mm; display: inline-block; height: 15px; }
+.idbar .meta { margin-left: auto; color: #2b4c9b; font-weight: 700; white-space: nowrap; }
+.notice { background: #f3f6fd; border-left: 3pt solid #2b4c9b; padding: 6px 9px; font-size: 9.5pt;
+          color: #24406f; margin-bottom: 12px; border-radius: 2px; }
+
+/* ── 유형 구분 ── */
+.tsec { margin: 14px 0 8px; page-break-inside: avoid; break-inside: avoid;
+        page-break-after: avoid; break-after: avoid; }
+/* 유형 머리말이 페이지 끝에 홀로 남지 않도록 첫 문항까지 한 덩어리로 묶는다 */
+.tgroup { page-break-inside: avoid; break-inside: avoid; }
+.tsec .tt { font-size: 11.5pt; font-weight: 800; color: #2b4c9b; }
+.tsec .tp { font-size: 9.5pt; color: #444; background: #f7f8fa; border: 1px solid #e2e5ec;
+            border-radius: 3px; padding: 5px 8px; margin-top: 3px; }
+
+/* ── 문항 ── */
+.prob { page-break-inside: avoid; break-inside: avoid; margin-bottom: 11px;
+        border: 1px solid #dfe3ea; border-radius: 4px; padding: 8px 10px 9px; }
+.ph { display: flex; align-items: center; gap: 7px; margin-bottom: 5px; }
+.pn { width: 19px; height: 19px; border-radius: 50%; background: #2b4c9b; color: #fff;
+      font-size: 9.5pt; font-weight: 800; display: inline-flex; align-items: center;
+      justify-content: center; flex-shrink: 0; }
+.lv { font-size: 8.5pt; font-weight: 700; letter-spacing: .1em; }
+.lv-L { color: #2f7d4f; } .lv-M { color: #b07000; } .lv-H { color: #b3352c; }
+.lvn { font-size: 8.5pt; color: #777; }
+.tname { font-size: 8.5pt; color: #888; margin-left: auto; }
+.stem { font-size: 11.5pt; margin: 2px 0 5px; }
+.fmt { font-size: 8.8pt; color: #6b6b6b; margin-bottom: 5px; }
+.fmt b { color: #b07000; }
+.work { border: 1px dashed #c9cfda; border-radius: 3px; background: #fcfcfd;
+        background-image: repeating-linear-gradient(#fcfcfd 0 7mm, #eef0f4 7mm 7.2mm); }
+.ansline { margin-top: 6px; font-size: 11pt; display: flex; align-items: flex-end; gap: 6px; }
+.ansline .lab { font-weight: 800; color: #2b4c9b; }
+.ansline .blank { flex: 1; border-bottom: 1.4pt solid #333; height: 17px; }
+.ansline .unit { font-weight: 700; }
+.fig { text-align: center; margin: 3px 0 6px; }
+.fig svg, .fig img { max-width: 100%; height: auto; }
+/* 세로 분수 — KaTeX 없이 CSS 로. <span class="frac"><b>n</b><i>d</i></span> */
+.frac { display: inline-block; vertical-align: middle; text-align: center; font-size: .92em; }
+.frac b { display: block; border-bottom: 1.2px solid currentColor; padding: 0 .3em; font-weight: 400; }
+.frac i { display: block; padding: 0 .3em; font-style: normal; }
+
+/* ── 표 ── */
+table { width: 100%; border-collapse: collapse; font-size: 10pt; }
+th, td { border: 1px solid #ccd2dd; padding: 5px 7px; text-align: left; vertical-align: top; }
+th { background: #eef2fa; color: #24406f; font-weight: 700; font-size: 9.5pt; }
+td.c, th.c { text-align: center; }
+tr { page-break-inside: avoid; break-inside: avoid; }
+
+/* ── 해설 ── */
+.sol { page-break-inside: avoid; break-inside: avoid; margin-bottom: 9px;
+       border-left: 3pt solid #2f7d4f; background: #f5faf7; padding: 7px 10px; border-radius: 3px; }
+.sol .sh { font-weight: 800; font-size: 10.5pt; }
+.sol .sq { font-size: 10pt; color: #555; margin: 2px 0 4px; }
+.sol .hint { font-size: 9.5pt; color: #7a5a00; background: #fff7e6; border-radius: 3px;
+             padding: 3px 7px; display: inline-block; margin-bottom: 4px; }
+.sol .st { font-size: 10.5pt; }
+.sol .ans { font-weight: 800; color: #2f7d4f; }
+
+/* ── 오개념 카드 ── */
+.mis { page-break-inside: avoid; break-inside: avoid; border: 1.4pt solid #7b4bbd;
+       border-radius: 5px; padding: 9px 11px; margin-bottom: 10px; background: #faf7ff; }
+.mis .mh { display: flex; align-items: center; gap: 7px; margin-bottom: 5px; }
+.mis .mn { width: 20px; height: 20px; border-radius: 4px; background: #7b4bbd; color: #fff;
+           font-size: 9.5pt; font-weight: 800; display: inline-flex; align-items: center;
+           justify-content: center; flex-shrink: 0; }
+.mis .ml { font-weight: 800; font-size: 10.5pt; color: #4b2d78; }
+.mis .row { font-size: 10pt; margin: 3px 0; }
+.mis .tag { display: inline-block; min-width: 56px; padding-right: 9px; font-weight: 700;
+            color: #7b4bbd; font-size: 9pt; }
+.mis .ask { background: #fff; border: 1px solid #dfd2f2; border-radius: 3px; padding: 5px 8px; margin-top: 4px; }
+.mis .chk { margin-top: 5px; font-size: 10pt; }
+.mis .chk .blank { display: inline-block; border-bottom: 1.2pt solid #555; min-width: 34mm; height: 15px; }
+.keys { margin-top: 10px; border-top: 1px dashed #aaa; padding-top: 6px; font-size: 9pt; color: #666; }
+
+/* ── 진단표 ── */
+.legend { font-size: 9.5pt; background: #f7f8fa; border: 1px solid #e2e5ec; border-radius: 3px;
+          padding: 7px 9px; margin-bottom: 10px; }
+.legend b { color: #2b4c9b; }
+.foot { margin-top: 12px; padding-top: 5px; border-top: 1px solid #ddd;
+        font-size: 8.5pt; color: #999; display: flex; }
+.foot .r { margin-left: auto; }
+.pagebreak { page-break-before: always; break-before: page; }
+.ksec { margin: 16px 0 8px; border-top: 2pt solid #2b4c9b; padding-top: 7px; }
+.ksec .kt { font-size: 13pt; font-weight: 800; color: #2b4c9b; }
+.ksec .kd { font-size: 9pt; color: #666; margin-top: 1px; }
+
+/* ── 세로 2단 (구역 단위로 씌운다. 표는 감싸지 않는다 — 표는 1단이 읽기 좋다) ── */
+.cols { columns: 2; column-gap: 7mm; }
+.cols > * { break-inside: avoid; page-break-inside: avoid; }
+.cols .mis { padding: 7px 9px; margin-bottom: 8px; }
+.cols .mis .ml { font-size: 9.8pt; }
+.cols .mis .row, .cols .mis .ask { font-size: 9.2pt; }
+.cols .mis .tag { min-width: 0; padding-right: 6px; font-size: 8.4pt; }
+.cols .mis .chk { font-size: 9.2pt; }
+.cols .mis .chk .blank { min-width: 22mm; }
+.cols .sol { padding: 6px 9px; margin-bottom: 7px; }
+.cols .sol .sh { font-size: 9.8pt; }
+.cols .sol .sq { font-size: 9pt; margin: 1px 0 3px; }
+.cols .sol .hint { font-size: 8.6pt; padding: 2px 6px; }
+.cols .sol .st { font-size: 9.4pt; }
+
+.pts { font-size: 8.5pt; font-weight: 800; color: #b3352c; border: 1px solid #e6c4c1;
+       border-radius: 3px; padding: 0 4px; }
+.chs { margin: 4px 0 2px; font-size: 10.5pt; }
+.chs.row { display: flex; flex-wrap: wrap; gap: 3px 13px; }
+.chs.col span { display: block; margin: 2px 0; }
+.scorebox td { font-size: 10.5pt; }
+.scorebox .blankc { color: #bbb; letter-spacing: .05em; }
+.rub { page-break-inside: avoid; break-inside: avoid; border: 1.4pt solid #2f7d4f;
+       border-radius: 5px; padding: 8px 11px; margin-bottom: 10px; background: #f5faf7; }
+.rub .rh { font-weight: 800; font-size: 10.5pt; color: #205c39; margin-bottom: 3px; }
+.rub .rq { font-size: 9.5pt; color: #555; margin-bottom: 5px; }
+.rub table { margin-top: 3px; }
+.why { font-size: 9.3pt; color: #6b4a9e; margin-top: 3px; }
+.why b { color: #4b2d78; }
+</style>
+</head>
+<body>
+<div class="sheet">
+<div class="head">
+  <div class="crumb">중2 수학 · 전 범위 시험대비</div>
+  <h1>실전 모의고사 1회 <span style="font-size:11pt;color:#888;font-weight:700">— 시험지</span></h1>
+  <div class="sub">기본 9·보통 10·도전 3 — 실제 시험과 같은 난이도 배합</div>
+</div>
+<div class="idbar">이름 <span class="f"></span> 날짜 <span class="f"></span> 점수 <span class="f" style="min-width:20mm"></span> / 100<span class="meta">제한시간 45분 · 22문항 · 100점</span></div>
+<div class="notice">실제 시험처럼 <b>45분 타이머</b>를 맞추고 시작해요. 선택형은 보기 번호에 ○표, 단답형은 빈칸에, 서술형은 <b>풀이 과정까지</b> 적어요. 다 푼 뒤에 해답 묶음으로 채점해요 — 서술형은 채점기준표에 따라 부분 점수를 줘요.</div>
+<div class="ksec"><div class="kt">선택형</div><div class="kd">보기에서 하나를 골라 번호에 ○표 해요. (문항당 3~4점)</div></div>
+<div class="cols">
+<div class="prob">
+  <div class="ph"><span class="pn">1</span><span class="lv lv-L">●○○</span><span class="lvn">기본</span><span class="pts">4점</span><span class="tname">단원 2 · 지수법칙 — 거듭제곱의 거듭제곱</span></div>
+  <div class="stem">(2x<sup>2</sup>y)<sup>3</sup> 을 간단히 하면?</div>
+<div class="chs row"><span>① 2x<sup>5</sup>y<sup>3</sup></span><span>② 6x<sup>6</sup>y<sup>3</sup></span><span>③ 8x<sup>5</sup>y<sup>3</sup></span><span>④ 8x<sup>6</sup>y<sup>3</sup></span><span>⑤ 8x<sup>6</sup>y</span></div>
+  <div class="work" style="height:13mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">2</span><span class="lv lv-M">●●○</span><span class="lvn">보통</span><span class="pts">4점</span><span class="tname">단원 2 · 단항식과 다항식의 곱셈</span></div>
+  <div class="stem">3x(2x − 5) 를 전개하면?</div>
+<div class="chs row"><span>① 6x − 15</span><span>② 6x<sup>2</sup> − 5</span><span>③ 6x<sup>2</sup> − 15</span><span>④ 6x<sup>2</sup> − 15x</span><span>⑤ 5x<sup>2</sup> − 15x</span></div>
+  <div class="work" style="height:19mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">3</span><span class="lv lv-L">●○○</span><span class="lvn">기본</span><span class="pts">4점</span><span class="tname">단원 3 · 일차부등식 풀기</span></div>
+  <div class="stem">부등식 3x − 4 < 8 의 해는?</div>
+<div class="chs row"><span>① x < 3</span><span>② x < 4</span><span>③ x > 4</span><span>④ x < 12</span><span>⑤ x > 12</span></div>
+  <div class="work" style="height:13mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">4</span><span class="lv lv-M">●●○</span><span class="lvn">보통</span><span class="pts">4점</span><span class="tname">단원 3 · 자연수인 해의 개수</span></div>
+  <div class="stem">부등식 4x − 7 ≤ 13 을 만족하는 자연수 x 는 모두 몇 개인지 구하시오.</div>
+<div class="chs row"><span>① 3개</span><span>② 4개</span><span>③ 5개</span><span>④ 6개</span><span>⑤ 20개</span></div>
+  <div class="work" style="height:19mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">5</span><span class="lv lv-L">●○○</span><span class="lvn">기본</span><span class="pts">4점</span><span class="tname">단원 4 · 연립방정식의 해 확인</span></div>
+  <div class="stem">연립방정식 x + y = 7, x − y = 1 의 해는?</div>
+<div class="chs col"><span>① x = 2, y = 5</span><span>② x = 3, y = 4</span><span>③ x = 4, y = 3</span><span>④ x = 5, y = 2</span><span>⑤ x = 6, y = 1</span></div>
+  <div class="work" style="height:13mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">6</span><span class="lv lv-M">●●○</span><span class="lvn">보통</span><span class="pts">4점</span><span class="tname">단원 4 · 연립방정식의 활용 — 개수와 금액</span></div>
+  <div class="stem">한 개에 500원인 사탕과 한 개에 800원인 초콜릿을 합해 10개 사고 6,500원을 냈습니다. 초콜릿은 몇 개 샀는지 구하시오.</div>
+<div class="chs row"><span>① 2개</span><span>② 3개</span><span>③ 4개</span><span>④ 5개</span><span>⑤ 6개</span></div>
+  <div class="work" style="height:19mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">7</span><span class="lv lv-L">●○○</span><span class="lvn">기본</span><span class="pts">4점</span><span class="tname">단원 5 · 함숫값 구하기</span></div>
+  <div class="stem">일차함수 f(x) = 3x − 5 에 대하여 f(2) 의 값을 구하시오.</div>
+<div class="chs row"><span>① −1</span><span>② 1</span><span>③ 2</span><span>④ 6</span><span>⑤ 11</span></div>
+  <div class="work" style="height:13mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">8</span><span class="lv lv-M">●●○</span><span class="lvn">보통</span><span class="pts">4점</span><span class="tname">단원 5 · x절편과 y절편</span></div>
+  <div class="stem">일차함수 y = 2x − 8 의 그래프의 x절편을 구하시오.</div>
+<div class="chs row"><span>① −8</span><span>② −4</span><span>③ 2</span><span>④ 4</span><span>⑤ 8</span></div>
+  <div class="work" style="height:19mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">9</span><span class="lv lv-L">●○○</span><span class="lvn">기본</span><span class="pts">4점</span><span class="tname">단원 7 · 이등변삼각형 판정</span></div>
+  <div class="stem">삼각형 ABC 에서 ∠B = ∠C = 55° 일 때, 이 삼각형에 대한 설명으로 옳은 것은?</div>
+<div class="chs col"><span>① 정삼각형이고 세 변의 길이가 모두 같다</span><span>② AB = AC 인 이등변삼각형이다</span><span>③ BC = AC 인 이등변삼각형이다</span><span>④ ∠A = 55° 인 삼각형이다</span><span>⑤ 직각삼각형이다</span></div>
+  <div class="work" style="height:13mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">10</span><span class="lv lv-M">●●○</span><span class="lvn">보통</span><span class="pts">4점</span><span class="tname">단원 7 · 외심과 각의 크기</span></div>
+  <div class="stem">점 O 가 삼각형 ABC 의 외심이고 ∠OAB = 25° 일 때, ∠OBA 의 크기를 구하시오.</div>
+<div class="chs row"><span>① 25°</span><span>② 50°</span><span>③ 65°</span><span>④ 115°</span><span>⑤ 130°</span></div>
+  <div class="work" style="height:19mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">11</span><span class="lv lv-M">●●○</span><span class="lvn">보통</span><span class="pts">4점</span><span class="tname">단원 8 · 등변사다리꼴</span></div>
+  <div class="stem">AD ∥ BC 인 등변사다리꼴 ABCD 에서 ∠B = 75° 일 때, ∠A 의 크기를 구하시오.</div>
+<div class="chs row"><span>① 75°</span><span>② 90°</span><span>③ 105°</span><span>④ 115°</span><span>⑤ 135°</span></div>
+  <div class="work" style="height:19mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">12</span><span class="lv lv-M">●●○</span><span class="lvn">보통</span><span class="pts">3점</span><span class="tname">단원 9 · 삼각형의 두 변의 중점을 이은 선분</span></div>
+  <div class="stem">삼각형 ABC 에서 변 AB 의 중점을 M, 변 AC 의 중점을 N 이라 합니다. BC = 14cm 일 때, MN 의 길이를 구하시오.</div>
+<div class="chs row"><span>① 3.5cm</span><span>② 4cm</span><span>③ 6cm</span><span>④ 7cm</span><span>⑤ 14cm</span></div>
+  <div class="work" style="height:19mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">13</span><span class="lv lv-M">●●○</span><span class="lvn">보통</span><span class="pts">3점</span><span class="tname">단원 10 · 정사각형의 대각선</span></div>
+  <div class="stem">한 변의 길이가 5cm 인 정사각형의 대각선의 길이를 구하시오.</div>
+<div class="chs row"><span>① 5cm</span><span>② 5√2cm</span><span>③ 10cm</span><span>④ 25cm</span><span>⑤ 50cm</span></div>
+  <div class="work" style="height:19mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">14</span><span class="lv lv-L">●○○</span><span class="lvn">기본</span><span class="pts">3점</span><span class="tname">단원 11 · 경우의 수 — 곱의 법칙</span></div>
+  <div class="stem">윗옷 3벌과 바지 4벌이 있습니다. 윗옷과 바지를 하나씩 골라 입는 경우의 수를 구하시오.</div>
+<div class="chs row"><span>① 3</span><span>② 4</span><span>③ 7</span><span>④ 12</span><span>⑤ 24</span></div>
+  <div class="work" style="height:13mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">15</span><span class="lv lv-M">●●○</span><span class="lvn">보통</span><span class="pts">3점</span><span class="tname">단원 11 · 여사건의 확률</span></div>
+  <div class="stem">어떤 사건이 일어날 확률이 <span class="frac"><b>3</b><i>8</i></span> 일 때, 그 사건이 일어나지 않을 확률을 구하시오.</div>
+<div class="chs row"><span>① <span class="frac"><b>1</b><i>8</i></span></span><span>② <span class="frac"><b>3</b><i>8</i></span></span><span>③ <span class="frac"><b>1</b><i>2</i></span></span><span>④ <span class="frac"><b>3</b><i>5</i></span></span><span>⑤ <span class="frac"><b>5</b><i>8</i></span></span></div>
+  <div class="work" style="height:19mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank" style="max-width:16mm"></span><span class="unit">번</span></div>
+</div>
+</div>
+<div class="ksec"><div class="kt">단답형</div><div class="kd">답을 빈칸에 적어요. (문항당 4점)</div></div>
+<div class="cols">
+<div class="prob">
+  <div class="ph"><span class="pn">16</span><span class="lv lv-M">●●○</span><span class="lvn">보통</span><span class="pts">4점</span><span class="tname">단원 1 · 순환소수를 기약분수로</span></div>
+  <div class="stem">순환소수 0.888888… 를 기약분수로 나타내시오.</div>
+  <div class="fmt">답의 형태 — <b>기약분수로 써요</b></div>
+  <div class="work" style="height:28mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank"></span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">17</span><span class="lv lv-L">●○○</span><span class="lvn">기본</span><span class="pts">4점</span><span class="tname">단원 2 · 지수법칙 — 나눗셈</span></div>
+  <div class="stem">x<sup>8</sup> ÷ x<sup>3</sup> 을 간단히 하시오.</div>
+  <div class="fmt">답의 형태 — <b>식으로 써요</b></div>
+  <div class="work" style="height:22mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank"></span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">18</span><span class="lv lv-L">●○○</span><span class="lvn">기본</span><span class="pts">4점</span><span class="tname">단원 9 · 닮음비 구하기</span></div>
+  <div class="stem">닮은 두 삼각형에서 대응하는 두 변의 길이가 각각 6cm 와 15cm 일 때, 두 삼각형의 닮음비를 가장 간단한 자연수의 비로 나타내시오.</div>
+  <div class="fmt">답의 형태 — <b>비로 써요</b></div>
+  <div class="work" style="height:22mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank"></span></div>
+</div>
+</div>
+<div class="ksec"><div class="kt">서술형</div><div class="kd">풀이 과정을 함께 써야 점수를 받아요. 부분 점수가 있어요. (문항당 8점)</div></div>
+<div class="prob">
+  <div class="ph"><span class="pn">19</span><span class="lv lv-L">●○○</span><span class="lvn">기본</span><span class="pts">8점</span><span class="tname">단원 5 · 함숫값과 미지수</span></div>
+  <div class="stem">일차함수 f(x) = ax + 1 에 대하여 f(3) = 10 일 때, 상수 a 의 값을 구하시오. 풀이 과정을 함께 쓰시오.</div>
+  <div class="fmt">풀이 과정을 꼭 써요 — 과정이 맞으면 답이 틀려도 부분 점수를 받아요.</div>
+  <div class="work" style="height:52mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank"></span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">20</span><span class="lv lv-H">●●●</span><span class="lvn">도전</span><span class="pts">8점</span><span class="tname">단원 6 · 교점을 지나는 직선</span></div>
+  <div class="stem">두 직선 y = 2x − 1 과 y = −x + 5 의 교점을 지나고 기울기가 4 인 직선의 방정식을 구하시오. 풀이 과정을 함께 쓰시오.</div>
+  <div class="fmt">풀이 과정을 꼭 써요 — 과정이 맞으면 답이 틀려도 부분 점수를 받아요.</div>
+  <div class="work" style="height:56mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank"></span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">21</span><span class="lv lv-H">●●●</span><span class="lvn">도전</span><span class="pts">8점</span><span class="tname">단원 9 · 닮음비·넓이비·부피비 종합</span></div>
+  <div class="stem">닮음비가 2 : 3 인 두 직육면체 모양의 상자가 있습니다. 작은 상자의 겉넓이가 24cm<sup>2</sup>, 부피가 16cm<sup>3</sup> 일 때, 큰 상자의 겉넓이와 부피를 각각 구하시오. 풀이 과정을 함께 쓰시오.</div>
+  <div class="fmt">풀이 과정을 꼭 써요 — 과정이 맞으면 답이 틀려도 부분 점수를 받아요.</div>
+  <div class="work" style="height:56mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank"></span></div>
+</div>
+<div class="prob">
+  <div class="ph"><span class="pn">22</span><span class="lv lv-H">●●●</span><span class="lvn">도전</span><span class="pts">8점</span><span class="tname">단원 10 · 피타고라스의 활용 — 두 지점 사이 거리</span></div>
+  <div class="stem">어떤 사람이 집에서 동쪽으로 8km 를 간 뒤, 방향을 바꿔 북쪽으로 15km 를 갔습니다. 지금 있는 곳에서 집까지의 직선거리를 구하시오. 풀이 과정을 함께 쓰시오.</div>
+  <div class="fmt">풀이 과정을 꼭 써요 — 과정이 맞으면 답이 틀려도 부분 점수를 받아요.</div>
+  <div class="work" style="height:56mm"></div>
+  <div class="ansline"><span class="lab">답</span><span class="blank"></span><span class="unit">km</span></div>
+</div>
+<div class="foot"><span>m2-exam-a · 시험지 Q</span><span class="r">math-story-telling</span></div>
+
+</div>
+</body>
+</html>

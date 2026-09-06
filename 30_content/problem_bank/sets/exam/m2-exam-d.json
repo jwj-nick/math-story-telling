@@ -1,0 +1,126 @@
+{
+  "id": "m2-exam-d",
+  "kind": "exam",
+  "difficulty_kind": "easy",
+  "grade": "math2",
+  "title": "워밍업 모의고사",
+  "subtitle": "전부 기본 난이도 — 처음 시작할 때, 자신감을 채우는 회차",
+  "time_min": 45,
+  "total_points": 100,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "problems": [
+    {
+      "unit": 1,
+      "pid": "e01-c1",
+      "points": 4
+    },
+    {
+      "unit": 1,
+      "pid": "e01-c2",
+      "points": 4
+    },
+    {
+      "unit": 2,
+      "pid": "e02-c1",
+      "points": 4
+    },
+    {
+      "unit": 3,
+      "pid": "e03-c1",
+      "points": 4
+    },
+    {
+      "unit": 4,
+      "pid": "e04-c2",
+      "points": 4
+    },
+    {
+      "unit": 5,
+      "pid": "e05-c2",
+      "points": 4
+    },
+    {
+      "unit": 5,
+      "pid": "e05-c3",
+      "points": 4
+    },
+    {
+      "unit": 6,
+      "pid": "e06-c2",
+      "points": 4
+    },
+    {
+      "unit": 7,
+      "pid": "e07-c3",
+      "points": 4
+    },
+    {
+      "unit": 8,
+      "pid": "e08-c2",
+      "points": 4
+    },
+    {
+      "unit": 8,
+      "pid": "e08-c3",
+      "points": 4
+    },
+    {
+      "unit": 9,
+      "pid": "e09-c2",
+      "points": 3
+    },
+    {
+      "unit": 10,
+      "pid": "e10-c1",
+      "points": 3
+    },
+    {
+      "unit": 10,
+      "pid": "e10-c3",
+      "points": 3
+    },
+    {
+      "unit": 11,
+      "pid": "e11-c1",
+      "points": 3
+    },
+    {
+      "unit": 3,
+      "pid": "e03-s1",
+      "points": 4
+    },
+    {
+      "unit": 7,
+      "pid": "e07-s1",
+      "points": 4
+    },
+    {
+      "unit": 8,
+      "pid": "e08-s1",
+      "points": 4
+    },
+    {
+      "unit": 4,
+      "pid": "e04-e1",
+      "points": 8
+    },
+    {
+      "unit": 5,
+      "pid": "e05-e2",
+      "points": 8
+    },
+    {
+      "unit": 7,
+      "pid": "e07-e1",
+      "points": 8
+    },
+    {
+      "unit": 10,
+      "pid": "e10-e2",
+      "points": 8
+    }
+  ]
+}

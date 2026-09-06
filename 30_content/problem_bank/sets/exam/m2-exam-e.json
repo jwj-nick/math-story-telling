@@ -1,0 +1,126 @@
+{
+  "id": "m2-exam-e",
+  "kind": "exam",
+  "difficulty_kind": "hard",
+  "grade": "math2",
+  "title": "도전 모의고사 1회",
+  "subtitle": "보통 11·도전 11 — 실력이 붙은 뒤, 마무리용",
+  "time_min": 45,
+  "total_points": 100,
+  "outputs": [
+    "Q",
+    "K"
+  ],
+  "problems": [
+    {
+      "unit": 1,
+      "pid": "e01-c6",
+      "points": 4
+    },
+    {
+      "unit": 1,
+      "pid": "e01-c7",
+      "points": 4
+    },
+    {
+      "unit": 3,
+      "pid": "e03-c3",
+      "points": 4
+    },
+    {
+      "unit": 3,
+      "pid": "e03-c4",
+      "points": 4
+    },
+    {
+      "unit": 4,
+      "pid": "e04-c6",
+      "points": 4
+    },
+    {
+      "unit": 5,
+      "pid": "e05-c7",
+      "points": 4
+    },
+    {
+      "unit": 6,
+      "pid": "e06-c5",
+      "points": 4
+    },
+    {
+      "unit": 6,
+      "pid": "e06-c7",
+      "points": 4
+    },
+    {
+      "unit": 6,
+      "pid": "e06-c8",
+      "points": 4
+    },
+    {
+      "unit": 7,
+      "pid": "e07-c5",
+      "points": 4
+    },
+    {
+      "unit": 9,
+      "pid": "e09-c3",
+      "points": 4
+    },
+    {
+      "unit": 9,
+      "pid": "e09-c8",
+      "points": 3
+    },
+    {
+      "unit": 10,
+      "pid": "e10-c6",
+      "points": 3
+    },
+    {
+      "unit": 10,
+      "pid": "e10-c8",
+      "points": 3
+    },
+    {
+      "unit": 11,
+      "pid": "e11-c8",
+      "points": 3
+    },
+    {
+      "unit": 2,
+      "pid": "e02-s2",
+      "points": 4
+    },
+    {
+      "unit": 5,
+      "pid": "e05-s1",
+      "points": 4
+    },
+    {
+      "unit": 10,
+      "pid": "e10-s1",
+      "points": 4
+    },
+    {
+      "unit": 3,
+      "pid": "e03-e2",
+      "points": 8
+    },
+    {
+      "unit": 5,
+      "pid": "e05-e3",
+      "points": 8
+    },
+    {
+      "unit": 8,
+      "pid": "e08-e2",
+      "points": 8
+    },
+    {
+      "unit": 11,
+      "pid": "e11-e2",
+      "points": 8
+    }
+  ]
+}

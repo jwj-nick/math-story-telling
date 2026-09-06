@@ -1,0 +1,403 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 3,
+    "unit_name": "일차부등식",
+    "purpose": "exam-pool",
+    "authored": "2026-09-06",
+    "note": "중2 전범위 실전 모의고사용 문항 풀. EXAM_SPEC2.md 준수."
+  },
+  "problems": [
+    {
+      "id": "e03-c1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "부등식의 성질",
+      "source_id": null,
+      "stem_print": "a > b 일 때, 다음 중 항상 옳은 것은?",
+      "choices": [
+        "a − 3 < b − 3",
+        "a + 5 > b + 5",
+        "−2a > −2b",
+        "<span class=\"frac\"><b>a</b><i>−4</i></span> > <span class=\"frac\"><b>b</b><i>−4</i></span>",
+        "−a > −b"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "양변에서 같은 수를 빼면 부등호가 바뀐다고 잘못 생각함",
+        "음수를 곱할 때 부등호를 바꾸는 것을 잊음",
+        "음수로 나눌 때 부등호를 바꾸는 것을 잊음",
+        "양변에 −1 을 곱하면서 부등호를 그대로 둠"
+      ],
+      "answer_print": "a + 5 > b + 5",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "더하고 빼는 것은 부등호가 그대로, <b>음수를 곱하거나 나누면</b> 부등호가 뒤집혀요.",
+      "solution": "양변에 같은 수를 더하거나 빼면 부등호는 그대로예요. 그래서 a + 5 > b + 5 는 언제나 옳아요. 나머지는 모두 <b>음수를 곱하거나 나눈 뒤에도 부등호를 그대로 둔</b> 것이라 틀려요. 예를 들어 −2a 와 −2b 는 −2a &lt; −2b 가 돼요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "ineq.negative-flip"
+      ]
+    },
+    {
+      "id": "e03-c2",
+      "format": "choice5",
+      "level": "L",
+      "topic": "일차부등식 풀기",
+      "source_id": null,
+      "stem_print": "부등식 3x − 4 < 8 의 해는?",
+      "choices": [
+        "x < 3",
+        "x < 4",
+        "x > 4",
+        "x < 12",
+        "x > 12"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "12 를 3으로 나누는 대신 12 에서 3 을 빼는 식으로 계산함",
+        "양변을 3으로 나누며 부등호를 바꿈",
+        "3으로 나누는 것을 잊고 12 를 그대로 답함",
+        "나누는 것도 잊고 부등호도 바꿈"
+      ],
+      "answer_print": "x < 4",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "−4 를 오른쪽으로 넘긴 뒤 양변을 3으로 나눠요. 3은 양수라 부등호는 그대로예요.",
+      "solution": "3x − 4 &lt; 8 에서 3x &lt; 12 이고, 양변을 <b>양수 3</b> 으로 나누므로 부등호는 그대로 두어 <b>x &lt; 4</b> 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "ineq.divide-step"
+      ]
+    },
+    {
+      "id": "e03-c3",
+      "format": "choice5",
+      "level": "M",
+      "topic": "음수 계수 부등식",
+      "source_id": null,
+      "stem_print": "부등식 −2x + 5 ≥ 11 의 해는?",
+      "choices": [
+        "x ≤ −3",
+        "x ≥ −3",
+        "x ≤ 3",
+        "x ≥ 3",
+        "x ≤ 8"
+      ],
+      "answer_choice": 1,
+      "distractor_why": [
+        "−2 로 나누면서 부등호를 바꾸지 않음",
+        "6 을 −2 로 나눌 때 부호를 빠뜨려 3 으로 만들고 부등호도 그대로 둠",
+        "부호는 맞췄지만 부등호를 바꾸지 않음",
+        "−2 로 나누는 것을 잊고 6 에 2 를 더해 8 로 만듦"
+      ],
+      "answer_print": "x ≤ −3",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "양변을 <b>음수</b>로 나눌 때는 부등호의 방향을 반드시 뒤집어요.",
+      "solution": "−2x + 5 ≥ 11 에서 −2x ≥ 6 이에요. 양변을 <b>−2</b> 로 나누면 부등호가 뒤집혀 <b>x ≤ −3</b> 이 돼요. x = −4 를 넣어 보면 −2(−4) + 5 = 13 ≥ 11 로 참이라 맞아요.",
+      "work_space": "md",
+      "misconceptions": [
+        "ineq.negative-flip"
+      ]
+    },
+    {
+      "id": "e03-c4",
+      "format": "choice5",
+      "level": "M",
+      "topic": "괄호가 있는 부등식",
+      "source_id": null,
+      "stem_print": "부등식 2(x − 3) > 5x + 3 의 해는?",
+      "choices": [
+        "x < −3",
+        "x > −3",
+        "x < 3",
+        "x > 3",
+        "x < −1"
+      ],
+      "answer_choice": 1,
+      "distractor_why": [
+        "−3 으로 나누면서 부등호를 바꾸지 않음",
+        "−6 을 오른쪽으로 넘길 때 부호를 바꾸지 않아 x &lt; 3 이 나옴",
+        "부호와 부등호를 둘 다 잘못 처리함",
+        "−3x > 9 를 −3x > 3 으로 잘못 정리함"
+      ],
+      "answer_print": "x < −3",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "괄호를 먼저 풀고, x 항을 한쪽으로 모아요. 마지막에 음수로 나누면 부등호를 뒤집어요.",
+      "solution": "괄호를 풀면 2x − 6 &gt; 5x + 3 이에요. x 항을 왼쪽, 수를 오른쪽으로 모으면 2x − 5x &gt; 3 + 6, 곧 −3x &gt; 9 예요. 양변을 <b>−3</b> 으로 나누면 부등호가 뒤집혀 <b>x &lt; −3</b> 이에요.",
+      "work_space": "md",
+      "misconceptions": [
+        "ineq.negative-flip",
+        "ineq.transpose-sign"
+      ]
+    },
+    {
+      "id": "e03-c5",
+      "format": "choice5",
+      "level": "M",
+      "topic": "자연수인 해의 개수",
+      "source_id": null,
+      "stem_print": "부등식 4x − 7 ≤ 13 을 만족하는 자연수 x 는 모두 몇 개인지 구하시오.",
+      "choices": [
+        "3개",
+        "4개",
+        "5개",
+        "6개",
+        "20개"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "x ≤ 5 에서 5 를 빼고 세거나 0 을 자연수로 포함하지 않아 하나 적게 셈",
+        "부등호가 ≤ 인데 &lt; 로 보아 5 를 빼고 셈",
+        "0 을 자연수로 잘못 세어 하나 더 붙임",
+        "4 로 나누는 것을 잊고 20 을 그대로 답함"
+      ],
+      "answer_print": "5개",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "먼저 부등식을 풀고, 자연수는 1부터 시작한다는 것을 기억해요.",
+      "solution": "4x − 7 ≤ 13 에서 4x ≤ 20 이므로 <b>x ≤ 5</b> 예요. 자연수는 1부터이니 1, 2, 3, 4, 5 로 <b>5개</b> 예요. 부등호가 ≤ 이므로 5도 포함된다는 것이 핵심이에요.",
+      "work_space": "md",
+      "misconceptions": [
+        "ineq.boundary-include",
+        "ineq.natural-start"
+      ]
+    },
+    {
+      "id": "e03-c6",
+      "format": "choice5",
+      "level": "M",
+      "topic": "부등식의 활용 — 최대 개수",
+      "source_id": null,
+      "stem_print": "한 개에 800원인 사탕을 사고 포장비 1,000원을 더 냈을 때 전체 금액이 9,000원을 넘지 않게 하려고 합니다. 사탕을 최대 몇 개까지 살 수 있는지 구하시오.",
+      "choices": [
+        "8개",
+        "9개",
+        "10개",
+        "11개",
+        "12개"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "포장비를 두 번 빼서 7,000 원으로 계산함",
+        "10 개일 때 정확히 9,000 원이 되는데 넘는다고 보아 하나 줄임",
+        "포장비를 빼지 않고 9,000 ÷ 800 을 반올림함",
+        "포장비를 더해 10,000 원으로 잘못 잡고 계산함"
+      ],
+      "answer_print": "10개",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "사탕 수를 x 라 놓고 800x + 1000 ≤ 9000 을 세워요.",
+      "solution": "사탕 수를 x 라 하면 800x + 1000 ≤ 9000 이에요. 800x ≤ 8000 이므로 x ≤ 10 이에요. 개수는 자연수이므로 최대 <b>10개</b> 예요. \"넘지 않는다\"는 그 값까지 <b>포함</b>한다는 뜻이라 10개일 때 딱 9,000원이어도 괜찮아요.",
+      "work_space": "md",
+      "misconceptions": [
+        "ineq.word-setup",
+        "ineq.boundary-include"
+      ]
+    },
+    {
+      "id": "e03-c7",
+      "format": "choice5",
+      "level": "H",
+      "topic": "해가 주어졌을 때 미지수 구하기",
+      "source_id": null,
+      "stem_print": "x 에 대한 부등식 x + a < 3x + 7 의 해가 x > −2 일 때, 상수 a 의 값을 구하시오.",
+      "choices": [
+        "−11",
+        "−3",
+        "3",
+        "7",
+        "11"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "부등식을 정리할 때 부호를 잘못 옮겨 a − 7 = 4 로 세움",
+        "a − 7 = 2 × (−2) 를 a − 7 = −4 대신 a = −4 + ... 로 잘못 계산함",
+        "a 를 그대로 상수항 7 과 같다고 봄",
+        "−2 를 그대로 대입하지 않고 부호를 바꿔 계산함"
+      ],
+      "answer_print": "3",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "부등식을 x 에 대해 풀어서 x > (어떤 식) 꼴로 만든 뒤, 그 식이 −2 와 같다고 놓아요.",
+      "solution": "x + a &lt; 3x + 7 에서 x 항을 왼쪽, 수를 오른쪽으로 모으면 x − 3x &lt; 7 − a, 곧 −2x &lt; 7 − a 예요. 양변을 <b>−2</b> 로 나누면 부등호가 뒤집혀 x &gt; <span class=\"frac\"><b>a − 7</b><i>2</i></span> 가 돼요(−2 로 나누면서 분자의 부호도 함께 바뀌어요). 이것이 주어진 해 x &gt; −2 와 같아야 하므로 <span class=\"frac\"><b>a − 7</b><i>2</i></span> = −2 이고, a − 7 = −4 에서 <b>a = 3</b> 이에요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "ineq.negative-flip",
+        "ineq.param-compare"
+      ]
+    },
+    {
+      "id": "e03-c8",
+      "format": "choice5",
+      "level": "H",
+      "topic": "부등식의 활용 — 두 요금제 비교",
+      "source_id": null,
+      "stem_print": "어떤 미술관의 입장료는 1인당 5,000원이고, 20명 이상 단체는 1인당 3,500원입니다. 20명 미만이 갈 때도 20명 단체표를 사는 것이 더 유리해지려면 적어도 몇 명 이상이어야 하는지 구하시오.",
+      "choices": [
+        "12명",
+        "13명",
+        "14명",
+        "15명",
+        "16명"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "단체 요금 3,500원을 3,000원으로 잘못 읽어 60,000 ÷ 5,000 = 12 를 답함",
+        "단체 요금을 20 × 3,250 처럼 어림해 65,000원으로 잡고 계산함",
+        "14명일 때 정확히 70,000원으로 같은데 이미 유리하다고 보아 14를 답함",
+        "x > 14 에서 14를 빼야 한다는 것을 두 번 적용해 16으로 올림"
+      ],
+      "answer_print": "15명",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "20명 단체표의 값은 20 × 3,500 = 70,000 원으로 고정이에요. 낱장으로 살 때와 견줘요.",
+      "solution": "20명 단체표를 사면 20 × 3,500 = 70,000 원이에요. x 명이 낱장으로 사면 5,000x 원이고, 단체표가 더 싸려면 70,000 &lt; 5,000x 이므로 x &gt; 14 예요. 사람 수는 자연수이므로 <b>15명</b> 부터 단체표가 유리해요. 14명이면 정확히 70,000원으로 같아서 \"더 유리\"하지는 않아요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "ineq.word-setup",
+        "ineq.strict-vs-equal"
+      ]
+    },
+    {
+      "id": "e03-s1",
+      "format": "short",
+      "level": "L",
+      "topic": "일차부등식 풀기",
+      "source_id": null,
+      "stem_print": "부등식 5x + 2 ≥ 17 을 푸시오.",
+      "choices": null,
+      "answer_print": "x ≥ 3",
+      "answer_accept": [
+        "x>=3",
+        "x ≥ 3",
+        "3 이상"
+      ],
+      "answer_unit": null,
+      "answer_format": "부등식으로 써요",
+      "figure": null,
+      "hint": "2 를 오른쪽으로 넘긴 뒤 양변을 5로 나눠요.",
+      "solution": "5x + 2 ≥ 17 에서 5x ≥ 15 이고, 양변을 양수 5로 나누면 부등호는 그대로 두어 <b>x ≥ 3</b> 이에요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "ineq.divide-step"
+      ]
+    },
+    {
+      "id": "e03-s2",
+      "format": "short",
+      "level": "M",
+      "topic": "정수인 해의 개수",
+      "source_id": null,
+      "stem_print": "부등식 −3 < x ≤ 2 를 만족하는 정수 x 는 모두 몇 개인지 구하시오.",
+      "choices": null,
+      "answer_print": "5",
+      "answer_accept": [
+        "5개",
+        "다섯"
+      ],
+      "answer_unit": "개",
+      "answer_format": "숫자로 써요",
+      "figure": null,
+      "hint": "−3 은 포함되지 않고 2 는 포함돼요. 하나씩 적어 봐요.",
+      "solution": "−3 &lt; x ≤ 2 를 만족하는 정수는 −2, −1, 0, 1, 2 로 <b>5개</b> 예요. 왼쪽은 &lt; 라서 −3 이 빠지고, 오른쪽은 ≤ 라서 2 가 들어간다는 점이 핵심이에요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "ineq.boundary-include"
+      ]
+    },
+    {
+      "id": "e03-e1",
+      "format": "essay",
+      "level": "L",
+      "topic": "부등식 풀이 과정",
+      "source_id": null,
+      "stem_print": "부등식 −4x + 9 > 1 을 푸시오. 풀이 과정을 함께 쓰시오.",
+      "choices": null,
+      "rubric": [
+        {
+          "step": "상수항을 옮겨 −4x > −8 을 얻었어요",
+          "points": 3
+        },
+        {
+          "step": "양변을 −4 로 나누면서 부등호를 뒤집어야 함을 밝혔어요",
+          "points": 3
+        },
+        {
+          "step": "해 x < 2 를 구했어요",
+          "points": 2
+        }
+      ],
+      "answer_print": "x < 2",
+      "answer_accept": [
+        "x<2",
+        "2 미만"
+      ],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "음수로 나눌 때 부등호를 뒤집는다는 것을 풀이에 꼭 밝혀요.",
+      "solution": "−4x + 9 &gt; 1 에서 9 를 오른쪽으로 옮기면 −4x &gt; −8 이에요. 양변을 <b>−4</b> 로 나누는데, 나누는 수가 음수이므로 <b>부등호의 방향을 뒤집어야</b> 해요. 그래서 <b>x &lt; 2</b> 예요. x = 0 을 넣어 보면 9 &gt; 1 로 참이니 맞아요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "ineq.negative-flip"
+      ]
+    },
+    {
+      "id": "e03-e2",
+      "format": "essay",
+      "level": "H",
+      "topic": "부등식의 활용 — 평균 점수",
+      "source_id": null,
+      "stem_print": "세 번의 수학 시험에서 82점, 76점, 90점을 받았습니다. 네 번의 시험 평균이 85점 이상이 되려면 네 번째 시험에서 몇 점 이상을 받아야 하는지 구하시오. 풀이 과정을 함께 쓰시오.",
+      "choices": null,
+      "rubric": [
+        {
+          "step": "네 번째 점수를 x 로 놓고 (82 + 76 + 90 + x) ÷ 4 ≥ 85 를 세웠어요",
+          "points": 3
+        },
+        {
+          "step": "양변에 4를 곱해 248 + x ≥ 340 으로 정리했어요",
+          "points": 3
+        },
+        {
+          "step": "x ≥ 92 를 구하고 92점 이상이라고 답했어요",
+          "points": 2
+        }
+      ],
+      "answer_print": "92점",
+      "answer_accept": [
+        "92",
+        "92점 이상"
+      ],
+      "answer_unit": "점",
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "네 번째 점수를 x 라 하고 평균이 85 이상이라는 부등식을 세워요.",
+      "solution": "네 번째 점수를 x 라 하면 평균은 <span class=\"frac\"><b>82 + 76 + 90 + x</b><i>4</i></span> 예요. 이것이 85 이상이어야 하므로 <span class=\"frac\"><b>248 + x</b><i>4</i></span> ≥ 85 예요. 양변에 4를 곱하면 248 + x ≥ 340 이고, x ≥ 92 예요. 그러므로 네 번째 시험에서 <b>92점 이상</b> 받아야 해요. 4는 양수라서 곱해도 부등호는 그대로예요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "ineq.word-setup",
+        "ineq.average-setup"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 1,
+    "unit_name": "유리수와 순환소수",
+    "purpose": "exam-pool",
+    "authored": "2026-09-06",
+    "note": "중2 전범위 실전 모의고사용 문항 풀. EXAM_SPEC2.md 준수."
+  },
+  "problems": [
+    {
+      "id": "e01-c1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "유한소수로 나타낼 수 있는 분수",
+      "source_id": null,
+      "stem_print": "다음 분수 중 유한소수로 나타낼 수 있는 것은?",
+      "choices": [
+        "<span class=\"frac\"><b>1</b><i>3</i></span>",
+        "<span class=\"frac\"><b>3</b><i>7</i></span>",
+        "<span class=\"frac\"><b>7</b><i>20</i></span>",
+        "<span class=\"frac\"><b>5</b><i>12</i></span>",
+        "<span class=\"frac\"><b>2</b><i>15</i></span>"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "분모 3이 2도 5도 아니어서 유한소수가 될 수 없는데 분자가 1이라 간단해 보여 고름",
+        "분모 7을 소인수분해하지 않고 홀수라는 이유만으로 판단함",
+        "분모 12 = 2<sup>2</sup> × 3에서 3을 못 보고 2만 있다고 생각함",
+        "분모 15 = 3 × 5에서 5만 보고 3을 놓침"
+      ],
+      "answer_print": "<span class=\"frac\"><b>7</b><i>20</i></span>",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "기약분수로 만든 뒤 분모를 소인수분해해서 2와 5만 있는지 봐요.",
+      "solution": "유한소수가 되려면 기약분수의 분모에 2와 5 말고 다른 소인수가 없어야 해요. 20 = 2<sup>2</sup> × 5라서 <span class=\"frac\"><b>7</b><i>20</i></span> 은 유한소수예요. 나머지는 분모에 3이나 7이 남아 있어서 순환소수가 돼요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "deci.finite-denominator"
+      ]
+    },
+    {
+      "id": "e01-c2",
+      "format": "choice5",
+      "level": "L",
+      "topic": "순환마디 찾기",
+      "source_id": null,
+      "stem_print": "순환소수 0.3181818… 의 순환마디는?",
+      "choices": [
+        "3",
+        "18",
+        "31",
+        "318",
+        "3181"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "소수점 아래 첫 숫자를 순환마디로 착각함",
+        "되풀이가 시작되기 전의 3까지 포함해 순환마디로 봄",
+        "되풀이되는 부분을 한 번 더 늘려 3까지 붙여 읽음",
+        "되풀이되는 부분을 두 번 적어 순환마디를 두 배로 봄"
+      ],
+      "answer_print": "18",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "되풀이되기 시작하는 자리부터 끊어서 봐요. 앞의 3은 한 번만 나와요.",
+      "solution": "0.3181818… 은 3 다음부터 18이 계속 되풀이돼요. 그러니 순환마디는 <b>18</b>이에요. 순환마디는 <b>되풀이되는 가장 짧은 부분</b>이에요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "deci.cycle-start"
+      ]
+    },
+    {
+      "id": "e01-c3",
+      "format": "choice5",
+      "level": "M",
+      "topic": "유한소수가 되게 하는 자연수",
+      "source_id": null,
+      "stem_print": "<span class=\"frac\"><b>7</b><i>2<sup>2</sup> × 3 × 5</i></span> × a 가 유한소수가 되도록 하는 가장 작은 자연수 a 의 값을 구하시오.",
+      "choices": [
+        "2",
+        "3",
+        "5",
+        "7",
+        "15"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "분모에 2가 있으니 2를 곱하면 된다고 생각함",
+        "분모의 5를 없애야 한다고 잘못 판단함",
+        "분자 7을 없애려고 7을 곱함",
+        "분모 전체 중 2가 아닌 부분 3 × 5를 모두 곱해야 한다고 생각함"
+      ],
+      "answer_print": "3",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "분모에서 2와 5가 아닌 소인수만 지우면 돼요.",
+      "solution": "분모 2<sup>2</sup> × 3 × 5 에서 걸리는 소인수는 <b>3</b> 하나예요. a = 3을 곱하면 분자의 3과 분모의 3이 약분돼 분모가 2<sup>2</sup> × 5 만 남아 유한소수가 돼요. 그래서 가장 작은 자연수는 <b>3</b>이에요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "deci.finite-denominator",
+        "deci.multiply-target"
+      ]
+    },
+    {
+      "id": "e01-c4",
+      "format": "choice5",
+      "level": "M",
+      "topic": "순환소수를 분수로",
+      "source_id": null,
+      "stem_print": "순환소수 0.454545… 를 기약분수로 나타내면?",
+      "choices": [
+        "<span class=\"frac\"><b>5</b><i>11</i></span>",
+        "<span class=\"frac\"><b>9</b><i>20</i></span>",
+        "<span class=\"frac\"><b>45</b><i>90</i></span>",
+        "<span class=\"frac\"><b>5</b><i>9</i></span>",
+        "<span class=\"frac\"><b>45</b><i>10</i></span>"
+      ],
+      "answer_choice": 1,
+      "distractor_why": [
+        "순환소수를 유한소수 0.45 로 보고 <span class=\"frac\"><b>45</b><i>100</i></span> 을 약분함",
+        "분모를 99가 아니라 90으로 잘못 쓰고 약분하지 않음",
+        "순환마디를 45가 아니라 5 하나로 보고 <span class=\"frac\"><b>5</b><i>9</i></span> 로 계산함",
+        "소수점을 한 칸만 옮겨 분모를 10으로 씀"
+      ],
+      "answer_print": "<span class=\"frac\"><b>5</b><i>11</i></span>",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "순환마디가 두 자리이니 100배 한 것에서 원래 수를 빼요.",
+      "solution": "x = 0.454545… 라 하면 100x = 45.454545… 예요. 두 식을 빼면 99x = 45 이므로 x = <span class=\"frac\"><b>45</b><i>99</i></span> = <span class=\"frac\"><b>5</b><i>11</i></span> 이에요. 순환마디가 두 자리라서 분모가 <b>99</b>가 돼요.",
+      "work_space": "md",
+      "misconceptions": [
+        "deci.to-fraction-denominator"
+      ]
+    },
+    {
+      "id": "e01-c5",
+      "format": "choice5",
+      "level": "M",
+      "topic": "소수점 아래 자리의 숫자",
+      "source_id": null,
+      "stem_print": "<span class=\"frac\"><b>3</b><i>7</i></span> 을 소수로 나타내면 0.428571428571… 이 됩니다. 소수점 아래 50번째 자리의 숫자를 구하시오.",
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "8"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "순환마디의 마지막 숫자 1을 그대로 답함",
+        "나머지가 2인데 순환마디의 첫 번째 숫자 4를 고름",
+        "50 ÷ 6 의 나머지를 4로 잘못 구해 다섯 번째 자리 숫자를 고름",
+        "50 ÷ 6 의 몫 8을 자리의 숫자로 착각함"
+      ],
+      "answer_print": "2",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "순환마디가 몇 자리인지 세고, 50을 그 수로 나눈 나머지를 봐요. 나머지가 순환마디 안에서의 순서예요.",
+      "solution": "순환마디는 428571 로 <b>6자리</b>예요. 50 ÷ 6 = 8 … 나머지 <b>2</b> 이므로, 순환마디가 8번 되풀이되어 48번째 자리까지 채워지고 49번째가 4, <b>50번째가 2</b>예요. 나머지가 곧 순환마디에서 몇 번째 숫자인지를 알려 줘요.",
+      "work_space": "md",
+      "misconceptions": [
+        "deci.cycle-position"
+      ]
+    },
+    {
+      "id": "e01-c6",
+      "format": "choice5",
+      "level": "M",
+      "topic": "순환소수의 대소",
+      "source_id": null,
+      "stem_print": "다음 중 가장 큰 수는?",
+      "choices": [
+        "0.4",
+        "0.404040…",
+        "0.44",
+        "0.444444…",
+        "0.045454…"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "소수점 아래 첫 자리만 보고 모두 같다고 여겨 앞의 것을 고름",
+        "순환소수는 끝없이 이어지니 언제나 크다고 잘못 생각함",
+        "0.44 와 0.444444… 를 같은 수로 봄",
+        "0 이 하나 더 붙은 것을 알아채지 못하고 자릿수만 셈"
+      ],
+      "answer_print": "0.444444…",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "소수점 아래 자리를 앞에서부터 하나씩 견줘 봐요.",
+      "solution": "소수점 아래를 앞에서부터 견줘요. 0.4 = 0.4000…, 0.44 = 0.4400… 처럼 펼쳐 놓으면 <b>첫째 자리</b>에서 0.045454… 만 0이라 가장 작아요. 남은 넷 중 <b>둘째 자리</b>는 0, 0, 4, 4 라서 0.44 와 0.444444… 가 앞서요. 이 둘의 <b>셋째 자리</b>는 0과 4이므로 <b>0.444444…</b> 가 가장 커요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "deci.compare-place"
+      ]
+    },
+    {
+      "id": "e01-c7",
+      "format": "choice5",
+      "level": "H",
+      "topic": "유한소수가 되는 자연수의 개수",
+      "source_id": null,
+      "stem_print": "<span class=\"frac\"><b>a</b><i>60</i></span> 이 유한소수가 되도록 하는 한 자리 자연수 a 는 모두 몇 개인지 구하시오.",
+      "choices": [
+        "1개",
+        "2개",
+        "3개",
+        "4개",
+        "5개"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "3의 배수 중 3 하나만 세고 6과 9를 빠뜨림",
+        "3과 6만 세고 9를 빠뜨림",
+        "0을 자연수로 잘못 세어 하나 더 붙임",
+        "1부터 9까지 홀수를 모두 센 결과와 헷갈림"
+      ],
+      "answer_print": "3개",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "60 = 2<sup>2</sup> × 3 × 5 예요. 걸리는 소인수 3이 약분되려면 a 가 어떤 수여야 할까요.",
+      "solution": "60 = 2<sup>2</sup> × 3 × 5 이므로 걸리는 소인수는 3이에요. a 가 <b>3의 배수</b>여야 3이 약분돼요. 한 자리 자연수 중 3의 배수는 3, 6, 9 로 <b>3개</b>예요.",
+      "work_space": "md",
+      "misconceptions": [
+        "deci.finite-denominator",
+        "deci.count-multiples"
+      ]
+    },
+    {
+      "id": "e01-c8",
+      "format": "choice5",
+      "level": "H",
+      "topic": "순환소수의 계산",
+      "source_id": null,
+      "stem_print": "0.222222… + 0.777777… 의 값을 구하시오.",
+      "choices": [
+        "0.9",
+        "0.999999…",
+        "1",
+        "1.9",
+        "9"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "순환마디의 첫 숫자만 더해 소수 한 자리로 적음",
+        "각각을 분수로 바꾸지 않고 자리마다 더한 모양 그대로 답함",
+        "분수로 바꾼 뒤 분자만 더하고 분모를 9 대신 그대로 둠",
+        "분자 2와 7을 더한 9를 그대로 답함"
+      ],
+      "answer_print": "1",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "각각을 분수로 바꾼 다음에 더해요.",
+      "solution": "0.222222… = <span class=\"frac\"><b>2</b><i>9</i></span>, 0.777777… = <span class=\"frac\"><b>7</b><i>9</i></span> 이에요. 더하면 <span class=\"frac\"><b>9</b><i>9</i></span> = <b>1</b> 이에요. 순환소수끼리 더할 때는 <b>분수로 바꾼 뒤</b> 계산하는 것이 안전해요.",
+      "work_space": "md",
+      "misconceptions": [
+        "deci.add-as-decimal"
+      ]
+    },
+    {
+      "id": "e01-s1",
+      "format": "short",
+      "level": "L",
+      "topic": "순환마디 쓰기",
+      "source_id": null,
+      "stem_print": "순환소수 1.2353535… 의 순환마디를 쓰시오.",
+      "choices": null,
+      "answer_print": "35",
+      "answer_accept": [
+        "삼십오"
+      ],
+      "answer_unit": null,
+      "answer_format": "숫자로 써요",
+      "figure": null,
+      "hint": "되풀이되기 시작하는 자리부터 봐요. 앞의 1.2 는 한 번만 나와요.",
+      "solution": "1.2353535… 에서 1.2 다음부터 35 가 계속 되풀이돼요. 그러니 순환마디는 <b>35</b>예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "deci.cycle-start"
+      ]
+    },
+    {
+      "id": "e01-s2",
+      "format": "short",
+      "level": "M",
+      "topic": "순환소수를 기약분수로",
+      "source_id": null,
+      "stem_print": "순환소수 0.888888… 를 기약분수로 나타내시오.",
+      "choices": null,
+      "answer_print": "<span class=\"frac\"><b>8</b><i>9</i></span>",
+      "answer_accept": [
+        "8/9"
+      ],
+      "answer_unit": null,
+      "answer_format": "기약분수로 써요",
+      "figure": null,
+      "hint": "순환마디가 한 자리이니 10배 한 것에서 원래 수를 빼요.",
+      "solution": "x = 0.888888… 이라 하면 10x = 8.888888… 이에요. 빼면 9x = 8 이므로 x = <span class=\"frac\"><b>8</b><i>9</i></span> 예요. 8과 9는 더 약분되지 않아요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "deci.to-fraction-denominator"
+      ]
+    },
+    {
+      "id": "e01-e1",
+      "format": "essay",
+      "level": "L",
+      "topic": "유한소수 판정과 이유",
+      "source_id": null,
+      "stem_print": "<span class=\"frac\"><b>9</b><i>24</i></span> 이 유한소수로 나타내어지는지 판정하고, 그렇게 판단한 이유를 쓰시오. 풀이 과정을 함께 쓰시오.",
+      "choices": null,
+      "rubric": [
+        {
+          "step": "기약분수로 고쳐 <span class=\"frac\"><b>3</b><i>8</i></span> 을 얻었어요",
+          "points": 3
+        },
+        {
+          "step": "분모 8 = 2<sup>3</sup> 으로 소인수분해했어요",
+          "points": 3
+        },
+        {
+          "step": "2와 5 말고 다른 소인수가 없으므로 유한소수라고 결론지었어요",
+          "points": 2
+        }
+      ],
+      "answer_print": "유한소수이다",
+      "answer_accept": [
+        "유한소수",
+        "유한소수로 나타낼 수 있다",
+        "유한소수예요"
+      ],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "먼저 약분해서 기약분수로 만든 다음에 분모를 소인수분해해요.",
+      "solution": "<span class=\"frac\"><b>9</b><i>24</i></span> 의 분자와 분모를 3으로 나누면 <span class=\"frac\"><b>3</b><i>8</i></span> 이에요. 분모 8을 소인수분해하면 2<sup>3</sup> 이라서 2 말고 다른 소인수가 없어요. 그러므로 <b>유한소수</b>로 나타낼 수 있어요. 실제로 계산하면 0.375 예요. 여기서 중요한 것은 <b>반드시 기약분수로 먼저 고친 뒤</b> 분모를 봐야 한다는 점이에요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "deci.reduce-first",
+        "deci.finite-denominator"
+      ]
+    },
+    {
+      "id": "e01-e2",
+      "format": "essay",
+      "level": "H",
+      "topic": "순환소수를 분수로 바꿔 계산",
+      "source_id": null,
+      "stem_print": "0.363636… 을 기약분수로 나타내고, 그 분수에 11을 곱한 값을 구하시오. 풀이 과정을 함께 쓰시오.",
+      "choices": null,
+      "rubric": [
+        {
+          "step": "100x − x = 36 을 세워 x = <span class=\"frac\"><b>36</b><i>99</i></span> 을 얻었어요",
+          "points": 3
+        },
+        {
+          "step": "약분해 <span class=\"frac\"><b>4</b><i>11</i></span> 로 고쳤어요",
+          "points": 3
+        },
+        {
+          "step": "11을 곱해 4를 구했어요",
+          "points": 2
+        }
+      ],
+      "answer_print": "4",
+      "answer_accept": [
+        "4",
+        "사"
+      ],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "순환마디가 두 자리이니 100배 한 것에서 원래 수를 빼요.",
+      "solution": "x = 0.363636… 이라 하면 100x = 36.363636… 이에요. 두 식을 빼면 99x = 36 이므로 x = <span class=\"frac\"><b>36</b><i>99</i></span> 이고, 분자와 분모를 9로 나누면 <span class=\"frac\"><b>4</b><i>11</i></span> 이에요. 여기에 11을 곱하면 <span class=\"frac\"><b>4</b><i>11</i></span> × 11 = <b>4</b> 예요. 분모가 11이라서 11을 곱하면 깔끔하게 정수가 되는 거예요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "deci.to-fraction-denominator",
+        "deci.reduce-first"
+      ]
+    }
+  ]
+}

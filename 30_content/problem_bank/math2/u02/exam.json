@@ -1,0 +1,404 @@
+{
+  "meta": {
+    "grade": "math2",
+    "unit": 2,
+    "unit_name": "식의 계산",
+    "purpose": "exam-pool",
+    "authored": "2026-09-06",
+    "note": "중2 전범위 실전 모의고사용 문항 풀. EXAM_SPEC2.md 준수."
+  },
+  "problems": [
+    {
+      "id": "e02-c1",
+      "format": "choice5",
+      "level": "L",
+      "topic": "지수법칙 — 곱셈",
+      "source_id": null,
+      "stem_print": "a<sup>3</sup> × a<sup>4</sup> 를 간단히 하면?",
+      "choices": [
+        "a<sup>7</sup>",
+        "a<sup>12</sup>",
+        "2a<sup>7</sup>",
+        "2a<sup>12</sup>",
+        "a<sup>34</sup>"
+      ],
+      "answer_choice": 1,
+      "distractor_why": [
+        "지수끼리 더하지 않고 곱해서 12로 만듦",
+        "밑끼리도 더해야 한다고 생각해 계수 2를 붙임",
+        "지수를 곱하고 계수까지 더하는 두 실수를 함께 함",
+        "지수를 나란히 이어 붙여 34로 씀"
+      ],
+      "answer_print": "a<sup>7</sup>",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "같은 밑끼리 곱하면 지수를 더해요.",
+      "solution": "a<sup>3</sup> 은 a를 3번, a<sup>4</sup> 는 a를 4번 곱한 것이니 모두 7번 곱한 셈이에요. 그래서 a<sup>3</sup> × a<sup>4</sup> = a<sup>3+4</sup> = <b>a<sup>7</sup></b> 이에요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "poly.exp-multiply-vs-add"
+      ]
+    },
+    {
+      "id": "e02-c2",
+      "format": "choice5",
+      "level": "L",
+      "topic": "지수법칙 — 거듭제곱의 거듭제곱",
+      "source_id": null,
+      "stem_print": "(2x<sup>2</sup>y)<sup>3</sup> 을 간단히 하면?",
+      "choices": [
+        "2x<sup>5</sup>y<sup>3</sup>",
+        "6x<sup>6</sup>y<sup>3</sup>",
+        "8x<sup>5</sup>y<sup>3</sup>",
+        "8x<sup>6</sup>y<sup>3</sup>",
+        "8x<sup>6</sup>y"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "계수 2에는 지수를 붙이지 않고 x의 지수만 잘못 더함",
+        "계수에 지수를 곱셈으로 처리해 2 × 3 = 6 으로 씀",
+        "계수는 맞게 8로 했지만 x의 지수를 2 + 3 으로 더함",
+        "y에도 지수 3을 붙이는 것을 빠뜨림"
+      ],
+      "answer_print": "8x<sup>6</sup>y<sup>3</sup>",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "괄호 안의 <b>모든 것</b>에 지수 3이 붙어요. 계수도 세제곱해요.",
+      "solution": "(2x<sup>2</sup>y)<sup>3</sup> = 2<sup>3</sup> × (x<sup>2</sup>)<sup>3</sup> × y<sup>3</sup> = 8 × x<sup>6</sup> × y<sup>3</sup> = <b>8x<sup>6</sup>y<sup>3</sup></b> 이에요. 거듭제곱의 거듭제곱은 <b>지수끼리 곱해요</b>.",
+      "work_space": "sm",
+      "misconceptions": [
+        "poly.power-of-product",
+        "poly.coef-power"
+      ]
+    },
+    {
+      "id": "e02-c3",
+      "format": "choice5",
+      "level": "L",
+      "topic": "다항식의 덧셈",
+      "source_id": null,
+      "stem_print": "(3x + 2y) + (x − 5y) 를 간단히 하면?",
+      "choices": [
+        "4x − 3y",
+        "4x + 3y",
+        "4x − 7y",
+        "2x − 3y",
+        "3x − 3y"
+      ],
+      "answer_choice": 1,
+      "distractor_why": [
+        "y의 부호를 잘못 보아 −5y 를 +5y 로 계산함",
+        "y끼리 더할 때 2 − 5 대신 2 + 5 의 절댓값을 쓰고 부호만 음수로 함",
+        "x끼리 더할 때 3 + 1 대신 3 − 1 로 계산함",
+        "x 항 하나를 빠뜨리고 3x 를 그대로 둠"
+      ],
+      "answer_print": "4x − 3y",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "x끼리, y끼리 모아요. 부호를 그대로 데려와요.",
+      "solution": "x 항은 3x + x = 4x 이고, y 항은 2y + (−5y) = −3y 예요. 그래서 답은 <b>4x − 3y</b> 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "poly.like-terms",
+        "poly.sign-carry"
+      ]
+    },
+    {
+      "id": "e02-c4",
+      "format": "choice5",
+      "level": "M",
+      "topic": "단항식의 나눗셈",
+      "source_id": null,
+      "stem_print": "12x<sup>5</sup>y<sup>3</sup> ÷ 3x<sup>2</sup>y 를 간단히 하면?",
+      "choices": [
+        "4x<sup>3</sup>y<sup>2</sup>",
+        "4x<sup>3</sup>y<sup>3</sup>",
+        "4x<sup>7</sup>y<sup>4</sup>",
+        "9x<sup>3</sup>y<sup>2</sup>",
+        "36x<sup>3</sup>y<sup>2</sup>"
+      ],
+      "answer_choice": 1,
+      "distractor_why": [
+        "y의 지수를 3 − 1 대신 그대로 3으로 둠",
+        "나눗셈인데 지수를 더해 7과 4로 만듦",
+        "계수를 12 ÷ 3 대신 12 − 3 으로 계산함",
+        "계수를 12 ÷ 3 대신 12 × 3 으로 계산함"
+      ],
+      "answer_print": "4x<sup>3</sup>y<sup>2</sup>",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "계수는 나누고, 같은 문자끼리는 지수를 빼요.",
+      "solution": "계수는 12 ÷ 3 = 4, x는 지수를 빼서 x<sup>5−2</sup> = x<sup>3</sup>, y는 y<sup>3−1</sup> = y<sup>2</sup> 이에요. 그래서 <b>4x<sup>3</sup>y<sup>2</sup></b> 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "poly.exp-divide",
+        "poly.coef-divide"
+      ]
+    },
+    {
+      "id": "e02-c5",
+      "format": "choice5",
+      "level": "M",
+      "topic": "다항식의 뺄셈 — 괄호 앞 음수",
+      "source_id": null,
+      "stem_print": "(5a − 3b) − (2a − 7b) 를 간단히 하면?",
+      "choices": [
+        "3a − 10b",
+        "3a − 4b",
+        "3a + 4b",
+        "7a − 10b",
+        "3a + 10b"
+      ],
+      "answer_choice": 3,
+      "distractor_why": [
+        "괄호 앞 음수를 −7b 에만 적용하지 않고 부호를 그대로 두어 −3b − 7b 로 계산함",
+        "−7b 의 부호를 바꾸는 것을 잊고 −3b − (−7b) 를 −4b 로 잘못 계산함",
+        "a 항에서 5a − 2a 대신 5a + 2a 로 계산함",
+        "b 항의 부호를 두 번 바꿔 +10b 로 만든 뒤 a 항도 함께 틀림"
+      ],
+      "answer_print": "3a + 4b",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "괄호 앞의 −는 괄호 안 <b>모든 항</b>의 부호를 바꿔요.",
+      "solution": "괄호를 풀면 5a − 3b − 2a + 7b 예요. −(−7b) 가 +7b 가 되는 것이 핵심이에요. a 항은 5a − 2a = 3a, b 항은 −3b + 7b = 4b 이므로 답은 <b>3a + 4b</b> 예요.",
+      "work_space": "md",
+      "misconceptions": [
+        "poly.minus-paren",
+        "poly.sign-carry"
+      ]
+    },
+    {
+      "id": "e02-c6",
+      "format": "choice5",
+      "level": "M",
+      "topic": "단항식과 다항식의 곱셈",
+      "source_id": null,
+      "stem_print": "3x(2x − 5) 를 전개하면?",
+      "choices": [
+        "6x − 15",
+        "6x<sup>2</sup> − 5",
+        "6x<sup>2</sup> − 15",
+        "6x<sup>2</sup> − 15x",
+        "5x<sup>2</sup> − 15x"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "x를 곱하는 것을 잊고 계수끼리만 곱함",
+        "뒤의 −5 에는 3x 를 곱하지 않고 그대로 둠",
+        "−5 에 3만 곱하고 x 를 빠뜨림",
+        "앞의 계수를 3 × 2 = 6 이 아니라 3 + 2 = 5 로 계산함"
+      ],
+      "answer_print": "6x<sup>2</sup> − 15x",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "괄호 안의 <b>두 항 모두에</b> 3x 를 곱해요.",
+      "solution": "3x × 2x = 6x<sup>2</sup> 이고 3x × (−5) = −15x 예요. 그래서 <b>6x<sup>2</sup> − 15x</b> 예요. 뒤의 항에도 문자 x 가 곱해진다는 것을 놓치기 쉬워요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "poly.distribute-all"
+      ]
+    },
+    {
+      "id": "e02-c7",
+      "format": "choice5",
+      "level": "H",
+      "topic": "복합 계산 후 계수 구하기",
+      "source_id": null,
+      "stem_print": "2x(3x − 1) − 3(x<sup>2</sup> − 2x) 를 간단히 했을 때, x 의 계수를 구하시오.",
+      "choices": [
+        "−8",
+        "−2",
+        "2",
+        "4",
+        "8"
+      ],
+      "answer_choice": 4,
+      "distractor_why": [
+        "뒤 괄호의 −3 을 +3 으로 잘못 보아 −2x − 6x 로 계산함",
+        "−2x 에 −3 을 곱할 때 부호를 하나만 바꿔 −2x − ... 로 둠",
+        "앞의 −2x 만 세고 뒤의 +6x 를 빠뜨림",
+        "x<sup>2</sup> 의 계수 3을 x 의 계수로 착각함"
+      ],
+      "answer_print": "4",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "두 괄호를 각각 전개한 뒤 x 항끼리만 모아요.",
+      "solution": "2x(3x − 1) = 6x<sup>2</sup> − 2x 이고, −3(x<sup>2</sup> − 2x) = −3x<sup>2</sup> + 6x 예요. 더하면 3x<sup>2</sup> + 4x 이므로 x 의 계수는 <b>4</b> 예요. −3 × (−2x) = +6x 가 되는 부호가 열쇠예요.",
+      "work_space": "md",
+      "misconceptions": [
+        "poly.distribute-sign",
+        "poly.like-terms"
+      ]
+    },
+    {
+      "id": "e02-c8",
+      "format": "choice5",
+      "level": "H",
+      "topic": "어떤 식 구하기",
+      "source_id": null,
+      "stem_print": "어떤 다항식에 2a − 3b 를 더했더니 5a + b 가 되었습니다. 어떤 다항식을 구하시오.",
+      "choices": [
+        "3a − 4b",
+        "3a + 4b",
+        "7a − 2b",
+        "7a + 4b",
+        "−3a + 4b"
+      ],
+      "answer_choice": 2,
+      "distractor_why": [
+        "b 항에서 1 − (−3) 을 1 − 3 으로 계산해 −4b 로 만듦",
+        "빼야 할 것을 더해 5a + 2a 와 b + (−3b) 로 계산함",
+        "a 항은 빼고 b 항은 더하는 식으로 섞어서 계산함",
+        "전체의 부호를 반대로 써서 −3a + 4b 로 만듦"
+      ],
+      "answer_print": "3a + 4b",
+      "answer_accept": null,
+      "answer_unit": null,
+      "answer_format": "5지선다 — 번호로 답해요",
+      "figure": null,
+      "hint": "더해서 결과가 되었으니, 결과에서 더한 식을 <b>빼면</b> 돼요.",
+      "solution": "어떤 식을 A 라 하면 A + (2a − 3b) = 5a + b 예요. 그러므로 A = (5a + b) − (2a − 3b) = 5a + b − 2a + 3b = <b>3a + 4b</b> 예요. 검산하면 (3a + 4b) + (2a − 3b) = 5a + b 로 맞아요.",
+      "work_space": "md",
+      "misconceptions": [
+        "poly.inverse-op",
+        "poly.minus-paren"
+      ]
+    },
+    {
+      "id": "e02-s1",
+      "format": "short",
+      "level": "L",
+      "topic": "지수법칙 — 나눗셈",
+      "source_id": null,
+      "stem_print": "x<sup>8</sup> ÷ x<sup>3</sup> 을 간단히 하시오.",
+      "choices": null,
+      "answer_print": "x<sup>5</sup>",
+      "answer_accept": [
+        "x^5",
+        "x5"
+      ],
+      "answer_unit": null,
+      "answer_format": "식으로 써요",
+      "figure": null,
+      "hint": "같은 밑끼리 나누면 지수를 빼요.",
+      "solution": "x<sup>8</sup> 은 x 를 8번, x<sup>3</sup> 은 x 를 3번 곱한 것이에요. 나눌 때는 겹치는 3개가 약분되어 5개가 남으니 x<sup>8</sup> ÷ x<sup>3</sup> = x<sup>8−3</sup> = <b>x<sup>5</sup></b> 예요. 같은 밑끼리 나누면 <b>지수를 빼요</b>.",
+      "work_space": "sm",
+      "misconceptions": [
+        "poly.exp-divide"
+      ]
+    },
+    {
+      "id": "e02-s2",
+      "format": "short",
+      "level": "M",
+      "topic": "다항식 계산 후 계수",
+      "source_id": null,
+      "stem_print": "(4x<sup>2</sup> − x) − (x<sup>2</sup> + 3x) 를 간단히 했을 때, x 의 계수를 구하시오.",
+      "choices": null,
+      "answer_print": "−4",
+      "answer_accept": [
+        "-4",
+        "−4"
+      ],
+      "answer_unit": null,
+      "answer_format": "숫자로 써요",
+      "figure": null,
+      "hint": "괄호 앞의 −를 두 항 모두에 적용한 뒤 x 항끼리 모아요.",
+      "solution": "괄호를 풀면 4x<sup>2</sup> − x − x<sup>2</sup> − 3x 예요. x 항은 −x − 3x = −4x 이므로 계수는 <b>−4</b> 예요.",
+      "work_space": "sm",
+      "misconceptions": [
+        "poly.minus-paren"
+      ]
+    },
+    {
+      "id": "e02-e1",
+      "format": "essay",
+      "level": "L",
+      "topic": "단항식과 다항식의 곱셈 정리",
+      "source_id": null,
+      "stem_print": "2a(3a + 4) + a(a − 5) 를 간단히 하시오. 풀이 과정을 함께 쓰시오.",
+      "choices": null,
+      "rubric": [
+        {
+          "step": "2a(3a + 4) = 6a<sup>2</sup> + 8a 로 전개했어요",
+          "points": 3
+        },
+        {
+          "step": "a(a − 5) = a<sup>2</sup> − 5a 로 전개했어요",
+          "points": 3
+        },
+        {
+          "step": "동류항끼리 모아 7a<sup>2</sup> + 3a 를 얻었어요",
+          "points": 2
+        }
+      ],
+      "answer_print": "7a<sup>2</sup> + 3a",
+      "answer_accept": [
+        "7a^2+3a",
+        "7a²+3a"
+      ],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "괄호를 각각 푼 다음에 같은 종류끼리 모아요.",
+      "solution": "먼저 2a(3a + 4) = 6a<sup>2</sup> + 8a 예요. 다음으로 a(a − 5) = a<sup>2</sup> − 5a 예요. 이제 더하면 a<sup>2</sup> 항은 6a<sup>2</sup> + a<sup>2</sup> = 7a<sup>2</sup>, a 항은 8a − 5a = 3a 이므로 답은 <b>7a<sup>2</sup> + 3a</b> 예요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "poly.distribute-all",
+        "poly.like-terms"
+      ]
+    },
+    {
+      "id": "e02-e2",
+      "format": "essay",
+      "level": "H",
+      "topic": "어떤 식 구하고 검산하기",
+      "source_id": null,
+      "stem_print": "어떤 다항식에서 3x<sup>2</sup> − 2x 를 뺐더니 x<sup>2</sup> + 5x 가 되었습니다. 어떤 다항식을 구하고, 구한 식이 맞는지 검산하시오. 풀이 과정을 함께 쓰시오.",
+      "choices": null,
+      "rubric": [
+        {
+          "step": "A − (3x<sup>2</sup> − 2x) = x<sup>2</sup> + 5x 로 식을 세웠어요",
+          "points": 3
+        },
+        {
+          "step": "A = (x<sup>2</sup> + 5x) + (3x<sup>2</sup> − 2x) 로 고쳐 4x<sup>2</sup> + 3x 를 구했어요",
+          "points": 3
+        },
+        {
+          "step": "검산해 (4x<sup>2</sup> + 3x) − (3x<sup>2</sup> − 2x) = x<sup>2</sup> + 5x 임을 보였어요",
+          "points": 2
+        }
+      ],
+      "answer_print": "4x<sup>2</sup> + 3x",
+      "answer_accept": [
+        "4x^2+3x",
+        "4x²+3x"
+      ],
+      "answer_unit": null,
+      "answer_format": "풀이 과정 + 답",
+      "figure": null,
+      "hint": "빼서 결과가 되었으니, 결과에 뺀 식을 <b>다시 더하면</b> 돼요.",
+      "solution": "어떤 식을 A 라 하면 A − (3x<sup>2</sup> − 2x) = x<sup>2</sup> + 5x 예요. 양변에 (3x<sup>2</sup> − 2x) 를 더하면 A = (x<sup>2</sup> + 5x) + (3x<sup>2</sup> − 2x) = 4x<sup>2</sup> + 3x 예요. 검산해 볼까요. (4x<sup>2</sup> + 3x) − (3x<sup>2</sup> − 2x) = 4x<sup>2</sup> + 3x − 3x<sup>2</sup> + 2x = x<sup>2</sup> + 5x 로 처음 조건과 같아요. 그러므로 답은 <b>4x<sup>2</sup> + 3x</b> 예요.",
+      "work_space": "lg",
+      "misconceptions": [
+        "poly.inverse-op",
+        "poly.minus-paren"
+      ]
+    }
+  ]
+}
