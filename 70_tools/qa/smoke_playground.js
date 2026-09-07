@@ -15,7 +15,11 @@ let bad = 0, n = 0;
 const fails = [];
 const ok = (c, m, x) => { n++; if (!c) { bad++; fails.push(m + (x === undefined ? '' : ' — ' + JSON.stringify(x))); } };
 
-const dom = (dir, file) => {
+// 놀이터 문제는 Math.random 으로 뽑힌다. 고정하지 않으면 "정답일 때만 터지는" 버그가
+// 실행마다 걸렸다 안 걸렸다 한다. 시드를 바꿔 가며 여러 판을 돌려 갈래를 두루 밟는다.
+const seededRandom = seed => { let x = seed || 1; return () => (x = (x * 1103515245 + 12345) & 0x7fffffff) / 0x7fffffff; };
+
+const dom = (dir, file, seed) => {
   let html = fs.readFileSync(ROOT + dir + '/' + file, 'utf8');
   html = html.replace(/<script src="concept\.js[^"]*"><\/script>/,
     '<script>' + fs.readFileSync(ROOT + dir + '/concept.js', 'utf8') + '</script>');
@@ -27,6 +31,7 @@ const dom = (dir, file) => {
       w.IntersectionObserver = class { constructor(cb) { this.cb = cb; } observe(el) { this.cb([{ isIntersecting: true, target: el }]); } unobserve() {} disconnect() {} };
       w.matchMedia = w.matchMedia || function () { return { matches: false, addEventListener() {}, removeEventListener() {}, addListener() {}, removeListener() {} }; };
       w.requestAnimationFrame = cb => setTimeout(() => cb(Date.now()), 0);
+      if (seed !== undefined) w.Math.random = seededRandom(seed);
       w.AudioContext = w.webkitAudioContext = function () {
         return { createOscillator: () => ({ connect() {}, start() {}, stop() {}, frequency: { value: 0, setValueAtTime() {} }, type: '' }),
                  createGain: () => ({ connect() {}, gain: { value: 0, setValueAtTime() {}, exponentialRampToValueAtTime() {}, linearRampToValueAtTime() {} } }),
@@ -99,6 +104,18 @@ setTimeout(() => {
 
       // 클릭 뒤에도 새 오류가 생기지 않았는가
       ok(errs.length === 0, t + ' 조작 뒤에도 오류 없음', errs.slice(0, 1));
+
+      // 시드를 바꿔 가며 여러 판 — 무작위로 뽑히는 문제의 갈래를 두루 밟는다.
+      // 정답을 맞혔을 때만 터지는 버그는 이렇게 해야 재현된다.
+      for (let seed = 1; seed <= 8; seed++) {
+        const s2 = dom(grade + '/' + app, file, seed);
+        const btns2 = [...s2.d.querySelectorAll('button')];
+        for (let round = 0; round < 2; round++) for (const b of btns2) {
+          (b.closest('.pg-game') || s2.d.body).querySelectorAll('input').forEach(i => { if (!i.value) i.value = '1'; });
+          try { b.dispatchEvent(new s2.w.Event('click', { bubbles: true })); } catch (e) { s2.errs.push('click: ' + e); }
+        }
+        ok(s2.errs.length === 0, t + ' 시드 ' + seed + ' 판에서 오류 없음', s2.errs.slice(0, 1));
+      }
 
       // 어투
       const plain = raw.replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<[^>]+>/g, ' ')

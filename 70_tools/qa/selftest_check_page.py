@@ -16,6 +16,10 @@ CASES = [
     ('출력 id 를 없앰', base.replace('id="o1"', 'id="o1-오타"', 1), True, "출력 id 'o1' 없음"),
     ('버튼 id 를 없앰', base.replace('<button id="b1">', '<button>', 1), True, '채점하는 버튼을 찾지 못함'),
     ('없는 id 를 참조', base.replace("MJ.check('a1'", "MJ.check('a1-없음'", 1), True, "참조 id 없음"),
+    ('classList 빈 토큰', base.replace(
+        '</body>',
+        "<script>document.body.classList.add(1?'x':'');</script>\n</body>", 1),
+     True, '위험한 패턴'),
 ]
 
 bad = 0

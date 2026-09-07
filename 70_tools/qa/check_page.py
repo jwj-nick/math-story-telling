@@ -105,6 +105,27 @@ def _has_button_for(body, nm, ids):
     return False
 
 
+# 실행해 봐야만 드러나는데 조건이 맞아야 터지는 패턴들. 눈으로 찾는 편이 확실하다.
+# 2026-09-07 에 놀이터에서 classList.add('') 가 **정답을 맞힌 순간에만** 예외를 던져
+# 게임이 멈추는 버그가 있었다. 런타임 스모크는 그 갈래를 밟아야 걸리지만, 여기서는 늘 걸린다.
+RISKY = [
+    (re.compile(r"classList\.(?:add|remove|toggle)\([^)]*?:\s*(''|\"\")\s*\)"),
+     "classList 에 빈 문자열이 넘어갈 수 있음 — DOMException 이 나고 그 아래가 통째로 멈춘다. "
+     "빈 값이면 건너뛰도록 감쌀 것"),
+    (re.compile(r"classList\.(?:add|remove|toggle)\(\s*(''|\"\")\s*\)"),
+     "classList 에 빈 문자열을 그대로 넘김 — DOMException"),
+]
+
+
+def check_risky(scripts):
+    errs = []
+    for _, body in scripts:
+        for pat, why in RISKY:
+            for m in pat.finditer(body):
+                errs.append('위험한 패턴: %s — %s' % (why, m.group(0)[:90]))
+    return errs
+
+
 def check_ids(scripts, ids):
     errs=[]; seen=set()
     for _,body in scripts:
@@ -137,6 +158,7 @@ def check_file(path):
     sc=inline_scripts(html)
     errs+=node_check(sc)
     errs+=check_ids(sc, p.ids)
+    errs += check_risky(sc)
     vers=set(re.findall(r'concept\.(?:css|js)\?v=([0-9a-z]+)', html))
     return errs, vers
 
