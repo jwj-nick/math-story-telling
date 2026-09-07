@@ -82,6 +82,29 @@ ID_PATTERNS=[
     (r"\bMJ\d?\.makeProgress\(\s*'([^']+)'", 'plain'),
 ]
 
+def _out_id_of(body, nm):
+    """MJ*.check('a1', …, 'o1') / checkNum('a1', …, 'o1') 의 출력 id 를 읽는다."""
+    m = re.search(r"check(?:Num)?\(\s*['\"]" + re.escape(nm) + r"['\"]\s*,.*?,\s*['\"]([\w-]+)['\"]", body)
+    return m.group(1) if m else None
+
+
+def _has_button_for(body, nm, ids):
+    """그 입력을 채점하는 버튼이 하나라도 걸려 있는가.
+       a1b 처럼 접미사 규칙을 따르거나, check('a1'…) 호출 지점에서 거슬러 올라가
+       가장 가까운 클릭 핸들러의 대상이 실재하는 id 이면 통과."""
+    if nm + 'b' in ids:
+        return True
+    call = re.compile(r"check(?:Num)?\(\s*['\"]" + re.escape(nm) + r"['\"]")
+    handler = re.compile(r"getElementById\(\s*['\"]([\w-]+)['\"]\s*\)\s*"
+                         r"(?:\.onclick\s*=|\.addEventListener\(\s*['\"]click['\"])")
+    for m in call.finditer(body):
+        before = body[:m.start()]
+        hs = list(handler.finditer(before))
+        if hs and hs[-1].group(1) in ids:
+            return True
+    return False
+
+
 def check_ids(scripts, ids):
     errs=[]; seen=set()
     for _,body in scripts:
@@ -93,8 +116,14 @@ def check_ids(scripts, ids):
                     seen.add(nm)
                     if nm not in ids: errs.append("참조 id 없음: '%s'" % nm)
                     elif kind=='check':
-                        for suf in ('b','o'):
-                            if nm+suf not in ids: errs.append("확인 문제 '%s'의 짝 id '%s%s' 없음" % (nm,nm,suf))
+                        # 짝 이름 규칙은 하나가 아니다. 개념/심화 페이지는 a1 → a1b·a1o 를,
+                        # 심화 문제(dNp) 페이지는 a1 → b1·o1 을 쓴다. 규칙을 강요하는 대신
+                        # 출력 id 는 호출 인자에서 읽고, 버튼은 실제로 하나 걸려 있는지만 본다.
+                        out = _out_id_of(body, nm)
+                        if out and out not in ids:
+                            errs.append("확인 문제 '%s'의 출력 id '%s' 없음" % (nm, out))
+                        if not _has_button_for(body, nm, ids):
+                            errs.append("확인 문제 '%s'를 채점하는 버튼을 찾지 못함" % nm)
     # 동적 문자열 결합(예: 'a'+i)은 검사 대상 아님 — 보고만
     return errs
 
