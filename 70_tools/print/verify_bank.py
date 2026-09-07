@@ -33,6 +33,13 @@ VOICE_BAD = re.compile(r'(한다|된다|이다|뺀다|더한다|곱한다|나눈
 errs, warns, infos = [], [], []
 
 
+def defrac(s):
+    """<span class="frac"><b>1</b><i>2</i></span> → 1/2. 태그만 지우면 "12" 가 되어
+       전혀 다른 수와 부딪힌다."""
+    return re.sub(r'<span class="frac">\s*<b>(.*?)</b>\s*<i>(.*?)</i>\s*</span>',
+                  r'\1/\2', s or '')
+
+
 def norm(s):
     s = re.sub(r'<[^>]+>', '', s or '')
     return re.sub(r'\s+', '', s)
@@ -103,7 +110,7 @@ def main():
             pid = p['id']
 
             # V2 정답 원자
-            if t.get('origin') == 'authored':
+            if t.get('origin') == 'authored' or p.get('origin') == 'authored':
                 authored += 1
             elif src_atoms is not None:
                 exp = src_atoms.get((t['no'], idx))
@@ -163,9 +170,20 @@ def main():
                     if not it:
                         errs.append('V5 %s 오개념 태그 "%s" 가 카탈로그에 없음' % (pid, m))
                         continue
-                    leak = norm(p['answer_print'])
+                    # 분수 마크업을 먼저 1/2 꼴로 내린다. 태그만 지우면 1/2 가 "12" 로 붙어
+                    # 카드 속 "1 부터 12 까지" 같은 문구에 가짜로 걸린다.
+                    leak = norm(defrac(p['answer_print']))
                     for field in ('counter', 'ask', 'empathy'):
-                        if len(leak) >= 2 and leak in norm(it[field]):
+                        if len(leak) < 2:
+                            continue
+                        if NUMERIC.match(leak):
+                            # 숫자 정답은 공백을 지우면 "3 × 3" 이 "33" 으로 붙어 가짜 경보가 난다.
+                            # 원문에서 앞뒤가 숫자가 아닌 자리에 있을 때만 노출로 본다.
+                            hit = re.search(r'(?<![0-9.])' + re.escape(leak) + r'(?![0-9.])',
+                                            re.sub(r'<[^>]+>', '', defrac(it[field])))
+                        else:
+                            hit = leak in norm(defrac(it[field]))
+                        if hit:
                             errs.append('V5 %s 오개념 %d번 %s 에 정답 "%s" 노출' % (pid, it['no'], field, p['answer_print']))
 
             # V6 어투

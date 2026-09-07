@@ -86,6 +86,31 @@
      "misconceptions": [
       "sim.ratio-direction"
      ]
+    },
+    {
+     "id": "m2-u09-t01-04",
+     "level": "H",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "닮은 두 삼각형의 둘레의 길이가 각각 12 cm, 30 cm 이다. 두 삼각형의 닮음비를 가장 간단한 자연수의 비로 나타내시오.",
+     "answer_atoms": [
+      "2",
+      "5"
+     ],
+     "answer_print": "2 : 5",
+     "answer_accept": [
+      "2:5"
+     ],
+     "answer_unit": null,
+     "answer_format": "가장 간단한 자연수의 비로",
+     "figure": null,
+     "hint": "둘레의 비는 닮음비와 같아요. 그다음 약분하세요.",
+     "solution": "닮은 도형에서 <b>둘레의 비는 닮음비와 같아요</b>. 12 : 30 을 6 으로 약분하면 <b>2 : 5</b> 예요. 12 : 30 을 그대로 두면 “가장 간단한 자연수의 비”라는 조건을 못 지켜요.",
+     "work_space": "md",
+     "misconceptions": [
+      "sim.ratio-not-reduced",
+      "sim.correspond-order"
+     ]
     }
    ]
   },
@@ -162,6 +187,31 @@
      "work_space": "md",
      "misconceptions": [
       "sim.ratio-not-reduced",
+      "sim.ratio-direction"
+     ]
+    },
+    {
+     "id": "m2-u09-t02-04",
+     "level": "H",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "△ABC ∽ △DEF 이고 AB = 4 cm, BC = 6 cm, DE = 6 cm 이다. EF 의 길이를 구하시오.",
+     "answer_atoms": [
+      "9"
+     ],
+     "answer_print": "9",
+     "answer_accept": [
+      "9cm",
+      "9 cm"
+     ],
+     "answer_unit": "cm",
+     "answer_format": "길이를 수로 (단위 cm)",
+     "figure": null,
+     "hint": "대응하는 변끼리 짝을 지어 비례식을 세우세요. AB 의 짝은 DE 예요.",
+     "solution": "대응변은 AB ↔ DE, BC ↔ EF 예요. AB : DE = BC : EF 이므로 4 : 6 = 6 : EF 예요. 4 × EF = 36 이므로 <b>EF = 9 cm</b> 예요. 짝을 잘못 지어 AB : BC = DE : EF 로 세워도 이 경우엔 같은 답이 나오지만, 늘 그렇지는 않아요.",
+     "work_space": "lg",
+     "misconceptions": [
+      "sim.correspond-order",
       "sim.ratio-direction"
      ]
     }
@@ -244,6 +294,31 @@
       "sim.aa-needs-three",
       "sim.sas-included-angle"
      ]
+    },
+    {
+     "id": "m2-u09-t03-04",
+     "level": "H",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "두 삼각형에서 두 쌍의 대응변의 길이의 비가 같고 그 끼인각의 크기도 같다. 두 삼각형이 서로 닮음인지 판정하고, 닮음이면 그 닮음 조건의 이름을 괄호 안에 함께 쓰시오.",
+     "answer_atoms": [
+      "닮음이에요"
+     ],
+     "answer_print": "닮음이에요 (SAS 닮음)",
+     "answer_accept": [
+      "닮음이에요",
+      "SAS"
+     ],
+     "answer_unit": null,
+     "answer_format": "판정과 닮음 조건의 이름을",
+     "figure": null,
+     "hint": "변 두 쌍과 그 사이에 낀 각 — 이 조합의 이름이 무엇일까요?",
+     "solution": "두 쌍의 대응변의 비가 같고 그 <b>끼인각</b>이 같으므로 <b>SAS 닮음</b> 이에요. 끼인각이 아닌 다른 각이 같다면 닮음을 보장할 수 없으니, “끼인각”인지 반드시 확인해야 해요. 또 합동의 SAS 는 변의 <b>길이가 같다</b>이고 닮음의 SAS 는 <b>비가 같다</b>예요.",
+     "work_space": "md",
+     "misconceptions": [
+      "sim.sas-included-angle",
+      "sim.congruence-vs-similar"
+     ]
     }
    ]
   },
@@ -322,6 +397,31 @@
      "misconceptions": [
       "sim.parallel-wrong-pair",
       "sim.correspond-order"
+     ]
+    },
+    {
+     "id": "m2-u09-t04-04",
+     "level": "H",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "△ABC 에서 점 D 는 변 AB 위에, 점 E 는 변 AC 위에 있고 DE ∥ BC 이다. AD = 4 cm, DB = 6 cm, AE = 6 cm 일 때 EC 의 길이를 구하시오.",
+     "answer_atoms": [
+      "9"
+     ],
+     "answer_print": "9",
+     "answer_accept": [
+      "9cm",
+      "9 cm"
+     ],
+     "answer_unit": "cm",
+     "answer_format": "길이를 수로 (단위 cm)",
+     "figure": null,
+     "hint": "AD : DB = AE : EC 예요. 전체(AB)가 아니라 <b>조각(DB)</b>임에 주의하세요.",
+     "solution": "DE ∥ BC 이므로 AD : DB = AE : EC 예요. 4 : 6 = 6 : EC 이므로 4 × EC = 36, 곧 <b>EC = 9 cm</b> 예요. DB 자리에 AB(= 10) 를 넣으면 답이 달라지니, 조각인지 전체인지 꼭 가려야 해요.",
+     "work_space": "lg",
+     "misconceptions": [
+      "sim.parallel-part-whole",
+      "sim.parallel-wrong-pair"
      ]
     }
    ]
@@ -402,6 +502,31 @@
       "sim.centroid-half",
       "sim.centroid-part-whole"
      ]
+    },
+    {
+     "id": "m2-u09-t05-04",
+     "level": "H",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "△ABC 에서 변 BC 의 중점을 M, 무게중심을 G 라 하자. GM = 4 cm 일 때 중선 AM 의 길이를 구하시오.",
+     "answer_atoms": [
+      "12"
+     ],
+     "answer_print": "12",
+     "answer_accept": [
+      "12cm",
+      "12 cm"
+     ],
+     "answer_unit": "cm",
+     "answer_format": "길이를 수로 (단위 cm)",
+     "figure": null,
+     "hint": "AG : GM = 2 : 1 이에요. 물어보는 것은 조각이 아니라 <b>중선 전체</b>예요.",
+     "solution": "AG : GM = 2 : 1 이므로 GM = 4 cm 이면 AG = 8 cm 예요. 중선 AM 은 두 조각을 합한 것이므로 8 + 4 = <b>12 cm</b> 예요. AG 인 8 cm 만 답하지 않도록 조심해요.",
+     "work_space": "md",
+     "misconceptions": [
+      "sim.centroid-part-whole",
+      "sim.centroid-direction"
+     ]
     }
    ]
   },
@@ -479,6 +604,31 @@
      "misconceptions": [
       "sim.area-ratio-linear",
       "sim.ratio-direction"
+     ]
+    },
+    {
+     "id": "m2-u09-t06-04",
+     "level": "M",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "닮음비가 1 : 2 인 두 입체도형이 있다. 작은 입체도형의 부피가 5 cm³ 일 때, 큰 입체도형의 부피를 구하시오.",
+     "answer_atoms": [
+      "40"
+     ],
+     "answer_print": "40",
+     "answer_accept": [
+      "40cm3",
+      "40 cm3"
+     ],
+     "answer_unit": "cm³",
+     "answer_format": "부피를 수로 (단위 cm³)",
+     "figure": null,
+     "hint": "넓이의 비는 닮음비의 제곱, 부피의 비는 닮음비의 <b>세제곱</b>이에요.",
+     "solution": "닮음비가 1 : 2 이므로 부피의 비는 1<sup>3</sup> : 2<sup>3</sup> = 1 : 8 이에요. 따라서 큰 도형의 부피는 5 × 8 = <b>40 cm³</b> 예요. 제곱으로 보아 20 cm³ 라고 하면 틀려요.",
+     "work_space": "md",
+     "misconceptions": [
+      "sim.volume-ratio-squared",
+      "sim.area-ratio-linear"
      ]
     }
    ]
@@ -559,6 +709,31 @@
      "misconceptions": [
       "mid.segment-double-half",
       "mid.needs-both-midpoints"
+     ]
+    },
+    {
+     "id": "m2-u09-t07-04",
+     "level": "M",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "삼각형 ABC 에서 두 변 AB, AC 의 중점을 각각 M, N 이라 하자. MN 과 BC 의 위치 관계를 낱말로 쓰시오.",
+     "answer_atoms": [
+      "평행"
+     ],
+     "answer_print": "평행",
+     "answer_accept": [
+      "평행",
+      "평행해요"
+     ],
+     "answer_unit": null,
+     "answer_format": "위치 관계를 낱말로",
+     "figure": null,
+     "hint": "중점연결정리는 길이만이 아니라 <b>방향</b>에 대해서도 말해 줘요.",
+     "solution": "중점연결정리에 따라 MN 은 BC 와 <b>평행</b>하고 길이는 절반이에요. 길이만 기억하고 평행하다는 절반을 잊기 쉬운데, 이 평행이 있어야 △AMN ∽ △ABC 라는 닮음으로 이어져요.",
+     "work_space": "sm",
+     "misconceptions": [
+      "mid.needs-both-midpoints",
+      "mid.segment-double-half"
      ]
     }
    ]

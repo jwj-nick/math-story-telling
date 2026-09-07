@@ -87,6 +87,31 @@
       "quad.angle-sum-180",
       "quad.subtract-order"
      ]
+    },
+    {
+     "id": "m2-u08-t01-04",
+     "level": "H",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "어떤 사각형의 네 각의 크기의 비가 1 : 2 : 3 : 4 이다. 가장 큰 각의 크기를 구하시오.",
+     "answer_atoms": [
+      "144"
+     ],
+     "answer_print": "144",
+     "answer_accept": [
+      "144도",
+      "144°"
+     ],
+     "answer_unit": "°",
+     "answer_format": "각의 크기를 수로 (단위 도)",
+     "figure": null,
+     "hint": "네 각을 x, 2x, 3x, 4x 로 두고 합이 360° 임을 쓰세요.",
+     "solution": "네 각을 x, 2x, 3x, 4x 라 하면 10x = 360° 이므로 x = 36° 예요. 가장 큰 각은 4x = <b>144°</b> 예요. 삼각형처럼 180° 로 두면 절반이 나와 틀려요.",
+     "work_space": "md",
+     "misconceptions": [
+      "quad.angle-sum-180",
+      "quad.subtract-order"
+     ]
     }
    ]
   },
@@ -163,6 +188,31 @@
      "misconceptions": [
       "quad.para-angle-opposite-neighbor",
       "quad.neighbor-angle-equal"
+     ]
+    },
+    {
+     "id": "m2-u08-t02-04",
+     "level": "H",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "평행사변형 ABCD 에서 ∠A 와 ∠B 의 크기의 비가 2 : 3 이다. ∠A 의 크기를 구하시오.",
+     "answer_atoms": [
+      "72"
+     ],
+     "answer_print": "72",
+     "answer_accept": [
+      "72도",
+      "72°"
+     ],
+     "answer_unit": "°",
+     "answer_format": "각의 크기를 수로 (단위 도)",
+     "figure": null,
+     "hint": "평행사변형에서 이웃한 두 각의 합은 몇 도일까요?",
+     "solution": "평행사변형에서 이웃한 두 각의 합은 180° 예요. ∠A = 2x, ∠B = 3x 라 하면 5x = 180° 이므로 x = 36° 이고, ∠A = 2 × 36° = <b>72°</b> 예요. 이웃한 각이 <b>같다</b>고 보면 둘 다 90° 라는 엉뚱한 답이 나와요.",
+     "work_space": "lg",
+     "misconceptions": [
+      "quad.neighbor-angle-equal",
+      "quad.para-angle-opposite-neighbor"
      ]
     }
    ]
@@ -242,6 +292,30 @@
      "misconceptions": [
       "quad.diag-bisect-vs-equal",
       "quad.para-condition-one"
+     ]
+    },
+    {
+     "id": "m2-u08-t03-04",
+     "level": "H",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "평행사변형 ABCD 에서 두 대각선의 교점을 M 이라 하자. AM = 3x − 1, MC = x + 5 일 때, x 의 값을 구하시오.",
+     "answer_atoms": [
+      "3"
+     ],
+     "answer_print": "3",
+     "answer_accept": [
+      "x=3"
+     ],
+     "answer_unit": null,
+     "answer_format": "x 의 값을 수로 (단위 없음)",
+     "figure": null,
+     "hint": "대각선이 서로를 이등분하니 AM 과 MC 는 어떤 관계일까요?",
+     "solution": "평행사변형의 두 대각선은 서로 이등분하므로 AM = MC 예요. 3x − 1 = x + 5 에서 2x = 6 이므로 <b>x = 3</b> 이에요. 두 대각선의 <b>길이가 같다</b>는 것과 <b>서로 이등분한다</b>는 것은 다른 말이에요.",
+     "work_space": "md",
+     "misconceptions": [
+      "quad.diag-bisect-vs-equal",
+      "quad.rect-diag-equal"
      ]
     }
    ]
@@ -324,6 +398,31 @@
       "quad.rect-is-para",
       "quad.diag-bisect-vs-equal"
      ]
+    },
+    {
+     "id": "m2-u08-t04-04",
+     "level": "H",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "직사각형 ABCD 에서 두 대각선의 교점을 M 이라 하자. AM = 5 cm 일 때 대각선 BD 의 길이를 구하시오.",
+     "answer_atoms": [
+      "10"
+     ],
+     "answer_print": "10",
+     "answer_accept": [
+      "10cm",
+      "10 cm"
+     ],
+     "answer_unit": "cm",
+     "answer_format": "길이를 수로 (단위 cm)",
+     "figure": null,
+     "hint": "직사각형에서는 두 대각선의 길이가 같고, 서로를 이등분하기도 해요. 두 성질을 함께 쓰세요.",
+     "solution": "AM 은 대각선 AC 의 절반이므로 AC = 10 cm 예요. 직사각형은 두 대각선의 길이가 같으므로 BD = <b>10 cm</b> 예요. 직사각형은 평행사변형의 성질을 <b>모두 물려받는다</b>는 점이 핵심이에요.",
+     "work_space": "md",
+     "misconceptions": [
+      "quad.rect-is-para",
+      "quad.rect-diag-equal"
+     ]
     }
    ]
   },
@@ -405,6 +504,31 @@
       "quad.rhombus-side-all-equal",
       "quad.rect-is-para"
      ]
+    },
+    {
+     "id": "m2-u08-t05-04",
+     "level": "H",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "마름모 ABCD 에서 두 대각선의 길이가 각각 6 cm, 8 cm 이다. 이 마름모의 넓이를 구하시오.",
+     "answer_atoms": [
+      "24"
+     ],
+     "answer_print": "24",
+     "answer_accept": [
+      "24cm2",
+      "24 cm2"
+     ],
+     "answer_unit": "cm²",
+     "answer_format": "넓이를 수로 (단위 cm²)",
+     "figure": null,
+     "hint": "두 대각선이 수직이라, 마름모는 대각선으로 만든 직사각형의 절반이에요.",
+     "solution": "마름모의 두 대각선은 서로 <b>수직</b>이등분하므로 넓이는 (대각선) × (대각선) ÷ 2 = 6 × 8 ÷ 2 = <b>24 cm²</b> 예요. 대각선의 길이가 같다고 보면 이 공식을 쓸 수 없어요 — 마름모는 두 대각선의 길이가 <b>다를 수 있어요</b>.",
+     "work_space": "md",
+     "misconceptions": [
+      "quad.rhombus-diag-perp",
+      "quad.rhombus-side-all-equal"
+     ]
     }
    ]
   },
@@ -480,6 +604,31 @@
      "misconceptions": [
       "quad.square-subset",
       "quad.rect-diag-equal"
+     ]
+    },
+    {
+     "id": "m2-u08-t06-04",
+     "level": "M",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "두 대각선의 길이가 같은 사각형은 반드시 직사각형이라고 할 수 있는지 판별하고, 그 까닭을 한 문장으로 쓰시오.",
+     "answer_atoms": [
+      "아니에요"
+     ],
+     "answer_print": "아니에요 (등변사다리꼴도 두 대각선의 길이가 같아요)",
+     "answer_accept": [
+      "아니에요",
+      "아니요"
+     ],
+     "answer_unit": null,
+     "answer_format": "판별과 까닭을 한 문장으로",
+     "figure": null,
+     "hint": "두 대각선의 길이가 같은 사각형 중에 직사각형이 아닌 것이 있는지 떠올려 보세요.",
+     "solution": "<b>아니에요.</b> 등변사다리꼴도 두 대각선의 길이가 같지만 직사각형은 아니에요. 직사각형이 되려면 두 대각선이 길이가 같으면서 <b>서로 이등분</b>까지 해야 해요. 조건 하나만으로 이름을 정하지 않는 습관이 중요해요.",
+     "work_space": "md",
+     "misconceptions": [
+      "quad.isosceles-trapezoid",
+      "quad.para-condition-one"
      ]
     }
    ]
@@ -560,6 +709,31 @@
      "misconceptions": [
       "area.equal-transform-lost",
       "area.parallel-same-base"
+     ]
+    },
+    {
+     "id": "m2-u08-t07-04",
+     "level": "M",
+     "origin": "authored",
+     "stem_src": null,
+     "stem_print": "두 직선 l 과 m 이 평행하다. 직선 l 위의 두 점 A, B 에 대하여 AB = 8 cm 이고, 두 직선 사이의 거리가 5 cm 이다. 직선 m 위의 한 점 C 에 대하여 삼각형 ABC 의 넓이를 구하시오.",
+     "answer_atoms": [
+      "20"
+     ],
+     "answer_print": "20",
+     "answer_accept": [
+      "20cm2",
+      "20 cm2"
+     ],
+     "answer_unit": "cm²",
+     "answer_format": "넓이를 수로 (단위 cm²)",
+     "figure": null,
+     "hint": "밑변은 AB 이고, 높이는 두 평행선 사이의 거리예요.",
+     "solution": "밑변 AB = 8 cm, 높이는 두 평행선 사이의 거리인 5 cm 예요. 넓이는 <span class=\"frac\"><b>1</b><i>2</i></span> × 8 × 5 = <b>20 cm²</b> 예요. 점 C 가 직선 m 위 어디에 있어도 높이가 같으므로 넓이는 그대로예요.",
+     "work_space": "md",
+     "misconceptions": [
+      "area.parallel-same-base",
+      "area.equal-transform-lost"
      ]
     }
    ]
