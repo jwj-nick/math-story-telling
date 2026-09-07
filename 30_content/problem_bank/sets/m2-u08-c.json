@@ -1,0 +1,22 @@
+{
+ "id": "m2-u08-c",
+ "kind": "type-set",
+ "grade": "math2",
+ "unit": 8,
+ "unit_name": "사각형의 성질",
+ "title": "평행선과 넓이 마무리",
+ "subtitle": "평행선 사이의 넓이 · 등적변형 · 평행사변형의 대각선 · 여러 사각형 구분",
+ "bank": "math2/u08/practice.json",
+ "misconceptions": "misconceptions/math2_u08.json",
+ "types": [
+  7,
+  3,
+  6
+ ],
+ "time_min": 20,
+ "outputs": [
+  "Q",
+  "K"
+ ],
+ "columns": 2
+}

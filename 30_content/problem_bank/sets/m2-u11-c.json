@@ -1,0 +1,22 @@
+{
+ "id": "m2-u11-c",
+ "kind": "type-set",
+ "grade": "math2",
+ "unit": 11,
+ "unit_name": "확률",
+ "title": "연속하여 뽑기와 마무리",
+ "subtitle": "다시 넣기와 넣지 않기 · 여사건 · 경우의 수와 확률 종합",
+ "bank": "math2/u11/practice.json",
+ "misconceptions": "misconceptions/math2_u11.json",
+ "types": [
+  7,
+  4,
+  6
+ ],
+ "time_min": 20,
+ "outputs": [
+  "Q",
+  "K"
+ ],
+ "columns": 2
+}

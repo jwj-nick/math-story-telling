@@ -94,6 +94,7 @@ def main():
     src_atoms = re_extract(bank)
 
     n = 0
+    authored = 0   # 원본 앱에 없는 신규 저작 유형 — V1/V2 원본 대조에서 뺀다
     for t in bank['types']:
         if VOICE_BAD.search(re.sub(r'<[^>]+>', '', t.get('principle', ''))):
             errs.append('V6 유형 %d principle 이 문어체입니다: %s' % (t['no'], t['principle'][:40]))
@@ -102,7 +103,9 @@ def main():
             pid = p['id']
 
             # V2 정답 원자
-            if src_atoms is not None:
+            if t.get('origin') == 'authored':
+                authored += 1
+            elif src_atoms is not None:
                 exp = src_atoms.get((t['no'], idx))
                 if exp is None:
                     errs.append('V2 %s 원본에서 대응 문항을 찾지 못함 (유형%d #%d)' % (pid, t['no'], idx))
@@ -172,10 +175,10 @@ def main():
 
     # V1 문항 수
     if src_atoms is not None:
-        if len(src_atoms) != n:
-            errs.append('V1 문항 수 불일치 원본=%d 은행=%d' % (len(src_atoms), n))
+        if len(src_atoms) != n - authored:
+            errs.append('V1 문항 수 불일치 원본=%d 은행=%d (신규 저작 %d 제외)' % (len(src_atoms), n - authored, authored))
         else:
-            infos.append('V1 문항 수 일치: %d' % n)
+            infos.append('V1 문항 수 일치: %d%s' % (n - authored, (' (+ 신규 저작 %d)' % authored) if authored else ''))
 
     # 오개념 카탈로그 자체 점검
     if mis:
